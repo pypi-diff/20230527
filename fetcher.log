@@ -425,3 +425,44 @@
 [2023-05-27 00:47:41] INFO root fetch - main [MainThread]: End processing [gitbetter]: success
 [2023-05-27 00:47:42] INFO root fetch - main [MainThread]: End processing [edgedb]: success
 [2023-05-27 00:47:42] INFO root fetch - main [MainThread]: Store serial: [18269495]
+[2023-05-27 00:52:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269495]
+[2023-05-27 00:52:55] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 00:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edk2-pytool-extensions
+[2023-05-27 00:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: makenote
+[2023-05-27 00:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wtisdk
+[2023-05-27 00:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-spotinst
+[2023-05-27 00:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: music-assistant
+[2023-05-27 00:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: deephaven-core
+[2023-05-27 00:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: deephaven-server
+[2023-05-27 00:52:55] INFO root fetch - processPackages [makenote]: New version: [1.6] Old Version: [1.5]
+[2023-05-27 00:52:55] INFO root fetch - processPackages [wtisdk]: New version: [1.4] Old Version: [1.3]
+[2023-05-27 00:52:55] INFO root fetch - processPackages [pulumi-spotinst]: New version: [3.9.0a1633346805] Old Version: [3.9.0]
+[2023-05-27 00:52:55] INFO root fetch - processPackages [deephaven-server]: New version: [0.24.3] Old Version: [0.24.2]
+[2023-05-27 00:52:55] INFO root fetch - processPackages [deephaven-core]: New version: [0.24.3] Old Version: [0.24.2]
+[2023-05-27 00:52:55] INFO root fetch - processPackages [edk2-pytool-extensions]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-27 00:52:55] INFO root fetch - processPackages [music-assistant]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2023-05-27 00:52:55] INFO root fetch - processPackages [pulumi-spotinst]: executing diffoscope
+[2023-05-27 00:52:55] INFO root fetch - processPackages [pulumi-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_spotinst-3.9.0.tar.gz tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz --markdown 20230527/p/pulumi-spotinst/3.9.0-3.9.0a1633346805/diff.md --exclude *.pyd
+[2023-05-27 00:52:55] INFO root fetch - processPackages [wtisdk]: Downloading https://files.pythonhosted.org/packages/90/6b/7565d7e2a54f1ebd79f05923f21d81c5b384e64dd3ec10ca184f345fbf91/wtisdk-1.4.tar.gz
+[2023-05-27 00:52:55] INFO root fetch - processPackages [deephaven-server]: Downloading https://files.pythonhosted.org/packages/8b/b3/28de919cbe813d818f20331e2f5a4836352a521b90a7fff64e561ae4d7c1/deephaven_server-0.24.2-py3-none-any.whl
+[2023-05-27 00:52:55] INFO root fetch - processPackages [makenote]: Downloading https://files.pythonhosted.org/packages/32/c1/9db1033b20e1889ae4d96a7e56a0ba443765af54948307255dd5c33dd3d2/makenote-1.6-py3-none-any.whl
+[2023-05-27 00:52:55] INFO root fetch - processPackages [makenote]: executing diffoscope
+[2023-05-27 00:52:55] INFO root fetch - processPackages [makenote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/makenote-1.5-py3-none-any.whl.zip tmp/makenote-1.6-py3-none-any.whl.zip --markdown 20230527/m/makenote/1.5-1.6/diff.md --exclude *.pyd
+[2023-05-27 00:52:55] INFO root fetch - processPackages [wtisdk]: executing diffoscope
+[2023-05-27 00:52:55] INFO root fetch - processPackages [wtisdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wtisdk-1.3.tar.gz tmp/wtisdk-1.4.tar.gz --markdown 20230527/w/wtisdk/1.3-1.4/diff.md --exclude *.pyd
+[2023-05-27 00:52:55] INFO root fetch - processPackages [music-assistant]: Downloading https://files.pythonhosted.org/packages/01/81/90b4aed85dc1c0ddc370cac2850f4f155120a91bed518c846ed8aaf92f03/music_assistant-2.0.0b8.tar.gz
+[2023-05-27 00:52:56] INFO root fetch - processPackages [deephaven-core]: Downloading https://files.pythonhosted.org/packages/37/e8/2cf6729de0f405b2a06ecf922d144ed36aff9182c883042371a1b82d75e1/deephaven_core-0.24.3-py3-none-any.whl
+[2023-05-27 00:52:56] WARNING root fetch - processPackages [deephaven-server]: Skipping package: exceeds size limit 148417319>=10485760
+[2023-05-27 00:52:56] INFO root fetch - main [MainThread]: End processing [deephaven-server] error
+[2023-05-27 00:52:56] INFO root fetch - processPackages [deephaven-core]: executing diffoscope
+[2023-05-27 00:52:56] INFO root fetch - processPackages [deephaven-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deephaven_core-0.24.2-py3-none-any.whl.zip tmp/deephaven_core-0.24.3-py3-none-any.whl.zip --markdown 20230527/d/deephaven-core/0.24.2-0.24.3/diff.md --exclude *.pyd
+[2023-05-27 00:52:56] INFO root fetch - processPackages [edk2-pytool-extensions]: executing diffoscope
+[2023-05-27 00:52:56] INFO root fetch - processPackages [edk2-pytool-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edk2-pytool-extensions-0.9.4.tar.gz tmp/edk2-pytool-extensions-0.9.5.tar.gz --markdown 20230527/e/edk2-pytool-extensions/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-27 00:52:56] WARNING root fetch - processPackages [music-assistant]: Skipping package: exceeds size limit 60699137>=10485760
+[2023-05-27 00:52:56] INFO root fetch - main [MainThread]: End processing [music-assistant] error
+[2023-05-27 00:52:56] INFO root fetch - main [MainThread]: End processing [makenote]: success
+[2023-05-27 00:52:56] INFO root fetch - main [MainThread]: End processing [wtisdk]: success
+[2023-05-27 00:52:57] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
+[2023-05-27 00:52:57] INFO root fetch - main [MainThread]: End processing [deephaven-core]: success
+[2023-05-27 00:52:57] INFO root fetch - main [MainThread]: End processing [edk2-pytool-extensions]: success
+[2023-05-27 00:52:57] INFO root fetch - main [MainThread]: Store serial: [18269527]
