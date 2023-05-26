@@ -743,3 +743,29 @@
 [2023-05-27 01:19:12] INFO root fetch - main [MainThread]: End processing [usearch]: success
 [2023-05-27 01:19:12] INFO root fetch - main [MainThread]: End processing [auto-py-to-exe]: success
 [2023-05-27 01:19:12] INFO root fetch - main [MainThread]: Store serial: [18269697]
+[2023-05-27 01:24:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269697]
+[2023-05-27 01:24:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 01:24:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipen-board
+[2023-05-27 01:24:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heaserver-accounts
+[2023-05-27 01:24:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vid2info
+[2023-05-27 01:24:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: runway
+[2023-05-27 01:24:21] INFO root fetch - processPackages [pipen-board]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-27 01:24:21] INFO root fetch - processPackages [heaserver-accounts]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-27 01:24:21] INFO root fetch - processPackages [vid2info]: New version: [1.99] Old Version: [1.98]
+[2023-05-27 01:24:21] INFO root fetch - processPackages [runway]: New version: [2.6.6] Old Version: [2.6.5]
+[2023-05-27 01:24:21] INFO root fetch - processPackages [vid2info]: executing diffoscope
+[2023-05-27 01:24:21] INFO root fetch - processPackages [vid2info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vid2info-1.98.tar.gz tmp/vid2info-1.99.tar.gz --markdown 20230527/v/vid2info/1.98-1.99/diff.md --exclude *.pyd
+[2023-05-27 01:24:21] INFO root fetch - processPackages [heaserver-accounts]: executing diffoscope
+[2023-05-27 01:24:21] INFO root fetch - processPackages [heaserver-accounts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-accounts-1.0.0a8.tar.gz tmp/heaserver-accounts-1.0.0a9.tar.gz --markdown 20230527/h/heaserver-accounts/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-27 01:24:21] INFO root fetch - processPackages [pipen-board]: Downloading https://files.pythonhosted.org/packages/31/72/2c748b3da5832b94559eec2d9f995897a234b6ee545c0bcf36648ec3b40c/pipen_board-0.2.6.tar.gz
+[2023-05-27 01:24:21] INFO root fetch - processPackages [runway]: Downloading https://files.pythonhosted.org/packages/c4/d3/fa1d56e38a93378878237ea1202ab1844c32abe26a72dd104afec67b956b/runway-2.6.5.tar.gz
+[2023-05-27 01:24:22] INFO root fetch - processPackages [pipen-board]: executing diffoscope
+[2023-05-27 01:24:22] INFO root fetch - processPackages [pipen-board]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_board-0.2.5.tar.gz tmp/pipen_board-0.2.6.tar.gz --markdown 20230527/p/pipen-board/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-27 01:24:22] INFO root fetch - processPackages [runway]: Downloading https://files.pythonhosted.org/packages/c7/1a/dbee63f8aeacef84f6ed907877c5d4b756fa43bde55465e1f6ed7ab8ea65/runway-2.6.6.tar.gz
+[2023-05-27 01:24:22] INFO root fetch - processPackages [runway]: executing diffoscope
+[2023-05-27 01:24:22] INFO root fetch - processPackages [runway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runway-2.6.5.tar.gz tmp/runway-2.6.6.tar.gz --markdown 20230527/r/runway/2.6.5-2.6.6/diff.md --exclude *.pyd
+[2023-05-27 01:24:22] INFO root fetch - main [MainThread]: End processing [heaserver-accounts]: success
+[2023-05-27 01:24:24] INFO root fetch - main [MainThread]: End processing [vid2info]: success
+[2023-05-27 01:24:26] INFO root fetch - main [MainThread]: End processing [runway]: success
+[2023-05-27 01:24:29] INFO root fetch - main [MainThread]: End processing [pipen-board]: success
+[2023-05-27 01:24:29] INFO root fetch - main [MainThread]: Store serial: [18269724]
