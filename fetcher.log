@@ -787,3 +787,17 @@
 [2023-05-27 01:29:40] INFO root fetch - main [MainThread]: End processing [arithmetica-py]: success
 [2023-05-27 01:29:40] INFO root fetch - main [MainThread]: End processing [bfg9000]: success
 [2023-05-27 01:29:40] INFO root fetch - main [MainThread]: Store serial: [18269746]
+[2023-05-27 01:34:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269746]
+[2023-05-27 01:34:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 01:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sidetrek
+[2023-05-27 01:34:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tkfly
+[2023-05-27 01:34:49] INFO root fetch - processPackages [tkfly]: New version: [0.1.0b1] Old Version: [0.1.0a9]
+[2023-05-27 01:34:49] INFO root fetch - processPackages [sidetrek]: New version: [0.0.9] Old Version: [0.0.88]
+[2023-05-27 01:34:49] INFO root fetch - processPackages [sidetrek]: Downloading https://files.pythonhosted.org/packages/3f/2e/5113ee6bc3ab918ffdab57325f5e6e1e32af588d8fb95e0005e3626bc799/sidetrek-0.0.88.tar.gz
+[2023-05-27 01:34:49] INFO root fetch - processPackages [tkfly]: Downloading https://files.pythonhosted.org/packages/56/67/bc854e077ba29b5c50a5a9e19b42d462d2d13dceb93b3a31a58c4b33e258/tkfly-0.1.0a9.tar.gz
+[2023-05-27 01:34:49] INFO root fetch - processPackages [sidetrek]: executing diffoscope
+[2023-05-27 01:34:49] INFO root fetch - processPackages [sidetrek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sidetrek-0.0.88.tar.gz tmp/sidetrek-0.0.9.tar.gz --markdown 20230527/s/sidetrek/0.0.88-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 01:34:50] WARNING root fetch - processPackages [tkfly]: Skipping package: exceeds size limit 27235131>=10485760
+[2023-05-27 01:34:50] INFO root fetch - main [MainThread]: End processing [tkfly] error
+[2023-05-27 01:34:50] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
+[2023-05-27 01:34:50] INFO root fetch - main [MainThread]: Store serial: [18269808]
