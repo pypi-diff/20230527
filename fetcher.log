@@ -524,3 +524,105 @@
 [2023-05-27 00:58:09] INFO root fetch - main [MainThread]: End processing [chartfactor]: success
 [2023-05-27 00:58:09] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
 [2023-05-27 00:58:09] INFO root fetch - main [MainThread]: Store serial: [18269556]
+[2023-05-27 01:03:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269556]
+[2023-05-27 01:03:18] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-27 01:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: heaserver-files-aws-s3
+[2023-05-27 01:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qworker
+[2023-05-27 01:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: meta-tags-parser
+[2023-05-27 01:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: latch
+[2023-05-27 01:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spellbot
+[2023-05-27 01:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tmnt-cu101
+[2023-05-27 01:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: neon-utils
+[2023-05-27 01:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cirq-rigetti
+[2023-05-27 01:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cirq-web
+[2023-05-27 01:03:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cirq-aqt
+[2023-05-27 01:03:18] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-05-27 01:03:18] INFO root fetch - processPackages [meta-tags-parser]: New version: [1.3.0] Old Version: [1.2.1]
+[2023-05-27 01:03:18] INFO root fetch - processPackages [heaserver-files-aws-s3]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-27 01:03:18] INFO root fetch - processPackages [qworker]: New version: [1.7.2] Old Version: [1.7.1]
+[2023-05-27 01:03:18] INFO root fetch - processPackages [neon-utils]: New version: [1.5.0a9] Old Version: [1.5.0a8]
+[2023-05-27 01:03:18] INFO root fetch - processPackages [spellbot]: New version: [8.9.4] Old Version: [8.9.3]
+[2023-05-27 01:03:18] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230526] Old Version: [0.7.0b20230525]
+[2023-05-27 01:03:18] INFO root fetch - processPackages [latch]: executing diffoscope
+[2023-05-27 01:03:18] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20230527/l/latch/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-05-27 01:03:18] INFO root fetch - processPackages [cirq-aqt]: New version: [1.2.0.dev20230526230240] Old Version: [1.2.0.dev20230524233104]
+[2023-05-27 01:03:18] INFO root fetch - processPackages [cirq-web]: New version: [1.2.0.dev20230526230240] Old Version: [1.2.0.dev20230524233104]
+[2023-05-27 01:03:18] INFO root fetch - processPackages [meta-tags-parser]: Downloading https://files.pythonhosted.org/packages/ac/31/775c35e1955bdf37a29bcc32136d2c2c97decf4125072642b7d093892d09/meta-tags-parser-1.2.1.tar.gz
+[2023-05-27 01:03:18] INFO root fetch - processPackages [neon-utils]: executing diffoscope
+[2023-05-27 01:03:18] INFO root fetch - processPackages [neon-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_utils-1.5.0a8-py3-none-any.whl.zip tmp/neon_utils-1.5.0a9-py3-none-any.whl.zip --markdown 20230527/n/neon-utils/1.5.0a8-1.5.0a9/diff.md --exclude *.pyd
+[2023-05-27 01:03:18] INFO root fetch - processPackages [heaserver-files-aws-s3]: Downloading https://files.pythonhosted.org/packages/4b/9b/73f33a94f4aff25bff8a0100e7c9f7d239d27c6bb47e91c553f03fccfde2/heaserver-files-aws-s3-1.0.0a8.tar.gz
+[2023-05-27 01:03:18] INFO root fetch - processPackages [cirq-rigetti]: New version: [1.2.0.dev20230526230240] Old Version: [1.2.0.dev20230524233104]
+[2023-05-27 01:03:18] INFO root fetch - processPackages [tmnt-cu101]: Downloading https://files.pythonhosted.org/packages/90/c0/a03e6ddb8a8c43d8427bee550884f00593f8527bed46a01b94029a69e027/tmnt-cu101-0.7.0b20230526.tar.gz
+[2023-05-27 01:03:18] INFO root fetch - processPackages [qworker]: Downloading https://files.pythonhosted.org/packages/93/15/ed88c0b538aaa66eb466ee6ab7b79e658ec2e25b9b08afe4785b8fb60068/qworker-1.7.2-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-27 01:03:19] INFO root fetch - processPackages [spellbot]: executing diffoscope
+[2023-05-27 01:03:19] INFO root fetch - processPackages [spellbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spellbot-8.9.3.tar.gz tmp/spellbot-8.9.4.tar.gz --markdown 20230527/s/spellbot/8.9.3-8.9.4/diff.md --exclude *.pyd
+[2023-05-27 01:03:19] INFO root fetch - processPackages [cirq-aqt]: Downloading https://files.pythonhosted.org/packages/bd/75/05d4ada215d13056b30567f5bebe831b656733982dc0e1e712e727c220d9/cirq_aqt-1.2.0.dev20230526230240-py3-none-any.whl
+[2023-05-27 01:03:19] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-05-27 01:03:19] INFO root fetch - processPackages [meta-tags-parser]: Downloading https://files.pythonhosted.org/packages/be/9b/47e839a864e88d1e99bfcd097cc35971318ad40492237415df9f95aed518/meta_tags_parser-1.3.0.tar.gz
+[2023-05-27 01:03:19] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230525.tar.gz tmp/tmnt-cu101-0.7.0b20230526.tar.gz --markdown 20230527/t/tmnt-cu101/0.7.0b20230525-0.7.0b20230526/diff.md --exclude *.pyd
+[2023-05-27 01:03:19] INFO root fetch - processPackages [cirq-web]: Downloading https://files.pythonhosted.org/packages/9c/88/5e492bc076b32fba79ee09e3016c9fb8a5d4693918934512d4af1c7516f7/cirq_web-1.2.0.dev20230526230240-py3-none-any.whl
+[2023-05-27 01:03:19] INFO root fetch - processPackages [qworker]: executing diffoscope
+[2023-05-27 01:03:19] INFO root fetch - processPackages [qworker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qworker-1.7.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/qworker-1.7.2-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230527/q/qworker/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2023-05-27 01:03:19] INFO root fetch - processPackages [cirq-rigetti]: Downloading https://files.pythonhosted.org/packages/f3/af/7a709f90e1caa04e3ac1511dceca128ab3fb27a9e92e309142b25612a1a0/cirq_rigetti-1.2.0.dev20230526230240-py3-none-any.whl
+[2023-05-27 01:03:19] INFO root fetch - processPackages [cirq-aqt]: executing diffoscope
+[2023-05-27 01:03:19] INFO root fetch - processPackages [cirq-aqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_aqt-1.2.0.dev20230524233104-py3-none-any.whl.zip tmp/cirq_aqt-1.2.0.dev20230526230240-py3-none-any.whl.zip --markdown 20230527/c/cirq-aqt/1.2.0.dev20230524233104-1.2.0.dev20230526230240/diff.md --exclude *.pyd
+[2023-05-27 01:03:19] INFO root fetch - processPackages [meta-tags-parser]: executing diffoscope
+[2023-05-27 01:03:19] INFO root fetch - processPackages [meta-tags-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meta-tags-parser-1.2.1.tar.gz tmp/meta_tags_parser-1.3.0.tar.gz --markdown 20230527/m/meta-tags-parser/1.2.1-1.3.0/diff.md --exclude *.pyd
+[2023-05-27 01:03:19] WARNING root fetch - processPackages [heaserver-files-aws-s3]: Skipping package: exceeds size limit 18398734>=10485760
+[2023-05-27 01:03:19] INFO root fetch - processPackages [heaserver-files-aws-s3]: Start processing: cirq-google
+[2023-05-27 01:03:19] INFO root fetch - main [MainThread]: End processing [heaserver-files-aws-s3] error
+[2023-05-27 01:03:19] INFO root fetch - processPackages [cirq-web]: executing diffoscope
+[2023-05-27 01:03:19] INFO root fetch - processPackages [cirq-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_web-1.2.0.dev20230524233104-py3-none-any.whl.zip tmp/cirq_web-1.2.0.dev20230526230240-py3-none-any.whl.zip --markdown 20230527/c/cirq-web/1.2.0.dev20230524233104-1.2.0.dev20230526230240/diff.md --exclude *.pyd
+[2023-05-27 01:03:19] INFO root fetch - processPackages [cirq-rigetti]: executing diffoscope
+[2023-05-27 01:03:19] INFO root fetch - processPackages [cirq-rigetti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_rigetti-1.2.0.dev20230524233104-py3-none-any.whl.zip tmp/cirq_rigetti-1.2.0.dev20230526230240-py3-none-any.whl.zip --markdown 20230527/c/cirq-rigetti/1.2.0.dev20230524233104-1.2.0.dev20230526230240/diff.md --exclude *.pyd
+[2023-05-27 01:03:19] INFO root fetch - processPackages [cirq-google]: New version: [1.2.0.dev20230526230240] Old Version: [1.2.0.dev20230524233104]
+[2023-05-27 01:03:19] INFO root fetch - processPackages [cirq-google]: Downloading https://files.pythonhosted.org/packages/ac/d3/23e626801923b1bb186891afcabda9dd3b72015b5c0cfab1b1b8937e0648/cirq_google-1.2.0.dev20230526230240-py3-none-any.whl
+[2023-05-27 01:03:20] INFO root fetch - processPackages [cirq-google]: executing diffoscope
+[2023-05-27 01:03:20] INFO root fetch - processPackages [cirq-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_google-1.2.0.dev20230524233104-py3-none-any.whl.zip tmp/cirq_google-1.2.0.dev20230526230240-py3-none-any.whl.zip --markdown 20230527/c/cirq-google/1.2.0.dev20230524233104-1.2.0.dev20230526230240/diff.md --exclude *.pyd
+[2023-05-27 01:03:20] INFO root fetch - processPackages [latch]: Start processing: cirq-pasqal
+[2023-05-27 01:03:20] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2023-05-27 01:03:20] INFO root fetch - processPackages [neon-utils]: Start processing: tmnt
+[2023-05-27 01:03:20] INFO root fetch - main [MainThread]: End processing [neon-utils]: success
+[2023-05-27 01:03:20] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230525] Old Version: [0.7.0b20230524]
+[2023-05-27 01:03:20] INFO root fetch - processPackages [qworker]: Start processing: cirq-core
+[2023-05-27 01:03:20] INFO root fetch - main [MainThread]: End processing [qworker]: success
+[2023-05-27 01:03:20] INFO root fetch - processPackages [cirq-pasqal]: New version: [1.2.0.dev20230526230240] Old Version: [1.2.0.dev20230524233104]
+[2023-05-27 01:03:20] INFO root fetch - processPackages [meta-tags-parser]: Start processing: cirq
+[2023-05-27 01:03:20] INFO root fetch - main [MainThread]: End processing [meta-tags-parser]: success
+[2023-05-27 01:03:20] INFO root fetch - processPackages [cirq-aqt]: Start processing: cirq-ionq
+[2023-05-27 01:03:20] INFO root fetch - main [MainThread]: End processing [cirq-aqt]: success
+[2023-05-27 01:03:20] INFO root fetch - processPackages [spellbot]: Start processing: heaserver-folders-aws-s3
+[2023-05-27 01:03:20] INFO root fetch - main [MainThread]: End processing [spellbot]: success
+[2023-05-27 01:03:20] INFO root fetch - processPackages [cirq]: New version: [1.2.0.dev20230526230240] Old Version: [1.2.0.dev20230524233104]
+[2023-05-27 01:03:20] INFO root fetch - main [MainThread]: End processing [cirq-rigetti]: success
+[2023-05-27 01:03:20] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/a5/f3/a43c18d736646cdc0a0120f0ad693cfbd5eb69d3f54e8baaa61102dd740e/tmnt-0.7.0b20230525.tar.gz
+[2023-05-27 01:03:20] INFO root fetch - processPackages [cirq-ionq]: New version: [1.2.0.dev20230526230240] Old Version: [1.2.0.dev20230524233104]
+[2023-05-27 01:03:20] INFO root fetch - processPackages [cirq-pasqal]: Downloading https://files.pythonhosted.org/packages/7a/ea/87ac7e9e43a345952723a2cdec880557076b2a74debc9866d0f13895630a/cirq_pasqal-1.2.0.dev20230526230240-py3-none-any.whl
+[2023-05-27 01:03:21] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-05-27 01:03:21] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230524.tar.gz tmp/tmnt-0.7.0b20230525.tar.gz --markdown 20230527/t/tmnt/0.7.0b20230524-0.7.0b20230525/diff.md --exclude *.pyd
+[2023-05-27 01:03:21] INFO root fetch - processPackages [heaserver-folders-aws-s3]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-27 01:03:21] INFO root fetch - processPackages [cirq-core]: New version: [1.2.0.dev20230526230240] Old Version: [1.2.0.dev20230524233104]
+[2023-05-27 01:03:21] INFO root fetch - processPackages [cirq]: Downloading https://files.pythonhosted.org/packages/23/66/0aabcae81ea6d4365e222470a8fa05fe245a16e7f5343b06fec4dfadfc3d/cirq-1.2.0.dev20230524233104-py3-none-any.whl
+[2023-05-27 01:03:21] INFO root fetch - processPackages [cirq-pasqal]: executing diffoscope
+[2023-05-27 01:03:21] INFO root fetch - processPackages [cirq-pasqal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_pasqal-1.2.0.dev20230524233104-py3-none-any.whl.zip tmp/cirq_pasqal-1.2.0.dev20230526230240-py3-none-any.whl.zip --markdown 20230527/c/cirq-pasqal/1.2.0.dev20230524233104-1.2.0.dev20230526230240/diff.md --exclude *.pyd
+[2023-05-27 01:03:21] INFO root fetch - processPackages [cirq-ionq]: Downloading https://files.pythonhosted.org/packages/ac/48/0830545df2728a15b88159774cfe805bc401305a5f13f01646db322dcf0a/cirq_ionq-1.2.0.dev20230526230240-py3-none-any.whl
+[2023-05-27 01:03:21] INFO root fetch - processPackages [cirq]: Downloading https://files.pythonhosted.org/packages/c8/9f/f7a4c05a0ef89aeddaa2d871e73dd9b287d4352260e909daa75b7b3178ba/cirq-1.2.0.dev20230526230240-py3-none-any.whl
+[2023-05-27 01:03:21] INFO root fetch - processPackages [cirq-core]: Downloading https://files.pythonhosted.org/packages/dd/e3/d4451cdff2b26041d9a6e0f29bbe949489d0abd6fa5a1eeb134cd5258bc3/cirq_core-1.2.0.dev20230526230240-py3-none-any.whl
+[2023-05-27 01:03:21] INFO root fetch - processPackages [heaserver-folders-aws-s3]: executing diffoscope
+[2023-05-27 01:03:21] INFO root fetch - processPackages [heaserver-folders-aws-s3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-folders-aws-s3-1.0.0a8.tar.gz tmp/heaserver-folders-aws-s3-1.0.0a9.tar.gz --markdown 20230527/h/heaserver-folders-aws-s3/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-27 01:03:21] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-05-27 01:03:21] INFO root fetch - processPackages [cirq]: executing diffoscope
+[2023-05-27 01:03:21] INFO root fetch - processPackages [cirq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq-1.2.0.dev20230524233104-py3-none-any.whl.zip tmp/cirq-1.2.0.dev20230526230240-py3-none-any.whl.zip --markdown 20230527/c/cirq/1.2.0.dev20230524233104-1.2.0.dev20230526230240/diff.md --exclude *.pyd
+[2023-05-27 01:03:21] INFO root fetch - processPackages [cirq-ionq]: executing diffoscope
+[2023-05-27 01:03:21] INFO root fetch - processPackages [cirq-ionq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_ionq-1.2.0.dev20230524233104-py3-none-any.whl.zip tmp/cirq_ionq-1.2.0.dev20230526230240-py3-none-any.whl.zip --markdown 20230527/c/cirq-ionq/1.2.0.dev20230524233104-1.2.0.dev20230526230240/diff.md --exclude *.pyd
+[2023-05-27 01:03:21] INFO root fetch - processPackages [cirq-core]: executing diffoscope
+[2023-05-27 01:03:21] INFO root fetch - processPackages [cirq-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_core-1.2.0.dev20230524233104-py3-none-any.whl.zip tmp/cirq_core-1.2.0.dev20230526230240-py3-none-any.whl.zip --markdown 20230527/c/cirq-core/1.2.0.dev20230524233104-1.2.0.dev20230526230240/diff.md --exclude *.pyd
+[2023-05-27 01:03:22] INFO root fetch - main [MainThread]: End processing [cirq-pasqal]: success
+[2023-05-27 01:03:22] INFO root fetch - main [MainThread]: End processing [cirq]: success
+[2023-05-27 01:03:22] INFO root fetch - main [MainThread]: End processing [heaserver-folders-aws-s3]: success
+[2023-05-27 01:03:22] INFO root fetch - main [MainThread]: End processing [cirq-ionq]: success
+[2023-05-27 01:03:23] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-05-27 01:03:23] INFO root fetch - main [MainThread]: End processing [cirq-web]: success
+[2023-05-27 01:03:23] INFO root fetch - main [MainThread]: End processing [cirq-google]: success
+[2023-05-27 01:03:39] INFO root fetch - main [MainThread]: End processing [cirq-core]: success
+[2023-05-27 01:03:39] INFO root fetch - main [MainThread]: Store serial: [18269597]
