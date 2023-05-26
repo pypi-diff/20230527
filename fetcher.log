@@ -64,3 +64,44 @@
 [2023-05-27 00:02:29] INFO root fetch - main [MainThread]: End processing [django-connectwise]: success
 [2023-05-27 00:04:42] INFO root fetch - main [MainThread]: End processing [viser]: success
 [2023-05-27 00:04:42] INFO root fetch - main [MainThread]: Store serial: [18269214]
+[2023-05-27 00:09:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269214]
+[2023-05-27 00:09:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 00:09:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dronecan
+[2023-05-27 00:09:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydantic-core
+[2023-05-27 00:09:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyderive3
+[2023-05-27 00:09:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dronecan-gui-tool
+[2023-05-27 00:09:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mpl-format
+[2023-05-27 00:09:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: IMDBTraktSyncer
+[2023-05-27 00:09:54] INFO root fetch - processPackages [dronecan]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-27 00:09:54] INFO root fetch - processPackages [dronecan-gui-tool]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-05-27 00:09:54] INFO root fetch - processPackages [pyderive3]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 00:09:55] INFO root fetch - processPackages [pydantic-core]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-05-27 00:09:55] INFO root fetch - processPackages [mpl-format]: New version: [0.316] Old Version: [0.315]
+[2023-05-27 00:09:55] INFO root fetch - processPackages [IMDBTraktSyncer]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-05-27 00:09:55] INFO root fetch - processPackages [pyderive3]: Downloading https://files.pythonhosted.org/packages/73/e3/045ed3163b37b6e854e1e05a6ab2cd8525bc6b5594416819159a88963a8a/pyderive3-0.0.1.tar.gz
+[2023-05-27 00:09:55] INFO root fetch - processPackages [dronecan-gui-tool]: Downloading https://files.pythonhosted.org/packages/39/bd/be845733ee143d721d902392777220c11c4d776f137eaa6bbe9f99f51d1d/dronecan_gui_tool-1.2.7.tar.gz
+[2023-05-27 00:09:55] INFO root fetch - processPackages [IMDBTraktSyncer]: Downloading https://files.pythonhosted.org/packages/73/a6/62603470a63e608b08150c4842af9cfcbbab2fe01bd22bbeecd333da787d/IMDBTraktSyncer-1.3.1.tar.gz
+[2023-05-27 00:09:55] INFO root fetch - processPackages [mpl-format]: Downloading https://files.pythonhosted.org/packages/9b/10/2b9e08066d369f272ad1c196be10dcd57bd64330ba15eb097b65b55f947e/mpl_format-0.315.tar.gz
+[2023-05-27 00:09:55] INFO root fetch - processPackages [dronecan]: executing diffoscope
+[2023-05-27 00:09:55] INFO root fetch - processPackages [dronecan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dronecan-1.0.8.tar.gz tmp/dronecan-1.0.9.tar.gz --markdown 20230527/d/dronecan/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-27 00:09:55] INFO root fetch - processPackages [pyderive3]: Downloading https://files.pythonhosted.org/packages/28/d2/4134e852eb21bf473f75dec3493417e46c759556c77c3cc98310adaedbd1/pyderive3-0.0.2.tar.gz
+[2023-05-27 00:09:55] INFO root fetch - processPackages [pydantic-core]: executing diffoscope
+[2023-05-27 00:09:55] INFO root fetch - processPackages [pydantic-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_core-0.8.2.tar.gz tmp/pydantic_core-0.9.0.tar.gz --markdown 20230527/p/pydantic-core/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 00:09:55] INFO root fetch - processPackages [mpl-format]: Downloading https://files.pythonhosted.org/packages/bd/d0/bb3861886b4e83c40bd24a946936c50615955536b143072d5e3b9255570c/mpl_format-0.316.tar.gz
+[2023-05-27 00:09:55] INFO root fetch - processPackages [pyderive3]: executing diffoscope
+[2023-05-27 00:09:55] INFO root fetch - processPackages [pyderive3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyderive3-0.0.1.tar.gz tmp/pyderive3-0.0.2.tar.gz --markdown 20230527/p/pyderive3/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 00:09:55] INFO root fetch - processPackages [IMDBTraktSyncer]: Downloading https://files.pythonhosted.org/packages/dd/ef/150362b44fb541e21a153e7a5d5581e5e5f8cddfd8ca16511bc8d8c8c444/IMDBTraktSyncer-1.3.2.tar.gz
+[2023-05-27 00:09:55] INFO root fetch - processPackages [dronecan-gui-tool]: Downloading https://files.pythonhosted.org/packages/76/95/575838ff4802232d228ab222765c6d97e957610b9b451616d619d2b461d3/dronecan_gui_tool-1.2.8.tar.gz
+[2023-05-27 00:09:55] INFO root fetch - processPackages [mpl-format]: executing diffoscope
+[2023-05-27 00:09:55] INFO root fetch - processPackages [mpl-format]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpl_format-0.315.tar.gz tmp/mpl_format-0.316.tar.gz --markdown 20230527/m/mpl-format/0.315-0.316/diff.md --exclude *.pyd
+[2023-05-27 00:09:55] INFO root fetch - processPackages [dronecan-gui-tool]: executing diffoscope
+[2023-05-27 00:09:55] INFO root fetch - processPackages [dronecan-gui-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dronecan_gui_tool-1.2.7.tar.gz tmp/dronecan_gui_tool-1.2.8.tar.gz --markdown 20230527/d/dronecan-gui-tool/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-05-27 00:09:56] INFO root fetch - processPackages [IMDBTraktSyncer]: executing diffoscope
+[2023-05-27 00:09:56] INFO root fetch - processPackages [IMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IMDBTraktSyncer-1.3.1.tar.gz tmp/IMDBTraktSyncer-1.3.2.tar.gz --markdown 20230527/I/IMDBTraktSyncer/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-05-27 00:09:56] INFO root fetch - main [MainThread]: End processing [pyderive3]: success
+[2023-05-27 00:09:57] INFO root fetch - main [MainThread]: End processing [dronecan]: success
+[2023-05-27 00:09:57] INFO root fetch - main [MainThread]: End processing [mpl-format]: success
+[2023-05-27 00:09:57] INFO root fetch - main [MainThread]: End processing [IMDBTraktSyncer]: success
+[2023-05-27 00:09:58] INFO root fetch - main [MainThread]: End processing [pydantic-core]: success
+[2023-05-27 00:09:58] INFO root fetch - main [MainThread]: End processing [dronecan-gui-tool]: success
+[2023-05-27 00:09:58] INFO root fetch - main [MainThread]: Store serial: [18269319]
