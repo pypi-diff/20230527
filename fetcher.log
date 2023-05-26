@@ -209,3 +209,41 @@
 [2023-05-27 00:20:29] INFO root fetch - main [MainThread]: End processing [advent-of-code]: success
 [2023-05-27 00:20:30] INFO root fetch - main [MainThread]: End processing [fetch-features]: success
 [2023-05-27 00:20:30] INFO root fetch - main [MainThread]: Store serial: [18269373]
+[2023-05-27 00:25:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269373]
+[2023-05-27 00:25:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 00:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchbones
+[2023-05-27 00:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kanu
+[2023-05-27 00:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: marvin
+[2023-05-27 00:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seaplayer
+[2023-05-27 00:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-spotinst
+[2023-05-27 00:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: neon-speech
+[2023-05-27 00:25:39] INFO root fetch - processPackages [torchbones]: New version: [1.0.7] Old Version: [1.0.5]
+[2023-05-27 00:25:39] INFO root fetch - processPackages [seaplayer]: New version: [0.5.3.dev2] Old Version: [0.5.3.dev1]
+[2023-05-27 00:25:39] INFO root fetch - processPackages [marvin]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-27 00:25:39] INFO root fetch - processPackages [kanu]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-27 00:25:39] INFO root fetch - processPackages [pulumi-spotinst]: New version: [3.9.0a1633346805] Old Version: [3.9.0]
+[2023-05-27 00:25:39] INFO root fetch - processPackages [neon-speech]: New version: [3.3.2a7] Old Version: [3.3.2a6]
+[2023-05-27 00:25:39] INFO root fetch - processPackages [pulumi-spotinst]: executing diffoscope
+[2023-05-27 00:25:39] INFO root fetch - processPackages [pulumi-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_spotinst-3.9.0.tar.gz tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz --markdown 20230527/p/pulumi-spotinst/3.9.0-3.9.0a1633346805/diff.md --exclude *.pyd
+[2023-05-27 00:25:39] INFO root fetch - processPackages [torchbones]: Downloading https://files.pythonhosted.org/packages/85/31/57b3893091f8985215066c4b53566b7835f665ec35fb6b7aa9027070886a/torchbones-1.0.7.tar.gz
+[2023-05-27 00:25:39] INFO root fetch - processPackages [seaplayer]: Downloading https://files.pythonhosted.org/packages/64/f5/caf61db0f6ae53e9a366edd30ca9b8aaf222ac58c6b82b41e53e2ea138f5/seaplayer-0.5.3.dev2-py3-none-any.whl
+[2023-05-27 00:25:39] INFO root fetch - processPackages [torchbones]: executing diffoscope
+[2023-05-27 00:25:39] INFO root fetch - processPackages [torchbones]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchbones-1.0.5.tar.gz tmp/torchbones-1.0.7.tar.gz --markdown 20230527/t/torchbones/1.0.5-1.0.7/diff.md --exclude *.pyd
+[2023-05-27 00:25:39] INFO root fetch - processPackages [marvin]: Downloading https://files.pythonhosted.org/packages/02/03/7df3ab9fc3112efb2e7d762c173d8321d0094dad0ad150ce83000bc16ca5/marvin-0.9.1.tar.gz
+[2023-05-27 00:25:39] INFO root fetch - processPackages [kanu]: Downloading https://files.pythonhosted.org/packages/66/f8/fac693fff8cf35a7ea686d4d91a48e1a9b65939505d07652b8afd69ebe27/kanu-0.1.0.tar.gz
+[2023-05-27 00:25:39] INFO root fetch - processPackages [seaplayer]: executing diffoscope
+[2023-05-27 00:25:39] INFO root fetch - processPackages [seaplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplayer-0.5.3.dev1.tar.gz tmp/seaplayer-0.5.3.dev2-py3-none-any.whl.zip --markdown 20230527/s/seaplayer/0.5.3.dev1-0.5.3.dev2/diff.md --exclude *.pyd
+[2023-05-27 00:25:40] INFO root fetch - processPackages [neon-speech]: Downloading https://files.pythonhosted.org/packages/9b/06/cc5421dab60de5d0fd3ff4b656186ed6e4938981377084da80f784c19fce/neon_speech-3.3.2a7-py3-none-any.whl
+[2023-05-27 00:25:40] WARNING root fetch - processPackages [marvin]: Skipping package: exceeds size limit 16870914>=10485760
+[2023-05-27 00:25:40] INFO root fetch - main [MainThread]: End processing [marvin] error
+[2023-05-27 00:25:40] INFO root fetch - processPackages [neon-speech]: executing diffoscope
+[2023-05-27 00:25:40] INFO root fetch - processPackages [neon-speech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_speech-3.3.2a6-py3-none-any.whl.zip tmp/neon_speech-3.3.2a7-py3-none-any.whl.zip --markdown 20230527/n/neon-speech/3.3.2a6-3.3.2a7/diff.md --exclude *.pyd
+[2023-05-27 00:25:40] INFO root fetch - processPackages [kanu]: Downloading https://files.pythonhosted.org/packages/00/5c/3723f36ed44e84b51fa5ce21d0f86f5dc9515ac6ce7174c204b8a1506fb3/kanu-0.2.0.tar.gz
+[2023-05-27 00:25:40] INFO root fetch - processPackages [kanu]: executing diffoscope
+[2023-05-27 00:25:40] INFO root fetch - processPackages [kanu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kanu-0.1.0.tar.gz tmp/kanu-0.2.0.tar.gz --markdown 20230527/k/kanu/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-27 00:25:40] INFO root fetch - main [MainThread]: End processing [torchbones]: success
+[2023-05-27 00:25:41] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
+[2023-05-27 00:25:41] INFO root fetch - main [MainThread]: End processing [kanu]: success
+[2023-05-27 00:25:41] INFO root fetch - main [MainThread]: End processing [neon-speech]: success
+[2023-05-27 00:25:41] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
+[2023-05-27 00:25:41] INFO root fetch - main [MainThread]: Store serial: [18269388]
