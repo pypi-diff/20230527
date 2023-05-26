@@ -874,3 +874,57 @@
 [2023-05-27 01:45:14] INFO root fetch - main [MainThread]: End processing [datasette-sqlite-vss]: success
 [2023-05-27 01:45:53] INFO root fetch - main [MainThread]: End processing [sqlite-vss]: success
 [2023-05-27 01:45:53] INFO root fetch - main [MainThread]: Store serial: [18269897]
+[2023-05-27 01:50:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269897]
+[2023-05-27 01:51:02] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-27 01:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: su6
+[2023-05-27 01:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ccxt
+[2023-05-27 01:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: su6
+[2023-05-27 01:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flatulent
+[2023-05-27 01:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sorcerun
+[2023-05-27 01:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: veotos-transform
+[2023-05-27 01:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bs4-web-scraper
+[2023-05-27 01:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: streamlit-reveal-slides
+[2023-05-27 01:51:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: neon-enclosure
+[2023-05-27 01:51:02] INFO root fetch - processPackages [veotos-transform]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 01:51:02] INFO root fetch - processPackages [neon-enclosure]: New version: [1.5.0] Old Version: [1.4.3a2]
+[2023-05-27 01:51:02] INFO root fetch - processPackages [su6]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 01:51:02] INFO root fetch - processPackages [sorcerun]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-27 01:51:02] WARNING root fetch - processPackages [bs4-web-scraper]: Skipping, unable to determine old version
+[2023-05-27 01:51:02] INFO root fetch - processPackages [su6]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 01:51:02] WARNING root fetch - processPackages [flatulent]: Skipping, unable to determine old version
+[2023-05-27 01:51:02] INFO root fetch - main [MainThread]: End processing [bs4-web-scraper] error
+[2023-05-27 01:51:02] INFO root fetch - processPackages [streamlit-reveal-slides]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-27 01:51:02] INFO root fetch - main [MainThread]: End processing [flatulent] error
+[2023-05-27 01:51:02] INFO root fetch - processPackages [ccxt]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-05-27 01:51:02] INFO root fetch - processPackages [su6]: Downloading https://files.pythonhosted.org/packages/fa/e9/10c0e6f7f4cf60310ffca91d4a827e9ae02718272b9786dc8abfdb8627f0/su6-0.1.1.tar.gz
+[2023-05-27 01:51:02] INFO root fetch - processPackages [su6]: Downloading https://files.pythonhosted.org/packages/fa/e9/10c0e6f7f4cf60310ffca91d4a827e9ae02718272b9786dc8abfdb8627f0/su6-0.1.1.tar.gz
+[2023-05-27 01:51:02] INFO root fetch - processPackages [veotos-transform]: Downloading https://files.pythonhosted.org/packages/e2/0c/b10e5a7f2cbdc673c60a0111cd73ec1808039318fb6827f285334f5f19b3/veotos_transform-0.1.1.tar.gz
+[2023-05-27 01:51:02] INFO root fetch - processPackages [sorcerun]: Downloading https://files.pythonhosted.org/packages/cf/ce/d1b7bd301dbab53e39c6290402428ef3e82281b051983a9b7cecb41cb6ee/sorcerun-0.2.2.tar.gz
+[2023-05-27 01:51:02] INFO root fetch - processPackages [neon-enclosure]: Downloading https://files.pythonhosted.org/packages/b2/69/46f729b3caaebb2d3b5c9ea8f89ed3c381f456db5064f418e169a5af63fb/neon_enclosure-1.5.0-py3-none-any.whl
+[2023-05-27 01:51:02] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-05-27 01:51:02] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.1.8.tar.gz tmp/ccxt-3.1.9.tar.gz --markdown 20230527/c/ccxt/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-05-27 01:51:03] INFO root fetch - processPackages [veotos-transform]: Downloading https://files.pythonhosted.org/packages/7d/b3/a4e566964992bd2f9a5c9d325a709985333516e5a9c03ac1ce78f78a5bd0/veotos_transform-0.1.2.tar.gz
+[2023-05-27 01:51:03] INFO root fetch - processPackages [streamlit-reveal-slides]: Downloading https://files.pythonhosted.org/packages/5d/a5/71ad032ff4a5878c41b770f0e82596596a49cc081fc3af22ebe26dabb802/streamlit-reveal-slides-0.1.4.tar.gz
+[2023-05-27 01:51:03] INFO root fetch - processPackages [su6]: Downloading https://files.pythonhosted.org/packages/f5/fd/5dc6625964e2124616891d4fccaa151944375d95343c891e02adc60202d6/su6-0.1.2.tar.gz
+[2023-05-27 01:51:03] INFO root fetch - processPackages [su6]: Downloading https://files.pythonhosted.org/packages/f5/fd/5dc6625964e2124616891d4fccaa151944375d95343c891e02adc60202d6/su6-0.1.2.tar.gz
+[2023-05-27 01:51:03] INFO root fetch - processPackages [neon-enclosure]: executing diffoscope
+[2023-05-27 01:51:03] INFO root fetch - processPackages [neon-enclosure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_enclosure-1.4.3a2-py3-none-any.whl.zip tmp/neon_enclosure-1.5.0-py3-none-any.whl.zip --markdown 20230527/n/neon-enclosure/1.4.3a2-1.5.0/diff.md --exclude *.pyd
+[2023-05-27 01:51:03] INFO root fetch - processPackages [sorcerun]: Downloading https://files.pythonhosted.org/packages/f1/91/6f1e7953a9e6680b6630c66972391f98a8e48701faebca62cf3304ff6545/sorcerun-0.2.3.tar.gz
+[2023-05-27 01:51:03] INFO root fetch - processPackages [veotos-transform]: executing diffoscope
+[2023-05-27 01:51:03] INFO root fetch - processPackages [veotos-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veotos_transform-0.1.1.tar.gz tmp/veotos_transform-0.1.2.tar.gz --markdown 20230527/v/veotos-transform/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 01:51:03] INFO root fetch - processPackages [su6]: executing diffoscope
+[2023-05-27 01:51:03] INFO root fetch - processPackages [su6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/su6-0.1.1.tar.gz tmp/su6-0.1.2.tar.gz --markdown 20230527/s/su6/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 01:51:03] INFO root fetch - processPackages [su6]: executing diffoscope
+[2023-05-27 01:51:03] INFO root fetch - processPackages [su6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/su6-0.1.1.tar.gz tmp/su6-0.1.2.tar.gz --markdown 20230527/s/su6/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 01:51:03] INFO root fetch - processPackages [sorcerun]: executing diffoscope
+[2023-05-27 01:51:03] INFO root fetch - processPackages [sorcerun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sorcerun-0.2.2.tar.gz tmp/sorcerun-0.2.3.tar.gz --markdown 20230527/s/sorcerun/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-27 01:51:03] INFO root fetch - processPackages [streamlit-reveal-slides]: executing diffoscope
+[2023-05-27 01:51:03] INFO root fetch - processPackages [streamlit-reveal-slides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-reveal-slides-0.1.3.tar.gz tmp/streamlit-reveal-slides-0.1.4.tar.gz --markdown 20230527/s/streamlit-reveal-slides/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-27 01:51:04] INFO root fetch - main [MainThread]: End processing [veotos-transform]: success
+[2023-05-27 01:51:04] INFO root fetch - main [MainThread]: End processing [neon-enclosure]: success
+[2023-05-27 01:51:04] INFO root fetch - main [MainThread]: End processing [sorcerun]: success
+[2023-05-27 01:51:05] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides]: success
+[2023-05-27 01:51:09] INFO root fetch - main [MainThread]: End processing [su6]: success
+[2023-05-27 01:51:11] INFO root fetch - main [MainThread]: End processing [su6]: success
+[2023-05-27 01:51:13] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-05-27 01:51:13] INFO root fetch - main [MainThread]: Store serial: [18269927]
