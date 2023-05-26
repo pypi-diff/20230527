@@ -247,3 +247,34 @@
 [2023-05-27 00:25:41] INFO root fetch - main [MainThread]: End processing [neon-speech]: success
 [2023-05-27 00:25:41] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
 [2023-05-27 00:25:41] INFO root fetch - main [MainThread]: Store serial: [18269388]
+[2023-05-27 00:30:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269388]
+[2023-05-27 00:30:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 00:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Aspose.Slides
+[2023-05-27 00:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlflow-tmp
+[2023-05-27 00:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: johnsnowlabs-for-databricks-tmp
+[2023-05-27 00:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prodvana
+[2023-05-27 00:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigraph-schema
+[2023-05-27 00:30:49] INFO root fetch - processPackages [mlflow-tmp]: New version: [2.3.3.dev0] Old Version: [2.2.9]
+[2023-05-27 00:30:49] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: New version: [4.4.9] Old Version: [4.4.8]
+[2023-05-27 00:30:49] INFO root fetch - processPackages [Aspose.Slides]: New version: [23.5.0] Old Version: [23.4.0]
+[2023-05-27 00:30:50] INFO root fetch - processPackages [prodvana]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-27 00:30:50] INFO root fetch - processPackages [bigraph-schema]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 00:30:50] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: executing diffoscope
+[2023-05-27 00:30:50] INFO root fetch - processPackages [johnsnowlabs-for-databricks-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnsnowlabs_for_databricks_tmp-4.4.8.tar.gz tmp/johnsnowlabs_for_databricks_tmp-4.4.9.tar.gz --markdown 20230527/j/johnsnowlabs-for-databricks-tmp/4.4.8-4.4.9/diff.md --exclude *.pyd
+[2023-05-27 00:30:50] INFO root fetch - processPackages [mlflow-tmp]: executing diffoscope
+[2023-05-27 00:30:50] INFO root fetch - processPackages [mlflow-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_tmp-2.2.9.tar.gz tmp/mlflow_tmp-2.3.3.dev0.tar.gz --markdown 20230527/m/mlflow-tmp/2.2.9-2.3.3.dev0/diff.md --exclude *.pyd
+[2023-05-27 00:30:50] INFO root fetch - processPackages [Aspose.Slides]: Downloading https://files.pythonhosted.org/packages/40/d4/8a4b530283fdac56a3e91204416a6af8ef718ec12450759acc4408ad231c/Aspose.Slides-23.4.0-py3-none-win_amd64.whl
+[2023-05-27 00:30:50] WARNING root fetch - processPackages [Aspose.Slides]: Skipping package: exceeds size limit 56889754>=10485760
+[2023-05-27 00:30:50] INFO root fetch - main [MainThread]: End processing [Aspose.Slides] error
+[2023-05-27 00:30:50] INFO root fetch - processPackages [bigraph-schema]: Downloading https://files.pythonhosted.org/packages/df/8e/61432e7e2966e9e03a0109b78f810b877d0a4243c7fc3e9379a460c0dbc4/bigraph-schema-0.0.8.tar.gz
+[2023-05-27 00:30:50] INFO root fetch - processPackages [prodvana]: Downloading https://files.pythonhosted.org/packages/81/37/13a099a381181d222ed96e2ee58d3f1044a1674c055f623d900acde053a7/prodvana-0.1.5.tar.gz
+[2023-05-27 00:30:50] INFO root fetch - processPackages [prodvana]: executing diffoscope
+[2023-05-27 00:30:50] INFO root fetch - processPackages [prodvana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prodvana-0.1.4.tar.gz tmp/prodvana-0.1.5.tar.gz --markdown 20230527/p/prodvana/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-27 00:30:50] INFO root fetch - processPackages [bigraph-schema]: Downloading https://files.pythonhosted.org/packages/18/e5/fff625d433358f1bf734149e805b1d565b616ead4a146f56f4807198801e/bigraph-schema-0.0.9.tar.gz
+[2023-05-27 00:30:50] INFO root fetch - processPackages [bigraph-schema]: executing diffoscope
+[2023-05-27 00:30:50] INFO root fetch - processPackages [bigraph-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigraph-schema-0.0.8.tar.gz tmp/bigraph-schema-0.0.9.tar.gz --markdown 20230527/b/bigraph-schema/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 00:30:51] INFO root fetch - main [MainThread]: End processing [johnsnowlabs-for-databricks-tmp]: success
+[2023-05-27 00:30:53] INFO root fetch - main [MainThread]: End processing [prodvana]: success
+[2023-05-27 00:30:54] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
+[2023-05-27 00:31:42] INFO root fetch - main [MainThread]: End processing [bigraph-schema]: success
+[2023-05-27 00:31:42] INFO root fetch - main [MainThread]: Store serial: [18269408]
