@@ -626,3 +626,40 @@
 [2023-05-27 01:03:23] INFO root fetch - main [MainThread]: End processing [cirq-google]: success
 [2023-05-27 01:03:39] INFO root fetch - main [MainThread]: End processing [cirq-core]: success
 [2023-05-27 01:03:39] INFO root fetch - main [MainThread]: Store serial: [18269597]
+[2023-05-27 01:08:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269597]
+[2023-05-27 01:08:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 01:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: heaserver-folders-aws-s3
+[2023-05-27 01:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flwr-nightly
+[2023-05-27 01:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: evaics
+[2023-05-27 01:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: latch
+[2023-05-27 01:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stefutils
+[2023-05-27 01:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dscan-api-client
+[2023-05-27 01:08:48] INFO root fetch - processPackages [dscan-api-client]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-27 01:08:48] INFO root fetch - processPackages [stefutils]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-05-27 01:08:48] INFO root fetch - processPackages [evaics]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-27 01:08:48] INFO root fetch - processPackages [heaserver-folders-aws-s3]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-27 01:08:48] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-05-27 01:08:48] INFO root fetch - processPackages [flwr-nightly]: New version: [1.5.0.dev20230526] Old Version: [1.5.0.dev20230525]
+[2023-05-27 01:08:48] INFO root fetch - processPackages [stefutils]: executing diffoscope
+[2023-05-27 01:08:48] INFO root fetch - processPackages [stefutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stefutils-0.8.2.tar.gz tmp/stefutils-0.9.0.tar.gz --markdown 20230527/s/stefutils/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 01:08:48] INFO root fetch - processPackages [heaserver-folders-aws-s3]: executing diffoscope
+[2023-05-27 01:08:48] INFO root fetch - processPackages [heaserver-folders-aws-s3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-folders-aws-s3-1.0.0a8.tar.gz tmp/heaserver-folders-aws-s3-1.0.0a9.tar.gz --markdown 20230527/h/heaserver-folders-aws-s3/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-27 01:08:48] INFO root fetch - processPackages [latch]: executing diffoscope
+[2023-05-27 01:08:48] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20230527/l/latch/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-05-27 01:08:48] INFO root fetch - processPackages [evaics]: Downloading https://files.pythonhosted.org/packages/9d/bf/f3844657b61c1256d7b67f63efeeea1a39a7c4403e38a20ca8dbad0b3967/evaics-0.2.9.tar.gz
+[2023-05-27 01:08:48] INFO root fetch - processPackages [evaics]: executing diffoscope
+[2023-05-27 01:08:48] INFO root fetch - processPackages [evaics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evaics-0.2.8.tar.gz tmp/evaics-0.2.9.tar.gz --markdown 20230527/e/evaics/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-27 01:08:48] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/8f/1a/06490d798d950249a72c489c97baf02d4bf4e5912b9c0d90f6725ed5463a/flwr_nightly-1.5.0.dev20230525.tar.gz
+[2023-05-27 01:08:48] INFO root fetch - processPackages [dscan-api-client]: Downloading https://files.pythonhosted.org/packages/a9/05/bd3df1b8fff38a17f233cca4b26dcb9773e6316212dc1d57b109a4ab3838/dscan_api_client-1.0.2-py3-none-any.whl
+[2023-05-27 01:08:48] INFO root fetch - processPackages [dscan-api-client]: executing diffoscope
+[2023-05-27 01:08:48] INFO root fetch - processPackages [dscan-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscan_api_client-1.0.1-py3-none-any.whl.zip tmp/dscan_api_client-1.0.2-py3-none-any.whl.zip --markdown 20230527/d/dscan-api-client/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-27 01:08:48] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/80/f9/5b48a35184231484f282b0e7d7ad104151cd38d0bc775f5427ca92838f28/flwr_nightly-1.5.0.dev20230526.tar.gz
+[2023-05-27 01:08:48] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2023-05-27 01:08:48] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.5.0.dev20230525.tar.gz tmp/flwr_nightly-1.5.0.dev20230526.tar.gz --markdown 20230527/f/flwr-nightly/1.5.0.dev20230525-1.5.0.dev20230526/diff.md --exclude *.pyd
+[2023-05-27 01:08:49] INFO root fetch - main [MainThread]: End processing [heaserver-folders-aws-s3]: success
+[2023-05-27 01:08:49] INFO root fetch - main [MainThread]: End processing [evaics]: success
+[2023-05-27 01:08:49] INFO root fetch - main [MainThread]: End processing [stefutils]: success
+[2023-05-27 01:08:49] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2023-05-27 01:08:49] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
+[2023-05-27 01:08:50] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2023-05-27 01:08:50] INFO root fetch - main [MainThread]: Store serial: [18269612]
