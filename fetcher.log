@@ -278,3 +278,44 @@
 [2023-05-27 00:30:54] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
 [2023-05-27 00:31:42] INFO root fetch - main [MainThread]: End processing [bigraph-schema]: success
 [2023-05-27 00:31:42] INFO root fetch - main [MainThread]: Store serial: [18269408]
+[2023-05-27 00:36:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269408]
+[2023-05-27 00:36:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 00:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cybernews
+[2023-05-27 00:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scovie
+[2023-05-27 00:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: solar-data-tools
+[2023-05-27 00:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: langkit
+[2023-05-27 00:36:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hassle
+[2023-05-27 00:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pycoare
+[2023-05-27 00:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyEasyML
+[2023-05-27 00:36:51] INFO root fetch - processPackages [scovie]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-27 00:36:51] INFO root fetch - processPackages [langkit]: New version: [0.0.1b4] Old Version: [0.0.1b3]
+[2023-05-27 00:36:51] INFO root fetch - processPackages [cybernews]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-27 00:36:51] INFO root fetch - processPackages [hassle]: New version: [2.8.5] Old Version: [2.8.4]
+[2023-05-27 00:36:51] INFO root fetch - processPackages [solar-data-tools]: New version: [0.8.0] Old Version: [0.7.1]
+[2023-05-27 00:36:51] INFO root fetch - processPackages [pycoare]: New version: [2023.4a5] Old Version: [2023.4a4]
+[2023-05-27 00:36:51] WARNING root fetch - processPackages [pyEasyML]: Skipping, unable to determine old version
+[2023-05-27 00:36:51] INFO root fetch - main [MainThread]: End processing [pyEasyML] error
+[2023-05-27 00:36:51] INFO root fetch - processPackages [scovie]: Downloading https://files.pythonhosted.org/packages/d9/25/ebb56a95d9fc2d458f799cbd93b976002b5c3de836842af111aeb270f0b0/scovie-0.0.3.tar.gz
+[2023-05-27 00:36:51] WARNING root fetch - processPackages [scovie]: Skipping package: exceeds size limit 26707090>=10485760
+[2023-05-27 00:36:51] INFO root fetch - processPackages [cybernews]: Downloading https://files.pythonhosted.org/packages/82/cb/41f28ad793458d80cebc7eb4d0c2813b06e29f369f85072298cdbf9dea9d/cybernews-1.1.1.tar.gz
+[2023-05-27 00:36:51] INFO root fetch - main [MainThread]: End processing [scovie] error
+[2023-05-27 00:36:51] INFO root fetch - processPackages [pycoare]: Downloading https://files.pythonhosted.org/packages/de/4f/8d8aef3dc34d331e96e5232a9294b285af4f22845ade5fa7a197aae23a44/pycoare-2023.4a4.tar.gz
+[2023-05-27 00:36:51] INFO root fetch - processPackages [solar-data-tools]: Downloading https://files.pythonhosted.org/packages/0f/b0/bf5d6c8c9d484e6e5da4787eb7dfac6d6d1ededd2abf6db6c7212d919afb/solar-data-tools-0.7.1.tar.gz
+[2023-05-27 00:36:51] WARNING root fetch - processPackages [solar-data-tools]: Skipping package: exceeds size limit 76173639>=10485760
+[2023-05-27 00:36:51] INFO root fetch - main [MainThread]: End processing [solar-data-tools] error
+[2023-05-27 00:36:51] INFO root fetch - processPackages [langkit]: Downloading https://files.pythonhosted.org/packages/71/d2/c046953add27008b6ae506eece09cc40ad1ffbe9f3e566d79fc92ac1cbbd/langkit-0.0.1b4.tar.gz
+[2023-05-27 00:36:51] INFO root fetch - processPackages [hassle]: executing diffoscope
+[2023-05-27 00:36:51] INFO root fetch - processPackages [hassle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hassle-2.8.4.tar.gz tmp/hassle-2.8.5.tar.gz --markdown 20230527/h/hassle/2.8.4-2.8.5/diff.md --exclude *.pyd
+[2023-05-27 00:36:51] INFO root fetch - processPackages [pycoare]: Downloading https://files.pythonhosted.org/packages/4f/52/c3815e52c302b22964c753f8d746161f6a4a47cd9bda60e4403b98a73e39/pycoare-2023.4a5.tar.gz
+[2023-05-27 00:36:51] INFO root fetch - processPackages [langkit]: executing diffoscope
+[2023-05-27 00:36:51] INFO root fetch - processPackages [langkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langkit-0.0.1b3.tar.gz tmp/langkit-0.0.1b4.tar.gz --markdown 20230527/l/langkit/0.0.1b3-0.0.1b4/diff.md --exclude *.pyd
+[2023-05-27 00:36:51] INFO root fetch - processPackages [cybernews]: Downloading https://files.pythonhosted.org/packages/12/55/fce393111885a861cfe2d11e2d9dd90958994e33ef138d848f561deb2f9e/cybernews-1.1.2.tar.gz
+[2023-05-27 00:36:51] INFO root fetch - processPackages [pycoare]: executing diffoscope
+[2023-05-27 00:36:51] INFO root fetch - processPackages [pycoare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycoare-2023.4a4.tar.gz tmp/pycoare-2023.4a5.tar.gz --markdown 20230527/p/pycoare/2023.4a4-2023.4a5/diff.md --exclude *.pyd
+[2023-05-27 00:36:51] INFO root fetch - processPackages [cybernews]: executing diffoscope
+[2023-05-27 00:36:51] INFO root fetch - processPackages [cybernews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybernews-1.1.1.tar.gz tmp/cybernews-1.1.2.tar.gz --markdown 20230527/c/cybernews/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-27 00:36:52] INFO root fetch - main [MainThread]: End processing [cybernews]: success
+[2023-05-27 00:36:52] INFO root fetch - main [MainThread]: End processing [hassle]: success
+[2023-05-27 00:36:52] INFO root fetch - main [MainThread]: End processing [langkit]: success
+[2023-05-27 00:36:52] INFO root fetch - main [MainThread]: End processing [pycoare]: success
+[2023-05-27 00:36:52] INFO root fetch - main [MainThread]: Store serial: [18269431]
