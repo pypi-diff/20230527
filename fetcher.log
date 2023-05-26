@@ -769,3 +769,21 @@
 [2023-05-27 01:24:26] INFO root fetch - main [MainThread]: End processing [runway]: success
 [2023-05-27 01:24:29] INFO root fetch - main [MainThread]: End processing [pipen-board]: success
 [2023-05-27 01:24:29] INFO root fetch - main [MainThread]: Store serial: [18269724]
+[2023-05-27 01:29:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269724]
+[2023-05-27 01:29:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-27 01:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bfg9000
+[2023-05-27 01:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arithmetica-py
+[2023-05-27 01:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hl7conv2
+[2023-05-27 01:29:38] INFO root fetch - processPackages [bfg9000]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-27 01:29:38] INFO root fetch - processPackages [arithmetica-py]: New version: [1.0.208] Old Version: [1.0.207]
+[2023-05-27 01:29:38] WARNING root fetch - processPackages [hl7conv2]: Skipping, unable to determine old version
+[2023-05-27 01:29:38] INFO root fetch - main [MainThread]: End processing [hl7conv2] error
+[2023-05-27 01:29:38] INFO root fetch - processPackages [arithmetica-py]: Downloading https://files.pythonhosted.org/packages/64/c4/79a875a8c8893e41aa3ad8a158f7470763368f40dfa892383e3373414726/arithmetica-py-1.0.208.tar.gz
+[2023-05-27 01:29:39] INFO root fetch - processPackages [bfg9000]: Downloading https://files.pythonhosted.org/packages/66/72/16e6864e2f239cb322ce79ac10159936869a6b6874727e47640937e9a3e6/bfg9000-0.7.1.tar.gz
+[2023-05-27 01:29:39] INFO root fetch - processPackages [arithmetica-py]: executing diffoscope
+[2023-05-27 01:29:39] INFO root fetch - processPackages [arithmetica-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arithmetica-py-1.0.207.tar.gz tmp/arithmetica-py-1.0.208.tar.gz --markdown 20230527/a/arithmetica-py/1.0.207-1.0.208/diff.md --exclude *.pyd
+[2023-05-27 01:29:39] INFO root fetch - processPackages [bfg9000]: executing diffoscope
+[2023-05-27 01:29:39] INFO root fetch - processPackages [bfg9000]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bfg9000-0.7.0.tar.gz tmp/bfg9000-0.7.1.tar.gz --markdown 20230527/b/bfg9000/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-27 01:29:40] INFO root fetch - main [MainThread]: End processing [arithmetica-py]: success
+[2023-05-27 01:29:40] INFO root fetch - main [MainThread]: End processing [bfg9000]: success
+[2023-05-27 01:29:40] INFO root fetch - main [MainThread]: Store serial: [18269746]
