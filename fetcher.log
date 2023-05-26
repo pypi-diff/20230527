@@ -928,3 +928,28 @@
 [2023-05-27 01:51:11] INFO root fetch - main [MainThread]: End processing [su6]: success
 [2023-05-27 01:51:13] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-05-27 01:51:13] INFO root fetch - main [MainThread]: Store serial: [18269927]
+[2023-05-27 01:56:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269927]
+[2023-05-27 01:56:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 01:56:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wtisdk
+[2023-05-27 01:56:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cli-test-helpers
+[2023-05-27 01:56:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dtbase
+[2023-05-27 01:56:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unitsnet-py
+[2023-05-27 01:56:23] INFO root fetch - processPackages [unitsnet-py]: New version: [0.1.36] Old Version: [0.1.35]
+[2023-05-27 01:56:23] WARNING root fetch - processPackages [dtbase]: Skipping, unable to determine old version
+[2023-05-27 01:56:23] INFO root fetch - processPackages [wtisdk]: New version: [1.5.1] Old Version: [1.5]
+[2023-05-27 01:56:23] INFO root fetch - main [MainThread]: End processing [dtbase] error
+[2023-05-27 01:56:23] INFO root fetch - processPackages [cli-test-helpers]: New version: [3.3.0] Old Version: [3.2.0]
+[2023-05-27 01:56:23] INFO root fetch - processPackages [cli-test-helpers]: Downloading https://files.pythonhosted.org/packages/03/f6/39d3452e2964cadc922c584cf9a0eff766c79275a03cef5c1f099e208e13/cli-test-helpers-3.2.0.tar.gz
+[2023-05-27 01:56:23] INFO root fetch - processPackages [wtisdk]: Downloading https://files.pythonhosted.org/packages/e7/0a/1b72955f64022cd15cbb26fca296580785b2d88ddcaf33fac3c8b803793c/wtisdk-1.5.1.tar.gz
+[2023-05-27 01:56:23] INFO root fetch - processPackages [unitsnet-py]: Downloading https://files.pythonhosted.org/packages/f2/01/a857831707dfe0c7e500aed0208b41349a43c59ff4adf82c5f3b42f3b2ed/unitsnet-py-0.1.36.tar.gz
+[2023-05-27 01:56:23] INFO root fetch - processPackages [wtisdk]: executing diffoscope
+[2023-05-27 01:56:23] INFO root fetch - processPackages [wtisdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wtisdk-1.5.tar.gz tmp/wtisdk-1.5.1.tar.gz --markdown 20230527/w/wtisdk/1.5-1.5.1/diff.md --exclude *.pyd
+[2023-05-27 01:56:23] INFO root fetch - processPackages [unitsnet-py]: executing diffoscope
+[2023-05-27 01:56:23] INFO root fetch - processPackages [unitsnet-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unitsnet-py-0.1.35.tar.gz tmp/unitsnet-py-0.1.36.tar.gz --markdown 20230527/u/unitsnet-py/0.1.35-0.1.36/diff.md --exclude *.pyd
+[2023-05-27 01:56:23] INFO root fetch - processPackages [cli-test-helpers]: Downloading https://files.pythonhosted.org/packages/75/76/3597354396f2eacdeb68fba1bdac4182e98e6447feccbe8c310f4ce9dd24/cli-test-helpers-3.3.0.tar.gz
+[2023-05-27 01:56:23] INFO root fetch - processPackages [cli-test-helpers]: executing diffoscope
+[2023-05-27 01:56:23] INFO root fetch - processPackages [cli-test-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli-test-helpers-3.2.0.tar.gz tmp/cli-test-helpers-3.3.0.tar.gz --markdown 20230527/c/cli-test-helpers/3.2.0-3.3.0/diff.md --exclude *.pyd
+[2023-05-27 01:56:24] INFO root fetch - main [MainThread]: End processing [wtisdk]: success
+[2023-05-27 01:56:24] INFO root fetch - main [MainThread]: End processing [cli-test-helpers]: success
+[2023-05-27 01:56:25] INFO root fetch - main [MainThread]: End processing [unitsnet-py]: success
+[2023-05-27 01:56:25] INFO root fetch - main [MainThread]: Store serial: [18269941]
