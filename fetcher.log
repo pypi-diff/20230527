@@ -835,3 +835,42 @@
 [2023-05-27 01:40:02] INFO root fetch - main [MainThread]: End processing [vid2info]: success
 [2023-05-27 01:40:02] INFO root fetch - main [MainThread]: End processing [littlefs-python]: success
 [2023-05-27 01:40:02] INFO root fetch - main [MainThread]: Store serial: [18269865]
+[2023-05-27 01:45:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269865]
+[2023-05-27 01:45:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 01:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: su6
+[2023-05-27 01:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wtisdk
+[2023-05-27 01:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: latch
+[2023-05-27 01:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: shellcrafter
+[2023-05-27 01:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datasette-sqlite-vss
+[2023-05-27 01:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sqlite-vss
+[2023-05-27 01:45:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: veotos-transform
+[2023-05-27 01:45:12] INFO root fetch - processPackages [sqlite-vss]: New version: [0.1.1a8] Old Version: [0.1.1a7]
+[2023-05-27 01:45:12] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-05-27 01:45:12] WARNING root fetch - processPackages [su6]: Skipping, unable to determine old version
+[2023-05-27 01:45:12] INFO root fetch - main [MainThread]: End processing [su6] error
+[2023-05-27 01:45:12] INFO root fetch - processPackages [wtisdk]: New version: [1.5] Old Version: [1.4]
+[2023-05-27 01:45:12] INFO root fetch - processPackages [shellcrafter]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-27 01:45:12] WARNING root fetch - processPackages [veotos-transform]: Skipping, unable to determine old version
+[2023-05-27 01:45:12] INFO root fetch - main [MainThread]: End processing [veotos-transform] error
+[2023-05-27 01:45:12] INFO root fetch - processPackages [datasette-sqlite-vss]: New version: [0.1.1a8] Old Version: [0.1.1a7]
+[2023-05-27 01:45:12] INFO root fetch - processPackages [latch]: executing diffoscope
+[2023-05-27 01:45:12] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20230527/l/latch/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-05-27 01:45:12] INFO root fetch - processPackages [sqlite-vss]: Downloading https://files.pythonhosted.org/packages/e7/cf/53c1a535e74aee1d0bbc6e254beff5830246d6e018502b22b07feef345b8/sqlite_vss-0.1.1a7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl
+[2023-05-27 01:45:13] INFO root fetch - processPackages [wtisdk]: Downloading https://files.pythonhosted.org/packages/b7/df/d0efbc146f96d39ef94bbf4317f077a72ba7256f176e1f2494731bf33721/wtisdk-1.5.tar.gz
+[2023-05-27 01:45:13] INFO root fetch - processPackages [datasette-sqlite-vss]: Downloading https://files.pythonhosted.org/packages/57/a7/bcc845d97e750128047c28b0340512be9eb28327c47bd80f3df6ffa3dc25/datasette_sqlite_vss-0.1.1a7-py3-none-any.whl
+[2023-05-27 01:45:13] INFO root fetch - processPackages [wtisdk]: executing diffoscope
+[2023-05-27 01:45:13] INFO root fetch - processPackages [wtisdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wtisdk-1.4.tar.gz tmp/wtisdk-1.5.tar.gz --markdown 20230527/w/wtisdk/1.4-1.5/diff.md --exclude *.pyd
+[2023-05-27 01:45:13] INFO root fetch - processPackages [shellcrafter]: executing diffoscope
+[2023-05-27 01:45:13] INFO root fetch - processPackages [shellcrafter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellcrafter-1.0.8.tar.gz tmp/shellcrafter-1.0.9.tar.gz --markdown 20230527/s/shellcrafter/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-27 01:45:13] INFO root fetch - processPackages [datasette-sqlite-vss]: Downloading https://files.pythonhosted.org/packages/6b/c9/46cbc03e6120a6d031ef47d3764f65fae9e0925e556486102f15dea9a2e7/datasette_sqlite_vss-0.1.1a8-py3-none-any.whl
+[2023-05-27 01:45:13] INFO root fetch - processPackages [datasette-sqlite-vss]: executing diffoscope
+[2023-05-27 01:45:13] INFO root fetch - processPackages [datasette-sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_sqlite_vss-0.1.1a7-py3-none-any.whl.zip tmp/datasette_sqlite_vss-0.1.1a8-py3-none-any.whl.zip --markdown 20230527/d/datasette-sqlite-vss/0.1.1a7-0.1.1a8/diff.md --exclude *.pyd
+[2023-05-27 01:45:13] INFO root fetch - processPackages [sqlite-vss]: Downloading https://files.pythonhosted.org/packages/51/63/9dd1545bb1d137578652a5f27284866e142c23a512c823ced396eb35870b/sqlite_vss-0.1.1a8-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl
+[2023-05-27 01:45:14] INFO root fetch - main [MainThread]: End processing [wtisdk]: success
+[2023-05-27 01:45:14] INFO root fetch - main [MainThread]: End processing [shellcrafter]: success
+[2023-05-27 01:45:14] INFO root fetch - processPackages [sqlite-vss]: executing diffoscope
+[2023-05-27 01:45:14] INFO root fetch - processPackages [sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_vss-0.1.1a7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip tmp/sqlite_vss-0.1.1a8-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip --markdown 20230527/s/sqlite-vss/0.1.1a7-0.1.1a8/diff.md --exclude *.pyd
+[2023-05-27 01:45:14] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2023-05-27 01:45:14] INFO root fetch - main [MainThread]: End processing [datasette-sqlite-vss]: success
+[2023-05-27 01:45:53] INFO root fetch - main [MainThread]: End processing [sqlite-vss]: success
+[2023-05-27 01:45:53] INFO root fetch - main [MainThread]: Store serial: [18269897]
