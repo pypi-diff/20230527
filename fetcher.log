@@ -354,3 +354,74 @@
 [2023-05-27 00:42:04] INFO root fetch - main [MainThread]: End processing [latch]: success
 [2023-05-27 00:42:29] INFO root fetch - main [MainThread]: End processing [music-assistant-frontend]: success
 [2023-05-27 00:42:29] INFO root fetch - main [MainThread]: Store serial: [18269443]
+[2023-05-27 00:47:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269443]
+[2023-05-27 00:47:38] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-27 00:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: makenote
+[2023-05-27 00:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flowtask
+[2023-05-27 00:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trame-pvui
+[2023-05-27 00:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: enzyme-jax
+[2023-05-27 00:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Optimized-Kalman-Filter
+[2023-05-27 00:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: faucetconfrpc
+[2023-05-27 00:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gitbetter
+[2023-05-27 00:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rsp-jupyter-extensions
+[2023-05-27 00:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: market-engine
+[2023-05-27 00:47:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: quivr
+[2023-05-27 00:47:38] INFO root fetch - processPackages [makenote]: New version: [1.5] Old Version: [1.3]
+[2023-05-27 00:47:38] INFO root fetch - processPackages [flowtask]: New version: [4.3.9] Old Version: [4.3.8]
+[2023-05-27 00:47:38] INFO root fetch - processPackages [gitbetter]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-27 00:47:38] INFO root fetch - processPackages [Optimized-Kalman-Filter]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-27 00:47:38] INFO root fetch - processPackages [quivr]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-27 00:47:38] WARNING root fetch - processPackages [enzyme-jax]: Skipping, unable to determine old version
+[2023-05-27 00:47:38] INFO root fetch - processPackages [enzyme-jax]: Start processing: EXOSIMS
+[2023-05-27 00:47:38] INFO root fetch - main [MainThread]: End processing [enzyme-jax] error
+[2023-05-27 00:47:38] WARNING root fetch - processPackages [trame-pvui]: Skipping, unable to determine old version
+[2023-05-27 00:47:38] INFO root fetch - processPackages [market-engine]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 00:47:38] INFO root fetch - processPackages [trame-pvui]: Start processing: edgedb
+[2023-05-27 00:47:38] INFO root fetch - main [MainThread]: End processing [trame-pvui] error
+[2023-05-27 00:47:38] INFO root fetch - processPackages [faucetconfrpc]: New version: [0.9] Old Version: [0.8]
+[2023-05-27 00:47:38] INFO root fetch - processPackages [rsp-jupyter-extensions]: New version: [0.8.3] Old Version: [0.8.1]
+[2023-05-27 00:47:38] INFO root fetch - processPackages [edgedb]: New version: [2.0.0a1] Old Version: [1.4.0]
+[2023-05-27 00:47:38] INFO root fetch - processPackages [EXOSIMS]: New version: [3.1.4] Old Version: [3.1.3]
+[2023-05-27 00:47:38] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-05-27 00:47:38] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/flowtask-4.3.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230527/f/flowtask/4.3.8-4.3.9/diff.md --exclude *.pyd
+[2023-05-27 00:47:38] INFO root fetch - processPackages [quivr]: Downloading https://files.pythonhosted.org/packages/5b/0d/96ff679f3f8fd779a1483c15327a4f030218b3c96d013917d26f6b38ceee/quivr-0.3.2.tar.gz
+[2023-05-27 00:47:38] INFO root fetch - processPackages [Optimized-Kalman-Filter]: Downloading https://files.pythonhosted.org/packages/20/50/2e9827ba8e9ac1e930314639186013bc9bd836d707675c498223267fa6e2/Optimized%20Kalman%20Filter-0.0.6.tar.gz
+[2023-05-27 00:47:38] INFO root fetch - processPackages [faucetconfrpc]: Downloading https://files.pythonhosted.org/packages/04/ab/9211c7bc1a14ae84b63427b94b9eff1fa292cf14afa607f6264bd6631dbf/faucetconfrpc-0.8.tar.gz
+[2023-05-27 00:47:38] INFO root fetch - processPackages [market-engine]: Downloading https://files.pythonhosted.org/packages/e8/04/d1b1d7a129e795edeb5dc749d9862dc9169d8f64aaa26f694f55cc426185/market-engine-0.0.5.tar.gz
+[2023-05-27 00:47:38] INFO root fetch - processPackages [rsp-jupyter-extensions]: Downloading https://files.pythonhosted.org/packages/e1/0a/48746f40c9fec193ed37fbc2476eef5ee6f74c5e64e54cbd1080540dbea9/rsp_jupyter_extensions-0.8.3.tar.gz
+[2023-05-27 00:47:38] INFO root fetch - processPackages [EXOSIMS]: Downloading https://files.pythonhosted.org/packages/7e/39/39b110344be04ff8c3a65bcf46074e085dd58508af76b0d754924be2ad56/EXOSIMS-3.1.3.tar.gz
+[2023-05-27 00:47:38] INFO root fetch - processPackages [edgedb]: Downloading https://files.pythonhosted.org/packages/84/8e/53bed2a421b6a4435d00fbb06e005336f0cba4d07248070b54ad90dc178d/edgedb-1.4.0-cp37-cp37m-macosx_10_9_x86_64.whl
+[2023-05-27 00:47:38] WARNING root fetch - processPackages [EXOSIMS]: Skipping package: exceeds size limit 17024675>=10485760
+[2023-05-27 00:47:38] INFO root fetch - main [MainThread]: End processing [EXOSIMS] error
+[2023-05-27 00:47:38] INFO root fetch - processPackages [makenote]: Downloading https://files.pythonhosted.org/packages/20/08/e740a0df82aa7c8fae33762e2e16ecbcc9f8a5b728dd830acc5cb1775bf0/makenote-1.5-py3-none-any.whl
+[2023-05-27 00:47:38] INFO root fetch - processPackages [market-engine]: executing diffoscope
+[2023-05-27 00:47:38] INFO root fetch - processPackages [market-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/market-engine-0.0.4.tar.gz tmp/market-engine-0.0.5.tar.gz --markdown 20230527/m/market-engine/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-27 00:47:38] INFO root fetch - processPackages [rsp-jupyter-extensions]: executing diffoscope
+[2023-05-27 00:47:38] INFO root fetch - processPackages [rsp-jupyter-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rsp_jupyter_extensions-0.8.1.tar.gz tmp/rsp_jupyter_extensions-0.8.3.tar.gz --markdown 20230527/r/rsp-jupyter-extensions/0.8.1-0.8.3/diff.md --exclude *.pyd
+[2023-05-27 00:47:38] INFO root fetch - processPackages [makenote]: executing diffoscope
+[2023-05-27 00:47:38] INFO root fetch - processPackages [makenote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/makenote-1.3-py3-none-any.whl.zip tmp/makenote-1.5-py3-none-any.whl.zip --markdown 20230527/m/makenote/1.3-1.5/diff.md --exclude *.pyd
+[2023-05-27 00:47:38] INFO root fetch - processPackages [gitbetter]: Downloading https://files.pythonhosted.org/packages/22/9c/563038aca6af15030756085cbf0226e8d29a11e06898faa4936cc52124e3/gitbetter-1.1.0.tar.gz
+[2023-05-27 00:47:38] INFO root fetch - processPackages [quivr]: Downloading https://files.pythonhosted.org/packages/9e/3c/3b86e4280a3584c7acc5ec35dbf6513eb8046324393bddc0cb6dc4bf7351/quivr-0.3.3.tar.gz
+[2023-05-27 00:47:38] INFO root fetch - processPackages [Optimized-Kalman-Filter]: Downloading https://files.pythonhosted.org/packages/35/b5/105a30408e7b7e23276cc90955e0a2b786e721fe00bcf4a0d826998604fb/Optimized%20Kalman%20Filter-0.0.7.tar.gz
+[2023-05-27 00:47:39] INFO root fetch - processPackages [quivr]: executing diffoscope
+[2023-05-27 00:47:39] INFO root fetch - processPackages [quivr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quivr-0.3.2.tar.gz tmp/quivr-0.3.3.tar.gz --markdown 20230527/q/quivr/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-27 00:47:39] INFO root fetch - processPackages [Optimized-Kalman-Filter]: executing diffoscope
+[2023-05-27 00:47:39] INFO root fetch - processPackages [Optimized-Kalman-Filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Optimized Kalman Filter-0.0.6.tar.gz tmp/Optimized Kalman Filter-0.0.7.tar.gz --markdown 20230527/O/Optimized-Kalman-Filter/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-27 00:47:39] INFO root fetch - processPackages [faucetconfrpc]: Downloading https://files.pythonhosted.org/packages/65/6c/3d6a93f305a4a5dd20e2ec3b3ff84c4af817bb3de6b7f4de59eaf6342e35/faucetconfrpc-0.9.tar.gz
+[2023-05-27 00:47:39] INFO root fetch - processPackages [gitbetter]: executing diffoscope
+[2023-05-27 00:47:39] INFO root fetch - processPackages [gitbetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitbetter-1.0.0.tar.gz tmp/gitbetter-1.1.0.tar.gz --markdown 20230527/g/gitbetter/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-27 00:47:39] INFO root fetch - processPackages [faucetconfrpc]: executing diffoscope
+[2023-05-27 00:47:39] INFO root fetch - processPackages [faucetconfrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faucetconfrpc-0.8.tar.gz tmp/faucetconfrpc-0.9.tar.gz --markdown 20230527/f/faucetconfrpc/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-27 00:47:39] INFO root fetch - processPackages [edgedb]: Downloading https://files.pythonhosted.org/packages/34/f6/29d0b52eccb953c86ba776b4de1d3d902c186e3e137785a915249e5c43f2/edgedb-2.0.0a1.tar.gz
+[2023-05-27 00:47:39] INFO root fetch - processPackages [edgedb]: executing diffoscope
+[2023-05-27 00:47:39] INFO root fetch - processPackages [edgedb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgedb-1.4.0-cp37-cp37m-macosx_10_9_x86_64.whl.zip tmp/edgedb-2.0.0a1.tar.gz --markdown 20230527/e/edgedb/1.4.0-2.0.0a1/diff.md --exclude *.pyd
+[2023-05-27 00:47:40] INFO root fetch - main [MainThread]: End processing [market-engine]: success
+[2023-05-27 00:47:40] INFO root fetch - main [MainThread]: End processing [makenote]: success
+[2023-05-27 00:47:40] INFO root fetch - main [MainThread]: End processing [quivr]: success
+[2023-05-27 00:47:40] INFO root fetch - main [MainThread]: End processing [rsp-jupyter-extensions]: success
+[2023-05-27 00:47:40] INFO root fetch - main [MainThread]: End processing [Optimized-Kalman-Filter]: success
+[2023-05-27 00:47:40] INFO root fetch - main [MainThread]: End processing [faucetconfrpc]: success
+[2023-05-27 00:47:41] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2023-05-27 00:47:41] INFO root fetch - main [MainThread]: End processing [gitbetter]: success
+[2023-05-27 00:47:42] INFO root fetch - main [MainThread]: End processing [edgedb]: success
+[2023-05-27 00:47:42] INFO root fetch - main [MainThread]: Store serial: [18269495]
