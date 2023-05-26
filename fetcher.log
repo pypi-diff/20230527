@@ -801,3 +801,37 @@
 [2023-05-27 01:34:50] INFO root fetch - main [MainThread]: End processing [tkfly] error
 [2023-05-27 01:34:50] INFO root fetch - main [MainThread]: End processing [sidetrek]: success
 [2023-05-27 01:34:50] INFO root fetch - main [MainThread]: Store serial: [18269808]
+[2023-05-27 01:39:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269808]
+[2023-05-27 01:39:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 01:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vid2info
+[2023-05-27 01:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: littlefs-python
+[2023-05-27 01:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-code
+[2023-05-27 01:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: d20-communications
+[2023-05-27 01:39:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: poetry-types
+[2023-05-27 01:39:59] INFO root fetch - processPackages [vid2info]: New version: [1.99] Old Version: [1.98]
+[2023-05-27 01:39:59] INFO root fetch - processPackages [d20-communications]: New version: [0.0.5a3] Old Version: [0.0.5a2]
+[2023-05-27 01:39:59] INFO root fetch - processPackages [poetry-types]: New version: [0.4.0] Old Version: [0.3.7]
+[2023-05-27 01:39:59] INFO root fetch - processPackages [llm-code]: New version: [0.4.1] Old Version: [0.4]
+[2023-05-27 01:39:59] INFO root fetch - processPackages [littlefs-python]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-27 01:39:59] INFO root fetch - processPackages [d20-communications]: Downloading https://files.pythonhosted.org/packages/d5/ee/ef9e22ee9a89ade168dbe569e418114147103ea3617d5fabada1ad28674b/d20-communications-0.0.5a2.tar.gz
+[2023-05-27 01:39:59] INFO root fetch - processPackages [littlefs-python]: Downloading https://files.pythonhosted.org/packages/34/fb/57a2acfecbec519a9f8900d80f5c9044c701d6b42d7aa17b4c3b1e74799f/littlefs-python-0.4.0.tar.gz
+[2023-05-27 01:39:59] INFO root fetch - processPackages [poetry-types]: Downloading https://files.pythonhosted.org/packages/8a/db/7bd04b5a82cde6f1160885dfab6af7768c2e2b7504778eed88d5b16f1219/poetry_types-0.4.0.tar.gz
+[2023-05-27 01:39:59] INFO root fetch - processPackages [poetry-types]: executing diffoscope
+[2023-05-27 01:39:59] INFO root fetch - processPackages [poetry-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_types-0.3.7.tar.gz tmp/poetry_types-0.4.0.tar.gz --markdown 20230527/p/poetry-types/0.3.7-0.4.0/diff.md --exclude *.pyd
+[2023-05-27 01:40:00] INFO root fetch - processPackages [llm-code]: Downloading https://files.pythonhosted.org/packages/29/6d/08f05e6daa651abace78f0d3ff3117ba53616e19aa4df6eea31195d0ecdc/llm_code-0.4.1.tar.gz
+[2023-05-27 01:40:00] INFO root fetch - processPackages [vid2info]: executing diffoscope
+[2023-05-27 01:40:00] INFO root fetch - processPackages [vid2info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vid2info-1.98.tar.gz tmp/vid2info-1.99.tar.gz --markdown 20230527/v/vid2info/1.98-1.99/diff.md --exclude *.pyd
+[2023-05-27 01:40:00] INFO root fetch - processPackages [llm-code]: executing diffoscope
+[2023-05-27 01:40:00] INFO root fetch - processPackages [llm-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_code-0.4.tar.gz tmp/llm_code-0.4.1.tar.gz --markdown 20230527/l/llm-code/0.4-0.4.1/diff.md --exclude *.pyd
+[2023-05-27 01:40:00] INFO root fetch - processPackages [littlefs-python]: Downloading https://files.pythonhosted.org/packages/b0/a2/6acab6c091912b50c67950b0a1daa82afddcfa4606ca70e3a3ab858f26e9/littlefs-python-0.5.0.tar.gz
+[2023-05-27 01:40:00] INFO root fetch - processPackages [littlefs-python]: executing diffoscope
+[2023-05-27 01:40:00] INFO root fetch - processPackages [littlefs-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/littlefs-python-0.4.0.tar.gz tmp/littlefs-python-0.5.0.tar.gz --markdown 20230527/l/littlefs-python/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-27 01:40:00] INFO root fetch - processPackages [d20-communications]: Downloading https://files.pythonhosted.org/packages/63/fa/d803fed996ab6364ceac57759d794040466a3565596dcc8061f0a3e21ff1/d20-communications-0.0.5a3.tar.gz
+[2023-05-27 01:40:00] INFO root fetch - processPackages [d20-communications]: executing diffoscope
+[2023-05-27 01:40:00] INFO root fetch - processPackages [d20-communications]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-communications-0.0.5a2.tar.gz tmp/d20-communications-0.0.5a3.tar.gz --markdown 20230527/d/d20-communications/0.0.5a2-0.0.5a3/diff.md --exclude *.pyd
+[2023-05-27 01:40:01] INFO root fetch - main [MainThread]: End processing [poetry-types]: success
+[2023-05-27 01:40:01] INFO root fetch - main [MainThread]: End processing [llm-code]: success
+[2023-05-27 01:40:01] INFO root fetch - main [MainThread]: End processing [d20-communications]: success
+[2023-05-27 01:40:02] INFO root fetch - main [MainThread]: End processing [vid2info]: success
+[2023-05-27 01:40:02] INFO root fetch - main [MainThread]: End processing [littlefs-python]: success
+[2023-05-27 01:40:02] INFO root fetch - main [MainThread]: Store serial: [18269865]
