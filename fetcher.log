@@ -466,3 +466,61 @@
 [2023-05-27 00:52:57] INFO root fetch - main [MainThread]: End processing [deephaven-core]: success
 [2023-05-27 00:52:57] INFO root fetch - main [MainThread]: End processing [edk2-pytool-extensions]: success
 [2023-05-27 00:52:57] INFO root fetch - main [MainThread]: Store serial: [18269527]
+[2023-05-27 00:58:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269527]
+[2023-05-27 00:58:06] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-27 00:58:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: latch
+[2023-05-27 00:58:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heaserver-buckets
+[2023-05-27 00:58:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chartfactor
+[2023-05-27 00:58:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chartfactor-jlab-ext
+[2023-05-27 00:58:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: guidance
+[2023-05-27 00:58:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: binsync
+[2023-05-27 00:58:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flaretool
+[2023-05-27 00:58:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: payable-subscriptions
+[2023-05-27 00:58:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: seaplayer
+[2023-05-27 00:58:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: latch
+[2023-05-27 00:58:06] INFO root fetch - processPackages [heaserver-buckets]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-27 00:58:06] INFO root fetch - processPackages [payable-subscriptions]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-27 00:58:06] INFO root fetch - processPackages [binsync]: New version: [3.9.0] Old Version: [3.6.0]
+[2023-05-27 00:58:06] INFO root fetch - processPackages [chartfactor]: New version: [4.1.8] Old Version: [4.1.7]
+[2023-05-27 00:58:06] INFO root fetch - processPackages [seaplayer]: New version: [0.5.3.dev2] Old Version: [0.5.3.dev1]
+[2023-05-27 00:58:06] INFO root fetch - processPackages [chartfactor-jlab-ext]: New version: [4.1.8] Old Version: [4.1.7]
+[2023-05-27 00:58:06] INFO root fetch - processPackages [flaretool]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 00:58:06] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-05-27 00:58:06] INFO root fetch - processPackages [guidance]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 00:58:06] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-05-27 00:58:07] INFO root fetch - processPackages [latch]: executing diffoscope
+[2023-05-27 00:58:07] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20230527/l/latch/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-05-27 00:58:07] INFO root fetch - processPackages [binsync]: executing diffoscope
+[2023-05-27 00:58:07] INFO root fetch - processPackages [binsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binsync-3.6.0.tar.gz tmp/binsync-3.9.0.tar.gz --markdown 20230527/b/binsync/3.6.0-3.9.0/diff.md --exclude *.pyd
+[2023-05-27 00:58:07] INFO root fetch - processPackages [latch]: executing diffoscope
+[2023-05-27 00:58:07] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20230527/l/latch/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-05-27 00:58:07] INFO root fetch - processPackages [payable-subscriptions]: Downloading https://files.pythonhosted.org/packages/ae/11/dcc4feaa50df1e84ceb8bb96d459307ccd11b5cc0e625640e528390726a8/payable-subscriptions-1.0.6.zip
+[2023-05-27 00:58:07] INFO root fetch - processPackages [chartfactor-jlab-ext]: Downloading https://files.pythonhosted.org/packages/cc/a4/85daf844bdc010d3b6279fb0e8ebe60ee62905963aca4f393e1efcca1feb/chartfactor-jlab-ext-4.1.8.tar.gz
+[2023-05-27 00:58:07] INFO root fetch - processPackages [flaretool]: executing diffoscope
+[2023-05-27 00:58:07] INFO root fetch - processPackages [flaretool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flaretool-0.1.8.tar.gz tmp/flaretool-0.1.9-py3-none-any.whl.zip --markdown 20230527/f/flaretool/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 00:58:07] INFO root fetch - processPackages [chartfactor]: Downloading https://files.pythonhosted.org/packages/51/bd/236f1ae29b3cc86d202a733d2aaeb78c86201ef7bc61fc1cd30bddbce0f2/chartfactor-4.1.8.tar.gz
+[2023-05-27 00:58:07] INFO root fetch - processPackages [heaserver-buckets]: executing diffoscope
+[2023-05-27 00:58:07] INFO root fetch - processPackages [heaserver-buckets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-buckets-1.0.0a8.tar.gz tmp/heaserver-buckets-1.0.0a9.tar.gz --markdown 20230527/h/heaserver-buckets/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-27 00:58:07] INFO root fetch - processPackages [seaplayer]: Downloading https://files.pythonhosted.org/packages/fa/8a/7a917d606ab7b0947a7cf43652752d626189257626d9ba61b0830368afe0/seaplayer-0.5.3.dev2.tar.gz
+[2023-05-27 00:58:07] INFO root fetch - processPackages [payable-subscriptions]: Downloading https://files.pythonhosted.org/packages/a2/25/8a5e5dc287978050e934a869d302078a99deb1d3a02deab109a4bd68a755/payable-subscriptions-1.0.7.zip
+[2023-05-27 00:58:07] INFO root fetch - processPackages [chartfactor-jlab-ext]: executing diffoscope
+[2023-05-27 00:58:07] INFO root fetch - processPackages [chartfactor-jlab-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chartfactor-jlab-ext-4.1.7.tar.gz tmp/chartfactor-jlab-ext-4.1.8.tar.gz --markdown 20230527/c/chartfactor-jlab-ext/4.1.7-4.1.8/diff.md --exclude *.pyd
+[2023-05-27 00:58:07] INFO root fetch - processPackages [guidance]: executing diffoscope
+[2023-05-27 00:58:07] INFO root fetch - processPackages [guidance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guidance-0.0.8.tar.gz tmp/guidance-0.0.9.tar.gz --markdown 20230527/g/guidance/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 00:58:07] INFO root fetch - processPackages [chartfactor]: executing diffoscope
+[2023-05-27 00:58:07] INFO root fetch - processPackages [chartfactor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chartfactor-4.1.7.tar.gz tmp/chartfactor-4.1.8.tar.gz --markdown 20230527/c/chartfactor/4.1.7-4.1.8/diff.md --exclude *.pyd
+[2023-05-27 00:58:07] INFO root fetch - processPackages [seaplayer]: executing diffoscope
+[2023-05-27 00:58:07] INFO root fetch - processPackages [seaplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplayer-0.5.3.dev1.tar.gz tmp/seaplayer-0.5.3.dev2.tar.gz --markdown 20230527/s/seaplayer/0.5.3.dev1-0.5.3.dev2/diff.md --exclude *.pyd
+[2023-05-27 00:58:07] INFO root fetch - processPackages [payable-subscriptions]: executing diffoscope
+[2023-05-27 00:58:07] INFO root fetch - processPackages [payable-subscriptions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/payable-subscriptions-1.0.6.zip tmp/payable-subscriptions-1.0.7.zip --markdown 20230527/p/payable-subscriptions/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-27 00:58:08] INFO root fetch - main [MainThread]: End processing [flaretool]: success
+[2023-05-27 00:58:08] INFO root fetch - main [MainThread]: End processing [heaserver-buckets]: success
+[2023-05-27 00:58:08] INFO root fetch - main [MainThread]: End processing [guidance]: success
+[2023-05-27 00:58:08] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2023-05-27 00:58:09] INFO root fetch - main [MainThread]: End processing [payable-subscriptions]: success
+[2023-05-27 00:58:09] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2023-05-27 00:58:09] INFO root fetch - main [MainThread]: End processing [binsync]: success
+[2023-05-27 00:58:09] INFO root fetch - main [MainThread]: End processing [chartfactor-jlab-ext]: success
+[2023-05-27 00:58:09] INFO root fetch - main [MainThread]: End processing [chartfactor]: success
+[2023-05-27 00:58:09] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
+[2023-05-27 00:58:09] INFO root fetch - main [MainThread]: Store serial: [18269556]
