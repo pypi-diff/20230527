@@ -10460,3 +10460,49 @@
 [2023-05-27 18:19:47] INFO root fetch - main [MainThread]: End processing [tsetmc-api]: success
 [2023-05-27 18:21:20] INFO root fetch - main [MainThread]: End processing [dash-glue42]: success
 [2023-05-27 18:21:20] INFO root fetch - main [MainThread]: Store serial: [18275564]
+[2023-05-27 18:26:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275564]
+[2023-05-27 18:26:29] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: domjudge-utility
+[2023-05-27 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dymoprint
+[2023-05-27 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smpl-doc
+[2023-05-27 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: myshit12223
+[2023-05-27 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vector-quantize-pytorch
+[2023-05-27 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: allbaro-chunilpathfinder
+[2023-05-27 18:26:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mwxlib
+[2023-05-27 18:26:29] INFO root fetch - processPackages [dymoprint]: New version: [1.4.0] Old Version: [1.3.1]
+[2023-05-27 18:26:29] INFO root fetch - processPackages [domjudge-utility]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 18:26:29] INFO root fetch - processPackages [smpl-doc]: New version: [1.1.3] Old Version: [1.1.1]
+[2023-05-27 18:26:29] INFO root fetch - processPackages [myshit12223]: New version: [2.0] Old Version: [1.0]
+[2023-05-27 18:26:29] WARNING root fetch - processPackages [allbaro-chunilpathfinder]: Skipping, unable to determine old version
+[2023-05-27 18:26:29] INFO root fetch - main [MainThread]: End processing [allbaro-chunilpathfinder] error
+[2023-05-27 18:26:29] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.6.0] Old Version: [1.5.9]
+[2023-05-27 18:26:30] INFO root fetch - processPackages [myshit12223]: Downloading https://files.pythonhosted.org/packages/7d/2e/42e0dd3c6be3b44491e620276dd6ee5d4475366d68b1aaf0daa705d9e8d8/myshit12223-1.0.tar.gz
+[2023-05-27 18:26:30] INFO root fetch - processPackages [mwxlib]: New version: [0.84.0] Old Version: [0.83.9]
+[2023-05-27 18:26:30] INFO root fetch - processPackages [smpl-doc]: Downloading https://files.pythonhosted.org/packages/46/d3/c7398dbfda07cfcff77aaf2800c2cc59177c73773b4ea00a4ed147602dd0/smpl_doc-1.1.1.tar.gz
+[2023-05-27 18:26:30] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/13/0f/12423fe73b99ecca966cbf4d9c2ebacde6789f206ad2644a2e433319523c/vector_quantize_pytorch-1.6.0.tar.gz
+[2023-05-27 18:26:30] INFO root fetch - processPackages [dymoprint]: Downloading https://files.pythonhosted.org/packages/7f/c6/00e7a5c526497128c411193c21f36160ad159332ea33e7a1983e91f7d742/dymoprint-1.3.1.tar.gz
+[2023-05-27 18:26:30] INFO root fetch - processPackages [domjudge-utility]: Downloading https://files.pythonhosted.org/packages/13/87/367b9ba557d2a9e0cc6610c802a1f301ef6447a773d7a8b1388f80f7515f/domjudge_utility-0.0.9.tar.gz
+[2023-05-27 18:26:30] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-27 18:26:30] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.5.9.tar.gz tmp/vector_quantize_pytorch-1.6.0.tar.gz --markdown 20230527/v/vector-quantize-pytorch/1.5.9-1.6.0/diff.md --exclude *.pyd
+[2023-05-27 18:26:30] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/41/1a/9163ea03ac63983f4ac51dbff079c63b7054463322b7c8f1b0024f69f1f8/mwxlib-0.83.9-py3-none-any.whl
+[2023-05-27 18:26:30] INFO root fetch - processPackages [myshit12223]: Downloading https://files.pythonhosted.org/packages/6b/8f/d8d2674408e68cb9c75fec7716ec080ae780106986bac73da833199e5057/myshit12223-2.0.tar.gz
+[2023-05-27 18:26:30] INFO root fetch - processPackages [domjudge-utility]: executing diffoscope
+[2023-05-27 18:26:30] INFO root fetch - processPackages [domjudge-utility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domjudge_utility-0.0.8.tar.gz tmp/domjudge_utility-0.0.9.tar.gz --markdown 20230527/d/domjudge-utility/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 18:26:30] INFO root fetch - processPackages [smpl-doc]: Downloading https://files.pythonhosted.org/packages/1a/fd/89d5055ec8111958deec6d8e4be45a171e72c01e8c0f5e887d43bddcea42/smpl_doc-1.1.3.tar.gz
+[2023-05-27 18:26:30] INFO root fetch - processPackages [myshit12223]: executing diffoscope
+[2023-05-27 18:26:30] INFO root fetch - processPackages [myshit12223]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myshit12223-1.0.tar.gz tmp/myshit12223-2.0.tar.gz --markdown 20230527/m/myshit12223/1.0-2.0/diff.md --exclude *.pyd
+[2023-05-27 18:26:30] INFO root fetch - processPackages [smpl-doc]: executing diffoscope
+[2023-05-27 18:26:30] INFO root fetch - processPackages [smpl-doc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smpl_doc-1.1.1.tar.gz tmp/smpl_doc-1.1.3.tar.gz --markdown 20230527/s/smpl-doc/1.1.1-1.1.3/diff.md --exclude *.pyd
+[2023-05-27 18:26:30] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/63/33/0fd5539a6f3b38bbb1ba1d6ac927cedd677b4e33a023bc86f0b26bdbc259/mwxlib-0.84.0-py3-none-any.whl
+[2023-05-27 18:26:30] INFO root fetch - processPackages [dymoprint]: Downloading https://files.pythonhosted.org/packages/00/4e/dbee5acd2b344dff4d26b9620823ba5bde601da34e8690160d2afe66fd51/dymoprint-1.4.0.tar.gz
+[2023-05-27 18:26:30] INFO root fetch - processPackages [dymoprint]: executing diffoscope
+[2023-05-27 18:26:30] INFO root fetch - processPackages [dymoprint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dymoprint-1.3.1.tar.gz tmp/dymoprint-1.4.0.tar.gz --markdown 20230527/d/dymoprint/1.3.1-1.4.0/diff.md --exclude *.pyd
+[2023-05-27 18:26:31] INFO root fetch - processPackages [mwxlib]: executing diffoscope
+[2023-05-27 18:26:31] INFO root fetch - processPackages [mwxlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwxlib-0.83.9-py3-none-any.whl.zip tmp/mwxlib-0.84.0-py3-none-any.whl.zip --markdown 20230527/m/mwxlib/0.83.9-0.84.0/diff.md --exclude *.pyd
+[2023-05-27 18:26:31] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-27 18:26:31] INFO root fetch - main [MainThread]: End processing [domjudge-utility]: success
+[2023-05-27 18:26:32] INFO root fetch - main [MainThread]: End processing [smpl-doc]: success
+[2023-05-27 18:26:32] INFO root fetch - main [MainThread]: End processing [mwxlib]: success
+[2023-05-27 18:26:32] INFO root fetch - main [MainThread]: End processing [dymoprint]: success
+[2023-05-27 18:26:39] INFO root fetch - main [MainThread]: End processing [myshit12223]: success
+[2023-05-27 18:26:39] INFO root fetch - main [MainThread]: Store serial: [18275588]
