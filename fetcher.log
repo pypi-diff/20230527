@@ -4083,3 +4083,36 @@
 [2023-05-27 04:50:35] INFO root fetch - main [MainThread]: End processing [lasfile]: success
 [2023-05-27 04:50:35] INFO root fetch - main [MainThread]: End processing [install-pybci]: success
 [2023-05-27 04:50:35] INFO root fetch - main [MainThread]: Store serial: [18271925]
+[2023-05-27 04:55:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271925]
+[2023-05-27 04:55:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 04:55:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pybind11-stubgen
+[2023-05-27 04:55:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FreeTVG-karjakak
+[2023-05-27 04:55:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phap
+[2023-05-27 04:55:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lasfile
+[2023-05-27 04:55:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flash-attn
+[2023-05-27 04:55:45] INFO root fetch - processPackages [lasfile]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-27 04:55:45] INFO root fetch - processPackages [FreeTVG-karjakak]: New version: [3.2.9] Old Version: [3.2.8rc1]
+[2023-05-27 04:55:45] INFO root fetch - processPackages [phap]: New version: [2.2.1rc1] Old Version: [2.2.1b8]
+[2023-05-27 04:55:45] INFO root fetch - processPackages [flash-attn]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-27 04:55:45] INFO root fetch - processPackages [pybind11-stubgen]: New version: [0.9.1] Old Version: [0.9]
+[2023-05-27 04:55:45] INFO root fetch - processPackages [lasfile]: Downloading https://files.pythonhosted.org/packages/bc/95/5a141a45640a36be137dcab3012d45f9bcac597fdeb4dbf29dce29ee16df/lasfile-0.1.4.tar.gz
+[2023-05-27 04:55:45] INFO root fetch - processPackages [flash-attn]: Downloading https://files.pythonhosted.org/packages/f0/b1/5e8d517b76f6efce8ba2a47f8b4e7e463a3ea0c1b3677c738fb819888369/flash_attn-1.0.5.tar.gz
+[2023-05-27 04:55:45] INFO root fetch - processPackages [phap]: Downloading https://files.pythonhosted.org/packages/55/15/a94e84e1211655477f0516e030bfe943c069ad23cd638e55588ee059e486/phap-2.2.1rc1.tar.gz
+[2023-05-27 04:55:45] INFO root fetch - processPackages [lasfile]: executing diffoscope
+[2023-05-27 04:55:45] INFO root fetch - processPackages [lasfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lasfile-0.1.3.tar.gz tmp/lasfile-0.1.4.tar.gz --markdown 20230527/l/lasfile/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-27 04:55:45] INFO root fetch - processPackages [FreeTVG-karjakak]: Downloading https://files.pythonhosted.org/packages/20/c8/b2d2b09efa9a15750b6fa88a2e3cd51827c38c558668957dd2907a0a85ac/FreeTVG-karjakak-3.2.9.tar.gz
+[2023-05-27 04:55:45] INFO root fetch - processPackages [pybind11-stubgen]: executing diffoscope
+[2023-05-27 04:55:45] INFO root fetch - processPackages [pybind11-stubgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybind11-stubgen-0.9.tar.gz tmp/pybind11-stubgen-0.9.1.tar.gz --markdown 20230527/p/pybind11-stubgen/0.9-0.9.1/diff.md --exclude *.pyd
+[2023-05-27 04:55:45] INFO root fetch - processPackages [phap]: executing diffoscope
+[2023-05-27 04:55:45] INFO root fetch - processPackages [phap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phap-2.2.1b8.tar.gz tmp/phap-2.2.1rc1.tar.gz --markdown 20230527/p/phap/2.2.1b8-2.2.1rc1/diff.md --exclude *.pyd
+[2023-05-27 04:55:45] INFO root fetch - processPackages [FreeTVG-karjakak]: executing diffoscope
+[2023-05-27 04:55:45] INFO root fetch - processPackages [FreeTVG-karjakak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FreeTVG-karjakak-3.2.8rc1.tar.gz tmp/FreeTVG-karjakak-3.2.9.tar.gz --markdown 20230527/F/FreeTVG-karjakak/3.2.8rc1-3.2.9/diff.md --exclude *.pyd
+[2023-05-27 04:55:45] INFO root fetch - processPackages [flash-attn]: Downloading https://files.pythonhosted.org/packages/59/12/b17409e6abbf4d2b450842be6f83842c83611af90f8009f4924c1e2211ed/flash_attn-1.0.6.tar.gz
+[2023-05-27 04:55:45] INFO root fetch - processPackages [flash-attn]: executing diffoscope
+[2023-05-27 04:55:45] INFO root fetch - processPackages [flash-attn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flash_attn-1.0.5.tar.gz tmp/flash_attn-1.0.6.tar.gz --markdown 20230527/f/flash-attn/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-27 04:55:46] INFO root fetch - main [MainThread]: End processing [lasfile]: success
+[2023-05-27 04:55:46] INFO root fetch - main [MainThread]: End processing [pybind11-stubgen]: success
+[2023-05-27 04:55:46] INFO root fetch - main [MainThread]: End processing [FreeTVG-karjakak]: success
+[2023-05-27 04:55:46] INFO root fetch - main [MainThread]: End processing [phap]: success
+[2023-05-27 04:56:09] INFO root fetch - main [MainThread]: End processing [flash-attn]: success
+[2023-05-27 04:56:09] INFO root fetch - main [MainThread]: Store serial: [18271939]
