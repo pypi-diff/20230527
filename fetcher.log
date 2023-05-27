@@ -3934,3 +3934,41 @@
 [2023-05-27 04:24:37] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
 [2023-05-27 04:24:38] INFO root fetch - main [MainThread]: End processing [sbp]: success
 [2023-05-27 04:24:38] INFO root fetch - main [MainThread]: Store serial: [18271811]
+[2023-05-27 04:29:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271811]
+[2023-05-27 04:29:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eqalert
+[2023-05-27 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EduDraw
+[2023-05-27 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk8s-plus-24
+[2023-05-27 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rq
+[2023-05-27 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: iam-actions
+[2023-05-27 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: adotsdot
+[2023-05-27 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ns3
+[2023-05-27 04:29:46] WARNING root fetch - processPackages [EduDraw]: Skipping, unable to determine old version
+[2023-05-27 04:29:46] INFO root fetch - main [MainThread]: End processing [EduDraw] error
+[2023-05-27 04:29:46] INFO root fetch - processPackages [rq]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-05-27 04:29:46] INFO root fetch - processPackages [eqalert]: New version: [3.5.0] Old Version: [3.4.7]
+[2023-05-27 04:29:46] WARNING root fetch - processPackages [ns3]: Skipping, unable to determine old version
+[2023-05-27 04:29:46] INFO root fetch - main [MainThread]: End processing [ns3] error
+[2023-05-27 04:29:46] WARNING root fetch - processPackages [adotsdot]: Skipping, unable to determine old version
+[2023-05-27 04:29:46] INFO root fetch - main [MainThread]: End processing [adotsdot] error
+[2023-05-27 04:29:46] INFO root fetch - processPackages [cdk8s-plus-24]: New version: [2.8.3] Old Version: [2.8.2]
+[2023-05-27 04:29:46] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230527] Old Version: [1.2.20230526]
+[2023-05-27 04:29:47] INFO root fetch - processPackages [rq]: Downloading https://files.pythonhosted.org/packages/f2/8f/2a63a51079ed5903496c113b2a4bda5fe91e748d6c00d4a533f2d901b9d8/rq-1.8.1.tar.gz
+[2023-05-27 04:29:47] INFO root fetch - processPackages [eqalert]: Downloading https://files.pythonhosted.org/packages/d5/d8/9d7a1da47499b15c61554a43d61949f3b4e23ba71d04c098a45e9bf65fc5/eqalert-3.4.7.tar.gz
+[2023-05-27 04:29:47] INFO root fetch - processPackages [cdk8s-plus-24]: Downloading https://files.pythonhosted.org/packages/e0/51/b559b04678b82b7fbc6a4f0363338c47c049184c9f89c8d73d54a95339be/cdk8s-plus-24-2.8.3.tar.gz
+[2023-05-27 04:29:47] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/a5/c4/fd4a33c2078791d4970cd83e0325b92cf45b94f93813a4ff80e7991a743f/iam_actions-1.2.20230527.tar.gz
+[2023-05-27 04:29:47] INFO root fetch - processPackages [cdk8s-plus-24]: executing diffoscope
+[2023-05-27 04:29:47] INFO root fetch - processPackages [cdk8s-plus-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-24-2.8.2.tar.gz tmp/cdk8s-plus-24-2.8.3.tar.gz --markdown 20230527/c/cdk8s-plus-24/2.8.2-2.8.3/diff.md --exclude *.pyd
+[2023-05-27 04:29:47] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-05-27 04:29:47] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230526.tar.gz tmp/iam_actions-1.2.20230527.tar.gz --markdown 20230527/i/iam-actions/1.2.20230526-1.2.20230527/diff.md --exclude *.pyd
+[2023-05-27 04:29:47] INFO root fetch - processPackages [eqalert]: Downloading https://files.pythonhosted.org/packages/33/f4/089e881255a8a4c14622ce19089f289ecf6dd6fd7583b5e020e653edbf54/eqalert-3.5.0.tar.gz
+[2023-05-27 04:29:47] INFO root fetch - processPackages [rq]: Downloading https://files.pythonhosted.org/packages/e9/20/97f8e3e0b73382d4708880f27683b0d93c0426360ff1ece2c02591e1f265/rq-1.9.0.tar.gz
+[2023-05-27 04:29:47] INFO root fetch - processPackages [eqalert]: executing diffoscope
+[2023-05-27 04:29:47] INFO root fetch - processPackages [eqalert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eqalert-3.4.7.tar.gz tmp/eqalert-3.5.0.tar.gz --markdown 20230527/e/eqalert/3.4.7-3.5.0/diff.md --exclude *.pyd
+[2023-05-27 04:29:47] INFO root fetch - processPackages [rq]: executing diffoscope
+[2023-05-27 04:29:47] INFO root fetch - processPackages [rq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rq-1.8.1.tar.gz tmp/rq-1.9.0.tar.gz --markdown 20230527/r/rq/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-05-27 04:29:48] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-24]: success
+[2023-05-27 04:29:48] INFO root fetch - main [MainThread]: End processing [rq]: success
+[2023-05-27 04:29:49] INFO root fetch - main [MainThread]: End processing [eqalert]: success
+[2023-05-27 04:29:52] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-05-27 04:29:52] INFO root fetch - main [MainThread]: Store serial: [18271834]
