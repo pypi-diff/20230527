@@ -11793,3 +11793,52 @@
 [2023-05-27 21:37:49] INFO root fetch - main [MainThread]: End processing [satnogs-decoders]: success
 [2023-05-27 21:38:37] INFO root fetch - main [MainThread]: End processing [plugget]: success
 [2023-05-27 21:38:37] INFO root fetch - main [MainThread]: Store serial: [18276419]
+[2023-05-27 21:43:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276419]
+[2023-05-27 21:43:46] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 21:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autora-experiment-runner-experimentation-manager-firebase
+[2023-05-27 21:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: x-transformers
+[2023-05-27 21:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbt-clickzetta
+[2023-05-27 21:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: so-pip
+[2023-05-27 21:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openmock
+[2023-05-27 21:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ppmil
+[2023-05-27 21:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyqsys
+[2023-05-27 21:43:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: x-transformers
+[2023-05-27 21:43:46] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: New version: [1.0.0a4] Old Version: [1.0.0a3]
+[2023-05-27 21:43:46] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-27 21:43:46] WARNING root fetch - processPackages [ppmil]: Skipping, unable to determine old version
+[2023-05-27 21:43:46] INFO root fetch - processPackages [openmock]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-05-27 21:43:46] INFO root fetch - main [MainThread]: End processing [ppmil] error
+[2023-05-27 21:43:46] INFO root fetch - processPackages [x-transformers]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-27 21:43:46] INFO root fetch - processPackages [pyqsys]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 21:43:46] INFO root fetch - processPackages [x-transformers]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-27 21:43:46] INFO root fetch - processPackages [so-pip]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-27 21:43:46] INFO root fetch - processPackages [pyqsys]: Downloading https://files.pythonhosted.org/packages/c4/39/96b7dc2f6e22895637322f9d35dd2b1789e54b058e57c77ab3d54777abc4/pyqsys-0.0.1.tar.gz
+[2023-05-27 21:43:46] INFO root fetch - processPackages [openmock]: Downloading https://files.pythonhosted.org/packages/fa/85/2f153698501bf36ee004812bbda07db49470acb4f66c8a8cb128de2571f7/openmock-2.2.0.tar.gz
+[2023-05-27 21:43:46] INFO root fetch - processPackages [dbt-clickzetta]: Downloading https://files.pythonhosted.org/packages/60/73/2def8e9d965cd10cabf9be668c526d211b9e7ecb2421e6866276cdafd532/dbt-clickzetta-0.0.7.tar.gz
+[2023-05-27 21:43:46] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: Downloading https://files.pythonhosted.org/packages/28/03/ea171a1c74d779b6b59bf96de1aaef94cf2a0794943d7e8be3b57323918e/autora-experiment-runner-experimentation-manager-firebase-1.0.0a4.tar.gz
+[2023-05-27 21:43:46] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-27 21:43:46] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.6.tar.gz tmp/dbt-clickzetta-0.0.7.tar.gz --markdown 20230527/d/dbt-clickzetta/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-27 21:43:46] INFO root fetch - processPackages [so-pip]: Downloading https://files.pythonhosted.org/packages/02/34/ad845e5911bf7d5319f5cdbc67212518045853a4edd83f8fdf7ccfac2e95/so_pip-0.2.1-py3-none-any.whl
+[2023-05-27 21:43:46] INFO root fetch - processPackages [x-transformers]: executing diffoscope
+[2023-05-27 21:43:46] INFO root fetch - processPackages [x-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-transformers-1.9.1.tar.gz tmp/x-transformers-1.9.2.tar.gz --markdown 20230527/x/x-transformers/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-27 21:43:46] INFO root fetch - processPackages [x-transformers]: executing diffoscope
+[2023-05-27 21:43:46] INFO root fetch - processPackages [x-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-transformers-1.9.1.tar.gz tmp/x-transformers-1.9.2.tar.gz --markdown 20230527/x/x-transformers/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-27 21:43:46] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: executing diffoscope
+[2023-05-27 21:43:46] INFO root fetch - processPackages [pyqsys]: Downloading https://files.pythonhosted.org/packages/5d/07/bdceae2e06c33fe8a3e77924c754b1f0e478e07483a0fbb1473f79a7bbc5/pyqsys-0.0.2.tar.gz
+[2023-05-27 21:43:46] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autora-experiment-runner-experimentation-manager-firebase-1.0.0a3.tar.gz tmp/autora-experiment-runner-experimentation-manager-firebase-1.0.0a4.tar.gz --markdown 20230527/a/autora-experiment-runner-experimentation-manager-firebase/1.0.0a3-1.0.0a4/diff.md --exclude *.pyd
+[2023-05-27 21:43:46] INFO root fetch - processPackages [openmock]: Downloading https://files.pythonhosted.org/packages/eb/fa/87230ba0620faffcacbce425831de88a97131506f01f254cadca98a128f4/openmock-2.3.0.tar.gz
+[2023-05-27 21:43:47] INFO root fetch - processPackages [pyqsys]: executing diffoscope
+[2023-05-27 21:43:47] INFO root fetch - processPackages [pyqsys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqsys-0.0.1.tar.gz tmp/pyqsys-0.0.2.tar.gz --markdown 20230527/p/pyqsys/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 21:43:47] INFO root fetch - processPackages [openmock]: executing diffoscope
+[2023-05-27 21:43:47] INFO root fetch - processPackages [openmock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openmock-2.2.0.tar.gz tmp/openmock-2.3.0.tar.gz --markdown 20230527/o/openmock/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-05-27 21:43:47] INFO root fetch - processPackages [so-pip]: Downloading https://files.pythonhosted.org/packages/9b/3d/a4286e6d86db0163b9596ddd4c9b4e1f4022191ed43d3bfadd9586f81772/so_pip-0.3.0.tar.gz
+[2023-05-27 21:43:47] INFO root fetch - processPackages [so-pip]: executing diffoscope
+[2023-05-27 21:43:47] INFO root fetch - processPackages [so-pip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_pip-0.2.1-py3-none-any.whl.zip tmp/so_pip-0.3.0.tar.gz --markdown 20230527/s/so-pip/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-27 21:43:48] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-27 21:43:48] INFO root fetch - main [MainThread]: End processing [pyqsys]: success
+[2023-05-27 21:43:48] INFO root fetch - main [MainThread]: End processing [openmock]: success
+[2023-05-27 21:43:48] INFO root fetch - main [MainThread]: End processing [autora-experiment-runner-experimentation-manager-firebase]: success
+[2023-05-27 21:43:48] INFO root fetch - main [MainThread]: End processing [x-transformers]: success
+[2023-05-27 21:43:48] INFO root fetch - main [MainThread]: End processing [x-transformers]: success
+[2023-05-27 21:43:53] INFO root fetch - main [MainThread]: End processing [so-pip]: success
+[2023-05-27 21:43:53] INFO root fetch - main [MainThread]: Store serial: [18276444]
