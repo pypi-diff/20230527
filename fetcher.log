@@ -4298,3 +4298,18 @@
 [2023-05-27 05:22:06] INFO root fetch - main [MainThread]: End processing [rust-contracts-builder]: success
 [2023-05-27 05:22:06] INFO root fetch - main [MainThread]: End processing [dovesnap]: success
 [2023-05-27 05:22:06] INFO root fetch - main [MainThread]: Store serial: [18272016]
+[2023-05-27 05:27:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272016]
+[2023-05-27 05:27:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 05:27:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EduDraw
+[2023-05-27 05:27:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: konfuzio-sdk
+[2023-05-27 05:27:15] INFO root fetch - processPackages [EduDraw]: New version: [1.3.0.1] Old Version: [1.3]
+[2023-05-27 05:27:15] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.2.9.dev20230104175944] Old Version: [0.2.9.dev20221227125623]
+[2023-05-27 05:27:15] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2023-05-27 05:27:15] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.2.9.dev20221227125623.tar.gz tmp/konfuzio_sdk-0.2.9.dev20230104175944.tar.gz --markdown 20230527/k/konfuzio-sdk/0.2.9.dev20221227125623-0.2.9.dev20230104175944/diff.md --exclude *.pyd
+[2023-05-27 05:27:15] INFO root fetch - processPackages [EduDraw]: Downloading https://files.pythonhosted.org/packages/ec/9e/63fb2d49a676593608aec2e6cf7b9c8b1bcc9091dd7a3e3bec60912b3c49/edudraw-1.3.tar.gz
+[2023-05-27 05:27:15] INFO root fetch - processPackages [EduDraw]: Downloading https://files.pythonhosted.org/packages/81/29/9da76df57b77372ddec9297eb9aa41bba59e8cca924a03c405c2c9b74c31/edudraw-1.3.0.1.tar.gz
+[2023-05-27 05:27:16] INFO root fetch - processPackages [EduDraw]: executing diffoscope
+[2023-05-27 05:27:16] INFO root fetch - processPackages [EduDraw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edudraw-1.3.tar.gz tmp/edudraw-1.3.0.1.tar.gz --markdown 20230527/E/EduDraw/1.3-1.3.0.1/diff.md --exclude *.pyd
+[2023-05-27 05:27:16] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2023-05-27 05:27:16] INFO root fetch - main [MainThread]: End processing [EduDraw]: success
+[2023-05-27 05:27:16] INFO root fetch - main [MainThread]: Store serial: [18272022]
