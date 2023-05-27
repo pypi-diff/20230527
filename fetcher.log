@@ -11104,3 +11104,36 @@
 [2023-05-27 19:52:10] INFO root fetch - main [MainThread]: End processing [pywxdll]: success
 [2023-05-27 19:52:10] INFO root fetch - main [MainThread]: End processing [croydon]: success
 [2023-05-27 19:52:10] INFO root fetch - main [MainThread]: Store serial: [18275913]
+[2023-05-27 19:57:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275913]
+[2023-05-27 19:57:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 19:57:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-account-banking-pain-base
+[2023-05-27 19:57:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clust-learn
+[2023-05-27 19:57:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deep-training
+[2023-05-27 19:57:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qrbarcodegen
+[2023-05-27 19:57:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: boxmot
+[2023-05-27 19:57:19] INFO root fetch - processPackages [odoo-addon-account-banking-pain-base]: New version: [16.0.1.0.0.2] Old Version: [15.0.2.0.2]
+[2023-05-27 19:57:19] WARNING root fetch - processPackages [qrbarcodegen]: Skipping, unable to determine old version
+[2023-05-27 19:57:19] INFO root fetch - main [MainThread]: End processing [qrbarcodegen] error
+[2023-05-27 19:57:19] INFO root fetch - processPackages [clust-learn]: New version: [0.2.0b0] Old Version: [0.2.0.3]
+[2023-05-27 19:57:19] INFO root fetch - processPackages [deep-training]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 19:57:19] INFO root fetch - processPackages [boxmot]: New version: [10.0.9] Old Version: [10.0.8]
+[2023-05-27 19:57:19] INFO root fetch - processPackages [clust-learn]: Downloading https://files.pythonhosted.org/packages/99/05/901c9291fcd6dd8a010a11176fe247f9c8cf21f756a0dd4bc8cfe6b58632/clust-learn-0.2.0.3.tar.gz
+[2023-05-27 19:57:19] INFO root fetch - processPackages [odoo-addon-account-banking-pain-base]: Downloading https://files.pythonhosted.org/packages/0f/a1/0b3c61133047986caae62ef0256c258bb2848736d1b866488bb187a7b854/odoo_addon_account_banking_pain_base-15.0.2.0.2-py3-none-any.whl
+[2023-05-27 19:57:19] INFO root fetch - processPackages [deep-training]: Downloading https://files.pythonhosted.org/packages/87/b3/3c8fcf7b1e70c43e235098b71636333ed9cdfaf9b6c6fbc85f67531280e1/deep_training-0.1.8-py3-none-any.whl
+[2023-05-27 19:57:19] INFO root fetch - processPackages [clust-learn]: executing diffoscope
+[2023-05-27 19:57:19] INFO root fetch - processPackages [clust-learn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clust-learn-0.2.0.3.tar.gz tmp/clust-learn-0.2.0b0.tar.gz --markdown 20230527/c/clust-learn/0.2.0.3-0.2.0b0/diff.md --exclude *.pyd
+[2023-05-27 19:57:19] INFO root fetch - processPackages [boxmot]: Downloading https://files.pythonhosted.org/packages/dc/ac/76303db770d03a3713ab4d08bd38dac0c0208b589d081f3e6a9818f39c59/boxmot-10.0.8.tar.gz
+[2023-05-27 19:57:20] INFO root fetch - processPackages [deep-training]: Downloading https://files.pythonhosted.org/packages/97/8f/30bf3a3b2b45dc48f23a82065cc1cff429cfa9ec38e2c8dfd40bc15ada07/deep_training-0.1.9-py3-none-any.whl
+[2023-05-27 19:57:20] INFO root fetch - processPackages [deep-training]: executing diffoscope
+[2023-05-27 19:57:20] INFO root fetch - processPackages [deep-training]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_training-0.1.8-py3-none-any.whl.zip tmp/deep_training-0.1.9-py3-none-any.whl.zip --markdown 20230527/d/deep-training/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 19:57:20] INFO root fetch - processPackages [odoo-addon-account-banking-pain-base]: Downloading https://files.pythonhosted.org/packages/a9/0d/f8d539714efd70a7aafc3fa63acf7e6743a4c27a31f4e6f12f425bc1e450/odoo_addon_account_banking_pain_base-16.0.1.0.0.2-py3-none-any.whl
+[2023-05-27 19:57:20] INFO root fetch - processPackages [boxmot]: Downloading https://files.pythonhosted.org/packages/8a/f5/03723049ad0e1bb7544e74ca77c734bc6cd4f4244b98def429efd2b73d9e/boxmot-10.0.9.tar.gz
+[2023-05-27 19:57:20] INFO root fetch - processPackages [odoo-addon-account-banking-pain-base]: executing diffoscope
+[2023-05-27 19:57:20] INFO root fetch - processPackages [odoo-addon-account-banking-pain-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_banking_pain_base-15.0.2.0.2-py3-none-any.whl.zip tmp/odoo_addon_account_banking_pain_base-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230527/o/odoo-addon-account-banking-pain-base/15.0.2.0.2-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-05-27 19:57:20] INFO root fetch - processPackages [boxmot]: executing diffoscope
+[2023-05-27 19:57:20] INFO root fetch - processPackages [boxmot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boxmot-10.0.8.tar.gz tmp/boxmot-10.0.9.tar.gz --markdown 20230527/b/boxmot/10.0.8-10.0.9/diff.md --exclude *.pyd
+[2023-05-27 19:57:21] INFO root fetch - main [MainThread]: End processing [clust-learn]: success
+[2023-05-27 19:57:21] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-banking-pain-base]: success
+[2023-05-27 19:57:21] INFO root fetch - main [MainThread]: End processing [boxmot]: success
+[2023-05-27 19:57:22] INFO root fetch - main [MainThread]: End processing [deep-training]: success
+[2023-05-27 19:57:22] INFO root fetch - main [MainThread]: Store serial: [18275932]
