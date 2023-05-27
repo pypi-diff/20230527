@@ -11295,3 +11295,28 @@
 [2023-05-27 20:13:01] INFO root fetch - main [MainThread]: End processing [mkdocs-exporter]: success
 [2023-05-27 20:14:14] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-05-27 20:14:14] INFO root fetch - main [MainThread]: Store serial: [18276014]
+[2023-05-27 20:19:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276014]
+[2023-05-27 20:19:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 20:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: varwizard
+[2023-05-27 20:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mup-xml-sign
+[2023-05-27 20:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: langchain-discord
+[2023-05-27 20:19:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tn-slack-py-module
+[2023-05-27 20:19:23] INFO root fetch - processPackages [varwizard]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-27 20:19:23] INFO root fetch - processPackages [mup-xml-sign]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 20:19:23] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 20:19:23] INFO root fetch - processPackages [tn-slack-py-module]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 20:19:23] INFO root fetch - processPackages [tn-slack-py-module]: executing diffoscope
+[2023-05-27 20:19:23] INFO root fetch - processPackages [tn-slack-py-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tn-slack-py-module-0.0.8.tar.gz tmp/tn-slack-py-module-0.0.9.tar.gz --markdown 20230527/t/tn-slack-py-module/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 20:19:23] INFO root fetch - processPackages [varwizard]: Downloading https://files.pythonhosted.org/packages/7f/d6/ae9bc48ddd0eae0e3b39e5837e4aa803ad9c924eb08035cf6c85079017a0/varwizard-0.2.2.tar.gz
+[2023-05-27 20:19:23] INFO root fetch - processPackages [mup-xml-sign]: Downloading https://files.pythonhosted.org/packages/5d/1a/5ac808848e72db213580b59507cc20b2d629c461e9206ed212d407eddc94/mup-xml-sign-0.1.2.tar.gz
+[2023-05-27 20:19:23] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 20:19:23] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 20:19:23] INFO root fetch - processPackages [mup-xml-sign]: executing diffoscope
+[2023-05-27 20:19:23] INFO root fetch - processPackages [mup-xml-sign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mup-xml-sign-0.1.1.tar.gz tmp/mup-xml-sign-0.1.2.tar.gz --markdown 20230527/m/mup-xml-sign/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 20:19:23] INFO root fetch - processPackages [varwizard]: executing diffoscope
+[2023-05-27 20:19:23] INFO root fetch - processPackages [varwizard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/varwizard-0.2.1.tar.gz tmp/varwizard-0.2.2.tar.gz --markdown 20230527/v/varwizard/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-27 20:19:24] INFO root fetch - main [MainThread]: End processing [tn-slack-py-module]: success
+[2023-05-27 20:19:24] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 20:19:24] INFO root fetch - main [MainThread]: End processing [mup-xml-sign]: success
+[2023-05-27 20:19:25] INFO root fetch - main [MainThread]: End processing [varwizard]: success
+[2023-05-27 20:19:25] INFO root fetch - main [MainThread]: Store serial: [18276025]
