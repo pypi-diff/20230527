@@ -7346,3 +7346,66 @@
 [2023-05-27 12:28:22] INFO root fetch - main [MainThread]: End processing [backends]: success
 [2023-05-27 12:28:31] INFO root fetch - main [MainThread]: End processing [river]: success
 [2023-05-27 12:28:31] INFO root fetch - main [MainThread]: Store serial: [18273754]
+[2023-05-27 12:33:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273754]
+[2023-05-27 12:33:40] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-27 12:33:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dokuwikidumper
+[2023-05-27 12:33:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TimePrintOnPYPI
+[2023-05-27 12:33:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydoclint
+[2023-05-27 12:33:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: replicator-cli
+[2023-05-27 12:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cigsegy
+[2023-05-27 12:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: NaturalAPI
+[2023-05-27 12:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: notcli
+[2023-05-27 12:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: codepeers
+[2023-05-27 12:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: convcsv2json
+[2023-05-27 12:33:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sixsigmaspc
+[2023-05-27 12:33:41] WARNING root fetch - processPackages [replicator-cli]: Skipping, unable to determine old version
+[2023-05-27 12:33:41] INFO root fetch - processPackages [replicator-cli]: Start processing: newsapi-python-client
+[2023-05-27 12:33:41] INFO root fetch - main [MainThread]: End processing [replicator-cli] error
+[2023-05-27 12:33:41] INFO root fetch - processPackages [NaturalAPI]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 12:33:41] INFO root fetch - processPackages [TimePrintOnPYPI]: New version: [1.5.4] Old Version: [1.5.3]
+[2023-05-27 12:33:41] INFO root fetch - processPackages [pydoclint]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-27 12:33:41] INFO root fetch - processPackages [dokuwikidumper]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 12:33:41] INFO root fetch - processPackages [cigsegy]: New version: [1.1.2] Old Version: [1.0.1]
+[2023-05-27 12:33:41] WARNING root fetch - processPackages [convcsv2json]: Skipping, unable to determine old version
+[2023-05-27 12:33:41] INFO root fetch - processPackages [codepeers]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-27 12:33:41] INFO root fetch - processPackages [convcsv2json]: Start processing: ibm-aigov-facts-client
+[2023-05-27 12:33:41] INFO root fetch - main [MainThread]: End processing [convcsv2json] error
+[2023-05-27 12:33:41] INFO root fetch - processPackages [notcli]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 12:33:41] WARNING root fetch - processPackages [newsapi-python-client]: Skipping, unable to determine old version
+[2023-05-27 12:33:41] INFO root fetch - main [MainThread]: End processing [newsapi-python-client] error
+[2023-05-27 12:33:41] WARNING root fetch - processPackages [sixsigmaspc]: Skipping, unable to determine old version
+[2023-05-27 12:33:41] INFO root fetch - main [MainThread]: End processing [sixsigmaspc] error
+[2023-05-27 12:33:41] INFO root fetch - processPackages [ibm-aigov-facts-client]: New version: [1.0.58] Old Version: [1.0.57]
+[2023-05-27 12:33:41] INFO root fetch - processPackages [notcli]: Downloading https://files.pythonhosted.org/packages/d0/b3/f326348a77f6926b4f9838ff09f5cdbfbfaf1f1b6486c8b2aa2019d25cf4/notcli-0.0.5.tar.gz
+[2023-05-27 12:33:41] INFO root fetch - processPackages [TimePrintOnPYPI]: Downloading https://files.pythonhosted.org/packages/98/c1/1aed8dc59d54a229ef3d51499871ee7fb3aa34973d1522630e2189ee69ec/TimePrintOnPYPI-1.5.4.tar.gz
+[2023-05-27 12:33:41] INFO root fetch - processPackages [codepeers]: Downloading https://files.pythonhosted.org/packages/37/a2/6269b03ff4757704524036e50a8b673f213d83eb77867431d146306ae777/codepeers-0.3.0-py3-none-any.whl
+[2023-05-27 12:33:41] INFO root fetch - processPackages [NaturalAPI]: Downloading https://files.pythonhosted.org/packages/6c/36/352c0dc32651615abf53819fdb26321e068bf2d1f4e254fc4d1f2ba31f4a/NaturalAPI-0.0.3.tar.gz
+[2023-05-27 12:33:41] INFO root fetch - processPackages [ibm-aigov-facts-client]: Downloading https://files.pythonhosted.org/packages/e9/b9/b2abb0bfdb265920d5aabffa621681adc115790a57aa28a4c9a214596261/ibm_aigov_facts_client-1.0.57-py3-none-any.whl
+[2023-05-27 12:33:41] INFO root fetch - processPackages [notcli]: executing diffoscope
+[2023-05-27 12:33:41] INFO root fetch - processPackages [notcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notcli-0.0.4.tar.gz tmp/notcli-0.0.5.tar.gz --markdown 20230527/n/notcli/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-27 12:33:41] INFO root fetch - processPackages [pydoclint]: Downloading https://files.pythonhosted.org/packages/89/8d/06946a9fcd3a92071e842d68f7e48956b349cb01dba3fad0dcb2adb16689/pydoclint-0.0.4.tar.gz
+[2023-05-27 12:33:41] INFO root fetch - processPackages [TimePrintOnPYPI]: executing diffoscope
+[2023-05-27 12:33:41] INFO root fetch - processPackages [TimePrintOnPYPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TimePrintOnPYPI-1.5.3.tar.gz tmp/TimePrintOnPYPI-1.5.4.tar.gz --markdown 20230527/T/TimePrintOnPYPI/1.5.3-1.5.4/diff.md --exclude *.pyd
+[2023-05-27 12:33:41] INFO root fetch - processPackages [cigsegy]: Downloading https://files.pythonhosted.org/packages/b5/14/81a28d11307c30f040958cdd4252d0bc3a9ea68700f8556894d4348c5cf0/cigsegy-1.1.2.tar.gz
+[2023-05-27 12:33:41] INFO root fetch - processPackages [NaturalAPI]: executing diffoscope
+[2023-05-27 12:33:41] INFO root fetch - processPackages [NaturalAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NaturalAPI-0.0.2.tar.gz tmp/NaturalAPI-0.0.3.tar.gz --markdown 20230527/N/NaturalAPI/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 12:33:41] INFO root fetch - processPackages [codepeers]: executing diffoscope
+[2023-05-27 12:33:41] INFO root fetch - processPackages [codepeers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codepeers-0.2.0-py3-none-any.whl.zip tmp/codepeers-0.3.0-py3-none-any.whl.zip --markdown 20230527/c/codepeers/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-27 12:33:41] INFO root fetch - processPackages [dokuwikidumper]: executing diffoscope
+[2023-05-27 12:33:41] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.8.tar.gz tmp/dokuwikidumper-0.1.9.tar.gz --markdown 20230527/d/dokuwikidumper/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 12:33:41] INFO root fetch - processPackages [pydoclint]: executing diffoscope
+[2023-05-27 12:33:41] INFO root fetch - processPackages [pydoclint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydoclint-0.0.3.tar.gz tmp/pydoclint-0.0.4.tar.gz --markdown 20230527/p/pydoclint/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-27 12:33:41] INFO root fetch - processPackages [cigsegy]: executing diffoscope
+[2023-05-27 12:33:41] INFO root fetch - processPackages [cigsegy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cigsegy-1.0.1.tar.gz tmp/cigsegy-1.1.2.tar.gz --markdown 20230527/c/cigsegy/1.0.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-27 12:33:41] INFO root fetch - processPackages [ibm-aigov-facts-client]: Downloading https://files.pythonhosted.org/packages/1a/0e/2ae2c39a7a2862b0c48dff85b8b1845c09b0339a607680a0634df80d8a48/ibm_aigov_facts_client-1.0.58-py3-none-any.whl
+[2023-05-27 12:33:41] INFO root fetch - processPackages [ibm-aigov-facts-client]: executing diffoscope
+[2023-05-27 12:33:41] INFO root fetch - processPackages [ibm-aigov-facts-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibm_aigov_facts_client-1.0.57-py3-none-any.whl.zip tmp/ibm_aigov_facts_client-1.0.58-py3-none-any.whl.zip --markdown 20230527/i/ibm-aigov-facts-client/1.0.57-1.0.58/diff.md --exclude *.pyd
+[2023-05-27 12:33:42] INFO root fetch - main [MainThread]: End processing [notcli]: success
+[2023-05-27 12:33:42] INFO root fetch - main [MainThread]: End processing [TimePrintOnPYPI]: success
+[2023-05-27 12:33:42] INFO root fetch - main [MainThread]: End processing [NaturalAPI]: success
+[2023-05-27 12:33:43] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
+[2023-05-27 12:33:43] INFO root fetch - main [MainThread]: End processing [pydoclint]: success
+[2023-05-27 12:33:43] INFO root fetch - main [MainThread]: End processing [cigsegy]: success
+[2023-05-27 12:33:43] INFO root fetch - main [MainThread]: End processing [ibm-aigov-facts-client]: success
+[2023-05-27 12:34:14] INFO root fetch - main [MainThread]: End processing [codepeers]: success
+[2023-05-27 12:34:14] INFO root fetch - main [MainThread]: Store serial: [18273809]
