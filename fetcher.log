@@ -5761,3 +5761,36 @@
 [2023-05-27 09:03:57] INFO root fetch - main [MainThread]: End processing [pulumi-vault]: success
 [2023-05-27 09:04:12] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2023-05-27 09:04:12] INFO root fetch - main [MainThread]: Store serial: [18272753]
+[2023-05-27 09:09:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272753]
+[2023-05-27 09:09:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 09:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-postgresql
+[2023-05-27 09:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-venafi
+[2023-05-27 09:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kcli
+[2023-05-27 09:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-hub-nightly
+[2023-05-27 09:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: HomoglyphsCJK
+[2023-05-27 09:09:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-rke
+[2023-05-27 09:09:21] INFO root fetch - processPackages [pulumi-venafi]: New version: [1.6.0a1685084945] Old Version: [1.6.0a1684391394]
+[2023-05-27 09:09:21] INFO root fetch - processPackages [HomoglyphsCJK]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 09:09:21] INFO root fetch - processPackages [pulumi-rke]: New version: [3.3.0a1685084065] Old Version: [3.3.0a1684391037]
+[2023-05-27 09:09:21] INFO root fetch - processPackages [pulumi-postgresql]: New version: [3.9.0a1685082890] Old Version: [3.9.0a1684392571]
+[2023-05-27 09:09:22] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-05-27 09:09:22] INFO root fetch - processPackages [pulumi-venafi]: executing diffoscope
+[2023-05-27 09:09:22] INFO root fetch - processPackages [kcli]: New version: [99.0.202305262155] Old Version: [99.0.202305262015]
+[2023-05-27 09:09:22] INFO root fetch - processPackages [pulumi-venafi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_venafi-1.6.0a1684391394.tar.gz tmp/pulumi_venafi-1.6.0a1685084945.tar.gz --markdown 20230527/p/pulumi-venafi/1.6.0a1684391394-1.6.0a1685084945/diff.md --exclude *.pyd
+[2023-05-27 09:09:22] INFO root fetch - processPackages [pulumi-postgresql]: executing diffoscope
+[2023-05-27 09:09:22] INFO root fetch - processPackages [pulumi-postgresql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_postgresql-3.9.0a1684392571.tar.gz tmp/pulumi_postgresql-3.9.0a1685082890.tar.gz --markdown 20230527/p/pulumi-postgresql/3.9.0a1684392571-3.9.0a1685082890/diff.md --exclude *.pyd
+[2023-05-27 09:09:22] INFO root fetch - processPackages [HomoglyphsCJK]: executing diffoscope
+[2023-05-27 09:09:22] INFO root fetch - processPackages [HomoglyphsCJK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HomoglyphsCJK-0.1.1.tar.gz tmp/HomoglyphsCJK-0.1.2.tar.gz --markdown 20230527/H/HomoglyphsCJK/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 09:09:22] INFO root fetch - processPackages [pulumi-rke]: executing diffoscope
+[2023-05-27 09:09:22] INFO root fetch - processPackages [pulumi-rke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rke-3.3.0a1684391037.tar.gz tmp/pulumi_rke-3.3.0a1685084065.tar.gz --markdown 20230527/p/pulumi-rke/3.3.0a1684391037-3.3.0a1685084065/diff.md --exclude *.pyd
+[2023-05-27 09:09:22] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-05-27 09:09:22] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230527/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-05-27 09:09:22] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-27 09:09:22] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305262015-py3-none-any.whl.zip tmp/kcli-99.0.202305262155-py3-none-any.whl.zip --markdown 20230527/k/kcli/99.0.202305262015-99.0.202305262155/diff.md --exclude *.pyd
+[2023-05-27 09:09:23] INFO root fetch - main [MainThread]: End processing [HomoglyphsCJK]: success
+[2023-05-27 09:09:23] INFO root fetch - main [MainThread]: End processing [pulumi-venafi]: success
+[2023-05-27 09:09:23] INFO root fetch - main [MainThread]: End processing [pulumi-postgresql]: success
+[2023-05-27 09:09:23] INFO root fetch - main [MainThread]: End processing [pulumi-rke]: success
+[2023-05-27 09:09:23] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2023-05-27 09:09:31] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-27 09:09:31] INFO root fetch - main [MainThread]: Store serial: [18272773]
