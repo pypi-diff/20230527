@@ -12225,3 +12225,46 @@
 [2023-05-27 22:38:24] INFO root fetch - main [MainThread]: End processing [persian-names]: success
 [2023-05-27 22:38:24] INFO root fetch - main [MainThread]: End processing [finalynx]: success
 [2023-05-27 22:38:24] INFO root fetch - main [MainThread]: Store serial: [18276759]
+[2023-05-27 22:43:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276759]
+[2023-05-27 22:43:33] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 22:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphinx-json-schema-spec
+[2023-05-27 22:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webraft
+[2023-05-27 22:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: convert-jupyter
+[2023-05-27 22:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chatcmd
+[2023-05-27 22:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clown-sort
+[2023-05-27 22:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: unihan-etl
+[2023-05-27 22:43:33] INFO root fetch - processPackages [chatcmd]: New version: [1.0.18] Old Version: [1.0.17]
+[2023-05-27 22:43:33] INFO root fetch - processPackages [convert-jupyter]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-27 22:43:33] INFO root fetch - processPackages [webraft]: New version: [0.2] Old Version: [0.1]
+[2023-05-27 22:43:33] INFO root fetch - processPackages [sphinx-json-schema-spec]: New version: [2023.5.3] Old Version: [2023.5.2]
+[2023-05-27 22:43:33] INFO root fetch - processPackages [clown-sort]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-27 22:43:33] INFO root fetch - processPackages [unihan-etl]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-27 22:43:33] INFO root fetch - processPackages [sphinx-json-schema-spec]: Downloading https://files.pythonhosted.org/packages/c3/89/73c7c5c9e4db5e58864cfccb9c70bf4e7061ef95f03d610c66329140aa88/sphinx_json_schema_spec-2023.5.2.tar.gz
+[2023-05-27 22:43:33] INFO root fetch - processPackages [unihan-etl]: Downloading https://files.pythonhosted.org/packages/e6/f2/ad475612c1951852fbf186e9c2ffac59296b278605657be60b58b4699358/unihan-etl-0.9.4.tar.gz
+[2023-05-27 22:43:33] INFO root fetch - processPackages [convert-jupyter]: Downloading https://files.pythonhosted.org/packages/7d/b7/b34af342a7251f684b8813331bfdded031bae17da716889bdf5f999f9a03/convert_jupyter-0.1.4.tar.gz
+[2023-05-27 22:43:33] INFO root fetch - processPackages [webraft]: Downloading https://files.pythonhosted.org/packages/63/fa/205c024ed7b4056a9bc9407cc3386e4d8d8f1d9687b0093518c6944b7b09/webraft-0.1.tar.gz
+[2023-05-27 22:43:33] INFO root fetch - processPackages [clown-sort]: Downloading https://files.pythonhosted.org/packages/57/b3/d456650167b43a59d232aba0ce210147d0859d2cbe9d1bf5f74f841e74df/clown_sort-1.5.1.tar.gz
+[2023-05-27 22:43:33] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/26/1d/78a08b2fcd2624ab508d002d957ed6926f1322811a98610da919ba849caa/chatcmd-1.0.18.tar.gz
+[2023-05-27 22:43:33] INFO root fetch - processPackages [clown-sort]: executing diffoscope
+[2023-05-27 22:43:33] INFO root fetch - processPackages [clown-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clown_sort-1.5.0.tar.gz tmp/clown_sort-1.5.1.tar.gz --markdown 20230527/c/clown-sort/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-27 22:43:34] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-27 22:43:34] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.17.tar.gz tmp/chatcmd-1.0.18.tar.gz --markdown 20230527/c/chatcmd/1.0.17-1.0.18/diff.md --exclude *.pyd
+[2023-05-27 22:43:34] INFO root fetch - processPackages [sphinx-json-schema-spec]: Downloading https://files.pythonhosted.org/packages/ce/1d/2caee91c6e16c6f2a6a9d382ecc8d26a47567aa6c9773810fcc619c499c7/sphinx_json_schema_spec-2023.5.3.tar.gz
+[2023-05-27 22:43:34] INFO root fetch - processPackages [sphinx-json-schema-spec]: executing diffoscope
+[2023-05-27 22:43:34] INFO root fetch - processPackages [sphinx-json-schema-spec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx_json_schema_spec-2023.5.2.tar.gz tmp/sphinx_json_schema_spec-2023.5.3.tar.gz --markdown 20230527/s/sphinx-json-schema-spec/2023.5.2-2023.5.3/diff.md --exclude *.pyd
+[2023-05-27 22:43:34] INFO root fetch - processPackages [webraft]: Downloading https://files.pythonhosted.org/packages/50/54/4e310b21d40fbfdb8d3a14da6158af140d8e451028cf12b22486a67397be/webraft-0.2.tar.gz
+[2023-05-27 22:43:34] INFO root fetch - processPackages [unihan-etl]: Downloading https://files.pythonhosted.org/packages/d8/de/3d9897770b4f0eafb171ba960ce769fa5034edcb5ffc2b3c0538635c5b63/unihan-etl-0.9.5.tar.gz
+[2023-05-27 22:43:34] INFO root fetch - processPackages [webraft]: executing diffoscope
+[2023-05-27 22:43:34] INFO root fetch - processPackages [webraft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webraft-0.1.tar.gz tmp/webraft-0.2.tar.gz --markdown 20230527/w/webraft/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-27 22:43:34] INFO root fetch - processPackages [convert-jupyter]: Downloading https://files.pythonhosted.org/packages/a6/bc/4b0283efe33e85b374b174312bd7a661e862bff1535fd564b2b4c3732661/convert_jupyter-0.1.5.tar.gz
+[2023-05-27 22:43:34] INFO root fetch - processPackages [convert-jupyter]: executing diffoscope
+[2023-05-27 22:43:34] INFO root fetch - processPackages [convert-jupyter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/convert_jupyter-0.1.4.tar.gz tmp/convert_jupyter-0.1.5.tar.gz --markdown 20230527/c/convert-jupyter/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-27 22:43:34] INFO root fetch - processPackages [unihan-etl]: executing diffoscope
+[2023-05-27 22:43:34] INFO root fetch - processPackages [unihan-etl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unihan-etl-0.9.4.tar.gz tmp/unihan-etl-0.9.5.tar.gz --markdown 20230527/u/unihan-etl/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-27 22:43:35] INFO root fetch - main [MainThread]: End processing [clown-sort]: success
+[2023-05-27 22:43:35] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-27 22:43:35] INFO root fetch - main [MainThread]: End processing [sphinx-json-schema-spec]: success
+[2023-05-27 22:43:35] INFO root fetch - main [MainThread]: End processing [webraft]: success
+[2023-05-27 22:43:35] INFO root fetch - main [MainThread]: End processing [unihan-etl]: success
+[2023-05-27 22:43:45] INFO root fetch - main [MainThread]: End processing [convert-jupyter]: success
+[2023-05-27 22:43:45] INFO root fetch - main [MainThread]: Store serial: [18276778]
