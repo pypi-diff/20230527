@@ -6095,3 +6095,27 @@
 [2023-05-27 09:58:44] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
 [2023-05-27 09:58:46] INFO root fetch - main [MainThread]: End processing [horton-grid]: success
 [2023-05-27 09:58:46] INFO root fetch - main [MainThread]: Store serial: [18272942]
+[2023-05-27 10:03:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272942]
+[2023-05-27 10:03:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 10:03:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ichingshifa
+[2023-05-27 10:03:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deduplicationdict
+[2023-05-27 10:03:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prfiesta
+[2023-05-27 10:03:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xlwings
+[2023-05-27 10:03:55] INFO root fetch - processPackages [prfiesta]: New version: [0.8.2b146] Old Version: [0.8.2b145]
+[2023-05-27 10:03:55] WARNING root fetch - processPackages [deduplicationdict]: Skipping, unable to determine old version
+[2023-05-27 10:03:55] INFO root fetch - main [MainThread]: End processing [deduplicationdict] error
+[2023-05-27 10:03:55] INFO root fetch - processPackages [ichingshifa]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-05-27 10:03:55] INFO root fetch - processPackages [xlwings]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-27 10:03:55] INFO root fetch - processPackages [ichingshifa]: Downloading https://files.pythonhosted.org/packages/1f/d9/557d751b8a40ca7296bb3910cc12e2aed66c617b3abfc12a040a1cf82375/ichingshifa-3.1.8.tar.gz
+[2023-05-27 10:03:55] INFO root fetch - processPackages [prfiesta]: Downloading https://files.pythonhosted.org/packages/19/2e/b05766c229c60e095f61e8a9d2ef074291c2984bc48ece9abfff3833e4a8/prfiesta-0.8.2b146.tar.gz
+[2023-05-27 10:03:55] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-27 10:03:55] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.8.2b145.tar.gz tmp/prfiesta-0.8.2b146.tar.gz --markdown 20230527/p/prfiesta/0.8.2b145-0.8.2b146/diff.md --exclude *.pyd
+[2023-05-27 10:03:55] INFO root fetch - processPackages [xlwings]: executing diffoscope
+[2023-05-27 10:03:55] INFO root fetch - processPackages [xlwings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xlwings-0.9.2.tar.gz tmp/xlwings-0.9.3.tar.gz --markdown 20230527/x/xlwings/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-27 10:03:55] INFO root fetch - processPackages [ichingshifa]: Downloading https://files.pythonhosted.org/packages/42/15/ab95736220192e90dc2716903b54a0ae58e1485be25c7fb14f5aa03b219f/ichingshifa-3.1.9.tar.gz
+[2023-05-27 10:03:55] INFO root fetch - processPackages [ichingshifa]: executing diffoscope
+[2023-05-27 10:03:55] INFO root fetch - processPackages [ichingshifa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ichingshifa-3.1.8.tar.gz tmp/ichingshifa-3.1.9.tar.gz --markdown 20230527/i/ichingshifa/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-05-27 10:03:56] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-27 10:03:56] INFO root fetch - main [MainThread]: End processing [ichingshifa]: success
+[2023-05-27 10:03:57] INFO root fetch - main [MainThread]: End processing [xlwings]: success
+[2023-05-27 10:03:57] INFO root fetch - main [MainThread]: Store serial: [18272999]
