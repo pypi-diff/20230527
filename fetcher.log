@@ -10058,3 +10058,37 @@
 [2023-05-27 17:25:39] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
 [2023-05-27 17:25:39] INFO root fetch - main [MainThread]: End processing [greenstalk]: success
 [2023-05-27 17:25:39] INFO root fetch - main [MainThread]: Store serial: [18275265]
+[2023-05-27 17:30:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275265]
+[2023-05-27 17:30:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 17:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyDAO-9000
+[2023-05-27 17:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fetchify
+[2023-05-27 17:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: atproto
+[2023-05-27 17:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamchat-agent
+[2023-05-27 17:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: custom-utils
+[2023-05-27 17:30:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-roborock
+[2023-05-27 17:30:49] INFO root fetch - processPackages [fetchify]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-05-27 17:30:49] WARNING root fetch - processPackages [PyDAO-9000]: Skipping, unable to determine old version
+[2023-05-27 17:30:49] INFO root fetch - main [MainThread]: End processing [PyDAO-9000] error
+[2023-05-27 17:30:49] INFO root fetch - processPackages [atproto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 17:30:49] INFO root fetch - processPackages [streamchat-agent]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-27 17:30:49] INFO root fetch - processPackages [custom-utils]: New version: [0.0.37] Old Version: [0.0.2]
+[2023-05-27 17:30:49] INFO root fetch - processPackages [python-roborock]: New version: [0.9.0rc0] Old Version: [0.9.0]
+[2023-05-27 17:30:49] INFO root fetch - processPackages [fetchify]: Downloading https://files.pythonhosted.org/packages/46/7b/8ba802eb6a6fe4f14cda0a371518b1cedba1bd44f3f360de3a83beaf67d4/fetchify-1.1.7.tar.gz
+[2023-05-27 17:30:49] INFO root fetch - processPackages [streamchat-agent]: Downloading https://files.pythonhosted.org/packages/84/f8/53fcf31a50893eb24ed340019215443831bc5741df5fbbe2f228412959c0/streamchat-agent-1.0.1.tar.gz
+[2023-05-27 17:30:49] INFO root fetch - processPackages [fetchify]: executing diffoscope
+[2023-05-27 17:30:49] INFO root fetch - processPackages [fetchify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fetchify-1.1.6.tar.gz tmp/fetchify-1.1.7.tar.gz --markdown 20230527/f/fetchify/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-05-27 17:30:49] INFO root fetch - processPackages [streamchat-agent]: executing diffoscope
+[2023-05-27 17:30:49] INFO root fetch - processPackages [streamchat-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamchat-agent-1.0.0.tar.gz tmp/streamchat-agent-1.0.1.tar.gz --markdown 20230527/s/streamchat-agent/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 17:30:49] INFO root fetch - processPackages [atproto]: executing diffoscope
+[2023-05-27 17:30:49] INFO root fetch - processPackages [atproto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atproto-0.0.8.tar.gz tmp/atproto-0.0.9.tar.gz --markdown 20230527/a/atproto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 17:30:49] INFO root fetch - processPackages [custom-utils]: Downloading https://files.pythonhosted.org/packages/46/45/5757716e2c8a6ace9ec95ed28d90b12eaa3f8b248bb5319c5f1076d040e3/custom-utils-0.0.37.tar.gz
+[2023-05-27 17:30:49] INFO root fetch - processPackages [python-roborock]: executing diffoscope
+[2023-05-27 17:30:49] INFO root fetch - processPackages [python-roborock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_roborock-0.9.0.tar.gz tmp/python_roborock-0.9.0rc0.tar.gz --markdown 20230527/p/python-roborock/0.9.0-0.9.0rc0/diff.md --exclude *.pyd
+[2023-05-27 17:30:49] INFO root fetch - processPackages [custom-utils]: executing diffoscope
+[2023-05-27 17:30:49] INFO root fetch - processPackages [custom-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom-utils-0.0.2.tar.gz tmp/custom-utils-0.0.37.tar.gz --markdown 20230527/c/custom-utils/0.0.2-0.0.37/diff.md --exclude *.pyd
+[2023-05-27 17:30:50] INFO root fetch - main [MainThread]: End processing [fetchify]: success
+[2023-05-27 17:30:50] INFO root fetch - main [MainThread]: End processing [streamchat-agent]: success
+[2023-05-27 17:30:50] INFO root fetch - main [MainThread]: End processing [python-roborock]: success
+[2023-05-27 17:30:50] INFO root fetch - main [MainThread]: End processing [custom-utils]: success
+[2023-05-27 17:30:51] INFO root fetch - main [MainThread]: End processing [atproto]: success
+[2023-05-27 17:30:51] INFO root fetch - main [MainThread]: Store serial: [18275289]
