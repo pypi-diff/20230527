@@ -10677,3 +10677,35 @@
 [2023-05-27 18:48:42] INFO root fetch - main [MainThread]: End processing [mfhpo-simulator]: success
 [2023-05-27 18:48:42] INFO root fetch - main [MainThread]: End processing [chiakilisp]: success
 [2023-05-27 18:48:42] INFO root fetch - main [MainThread]: Store serial: [18275667]
+[2023-05-27 18:53:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275667]
+[2023-05-27 18:53:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 18:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scatterd
+[2023-05-27 18:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langchain-discord
+[2023-05-27 18:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bonbast
+[2023-05-27 18:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: classy-imaginary
+[2023-05-27 18:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: langchain-discord
+[2023-05-27 18:53:51] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 18:53:51] INFO root fetch - processPackages [bonbast]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-05-27 18:53:51] INFO root fetch - processPackages [classy-imaginary]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-05-27 18:53:51] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 18:53:51] INFO root fetch - processPackages [scatterd]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-05-27 18:53:51] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 18:53:51] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 18:53:51] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 18:53:51] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 18:53:52] INFO root fetch - processPackages [bonbast]: Downloading https://files.pythonhosted.org/packages/4e/76/3a3e7bb0e699746a16476b1ac23e014ac776fcb3aaa6bc254e7a7cc088d2/bonbast-0.5.5.tar.gz
+[2023-05-27 18:53:52] INFO root fetch - processPackages [scatterd]: Downloading https://files.pythonhosted.org/packages/46/43/6911974d27df289ab57beff257960dd75fd3948b91f2980659043a009978/scatterd-1.3.3.tar.gz
+[2023-05-27 18:53:52] INFO root fetch - processPackages [scatterd]: executing diffoscope
+[2023-05-27 18:53:52] INFO root fetch - processPackages [scatterd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatterd-1.3.2.tar.gz tmp/scatterd-1.3.3.tar.gz --markdown 20230527/s/scatterd/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-05-27 18:53:52] INFO root fetch - processPackages [classy-imaginary]: Downloading https://files.pythonhosted.org/packages/c8/6f/f0d197f132c6e6c5e9162a670489ffc13a369b6c44a087f483dced484c7f/classy_imaginary-0.6.4.tar.gz
+[2023-05-27 18:53:52] INFO root fetch - processPackages [bonbast]: Downloading https://files.pythonhosted.org/packages/36/c5/212f761741894a24b560337870101e305be5342ee8142543fde2df194cd2/bonbast-0.5.6.tar.gz
+[2023-05-27 18:53:52] INFO root fetch - processPackages [bonbast]: executing diffoscope
+[2023-05-27 18:53:52] INFO root fetch - processPackages [bonbast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bonbast-0.5.5.tar.gz tmp/bonbast-0.5.6.tar.gz --markdown 20230527/b/bonbast/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-05-27 18:53:52] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 18:53:53] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 18:53:53] INFO root fetch - processPackages [classy-imaginary]: executing diffoscope
+[2023-05-27 18:53:53] INFO root fetch - processPackages [classy-imaginary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classy_imaginary-0.6.3.tar.gz tmp/classy_imaginary-0.6.4.tar.gz --markdown 20230527/c/classy-imaginary/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-05-27 18:53:53] INFO root fetch - main [MainThread]: End processing [scatterd]: success
+[2023-05-27 18:53:53] INFO root fetch - main [MainThread]: End processing [bonbast]: success
+[2023-05-27 18:53:55] INFO root fetch - main [MainThread]: End processing [classy-imaginary]: success
+[2023-05-27 18:53:55] INFO root fetch - main [MainThread]: Store serial: [18275681]
