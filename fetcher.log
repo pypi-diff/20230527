@@ -12654,3 +12654,35 @@
 [2023-05-27 23:35:43] INFO root fetch - main [MainThread]: End processing [flats]: success
 [2023-05-27 23:35:43] INFO root fetch - main [MainThread]: End processing [products]: success
 [2023-05-27 23:35:43] INFO root fetch - main [MainThread]: Store serial: [18277031]
+[2023-05-27 23:40:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277031]
+[2023-05-27 23:40:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 23:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shttst
+[2023-05-27 23:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heaserver
+[2023-05-27 23:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sesg
+[2023-05-27 23:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gpt-json
+[2023-05-27 23:40:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: linpg
+[2023-05-27 23:40:52] INFO root fetch - processPackages [gpt-json]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 23:40:52] INFO root fetch - processPackages [shttst]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-27 23:40:52] INFO root fetch - processPackages [heaserver]: New version: [1.0.0a99] Old Version: [1.0.0a98]
+[2023-05-27 23:40:52] INFO root fetch - processPackages [sesg]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 23:40:52] INFO root fetch - processPackages [linpg]: New version: [3.6.1] Old Version: [3.6.0]
+[2023-05-27 23:40:52] INFO root fetch - processPackages [heaserver]: executing diffoscope
+[2023-05-27 23:40:52] INFO root fetch - processPackages [heaserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-1.0.0a98.tar.gz tmp/heaserver-1.0.0a99.tar.gz --markdown 20230527/h/heaserver/1.0.0a98-1.0.0a99/diff.md --exclude *.pyd
+[2023-05-27 23:40:53] INFO root fetch - processPackages [linpg]: Downloading https://files.pythonhosted.org/packages/d4/a3/a33662eabcdb7812e246fd542b2b8fbe596292e1a08206b3055ccb9f10ff/linpg-3.6.0.tar.gz
+[2023-05-27 23:40:53] INFO root fetch - processPackages [shttst]: Downloading https://files.pythonhosted.org/packages/23/bc/6f6b5b5f1323017370a617bc2f066a20d7fc966fcf30b12ff8a1765d562a/shttst-0.1.1.tar.gz
+[2023-05-27 23:40:53] INFO root fetch - processPackages [gpt-json]: Downloading https://files.pythonhosted.org/packages/da/08/112cf9a10b2fac8cacd600a5085e02c014919276de52a40f22cc020ed3b8/gpt_json-0.1.9.tar.gz
+[2023-05-27 23:40:53] INFO root fetch - processPackages [shttst]: executing diffoscope
+[2023-05-27 23:40:53] INFO root fetch - processPackages [shttst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shttst-0.1.0-py3-none-any.whl.zip tmp/shttst-0.1.1.tar.gz --markdown 20230527/s/shttst/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-27 23:40:53] INFO root fetch - processPackages [sesg]: executing diffoscope
+[2023-05-27 23:40:53] INFO root fetch - processPackages [sesg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sesg-0.0.8.tar.gz tmp/sesg-0.0.9.tar.gz --markdown 20230527/s/sesg/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 23:40:53] INFO root fetch - processPackages [gpt-json]: executing diffoscope
+[2023-05-27 23:40:53] INFO root fetch - processPackages [gpt-json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_json-0.1.8.tar.gz tmp/gpt_json-0.1.9.tar.gz --markdown 20230527/g/gpt-json/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 23:40:53] INFO root fetch - processPackages [linpg]: Downloading https://files.pythonhosted.org/packages/e4/8d/25a2642bc90fdc5320519b6a740221ec992afdabe871b8e3303592de372b/linpg-3.6.1.tar.gz
+[2023-05-27 23:40:54] INFO root fetch - processPackages [linpg]: executing diffoscope
+[2023-05-27 23:40:54] INFO root fetch - processPackages [linpg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linpg-3.6.0.tar.gz tmp/linpg-3.6.1.tar.gz --markdown 20230527/l/linpg/3.6.0-3.6.1/diff.md --exclude *.pyd
+[2023-05-27 23:40:54] INFO root fetch - main [MainThread]: End processing [shttst]: success
+[2023-05-27 23:40:54] INFO root fetch - main [MainThread]: End processing [sesg]: success
+[2023-05-27 23:40:54] INFO root fetch - main [MainThread]: End processing [gpt-json]: success
+[2023-05-27 23:40:54] INFO root fetch - main [MainThread]: End processing [heaserver]: success
+[2023-05-27 23:40:55] INFO root fetch - main [MainThread]: End processing [linpg]: success
+[2023-05-27 23:40:55] INFO root fetch - main [MainThread]: Store serial: [18277047]
