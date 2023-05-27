@@ -5123,3 +5123,46 @@
 [2023-05-27 07:43:53] INFO root fetch - processPackages [lnschema_bionty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_bionty-0.8.1.tar.gz tmp/lnschema_bionty-0.9.0.tar.gz --markdown 20230527/l/lnschema_bionty/0.8.1-0.9.0/diff.md --exclude *.pyd
 [2023-05-27 07:43:54] INFO root fetch - main [MainThread]: End processing [lnschema_bionty]: success
 [2023-05-27 07:43:54] INFO root fetch - main [MainThread]: Store serial: [18272453]
+[2023-05-27 07:48:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272453]
+[2023-05-27 07:49:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 07:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moptipyapps
+[2023-05-27 07:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: policyengine-us
+[2023-05-27 07:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gqy
+[2023-05-27 07:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lnschema_lamin1
+[2023-05-27 07:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: statml
+[2023-05-27 07:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: policyengine-us
+[2023-05-27 07:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gqyl
+[2023-05-27 07:49:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: control-rod
+[2023-05-27 07:49:03] WARNING root fetch - processPackages [moptipyapps]: Skipping, unable to determine old version
+[2023-05-27 07:49:03] INFO root fetch - main [MainThread]: End processing [moptipyapps] error
+[2023-05-27 07:49:03] WARNING root fetch - processPackages [gqy]: Skipping, unable to determine old version
+[2023-05-27 07:49:03] INFO root fetch - main [MainThread]: End processing [gqy] error
+[2023-05-27 07:49:03] INFO root fetch - processPackages [statml]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-27 07:49:03] INFO root fetch - processPackages [lnschema_lamin1]: New version: [0.17a3] Old Version: [0.17a2]
+[2023-05-27 07:49:03] INFO root fetch - processPackages [policyengine-us]: New version: [0.327.0] Old Version: [0.326.0]
+[2023-05-27 07:49:03] INFO root fetch - processPackages [policyengine-us]: New version: [0.327.0] Old Version: [0.326.0]
+[2023-05-27 07:49:03] WARNING root fetch - processPackages [gqyl]: Skipping, unable to determine old version
+[2023-05-27 07:49:03] INFO root fetch - main [MainThread]: End processing [gqyl] error
+[2023-05-27 07:49:03] INFO root fetch - processPackages [control-rod]: New version: [2023.5.6.1] Old Version: [2023.5.6.0]
+[2023-05-27 07:49:03] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/81/16/3279ea6eb0428c3d1c36af6535ebeac18c20dc48bcda998410bfd92749c4/policyengine-us-0.326.0.tar.gz
+[2023-05-27 07:49:03] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/81/16/3279ea6eb0428c3d1c36af6535ebeac18c20dc48bcda998410bfd92749c4/policyengine-us-0.326.0.tar.gz
+[2023-05-27 07:49:03] INFO root fetch - processPackages [lnschema_lamin1]: Downloading https://files.pythonhosted.org/packages/9e/df/1e3ba6d0601f414901f46c9ca6831b2367064a88be4e7b2996ab3e8e47a2/lnschema_lamin1-0.17a3.tar.gz
+[2023-05-27 07:49:03] INFO root fetch - processPackages [control-rod]: executing diffoscope
+[2023-05-27 07:49:03] INFO root fetch - processPackages [control-rod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/control_rod-2023.5.6.0.tar.gz tmp/control_rod-2023.5.6.1.tar.gz --markdown 20230527/c/control-rod/2023.5.6.0-2023.5.6.1/diff.md --exclude *.pyd
+[2023-05-27 07:49:03] INFO root fetch - processPackages [statml]: Downloading https://files.pythonhosted.org/packages/f5/2f/35fb2dd1a13a1e21b0fa5502f086a2dd4601bf7b2b0582f8c1da2b80d161/statml-0.0.7.tar.gz
+[2023-05-27 07:49:03] INFO root fetch - processPackages [lnschema_lamin1]: executing diffoscope
+[2023-05-27 07:49:03] INFO root fetch - processPackages [lnschema_lamin1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_lamin1-0.17a2.tar.gz tmp/lnschema_lamin1-0.17a3.tar.gz --markdown 20230527/l/lnschema_lamin1/0.17a2-0.17a3/diff.md --exclude *.pyd
+[2023-05-27 07:49:03] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/45/fe/25f212cbea06ef5a3542d0538fa2072aebee25229ce355988260a72b9ac4/policyengine-us-0.327.0.tar.gz
+[2023-05-27 07:49:03] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/45/fe/25f212cbea06ef5a3542d0538fa2072aebee25229ce355988260a72b9ac4/policyengine-us-0.327.0.tar.gz
+[2023-05-27 07:49:03] INFO root fetch - processPackages [statml]: executing diffoscope
+[2023-05-27 07:49:03] INFO root fetch - processPackages [statml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statml-0.0.6.tar.gz tmp/statml-0.0.7.tar.gz --markdown 20230527/s/statml/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-27 07:49:04] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-05-27 07:49:04] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.326.0.tar.gz tmp/policyengine-us-0.327.0.tar.gz --markdown 20230527/p/policyengine-us/0.326.0-0.327.0/diff.md --exclude *.pyd
+[2023-05-27 07:49:04] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-05-27 07:49:04] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.326.0.tar.gz tmp/policyengine-us-0.327.0.tar.gz --markdown 20230527/p/policyengine-us/0.326.0-0.327.0/diff.md --exclude *.pyd
+[2023-05-27 07:49:04] INFO root fetch - main [MainThread]: End processing [statml]: success
+[2023-05-27 07:49:04] INFO root fetch - main [MainThread]: End processing [lnschema_lamin1]: success
+[2023-05-27 07:49:05] INFO root fetch - main [MainThread]: End processing [control-rod]: success
+[2023-05-27 07:50:20] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-05-27 07:50:22] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-05-27 07:50:22] INFO root fetch - main [MainThread]: Store serial: [18272480]
