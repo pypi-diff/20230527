@@ -4863,3 +4863,11 @@
 [2023-05-27 06:45:56] INFO root fetch - main [MainThread]: End processing [gravitas]: success
 [2023-05-27 06:47:09] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-05-27 06:47:09] INFO root fetch - main [MainThread]: Store serial: [18272319]
+[2023-05-27 06:52:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272319]
+[2023-05-27 06:52:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-27 06:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bosch-alarm-mode2
+[2023-05-27 06:52:18] INFO root fetch - processPackages [bosch-alarm-mode2]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-27 06:52:19] INFO root fetch - processPackages [bosch-alarm-mode2]: executing diffoscope
+[2023-05-27 06:52:19] INFO root fetch - processPackages [bosch-alarm-mode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosch_alarm_mode2-0.3.8.tar.gz tmp/bosch_alarm_mode2-0.3.9.tar.gz --markdown 20230527/b/bosch-alarm-mode2/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-27 06:52:20] INFO root fetch - main [MainThread]: End processing [bosch-alarm-mode2]: success
+[2023-05-27 06:52:20] INFO root fetch - main [MainThread]: Store serial: [18272322]
