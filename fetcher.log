@@ -8997,3 +8997,27 @@
 [2023-05-27 15:58:52] INFO root fetch - main [MainThread]: End processing [elevenlabs]: success
 [2023-05-27 15:58:52] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
 [2023-05-27 15:58:52] INFO root fetch - main [MainThread]: Store serial: [18274652]
+[2023-05-27 16:03:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274652]
+[2023-05-27 16:04:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 16:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyDAO-9000
+[2023-05-27 16:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gbtparser
+[2023-05-27 16:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ramodels
+[2023-05-27 16:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: UnlimitedGPT
+[2023-05-27 16:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: JestingLang
+[2023-05-27 16:04:01] INFO root fetch - processPackages [UnlimitedGPT]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-27 16:04:01] WARNING root fetch - processPackages [JestingLang]: Skipping, unable to determine old version
+[2023-05-27 16:04:01] INFO root fetch - main [MainThread]: End processing [JestingLang] error
+[2023-05-27 16:04:01] WARNING root fetch - processPackages [gbtparser]: Skipping, unable to determine old version
+[2023-05-27 16:04:01] INFO root fetch - main [MainThread]: End processing [gbtparser] error
+[2023-05-27 16:04:01] WARNING root fetch - processPackages [PyDAO-9000]: Skipping, unable to determine old version
+[2023-05-27 16:04:01] INFO root fetch - main [MainThread]: End processing [PyDAO-9000] error
+[2023-05-27 16:04:01] INFO root fetch - processPackages [ramodels]: New version: [9.7.3] Old Version: [9.7.2]
+[2023-05-27 16:04:01] INFO root fetch - processPackages [ramodels]: executing diffoscope
+[2023-05-27 16:04:01] INFO root fetch - processPackages [ramodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramodels-9.7.2.tar.gz tmp/ramodels-9.7.3.tar.gz --markdown 20230527/r/ramodels/9.7.2-9.7.3/diff.md --exclude *.pyd
+[2023-05-27 16:04:01] INFO root fetch - processPackages [UnlimitedGPT]: Downloading https://files.pythonhosted.org/packages/83/9d/7638f64e13e9833d641e4152d3d3cf6931747aa6e53e764eb764c3fa749b/UnlimitedGPT-0.0.7.tar.gz
+[2023-05-27 16:04:01] INFO root fetch - processPackages [UnlimitedGPT]: Downloading https://files.pythonhosted.org/packages/08/52/98644394292d74db9d2a650e8c1d1a1523a431b097acbf85eec072708d67/UnlimitedGPT-0.0.8.tar.gz
+[2023-05-27 16:04:02] INFO root fetch - processPackages [UnlimitedGPT]: executing diffoscope
+[2023-05-27 16:04:02] INFO root fetch - processPackages [UnlimitedGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UnlimitedGPT-0.0.7.tar.gz tmp/UnlimitedGPT-0.0.8.tar.gz --markdown 20230527/U/UnlimitedGPT/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-27 16:04:02] INFO root fetch - main [MainThread]: End processing [ramodels]: success
+[2023-05-27 16:04:02] INFO root fetch - main [MainThread]: End processing [UnlimitedGPT]: success
+[2023-05-27 16:04:02] INFO root fetch - main [MainThread]: Store serial: [18274673]
