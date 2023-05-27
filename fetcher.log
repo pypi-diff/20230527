@@ -4513,3 +4513,17 @@
 [2023-05-27 05:53:52] INFO root fetch - main [MainThread]: End processing [plutous-trade-crypto]: success
 [2023-05-27 05:53:53] INFO root fetch - main [MainThread]: End processing [redcat]: success
 [2023-05-27 05:53:53] INFO root fetch - main [MainThread]: Store serial: [18272142]
+[2023-05-27 05:58:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272142]
+[2023-05-27 05:59:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-27 05:59:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: baklabel
+[2023-05-27 05:59:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pogt
+[2023-05-27 05:59:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xklb
+[2023-05-27 05:59:02] WARNING root fetch - processPackages [pogt]: Skipping, unable to determine old version
+[2023-05-27 05:59:02] INFO root fetch - main [MainThread]: End processing [pogt] error
+[2023-05-27 05:59:02] WARNING root fetch - processPackages [baklabel]: Skipping, unable to determine old version
+[2023-05-27 05:59:02] INFO root fetch - main [MainThread]: End processing [baklabel] error
+[2023-05-27 05:59:02] INFO root fetch - processPackages [xklb]: New version: [1.28.9] Old Version: [1.28.8]
+[2023-05-27 05:59:02] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2023-05-27 05:59:02] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.28.8.tar.gz tmp/xklb-1.28.9.tar.gz --markdown 20230527/x/xklb/1.28.8-1.28.9/diff.md --exclude *.pyd
+[2023-05-27 05:59:04] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2023-05-27 05:59:04] INFO root fetch - main [MainThread]: Store serial: [18272154]
