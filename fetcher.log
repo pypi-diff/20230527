@@ -6371,3 +6371,28 @@
 [2023-05-27 10:29:54] INFO root fetch - main [MainThread]: End processing [CUQIpy-CIL]: success
 [2023-05-27 10:29:58] INFO root fetch - main [MainThread]: End processing [invenio-rdm-records]: success
 [2023-05-27 10:29:58] INFO root fetch - main [MainThread]: Store serial: [18273122]
+[2023-05-27 10:35:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273122]
+[2023-05-27 10:35:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 10:35:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CUQIpy-CIL
+[2023-05-27 10:35:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: comex
+[2023-05-27 10:35:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-model-optimization-nightly
+[2023-05-27 10:35:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: whatsapp-chatbot-python
+[2023-05-27 10:35:07] INFO root fetch - processPackages [CUQIpy-CIL]: New version: [0.4.0] Old Version: [0.3.0.post0.dev2]
+[2023-05-27 10:35:07] INFO root fetch - processPackages [comex]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-27 10:35:07] WARNING root fetch - processPackages [whatsapp-chatbot-python]: Skipping, unable to determine old version
+[2023-05-27 10:35:07] INFO root fetch - main [MainThread]: End processing [whatsapp-chatbot-python] error
+[2023-05-27 10:35:07] INFO root fetch - processPackages [tf-model-optimization-nightly]: New version: [0.7.5.dev20230527] Old Version: [0.7.3.dev20230323]
+[2023-05-27 10:35:07] INFO root fetch - processPackages [comex]: Downloading https://files.pythonhosted.org/packages/d0/52/7d59c9bd948c8babba4064b358d5b4ea5654c2fc89171ca36072856cf66f/comex-0.0.6.tar.gz
+[2023-05-27 10:35:07] INFO root fetch - processPackages [tf-model-optimization-nightly]: Downloading https://files.pythonhosted.org/packages/3f/8f/7ddea6a5718e3a18b5d1640d86f17f642bc47b145d3f26cb0c38ce688f93/tf_model_optimization_nightly-0.7.3.dev20230323-py2.py3-none-any.whl
+[2023-05-27 10:35:07] INFO root fetch - processPackages [CUQIpy-CIL]: executing diffoscope
+[2023-05-27 10:35:07] INFO root fetch - processPackages [CUQIpy-CIL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CUQIpy-CIL-0.3.0.post0.dev2.tar.gz tmp/CUQIpy-CIL-0.4.0.tar.gz --markdown 20230527/C/CUQIpy-CIL/0.3.0.post0.dev2-0.4.0/diff.md --exclude *.pyd
+[2023-05-27 10:35:08] INFO root fetch - processPackages [comex]: Downloading https://files.pythonhosted.org/packages/16/34/cd43f8728f882c3036287d4c98f631696f6a54e7f41155c13e23a9fa9b3a/comex-0.0.7.tar.gz
+[2023-05-27 10:35:08] INFO root fetch - processPackages [tf-model-optimization-nightly]: Downloading https://files.pythonhosted.org/packages/38/26/92ddb198587099a61b0e9b31def5157cc3c8b5b68d3d8c7b15d59a1f27eb/tf_model_optimization_nightly-0.7.5.dev20230527-py2.py3-none-any.whl
+[2023-05-27 10:35:08] INFO root fetch - processPackages [comex]: executing diffoscope
+[2023-05-27 10:35:08] INFO root fetch - processPackages [comex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comex-0.0.6.tar.gz tmp/comex-0.0.7.tar.gz --markdown 20230527/c/comex/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-27 10:35:08] INFO root fetch - processPackages [tf-model-optimization-nightly]: executing diffoscope
+[2023-05-27 10:35:08] INFO root fetch - processPackages [tf-model-optimization-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_model_optimization_nightly-0.7.3.dev20230323-py2.py3-none-any.whl.zip tmp/tf_model_optimization_nightly-0.7.5.dev20230527-py2.py3-none-any.whl.zip --markdown 20230527/t/tf-model-optimization-nightly/0.7.3.dev20230323-0.7.5.dev20230527/diff.md --exclude *.pyd
+[2023-05-27 10:35:09] INFO root fetch - main [MainThread]: End processing [CUQIpy-CIL]: success
+[2023-05-27 10:35:09] INFO root fetch - main [MainThread]: End processing [comex]: success
+[2023-05-27 10:35:10] INFO root fetch - main [MainThread]: End processing [tf-model-optimization-nightly]: success
+[2023-05-27 10:35:10] INFO root fetch - main [MainThread]: Store serial: [18273135]
