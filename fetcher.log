@@ -10837,3 +10837,63 @@
 [2023-05-27 19:19:53] INFO root fetch - main [MainThread]: End processing [sylk]: success
 [2023-05-27 19:20:00] INFO root fetch - main [MainThread]: End processing [hedra]: success
 [2023-05-27 19:20:00] INFO root fetch - main [MainThread]: Store serial: [18275753]
+[2023-05-27 19:25:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275753]
+[2023-05-27 19:25:09] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-27 19:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langchain-discord
+[2023-05-27 19:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crcFinder
+[2023-05-27 19:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-05-27 19:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: novelcraft-sdk
+[2023-05-27 19:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asgiref
+[2023-05-27 19:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spanishconjugator
+[2023-05-27 19:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sosecrets
+[2023-05-27 19:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: libvcs
+[2023-05-27 19:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: langchain-discord
+[2023-05-27 19:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyFolderOrganizer
+[2023-05-27 19:25:09] WARNING root fetch - processPackages [crcFinder]: Skipping, unable to determine old version
+[2023-05-27 19:25:09] INFO root fetch - processPackages [crcFinder]: Start processing: smpl-io
+[2023-05-27 19:25:09] INFO root fetch - main [MainThread]: End processing [crcFinder] error
+[2023-05-27 19:25:09] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 19:25:09] WARNING root fetch - processPackages [sosecrets]: Skipping, unable to determine old version
+[2023-05-27 19:25:09] INFO root fetch - main [MainThread]: End processing [sosecrets] error
+[2023-05-27 19:25:09] WARNING root fetch - processPackages [pyFolderOrganizer]: Skipping, unable to determine old version
+[2023-05-27 19:25:09] INFO root fetch - processPackages [novelcraft-sdk]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-27 19:25:09] INFO root fetch - main [MainThread]: End processing [pyFolderOrganizer] error
+[2023-05-27 19:25:09] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 19:25:09] INFO root fetch - processPackages [smpl-io]: New version: [1.1.2] Old Version: [1.1.0]
+[2023-05-27 19:25:09] INFO root fetch - processPackages [asgiref]: New version: [3.7.2] Old Version: [3.7.1]
+[2023-05-27 19:25:09] INFO root fetch - processPackages [libvcs]: New version: [0.9.0a2] Old Version: [0.9.0a1]
+[2023-05-27 19:25:09] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 19:25:09] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 19:25:09] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 19:25:09] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 19:25:09] INFO root fetch - processPackages [asgiref]: Downloading https://files.pythonhosted.org/packages/29/ef/bd9cd6ac55b7e7595c6fe097ea6c318b6a487f43762f15abe98c58b101e9/asgiref-3.7.1.tar.gz
+[2023-05-27 19:25:10] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-27 19:25:10] INFO root fetch - processPackages [novelcraft-sdk]: Downloading https://files.pythonhosted.org/packages/03/84/8f2933f5030464ff7dbe0520b06164a7fca9bd6ba5cfb98e8874e248d4c7/novelcraft_sdk-0.1.1.tar.gz
+[2023-05-27 19:25:10] INFO root fetch - processPackages [smpl-io]: Downloading https://files.pythonhosted.org/packages/16/22/5c528badc29bb6d093ec23b49db79e5aa73cfbba7b5af9cfde3f44c3cd79/smpl_io-1.1.0.tar.gz
+[2023-05-27 19:25:10] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-27 19:25:10] INFO root fetch - processPackages [libvcs]: Downloading https://files.pythonhosted.org/packages/e7/2c/47afd6f58079530633aaba7f6f588cf241fe0296d6bfe3cfda426596d758/libvcs-0.9.0a1.tar.gz
+[2023-05-27 19:25:10] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-27 19:25:10] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230527/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-27 19:25:10] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-27 19:25:10] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230527/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-27 19:25:10] INFO root fetch - processPackages [asgiref]: Downloading https://files.pythonhosted.org/packages/12/19/64e38c1c2cbf0da9635b7082bbdf0e89052e93329279f59759c24a10cc96/asgiref-3.7.2.tar.gz
+[2023-05-27 19:25:10] INFO root fetch - processPackages [smpl-io]: Downloading https://files.pythonhosted.org/packages/ba/ea/f87c884d9a02bdd8c45c09718610a696c02780b291aff572fafe42ace896/smpl_io-1.1.2.tar.gz
+[2023-05-27 19:25:10] INFO root fetch - processPackages [novelcraft-sdk]: Downloading https://files.pythonhosted.org/packages/7c/96/97943872fa87acea4a5679bbc496f34db3e816cdaf0ea3ba5c09dd8bd70e/novelcraft_sdk-0.2.0.tar.gz
+[2023-05-27 19:25:10] INFO root fetch - processPackages [libvcs]: Downloading https://files.pythonhosted.org/packages/38/c5/89565a1b33da1b17b47e23530537bac6e09699a904feea38de5a0f713d63/libvcs-0.9.0a2.tar.gz
+[2023-05-27 19:25:10] INFO root fetch - processPackages [asgiref]: executing diffoscope
+[2023-05-27 19:25:10] INFO root fetch - processPackages [asgiref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgiref-3.7.1.tar.gz tmp/asgiref-3.7.2.tar.gz --markdown 20230527/a/asgiref/3.7.1-3.7.2/diff.md --exclude *.pyd
+[2023-05-27 19:25:10] INFO root fetch - processPackages [novelcraft-sdk]: executing diffoscope
+[2023-05-27 19:25:10] INFO root fetch - processPackages [novelcraft-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelcraft_sdk-0.1.1.tar.gz tmp/novelcraft_sdk-0.2.0.tar.gz --markdown 20230527/n/novelcraft-sdk/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-27 19:25:10] INFO root fetch - processPackages [smpl-io]: executing diffoscope
+[2023-05-27 19:25:10] INFO root fetch - processPackages [smpl-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smpl_io-1.1.0.tar.gz tmp/smpl_io-1.1.2.tar.gz --markdown 20230527/s/smpl-io/1.1.0-1.1.2/diff.md --exclude *.pyd
+[2023-05-27 19:25:10] INFO root fetch - processPackages [libvcs]: executing diffoscope
+[2023-05-27 19:25:10] INFO root fetch - processPackages [libvcs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libvcs-0.9.0a1.tar.gz tmp/libvcs-0.9.0a2.tar.gz --markdown 20230527/l/libvcs/0.9.0a1-0.9.0a2/diff.md --exclude *.pyd
+[2023-05-27 19:25:11] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 19:25:11] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 19:25:11] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-27 19:25:11] INFO root fetch - main [MainThread]: End processing [asgiref]: success
+[2023-05-27 19:25:11] INFO root fetch - main [MainThread]: End processing [smpl-io]: success
+[2023-05-27 19:25:11] INFO root fetch - main [MainThread]: End processing [libvcs]: success
+[2023-05-27 19:25:12] INFO root fetch - main [MainThread]: End processing [novelcraft-sdk]: success
+[2023-05-27 19:25:12] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-27 19:25:12] INFO root fetch - main [MainThread]: Store serial: [18275790]
