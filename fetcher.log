@@ -3883,3 +3883,27 @@
 [2023-05-27 04:09:11] INFO root fetch - main [MainThread]: End processing [lifetimefitting]: success
 [2023-05-27 04:09:11] INFO root fetch - main [MainThread]: End processing [chatai-agent]: success
 [2023-05-27 04:09:11] INFO root fetch - main [MainThread]: Store serial: [18271782]
+[2023-05-27 04:14:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271782]
+[2023-05-27 04:14:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 04:14:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aind-data-transfer
+[2023-05-27 04:14:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OpenAIAuth
+[2023-05-27 04:14:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lifetimefitting
+[2023-05-27 04:14:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lasfile
+[2023-05-27 04:14:19] INFO root fetch - processPackages [lifetimefitting]: New version: [0.0.15] Old Version: [0.0.14]
+[2023-05-27 04:14:19] INFO root fetch - processPackages [OpenAIAuth]: New version: [1.0.1] Old Version: [0.3.6]
+[2023-05-27 04:14:19] WARNING root fetch - processPackages [lasfile]: Skipping, unable to determine old version
+[2023-05-27 04:14:19] INFO root fetch - main [MainThread]: End processing [lasfile] error
+[2023-05-27 04:14:19] INFO root fetch - processPackages [aind-data-transfer]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-27 04:14:19] INFO root fetch - processPackages [aind-data-transfer]: executing diffoscope
+[2023-05-27 04:14:19] INFO root fetch - processPackages [aind-data-transfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-data-transfer-0.9.2.tar.gz tmp/aind-data-transfer-0.9.3.tar.gz --markdown 20230527/a/aind-data-transfer/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-27 04:14:20] INFO root fetch - processPackages [OpenAIAuth]: Downloading https://files.pythonhosted.org/packages/b0/a9/5397d26078db8e45ebec86c126ea97eeba0ad3fe51d75c1bc3eb160ccd9e/OpenAIAuth-0.3.6.tar.gz
+[2023-05-27 04:14:20] INFO root fetch - processPackages [lifetimefitting]: Downloading https://files.pythonhosted.org/packages/fa/0a/a3657f7e68cdb52f867e7ad8d3416e8bf893b2415c6220d6da911467fa8f/lifetimefitting-0.0.15.tar.gz
+[2023-05-27 04:14:20] INFO root fetch - processPackages [lifetimefitting]: executing diffoscope
+[2023-05-27 04:14:20] INFO root fetch - processPackages [lifetimefitting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifetimefitting-0.0.14.tar.gz tmp/lifetimefitting-0.0.15.tar.gz --markdown 20230527/l/lifetimefitting/0.0.14-0.0.15/diff.md --exclude *.pyd
+[2023-05-27 04:14:20] INFO root fetch - processPackages [OpenAIAuth]: Downloading https://files.pythonhosted.org/packages/f7/a1/874c2368d0eaebf33852d7fbf6cdf5f7fac9438d46958e1a2536aee3bd7a/OpenAIAuth-1.0.1.tar.gz
+[2023-05-27 04:14:20] INFO root fetch - processPackages [OpenAIAuth]: executing diffoscope
+[2023-05-27 04:14:20] INFO root fetch - processPackages [OpenAIAuth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenAIAuth-0.3.6.tar.gz tmp/OpenAIAuth-1.0.1.tar.gz --markdown 20230527/O/OpenAIAuth/0.3.6-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 04:14:21] INFO root fetch - main [MainThread]: End processing [lifetimefitting]: success
+[2023-05-27 04:14:21] INFO root fetch - main [MainThread]: End processing [OpenAIAuth]: success
+[2023-05-27 04:14:22] INFO root fetch - main [MainThread]: End processing [aind-data-transfer]: success
+[2023-05-27 04:14:22] INFO root fetch - main [MainThread]: Store serial: [18271796]
