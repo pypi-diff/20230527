@@ -8020,3 +8020,41 @@
 [2023-05-27 13:48:49] INFO root fetch - main [MainThread]: End processing [cwltest]: success
 [2023-05-27 13:48:51] INFO root fetch - main [MainThread]: End processing [PyFunceble-dev]: success
 [2023-05-27 13:48:51] INFO root fetch - main [MainThread]: Store serial: [18274089]
+[2023-05-27 13:53:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274089]
+[2023-05-27 13:54:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 13:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openllm
+[2023-05-27 13:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unlimitedgpt
+[2023-05-27 13:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lycium
+[2023-05-27 13:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: customtkinterx
+[2023-05-27 13:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: notcli
+[2023-05-27 13:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-daraja
+[2023-05-27 13:54:00] INFO root fetch - processPackages [django-daraja]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-05-27 13:54:00] INFO root fetch - processPackages [customtkinterx]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 13:54:00] INFO root fetch - processPackages [openllm]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 13:54:00] INFO root fetch - processPackages [lycium]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-27 13:54:00] INFO root fetch - processPackages [unlimitedgpt]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 13:54:00] INFO root fetch - processPackages [notcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 13:54:01] INFO root fetch - processPackages [openllm]: Downloading https://files.pythonhosted.org/packages/5c/85/bc6c47eb29bd01bcf1bc2f02e197c21f6480546dc9b4be396a4d096e7ce0/openllm-0.0.4.tar.gz
+[2023-05-27 13:54:01] INFO root fetch - processPackages [django-daraja]: Downloading https://files.pythonhosted.org/packages/e9/c0/c1f8770e251806ef9b51d8610c889a6f0c45d9209396238bddbf01f6357f/django-daraja-1.2.0.tar.gz
+[2023-05-27 13:54:01] INFO root fetch - processPackages [customtkinterx]: Downloading https://files.pythonhosted.org/packages/e2/29/306e4719dfb921dfa200b688fa301d6f345e4c3c221e4d77b6c34b4a6475/customtkinterx-0.1.2.tar.gz
+[2023-05-27 13:54:01] INFO root fetch - processPackages [notcli]: Downloading https://files.pythonhosted.org/packages/9e/76/59fa62139b88c68f19945a730cd83010a1d716ccf548818b928f3eb09ea8/notcli-0.0.9.tar.gz
+[2023-05-27 13:54:01] WARNING root fetch - processPackages [openllm]: Skipping package: exceeds size limit 11979976>=10485760
+[2023-05-27 13:54:01] INFO root fetch - main [MainThread]: End processing [openllm] error
+[2023-05-27 13:54:01] INFO root fetch - processPackages [unlimitedgpt]: Downloading https://files.pythonhosted.org/packages/0c/f2/755cf059804e18d365eef827bc233eb6afe2b6ecc4fcb89332f5e82af11c/unlimitedgpt-0.0.5.tar.gz
+[2023-05-27 13:54:01] INFO root fetch - processPackages [customtkinterx]: executing diffoscope
+[2023-05-27 13:54:01] INFO root fetch - processPackages [customtkinterx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customtkinterx-0.1.1.tar.gz tmp/customtkinterx-0.1.2.tar.gz --markdown 20230527/c/customtkinterx/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 13:54:01] INFO root fetch - processPackages [notcli]: executing diffoscope
+[2023-05-27 13:54:01] INFO root fetch - processPackages [notcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notcli-0.0.8.tar.gz tmp/notcli-0.0.9.tar.gz --markdown 20230527/n/notcli/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 13:54:01] INFO root fetch - processPackages [unlimitedgpt]: executing diffoscope
+[2023-05-27 13:54:01] INFO root fetch - processPackages [unlimitedgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UnlimitedGPT-0.0.4.tar.gz tmp/unlimitedgpt-0.0.5.tar.gz --markdown 20230527/u/unlimitedgpt/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-27 13:54:01] INFO root fetch - processPackages [lycium]: executing diffoscope
+[2023-05-27 13:54:01] INFO root fetch - processPackages [lycium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lycium-0.2.8.tar.gz tmp/lycium-0.2.9.tar.gz --markdown 20230527/l/lycium/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-27 13:54:01] INFO root fetch - processPackages [django-daraja]: Downloading https://files.pythonhosted.org/packages/5d/27/3198cded9c21de83274e0356dab25bb60bbc463b10a81635cc7f3f09ea30/django-daraja-1.3.0.tar.gz
+[2023-05-27 13:54:01] INFO root fetch - processPackages [django-daraja]: executing diffoscope
+[2023-05-27 13:54:01] INFO root fetch - processPackages [django-daraja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-daraja-1.2.0.tar.gz tmp/django-daraja-1.3.0.tar.gz --markdown 20230527/d/django-daraja/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-05-27 13:54:02] INFO root fetch - main [MainThread]: End processing [customtkinterx]: success
+[2023-05-27 13:54:02] INFO root fetch - main [MainThread]: End processing [notcli]: success
+[2023-05-27 13:54:02] INFO root fetch - main [MainThread]: End processing [unlimitedgpt]: success
+[2023-05-27 13:54:02] INFO root fetch - main [MainThread]: End processing [django-daraja]: success
+[2023-05-27 13:54:02] INFO root fetch - main [MainThread]: End processing [lycium]: success
+[2023-05-27 13:54:02] INFO root fetch - main [MainThread]: Store serial: [18274107]
