@@ -4313,3 +4313,54 @@
 [2023-05-27 05:27:16] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
 [2023-05-27 05:27:16] INFO root fetch - main [MainThread]: End processing [EduDraw]: success
 [2023-05-27 05:27:16] INFO root fetch - main [MainThread]: Store serial: [18272022]
+[2023-05-27 05:32:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272022]
+[2023-05-27 05:32:25] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 05:32:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netron
+[2023-05-27 05:32:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-product-harmonized-system
+[2023-05-27 05:32:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-intrastat-base
+[2023-05-27 05:32:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-product-harmonized-system-stock
+[2023-05-27 05:32:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zhmc-prometheus-exporter
+[2023-05-27 05:32:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: purefusion
+[2023-05-27 05:32:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lifetimefitting
+[2023-05-27 05:32:25] INFO root fetch - processPackages [purefusion]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-intrastat-base]: New version: [16.0.1.0.0.6] Old Version: [16.0.1.0.0.5]
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-product-harmonized-system-stock]: New version: [16.0.1.0.0.6] Old Version: [16.0.1.0.0.4]
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-product-harmonized-system]: New version: [16.0.1.0.0.6] Old Version: [16.0.1.0.0.5]
+[2023-05-27 05:32:25] INFO root fetch - processPackages [lifetimefitting]: New version: [0.0.15] Old Version: [0.0.14]
+[2023-05-27 05:32:25] INFO root fetch - processPackages [netron]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-05-27 05:32:25] INFO root fetch - processPackages [zhmc-prometheus-exporter]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-intrastat-base]: Downloading https://files.pythonhosted.org/packages/50/02/2a634740d79c44ce6f66d013fe7a220ffa81316735a423b4f9b0ee6f9954/odoo_addon_intrastat_base-16.0.1.0.0.5-py3-none-any.whl
+[2023-05-27 05:32:25] INFO root fetch - processPackages [purefusion]: Downloading https://files.pythonhosted.org/packages/73/6e/d9c63f3205e285d64f569c0302a8e158c99315e6fba1c94937b1e753a676/purefusion-1.1.0-py3-none-any.whl
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-product-harmonized-system]: Downloading https://files.pythonhosted.org/packages/60/72/acc027c712fdeb251fc7fd9caf38e763c66e7be9dffdb163cdb71a68290c/odoo_addon_product_harmonized_system-16.0.1.0.0.5-py3-none-any.whl
+[2023-05-27 05:32:25] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/a8/19/df2240fb5dc41cf2941337d2839851a05a64cc8df2a4d871f054c0fef87a/netron-6.9.1-py3-none-any.whl
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-product-harmonized-system-stock]: Downloading https://files.pythonhosted.org/packages/a7/aa/ab40e26e30937d53ecf6dc97d35b62935e7c5a9230dcd634a7a8f806fef9/odoo_addon_product_harmonized_system_stock-16.0.1.0.0.4-py3-none-any.whl
+[2023-05-27 05:32:25] INFO root fetch - processPackages [lifetimefitting]: executing diffoscope
+[2023-05-27 05:32:25] INFO root fetch - processPackages [lifetimefitting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifetimefitting-0.0.14.tar.gz tmp/lifetimefitting-0.0.15.tar.gz --markdown 20230527/l/lifetimefitting/0.0.14-0.0.15/diff.md --exclude *.pyd
+[2023-05-27 05:32:25] INFO root fetch - processPackages [zhmc-prometheus-exporter]: Downloading https://files.pythonhosted.org/packages/91/d3/acab861db7f756df4a91db68a085ab54909f439aff0a28c672345819cd76/zhmc_prometheus_exporter-1.4.1.tar.gz
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-product-harmonized-system]: Downloading https://files.pythonhosted.org/packages/b7/67/29bfe70114ca7ff23fad38d19d18bd3cb94dbc4f218db24622cceab51276/odoo_addon_product_harmonized_system-16.0.1.0.0.6-py3-none-any.whl
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-intrastat-base]: Downloading https://files.pythonhosted.org/packages/f9/0e/e752773e60bf08fae87ae0c9af1be1e216d9068231d1a485dcbde6174267/odoo_addon_intrastat_base-16.0.1.0.0.6-py3-none-any.whl
+[2023-05-27 05:32:25] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/fc/33/4a04645f986c78f2773e44d9ef8bbd5bb522e72740b346fd271fba88be9b/netron-6.9.2-py3-none-any.whl
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-product-harmonized-system]: executing diffoscope
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-product-harmonized-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_product_harmonized_system-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_product_harmonized_system-16.0.1.0.0.6-py3-none-any.whl.zip --markdown 20230527/o/odoo-addon-product-harmonized-system/16.0.1.0.0.5-16.0.1.0.0.6/diff.md --exclude *.pyd
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-product-harmonized-system-stock]: Downloading https://files.pythonhosted.org/packages/ce/9d/59b0e06abea5d7e5ff3b022043b1f91b351da7b461d4f613ee63cd370950/odoo_addon_product_harmonized_system_stock-16.0.1.0.0.6-py3-none-any.whl
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-intrastat-base]: executing diffoscope
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-intrastat-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_intrastat_base-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_intrastat_base-16.0.1.0.0.6-py3-none-any.whl.zip --markdown 20230527/o/odoo-addon-intrastat-base/16.0.1.0.0.5-16.0.1.0.0.6/diff.md --exclude *.pyd
+[2023-05-27 05:32:25] INFO root fetch - processPackages [purefusion]: Downloading https://files.pythonhosted.org/packages/a5/d1/34a2295f39310b6c4537f74ab7de71f017e0554c4cde95949f80438c2acc/purefusion-1.1.1-py3-none-any.whl
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-product-harmonized-system-stock]: executing diffoscope
+[2023-05-27 05:32:25] INFO root fetch - processPackages [netron]: executing diffoscope
+[2023-05-27 05:32:25] INFO root fetch - processPackages [odoo-addon-product-harmonized-system-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_product_harmonized_system_stock-16.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_product_harmonized_system_stock-16.0.1.0.0.6-py3-none-any.whl.zip --markdown 20230527/o/odoo-addon-product-harmonized-system-stock/16.0.1.0.0.4-16.0.1.0.0.6/diff.md --exclude *.pyd
+[2023-05-27 05:32:25] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-6.9.1-py3-none-any.whl.zip tmp/netron-6.9.2-py3-none-any.whl.zip --markdown 20230527/n/netron/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-05-27 05:32:26] INFO root fetch - processPackages [zhmc-prometheus-exporter]: Downloading https://files.pythonhosted.org/packages/b9/cf/c16ab6db08cb4c636f5c7f3c0368fbcce17be6a65a24e6a9091b611af792/zhmc_prometheus_exporter-1.4.2.tar.gz
+[2023-05-27 05:32:26] INFO root fetch - processPackages [zhmc-prometheus-exporter]: executing diffoscope
+[2023-05-27 05:32:26] INFO root fetch - processPackages [zhmc-prometheus-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhmc_prometheus_exporter-1.4.1.tar.gz tmp/zhmc_prometheus_exporter-1.4.2.tar.gz --markdown 20230527/z/zhmc-prometheus-exporter/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-27 05:32:26] INFO root fetch - processPackages [purefusion]: executing diffoscope
+[2023-05-27 05:32:26] INFO root fetch - processPackages [purefusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/purefusion-1.1.0-py3-none-any.whl.zip tmp/purefusion-1.1.1-py3-none-any.whl.zip --markdown 20230527/p/purefusion/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-27 05:32:26] INFO root fetch - main [MainThread]: End processing [lifetimefitting]: success
+[2023-05-27 05:32:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-harmonized-system]: success
+[2023-05-27 05:32:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-harmonized-system-stock]: success
+[2023-05-27 05:32:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-intrastat-base]: success
+[2023-05-27 05:32:27] INFO root fetch - main [MainThread]: End processing [zhmc-prometheus-exporter]: success
+[2023-05-27 05:32:30] INFO root fetch - main [MainThread]: End processing [purefusion]: success
+[2023-05-27 05:35:26] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
+[2023-05-27 05:35:26] INFO root fetch - main [MainThread]: End processing [netron] error
+[2023-05-27 05:35:26] INFO root fetch - main [MainThread]: Store serial: [18272038]
