@@ -12686,3 +12686,29 @@
 [2023-05-27 23:40:54] INFO root fetch - main [MainThread]: End processing [heaserver]: success
 [2023-05-27 23:40:55] INFO root fetch - main [MainThread]: End processing [linpg]: success
 [2023-05-27 23:40:55] INFO root fetch - main [MainThread]: Store serial: [18277047]
+[2023-05-27 23:46:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277047]
+[2023-05-27 23:46:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 23:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dscan-api-client
+[2023-05-27 23:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clown-sort
+[2023-05-27 23:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sciform
+[2023-05-27 23:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pronoundb
+[2023-05-27 23:46:04] INFO root fetch - processPackages [dscan-api-client]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-27 23:46:04] INFO root fetch - processPackages [sciform]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-27 23:46:04] INFO root fetch - processPackages [clown-sort]: New version: [1.6.0] Old Version: [1.5.2]
+[2023-05-27 23:46:04] INFO root fetch - processPackages [sciform]: executing diffoscope
+[2023-05-27 23:46:04] INFO root fetch - processPackages [sciform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sciform-0.4.0.tar.gz tmp/sciform-0.4.1.tar.gz --markdown 20230527/s/sciform/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-27 23:46:04] INFO root fetch - processPackages [pronoundb]: New version: [2.0.0] Old Version: [1.2.0]
+[2023-05-27 23:46:04] INFO root fetch - processPackages [dscan-api-client]: executing diffoscope
+[2023-05-27 23:46:04] INFO root fetch - processPackages [dscan-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscan_api_client-1.0.8-py3-none-any.whl.zip tmp/dscan_api_client-1.0.9-py3-none-any.whl.zip --markdown 20230527/d/dscan-api-client/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-27 23:46:05] INFO root fetch - processPackages [pronoundb]: Downloading https://files.pythonhosted.org/packages/58/59/c9b88a230d71ce8d62312bd57256016bb5d9814bd37f65d046275c4e7cde/pronoundb-1.2.0.tar.gz
+[2023-05-27 23:46:05] INFO root fetch - processPackages [clown-sort]: Downloading https://files.pythonhosted.org/packages/d4/7e/f4b7593a352bd2112cb2c3e914bf8331c5dc5c9ee763d1b465a4cced369a/clown_sort-1.6.0.tar.gz
+[2023-05-27 23:46:05] INFO root fetch - processPackages [clown-sort]: executing diffoscope
+[2023-05-27 23:46:05] INFO root fetch - processPackages [clown-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clown_sort-1.5.2.tar.gz tmp/clown_sort-1.6.0.tar.gz --markdown 20230527/c/clown-sort/1.5.2-1.6.0/diff.md --exclude *.pyd
+[2023-05-27 23:46:05] INFO root fetch - processPackages [pronoundb]: Downloading https://files.pythonhosted.org/packages/98/2e/d9e7c823364bfe29184ce45e3832e980b92703e7c3fa7ecba5ddda30aea3/pronoundb-2.0.0.tar.gz
+[2023-05-27 23:46:05] INFO root fetch - processPackages [pronoundb]: executing diffoscope
+[2023-05-27 23:46:05] INFO root fetch - processPackages [pronoundb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pronoundb-1.2.0.tar.gz tmp/pronoundb-2.0.0.tar.gz --markdown 20230527/p/pronoundb/1.2.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-27 23:46:05] INFO root fetch - main [MainThread]: End processing [sciform]: success
+[2023-05-27 23:46:06] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
+[2023-05-27 23:46:06] INFO root fetch - main [MainThread]: End processing [pronoundb]: success
+[2023-05-27 23:46:06] INFO root fetch - main [MainThread]: End processing [clown-sort]: success
+[2023-05-27 23:46:06] INFO root fetch - main [MainThread]: Store serial: [18277060]
