@@ -6773,3 +6773,18 @@
 [2023-05-27 11:11:47] INFO root fetch - main [MainThread]: End processing [pyslit]: success
 [2023-05-27 11:11:47] INFO root fetch - main [MainThread]: End processing [citizenk]: success
 [2023-05-27 11:11:47] INFO root fetch - main [MainThread]: Store serial: [18273349]
+[2023-05-27 11:16:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273349]
+[2023-05-27 11:16:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-27 11:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: troubleshooter
+[2023-05-27 11:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyquet
+[2023-05-27 11:16:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: exc2dic
+[2023-05-27 11:16:56] WARNING root fetch - processPackages [exc2dic]: Skipping, unable to determine old version
+[2023-05-27 11:16:56] INFO root fetch - main [MainThread]: End processing [exc2dic] error
+[2023-05-27 11:16:56] WARNING root fetch - processPackages [pyquet]: Skipping, unable to determine old version
+[2023-05-27 11:16:56] INFO root fetch - main [MainThread]: End processing [pyquet] error
+[2023-05-27 11:16:56] INFO root fetch - processPackages [troubleshooter]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-27 11:16:57] INFO root fetch - processPackages [troubleshooter]: Downloading https://files.pythonhosted.org/packages/6c/57/fdc7440accda14a68f390d411a09b00acf12bf53acaad11dc625490efba9/troubleshooter-1.0.9.tar.gz
+[2023-05-27 11:16:57] INFO root fetch - processPackages [troubleshooter]: executing diffoscope
+[2023-05-27 11:16:57] INFO root fetch - processPackages [troubleshooter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/troubleshooter-1.0.8.tar.gz tmp/troubleshooter-1.0.9.tar.gz --markdown 20230527/t/troubleshooter/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-27 11:16:58] INFO root fetch - main [MainThread]: End processing [troubleshooter]: success
+[2023-05-27 11:16:58] INFO root fetch - main [MainThread]: Store serial: [18273386]
