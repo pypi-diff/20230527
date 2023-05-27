@@ -4766,3 +4766,38 @@
 [2023-05-27 06:30:22] INFO root fetch - main [MainThread]: End processing [wangticketyes24]: success
 [2023-05-27 06:30:22] INFO root fetch - main [MainThread]: End processing [sect]: success
 [2023-05-27 06:30:22] INFO root fetch - main [MainThread]: Store serial: [18272261]
+[2023-05-27 06:35:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272261]
+[2023-05-27 06:35:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 06:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gravitas
+[2023-05-27 06:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ctwin32
+[2023-05-27 06:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: minirepl
+[2023-05-27 06:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: roboduck
+[2023-05-27 06:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cq23
+[2023-05-27 06:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pipelib
+[2023-05-27 06:35:31] INFO root fetch - processPackages [cq23]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-05-27 06:35:31] INFO root fetch - processPackages [roboduck]: New version: [0.3.5] Old Version: [0.3.3]
+[2023-05-27 06:35:31] INFO root fetch - processPackages [ctwin32]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-05-27 06:35:31] WARNING root fetch - processPackages [gravitas]: Skipping, unable to determine old version
+[2023-05-27 06:35:31] WARNING root fetch - processPackages [minirepl]: Skipping, unable to determine old version
+[2023-05-27 06:35:31] INFO root fetch - main [MainThread]: End processing [gravitas] error
+[2023-05-27 06:35:31] INFO root fetch - main [MainThread]: End processing [minirepl] error
+[2023-05-27 06:35:31] INFO root fetch - processPackages [pipelib]: New version: [0.0.17] Old Version: [0.0.16]
+[2023-05-27 06:35:31] INFO root fetch - processPackages [cq23]: Downloading https://files.pythonhosted.org/packages/58/21/fac4cd08d9a4def3dd87a86bd78877504f9a8dfe8209f1f3b5b58c98e5df/cq23-1.4.0.tar.gz
+[2023-05-27 06:35:31] INFO root fetch - processPackages [ctwin32]: Downloading https://files.pythonhosted.org/packages/1d/c2/78430eb045c9d80b21a7103b7202284523672cf7967a699c69c6c5a9f65e/ctwin32-2.1.0.tar.gz
+[2023-05-27 06:35:31] INFO root fetch - processPackages [roboduck]: Downloading https://files.pythonhosted.org/packages/4a/3a/e6ddbcdb6dc62495083401cb0eaa4f895d493cccfe1a4980f49adccaed09/roboduck-0.3.5.tar.gz
+[2023-05-27 06:35:31] INFO root fetch - processPackages [cq23]: executing diffoscope
+[2023-05-27 06:35:31] INFO root fetch - processPackages [cq23]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cq23-1.3.0.tar.gz tmp/cq23-1.4.0.tar.gz --markdown 20230527/c/cq23/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-05-27 06:35:31] INFO root fetch - processPackages [roboduck]: executing diffoscope
+[2023-05-27 06:35:31] INFO root fetch - processPackages [roboduck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboduck-0.3.3.tar.gz tmp/roboduck-0.3.5.tar.gz --markdown 20230527/r/roboduck/0.3.3-0.3.5/diff.md --exclude *.pyd
+[2023-05-27 06:35:31] INFO root fetch - processPackages [pipelib]: Downloading https://files.pythonhosted.org/packages/ec/09/a381b1c65d11de38743b09f1682e8af6893b41aae00986442eab6898fc32/pipelib-0.0.16.tar.gz
+[2023-05-27 06:35:31] INFO root fetch - processPackages [ctwin32]: Downloading https://files.pythonhosted.org/packages/8a/77/a0723440b3260ad70bdad437d170b1cca756f4104a025869025c0d1297af/ctwin32-2.2.0.tar.gz
+[2023-05-27 06:35:32] INFO root fetch - processPackages [pipelib]: Downloading https://files.pythonhosted.org/packages/b0/9d/5d477e2e88f4f935e108d9e1d3202279be7d8de9c2486dbeb6045b1f4571/pipelib-0.0.17.tar.gz
+[2023-05-27 06:35:32] INFO root fetch - processPackages [ctwin32]: executing diffoscope
+[2023-05-27 06:35:32] INFO root fetch - processPackages [ctwin32]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctwin32-2.1.0.tar.gz tmp/ctwin32-2.2.0.tar.gz --markdown 20230527/c/ctwin32/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-05-27 06:35:32] INFO root fetch - processPackages [pipelib]: executing diffoscope
+[2023-05-27 06:35:32] INFO root fetch - processPackages [pipelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipelib-0.0.16.tar.gz tmp/pipelib-0.0.17.tar.gz --markdown 20230527/p/pipelib/0.0.16-0.0.17/diff.md --exclude *.pyd
+[2023-05-27 06:35:32] INFO root fetch - main [MainThread]: End processing [roboduck]: success
+[2023-05-27 06:35:33] INFO root fetch - main [MainThread]: End processing [cq23]: success
+[2023-05-27 06:35:33] INFO root fetch - main [MainThread]: End processing [ctwin32]: success
+[2023-05-27 06:35:33] INFO root fetch - main [MainThread]: End processing [pipelib]: success
+[2023-05-27 06:35:33] INFO root fetch - main [MainThread]: Store serial: [18272284]
