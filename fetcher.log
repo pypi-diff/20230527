@@ -11612,3 +11612,32 @@
 [2023-05-27 21:11:41] INFO root fetch - main [MainThread]: End processing [sway] error
 [2023-05-27 21:11:42] INFO root fetch - main [MainThread]: End processing [ssgpy]: success
 [2023-05-27 21:11:42] INFO root fetch - main [MainThread]: Store serial: [18276242]
+[2023-05-27 21:16:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276242]
+[2023-05-27 21:16:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 21:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fixa
+[2023-05-27 21:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hl7conv2
+[2023-05-27 21:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dscan-api-client
+[2023-05-27 21:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ooo-dev-tools
+[2023-05-27 21:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xcodex
+[2023-05-27 21:16:51] INFO root fetch - processPackages [hl7conv2]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 21:16:51] WARNING root fetch - processPackages [xcodex]: Skipping, unable to determine old version
+[2023-05-27 21:16:51] INFO root fetch - processPackages [dscan-api-client]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-27 21:16:51] INFO root fetch - main [MainThread]: End processing [xcodex] error
+[2023-05-27 21:16:51] INFO root fetch - processPackages [fixa]: New version: [0.7.1] Old Version: [0.6.1]
+[2023-05-27 21:16:51] INFO root fetch - processPackages [ooo-dev-tools]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-27 21:16:51] INFO root fetch - processPackages [dscan-api-client]: Downloading https://files.pythonhosted.org/packages/e1/24/bd9e05653f9b48b3dfceeeebd321f33a71140ca90368c069cfe359bcbdaa/dscan_api_client-1.0.9-py3-none-any.whl
+[2023-05-27 21:16:51] INFO root fetch - processPackages [hl7conv2]: Downloading https://files.pythonhosted.org/packages/5a/c8/4ad6bdbb851b8450a010f694d37db04e81d92566ed9a9609ef272d2752a3/hl7conv2-0.1.2.tar.gz
+[2023-05-27 21:16:51] INFO root fetch - processPackages [dscan-api-client]: executing diffoscope
+[2023-05-27 21:16:51] INFO root fetch - processPackages [dscan-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscan_api_client-1.0.8-py3-none-any.whl.zip tmp/dscan_api_client-1.0.9-py3-none-any.whl.zip --markdown 20230527/d/dscan-api-client/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-27 21:16:51] INFO root fetch - processPackages [fixa]: Downloading https://files.pythonhosted.org/packages/45/db/1e043f8ae8b16bed09a3db74b407ee6ddbbff1647d194556f14b94c7749d/fixa-0.7.1.tar.gz
+[2023-05-27 21:16:51] INFO root fetch - processPackages [hl7conv2]: executing diffoscope
+[2023-05-27 21:16:51] INFO root fetch - processPackages [hl7conv2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hl7conv2-0.1.1.tar.gz tmp/hl7conv2-0.1.2.tar.gz --markdown 20230527/h/hl7conv2/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 21:16:51] INFO root fetch - processPackages [fixa]: executing diffoscope
+[2023-05-27 21:16:51] INFO root fetch - processPackages [ooo-dev-tools]: executing diffoscope
+[2023-05-27 21:16:51] INFO root fetch - processPackages [fixa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fixa-0.6.1.tar.gz tmp/fixa-0.7.1.tar.gz --markdown 20230527/f/fixa/0.6.1-0.7.1/diff.md --exclude *.pyd
+[2023-05-27 21:16:51] INFO root fetch - processPackages [ooo-dev-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ooo_dev_tools-0.9.7.tar.gz tmp/ooo_dev_tools-0.9.8.tar.gz --markdown 20230527/o/ooo-dev-tools/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-27 21:16:52] INFO root fetch - main [MainThread]: End processing [hl7conv2]: success
+[2023-05-27 21:16:53] INFO root fetch - main [MainThread]: End processing [fixa]: success
+[2023-05-27 21:16:53] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
+[2023-05-27 21:17:01] INFO root fetch - main [MainThread]: End processing [ooo-dev-tools]: success
+[2023-05-27 21:17:01] INFO root fetch - main [MainThread]: Store serial: [18276323]
