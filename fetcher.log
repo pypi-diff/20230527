@@ -10645,3 +10645,35 @@
 [2023-05-27 18:42:42] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-google]: success
 [2023-05-27 18:43:32] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-05-27 18:43:32] INFO root fetch - main [MainThread]: Store serial: [18275652]
+[2023-05-27 18:48:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275652]
+[2023-05-27 18:48:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 18:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mfhpo-simulator
+[2023-05-27 18:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whisper-autosrt
+[2023-05-27 18:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: encapsia-api
+[2023-05-27 18:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clust-learn
+[2023-05-27 18:48:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chiakilisp
+[2023-05-27 18:48:41] INFO root fetch - processPackages [clust-learn]: New version: [0.2.0b0] Old Version: [0.2.0.2]
+[2023-05-27 18:48:41] INFO root fetch - processPackages [mfhpo-simulator]: New version: [1.0.0] Old Version: [0.0.3]
+[2023-05-27 18:48:41] WARNING root fetch - processPackages [whisper-autosrt]: Skipping, unable to determine old version
+[2023-05-27 18:48:41] INFO root fetch - main [MainThread]: End processing [whisper-autosrt] error
+[2023-05-27 18:48:41] INFO root fetch - processPackages [encapsia-api]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-27 18:48:41] INFO root fetch - processPackages [chiakilisp]: New version: [1.4.0rc4] Old Version: [1.4.0rc3]
+[2023-05-27 18:48:41] INFO root fetch - processPackages [clust-learn]: Downloading https://files.pythonhosted.org/packages/e2/2a/2b2adbe74bb0b46f76377609b52d8ccc0d281b914288465e170c5d5ab06a/clust-learn-0.2.0.2.tar.gz
+[2023-05-27 18:48:41] INFO root fetch - processPackages [mfhpo-simulator]: Downloading https://files.pythonhosted.org/packages/de/e1/930f4447bf5628bc55dbbeebacf16b05602414854ac5f29f22ab555379df/mfhpo_simulator-0.0.3-py3-none-any.whl
+[2023-05-27 18:48:41] INFO root fetch - processPackages [encapsia-api]: Downloading https://files.pythonhosted.org/packages/3a/85/bc0ca1f4ca2a7f773849b0d0b8cf2306ba2d599aac0cae3dadcb9effbfd9/encapsia_api-0.4.2.tar.gz
+[2023-05-27 18:48:41] INFO root fetch - processPackages [clust-learn]: executing diffoscope
+[2023-05-27 18:48:41] INFO root fetch - processPackages [clust-learn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clust-learn-0.2.0.2.tar.gz tmp/clust-learn-0.2.0b0.tar.gz --markdown 20230527/c/clust-learn/0.2.0.2-0.2.0b0/diff.md --exclude *.pyd
+[2023-05-27 18:48:41] INFO root fetch - processPackages [chiakilisp]: Downloading https://files.pythonhosted.org/packages/be/f7/bcb4360a119764ac7bb5e8171608f418fc60a4d23ce4d3d009cee8984494/chiakilisp-1.4.0rc3-py3-none-any.whl
+[2023-05-27 18:48:41] INFO root fetch - processPackages [encapsia-api]: executing diffoscope
+[2023-05-27 18:48:41] INFO root fetch - processPackages [encapsia-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encapsia_api-0.4.1.tar.gz tmp/encapsia_api-0.4.2.tar.gz --markdown 20230527/e/encapsia-api/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-27 18:48:41] INFO root fetch - processPackages [mfhpo-simulator]: Downloading https://files.pythonhosted.org/packages/bc/c1/57224922e0b7cd623965d984df24c5ed0bc9ecc971b678dca828c8ac118c/mfhpo_simulator-1.0.0-py3-none-any.whl
+[2023-05-27 18:48:41] INFO root fetch - processPackages [chiakilisp]: Downloading https://files.pythonhosted.org/packages/16/42/f1dfef5fe5b7502f72f3015a11170e8b308e9eac03ac7f50040c6eb7336f/chiakilisp-1.4.0rc4-py3-none-any.whl
+[2023-05-27 18:48:41] INFO root fetch - processPackages [mfhpo-simulator]: executing diffoscope
+[2023-05-27 18:48:41] INFO root fetch - processPackages [mfhpo-simulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mfhpo_simulator-0.0.3-py3-none-any.whl.zip tmp/mfhpo_simulator-1.0.0-py3-none-any.whl.zip --markdown 20230527/m/mfhpo-simulator/0.0.3-1.0.0/diff.md --exclude *.pyd
+[2023-05-27 18:48:41] INFO root fetch - processPackages [chiakilisp]: executing diffoscope
+[2023-05-27 18:48:41] INFO root fetch - processPackages [chiakilisp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chiakilisp-1.4.0rc3-py3-none-any.whl.zip tmp/chiakilisp-1.4.0rc4-py3-none-any.whl.zip --markdown 20230527/c/chiakilisp/1.4.0rc3-1.4.0rc4/diff.md --exclude *.pyd
+[2023-05-27 18:48:42] INFO root fetch - main [MainThread]: End processing [encapsia-api]: success
+[2023-05-27 18:48:42] INFO root fetch - main [MainThread]: End processing [clust-learn]: success
+[2023-05-27 18:48:42] INFO root fetch - main [MainThread]: End processing [mfhpo-simulator]: success
+[2023-05-27 18:48:42] INFO root fetch - main [MainThread]: End processing [chiakilisp]: success
+[2023-05-27 18:48:42] INFO root fetch - main [MainThread]: Store serial: [18275667]
