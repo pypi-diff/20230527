@@ -5674,3 +5674,47 @@
 [2023-05-27 08:53:08] INFO root fetch - main [MainThread]: End processing [pulumi-onelogin]: success
 [2023-05-27 08:53:08] INFO root fetch - main [MainThread]: End processing [gravitas]: success
 [2023-05-27 08:53:08] INFO root fetch - main [MainThread]: Store serial: [18272710]
+[2023-05-27 08:58:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272710]
+[2023-05-27 08:58:17] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 08:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-splunk
+[2023-05-27 08:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-openstack
+[2023-05-27 08:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: puzzle15ai
+[2023-05-27 08:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asa-tools
+[2023-05-27 08:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-snowflake
+[2023-05-27 08:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gfs-dynamical-core
+[2023-05-27 08:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hrin-msb
+[2023-05-27 08:58:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-spotinst
+[2023-05-27 08:58:17] INFO root fetch - processPackages [pulumi-splunk]: New version: [1.3.0a1685168804] Old Version: [1.3.0a1685084245]
+[2023-05-27 08:58:17] INFO root fetch - processPackages [asa-tools]: New version: [0.1.8] Old Version: [0.1.6]
+[2023-05-27 08:58:17] INFO root fetch - processPackages [pulumi-openstack]: New version: [3.9.0a1659603007] Old Version: [3.9.0a1654086724]
+[2023-05-27 08:58:17] INFO root fetch - processPackages [gfs-dynamical-core]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 08:58:17] INFO root fetch - processPackages [pulumi-snowflake]: New version: [0.9.1a1656367704] Old Version: [0.9.1a1654087017]
+[2023-05-27 08:58:17] INFO root fetch - processPackages [hrin-msb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-27 08:58:17] INFO root fetch - processPackages [pulumi-spotinst]: New version: [3.9.0a1633346805] Old Version: [3.9.0]
+[2023-05-27 08:58:17] WARNING root fetch - processPackages [puzzle15ai]: Skipping, unable to determine old version
+[2023-05-27 08:58:17] INFO root fetch - main [MainThread]: End processing [puzzle15ai] error
+[2023-05-27 08:58:17] INFO root fetch - processPackages [pulumi-openstack]: executing diffoscope
+[2023-05-27 08:58:17] INFO root fetch - processPackages [pulumi-openstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_openstack-3.9.0a1654086724.tar.gz tmp/pulumi_openstack-3.9.0a1659603007.tar.gz --markdown 20230527/p/pulumi-openstack/3.9.0a1654086724-3.9.0a1659603007/diff.md --exclude *.pyd
+[2023-05-27 08:58:17] INFO root fetch - processPackages [pulumi-snowflake]: executing diffoscope
+[2023-05-27 08:58:17] INFO root fetch - processPackages [pulumi-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_snowflake-0.9.1a1654087017.tar.gz tmp/pulumi_snowflake-0.9.1a1656367704.tar.gz --markdown 20230527/p/pulumi-snowflake/0.9.1a1654087017-0.9.1a1656367704/diff.md --exclude *.pyd
+[2023-05-27 08:58:17] INFO root fetch - processPackages [pulumi-spotinst]: executing diffoscope
+[2023-05-27 08:58:17] INFO root fetch - processPackages [pulumi-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_spotinst-3.9.0.tar.gz tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz --markdown 20230527/p/pulumi-spotinst/3.9.0-3.9.0a1633346805/diff.md --exclude *.pyd
+[2023-05-27 08:58:17] INFO root fetch - processPackages [asa-tools]: Downloading https://files.pythonhosted.org/packages/77/b1/3f07caacba605731b6048bce056e229d1da0243a414979fcf4c5f0e1cc81/asa-tools-0.1.6.tar.gz
+[2023-05-27 08:58:17] INFO root fetch - processPackages [pulumi-splunk]: Downloading https://files.pythonhosted.org/packages/d0/50/4d905c1b5be7329ce19973d1292f7d6fa32a7239b3d9ba2f821e4f5e40c3/pulumi_splunk-1.3.0a1685168804.tar.gz
+[2023-05-27 08:58:17] INFO root fetch - processPackages [gfs-dynamical-core]: executing diffoscope
+[2023-05-27 08:58:17] INFO root fetch - processPackages [gfs-dynamical-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gfs_dynamical_core-0.1.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/gfs_dynamical_core-0.1.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230527/g/gfs-dynamical-core/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 08:58:17] INFO root fetch - processPackages [hrin-msb]: executing diffoscope
+[2023-05-27 08:58:17] INFO root fetch - processPackages [hrin-msb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hrin_msb-0.2.8.tar.gz tmp/hrin_msb-0.2.9.tar.gz --markdown 20230527/h/hrin-msb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-27 08:58:17] INFO root fetch - processPackages [asa-tools]: Downloading https://files.pythonhosted.org/packages/3b/26/dfc89e9419f3fffec2440a26c284791aab0ff545cbc1c172e1bccfab04cd/asa-tools-0.1.8.tar.gz
+[2023-05-27 08:58:17] INFO root fetch - processPackages [pulumi-splunk]: executing diffoscope
+[2023-05-27 08:58:17] INFO root fetch - processPackages [pulumi-splunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_splunk-1.3.0a1685084245.tar.gz tmp/pulumi_splunk-1.3.0a1685168804.tar.gz --markdown 20230527/p/pulumi-splunk/1.3.0a1685084245-1.3.0a1685168804/diff.md --exclude *.pyd
+[2023-05-27 08:58:17] INFO root fetch - processPackages [asa-tools]: executing diffoscope
+[2023-05-27 08:58:17] INFO root fetch - processPackages [asa-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asa-tools-0.1.6.tar.gz tmp/asa-tools-0.1.8.tar.gz --markdown 20230527/a/asa-tools/0.1.6-0.1.8/diff.md --exclude *.pyd
+[2023-05-27 08:58:19] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
+[2023-05-27 08:58:19] INFO root fetch - main [MainThread]: End processing [asa-tools]: success
+[2023-05-27 08:58:19] INFO root fetch - main [MainThread]: End processing [pulumi-splunk]: success
+[2023-05-27 08:58:19] INFO root fetch - main [MainThread]: End processing [hrin-msb]: success
+[2023-05-27 08:58:19] INFO root fetch - main [MainThread]: End processing [pulumi-snowflake]: success
+[2023-05-27 08:58:23] INFO root fetch - main [MainThread]: End processing [pulumi-openstack]: success
+[2023-05-27 08:58:42] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
+[2023-05-27 08:58:42] INFO root fetch - main [MainThread]: Store serial: [18272734]
