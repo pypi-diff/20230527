@@ -4898,3 +4898,69 @@
 [2023-05-27 07:02:39] INFO root fetch - processPackages [dask-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask-cuda-23.8.0a230525.tar.gz tmp/dask-cuda-23.8.0a230526.tar.gz --markdown 20230527/d/dask-cuda/23.8.0a230525-23.8.0a230526/diff.md --exclude *.pyd
 [2023-05-27 07:02:40] INFO root fetch - main [MainThread]: End processing [dask-cuda]: success
 [2023-05-27 07:02:40] INFO root fetch - main [MainThread]: Store serial: [18272334]
+[2023-05-27 07:07:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272334]
+[2023-05-27 07:07:49] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-27 07:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dask-cuda
+[2023-05-27 07:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: soremoji
+[2023-05-27 07:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gravitas
+[2023-05-27 07:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gqylpy-ssh
+[2023-05-27 07:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: thztools
+[2023-05-27 07:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rapid-pe
+[2023-05-27 07:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gravitas
+[2023-05-27 07:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: multi-model-server
+[2023-05-27 07:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tflite-runtime-nightly
+[2023-05-27 07:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cli-test-helpers
+[2023-05-27 07:07:49] INFO root fetch - processPackages [soremoji]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-27 07:07:49] INFO root fetch - processPackages [gqylpy-ssh]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-05-27 07:07:49] INFO root fetch - processPackages [thztools]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-27 07:07:49] INFO root fetch - processPackages [gravitas]: New version: [0.0.9] Old Version: [0.0.4]
+[2023-05-27 07:07:49] INFO root fetch - processPackages [cli-test-helpers]: New version: [3.3.0] Old Version: [3.2.0]
+[2023-05-27 07:07:49] INFO root fetch - processPackages [gravitas]: New version: [0.0.9] Old Version: [0.0.4]
+[2023-05-27 07:07:49] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230527] Old Version: [0.1.1.dev20230526]
+[2023-05-27 07:07:49] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230527] Old Version: [1.1.8b20230526]
+[2023-05-27 07:07:49] INFO root fetch - processPackages [dask-cuda]: New version: [23.8.0a230526] Old Version: [23.8.0a230525]
+[2023-05-27 07:07:49] INFO root fetch - processPackages [cli-test-helpers]: executing diffoscope
+[2023-05-27 07:07:49] INFO root fetch - processPackages [cli-test-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli-test-helpers-3.2.0.tar.gz tmp/cli-test-helpers-3.3.0.tar.gz --markdown 20230527/c/cli-test-helpers/3.2.0-3.3.0/diff.md --exclude *.pyd
+[2023-05-27 07:07:49] INFO root fetch - processPackages [gqylpy-ssh]: Downloading https://files.pythonhosted.org/packages/79/a9/eea17dacc1101b1b8190d6a3aa2601257047fefe4ae69e7b20edc8e9ec80/gqylpy_ssh-1.2.5-py3-none-any.whl
+[2023-05-27 07:07:49] INFO root fetch - processPackages [thztools]: Downloading https://files.pythonhosted.org/packages/e0/3e/88a1b3780436b17fa76ae7101b76c4d3eece30ca6ce81e64bf723fa03228/thztools-1.0.4.tar.gz
+[2023-05-27 07:07:49] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/7b/b7/4db71be67f8ce03fed4e04df200610f2870d3777a7b88c47d59fa2e2d453/multi_model_server-1.1.8b20230527-py2.py3-none-any.whl
+[2023-05-27 07:07:49] INFO root fetch - processPackages [soremoji]: Downloading https://files.pythonhosted.org/packages/4c/44/218b56c453080f798f05b5c3da5aa5b74aa56ad2cb802df6ef024f4cd546/soremoji-0.3.3.tar.gz
+[2023-05-27 07:07:49] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/4f/93/d3c984a916323d875229ffa203777986306e5d5420871bc01d9c6bf58551/rapid_pe-0.1.1.dev20230527.tar.gz
+[2023-05-27 07:07:49] INFO root fetch - processPackages [thztools]: executing diffoscope
+[2023-05-27 07:07:49] INFO root fetch - processPackages [thztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thztools-1.0.3.tar.gz tmp/thztools-1.0.4.tar.gz --markdown 20230527/t/thztools/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-27 07:07:49] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.14.0.dev20230526] Old Version: [2.14.0.dev20230524]
+[2023-05-27 07:07:49] INFO root fetch - processPackages [gravitas]: Downloading https://files.pythonhosted.org/packages/b3/08/51cbf06bc49fc103da23e2f4786a49033cf9c0f17d8d317bb226c61405ce/gravitas-0.0.9.tar.gz
+[2023-05-27 07:07:49] INFO root fetch - processPackages [gravitas]: Downloading https://files.pythonhosted.org/packages/b3/08/51cbf06bc49fc103da23e2f4786a49033cf9c0f17d8d317bb226c61405ce/gravitas-0.0.9.tar.gz
+[2023-05-27 07:07:49] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-05-27 07:07:49] INFO root fetch - processPackages [soremoji]: executing diffoscope
+[2023-05-27 07:07:49] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.1.dev20230526.tar.gz tmp/rapid_pe-0.1.1.dev20230527.tar.gz --markdown 20230527/r/rapid-pe/0.1.1.dev20230526-0.1.1.dev20230527/diff.md --exclude *.pyd
+[2023-05-27 07:07:49] INFO root fetch - processPackages [soremoji]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soremoji-0.3.2.tar.gz tmp/soremoji-0.3.3.tar.gz --markdown 20230527/s/soremoji/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-27 07:07:49] INFO root fetch - processPackages [dask-cuda]: executing diffoscope
+[2023-05-27 07:07:49] INFO root fetch - processPackages [dask-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask-cuda-23.8.0a230525.tar.gz tmp/dask-cuda-23.8.0a230526.tar.gz --markdown 20230527/d/dask-cuda/23.8.0a230525-23.8.0a230526/diff.md --exclude *.pyd
+[2023-05-27 07:07:49] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/0f/d8/934e971fe7cc05f4e8b7df4c69cd9518e1b7bbc93f7edebd16bf17e426b4/tflite_runtime_nightly-2.14.0.dev20230524-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-27 07:07:49] INFO root fetch - processPackages [gqylpy-ssh]: Downloading https://files.pythonhosted.org/packages/ef/f6/14ab88c9a35b41fddd21d22598f9dea648e83c63d2ef90df81f7b2aed437/gqylpy_ssh-1.2.6-py3-none-any.whl
+[2023-05-27 07:07:49] INFO root fetch - processPackages [gqylpy-ssh]: executing diffoscope
+[2023-05-27 07:07:49] INFO root fetch - processPackages [gqylpy-ssh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqylpy_ssh-1.2.5-py3-none-any.whl.zip tmp/gqylpy_ssh-1.2.6-py3-none-any.whl.zip --markdown 20230527/g/gqylpy-ssh/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-05-27 07:07:50] INFO root fetch - processPackages [gravitas]: executing diffoscope
+[2023-05-27 07:07:50] INFO root fetch - processPackages [gravitas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitas-0.0.4.tar.gz tmp/gravitas-0.0.9.tar.gz --markdown 20230527/g/gravitas/0.0.4-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 07:07:50] INFO root fetch - processPackages [gravitas]: executing diffoscope
+[2023-05-27 07:07:50] INFO root fetch - processPackages [gravitas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitas-0.0.4.tar.gz tmp/gravitas-0.0.9.tar.gz --markdown 20230527/g/gravitas/0.0.4-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 07:07:50] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/af/8a/25a11ba417851119a497a4728bcedfdb6338aa05d3a269f59977f78ba1c9/tflite_runtime_nightly-2.14.0.dev20230526-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-27 07:07:50] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-05-27 07:07:50] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230526-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230527-py2.py3-none-any.whl.zip --markdown 20230527/m/multi-model-server/1.1.8b20230526-1.1.8b20230527/diff.md --exclude *.pyd
+[2023-05-27 07:07:50] INFO root fetch - processPackages [thztools]: Start processing: opd
+[2023-05-27 07:07:50] INFO root fetch - main [MainThread]: End processing [thztools]: success
+[2023-05-27 07:07:51] WARNING root fetch - processPackages [opd]: Skipping, unable to determine old version
+[2023-05-27 07:07:51] INFO root fetch - main [MainThread]: End processing [opd] error
+[2023-05-27 07:07:51] INFO root fetch - main [MainThread]: End processing [soremoji]: success
+[2023-05-27 07:07:51] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-05-27 07:07:51] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.14.0.dev20230524-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.14.0.dev20230526-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230527/t/tflite-runtime-nightly/2.14.0.dev20230524-2.14.0.dev20230526/diff.md --exclude *.pyd
+[2023-05-27 07:07:51] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-05-27 07:07:51] INFO root fetch - main [MainThread]: End processing [dask-cuda]: success
+[2023-05-27 07:07:51] INFO root fetch - main [MainThread]: End processing [cli-test-helpers]: success
+[2023-05-27 07:07:51] INFO root fetch - main [MainThread]: End processing [gqylpy-ssh]: success
+[2023-05-27 07:07:53] INFO root fetch - main [MainThread]: End processing [gravitas]: success
+[2023-05-27 07:07:54] INFO root fetch - main [MainThread]: End processing [gravitas]: success
+[2023-05-27 07:08:21] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2023-05-27 07:10:41] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-05-27 07:10:41] INFO root fetch - main [MainThread]: Store serial: [18272377]
