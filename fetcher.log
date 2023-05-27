@@ -12124,3 +12124,67 @@
 [2023-05-27 22:22:51] INFO root fetch - main [MainThread]: End processing [jao-py]: success
 [2023-05-27 22:22:51] INFO root fetch - main [MainThread]: End processing [pyCloudy]: success
 [2023-05-27 22:22:51] INFO root fetch - main [MainThread]: Store serial: [18276689]
+[2023-05-27 22:27:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276689]
+[2023-05-27 22:28:00] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-27 22:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: akasa
+[2023-05-27 22:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: akasa
+[2023-05-27 22:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: regis
+[2023-05-27 22:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: shlep
+[2023-05-27 22:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chatcmd
+[2023-05-27 22:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: reytool
+[2023-05-27 22:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tmuxp
+[2023-05-27 22:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vcspull
+[2023-05-27 22:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PlexPreferNonForcedSubs
+[2023-05-27 22:28:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pytmac
+[2023-05-27 22:28:00] INFO root fetch - processPackages [akasa]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-27 22:28:00] INFO root fetch - processPackages [akasa]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-27 22:28:00] INFO root fetch - processPackages [regis]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 22:28:00] INFO root fetch - processPackages [chatcmd]: New version: [1.0.17] Old Version: [1.0.16]
+[2023-05-27 22:28:00] INFO root fetch - processPackages [reytool]: New version: [0.99] Old Version: [0.98]
+[2023-05-27 22:28:00] INFO root fetch - processPackages [tmuxp]: New version: [1.9.4] Old Version: [1.9.3]
+[2023-05-27 22:28:00] INFO root fetch - processPackages [shlep]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-05-27 22:28:00] INFO root fetch - processPackages [pytmac]: New version: [3.4.0] Old Version: [3.3.2]
+[2023-05-27 22:28:00] INFO root fetch - processPackages [vcspull]: New version: [1.9.0.post2] Old Version: [1.9.0.post1]
+[2023-05-27 22:28:00] INFO root fetch - processPackages [PlexPreferNonForcedSubs]: New version: [2.1.8] Old Version: [2.1.7]
+[2023-05-27 22:28:01] INFO root fetch - processPackages [reytool]: executing diffoscope
+[2023-05-27 22:28:01] INFO root fetch - processPackages [reytool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reytool-0.98-py3-none-any.whl.zip tmp/reytool-0.99-py3-none-any.whl.zip --markdown 20230527/r/reytool/0.98-0.99/diff.md --exclude *.pyd
+[2023-05-27 22:28:01] INFO root fetch - processPackages [akasa]: Downloading https://files.pythonhosted.org/packages/36/4d/83e57f06449df22afe64aba098a6be659c5f4a74480f4c6ee013d396300b/akasa-1.0.0.tar.gz
+[2023-05-27 22:28:01] INFO root fetch - processPackages [pytmac]: executing diffoscope
+[2023-05-27 22:28:01] INFO root fetch - processPackages [pytmac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytmac-3.3.2.tar.gz tmp/pytmac-3.4.0.tar.gz --markdown 20230527/p/pytmac/3.3.2-3.4.0/diff.md --exclude *.pyd
+[2023-05-27 22:28:01] INFO root fetch - processPackages [akasa]: Downloading https://files.pythonhosted.org/packages/36/4d/83e57f06449df22afe64aba098a6be659c5f4a74480f4c6ee013d396300b/akasa-1.0.0.tar.gz
+[2023-05-27 22:28:01] INFO root fetch - processPackages [tmuxp]: Downloading https://files.pythonhosted.org/packages/35/d3/b8fe5cb0bc52abf33f8d5846a48bbca0ea35a3e1a3ebff99a8cb3dc1692b/tmuxp-1.9.3.tar.gz
+[2023-05-27 22:28:01] INFO root fetch - processPackages [shlep]: Downloading https://files.pythonhosted.org/packages/23/df/1105d3236a8e18c11f4f5f24f212234563e70f70a8ddff1ea4b1c9ef093b/shlep-3.1.0.tar.gz
+[2023-05-27 22:28:01] INFO root fetch - processPackages [vcspull]: Downloading https://files.pythonhosted.org/packages/df/f6/7072bb745d13efa4a13a0bfb94853879f092c59b20cb966ef78b0c326a4a/vcspull-1.9.0.post1.tar.gz
+[2023-05-27 22:28:01] INFO root fetch - processPackages [shlep]: executing diffoscope
+[2023-05-27 22:28:01] INFO root fetch - processPackages [shlep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shlep-3.0.0.tar.gz tmp/shlep-3.1.0.tar.gz --markdown 20230527/s/shlep/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2023-05-27 22:28:01] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/43/65/444074df3b6c031dce9a7db2edf20222fd8e1aaa7f98cfa1659acfbc4764/chatcmd-1.0.17.tar.gz
+[2023-05-27 22:28:01] INFO root fetch - processPackages [akasa]: Downloading https://files.pythonhosted.org/packages/49/7d/1570e6bc4df5519b364131e0ed5f286918029c08e9b77a5f9e17ac94dc89/akasa-1.0.1.linux-x86_64.tar.gz
+[2023-05-27 22:28:01] INFO root fetch - processPackages [akasa]: Downloading https://files.pythonhosted.org/packages/49/7d/1570e6bc4df5519b364131e0ed5f286918029c08e9b77a5f9e17ac94dc89/akasa-1.0.1.linux-x86_64.tar.gz
+[2023-05-27 22:28:01] INFO root fetch - processPackages [regis]: executing diffoscope
+[2023-05-27 22:28:01] INFO root fetch - processPackages [regis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regis-0.1.8.tar.gz tmp/regis-0.1.9.tar.gz --markdown 20230527/r/regis/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 22:28:01] INFO root fetch - processPackages [PlexPreferNonForcedSubs]: Downloading https://files.pythonhosted.org/packages/66/33/bd3393932ca4d17af64321987d3671efd5671d1c1566c9944f1fa0a66e7b/PlexPreferNonForcedSubs-2.1.8.tar.gz
+[2023-05-27 22:28:01] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-27 22:28:01] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.16.tar.gz tmp/chatcmd-1.0.17.tar.gz --markdown 20230527/c/chatcmd/1.0.16-1.0.17/diff.md --exclude *.pyd
+[2023-05-27 22:28:01] INFO root fetch - processPackages [vcspull]: Downloading https://files.pythonhosted.org/packages/49/bc/7d75a2dd01b33e2f6b0222a1e9c5ac1958ff1f2b43139e375961794558a1/vcspull-1.9.0.post2.tar.gz
+[2023-05-27 22:28:01] INFO root fetch - processPackages [PlexPreferNonForcedSubs]: executing diffoscope
+[2023-05-27 22:28:01] INFO root fetch - processPackages [PlexPreferNonForcedSubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PlexPreferNonForcedSubs-2.1.7.tar.gz tmp/PlexPreferNonForcedSubs-2.1.8.tar.gz --markdown 20230527/P/PlexPreferNonForcedSubs/2.1.7-2.1.8/diff.md --exclude *.pyd
+[2023-05-27 22:28:01] INFO root fetch - processPackages [akasa]: executing diffoscope
+[2023-05-27 22:28:01] INFO root fetch - processPackages [akasa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akasa-1.0.0.tar.gz tmp/akasa-1.0.1.linux-x86_64.tar.gz --markdown 20230527/a/akasa/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 22:28:01] INFO root fetch - processPackages [akasa]: executing diffoscope
+[2023-05-27 22:28:01] INFO root fetch - processPackages [akasa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akasa-1.0.0.tar.gz tmp/akasa-1.0.1.linux-x86_64.tar.gz --markdown 20230527/a/akasa/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 22:28:01] INFO root fetch - processPackages [tmuxp]: Downloading https://files.pythonhosted.org/packages/7a/ae/56b8199f9768f276e8c08f1ac45f7a1125582700d3cf66210c6dc09c4412/tmuxp-1.9.4.tar.gz
+[2023-05-27 22:28:01] INFO root fetch - processPackages [vcspull]: executing diffoscope
+[2023-05-27 22:28:01] INFO root fetch - processPackages [vcspull]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vcspull-1.9.0.post1.tar.gz tmp/vcspull-1.9.0.post2.tar.gz --markdown 20230527/v/vcspull/1.9.0.post1-1.9.0.post2/diff.md --exclude *.pyd
+[2023-05-27 22:28:02] INFO root fetch - processPackages [tmuxp]: executing diffoscope
+[2023-05-27 22:28:02] INFO root fetch - processPackages [tmuxp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmuxp-1.9.3.tar.gz tmp/tmuxp-1.9.4.tar.gz --markdown 20230527/t/tmuxp/1.9.3-1.9.4/diff.md --exclude *.pyd
+[2023-05-27 22:28:02] INFO root fetch - main [MainThread]: End processing [reytool]: success
+[2023-05-27 22:28:02] INFO root fetch - main [MainThread]: End processing [pytmac]: success
+[2023-05-27 22:28:02] INFO root fetch - main [MainThread]: End processing [shlep]: success
+[2023-05-27 22:28:02] INFO root fetch - main [MainThread]: End processing [regis]: success
+[2023-05-27 22:28:02] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-27 22:28:02] INFO root fetch - main [MainThread]: End processing [akasa]: success
+[2023-05-27 22:28:03] INFO root fetch - main [MainThread]: End processing [akasa]: success
+[2023-05-27 22:28:03] INFO root fetch - main [MainThread]: End processing [PlexPreferNonForcedSubs]: success
+[2023-05-27 22:28:03] INFO root fetch - main [MainThread]: End processing [vcspull]: success
+[2023-05-27 22:28:04] INFO root fetch - main [MainThread]: End processing [tmuxp]: success
+[2023-05-27 22:28:04] INFO root fetch - main [MainThread]: Store serial: [18276733]
