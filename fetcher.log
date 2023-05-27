@@ -10264,3 +10264,68 @@
 [2023-05-27 17:57:25] INFO root fetch - main [MainThread]: End processing [mkdocs-exporter]: success
 [2023-05-27 17:57:27] INFO root fetch - main [MainThread]: End processing [PolicyEngine-UK]: success
 [2023-05-27 17:57:27] INFO root fetch - main [MainThread]: Store serial: [18275470]
+[2023-05-27 18:02:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275470]
+[2023-05-27 18:02:37] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-27 18:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-index
+[2023-05-27 18:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpt-index
+[2023-05-27 18:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymedio
+[2023-05-27 18:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyDAO-9000
+[2023-05-27 18:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: policyengine-us
+[2023-05-27 18:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: webpy-framework
+[2023-05-27 18:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: elm-messenger
+[2023-05-27 18:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: synapgrad
+[2023-05-27 18:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: containers-sugar
+[2023-05-27 18:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: clearml
+[2023-05-27 18:02:37] INFO root fetch - processPackages [gpt-index]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-27 18:02:37] INFO root fetch - processPackages [llama-index]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-27 18:02:37] INFO root fetch - processPackages [pymedio]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-27 18:02:37] INFO root fetch - processPackages [synapgrad]: New version: [0.5.1] Old Version: [0.3.2]
+[2023-05-27 18:02:37] INFO root fetch - processPackages [elm-messenger]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-27 18:02:37] INFO root fetch - processPackages [PyDAO-9000]: New version: [1.2] Old Version: [1.1]
+[2023-05-27 18:02:37] INFO root fetch - processPackages [containers-sugar]: New version: [1.6.0] Old Version: [1.5.0]
+[2023-05-27 18:02:37] INFO root fetch - processPackages [webpy-framework]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-27 18:02:37] INFO root fetch - processPackages [policyengine-us]: New version: [0.328.0] Old Version: [0.327.0]
+[2023-05-27 18:02:37] INFO root fetch - processPackages [clearml]: New version: [1.9.3] Old Version: [1.9.2rc2]
+[2023-05-27 18:02:37] INFO root fetch - processPackages [containers-sugar]: Downloading https://files.pythonhosted.org/packages/07/b8/57ca6c4ef2c8a83920bf94eb93be9374fa3de206b6a176659965b99e2e58/containers_sugar-1.5.0.tar.gz
+[2023-05-27 18:02:37] INFO root fetch - processPackages [pymedio]: Downloading https://files.pythonhosted.org/packages/f5/f4/9ec1e191bd20a3999e9fb6c66e40af2bc3839034c08b77e63836d6bcbf13/pymedio-0.2.8.tar.gz
+[2023-05-27 18:02:37] INFO root fetch - processPackages [elm-messenger]: Downloading https://files.pythonhosted.org/packages/6c/db/aaf5f33d1213a0541a7ba7cc145890d4657aea9f7643dbbfd6ac9318d573/elm-messenger-0.2.1.tar.gz
+[2023-05-27 18:02:37] INFO root fetch - processPackages [PyDAO-9000]: Downloading https://files.pythonhosted.org/packages/6e/17/f51a1073001976074f90cdd4e9f693f9eaaa14e1b3a4e47ce948b22aaa78/PyDAO_9000-1.1.tar.gz
+[2023-05-27 18:02:37] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/1d/7c/7a94103e1fe376182676e5030d6197975ecea612ac93fc4c86f0ac8702c0/policyengine-us-0.328.0.tar.gz
+[2023-05-27 18:02:37] INFO root fetch - processPackages [webpy-framework]: Downloading https://files.pythonhosted.org/packages/fd/03/f1e3d1f0373f8cef29537782d63a57ae1c11f19ba709933ba87be2df2c61/webpy-framework-1.1.1.tar.gz
+[2023-05-27 18:02:37] INFO root fetch - processPackages [clearml]: Downloading https://files.pythonhosted.org/packages/7e/29/095ec92c0b253f5d8ad2c5fc3a6c437c0cdabc67716b99ae81f0d773ae77/clearml-1.9.2rc2-py2.py3-none-any.whl
+[2023-05-27 18:02:37] INFO root fetch - processPackages [elm-messenger]: executing diffoscope
+[2023-05-27 18:02:37] INFO root fetch - processPackages [elm-messenger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elm-messenger-0.2.0.tar.gz tmp/elm-messenger-0.2.1.tar.gz --markdown 20230527/e/elm-messenger/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-27 18:02:37] INFO root fetch - processPackages [synapgrad]: Downloading https://files.pythonhosted.org/packages/63/07/3dd7dbeb8b1a92cf9aba98f0338f6486112ccba80a1ab1483bdfb687decb/synapgrad-0.5.1-py3-none-any.whl
+[2023-05-27 18:02:37] INFO root fetch - processPackages [llama-index]: executing diffoscope
+[2023-05-27 18:02:37] INFO root fetch - processPackages [llama-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index-0.6.8.tar.gz tmp/llama_index-0.6.9.tar.gz --markdown 20230527/l/llama-index/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-27 18:02:38] INFO root fetch - processPackages [gpt-index]: executing diffoscope
+[2023-05-27 18:02:38] INFO root fetch - processPackages [gpt-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_index-0.6.8.tar.gz tmp/gpt_index-0.6.9.tar.gz --markdown 20230527/g/gpt-index/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-27 18:02:38] INFO root fetch - processPackages [webpy-framework]: executing diffoscope
+[2023-05-27 18:02:38] INFO root fetch - processPackages [webpy-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webpy-framework-1.1.0.tar.gz tmp/webpy-framework-1.1.1.tar.gz --markdown 20230527/w/webpy-framework/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-27 18:02:38] INFO root fetch - processPackages [synapgrad]: executing diffoscope
+[2023-05-27 18:02:38] INFO root fetch - processPackages [synapgrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synapgrad-0.3.2-py3-none-any.whl.zip tmp/synapgrad-0.5.1-py3-none-any.whl.zip --markdown 20230527/s/synapgrad/0.3.2-0.5.1/diff.md --exclude *.pyd
+[2023-05-27 18:02:38] INFO root fetch - processPackages [PyDAO-9000]: Downloading https://files.pythonhosted.org/packages/10/ce/18a212f702443c9415026d8a6987ff2f2700819037b48b37da96a9493391/PyDAO_9000-1.2.tar.gz
+[2023-05-27 18:02:38] INFO root fetch - processPackages [containers-sugar]: Downloading https://files.pythonhosted.org/packages/7d/45/7b3d1ae32c465f50b2a14cbab7162685d743f4eff90c761c7a70ceab760a/containers_sugar-1.6.0.tar.gz
+[2023-05-27 18:02:38] INFO root fetch - processPackages [pymedio]: Downloading https://files.pythonhosted.org/packages/5e/69/624d22224eadeb5e2d037bffc3da1570d13fb7a19cee49891ccc3445cddb/pymedio-0.2.9.tar.gz
+[2023-05-27 18:02:38] INFO root fetch - processPackages [PyDAO-9000]: executing diffoscope
+[2023-05-27 18:02:38] INFO root fetch - processPackages [PyDAO-9000]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDAO_9000-1.1.tar.gz tmp/PyDAO_9000-1.2.tar.gz --markdown 20230527/P/PyDAO-9000/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-27 18:02:38] INFO root fetch - processPackages [containers-sugar]: executing diffoscope
+[2023-05-27 18:02:38] INFO root fetch - processPackages [containers-sugar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/containers_sugar-1.5.0.tar.gz tmp/containers_sugar-1.6.0.tar.gz --markdown 20230527/c/containers-sugar/1.5.0-1.6.0/diff.md --exclude *.pyd
+[2023-05-27 18:02:38] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-05-27 18:02:38] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.327.0.tar.gz tmp/policyengine-us-0.328.0.tar.gz --markdown 20230527/p/policyengine-us/0.327.0-0.328.0/diff.md --exclude *.pyd
+[2023-05-27 18:02:38] INFO root fetch - processPackages [clearml]: Downloading https://files.pythonhosted.org/packages/ce/e8/0c335873c6ef72310890be41a2b4b804f0390e3b0c1a507bcbc4300d4229/clearml-1.9.3-py2.py3-none-any.whl
+[2023-05-27 18:02:38] INFO root fetch - processPackages [pymedio]: executing diffoscope
+[2023-05-27 18:02:38] INFO root fetch - processPackages [pymedio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymedio-0.2.8.tar.gz tmp/pymedio-0.2.9.tar.gz --markdown 20230527/p/pymedio/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-27 18:02:38] INFO root fetch - processPackages [clearml]: executing diffoscope
+[2023-05-27 18:02:38] INFO root fetch - processPackages [clearml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clearml-1.9.2rc2-py2.py3-none-any.whl.zip tmp/clearml-1.9.3-py2.py3-none-any.whl.zip --markdown 20230527/c/clearml/1.9.2rc2-1.9.3/diff.md --exclude *.pyd
+[2023-05-27 18:02:39] INFO root fetch - main [MainThread]: End processing [elm-messenger]: success
+[2023-05-27 18:02:39] INFO root fetch - main [MainThread]: End processing [synapgrad]: success
+[2023-05-27 18:02:39] INFO root fetch - main [MainThread]: End processing [PyDAO-9000]: success
+[2023-05-27 18:02:39] INFO root fetch - main [MainThread]: End processing [webpy-framework]: success
+[2023-05-27 18:02:40] INFO root fetch - main [MainThread]: End processing [containers-sugar]: success
+[2023-05-27 18:02:40] INFO root fetch - main [MainThread]: End processing [pymedio]: success
+[2023-05-27 18:02:42] INFO root fetch - main [MainThread]: End processing [clearml]: success
+[2023-05-27 18:02:43] INFO root fetch - main [MainThread]: End processing [llama-index]: success
+[2023-05-27 18:02:43] INFO root fetch - main [MainThread]: End processing [gpt-index]: success
+[2023-05-27 18:03:55] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-05-27 18:03:55] INFO root fetch - main [MainThread]: Store serial: [18275503]
