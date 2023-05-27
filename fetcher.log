@@ -6905,3 +6905,32 @@
 [2023-05-27 11:27:25] INFO root fetch - main [MainThread]: End processing [yambs]: success
 [2023-05-27 11:27:25] INFO root fetch - main [MainThread]: End processing [roadmapper]: success
 [2023-05-27 11:27:25] INFO root fetch - main [MainThread]: Store serial: [18273444]
+[2023-05-27 11:32:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273444]
+[2023-05-27 11:32:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 11:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oranchada
+[2023-05-27 11:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-code-editor
+[2023-05-27 11:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Candataloader
+[2023-05-27 11:32:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: exc2dic
+[2023-05-27 11:32:34] INFO root fetch - processPackages [oranchada]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 11:32:34] INFO root fetch - processPackages [streamlit-code-editor]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-05-27 11:32:34] INFO root fetch - processPackages [Candataloader]: New version: [1.1.4] Old Version: [1.1.2]
+[2023-05-27 11:32:34] INFO root fetch - processPackages [exc2dic]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-27 11:32:35] INFO root fetch - processPackages [Candataloader]: Downloading https://files.pythonhosted.org/packages/85/ae/cc62739d8c95535da8c26b13430be719c8f39345246c961416734f7f04a3/Candataloader-1.1.2.tar.gz
+[2023-05-27 11:32:35] INFO root fetch - processPackages [streamlit-code-editor]: Downloading https://files.pythonhosted.org/packages/a9/93/754c6407d305fdffae4d5b9afa0819005f51647da2dfeaf8de8342e5e490/streamlit-code-editor-0.0.7.tar.gz
+[2023-05-27 11:32:35] INFO root fetch - processPackages [exc2dic]: Downloading https://files.pythonhosted.org/packages/22/e7/9cdbeb34efcd3b43be0c09a85275f3e3d3cca3b30881caced210a7db282a/exc2dic-1.0.0.tar.gz
+[2023-05-27 11:32:35] INFO root fetch - processPackages [oranchada]: executing diffoscope
+[2023-05-27 11:32:35] INFO root fetch - processPackages [oranchada]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oranchada-0.0.8.tar.gz tmp/oranchada-0.0.9.tar.gz --markdown 20230527/o/oranchada/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 11:32:35] INFO root fetch - processPackages [Candataloader]: Downloading https://files.pythonhosted.org/packages/e4/ab/a52ac6e1bacefbfd64634086a26ee96d6bfe837c26222c8e6892b5cd1f2c/Candataloader-1.1.4.tar.gz
+[2023-05-27 11:32:35] INFO root fetch - processPackages [exc2dic]: Downloading https://files.pythonhosted.org/packages/a4/fc/f7b0c6f61b3a5ec6d02aa2a5b39d33a160203160f5fd92fbc48dc4281a17/exc2dic-1.0.1.tar.gz
+[2023-05-27 11:32:35] INFO root fetch - processPackages [Candataloader]: executing diffoscope
+[2023-05-27 11:32:35] INFO root fetch - processPackages [Candataloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Candataloader-1.1.2.tar.gz tmp/Candataloader-1.1.4.tar.gz --markdown 20230527/C/Candataloader/1.1.2-1.1.4/diff.md --exclude *.pyd
+[2023-05-27 11:32:35] INFO root fetch - processPackages [exc2dic]: executing diffoscope
+[2023-05-27 11:32:35] INFO root fetch - processPackages [exc2dic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exc2dic-1.0.0.tar.gz tmp/exc2dic-1.0.1.tar.gz --markdown 20230527/e/exc2dic/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 11:32:36] INFO root fetch - processPackages [streamlit-code-editor]: Downloading https://files.pythonhosted.org/packages/8b/27/1f67f5e711098b4146aa8d8797e4375b7c0bfd18d5a823857f7a9853ff82/streamlit-code-editor-0.0.9.tar.gz
+[2023-05-27 11:32:36] INFO root fetch - processPackages [streamlit-code-editor]: executing diffoscope
+[2023-05-27 11:32:36] INFO root fetch - processPackages [streamlit-code-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-code-editor-0.0.7.tar.gz tmp/streamlit-code-editor-0.0.9.tar.gz --markdown 20230527/s/streamlit-code-editor/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 11:32:36] INFO root fetch - main [MainThread]: End processing [Candataloader]: success
+[2023-05-27 11:32:36] INFO root fetch - main [MainThread]: End processing [exc2dic]: success
+[2023-05-27 11:32:36] INFO root fetch - main [MainThread]: End processing [oranchada]: success
+[2023-05-27 11:33:48] INFO root fetch - main [MainThread]: End processing [streamlit-code-editor]: success
+[2023-05-27 11:33:48] INFO root fetch - main [MainThread]: Store serial: [18273458]
