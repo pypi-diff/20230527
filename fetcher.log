@@ -4211,3 +4211,62 @@
 [2023-05-27 05:11:42] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ddmrp]: success
 [2023-05-27 05:11:42] INFO root fetch - main [MainThread]: End processing [odoo-addon-ddmrp]: success
 [2023-05-27 05:11:42] INFO root fetch - main [MainThread]: Store serial: [18271979]
+[2023-05-27 05:16:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271979]
+[2023-05-27 05:16:50] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-27 05:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lifetimefitting
+[2023-05-27 05:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lasfile
+[2023-05-27 05:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: GANDLF
+[2023-05-27 05:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: monthify
+[2023-05-27 05:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-website-sale-hide-price
+[2023-05-27 05:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: heaserver
+[2023-05-27 05:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: shinherpro
+[2023-05-27 05:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addons-oca-edi
+[2023-05-27 05:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdktf-cdktf-provider-spotinst
+[2023-05-27 05:16:50] INFO root fetch - processPackages [lifetimefitting]: New version: [0.0.16] Old Version: [0.0.15]
+[2023-05-27 05:16:51] INFO root fetch - processPackages [odoo-addons-oca-edi]: New version: [16.0.20230521.0] Old Version: [16.0.20230323.1]
+[2023-05-27 05:16:51] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: New version: [16.0.1.0.0.8] Old Version: [16.0.1.0.0.7]
+[2023-05-27 05:16:51] INFO root fetch - processPackages [shinherpro]: New version: [1.6.6] Old Version: [1.6.5]
+[2023-05-27 05:16:51] INFO root fetch - processPackages [lasfile]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-27 05:16:51] INFO root fetch - processPackages [monthify]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-27 05:16:51] INFO root fetch - processPackages [GANDLF]: New version: [0.0.17.dev20230527] Old Version: [0.0.17.dev20230526]
+[2023-05-27 05:16:51] INFO root fetch - processPackages [heaserver]: New version: [1.0.0a99] Old Version: [1.0.0a98]
+[2023-05-27 05:16:51] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: New version: [7.0.6] Old Version: [7.0.5]
+[2023-05-27 05:16:51] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: executing diffoscope
+[2023-05-27 05:16:51] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-spotinst-7.0.5.tar.gz tmp/cdktf-cdktf-provider-spotinst-7.0.6.tar.gz --markdown 20230527/c/cdktf-cdktf-provider-spotinst/7.0.5-7.0.6/diff.md --exclude *.pyd
+[2023-05-27 05:16:51] INFO root fetch - processPackages [lasfile]: Downloading https://files.pythonhosted.org/packages/68/9a/b69fb53473b32163876443f0f3465ceb876cac5b3c680743b9684396554f/lasfile-0.1.6.tar.gz
+[2023-05-27 05:16:51] INFO root fetch - processPackages [lifetimefitting]: Downloading https://files.pythonhosted.org/packages/1d/15/5daeb00ac287bc19841ab20b64566d06150e64e2eb25f09781244efb2ca8/lifetimefitting-0.0.16.tar.gz
+[2023-05-27 05:16:51] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/f5/73/5227d290c420f824c0118d7d36f8986a7bed4cc0af3c256c861d45e438dd/GANDLF-0.0.17.dev20230527.tar.gz
+[2023-05-27 05:16:51] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: Downloading https://files.pythonhosted.org/packages/b3/f5/a9cfb00a58fe0c3075375205877c4a3f34d632f642c0d7e31b7ab9ede867/odoo_addon_website_sale_hide_price-16.0.1.0.0.7-py3-none-any.whl
+[2023-05-27 05:16:51] INFO root fetch - processPackages [monthify]: Downloading https://files.pythonhosted.org/packages/bf/39/8b49b914e5624333397ed0130ce7fdb44d8bf8c76230068f857b538b320c/monthify-0.3.3.tar.gz
+[2023-05-27 05:16:51] INFO root fetch - processPackages [heaserver]: Downloading https://files.pythonhosted.org/packages/23/5c/e8b5b2171b84de0317a19800ea1e6e1c13fd3fc36ae7789702ed1007a678/heaserver-1.0.0a98.tar.gz
+[2023-05-27 05:16:51] INFO root fetch - processPackages [lifetimefitting]: executing diffoscope
+[2023-05-27 05:16:51] INFO root fetch - processPackages [lifetimefitting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifetimefitting-0.0.15.tar.gz tmp/lifetimefitting-0.0.16.tar.gz --markdown 20230527/l/lifetimefitting/0.0.15-0.0.16/diff.md --exclude *.pyd
+[2023-05-27 05:16:51] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-05-27 05:16:51] INFO root fetch - processPackages [shinherpro]: Downloading https://files.pythonhosted.org/packages/3d/82/803e9e10c5ce1038c8b3bbadf77d95ce86eb76c1886d540aee1d589317ee/shinherpro-1.6.6.tar.gz
+[2023-05-27 05:16:51] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.17.dev20230526.tar.gz tmp/GANDLF-0.0.17.dev20230527.tar.gz --markdown 20230527/G/GANDLF/0.0.17.dev20230526-0.0.17.dev20230527/diff.md --exclude *.pyd
+[2023-05-27 05:16:51] INFO root fetch - processPackages [odoo-addons-oca-edi]: executing diffoscope
+[2023-05-27 05:16:51] INFO root fetch - processPackages [odoo-addons-oca-edi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_edi-16.0.20230323.1-py3-none-any.whl.zip tmp/odoo_addons_oca_edi-16.0.20230521.0-py3-none-any.whl.zip --markdown 20230527/o/odoo-addons-oca-edi/16.0.20230323.1-16.0.20230521.0/diff.md --exclude *.pyd
+[2023-05-27 05:16:51] INFO root fetch - processPackages [shinherpro]: executing diffoscope
+[2023-05-27 05:16:51] INFO root fetch - processPackages [shinherpro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shinherpro-1.6.5.tar.gz tmp/shinherpro-1.6.6.tar.gz --markdown 20230527/s/shinherpro/1.6.5-1.6.6/diff.md --exclude *.pyd
+[2023-05-27 05:16:51] INFO root fetch - processPackages [monthify]: Downloading https://files.pythonhosted.org/packages/31/9f/5c6ba23e62fd5c95cedf31ac9e737110a6eadfac30bd87581b6188d2fc02/monthify-0.3.4.tar.gz
+[2023-05-27 05:16:51] INFO root fetch - processPackages [lasfile]: Downloading https://files.pythonhosted.org/packages/96/ce/8de032ea68599b3c64e2b22812ffdee1f6ed806eaa64213b4e075b5d9375/lasfile-0.1.7.tar.gz
+[2023-05-27 05:16:51] INFO root fetch - processPackages [monthify]: executing diffoscope
+[2023-05-27 05:16:51] INFO root fetch - processPackages [monthify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monthify-0.3.3.tar.gz tmp/monthify-0.3.4.tar.gz --markdown 20230527/m/monthify/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-27 05:16:51] INFO root fetch - processPackages [heaserver]: Downloading https://files.pythonhosted.org/packages/24/ac/07794906521a70363db00bf9e1720b5c8addbaa7a84831912dfb3035fbfd/heaserver-1.0.0a99.tar.gz
+[2023-05-27 05:16:51] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: Downloading https://files.pythonhosted.org/packages/ad/19/5e9d89ed8790c5817eb6d8e623ae1debd93c3cf043b404abed93cb32f190/odoo_addon_website_sale_hide_price-16.0.1.0.0.8-py3-none-any.whl
+[2023-05-27 05:16:51] INFO root fetch - processPackages [lasfile]: executing diffoscope
+[2023-05-27 05:16:51] INFO root fetch - processPackages [lasfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lasfile-0.1.6.tar.gz tmp/lasfile-0.1.7.tar.gz --markdown 20230527/l/lasfile/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-27 05:16:51] INFO root fetch - processPackages [heaserver]: executing diffoscope
+[2023-05-27 05:16:51] INFO root fetch - processPackages [heaserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-1.0.0a98.tar.gz tmp/heaserver-1.0.0a99.tar.gz --markdown 20230527/h/heaserver/1.0.0a98-1.0.0a99/diff.md --exclude *.pyd
+[2023-05-27 05:16:51] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: executing diffoscope
+[2023-05-27 05:16:51] INFO root fetch - processPackages [odoo-addon-website-sale-hide-price]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_website_sale_hide_price-16.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_website_sale_hide_price-16.0.1.0.0.8-py3-none-any.whl.zip --markdown 20230527/o/odoo-addon-website-sale-hide-price/16.0.1.0.0.7-16.0.1.0.0.8/diff.md --exclude *.pyd
+[2023-05-27 05:16:52] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-edi]: success
+[2023-05-27 05:16:52] INFO root fetch - main [MainThread]: End processing [lifetimefitting]: success
+[2023-05-27 05:16:52] INFO root fetch - main [MainThread]: End processing [shinherpro]: success
+[2023-05-27 05:16:52] INFO root fetch - main [MainThread]: End processing [lasfile]: success
+[2023-05-27 05:16:53] INFO root fetch - main [MainThread]: End processing [monthify]: success
+[2023-05-27 05:16:53] INFO root fetch - main [MainThread]: End processing [odoo-addon-website-sale-hide-price]: success
+[2023-05-27 05:16:53] INFO root fetch - main [MainThread]: End processing [heaserver]: success
+[2023-05-27 05:16:55] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-05-27 05:16:56] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
+[2023-05-27 05:16:56] INFO root fetch - main [MainThread]: Store serial: [18272004]
