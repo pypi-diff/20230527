@@ -9096,3 +9096,36 @@
 [2023-05-27 16:19:35] INFO root fetch - main [MainThread]: End processing [talk-codebase]: success
 [2023-05-27 16:19:35] INFO root fetch - main [MainThread]: End processing [setup2upypackage]: success
 [2023-05-27 16:19:35] INFO root fetch - main [MainThread]: Store serial: [18274722]
+[2023-05-27 16:24:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274722]
+[2023-05-27 16:24:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 16:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chaostoolkit-azure
+[2023-05-27 16:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2023-05-27 16:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-05-27 16:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: custom-utils
+[2023-05-27 16:24:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dfktools
+[2023-05-27 16:24:44] INFO root fetch - processPackages [dfktools]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-27 16:24:44] INFO root fetch - processPackages [chaostoolkit-azure]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-05-27 16:24:44] INFO root fetch - processPackages [custom-utils]: New version: [0.0.32] Old Version: [0.0.2]
+[2023-05-27 16:24:44] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-27 16:24:44] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-27 16:24:44] INFO root fetch - processPackages [dfktools]: Downloading https://files.pythonhosted.org/packages/e4/f7/c9c5d37f1e00c29c61abe8f1ed066f0b445dfc4f91ba1b02265d66e87fb4/dfktools-0.2.0.tar.gz
+[2023-05-27 16:24:44] INFO root fetch - processPackages [chaostoolkit-azure]: Downloading https://files.pythonhosted.org/packages/36/b7/597652fcd9443a0bbadf6388b30b277267d82e11dd7a0b2c5502cbc357fa/chaostoolkit-azure-0.8.3.tar.gz
+[2023-05-27 16:24:44] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-27 16:24:44] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230527/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-27 16:24:44] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-27 16:24:44] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230527/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-27 16:24:44] INFO root fetch - processPackages [custom-utils]: Downloading https://files.pythonhosted.org/packages/6f/7e/d3d7c258205e6a9adae34d56766aa579b9731e3e4f20baa2ad0eb803abc5/custom-utils-0.0.32.tar.gz
+[2023-05-27 16:24:44] INFO root fetch - processPackages [custom-utils]: executing diffoscope
+[2023-05-27 16:24:44] INFO root fetch - processPackages [custom-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom-utils-0.0.2.tar.gz tmp/custom-utils-0.0.32.tar.gz --markdown 20230527/c/custom-utils/0.0.2-0.0.32/diff.md --exclude *.pyd
+[2023-05-27 16:24:44] INFO root fetch - processPackages [chaostoolkit-azure]: Downloading https://files.pythonhosted.org/packages/ae/88/335917f3a7bf843ca272505e1b59f4a817a74bcb329ed9cf0a6a8c7cfe72/chaostoolkit-azure-0.9.0.tar.gz
+[2023-05-27 16:24:44] INFO root fetch - processPackages [dfktools]: Downloading https://files.pythonhosted.org/packages/54/1c/d7cda88543fecee4ab0916e446491dd9b24136a2481fda37493d97301dd5/dfktools-0.3.0.tar.gz
+[2023-05-27 16:24:44] INFO root fetch - processPackages [chaostoolkit-azure]: executing diffoscope
+[2023-05-27 16:24:44] INFO root fetch - processPackages [chaostoolkit-azure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chaostoolkit-azure-0.8.3.tar.gz tmp/chaostoolkit-azure-0.9.0.tar.gz --markdown 20230527/c/chaostoolkit-azure/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 16:24:44] INFO root fetch - processPackages [dfktools]: executing diffoscope
+[2023-05-27 16:24:44] INFO root fetch - processPackages [dfktools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfktools-0.2.0.tar.gz tmp/dfktools-0.3.0.tar.gz --markdown 20230527/d/dfktools/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-27 16:24:45] INFO root fetch - main [MainThread]: End processing [custom-utils]: success
+[2023-05-27 16:24:45] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-27 16:24:46] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-27 16:24:46] INFO root fetch - main [MainThread]: End processing [chaostoolkit-azure]: success
+[2023-05-27 16:24:46] INFO root fetch - main [MainThread]: End processing [dfktools]: success
+[2023-05-27 16:24:46] INFO root fetch - main [MainThread]: Store serial: [18274739]
