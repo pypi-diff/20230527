@@ -12009,3 +12009,58 @@
 [2023-05-27 22:11:33] INFO root fetch - main [MainThread]: End processing [heaserver]: success
 [2023-05-27 22:12:22] INFO root fetch - main [MainThread]: End processing [connex]: success
 [2023-05-27 22:12:22] INFO root fetch - main [MainThread]: Store serial: [18276564]
+[2023-05-27 22:17:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276564]
+[2023-05-27 22:17:31] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-27 22:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aim
+[2023-05-27 22:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graphscope
+[2023-05-27 22:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graphscope-client
+[2023-05-27 22:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gs-apps
+[2023-05-27 22:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quanttide-data
+[2023-05-27 22:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbt-clickzetta
+[2023-05-27 22:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: shlep
+[2023-05-27 22:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: croydon
+[2023-05-27 22:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: redast
+[2023-05-27 22:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: not1mm
+[2023-05-27 22:17:31] INFO root fetch - processPackages [graphscope]: New version: [0.22.0a20230527] Old Version: [0.22.0a20230526]
+[2023-05-27 22:17:31] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 22:17:31] INFO root fetch - processPackages [gs-apps]: New version: [0.22.0a20230527] Old Version: [0.22.0a20230526]
+[2023-05-27 22:17:31] WARNING root fetch - processPackages [quanttide-data]: Skipping, unable to determine old version
+[2023-05-27 22:17:31] INFO root fetch - main [MainThread]: End processing [quanttide-data] error
+[2023-05-27 22:17:31] INFO root fetch - processPackages [redast]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-27 22:17:31] INFO root fetch - processPackages [croydon]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-27 22:17:31] INFO root fetch - processPackages [shlep]: New version: [3.0.0] Old Version: [2.0.0]
+[2023-05-27 22:17:31] INFO root fetch - processPackages [not1mm]: New version: [23.5.9.2] Old Version: [23.5.9.1]
+[2023-05-27 22:17:31] INFO root fetch - processPackages [graphscope-client]: New version: [0.22.0a20230527] Old Version: [0.22.0a20230526]
+[2023-05-27 22:17:31] INFO root fetch - processPackages [aim]: New version: [4.0.0a2] Old Version: [4.0.0a1]
+[2023-05-27 22:17:31] INFO root fetch - processPackages [croydon]: executing diffoscope
+[2023-05-27 22:17:31] INFO root fetch - processPackages [croydon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croydon-0.9.0.tar.gz tmp/croydon-0.9.1.tar.gz --markdown 20230527/c/croydon/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-27 22:17:31] INFO root fetch - processPackages [graphscope]: Downloading https://files.pythonhosted.org/packages/4f/eb/91e2f1bfd9bf80279127f962f392a72ecb0652abc0d40964bb9b0f7d99d4/graphscope-0.22.0a20230526-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-27 22:17:31] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2023-05-27 22:17:31] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-23.5.9.1.tar.gz tmp/not1mm-23.5.9.2.tar.gz --markdown 20230527/n/not1mm/23.5.9.1-23.5.9.2/diff.md --exclude *.pyd
+[2023-05-27 22:17:31] INFO root fetch - processPackages [graphscope-client]: Downloading https://files.pythonhosted.org/packages/1d/a0/49223ddee23f7d390ffd20d175aa6732025b49c051ab7418fa167b9e3e09/graphscope_client-0.22.0a20230526-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-27 22:17:31] INFO root fetch - processPackages [gs-apps]: Downloading https://files.pythonhosted.org/packages/05/e6/38fcd22366ff9385bb3ff9377bfe0f5c8eda65e3c3bf3da1a9264b38c392/gs_apps-0.22.0a20230526-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-27 22:17:31] INFO root fetch - processPackages [redast]: Downloading https://files.pythonhosted.org/packages/5a/f8/a2ec3111020876579fc8c03865810e9a2437725a26d25f15fe870ce20014/redast-0.1.7.tar.gz
+[2023-05-27 22:17:31] INFO root fetch - processPackages [dbt-clickzetta]: Downloading https://files.pythonhosted.org/packages/e3/87/f20d650b4ff0e54cd164e72530ed1c1522d5741b7aaafcb8a577e98adb79/dbt-clickzetta-0.0.9.tar.gz
+[2023-05-27 22:17:31] INFO root fetch - processPackages [shlep]: Downloading https://files.pythonhosted.org/packages/f8/58/636ba6124a2366424746ba28ef1c255fb7868fdb98e3f12d1a7fab052388/shlep-3.0.0.tar.gz
+[2023-05-27 22:17:31] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-27 22:17:31] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.8.tar.gz tmp/dbt-clickzetta-0.0.9.tar.gz --markdown 20230527/d/dbt-clickzetta/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 22:17:31] WARNING root fetch - processPackages [graphscope]: Skipping package: exceeds size limit 136754126>=10485760
+[2023-05-27 22:17:31] INFO root fetch - main [MainThread]: End processing [graphscope] error
+[2023-05-27 22:17:31] INFO root fetch - processPackages [shlep]: executing diffoscope
+[2023-05-27 22:17:31] INFO root fetch - processPackages [shlep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shlep-2.0.0.tar.gz tmp/shlep-3.0.0.tar.gz --markdown 20230527/s/shlep/2.0.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-27 22:17:31] WARNING root fetch - processPackages [graphscope-client]: Skipping package: exceeds size limit 63661867>=10485760
+[2023-05-27 22:17:31] WARNING root fetch - processPackages [gs-apps]: Skipping package: exceeds size limit 47797577>=10485760
+[2023-05-27 22:17:31] INFO root fetch - main [MainThread]: End processing [graphscope-client] error
+[2023-05-27 22:17:31] INFO root fetch - main [MainThread]: End processing [gs-apps] error
+[2023-05-27 22:17:31] INFO root fetch - processPackages [redast]: Downloading https://files.pythonhosted.org/packages/8e/20/82ac507f75cac799de610a0dec972f3812d298746612b1df4ed5ce5ff730/redast-0.1.8.tar.gz
+[2023-05-27 22:17:31] INFO root fetch - processPackages [redast]: executing diffoscope
+[2023-05-27 22:17:31] INFO root fetch - processPackages [redast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redast-0.1.7.tar.gz tmp/redast-0.1.8.tar.gz --markdown 20230527/r/redast/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-27 22:17:31] INFO root fetch - processPackages [aim]: executing diffoscope
+[2023-05-27 22:17:31] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.0a1.tar.gz tmp/aim-4.0.0a2.tar.gz --markdown 20230527/a/aim/4.0.0a1-4.0.0a2/diff.md --exclude *.pyd
+[2023-05-27 22:17:32] INFO root fetch - main [MainThread]: End processing [shlep]: success
+[2023-05-27 22:17:32] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-27 22:17:32] INFO root fetch - main [MainThread]: End processing [redast]: success
+[2023-05-27 22:17:33] INFO root fetch - main [MainThread]: End processing [croydon]: success
+[2023-05-27 22:17:34] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2023-05-27 22:17:39] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2023-05-27 22:17:39] INFO root fetch - main [MainThread]: Store serial: [18276608]
