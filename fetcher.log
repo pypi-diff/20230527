@@ -12559,3 +12559,36 @@
 [2023-05-27 23:20:10] INFO root fetch - main [MainThread]: End processing [acb]: success
 [2023-05-27 23:20:10] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
 [2023-05-27 23:20:10] INFO root fetch - main [MainThread]: Store serial: [18276963]
+[2023-05-27 23:25:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276963]
+[2023-05-27 23:25:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 23:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytorch-metric-learning
+[2023-05-27 23:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simc-support
+[2023-05-27 23:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nxs-analysis-tools
+[2023-05-27 23:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chatcmd
+[2023-05-27 23:25:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tsforecasting
+[2023-05-27 23:25:19] INFO root fetch - processPackages [simc-support]: New version: [9.2.5.3] Old Version: [9.2.5.2]
+[2023-05-27 23:25:19] INFO root fetch - processPackages [pytorch-metric-learning]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-05-27 23:25:19] INFO root fetch - processPackages [nxs-analysis-tools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 23:25:19] INFO root fetch - processPackages [chatcmd]: New version: [1.0.26] Old Version: [1.0.25]
+[2023-05-27 23:25:19] INFO root fetch - processPackages [tsforecasting]: New version: [1.2.65] Old Version: [1.2.60]
+[2023-05-27 23:25:19] INFO root fetch - processPackages [pytorch-metric-learning]: Downloading https://files.pythonhosted.org/packages/ac/ad/c95027fd14a1bc5afbcc81a8e727a61599a971ed61ed3779ca239ab9c8ef/pytorch-metric-learning-2.1.1.tar.gz
+[2023-05-27 23:25:19] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/33/6a/8cb7fef8849d2385dfa75234be80fb13a6e9c600edebe8d235b64b8b86e1/chatcmd-1.0.26.tar.gz
+[2023-05-27 23:25:19] INFO root fetch - processPackages [tsforecasting]: Downloading https://files.pythonhosted.org/packages/a2/8e/9984ffde7b488898e527e74d36cb886e8dfef36756efd8fb3e0046e9ef4c/tsforecasting-1.2.60-py3-none-any.whl
+[2023-05-27 23:25:19] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-27 23:25:19] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.25.tar.gz tmp/chatcmd-1.0.26.tar.gz --markdown 20230527/c/chatcmd/1.0.25-1.0.26/diff.md --exclude *.pyd
+[2023-05-27 23:25:19] INFO root fetch - processPackages [simc-support]: executing diffoscope
+[2023-05-27 23:25:19] INFO root fetch - processPackages [simc-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simc_support-9.2.5.2.tar.gz tmp/simc_support-9.2.5.3.tar.gz --markdown 20230527/s/simc-support/9.2.5.2-9.2.5.3/diff.md --exclude *.pyd
+[2023-05-27 23:25:19] INFO root fetch - processPackages [pytorch-metric-learning]: Downloading https://files.pythonhosted.org/packages/73/3d/85bb54b76370ac705e2c7000fd378706dfc9fa6b3efbde441da94ca16e56/pytorch-metric-learning-2.1.2.tar.gz
+[2023-05-27 23:25:19] INFO root fetch - processPackages [nxs-analysis-tools]: executing diffoscope
+[2023-05-27 23:25:19] INFO root fetch - processPackages [nxs-analysis-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nxs_analysis_tools-0.0.8.tar.gz tmp/nxs_analysis_tools-0.0.9.tar.gz --markdown 20230527/n/nxs-analysis-tools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 23:25:19] INFO root fetch - processPackages [pytorch-metric-learning]: executing diffoscope
+[2023-05-27 23:25:19] INFO root fetch - processPackages [pytorch-metric-learning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch-metric-learning-2.1.1.tar.gz tmp/pytorch-metric-learning-2.1.2.tar.gz --markdown 20230527/p/pytorch-metric-learning/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-05-27 23:25:19] INFO root fetch - processPackages [tsforecasting]: Downloading https://files.pythonhosted.org/packages/25/08/9e76a4701c08f303e31d2e0c2fa7868548bc4265cbb53df3f89688c7f1ee/tsforecasting-1.2.65-py3-none-any.whl
+[2023-05-27 23:25:19] INFO root fetch - processPackages [tsforecasting]: executing diffoscope
+[2023-05-27 23:25:19] INFO root fetch - processPackages [tsforecasting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsforecasting-1.2.60-py3-none-any.whl.zip tmp/tsforecasting-1.2.65-py3-none-any.whl.zip --markdown 20230527/t/tsforecasting/1.2.60-1.2.65/diff.md --exclude *.pyd
+[2023-05-27 23:25:20] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-27 23:25:20] INFO root fetch - main [MainThread]: End processing [nxs-analysis-tools]: success
+[2023-05-27 23:25:20] INFO root fetch - main [MainThread]: End processing [tsforecasting]: success
+[2023-05-27 23:25:21] INFO root fetch - main [MainThread]: End processing [simc-support]: success
+[2023-05-27 23:25:22] INFO root fetch - main [MainThread]: End processing [pytorch-metric-learning]: success
+[2023-05-27 23:25:22] INFO root fetch - main [MainThread]: Store serial: [18276985]
