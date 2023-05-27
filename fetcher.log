@@ -5254,3 +5254,61 @@
 [2023-05-27 08:00:44] INFO root fetch - processPackages [pulumi-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_databricks-1.8.0a1678127428.tar.gz tmp/pulumi_databricks-1.9.0a1678745257.tar.gz --markdown 20230527/p/pulumi-databricks/1.8.0a1678127428-1.9.0a1678745257/diff.md --exclude *.pyd
 [2023-05-27 08:00:47] INFO root fetch - main [MainThread]: End processing [pulumi-databricks]: success
 [2023-05-27 08:00:47] INFO root fetch - main [MainThread]: Store serial: [18272533]
+[2023-05-27 08:05:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272533]
+[2023-05-27 08:05:56] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-27 08:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-databricks
+[2023-05-27 08:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pybi-next
+[2023-05-27 08:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: toui
+[2023-05-27 08:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-consul
+[2023-05-27 08:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: limnoria
+[2023-05-27 08:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pxblat
+[2023-05-27 08:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pipen-annotate
+[2023-05-27 08:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-dnsimple
+[2023-05-27 08:05:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: SecuriPy
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pulumi-databricks]: New version: [1.9.0a1678745257] Old Version: [1.8.0a1678127428]
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pxblat]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pulumi-consul]: New version: [3.9.0a1685165191] Old Version: [3.9.0a1685078770]
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pulumi-dnsimple]: New version: [3.5.0a1685165262] Old Version: [3.5.0a1685079154]
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pipen-annotate]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-27 08:05:56] INFO root fetch - processPackages [toui]: New version: [2.4.3b0] Old Version: [2.4.2b0]
+[2023-05-27 08:05:56] INFO root fetch - processPackages [SecuriPy]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pybi-next]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-05-27 08:05:56] INFO root fetch - processPackages [limnoria]: New version: [2023.5.27] Old Version: [2023.4.28]
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pulumi-databricks]: executing diffoscope
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pulumi-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_databricks-1.8.0a1678127428.tar.gz tmp/pulumi_databricks-1.9.0a1678745257.tar.gz --markdown 20230527/p/pulumi-databricks/1.8.0a1678127428-1.9.0a1678745257/diff.md --exclude *.pyd
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pulumi-dnsimple]: Downloading https://files.pythonhosted.org/packages/02/21/ffb1d2c05037aae22d8f46585ead9d22a046ee2ea70b66fc21ee54b649c9/pulumi_dnsimple-3.5.0a1685165262.tar.gz
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pulumi-consul]: Downloading https://files.pythonhosted.org/packages/27/a6/744c78a5a6766f7dfa1878155f2bc0f4eb726d6a10fb268dcf07d92f0463/pulumi_consul-3.9.0a1685165191.tar.gz
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pxblat]: Downloading https://files.pythonhosted.org/packages/03/b0/733a5b2685c143e4ce82a82e90103d0cfee8d31d75a89f6fb1fb064e9f4a/pxblat-0.1.6.tar.gz
+[2023-05-27 08:05:56] INFO root fetch - processPackages [SecuriPy]: Downloading https://files.pythonhosted.org/packages/66/8a/7fe6d6babd90c30896df05a8304dfac3da0e5e30637be56cdb3bcebeff45/SecuriPy-1.0.2.tar.gz
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pipen-annotate]: Downloading https://files.pythonhosted.org/packages/2b/06/f9c15648471d1466838e56d74aebc83507859732d3f0146182ba08a3151a/pipen_annotate-0.7.1.tar.gz
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pulumi-consul]: executing diffoscope
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pulumi-consul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_consul-3.9.0a1685078770.tar.gz tmp/pulumi_consul-3.9.0a1685165191.tar.gz --markdown 20230527/p/pulumi-consul/3.9.0a1685078770-3.9.0a1685165191/diff.md --exclude *.pyd
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pxblat]: executing diffoscope
+[2023-05-27 08:05:56] INFO root fetch - processPackages [pxblat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pxblat-0.1.5.tar.gz tmp/pxblat-0.1.6.tar.gz --markdown 20230527/p/pxblat/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-27 08:05:57] INFO root fetch - processPackages [limnoria]: Downloading https://files.pythonhosted.org/packages/b7/c7/75bf790e9c3049b3b4ea8fc9d3dd36d06de67e3b574d589581c742a2b0ba/limnoria-2023.5.27.tar.gz
+[2023-05-27 08:05:57] INFO root fetch - processPackages [pybi-next]: Downloading https://files.pythonhosted.org/packages/95/5f/31a3999637cb1a2556870c755b1dc2b87d914de61bc5e048d0e46f9f72cb/pybi-next-0.4.8.tar.gz
+[2023-05-27 08:05:57] INFO root fetch - processPackages [toui]: Downloading https://files.pythonhosted.org/packages/f3/8f/979ecc4e0ad1a6efffa21a637232d047b3d17c6ce8a21d22795cb7f76156/toui-2.4.3b0.tar.gz
+[2023-05-27 08:05:57] INFO root fetch - processPackages [pulumi-dnsimple]: executing diffoscope
+[2023-05-27 08:05:57] INFO root fetch - processPackages [pulumi-dnsimple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_dnsimple-3.5.0a1685079154.tar.gz tmp/pulumi_dnsimple-3.5.0a1685165262.tar.gz --markdown 20230527/p/pulumi-dnsimple/3.5.0a1685079154-3.5.0a1685165262/diff.md --exclude *.pyd
+[2023-05-27 08:05:57] INFO root fetch - processPackages [pipen-annotate]: Downloading https://files.pythonhosted.org/packages/5d/39/d9d1a953f5147ffc16a5ba600f86555f3691105700efcfb6bd475d39786d/pipen_annotate-0.7.2.tar.gz
+[2023-05-27 08:05:57] INFO root fetch - processPackages [SecuriPy]: Downloading https://files.pythonhosted.org/packages/99/26/549c7f28cd22d23c04ae05498b547f27b3df3f489d76495cabd38db46ad4/SecuriPy-1.0.3.tar.gz
+[2023-05-27 08:05:57] INFO root fetch - processPackages [toui]: executing diffoscope
+[2023-05-27 08:05:57] INFO root fetch - processPackages [toui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toui-2.4.2b0.tar.gz tmp/toui-2.4.3b0.tar.gz --markdown 20230527/t/toui/2.4.2b0-2.4.3b0/diff.md --exclude *.pyd
+[2023-05-27 08:05:57] INFO root fetch - processPackages [limnoria]: executing diffoscope
+[2023-05-27 08:05:57] INFO root fetch - processPackages [limnoria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/limnoria-2023.4.28.tar.gz tmp/limnoria-2023.5.27.tar.gz --markdown 20230527/l/limnoria/2023.4.28-2023.5.27/diff.md --exclude *.pyd
+[2023-05-27 08:05:57] INFO root fetch - processPackages [pipen-annotate]: executing diffoscope
+[2023-05-27 08:05:57] INFO root fetch - processPackages [pipen-annotate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_annotate-0.7.1.tar.gz tmp/pipen_annotate-0.7.2.tar.gz --markdown 20230527/p/pipen-annotate/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-27 08:05:57] INFO root fetch - processPackages [SecuriPy]: executing diffoscope
+[2023-05-27 08:05:57] INFO root fetch - processPackages [SecuriPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SecuriPy-1.0.2.tar.gz tmp/SecuriPy-1.0.3.tar.gz --markdown 20230527/S/SecuriPy/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-27 08:05:57] INFO root fetch - processPackages [pybi-next]: executing diffoscope
+[2023-05-27 08:05:57] INFO root fetch - processPackages [pybi-next]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybi-next-0.4.7.tar.gz tmp/pybi-next-0.4.8.tar.gz --markdown 20230527/p/pybi-next/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-05-27 08:05:58] INFO root fetch - main [MainThread]: End processing [pulumi-dnsimple]: success
+[2023-05-27 08:05:58] INFO root fetch - main [MainThread]: End processing [pipen-annotate]: success
+[2023-05-27 08:05:58] INFO root fetch - main [MainThread]: End processing [toui]: success
+[2023-05-27 08:05:58] INFO root fetch - main [MainThread]: End processing [SecuriPy]: success
+[2023-05-27 08:05:59] INFO root fetch - main [MainThread]: End processing [pxblat]: success
+[2023-05-27 08:05:59] INFO root fetch - main [MainThread]: End processing [pulumi-databricks]: success
+[2023-05-27 08:05:59] INFO root fetch - main [MainThread]: End processing [pulumi-consul]: success
+[2023-05-27 08:06:01] INFO root fetch - main [MainThread]: End processing [pybi-next]: success
+[2023-05-27 08:06:04] INFO root fetch - main [MainThread]: End processing [limnoria]: success
+[2023-05-27 08:06:04] INFO root fetch - main [MainThread]: Store serial: [18272556]
