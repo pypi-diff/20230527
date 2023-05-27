@@ -3824,3 +3824,27 @@
 [2023-05-27 03:47:31] INFO root fetch - main [MainThread]: End processing [aoirint-liveinfo]: success
 [2023-05-27 03:47:33] INFO root fetch - main [MainThread]: End processing [linkml]: success
 [2023-05-27 03:47:33] INFO root fetch - main [MainThread]: Store serial: [18271726]
+[2023-05-27 03:52:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271726]
+[2023-05-27 03:52:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 03:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ns3
+[2023-05-27 03:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rocksdict
+[2023-05-27 03:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mage-ai
+[2023-05-27 03:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openapi-python-client
+[2023-05-27 03:52:41] WARNING root fetch - processPackages [ns3]: Skipping, unable to determine old version
+[2023-05-27 03:52:41] INFO root fetch - main [MainThread]: End processing [ns3] error
+[2023-05-27 03:52:41] INFO root fetch - processPackages [rocksdict]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-27 03:52:41] INFO root fetch - processPackages [mage-ai]: New version: [0.8.9] Old Version: [0.8.85]
+[2023-05-27 03:52:41] INFO root fetch - processPackages [openapi-python-client]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-27 03:52:42] INFO root fetch - processPackages [mage-ai]: Downloading https://files.pythonhosted.org/packages/2b/db/6267b8ac8a2f817c92267d764199d487b188ac8b1e98720a7dc170b0fd36/mage-ai-0.8.85.tar.gz
+[2023-05-27 03:52:42] INFO root fetch - processPackages [openapi-python-client]: Downloading https://files.pythonhosted.org/packages/6d/81/a16696f6f341ef2b9872d69c8b9c5016abb1bc93edd4ba73c66adf26c1c3/openapi-python-client-0.9.1.tar.gz
+[2023-05-27 03:52:42] INFO root fetch - processPackages [rocksdict]: executing diffoscope
+[2023-05-27 03:52:42] INFO root fetch - processPackages [rocksdict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocksdict-0.3.8-cp39-none-win_amd64.whl.zip tmp/rocksdict-0.3.9-cp39-none-win_amd64.whl.zip --markdown 20230527/r/rocksdict/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-27 03:52:42] INFO root fetch - processPackages [mage-ai]: executing diffoscope
+[2023-05-27 03:52:42] INFO root fetch - processPackages [mage-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mage-ai-0.8.85.tar.gz tmp/mage-ai-0.8.9.tar.gz --markdown 20230527/m/mage-ai/0.8.85-0.8.9/diff.md --exclude *.pyd
+[2023-05-27 03:52:42] INFO root fetch - processPackages [openapi-python-client]: Downloading https://files.pythonhosted.org/packages/4a/de/95e3c3a2a0b3b1e23b0a640e8c7751a17201bd319a98e3a1ab72cc101d34/openapi-python-client-0.9.2.tar.gz
+[2023-05-27 03:52:42] INFO root fetch - processPackages [openapi-python-client]: executing diffoscope
+[2023-05-27 03:52:42] INFO root fetch - processPackages [openapi-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openapi-python-client-0.9.1.tar.gz tmp/openapi-python-client-0.9.2.tar.gz --markdown 20230527/o/openapi-python-client/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-27 03:52:43] INFO root fetch - main [MainThread]: End processing [rocksdict]: success
+[2023-05-27 03:52:44] INFO root fetch - main [MainThread]: End processing [openapi-python-client]: success
+[2023-05-27 03:53:37] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
+[2023-05-27 03:53:37] INFO root fetch - main [MainThread]: Store serial: [18271770]
