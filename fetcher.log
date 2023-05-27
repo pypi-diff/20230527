@@ -8607,3 +8607,58 @@
 [2023-05-27 15:04:30] INFO root fetch - main [MainThread]: End processing [GBT-parser]: success
 [2023-05-27 15:05:17] INFO root fetch - main [MainThread]: End processing [bitstring]: success
 [2023-05-27 15:05:17] INFO root fetch - main [MainThread]: Store serial: [18274418]
+[2023-05-27 15:10:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274418]
+[2023-05-27 15:10:26] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-27 15:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: replicator-cli
+[2023-05-27 15:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fbgemm-gpu-nightly-cpu
+[2023-05-27 15:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crackerjack
+[2023-05-27 15:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-stdlib
+[2023-05-27 15:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anova-analysis
+[2023-05-27 15:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-numpy
+[2023-05-27 15:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-pandas
+[2023-05-27 15:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: windmill-api
+[2023-05-27 15:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: wmill
+[2023-05-27 15:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: wmill-pg
+[2023-05-27 15:10:26] INFO root fetch - processPackages [replicator-cli]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 15:10:26] WARNING root fetch - processPackages [anova-analysis]: Skipping, unable to determine old version
+[2023-05-27 15:10:26] INFO root fetch - main [MainThread]: End processing [anova-analysis] error
+[2023-05-27 15:10:26] INFO root fetch - processPackages [crackerjack]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-27 15:10:26] INFO root fetch - processPackages [windmill-api]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-27 15:10:26] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 15:10:26] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 15:10:26] INFO root fetch - processPackages [wmill]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-27 15:10:26] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 15:10:26] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.5.27] Old Version: [2023.5.26]
+[2023-05-27 15:10:26] INFO root fetch - processPackages [wmill-pg]: New version: [1.99.0] Old Version: [1.98.0]
+[2023-05-27 15:10:26] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-27 15:10:26] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230527/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 15:10:27] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-27 15:10:27] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230527/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 15:10:27] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-27 15:10:27] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230527/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 15:10:27] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/67/27/83253abe5f8db299ce4ad8953b5c0dffb85de74043015986e4e1196f9a4d/fbgemm_gpu_nightly_cpu-2023.5.26-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-27 15:10:27] INFO root fetch - processPackages [replicator-cli]: Downloading https://files.pythonhosted.org/packages/22/26/84a9172f63fcf6ebab34f394962b3163303705764617eb6accb2881acd86/replicator-cli-0.0.3.tar.gz
+[2023-05-27 15:10:27] INFO root fetch - processPackages [crackerjack]: Downloading https://files.pythonhosted.org/packages/e9/54/9ca6695c0457f2ebfa94e411cabc3b29753652859ab354a9e9d1fd352bdc/crackerjack-0.2.0.tar.gz
+[2023-05-27 15:10:27] INFO root fetch - processPackages [crackerjack]: executing diffoscope
+[2023-05-27 15:10:27] INFO root fetch - processPackages [crackerjack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crackerjack-0.1.9.tar.gz tmp/crackerjack-0.2.0.tar.gz --markdown 20230527/c/crackerjack/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-27 15:10:27] INFO root fetch - processPackages [replicator-cli]: executing diffoscope
+[2023-05-27 15:10:27] INFO root fetch - processPackages [replicator-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replicator-cli-0.0.2.tar.gz tmp/replicator-cli-0.0.3.tar.gz --markdown 20230527/r/replicator-cli/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 15:10:27] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2023-05-27 15:10:27] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.98.0.tar.gz tmp/wmill-1.99.0.tar.gz --markdown 20230527/w/wmill/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-27 15:10:27] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2023-05-27 15:10:27] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.98.0.tar.gz tmp/windmill_api-1.99.0.tar.gz --markdown 20230527/w/windmill-api/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-27 15:10:27] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2023-05-27 15:10:27] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.98.0.tar.gz tmp/wmill_pg-1.99.0.tar.gz --markdown 20230527/w/wmill-pg/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2023-05-27 15:10:27] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/75/3a/97d6247d98ac6cb0b04fa3770e82ba89432cb23458f9f640788c994e2180/fbgemm_gpu_nightly_cpu-2023.5.27-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-27 15:10:28] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-05-27 15:10:28] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.5.26-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.5.27-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230527/f/fbgemm-gpu-nightly-cpu/2023.5.26-2023.5.27/diff.md --exclude *.pyd
+[2023-05-27 15:10:28] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-27 15:10:28] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-27 15:10:28] INFO root fetch - main [MainThread]: End processing [crackerjack]: success
+[2023-05-27 15:10:28] INFO root fetch - main [MainThread]: End processing [replicator-cli]: success
+[2023-05-27 15:10:28] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2023-05-27 15:10:28] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2023-05-27 15:10:30] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-27 15:10:43] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2023-05-27 15:11:15] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2023-05-27 15:11:15] INFO root fetch - main [MainThread]: Store serial: [18274452]
