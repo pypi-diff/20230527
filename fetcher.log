@@ -10385,3 +10385,44 @@
 [2023-05-27 18:09:09] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
 [2023-05-27 18:09:13] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-27 18:09:13] INFO root fetch - main [MainThread]: Store serial: [18275532]
+[2023-05-27 18:14:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275532]
+[2023-05-27 18:14:22] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 18:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myshit12223
+[2023-05-27 18:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: novelai-api
+[2023-05-27 18:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-rans
+[2023-05-27 18:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lndb_storage
+[2023-05-27 18:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: codepeers
+[2023-05-27 18:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-master
+[2023-05-27 18:14:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: embedbase-client
+[2023-05-27 18:14:22] INFO root fetch - processPackages [lndb_storage]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-27 18:14:22] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230527.16.12.609191] Old Version: [20230527.14.41.980340]
+[2023-05-27 18:14:22] INFO root fetch - processPackages [novelai-api]: New version: [0.9] Old Version: [0.8]
+[2023-05-27 18:14:22] WARNING root fetch - processPackages [myshit12223]: Skipping, unable to determine old version
+[2023-05-27 18:14:22] INFO root fetch - main [MainThread]: End processing [myshit12223] error
+[2023-05-27 18:14:22] INFO root fetch - processPackages [codepeers]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-27 18:14:22] INFO root fetch - processPackages [py-rans]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-27 18:14:22] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/48/bc/44918255afab18693af8c9f5f246bacc6bff42a6e79244d183bd52bb3410/certora-cli-alpha-master-20230527.14.41.980340.tar.gz
+[2023-05-27 18:14:22] INFO root fetch - processPackages [embedbase-client]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-27 18:14:22] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39090955>=10485760
+[2023-05-27 18:14:22] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-27 18:14:22] INFO root fetch - processPackages [py-rans]: Downloading https://files.pythonhosted.org/packages/f9/6b/ed426130c1d4bfe01d61245aabc2adfbf7501e389058f899ad43816bc5be/py_rans-1.0.4-py3-none-any.whl
+[2023-05-27 18:14:22] INFO root fetch - processPackages [codepeers]: Downloading https://files.pythonhosted.org/packages/3b/27/a9fb3dc1e584c66c5333cd0fcecb3b5342766f8621b726ecc9d2ac56d99b/codepeers-0.3.3-py3-none-any.whl
+[2023-05-27 18:14:23] INFO root fetch - processPackages [lndb_storage]: Downloading https://files.pythonhosted.org/packages/01/85/81895196d4a2d5ad484b12a249391200dc05c0f05d7327a5c7670cab9c0a/lndb_storage-0.3.1.tar.gz
+[2023-05-27 18:14:23] INFO root fetch - processPackages [novelai-api]: executing diffoscope
+[2023-05-27 18:14:23] INFO root fetch - processPackages [novelai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelai-api-0.8.tar.gz tmp/novelai-api-0.9.tar.gz --markdown 20230527/n/novelai-api/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-27 18:14:23] INFO root fetch - processPackages [codepeers]: executing diffoscope
+[2023-05-27 18:14:23] INFO root fetch - processPackages [codepeers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codepeers-0.3.2-py3-none-any.whl.zip tmp/codepeers-0.3.3-py3-none-any.whl.zip --markdown 20230527/c/codepeers/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-27 18:14:23] INFO root fetch - processPackages [lndb_storage]: executing diffoscope
+[2023-05-27 18:14:23] INFO root fetch - processPackages [lndb_storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lndb_storage-0.3.0.tar.gz tmp/lndb_storage-0.3.1.tar.gz --markdown 20230527/l/lndb_storage/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-27 18:14:23] INFO root fetch - processPackages [py-rans]: Downloading https://files.pythonhosted.org/packages/37/8a/7cd34b1d798c078fd356817e9745930c669699c12e8e33e30b3b6ea440fd/py_rans-1.0.5.tar.gz
+[2023-05-27 18:14:23] INFO root fetch - processPackages [py-rans]: executing diffoscope
+[2023-05-27 18:14:23] INFO root fetch - processPackages [py-rans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_rans-1.0.4-py3-none-any.whl.zip tmp/py_rans-1.0.5.tar.gz --markdown 20230527/p/py-rans/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-27 18:14:23] INFO root fetch - processPackages [embedbase-client]: Downloading https://files.pythonhosted.org/packages/f9/91/5e8b9bed357c72d3c8f975bb39137dbdf9567978fc0e79c036e8b3a42a60/embedbase_client-0.1.7.tar.gz
+[2023-05-27 18:14:23] INFO root fetch - processPackages [embedbase-client]: executing diffoscope
+[2023-05-27 18:14:23] INFO root fetch - processPackages [embedbase-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedbase_client-0.1.6.tar.gz tmp/embedbase_client-0.1.7.tar.gz --markdown 20230527/e/embedbase-client/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-27 18:14:24] INFO root fetch - main [MainThread]: End processing [py-rans]: success
+[2023-05-27 18:14:24] INFO root fetch - main [MainThread]: End processing [lndb_storage]: success
+[2023-05-27 18:14:24] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
+[2023-05-27 18:14:25] INFO root fetch - main [MainThread]: End processing [embedbase-client]: success
+[2023-05-27 18:14:35] INFO root fetch - main [MainThread]: End processing [codepeers]: success
+[2023-05-27 18:14:35] INFO root fetch - main [MainThread]: Store serial: [18275550]
