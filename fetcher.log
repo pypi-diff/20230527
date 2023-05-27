@@ -10747,3 +10747,16 @@
 [2023-05-27 19:04:16] INFO root fetch - main [MainThread]: End processing [autora-experiment-runner-experimentation-manager-firebase]: success
 [2023-05-27 19:04:16] INFO root fetch - main [MainThread]: End processing [libtmux]: success
 [2023-05-27 19:04:16] INFO root fetch - main [MainThread]: Store serial: [18275702]
+[2023-05-27 19:09:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275702]
+[2023-05-27 19:09:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 19:09:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langchain-discord
+[2023-05-27 19:09:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: je-auto-control-dev
+[2023-05-27 19:09:25] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 19:09:25] INFO root fetch - processPackages [je-auto-control-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 19:09:25] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 19:09:25] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 19:09:26] INFO root fetch - processPackages [je-auto-control-dev]: executing diffoscope
+[2023-05-27 19:09:26] INFO root fetch - processPackages [je-auto-control-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_auto_control_dev-0.0.8.tar.gz tmp/je_auto_control_dev-0.0.9.tar.gz --markdown 20230527/j/je-auto-control-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 19:09:26] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 19:09:27] INFO root fetch - main [MainThread]: End processing [je-auto-control-dev]: success
+[2023-05-27 19:09:27] INFO root fetch - main [MainThread]: Store serial: [18275708]
