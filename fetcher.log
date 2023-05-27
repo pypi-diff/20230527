@@ -8885,3 +8885,37 @@
 [2023-05-27 15:42:57] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
 [2023-05-27 15:43:14] INFO root fetch - main [MainThread]: End processing [Geode-Explicit]: success
 [2023-05-27 15:43:14] INFO root fetch - main [MainThread]: Store serial: [18274578]
+[2023-05-27 15:48:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274578]
+[2023-05-27 15:48:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 15:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-omnilogic-local
+[2023-05-27 15:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trepan3k
+[2023-05-27 15:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: replicator-cli
+[2023-05-27 15:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: peaqevcore
+[2023-05-27 15:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zpywallet
+[2023-05-27 15:48:22] INFO root fetch - processPackages [python-omnilogic-local]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-27 15:48:22] INFO root fetch - processPackages [trepan3k]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-27 15:48:22] INFO root fetch - processPackages [replicator-cli]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 15:48:23] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-05-27 15:48:23] INFO root fetch - processPackages [zpywallet]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-05-27 15:48:23] INFO root fetch - processPackages [trepan3k]: Downloading https://files.pythonhosted.org/packages/0f/ff/1eec0606270e3d37550e34db2c25438e26a3f7ab7b779ff7dbc631c49ff5/trepan3k-1.2.8.tar.gz
+[2023-05-27 15:48:23] INFO root fetch - processPackages [python-omnilogic-local]: Downloading https://files.pythonhosted.org/packages/2a/b3/d2b4b0bcf07443c001477000ba39e5d008b3aed6ae18a26a9dbdfde0e45e/python_omnilogic_local-0.3.2.tar.gz
+[2023-05-27 15:48:23] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-05-27 15:48:23] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230527/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-05-27 15:48:23] INFO root fetch - processPackages [replicator-cli]: Downloading https://files.pythonhosted.org/packages/c8/39/957c3bc25392068cce4980050915a743d88eaefbb9af54f8a86ef6961609/replicator-cli-0.0.5.tar.gz
+[2023-05-27 15:48:23] INFO root fetch - processPackages [zpywallet]: Downloading https://files.pythonhosted.org/packages/ed/f3/a2cd1eedc3e18517ff67ac18bc54b3a0d4dbf296100ea31b8cfacfd04c29/zpywallet-0.3.1.tar.gz
+[2023-05-27 15:48:23] INFO root fetch - processPackages [replicator-cli]: executing diffoscope
+[2023-05-27 15:48:23] INFO root fetch - processPackages [replicator-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replicator-cli-0.0.4.tar.gz tmp/replicator-cli-0.0.5.tar.gz --markdown 20230527/r/replicator-cli/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-27 15:48:23] INFO root fetch - processPackages [python-omnilogic-local]: executing diffoscope
+[2023-05-27 15:48:23] INFO root fetch - processPackages [python-omnilogic-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_omnilogic_local-0.3.1.tar.gz tmp/python_omnilogic_local-0.3.2.tar.gz --markdown 20230527/p/python-omnilogic-local/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-27 15:48:23] INFO root fetch - processPackages [trepan3k]: Downloading https://files.pythonhosted.org/packages/25/c1/796178878a1adc803e20dac4e650706fce4d6c6e76d0834709beb6d006dc/trepan3k-1.2.9.tar.gz
+[2023-05-27 15:48:23] INFO root fetch - processPackages [trepan3k]: executing diffoscope
+[2023-05-27 15:48:23] INFO root fetch - processPackages [trepan3k]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trepan3k-1.2.8.tar.gz tmp/trepan3k-1.2.9.tar.gz --markdown 20230527/t/trepan3k/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-27 15:48:23] INFO root fetch - processPackages [zpywallet]: Downloading https://files.pythonhosted.org/packages/4c/17/d64761b3743212ac2c0435438d6e19302bfad0dd0a49fa9bfbe849674681/zpywallet-0.4.0.tar.gz
+[2023-05-27 15:48:23] INFO root fetch - processPackages [zpywallet]: executing diffoscope
+[2023-05-27 15:48:23] INFO root fetch - processPackages [zpywallet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zpywallet-0.3.1.tar.gz tmp/zpywallet-0.4.0.tar.gz --markdown 20230527/z/zpywallet/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-05-27 15:48:24] INFO root fetch - main [MainThread]: End processing [replicator-cli]: success
+[2023-05-27 15:48:24] INFO root fetch - main [MainThread]: End processing [python-omnilogic-local]: success
+[2023-05-27 15:48:24] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-05-27 15:48:24] INFO root fetch - main [MainThread]: End processing [zpywallet]: success
+[2023-05-27 15:48:30] INFO root fetch - main [MainThread]: End processing [trepan3k]: success
+[2023-05-27 15:48:30] INFO root fetch - main [MainThread]: Store serial: [18274602]
