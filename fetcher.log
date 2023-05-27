@@ -6030,3 +6030,68 @@
 [2023-05-27 09:53:24] INFO root fetch - main [MainThread]: End processing [open-dread-rando]: success
 [2023-05-27 09:53:31] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2023-05-27 09:53:31] INFO root fetch - main [MainThread]: Store serial: [18272911]
+[2023-05-27 09:58:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272911]
+[2023-05-27 09:58:40] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-27 09:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apollo-sdk
+[2023-05-27 09:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: horton-grid
+[2023-05-27 09:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dokuwikidumper
+[2023-05-27 09:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oarepo
+[2023-05-27 09:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zfspace
+[2023-05-27 09:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mmcb-avt
+[2023-05-27 09:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: salat
+[2023-05-27 09:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dcicutils
+[2023-05-27 09:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: robotframework-kubelibrary
+[2023-05-27 09:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: oarepo
+[2023-05-27 09:58:40] INFO root fetch - processPackages [horton-grid]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 09:58:40] INFO root fetch - processPackages [zfspace]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-05-27 09:58:40] INFO root fetch - processPackages [apollo-sdk]: New version: [0.2.8] Old Version: [0.2.4]
+[2023-05-27 09:58:40] INFO root fetch - processPackages [dokuwikidumper]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 09:58:40] INFO root fetch - processPackages [salat]: New version: [1.0.1] Old Version: [0.2.0]
+[2023-05-27 09:58:40] INFO root fetch - processPackages [robotframework-kubelibrary]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-05-27 09:58:40] INFO root fetch - processPackages [mmcb-avt]: New version: [0.0.91] Old Version: [0.0.90]
+[2023-05-27 09:58:40] INFO root fetch - processPackages [dcicutils]: New version: [7.4.4.5b23] Old Version: [7.4.4.5b21]
+[2023-05-27 09:58:40] INFO root fetch - processPackages [oarepo]: New version: [9.0.9] Old Version: [9.0.8]
+[2023-05-27 09:58:40] INFO root fetch - processPackages [oarepo]: New version: [9.0.9] Old Version: [9.0.8]
+[2023-05-27 09:58:41] INFO root fetch - processPackages [dokuwikidumper]: Downloading https://files.pythonhosted.org/packages/8a/77/6dec3b11bf518fac347215309f743f5b619907f701930657ce67b1a56294/dokuwikidumper-0.1.8.tar.gz
+[2023-05-27 09:58:41] INFO root fetch - processPackages [salat]: Downloading https://files.pythonhosted.org/packages/de/d8/ed4ae4a58ea93173b842eb7b7908f93a924770414c94b89e8bc54f608718/salat-0.2.0.tar.gz
+[2023-05-27 09:58:41] INFO root fetch - processPackages [apollo-sdk]: Downloading https://files.pythonhosted.org/packages/20/1f/3008da39bcdd99e37ea55057ac1a618d0b2a75b97d6dfd9152ed80137dff/apollo-sdk-0.2.8.tar.gz
+[2023-05-27 09:58:41] INFO root fetch - processPackages [robotframework-kubelibrary]: Downloading https://files.pythonhosted.org/packages/a4/49/e473b09b6af22e2b3be416da2c921193dd96b6ccda069f57d0e07b18a420/robotframework-kubelibrary-0.8.5.tar.gz
+[2023-05-27 09:58:41] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/9b/69/aedf8adca97f380465b146f707e6e53f38dc93e5bb6ac708a4cc74b670d1/dcicutils-7.4.4.5b21.tar.gz
+[2023-05-27 09:58:41] INFO root fetch - processPackages [zfspace]: Downloading https://files.pythonhosted.org/packages/bf/f7/67b6c896d8248f8151b2f15898a93b35cecea5d6a92eb2e0bdbb18d6306f/zfspace-0.7.6-py3-none-any.whl
+[2023-05-27 09:58:41] INFO root fetch - processPackages [horton-grid]: Downloading https://files.pythonhosted.org/packages/12/91/c0db51b64dd12de529ac81fd60c7b02fe7f1e4f65501bc43b7b9fcb1aa61/horton-grid-0.0.3.tar.gz
+[2023-05-27 09:58:41] INFO root fetch - processPackages [apollo-sdk]: executing diffoscope
+[2023-05-27 09:58:41] INFO root fetch - processPackages [apollo-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apollo-sdk-0.2.4.tar.gz tmp/apollo-sdk-0.2.8.tar.gz --markdown 20230527/a/apollo-sdk/0.2.4-0.2.8/diff.md --exclude *.pyd
+[2023-05-27 09:58:41] INFO root fetch - processPackages [mmcb-avt]: Downloading https://files.pythonhosted.org/packages/6d/2a/5f12df4ed546d98f31b1730c9b7c188f023ff702701fd87ee97cbb1e261d/mmcb-avt-0.0.91.tar.gz
+[2023-05-27 09:58:41] INFO root fetch - processPackages [salat]: Downloading https://files.pythonhosted.org/packages/fe/f8/dadb1430fdb5195de0cfe670274080b969ab97d6882f7db8dcbc121b41e1/salat-1.0.1.tar.gz
+[2023-05-27 09:58:41] INFO root fetch - processPackages [oarepo]: executing diffoscope
+[2023-05-27 09:58:41] INFO root fetch - processPackages [oarepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-9.0.8.tar.gz tmp/oarepo-9.0.9.tar.gz --markdown 20230527/o/oarepo/9.0.8-9.0.9/diff.md --exclude *.pyd
+[2023-05-27 09:58:41] INFO root fetch - processPackages [robotframework-kubelibrary]: Downloading https://files.pythonhosted.org/packages/d6/03/b93ab39438b2119dcb44fdf9808dcc98fd5bf0a8a9108871084fdd17d329/robotframework-kubelibrary-0.8.6.tar.gz
+[2023-05-27 09:58:41] INFO root fetch - processPackages [zfspace]: executing diffoscope
+[2023-05-27 09:58:41] INFO root fetch - processPackages [zfspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zfspace-0.7.5-py3-none-any.whl.zip tmp/zfspace-0.7.6-py3-none-any.whl.zip --markdown 20230527/z/zfspace/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-05-27 09:58:41] INFO root fetch - processPackages [dokuwikidumper]: Downloading https://files.pythonhosted.org/packages/8e/0b/c59e9f31ad583ecbb464b66cbce93ebe16efa5f9597f9aea718ec09587fb/dokuwikidumper-0.1.9.tar.gz
+[2023-05-27 09:58:41] INFO root fetch - processPackages [horton-grid]: executing diffoscope
+[2023-05-27 09:58:41] INFO root fetch - processPackages [horton-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/horton-grid-0.0.2.tar.gz tmp/horton-grid-0.0.3.tar.gz --markdown 20230527/h/horton-grid/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 09:58:41] INFO root fetch - processPackages [oarepo]: executing diffoscope
+[2023-05-27 09:58:41] INFO root fetch - processPackages [oarepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-9.0.8.tar.gz tmp/oarepo-9.0.9.tar.gz --markdown 20230527/o/oarepo/9.0.8-9.0.9/diff.md --exclude *.pyd
+[2023-05-27 09:58:41] INFO root fetch - processPackages [dokuwikidumper]: executing diffoscope
+[2023-05-27 09:58:41] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.8.tar.gz tmp/dokuwikidumper-0.1.9.tar.gz --markdown 20230527/d/dokuwikidumper/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 09:58:41] INFO root fetch - processPackages [mmcb-avt]: executing diffoscope
+[2023-05-27 09:58:41] INFO root fetch - processPackages [mmcb-avt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmcb-avt-0.0.90.tar.gz tmp/mmcb-avt-0.0.91.tar.gz --markdown 20230527/m/mmcb-avt/0.0.90-0.0.91/diff.md --exclude *.pyd
+[2023-05-27 09:58:41] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/90/f0/98436ceafcb3bf3ce389ee12b8ee98fcc2ba988e5c87b97c14f7eb4baa9c/dcicutils-7.4.4.5b23.tar.gz
+[2023-05-27 09:58:41] INFO root fetch - processPackages [salat]: executing diffoscope
+[2023-05-27 09:58:41] INFO root fetch - processPackages [salat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/salat-0.2.0.tar.gz tmp/salat-1.0.1.tar.gz --markdown 20230527/s/salat/0.2.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 09:58:41] INFO root fetch - processPackages [robotframework-kubelibrary]: executing diffoscope
+[2023-05-27 09:58:41] INFO root fetch - processPackages [robotframework-kubelibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework-kubelibrary-0.8.5.tar.gz tmp/robotframework-kubelibrary-0.8.6.tar.gz --markdown 20230527/r/robotframework-kubelibrary/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-05-27 09:58:41] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2023-05-27 09:58:41] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-7.4.4.5b21.tar.gz tmp/dcicutils-7.4.4.5b23.tar.gz --markdown 20230527/d/dcicutils/7.4.4.5b21-7.4.4.5b23/diff.md --exclude *.pyd
+[2023-05-27 09:58:42] INFO root fetch - main [MainThread]: End processing [zfspace]: success
+[2023-05-27 09:58:43] INFO root fetch - main [MainThread]: End processing [apollo-sdk]: success
+[2023-05-27 09:58:43] INFO root fetch - main [MainThread]: End processing [oarepo]: success
+[2023-05-27 09:58:43] INFO root fetch - main [MainThread]: End processing [oarepo]: success
+[2023-05-27 09:58:43] INFO root fetch - main [MainThread]: End processing [salat]: success
+[2023-05-27 09:58:43] INFO root fetch - main [MainThread]: End processing [robotframework-kubelibrary]: success
+[2023-05-27 09:58:44] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
+[2023-05-27 09:58:44] INFO root fetch - main [MainThread]: End processing [mmcb-avt]: success
+[2023-05-27 09:58:44] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2023-05-27 09:58:46] INFO root fetch - main [MainThread]: End processing [horton-grid]: success
+[2023-05-27 09:58:46] INFO root fetch - main [MainThread]: Store serial: [18272942]
