@@ -6341,3 +6341,33 @@
 [2023-05-27 10:24:43] INFO root fetch - main [MainThread]: End processing [comex]: success
 [2023-05-27 10:24:43] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
 [2023-05-27 10:24:43] INFO root fetch - main [MainThread]: Store serial: [18273113]
+[2023-05-27 10:29:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273113]
+[2023-05-27 10:29:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 10:29:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: invenio-rdm-records
+[2023-05-27 10:29:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyslit
+[2023-05-27 10:29:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: global-hotkeys
+[2023-05-27 10:29:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CUQIpy-CIL
+[2023-05-27 10:29:51] INFO root fetch - processPackages [invenio-rdm-records]: New version: [4.2.1] Old Version: [4.2.0]
+[2023-05-27 10:29:51] INFO root fetch - processPackages [pyslit]: New version: [2.0.1] Old Version: [1.0.0]
+[2023-05-27 10:29:51] INFO root fetch - processPackages [global-hotkeys]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 10:29:52] INFO root fetch - processPackages [CUQIpy-CIL]: New version: [0.4.0] Old Version: [0.3.0.post0.dev2]
+[2023-05-27 10:29:52] INFO root fetch - processPackages [pyslit]: Downloading https://files.pythonhosted.org/packages/1f/35/b69ad277969906cf12f60d5b506afb0b417df10f3166bc3b6499e7651c91/pyslit-1.0.0.tar.gz
+[2023-05-27 10:29:52] INFO root fetch - processPackages [invenio-rdm-records]: Downloading https://files.pythonhosted.org/packages/97/87/1fb3bb1f8ef34169c6393ad346c5a849d7bf42b510a5491811786ceaded7/invenio-rdm-records-4.2.1.tar.gz
+[2023-05-27 10:29:52] INFO root fetch - processPackages [global-hotkeys]: Downloading https://files.pythonhosted.org/packages/48/ef/81b472f3ae96df2072501a1478b9584d6f753e3bff14003aa8c19743683f/global_hotkeys-0.0.4.tar.gz
+[2023-05-27 10:29:52] INFO root fetch - processPackages [CUQIpy-CIL]: Downloading https://files.pythonhosted.org/packages/9b/44/cf2d5a308b012094326d0d0082592b4cefb90867b757b2cbd119f0e198d8/CUQIpy-CIL-0.3.0.post0.dev2.tar.gz
+[2023-05-27 10:29:52] INFO root fetch - processPackages [invenio-rdm-records]: executing diffoscope
+[2023-05-27 10:29:52] INFO root fetch - processPackages [invenio-rdm-records]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invenio-rdm-records-4.2.0.tar.gz tmp/invenio-rdm-records-4.2.1.tar.gz --markdown 20230527/i/invenio-rdm-records/4.2.0-4.2.1/diff.md --exclude *.pyd
+[2023-05-27 10:29:52] INFO root fetch - processPackages [pyslit]: Downloading https://files.pythonhosted.org/packages/e3/f6/f3ad50dda46d0c4a42f89867fe920d0953e563191957b42d828b90077968/pyslit-2.0.1.tar.gz
+[2023-05-27 10:29:52] INFO root fetch - processPackages [global-hotkeys]: Downloading https://files.pythonhosted.org/packages/6c/3c/f4dccab94acae9d0350af7725c1c8c0a8963669dc32c491fb22272b01568/global_hotkeys-0.0.5.tar.gz
+[2023-05-27 10:29:52] INFO root fetch - processPackages [pyslit]: executing diffoscope
+[2023-05-27 10:29:52] INFO root fetch - processPackages [pyslit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslit-1.0.0.tar.gz tmp/pyslit-2.0.1.tar.gz --markdown 20230527/p/pyslit/1.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-27 10:29:52] INFO root fetch - processPackages [CUQIpy-CIL]: Downloading https://files.pythonhosted.org/packages/07/27/e9890cf84cbe3ee2f5880b1dda9aa0d8e5004e01744b86e4ee7c6daf091b/CUQIpy-CIL-0.4.0.tar.gz
+[2023-05-27 10:29:52] INFO root fetch - processPackages [global-hotkeys]: executing diffoscope
+[2023-05-27 10:29:52] INFO root fetch - processPackages [global-hotkeys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/global_hotkeys-0.0.4.tar.gz tmp/global_hotkeys-0.0.5.tar.gz --markdown 20230527/g/global-hotkeys/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-27 10:29:53] INFO root fetch - processPackages [CUQIpy-CIL]: executing diffoscope
+[2023-05-27 10:29:53] INFO root fetch - processPackages [CUQIpy-CIL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CUQIpy-CIL-0.3.0.post0.dev2.tar.gz tmp/CUQIpy-CIL-0.4.0.tar.gz --markdown 20230527/C/CUQIpy-CIL/0.3.0.post0.dev2-0.4.0/diff.md --exclude *.pyd
+[2023-05-27 10:29:53] INFO root fetch - main [MainThread]: End processing [pyslit]: success
+[2023-05-27 10:29:53] INFO root fetch - main [MainThread]: End processing [global-hotkeys]: success
+[2023-05-27 10:29:54] INFO root fetch - main [MainThread]: End processing [CUQIpy-CIL]: success
+[2023-05-27 10:29:58] INFO root fetch - main [MainThread]: End processing [invenio-rdm-records]: success
+[2023-05-27 10:29:58] INFO root fetch - main [MainThread]: Store serial: [18273122]
