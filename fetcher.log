@@ -5617,3 +5617,60 @@
 [2023-05-27 08:47:55] INFO root fetch - main [MainThread]: End processing [pulumi-rabbitmq]: success
 [2023-05-27 08:47:56] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
 [2023-05-27 08:47:56] INFO root fetch - main [MainThread]: Store serial: [18272679]
+[2023-05-27 08:52:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272679]
+[2023-05-27 08:53:04] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-27 08:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gravitas
+[2023-05-27 08:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: djangocms-attributes-field
+[2023-05-27 08:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-signalfx
+[2023-05-27 08:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gravitas
+[2023-05-27 08:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nebula-loss
+[2023-05-27 08:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gradio-version-freeze
+[2023-05-27 08:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-slack
+[2023-05-27 08:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: HomoglyphsCJK
+[2023-05-27 08:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pulumi-onelogin
+[2023-05-27 08:53:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: python-tools-scripts
+[2023-05-27 08:53:04] INFO root fetch - processPackages [djangocms-attributes-field]: New version: [3.0.0] Old Version: [2.1.0]
+[2023-05-27 08:53:04] INFO root fetch - processPackages [gravitas]: New version: [0.0.9] Old Version: [0.0.4]
+[2023-05-27 08:53:04] WARNING root fetch - processPackages [gradio-version-freeze]: Skipping, unable to determine old version
+[2023-05-27 08:53:04] INFO root fetch - processPackages [gravitas]: New version: [0.0.9] Old Version: [0.0.4]
+[2023-05-27 08:53:04] INFO root fetch - main [MainThread]: End processing [gradio-version-freeze] error
+[2023-05-27 08:53:04] INFO root fetch - processPackages [nebula-loss]: New version: [0.3.3] Old Version: [0.3.1]
+[2023-05-27 08:53:04] INFO root fetch - processPackages [pulumi-signalfx]: New version: [5.9.0a1678179334] Old Version: [5.9.0a1678129624]
+[2023-05-27 08:53:04] INFO root fetch - processPackages [HomoglyphsCJK]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 08:53:04] INFO root fetch - processPackages [python-tools-scripts]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-05-27 08:53:04] INFO root fetch - processPackages [pulumi-slack]: New version: [0.4.3a1685168529] Old Version: [0.4.3a1685083795]
+[2023-05-27 08:53:04] INFO root fetch - processPackages [pulumi-onelogin]: New version: [0.6.1a1685168871] Old Version: [0.6.1a1684389387]
+[2023-05-27 08:53:04] INFO root fetch - processPackages [gravitas]: executing diffoscope
+[2023-05-27 08:53:04] INFO root fetch - processPackages [gravitas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitas-0.0.4.tar.gz tmp/gravitas-0.0.9.tar.gz --markdown 20230527/g/gravitas/0.0.4-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 08:53:04] INFO root fetch - processPackages [python-tools-scripts]: executing diffoscope
+[2023-05-27 08:53:04] INFO root fetch - processPackages [python-tools-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-tools-scripts-0.9.6.tar.gz tmp/python-tools-scripts-0.9.7.tar.gz --markdown 20230527/p/python-tools-scripts/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-05-27 08:53:04] INFO root fetch - processPackages [gravitas]: executing diffoscope
+[2023-05-27 08:53:04] INFO root fetch - processPackages [gravitas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitas-0.0.4.tar.gz tmp/gravitas-0.0.9.tar.gz --markdown 20230527/g/gravitas/0.0.4-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 08:53:04] INFO root fetch - processPackages [pulumi-signalfx]: executing diffoscope
+[2023-05-27 08:53:04] INFO root fetch - processPackages [pulumi-signalfx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_signalfx-5.9.0a1678129624.tar.gz tmp/pulumi_signalfx-5.9.0a1678179334.tar.gz --markdown 20230527/p/pulumi-signalfx/5.9.0a1678129624-5.9.0a1678179334/diff.md --exclude *.pyd
+[2023-05-27 08:53:04] INFO root fetch - processPackages [djangocms-attributes-field]: Downloading https://files.pythonhosted.org/packages/8f/5a/0b3d94eb051f04a9546b857f3a69b3edad1786c29b5e93b4df550e7de479/djangocms-attributes-field-2.1.0.tar.gz
+[2023-05-27 08:53:04] INFO root fetch - processPackages [pulumi-slack]: Downloading https://files.pythonhosted.org/packages/83/5c/db0108aa17d074b8e68dc8a1cf42382e6689fcb5fb20de9ababb2b636267/pulumi_slack-0.4.3a1685168529.tar.gz
+[2023-05-27 08:53:04] INFO root fetch - processPackages [nebula-loss]: Downloading https://files.pythonhosted.org/packages/0c/17/f868818c6c0b2e6ba8cd67fc336f707ecc111d13d3e7d6959ddb5821de56/nebula-loss-0.3.3.tar.gz
+[2023-05-27 08:53:04] INFO root fetch - processPackages [nebula-loss]: executing diffoscope
+[2023-05-27 08:53:04] INFO root fetch - processPackages [nebula-loss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nebula-loss-0.3.1.tar.gz tmp/nebula-loss-0.3.3.tar.gz --markdown 20230527/n/nebula-loss/0.3.1-0.3.3/diff.md --exclude *.pyd
+[2023-05-27 08:53:04] INFO root fetch - processPackages [HomoglyphsCJK]: Downloading https://files.pythonhosted.org/packages/96/7b/a16ecc744eb21fff47a227eac2ee042b4f62699a1e5832c8cde075db5a63/HomoglyphsCJK-0.1.2.tar.gz
+[2023-05-27 08:53:04] INFO root fetch - processPackages [pulumi-slack]: executing diffoscope
+[2023-05-27 08:53:04] INFO root fetch - processPackages [pulumi-slack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_slack-0.4.3a1685083795.tar.gz tmp/pulumi_slack-0.4.3a1685168529.tar.gz --markdown 20230527/p/pulumi-slack/0.4.3a1685083795-0.4.3a1685168529/diff.md --exclude *.pyd
+[2023-05-27 08:53:04] INFO root fetch - processPackages [pulumi-onelogin]: Downloading https://files.pythonhosted.org/packages/51/34/6cefce9cf7a515877b2448fc057a6df657d9a54c2c452dea3137714e86d7/pulumi_onelogin-0.6.1a1685168871.tar.gz
+[2023-05-27 08:53:04] INFO root fetch - processPackages [HomoglyphsCJK]: executing diffoscope
+[2023-05-27 08:53:04] INFO root fetch - processPackages [HomoglyphsCJK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HomoglyphsCJK-0.1.1.tar.gz tmp/HomoglyphsCJK-0.1.2.tar.gz --markdown 20230527/H/HomoglyphsCJK/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 08:53:04] INFO root fetch - processPackages [djangocms-attributes-field]: Downloading https://files.pythonhosted.org/packages/be/f9/c60e1e3bcf4df9d5fc0e6334e50caa489c4a828c073eadec59796e1071e8/djangocms-attributes-field-3.0.0.tar.gz
+[2023-05-27 08:53:04] INFO root fetch - processPackages [djangocms-attributes-field]: executing diffoscope
+[2023-05-27 08:53:04] INFO root fetch - processPackages [djangocms-attributes-field]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangocms-attributes-field-2.1.0.tar.gz tmp/djangocms-attributes-field-3.0.0.tar.gz --markdown 20230527/d/djangocms-attributes-field/2.1.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-27 08:53:05] INFO root fetch - processPackages [pulumi-onelogin]: executing diffoscope
+[2023-05-27 08:53:05] INFO root fetch - processPackages [pulumi-onelogin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_onelogin-0.6.1a1684389387.tar.gz tmp/pulumi_onelogin-0.6.1a1685168871.tar.gz --markdown 20230527/p/pulumi-onelogin/0.6.1a1684389387-0.6.1a1685168871/diff.md --exclude *.pyd
+[2023-05-27 08:53:06] INFO root fetch - main [MainThread]: End processing [pulumi-slack]: success
+[2023-05-27 08:53:06] INFO root fetch - main [MainThread]: End processing [python-tools-scripts]: success
+[2023-05-27 08:53:06] INFO root fetch - main [MainThread]: End processing [nebula-loss]: success
+[2023-05-27 08:53:06] INFO root fetch - main [MainThread]: End processing [HomoglyphsCJK]: success
+[2023-05-27 08:53:06] INFO root fetch - main [MainThread]: End processing [djangocms-attributes-field]: success
+[2023-05-27 08:53:06] INFO root fetch - main [MainThread]: End processing [pulumi-signalfx]: success
+[2023-05-27 08:53:06] INFO root fetch - main [MainThread]: End processing [gravitas]: success
+[2023-05-27 08:53:08] INFO root fetch - main [MainThread]: End processing [pulumi-onelogin]: success
+[2023-05-27 08:53:08] INFO root fetch - main [MainThread]: End processing [gravitas]: success
+[2023-05-27 08:53:08] INFO root fetch - main [MainThread]: Store serial: [18272710]
