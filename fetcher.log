@@ -11320,3 +11320,37 @@
 [2023-05-27 20:19:24] INFO root fetch - main [MainThread]: End processing [mup-xml-sign]: success
 [2023-05-27 20:19:25] INFO root fetch - main [MainThread]: End processing [varwizard]: success
 [2023-05-27 20:19:25] INFO root fetch - main [MainThread]: Store serial: [18276025]
+[2023-05-27 20:24:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276025]
+[2023-05-27 20:24:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 20:24:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arxivai
+[2023-05-27 20:24:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: borb
+[2023-05-27 20:24:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dag-dq-generator
+[2023-05-27 20:24:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sosecrets
+[2023-05-27 20:24:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jorun
+[2023-05-27 20:24:34] INFO root fetch - processPackages [arxivai]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 20:24:34] INFO root fetch - processPackages [borb]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-27 20:24:34] INFO root fetch - processPackages [jorun]: New version: [0.1.4] Old Version: [0.1.2]
+[2023-05-27 20:24:34] INFO root fetch - processPackages [dag-dq-generator]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-27 20:24:34] INFO root fetch - processPackages [sosecrets]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-27 20:24:34] INFO root fetch - processPackages [borb]: Downloading https://files.pythonhosted.org/packages/d4/c4/b8338d77fedf7c6414337211120976ea01cbbbf0b122f3c12875ed228ec8/borb-2.1.8.tar.gz
+[2023-05-27 20:24:34] INFO root fetch - processPackages [sosecrets]: Downloading https://files.pythonhosted.org/packages/56/76/e9049aa0e73d3c58126dfd3b6baaf111eef5028679e719371fb60bf4d959/sosecrets-0.1.4.tar.gz
+[2023-05-27 20:24:34] INFO root fetch - processPackages [jorun]: Downloading https://files.pythonhosted.org/packages/cb/0e/c151a2ff2226820486df4c011ee2d7e9e849c391de41234fe4532618b311/jorun-0.1.2.tar.gz
+[2023-05-27 20:24:34] INFO root fetch - processPackages [arxivai]: executing diffoscope
+[2023-05-27 20:24:34] INFO root fetch - processPackages [arxivai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arxivai-0.0.8.tar.gz tmp/arxivai-0.0.9.tar.gz --markdown 20230527/a/arxivai/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 20:24:34] INFO root fetch - processPackages [sosecrets]: executing diffoscope
+[2023-05-27 20:24:34] INFO root fetch - processPackages [sosecrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sosecrets-0.1.3.tar.gz tmp/sosecrets-0.1.4.tar.gz --markdown 20230527/s/sosecrets/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-27 20:24:34] INFO root fetch - processPackages [dag-dq-generator]: Downloading https://files.pythonhosted.org/packages/b7/67/bdc41321b49840e1ccdec3413e7590e9b5889af62bbedc8c3b530f84b33f/dag-dq-generator-1.0.3.tar.gz
+[2023-05-27 20:24:34] INFO root fetch - processPackages [dag-dq-generator]: executing diffoscope
+[2023-05-27 20:24:34] INFO root fetch - processPackages [dag-dq-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dag-dq-generator-1.0.2.tar.gz tmp/dag-dq-generator-1.0.3.tar.gz --markdown 20230527/d/dag-dq-generator/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-27 20:24:34] INFO root fetch - processPackages [jorun]: Downloading https://files.pythonhosted.org/packages/bf/7e/5f5c221bb417cd130a96e56135727b0c769b7a40c0746295e06ae999b77e/jorun-0.1.4.tar.gz
+[2023-05-27 20:24:35] INFO root fetch - processPackages [jorun]: executing diffoscope
+[2023-05-27 20:24:35] INFO root fetch - processPackages [jorun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jorun-0.1.2.tar.gz tmp/jorun-0.1.4.tar.gz --markdown 20230527/j/jorun/0.1.2-0.1.4/diff.md --exclude *.pyd
+[2023-05-27 20:24:35] INFO root fetch - main [MainThread]: End processing [arxivai]: success
+[2023-05-27 20:24:35] INFO root fetch - main [MainThread]: End processing [sosecrets]: success
+[2023-05-27 20:24:36] INFO root fetch - main [MainThread]: End processing [dag-dq-generator]: success
+[2023-05-27 20:24:36] INFO root fetch - main [MainThread]: End processing [jorun]: success
+[2023-05-27 20:24:37] INFO root fetch - processPackages [borb]: Downloading https://files.pythonhosted.org/packages/c7/99/dddf097aad0b6627583d56a3de16e7fdae30dda87b7b3caaf389fbe7578b/borb-2.1.9.tar.gz
+[2023-05-27 20:24:40] INFO root fetch - processPackages [borb]: executing diffoscope
+[2023-05-27 20:24:40] INFO root fetch - processPackages [borb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/borb-2.1.8.tar.gz tmp/borb-2.1.9.tar.gz --markdown 20230527/b/borb/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-27 20:25:01] INFO root fetch - main [MainThread]: End processing [borb]: success
+[2023-05-27 20:25:01] INFO root fetch - main [MainThread]: Store serial: [18276041]
