@@ -6527,3 +6527,37 @@
 [2023-05-27 10:45:36] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
 [2023-05-27 10:45:51] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2023-05-27 10:45:51] INFO root fetch - main [MainThread]: Store serial: [18273204]
+[2023-05-27 10:50:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273204]
+[2023-05-27 10:51:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 10:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyslit
+[2023-05-27 10:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ExPSO
+[2023-05-27 10:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nomenklatura
+[2023-05-27 10:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SNPTMT
+[2023-05-27 10:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: comex
+[2023-05-27 10:51:00] INFO root fetch - processPackages [pyslit]: New version: [2.0.0] Old Version: [1.0.0]
+[2023-05-27 10:51:00] INFO root fetch - processPackages [SNPTMT]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-27 10:51:00] INFO root fetch - processPackages [nomenklatura]: New version: [2.9.5] Old Version: [2.9.4]
+[2023-05-27 10:51:00] INFO root fetch - processPackages [comex]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 10:51:00] INFO root fetch - processPackages [ExPSO]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 10:51:00] INFO root fetch - processPackages [nomenklatura]: Downloading https://files.pythonhosted.org/packages/d5/89/3016c08ec53ac92bd160b5039daa21de454b570e8376f8f5ce8d43882479/nomenklatura-2.9.4.tar.gz
+[2023-05-27 10:51:00] INFO root fetch - processPackages [SNPTMT]: Downloading https://files.pythonhosted.org/packages/3d/ce/85c940815515655d6d2f2fa533677786fc124880ca3905b4f0d562f6133f/SNPTMT-0.0.4.tar.gz
+[2023-05-27 10:51:00] INFO root fetch - processPackages [ExPSO]: Downloading https://files.pythonhosted.org/packages/96/36/e96aea56d9c30a1b1d562fabb598a07ff9c44a7a816444d998e76df9c619/ExPSO-0.1.2.tar.gz
+[2023-05-27 10:51:00] INFO root fetch - processPackages [comex]: Downloading https://files.pythonhosted.org/packages/bb/28/0c09b85dc133a95f86eca9e7230f51966b18b0a76b0a1550870d23eb1214/comex-0.0.9.tar.gz
+[2023-05-27 10:51:00] INFO root fetch - processPackages [pyslit]: Downloading https://files.pythonhosted.org/packages/6d/54/c9dd6e683874d6602b6b4f68551fde873d4315e29fb07e5507ef60d47492/pyslit-2.0.0.tar.gz
+[2023-05-27 10:51:00] INFO root fetch - processPackages [ExPSO]: executing diffoscope
+[2023-05-27 10:51:00] INFO root fetch - processPackages [ExPSO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ExPSO-0.1.1.tar.gz tmp/ExPSO-0.1.2.tar.gz --markdown 20230527/E/ExPSO/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 10:51:00] INFO root fetch - processPackages [pyslit]: executing diffoscope
+[2023-05-27 10:51:00] INFO root fetch - processPackages [pyslit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslit-1.0.0.tar.gz tmp/pyslit-2.0.0.tar.gz --markdown 20230527/p/pyslit/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-27 10:51:00] INFO root fetch - processPackages [SNPTMT]: executing diffoscope
+[2023-05-27 10:51:00] INFO root fetch - processPackages [SNPTMT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SNPTMT-0.0.3.tar.gz tmp/SNPTMT-0.0.4.tar.gz --markdown 20230527/S/SNPTMT/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-27 10:51:00] INFO root fetch - processPackages [comex]: executing diffoscope
+[2023-05-27 10:51:00] INFO root fetch - processPackages [comex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comex-0.0.8.tar.gz tmp/comex-0.0.9.tar.gz --markdown 20230527/c/comex/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 10:51:00] INFO root fetch - processPackages [nomenklatura]: Downloading https://files.pythonhosted.org/packages/54/7d/09aee7f4bad75a794be6bfe071dbfcf5d4737a15ad4809bb9d2fe86e888f/nomenklatura-2.9.5.tar.gz
+[2023-05-27 10:51:01] INFO root fetch - processPackages [nomenklatura]: executing diffoscope
+[2023-05-27 10:51:01] INFO root fetch - processPackages [nomenklatura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nomenklatura-2.9.4.tar.gz tmp/nomenklatura-2.9.5.tar.gz --markdown 20230527/n/nomenklatura/2.9.4-2.9.5/diff.md --exclude *.pyd
+[2023-05-27 10:51:01] INFO root fetch - main [MainThread]: End processing [pyslit]: success
+[2023-05-27 10:51:01] INFO root fetch - main [MainThread]: End processing [ExPSO]: success
+[2023-05-27 10:51:01] INFO root fetch - main [MainThread]: End processing [SNPTMT]: success
+[2023-05-27 10:51:01] INFO root fetch - main [MainThread]: End processing [comex]: success
+[2023-05-27 10:51:03] INFO root fetch - main [MainThread]: End processing [nomenklatura]: success
+[2023-05-27 10:51:03] INFO root fetch - main [MainThread]: Store serial: [18273224]
