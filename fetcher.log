@@ -11927,3 +11927,23 @@
 [2023-05-27 21:55:38] INFO root fetch - main [MainThread]: End processing [pyqint]: success
 [2023-05-27 21:56:01] INFO root fetch - main [MainThread]: End processing [pyemaps]: success
 [2023-05-27 21:56:01] INFO root fetch - main [MainThread]: Store serial: [18276511]
+[2023-05-27 22:01:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276511]
+[2023-05-27 22:01:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-27 22:01:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyter-converter
+[2023-05-27 22:01:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wand-ai-client
+[2023-05-27 22:01:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jupyter-converter
+[2023-05-27 22:01:10] INFO root fetch - processPackages [jupyter-converter]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 22:01:10] WARNING root fetch - processPackages [wand-ai-client]: Skipping, unable to determine old version
+[2023-05-27 22:01:10] INFO root fetch - main [MainThread]: End processing [wand-ai-client] error
+[2023-05-27 22:01:10] INFO root fetch - processPackages [jupyter-converter]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 22:01:10] INFO root fetch - processPackages [jupyter-converter]: Downloading https://files.pythonhosted.org/packages/24/6f/310a0510745318e839fbaa211098f5ebd27cbd395a6b506ccfcf02202e72/jupyter_converter-0.0.4-py3-none-any.whl
+[2023-05-27 22:01:10] INFO root fetch - processPackages [jupyter-converter]: Downloading https://files.pythonhosted.org/packages/24/6f/310a0510745318e839fbaa211098f5ebd27cbd395a6b506ccfcf02202e72/jupyter_converter-0.0.4-py3-none-any.whl
+[2023-05-27 22:01:10] INFO root fetch - processPackages [jupyter-converter]: Downloading https://files.pythonhosted.org/packages/45/3c/bf906c5cf53bffb32ffff3142e51c4dfd6e4c2977e43598115fd5ed807b9/jupyter_converter-0.0.5-py3-none-any.whl
+[2023-05-27 22:01:10] INFO root fetch - processPackages [jupyter-converter]: Downloading https://files.pythonhosted.org/packages/45/3c/bf906c5cf53bffb32ffff3142e51c4dfd6e4c2977e43598115fd5ed807b9/jupyter_converter-0.0.5-py3-none-any.whl
+[2023-05-27 22:01:11] INFO root fetch - processPackages [jupyter-converter]: executing diffoscope
+[2023-05-27 22:01:11] INFO root fetch - processPackages [jupyter-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_converter-0.0.4-py3-none-any.whl.zip tmp/jupyter_converter-0.0.5-py3-none-any.whl.zip --markdown 20230527/j/jupyter-converter/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-27 22:01:11] INFO root fetch - processPackages [jupyter-converter]: executing diffoscope
+[2023-05-27 22:01:11] INFO root fetch - processPackages [jupyter-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_converter-0.0.4-py3-none-any.whl.zip tmp/jupyter_converter-0.0.5-py3-none-any.whl.zip --markdown 20230527/j/jupyter-converter/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-27 22:01:12] INFO root fetch - main [MainThread]: End processing [jupyter-converter]: success
+[2023-05-27 22:01:12] INFO root fetch - main [MainThread]: End processing [jupyter-converter]: success
+[2023-05-27 22:01:12] INFO root fetch - main [MainThread]: Store serial: [18276526]
