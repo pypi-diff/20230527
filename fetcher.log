@@ -11137,3 +11137,65 @@
 [2023-05-27 19:57:21] INFO root fetch - main [MainThread]: End processing [boxmot]: success
 [2023-05-27 19:57:22] INFO root fetch - main [MainThread]: End processing [deep-training]: success
 [2023-05-27 19:57:22] INFO root fetch - main [MainThread]: Store serial: [18275932]
+[2023-05-27 20:02:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275932]
+[2023-05-27 20:02:31] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-27 20:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alacorder
+[2023-05-27 20:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mup-xml-sign
+[2023-05-27 20:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sylk-docs
+[2023-05-27 20:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xpanther
+[2023-05-27 20:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yektatestapi
+[2023-05-27 20:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ns3
+[2023-05-27 20:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: usellm
+[2023-05-27 20:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: javascript
+[2023-05-27 20:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: langchain-discord
+[2023-05-27 20:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: natf
+[2023-05-27 20:02:31] INFO root fetch - processPackages [yektatestapi]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 20:02:31] INFO root fetch - processPackages [ns3]: New version: [3.38.post272] Old Version: [3.38.post271]
+[2023-05-27 20:02:31] INFO root fetch - processPackages [xpanther]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-27 20:02:31] INFO root fetch - processPackages [usellm]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 20:02:31] WARNING root fetch - processPackages [mup-xml-sign]: Skipping, unable to determine old version
+[2023-05-27 20:02:31] INFO root fetch - main [MainThread]: End processing [mup-xml-sign] error
+[2023-05-27 20:02:31] INFO root fetch - processPackages [javascript]: New version: [2015.32.59] Old Version: [2015.32.57.1]
+[2023-05-27 20:02:31] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 20:02:31] INFO root fetch - processPackages [sylk-docs]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 20:02:31] INFO root fetch - processPackages [natf]: New version: [2.4.1] Old Version: [2.4.0]
+[2023-05-27 20:02:31] INFO root fetch - processPackages [alacorder]: New version: [80.8.3] Old Version: [80.8.2]
+[2023-05-27 20:02:31] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 20:02:31] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 20:02:31] INFO root fetch - processPackages [natf]: executing diffoscope
+[2023-05-27 20:02:31] INFO root fetch - processPackages [natf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/natf-2.4.0-py3-none-any.whl.zip tmp/natf-2.4.1-py3-none-any.whl.zip --markdown 20230527/n/natf/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2023-05-27 20:02:31] INFO root fetch - processPackages [ns3]: Downloading https://files.pythonhosted.org/packages/2b/93/f5d194ae9fbc7f477382c574a84f5091db61d9eec709f55006be920bf7a8/ns3-3.38.post271-cp310-cp310-manylinux_2_28_x86_64.whl
+[2023-05-27 20:02:31] INFO root fetch - processPackages [sylk-docs]: Downloading https://files.pythonhosted.org/packages/83/b9/9db0fd161b5fd31a20b704c4e0379d0cc14c8504fbff9be3c1385db8cc15/sylk_docs-0.0.2-py3-none-any.whl
+[2023-05-27 20:02:31] INFO root fetch - processPackages [usellm]: Downloading https://files.pythonhosted.org/packages/36/e4/948a3c05de3b0e6542e5f75b5e756a06688bb7c7c6138ed8f415844ba554/usellm-0.0.1.tar.gz
+[2023-05-27 20:02:31] INFO root fetch - processPackages [yektatestapi]: Downloading https://files.pythonhosted.org/packages/99/08/9a6755b858d3d9dd1838bf7d2504f4ae888177ca014253cd14e9132eac70/yektatestapi-0.0.2.tar.gz
+[2023-05-27 20:02:31] WARNING root fetch - processPackages [ns3]: Skipping package: exceeds size limit 68016027>=10485760
+[2023-05-27 20:02:31] INFO root fetch - main [MainThread]: End processing [ns3] error
+[2023-05-27 20:02:31] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/01/7b/cc23b3b33565f3d1eae5216f87686880803e9bc28f81649ca1323b0fd6e6/alacorder-80.8.2.tar.gz
+[2023-05-27 20:02:31] INFO root fetch - processPackages [xpanther]: Downloading https://files.pythonhosted.org/packages/8b/d1/397fe80a6e9a69a09586b371f159c5951cad477ac45d2d15e31e36515935/xpanther-1.1.2.tar.gz
+[2023-05-27 20:02:31] INFO root fetch - processPackages [sylk-docs]: Downloading https://files.pythonhosted.org/packages/3c/03/bc645ea02d7f9cc7c04f87d6f8cd3e6fc12334885055dbce0bdd53adfaf9/sylk_docs-0.0.3-py3-none-any.whl
+[2023-05-27 20:02:31] INFO root fetch - processPackages [javascript]: Downloading https://files.pythonhosted.org/packages/9f/d3/4423f5918284cac51b7722537d96499ba9606df0f6eb03926c4c04b95a75/javascript-2015.32.57.1-py2.py3-none-any.whl
+[2023-05-27 20:02:31] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/80/39/eb41279325393617c3a8c221058a9ec56a3987ab3df5ec57ce6eab30b465/alacorder-80.8.3.tar.gz
+[2023-05-27 20:02:31] INFO root fetch - processPackages [usellm]: Downloading https://files.pythonhosted.org/packages/de/92/2f99339718f456c968cc799e0ae4c0079c5bb601742071e4fd1d7afe11c1/usellm-0.0.2.tar.gz
+[2023-05-27 20:02:31] INFO root fetch - processPackages [sylk-docs]: executing diffoscope
+[2023-05-27 20:02:31] INFO root fetch - processPackages [sylk-docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sylk_docs-0.0.2-py3-none-any.whl.zip tmp/sylk_docs-0.0.3-py3-none-any.whl.zip --markdown 20230527/s/sylk-docs/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 20:02:31] INFO root fetch - processPackages [xpanther]: executing diffoscope
+[2023-05-27 20:02:31] INFO root fetch - processPackages [xpanther]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpanther-1.1.1.tar.gz tmp/xpanther-1.1.2.tar.gz --markdown 20230527/x/xpanther/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-27 20:02:31] INFO root fetch - processPackages [yektatestapi]: Downloading https://files.pythonhosted.org/packages/c9/c1/de6e3fedf6be597239b2ab400776dd7bcde9fce88a1a5540112233804e98/yektatestapi-0.0.3.tar.gz
+[2023-05-27 20:02:32] INFO root fetch - processPackages [usellm]: executing diffoscope
+[2023-05-27 20:02:32] INFO root fetch - processPackages [usellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usellm-0.0.1.tar.gz tmp/usellm-0.0.2.tar.gz --markdown 20230527/u/usellm/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 20:02:32] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-27 20:02:32] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.8.2.tar.gz tmp/alacorder-80.8.3.tar.gz --markdown 20230527/a/alacorder/80.8.2-80.8.3/diff.md --exclude *.pyd
+[2023-05-27 20:02:32] INFO root fetch - processPackages [yektatestapi]: executing diffoscope
+[2023-05-27 20:02:32] INFO root fetch - processPackages [yektatestapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yektatestapi-0.0.2.tar.gz tmp/yektatestapi-0.0.3.tar.gz --markdown 20230527/y/yektatestapi/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 20:02:32] INFO root fetch - processPackages [javascript]: Downloading https://files.pythonhosted.org/packages/5f/55/8b80fcea4cca9c250b9cfc8e426dacdc59af014b10bbf5430a160619d7b6/javascript-2015.32.59-py2.py3-none-any.whl
+[2023-05-27 20:02:32] INFO root fetch - processPackages [javascript]: executing diffoscope
+[2023-05-27 20:02:32] INFO root fetch - processPackages [javascript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/javascript-2015.32.57.1-py2.py3-none-any.whl.zip tmp/javascript-2015.32.59-py2.py3-none-any.whl.zip --markdown 20230527/j/javascript/2015.32.57.1-2015.32.59/diff.md --exclude *.pyd
+[2023-05-27 20:02:32] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 20:02:33] INFO root fetch - main [MainThread]: End processing [sylk-docs]: success
+[2023-05-27 20:02:33] INFO root fetch - main [MainThread]: End processing [xpanther]: success
+[2023-05-27 20:02:33] INFO root fetch - main [MainThread]: End processing [usellm]: success
+[2023-05-27 20:02:33] INFO root fetch - main [MainThread]: End processing [natf]: success
+[2023-05-27 20:02:33] INFO root fetch - main [MainThread]: End processing [javascript]: success
+[2023-05-27 20:02:34] INFO root fetch - main [MainThread]: End processing [yektatestapi]: success
+[2023-05-27 20:02:34] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-27 20:02:34] INFO root fetch - main [MainThread]: Store serial: [18275960]
