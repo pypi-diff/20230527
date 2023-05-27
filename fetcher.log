@@ -7039,3 +7039,46 @@
 [2023-05-27 11:50:10] INFO root fetch - main [MainThread]: End processing [customtkinterx]: success
 [2023-05-27 11:50:58] INFO root fetch - main [MainThread]: End processing [logidrivepy]: success
 [2023-05-27 11:50:58] INFO root fetch - main [MainThread]: Store serial: [18273534]
+[2023-05-27 11:56:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273534]
+[2023-05-27 11:56:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 11:56:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: global-hotkeys
+[2023-05-27 11:56:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SunNeurons
+[2023-05-27 11:56:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hypothesis
+[2023-05-27 11:56:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: exc2dic
+[2023-05-27 11:56:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dscan-api-client
+[2023-05-27 11:56:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: seaplayer
+[2023-05-27 11:56:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: exc2dic
+[2023-05-27 11:56:07] WARNING root fetch - processPackages [SunNeurons]: Skipping, unable to determine old version
+[2023-05-27 11:56:07] INFO root fetch - main [MainThread]: End processing [SunNeurons] error
+[2023-05-27 11:56:07] INFO root fetch - processPackages [exc2dic]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-27 11:56:07] INFO root fetch - processPackages [global-hotkeys]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-27 11:56:07] INFO root fetch - processPackages [seaplayer]: New version: [0.5.4.dev1] Old Version: [0.5.3.dev3]
+[2023-05-27 11:56:07] INFO root fetch - processPackages [dscan-api-client]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-27 11:56:07] INFO root fetch - processPackages [exc2dic]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-27 11:56:07] INFO root fetch - processPackages [hypothesis]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-05-27 11:56:07] INFO root fetch - processPackages [exc2dic]: Downloading https://files.pythonhosted.org/packages/03/f9/f4a702b18a9a1be111e3b4e58c75f231e8ef0b9d522cb66f12c96ca3d0dc/exc2dic-1.0.4.tar.gz
+[2023-05-27 11:56:07] INFO root fetch - processPackages [exc2dic]: Downloading https://files.pythonhosted.org/packages/03/f9/f4a702b18a9a1be111e3b4e58c75f231e8ef0b9d522cb66f12c96ca3d0dc/exc2dic-1.0.4.tar.gz
+[2023-05-27 11:56:07] INFO root fetch - processPackages [hypothesis]: executing diffoscope
+[2023-05-27 11:56:07] INFO root fetch - processPackages [hypothesis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypothesis-6.9.1.tar.gz tmp/hypothesis-6.9.2.tar.gz --markdown 20230527/h/hypothesis/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-05-27 11:56:07] INFO root fetch - processPackages [seaplayer]: Downloading https://files.pythonhosted.org/packages/bc/4f/817732ff2ed0acc16f8e6bd94bcfe887cab73e9237f98250d43d29db24fa/seaplayer-0.5.4.dev1.tar.gz
+[2023-05-27 11:56:07] INFO root fetch - processPackages [dscan-api-client]: Downloading https://files.pythonhosted.org/packages/3a/39/99ae425766d2c421307ea3be50b010d7f8870241022797ddc3a0e444a874/dscan_api_client-1.0.3-py3-none-any.whl
+[2023-05-27 11:56:07] INFO root fetch - processPackages [global-hotkeys]: Downloading https://files.pythonhosted.org/packages/b2/d1/2ebeffe8d638a4e12a9d7df5f8c57aaa9b1cf63f56ce6339c5aa7ab353a1/global_hotkeys-0.0.6.tar.gz
+[2023-05-27 11:56:07] INFO root fetch - processPackages [exc2dic]: Downloading https://files.pythonhosted.org/packages/20/92/8f8a318360f1b6195613aa5ed6aa6459c3a5e5732b8774f9fab81dd61ed7/exc2dic-1.0.5.tar.gz
+[2023-05-27 11:56:07] INFO root fetch - processPackages [exc2dic]: Downloading https://files.pythonhosted.org/packages/20/92/8f8a318360f1b6195613aa5ed6aa6459c3a5e5732b8774f9fab81dd61ed7/exc2dic-1.0.5.tar.gz
+[2023-05-27 11:56:07] INFO root fetch - processPackages [dscan-api-client]: executing diffoscope
+[2023-05-27 11:56:07] INFO root fetch - processPackages [dscan-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscan_api_client-1.0.2-py3-none-any.whl.zip tmp/dscan_api_client-1.0.3-py3-none-any.whl.zip --markdown 20230527/d/dscan-api-client/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-27 11:56:08] INFO root fetch - processPackages [seaplayer]: executing diffoscope
+[2023-05-27 11:56:08] INFO root fetch - processPackages [seaplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplayer-0.5.3.dev3.tar.gz tmp/seaplayer-0.5.4.dev1.tar.gz --markdown 20230527/s/seaplayer/0.5.3.dev3-0.5.4.dev1/diff.md --exclude *.pyd
+[2023-05-27 11:56:08] INFO root fetch - processPackages [global-hotkeys]: executing diffoscope
+[2023-05-27 11:56:08] INFO root fetch - processPackages [global-hotkeys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/global_hotkeys-0.0.5.tar.gz tmp/global_hotkeys-0.0.6.tar.gz --markdown 20230527/g/global-hotkeys/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-27 11:56:08] INFO root fetch - processPackages [exc2dic]: executing diffoscope
+[2023-05-27 11:56:08] INFO root fetch - processPackages [exc2dic]: executing diffoscope
+[2023-05-27 11:56:08] INFO root fetch - processPackages [exc2dic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exc2dic-1.0.4.tar.gz tmp/exc2dic-1.0.5.tar.gz --markdown 20230527/e/exc2dic/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-27 11:56:08] INFO root fetch - processPackages [exc2dic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exc2dic-1.0.4.tar.gz tmp/exc2dic-1.0.5.tar.gz --markdown 20230527/e/exc2dic/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-27 11:56:09] INFO root fetch - main [MainThread]: End processing [exc2dic]: success
+[2023-05-27 11:56:09] INFO root fetch - main [MainThread]: End processing [exc2dic]: success
+[2023-05-27 11:56:09] INFO root fetch - main [MainThread]: End processing [global-hotkeys]: success
+[2023-05-27 11:56:09] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
+[2023-05-27 11:56:09] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
+[2023-05-27 11:56:09] INFO root fetch - main [MainThread]: End processing [hypothesis]: success
+[2023-05-27 11:56:09] INFO root fetch - main [MainThread]: Store serial: [18273555]
