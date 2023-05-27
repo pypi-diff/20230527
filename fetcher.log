@@ -4402,3 +4402,57 @@
 [2023-05-27 05:40:37] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-account]: success
 [2023-05-27 05:40:37] INFO root fetch - main [MainThread]: End processing [auto-editor]: success
 [2023-05-27 05:40:37] INFO root fetch - main [MainThread]: Store serial: [18272056]
+[2023-05-27 05:45:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272056]
+[2023-05-27 05:45:46] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-27 05:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lifetimefitting
+[2023-05-27 05:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dreamai
+[2023-05-27 05:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opencv-python-rolling
+[2023-05-27 05:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opencv-contrib-python-rolling
+[2023-05-27 05:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: opencv-python-headless-rolling
+[2023-05-27 05:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: airflow-provider-vineyard
+[2023-05-27 05:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: opencv-contrib-python-headless-rolling
+[2023-05-27 05:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vineyard
+[2023-05-27 05:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dreamai
+[2023-05-27 05:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: vineyard-bdist
+[2023-05-27 05:45:46] INFO root fetch - processPackages [dreamai]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-27 05:45:46] INFO root fetch - processPackages [dreamai]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-27 05:45:46] INFO root fetch - processPackages [lifetimefitting]: New version: [0.0.18] Old Version: [0.0.17]
+[2023-05-27 05:45:46] INFO root fetch - processPackages [opencv-contrib-python-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-05-27 05:45:46] INFO root fetch - processPackages [opencv-python-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-05-27 05:45:46] INFO root fetch - processPackages [opencv-python-headless-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-05-27 05:45:47] INFO root fetch - processPackages [dreamai]: executing diffoscope
+[2023-05-27 05:45:47] INFO root fetch - processPackages [dreamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai-0.8.0.tar.gz tmp/dreamai-0.9.0.tar.gz --markdown 20230527/d/dreamai/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 05:45:47] INFO root fetch - processPackages [airflow-provider-vineyard]: New version: [0.9.0] Old Version: [0.8.6]
+[2023-05-27 05:45:47] INFO root fetch - processPackages [dreamai]: executing diffoscope
+[2023-05-27 05:45:47] INFO root fetch - processPackages [dreamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai-0.8.0.tar.gz tmp/dreamai-0.9.0.tar.gz --markdown 20230527/d/dreamai/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 05:45:47] INFO root fetch - processPackages [vineyard]: New version: [0.9.0] Old Version: [0.8.6]
+[2023-05-27 05:45:47] INFO root fetch - processPackages [opencv-contrib-python-headless-rolling]: New version: [5.0.0.20221015] Old Version: [5.0.0.20221008]
+[2023-05-27 05:45:47] INFO root fetch - processPackages [vineyard-bdist]: New version: [0.14.7] Old Version: [0.14.6]
+[2023-05-27 05:45:47] INFO root fetch - processPackages [opencv-python-rolling]: Downloading https://files.pythonhosted.org/packages/32/6b/7a25c64d9114c7637e2850826c668c26d8ede5a8c04b15aa282508321da4/opencv_python_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-05-27 05:45:47] INFO root fetch - processPackages [opencv-contrib-python-rolling]: Downloading https://files.pythonhosted.org/packages/a3/97/2ea0710c3f154811d2c12291ed7a678dfa7a588f7a9e27440b9f9372a38a/opencv_contrib_python_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-05-27 05:45:47] INFO root fetch - processPackages [opencv-python-headless-rolling]: Downloading https://files.pythonhosted.org/packages/7f/d0/e5b36f57680408f36da0f3aa7615e343b05d5b08ec0548429a4cbcd9665b/opencv_python_headless_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-05-27 05:45:47] WARNING root fetch - processPackages [opencv-contrib-python-rolling]: Skipping package: exceeds size limit 43085134>=10485760
+[2023-05-27 05:45:47] INFO root fetch - main [MainThread]: End processing [opencv-contrib-python-rolling] error
+[2023-05-27 05:45:47] INFO root fetch - processPackages [lifetimefitting]: Downloading https://files.pythonhosted.org/packages/f9/c7/559c1816b9c3ac4b0ebd0535e03f9a1a1730d0f2867d992f4a6d221ea160/lifetimefitting-0.0.18.tar.gz
+[2023-05-27 05:45:47] INFO root fetch - processPackages [vineyard-bdist]: Downloading https://files.pythonhosted.org/packages/56/c0/9a53f5cea728241445c0e6dc004888f88979f1776bcdd9755681da3298b4/vineyard_bdist-0.14.6-py3-none-manylinux2014_x86_64.whl
+[2023-05-27 05:45:47] INFO root fetch - processPackages [opencv-contrib-python-headless-rolling]: Downloading https://files.pythonhosted.org/packages/52/d9/7ef539a10bce311d1e398e2ef46180316e0709bb45fe3c96989015f61412/opencv_contrib_python_headless_rolling-5.0.0.20221008-cp37-abi3-macosx_11_0_arm64.whl
+[2023-05-27 05:45:47] WARNING root fetch - processPackages [opencv-python-rolling]: Skipping package: exceeds size limit 32729233>=10485760
+[2023-05-27 05:45:47] INFO root fetch - main [MainThread]: End processing [opencv-python-rolling] error
+[2023-05-27 05:45:47] WARNING root fetch - processPackages [opencv-python-headless-rolling]: Skipping package: exceeds size limit 32729352>=10485760
+[2023-05-27 05:45:47] INFO root fetch - main [MainThread]: End processing [opencv-python-headless-rolling] error
+[2023-05-27 05:45:47] INFO root fetch - processPackages [lifetimefitting]: executing diffoscope
+[2023-05-27 05:45:47] INFO root fetch - processPackages [lifetimefitting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifetimefitting-0.0.17.tar.gz tmp/lifetimefitting-0.0.18.tar.gz --markdown 20230527/l/lifetimefitting/0.0.17-0.0.18/diff.md --exclude *.pyd
+[2023-05-27 05:45:47] WARNING root fetch - processPackages [opencv-contrib-python-headless-rolling]: Skipping package: exceeds size limit 42759572>=10485760
+[2023-05-27 05:45:47] INFO root fetch - main [MainThread]: End processing [opencv-contrib-python-headless-rolling] error
+[2023-05-27 05:45:47] WARNING root fetch - processPackages [vineyard-bdist]: Skipping package: exceeds size limit 22964086>=10485760
+[2023-05-27 05:45:47] INFO root fetch - main [MainThread]: End processing [vineyard-bdist] error
+[2023-05-27 05:45:47] INFO root fetch - processPackages [airflow-provider-vineyard]: executing diffoscope
+[2023-05-27 05:45:47] INFO root fetch - processPackages [airflow-provider-vineyard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow_provider_vineyard-0.8.6-py3-none-any.whl.zip tmp/airflow_provider_vineyard-0.9.0-py3-none-any.whl.zip --markdown 20230527/a/airflow-provider-vineyard/0.8.6-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 05:45:47] INFO root fetch - processPackages [vineyard]: executing diffoscope
+[2023-05-27 05:45:47] INFO root fetch - processPackages [vineyard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vineyard-0.8.6-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.zip tmp/vineyard-0.9.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.zip --markdown 20230527/v/vineyard/0.8.6-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 05:45:48] INFO root fetch - main [MainThread]: End processing [dreamai]: success
+[2023-05-27 05:45:48] INFO root fetch - main [MainThread]: End processing [dreamai]: success
+[2023-05-27 05:45:48] INFO root fetch - main [MainThread]: End processing [lifetimefitting]: success
+[2023-05-27 05:45:48] INFO root fetch - main [MainThread]: End processing [airflow-provider-vineyard]: success
+[2023-05-27 05:48:41] INFO root fetch - main [MainThread]: End processing [vineyard]: success
+[2023-05-27 05:48:41] INFO root fetch - main [MainThread]: Store serial: [18272111]
