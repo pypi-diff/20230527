@@ -12504,3 +12504,34 @@
 [2023-05-27 23:09:46] INFO root fetch - main [MainThread]: End processing [djangobible]: success
 [2023-05-27 23:09:48] INFO root fetch - main [MainThread]: End processing [spotPython]: success
 [2023-05-27 23:09:48] INFO root fetch - main [MainThread]: Store serial: [18276941]
+[2023-05-27 23:14:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276941]
+[2023-05-27 23:14:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 23:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docstring-generator
+[2023-05-27 23:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reytool
+[2023-05-27 23:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shenko
+[2023-05-27 23:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chatcmd
+[2023-05-27 23:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: blazekit
+[2023-05-27 23:14:57] INFO root fetch - processPackages [shenko]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-27 23:14:57] INFO root fetch - processPackages [docstring-generator]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-27 23:14:57] WARNING root fetch - processPackages [blazekit]: Skipping, unable to determine old version
+[2023-05-27 23:14:57] INFO root fetch - main [MainThread]: End processing [blazekit] error
+[2023-05-27 23:14:57] INFO root fetch - processPackages [chatcmd]: New version: [1.0.23] Old Version: [1.0.22]
+[2023-05-27 23:14:57] INFO root fetch - processPackages [reytool]: New version: [0.99] Old Version: [0.98]
+[2023-05-27 23:14:57] INFO root fetch - processPackages [reytool]: executing diffoscope
+[2023-05-27 23:14:57] INFO root fetch - processPackages [reytool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reytool-0.98-py3-none-any.whl.zip tmp/reytool-0.99-py3-none-any.whl.zip --markdown 20230527/r/reytool/0.98-0.99/diff.md --exclude *.pyd
+[2023-05-27 23:14:58] INFO root fetch - processPackages [shenko]: Downloading https://files.pythonhosted.org/packages/d2/7a/24534034e58ca2886f5a6a79b0f4d19556ee301c549fe42f5ac1db25e307/shenko-0.1.7.tar.gz
+[2023-05-27 23:14:58] INFO root fetch - processPackages [docstring-generator]: Downloading https://files.pythonhosted.org/packages/bb/8f/0f0f36071aa160e85c898d0847e5a619c8434d7146488b630fd8bb6e26a5/docstring-generator-0.2.2.tar.gz
+[2023-05-27 23:14:58] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/c7/f7/18f26c27d33d13a451050dbf206c84235621937faf3a5cc9c9c8920422b8/chatcmd-1.0.23.tar.gz
+[2023-05-27 23:14:58] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-27 23:14:58] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.22.tar.gz tmp/chatcmd-1.0.23.tar.gz --markdown 20230527/c/chatcmd/1.0.22-1.0.23/diff.md --exclude *.pyd
+[2023-05-27 23:14:58] INFO root fetch - processPackages [shenko]: Downloading https://files.pythonhosted.org/packages/81/ec/52775389bc53e2b215810833e1f93a3d2dba4817a86d4c9d4f82d9d28de3/shenko-0.1.8-py2.py3-none-any.whl
+[2023-05-27 23:14:58] INFO root fetch - processPackages [docstring-generator]: Downloading https://files.pythonhosted.org/packages/d7/76/bb73aaf3adbd0bc2a6a61332a3f0d19cc1d735cec2cf56966948cd5c3195/docstring-generator-0.3.0.tar.gz
+[2023-05-27 23:14:58] INFO root fetch - processPackages [docstring-generator]: executing diffoscope
+[2023-05-27 23:14:58] INFO root fetch - processPackages [docstring-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docstring-generator-0.2.2.tar.gz tmp/docstring-generator-0.3.0.tar.gz --markdown 20230527/d/docstring-generator/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-27 23:14:58] INFO root fetch - processPackages [shenko]: executing diffoscope
+[2023-05-27 23:14:58] INFO root fetch - processPackages [shenko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shenko-0.1.7.tar.gz tmp/shenko-0.1.8-py2.py3-none-any.whl.zip --markdown 20230527/s/shenko/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-27 23:14:58] INFO root fetch - main [MainThread]: End processing [reytool]: success
+[2023-05-27 23:14:59] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-27 23:14:59] INFO root fetch - main [MainThread]: End processing [shenko]: success
+[2023-05-27 23:14:59] INFO root fetch - main [MainThread]: End processing [docstring-generator]: success
+[2023-05-27 23:14:59] INFO root fetch - main [MainThread]: Store serial: [18276954]
