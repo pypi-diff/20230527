@@ -9927,3 +9927,52 @@
 [2023-05-27 17:15:11] INFO root fetch - main [MainThread]: End processing [django-wm]: success
 [2023-05-27 17:15:12] INFO root fetch - main [MainThread]: End processing [hotsos]: success
 [2023-05-27 17:15:12] INFO root fetch - main [MainThread]: Store serial: [18275200]
+[2023-05-27 17:20:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275200]
+[2023-05-27 17:20:21] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 17:20:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyezviz
+[2023-05-27 17:20:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: morpholib
+[2023-05-27 17:20:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: devchat
+[2023-05-27 17:20:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alicebot-adapter-onebot
+[2023-05-27 17:20:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: custom-utils
+[2023-05-27 17:20:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nsdpy
+[2023-05-27 17:20:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: file-name-attributes
+[2023-05-27 17:20:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ckanext-iso19115
+[2023-05-27 17:20:21] INFO root fetch - processPackages [devchat]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 17:20:21] INFO root fetch - processPackages [pyezviz]: New version: [0.2.0.9] Old Version: [0.2.0.8]
+[2023-05-27 17:20:21] INFO root fetch - processPackages [morpholib]: New version: [0.7.1.dev1] Old Version: [0.7.1]
+[2023-05-27 17:20:21] INFO root fetch - processPackages [nsdpy]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-27 17:20:21] INFO root fetch - processPackages [file-name-attributes]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-27 17:20:21] WARNING root fetch - processPackages [alicebot-adapter-onebot]: Skipping, unable to determine old version
+[2023-05-27 17:20:21] INFO root fetch - main [MainThread]: End processing [alicebot-adapter-onebot] error
+[2023-05-27 17:20:21] INFO root fetch - processPackages [custom-utils]: New version: [0.0.36] Old Version: [0.0.35]
+[2023-05-27 17:20:21] INFO root fetch - processPackages [pyezviz]: executing diffoscope
+[2023-05-27 17:20:21] INFO root fetch - processPackages [pyezviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyezviz-0.2.0.8.tar.gz tmp/pyezviz-0.2.0.9.tar.gz --markdown 20230527/p/pyezviz/0.2.0.8-0.2.0.9/diff.md --exclude *.pyd
+[2023-05-27 17:20:21] INFO root fetch - processPackages [ckanext-iso19115]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-27 17:20:21] INFO root fetch - processPackages [morpholib]: Downloading https://files.pythonhosted.org/packages/57/66/e5a68eafdbbacd42ee29702d6ca6d5421715eb403da91e9e43dc72c631b5/morpholib-0.7.1.tar.gz
+[2023-05-27 17:20:21] INFO root fetch - processPackages [nsdpy]: Downloading https://files.pythonhosted.org/packages/60/4a/af5f2f7b2a2f407296bcb586d927bdfe989e859421cb8e1ff6ec1d9cf602/nsdpy-0.2.3.tar.gz
+[2023-05-27 17:20:21] INFO root fetch - processPackages [ckanext-iso19115]: Downloading https://files.pythonhosted.org/packages/b5/8c/5f2b9ea767df88ee6492c9b871d12f9d20efd7425f97d50f3da7bdff800d/ckanext-iso19115-0.1.0.tar.gz
+[2023-05-27 17:20:21] INFO root fetch - processPackages [file-name-attributes]: Downloading https://files.pythonhosted.org/packages/6c/5a/fb2905d8b70599cf762415d89b2e625b5e25ead506718d071500017cc24a/file-name-attributes-0.2.4.tar.gz
+[2023-05-27 17:20:21] INFO root fetch - processPackages [devchat]: Downloading https://files.pythonhosted.org/packages/f3/61/920e416e3b6f168907abd78a183913dcd38186b961b9bb0a944ec3008ea5/devchat-0.1.9.tar.gz
+[2023-05-27 17:20:21] INFO root fetch - processPackages [custom-utils]: Downloading https://files.pythonhosted.org/packages/b0/ef/1be671c82911cfdffa4b84a6724f04c2d0b84684453d204ee2e55d469c29/custom-utils-0.0.36.tar.gz
+[2023-05-27 17:20:21] INFO root fetch - processPackages [morpholib]: executing diffoscope
+[2023-05-27 17:20:21] INFO root fetch - processPackages [morpholib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morpholib-0.7.1.tar.gz tmp/morpholib-0.7.1.dev1.tar.gz --markdown 20230527/m/morpholib/0.7.1-0.7.1.dev1/diff.md --exclude *.pyd
+[2023-05-27 17:20:21] INFO root fetch - processPackages [nsdpy]: Downloading https://files.pythonhosted.org/packages/32/db/8049a481123f5c77b71ac0463d3ddce89bc6be8f2fc7a7af1a4855177a72/nsdpy-0.2.4.tar.gz
+[2023-05-27 17:20:21] INFO root fetch - processPackages [devchat]: executing diffoscope
+[2023-05-27 17:20:21] INFO root fetch - processPackages [devchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devchat-0.1.8.tar.gz tmp/devchat-0.1.9.tar.gz --markdown 20230527/d/devchat/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 17:20:22] INFO root fetch - processPackages [file-name-attributes]: executing diffoscope
+[2023-05-27 17:20:22] INFO root fetch - processPackages [file-name-attributes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file-name-attributes-0.2.3.tar.gz tmp/file-name-attributes-0.2.4.tar.gz --markdown 20230527/f/file-name-attributes/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-27 17:20:22] INFO root fetch - processPackages [custom-utils]: executing diffoscope
+[2023-05-27 17:20:22] INFO root fetch - processPackages [custom-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom-utils-0.0.35.tar.gz tmp/custom-utils-0.0.36.tar.gz --markdown 20230527/c/custom-utils/0.0.35-0.0.36/diff.md --exclude *.pyd
+[2023-05-27 17:20:22] INFO root fetch - processPackages [nsdpy]: executing diffoscope
+[2023-05-27 17:20:22] INFO root fetch - processPackages [nsdpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsdpy-0.2.3.tar.gz tmp/nsdpy-0.2.4.tar.gz --markdown 20230527/n/nsdpy/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-27 17:20:22] INFO root fetch - processPackages [ckanext-iso19115]: Downloading https://files.pythonhosted.org/packages/8c/75/799f757835ee4fb9df50badf7302220353e0a4e3f858db53f09d694e0fba/ckanext-iso19115-0.1.1.tar.gz
+[2023-05-27 17:20:22] INFO root fetch - processPackages [ckanext-iso19115]: executing diffoscope
+[2023-05-27 17:20:22] INFO root fetch - processPackages [ckanext-iso19115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-iso19115-0.1.0.tar.gz tmp/ckanext-iso19115-0.1.1.tar.gz --markdown 20230527/c/ckanext-iso19115/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-27 17:20:23] INFO root fetch - main [MainThread]: End processing [pyezviz]: success
+[2023-05-27 17:20:23] INFO root fetch - main [MainThread]: End processing [morpholib]: success
+[2023-05-27 17:20:23] INFO root fetch - main [MainThread]: End processing [devchat]: success
+[2023-05-27 17:20:23] INFO root fetch - main [MainThread]: End processing [nsdpy]: success
+[2023-05-27 17:20:23] INFO root fetch - main [MainThread]: End processing [custom-utils]: success
+[2023-05-27 17:20:23] INFO root fetch - main [MainThread]: End processing [file-name-attributes]: success
+[2023-05-27 17:20:27] INFO root fetch - main [MainThread]: End processing [ckanext-iso19115]: success
+[2023-05-27 17:20:27] INFO root fetch - main [MainThread]: Store serial: [18275227]
