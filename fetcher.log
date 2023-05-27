@@ -5166,3 +5166,83 @@
 [2023-05-27 07:50:20] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-05-27 07:50:22] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-05-27 07:50:22] INFO root fetch - main [MainThread]: Store serial: [18272480]
+[2023-05-27 07:55:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272480]
+[2023-05-27 07:55:31] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-27 07:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-civo
+[2023-05-27 07:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: optimus-prime-transformers
+[2023-05-27 07:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqtcolor
+[2023-05-27 07:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-auth0
+[2023-05-27 07:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: RecruitmentCurveFitting
+[2023-05-27 07:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-akamai
+[2023-05-27 07:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gqylpy0
+[2023-05-27 07:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gqylpy1
+[2023-05-27 07:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pulumi-cloudflare
+[2023-05-27 07:55:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gqylpy2
+[2023-05-27 07:55:31] WARNING root fetch - processPackages [pyqtcolor]: Skipping, unable to determine old version
+[2023-05-27 07:55:31] INFO root fetch - processPackages [pyqtcolor]: Start processing: gqylpy3
+[2023-05-27 07:55:31] INFO root fetch - main [MainThread]: End processing [pyqtcolor] error
+[2023-05-27 07:55:31] INFO root fetch - processPackages [optimus-prime-transformers]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-27 07:55:31] WARNING root fetch - processPackages [gqylpy0]: Skipping, unable to determine old version
+[2023-05-27 07:55:31] INFO root fetch - processPackages [pulumi-civo]: New version: [2.4.0a1685164790] Old Version: [2.4.0a1685078476]
+[2023-05-27 07:55:31] INFO root fetch - processPackages [gqylpy0]: Start processing: gqylpy4
+[2023-05-27 07:55:31] WARNING root fetch - processPackages [gqylpy2]: Skipping, unable to determine old version
+[2023-05-27 07:55:31] WARNING root fetch - processPackages [RecruitmentCurveFitting]: Skipping, unable to determine old version
+[2023-05-27 07:55:31] INFO root fetch - main [MainThread]: End processing [gqylpy0] error
+[2023-05-27 07:55:31] INFO root fetch - processPackages [gqylpy2]: Start processing: pulumi-cloudinit
+[2023-05-27 07:55:31] INFO root fetch - processPackages [RecruitmentCurveFitting]: Start processing: lamindb
+[2023-05-27 07:55:31] INFO root fetch - main [MainThread]: End processing [gqylpy2] error
+[2023-05-27 07:55:31] WARNING root fetch - processPackages [gqylpy3]: Skipping, unable to determine old version
+[2023-05-27 07:55:31] WARNING root fetch - processPackages [gqylpy1]: Skipping, unable to determine old version
+[2023-05-27 07:55:31] INFO root fetch - main [MainThread]: End processing [RecruitmentCurveFitting] error
+[2023-05-27 07:55:31] INFO root fetch - processPackages [gqylpy3]: Start processing: digital-unit
+[2023-05-27 07:55:31] INFO root fetch - processPackages [pulumi-auth0]: New version: [2.9.0a1653604814] Old Version: [2.9.0a1651588791]
+[2023-05-27 07:55:31] INFO root fetch - processPackages [gqylpy1]: Start processing: pulumi-azuread
+[2023-05-27 07:55:31] INFO root fetch - main [MainThread]: End processing [gqylpy3] error
+[2023-05-27 07:55:31] INFO root fetch - processPackages [pulumi-akamai]: New version: [4.6.0a1685164730] Old Version: [4.6.0a1685078259]
+[2023-05-27 07:55:31] INFO root fetch - main [MainThread]: End processing [gqylpy1] error
+[2023-05-27 07:55:31] INFO root fetch - processPackages [pulumi-cloudflare]: New version: [5.3.0a1685164914] Old Version: [5.3.0a1685078774]
+[2023-05-27 07:55:31] WARNING root fetch - processPackages [gqylpy4]: Skipping, unable to determine old version
+[2023-05-27 07:55:31] INFO root fetch - processPackages [pulumi-cloudinit]: New version: [1.4.0a1685164992] Old Version: [1.4.0a1685078469]
+[2023-05-27 07:55:31] INFO root fetch - processPackages [gqylpy4]: Start processing: pulumi-cloudamqp
+[2023-05-27 07:55:31] INFO root fetch - main [MainThread]: End processing [gqylpy4] error
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-azuread]: New version: [5.9.0a1637590268] Old Version: [5.9.0]
+[2023-05-27 07:55:32] INFO root fetch - processPackages [lamindb]: New version: [0.9.6] Old Version: [0.9.4]
+[2023-05-27 07:55:32] INFO root fetch - processPackages [digital-unit]: New version: [1.5b0] Old Version: [1.5.4]
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-cloudamqp]: New version: [3.9.2] Old Version: [3.9.1]
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-azuread]: executing diffoscope
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-azuread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_azuread-5.9.0.tar.gz tmp/pulumi_azuread-5.9.0a1637590268.tar.gz --markdown 20230527/p/pulumi-azuread/5.9.0-5.9.0a1637590268/diff.md --exclude *.pyd
+[2023-05-27 07:55:32] INFO root fetch - processPackages [lamindb]: executing diffoscope
+[2023-05-27 07:55:32] INFO root fetch - processPackages [lamindb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamindb-0.9.4.tar.gz tmp/lamindb-0.9.6.tar.gz --markdown 20230527/l/lamindb/0.9.4-0.9.6/diff.md --exclude *.pyd
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-cloudamqp]: executing diffoscope
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-cloudamqp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudamqp-3.9.1.tar.gz tmp/pulumi_cloudamqp-3.9.2.tar.gz --markdown 20230527/p/pulumi-cloudamqp/3.9.1-3.9.2/diff.md --exclude *.pyd
+[2023-05-27 07:55:32] INFO root fetch - processPackages [digital-unit]: Downloading https://files.pythonhosted.org/packages/f7/6f/2c820bd1f67396af6615825d451035077976b32afbb230e04ff7cbcd9179/digital_unit-1.5.4.tar.gz
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-akamai]: Downloading https://files.pythonhosted.org/packages/3a/82/961bd74b4eff1e26c1e8b9817e5f4eb4ebd939b3bedf08130347f3503eb9/pulumi_akamai-4.6.0a1685164730.tar.gz
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-cloudinit]: Downloading https://files.pythonhosted.org/packages/0d/5e/563709781e2588ec9127f653a3d3ffda695e6acaf756e7748d48564aff98/pulumi_cloudinit-1.4.0a1685164992.tar.gz
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-cloudflare]: Downloading https://files.pythonhosted.org/packages/e4/cd/952d6862deb74db9d579e2edbf603ab2ff7c2086cc7473b6d0fcc0eb90d2/pulumi_cloudflare-5.3.0a1685164914.tar.gz
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-civo]: Downloading https://files.pythonhosted.org/packages/4a/40/43ce10a2dedda98694e5335664b4084aa8f50aef570dc6e8a2fa1db41563/pulumi_civo-2.4.0a1685164790.tar.gz
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-auth0]: executing diffoscope
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-auth0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_auth0-2.9.0a1651588791.tar.gz tmp/pulumi_auth0-2.9.0a1653604814.tar.gz --markdown 20230527/p/pulumi-auth0/2.9.0a1651588791-2.9.0a1653604814/diff.md --exclude *.pyd
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-cloudinit]: executing diffoscope
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-cloudinit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudinit-1.4.0a1685078469.tar.gz tmp/pulumi_cloudinit-1.4.0a1685164992.tar.gz --markdown 20230527/p/pulumi-cloudinit/1.4.0a1685078469-1.4.0a1685164992/diff.md --exclude *.pyd
+[2023-05-27 07:55:32] INFO root fetch - processPackages [optimus-prime-transformers]: Downloading https://files.pythonhosted.org/packages/02/ea/d23e958ca842ccfa21948ae236f95dac6d565eb7071dd1c757ee04c77fb8/optimus-prime-transformers-1.1.4.tar.gz
+[2023-05-27 07:55:32] INFO root fetch - processPackages [digital-unit]: executing diffoscope
+[2023-05-27 07:55:32] INFO root fetch - processPackages [digital-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digital_unit-1.5.4.tar.gz tmp/digital_unit-1.5b0.tar.gz --markdown 20230527/d/digital-unit/1.5.4-1.5b0/diff.md --exclude *.pyd
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-akamai]: executing diffoscope
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-akamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_akamai-4.6.0a1685078259.tar.gz tmp/pulumi_akamai-4.6.0a1685164730.tar.gz --markdown 20230527/p/pulumi-akamai/4.6.0a1685078259-4.6.0a1685164730/diff.md --exclude *.pyd
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-cloudflare]: executing diffoscope
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-cloudflare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudflare-5.3.0a1685078774.tar.gz tmp/pulumi_cloudflare-5.3.0a1685164914.tar.gz --markdown 20230527/p/pulumi-cloudflare/5.3.0a1685078774-5.3.0a1685164914/diff.md --exclude *.pyd
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-civo]: executing diffoscope
+[2023-05-27 07:55:32] INFO root fetch - processPackages [pulumi-civo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_civo-2.4.0a1685078476.tar.gz tmp/pulumi_civo-2.4.0a1685164790.tar.gz --markdown 20230527/p/pulumi-civo/2.4.0a1685078476-2.4.0a1685164790/diff.md --exclude *.pyd
+[2023-05-27 07:55:32] INFO root fetch - processPackages [optimus-prime-transformers]: executing diffoscope
+[2023-05-27 07:55:32] INFO root fetch - processPackages [optimus-prime-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimus-prime-transformers-1.1.3.tar.gz tmp/optimus-prime-transformers-1.1.4.tar.gz --markdown 20230527/o/optimus-prime-transformers/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-27 07:55:33] INFO root fetch - main [MainThread]: End processing [pulumi-cloudinit]: success
+[2023-05-27 07:55:33] INFO root fetch - main [MainThread]: End processing [digital-unit]: success
+[2023-05-27 07:55:34] INFO root fetch - main [MainThread]: End processing [lamindb]: success
+[2023-05-27 07:55:34] INFO root fetch - main [MainThread]: End processing [pulumi-civo]: success
+[2023-05-27 07:55:34] INFO root fetch - main [MainThread]: End processing [optimus-prime-transformers]: success
+[2023-05-27 07:55:34] INFO root fetch - main [MainThread]: End processing [pulumi-cloudflare]: success
+[2023-05-27 07:55:34] INFO root fetch - main [MainThread]: End processing [pulumi-cloudamqp]: success
+[2023-05-27 07:55:35] INFO root fetch - main [MainThread]: End processing [pulumi-azuread]: success
+[2023-05-27 07:55:35] INFO root fetch - main [MainThread]: End processing [pulumi-auth0]: success
+[2023-05-27 07:55:35] INFO root fetch - main [MainThread]: End processing [pulumi-akamai]: success
+[2023-05-27 07:55:35] INFO root fetch - main [MainThread]: Store serial: [18272533]
