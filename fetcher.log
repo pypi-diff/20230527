@@ -9021,3 +9021,27 @@
 [2023-05-27 16:04:02] INFO root fetch - main [MainThread]: End processing [ramodels]: success
 [2023-05-27 16:04:02] INFO root fetch - main [MainThread]: End processing [UnlimitedGPT]: success
 [2023-05-27 16:04:02] INFO root fetch - main [MainThread]: Store serial: [18274673]
+[2023-05-27 16:09:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274673]
+[2023-05-27 16:09:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 16:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: time-series-binder
+[2023-05-27 16:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nopaths
+[2023-05-27 16:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: training-pipeline
+[2023-05-27 16:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bibleref
+[2023-05-27 16:09:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: time-series-binder
+[2023-05-27 16:09:11] INFO root fetch - processPackages [bibleref]: New version: [0.9.0] Old Version: [0.14.0]
+[2023-05-27 16:09:11] WARNING root fetch - processPackages [training-pipeline]: Skipping, unable to determine old version
+[2023-05-27 16:09:11] INFO root fetch - main [MainThread]: End processing [training-pipeline] error
+[2023-05-27 16:09:11] INFO root fetch - processPackages [time-series-binder]: New version: [1.0.1] Old Version: [0.0.1]
+[2023-05-27 16:09:11] WARNING root fetch - processPackages [nopaths]: Skipping, unable to determine old version
+[2023-05-27 16:09:11] INFO root fetch - main [MainThread]: End processing [nopaths] error
+[2023-05-27 16:09:11] INFO root fetch - processPackages [time-series-binder]: New version: [1.0.1] Old Version: [0.0.1]
+[2023-05-27 16:09:11] INFO root fetch - processPackages [bibleref]: Downloading https://files.pythonhosted.org/packages/83/3d/13161ef254609721227c43b4d4e924ace0e8f89225cfdc736c369b30e316/bibleref-0.14.0.tar.gz
+[2023-05-27 16:09:11] ERROR root fetch - processPackages [time-series-binder]: Unable to fetch info: No such project/version 'time-series-binder' 0.0.1
+[2023-05-27 16:09:11] ERROR root fetch - processPackages [time-series-binder]: Unable to fetch info: No such project/version 'time-series-binder' 0.0.1
+[2023-05-27 16:09:11] INFO root fetch - main [MainThread]: End processing [time-series-binder] error
+[2023-05-27 16:09:11] INFO root fetch - main [MainThread]: End processing [time-series-binder] error
+[2023-05-27 16:09:12] INFO root fetch - processPackages [bibleref]: Downloading https://files.pythonhosted.org/packages/35/ac/862d0dbedcf5680036f724719caf6c0865d058fdea2978ab6a9b04612fcb/bibleref-0.9.0.tar.gz
+[2023-05-27 16:09:12] INFO root fetch - processPackages [bibleref]: executing diffoscope
+[2023-05-27 16:09:12] INFO root fetch - processPackages [bibleref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bibleref-0.14.0.tar.gz tmp/bibleref-0.9.0.tar.gz --markdown 20230527/b/bibleref/0.14.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 16:09:14] INFO root fetch - main [MainThread]: End processing [bibleref]: success
+[2023-05-27 16:09:14] INFO root fetch - main [MainThread]: Store serial: [18274695]
