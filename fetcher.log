@@ -8866,3 +8866,22 @@
 [2023-05-27 15:37:23] INFO root fetch - main [MainThread]: End processing [optimal-loc]: success
 [2023-05-27 15:37:47] INFO root fetch - main [MainThread]: End processing [Geode-Background]: success
 [2023-05-27 15:37:47] INFO root fetch - main [MainThread]: Store serial: [18274563]
+[2023-05-27 15:42:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274563]
+[2023-05-27 15:42:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-27 15:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Geode-Explicit
+[2023-05-27 15:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: findmyorder
+[2023-05-27 15:42:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: peaqevcore
+[2023-05-27 15:42:56] INFO root fetch - processPackages [findmyorder]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-27 15:42:56] INFO root fetch - processPackages [Geode-Explicit]: New version: [4.0.0rc2] Old Version: [4.0.0rc1]
+[2023-05-27 15:42:56] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-05-27 15:42:56] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-05-27 15:42:56] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.3.8.tar.gz tmp/findmyorder-1.3.9.tar.gz --markdown 20230527/f/findmyorder/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-27 15:42:56] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-05-27 15:42:56] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230527/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-05-27 15:42:56] INFO root fetch - processPackages [Geode-Explicit]: Downloading https://files.pythonhosted.org/packages/e5/fb/09261e025767b624f94406b5f5888bb9ca863b487ff8c5895fd1ebc7b927/Geode_Explicit-4.0.0rc2-cp39-cp39-win_amd64.whl
+[2023-05-27 15:42:57] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-05-27 15:42:57] INFO root fetch - processPackages [Geode-Explicit]: executing diffoscope
+[2023-05-27 15:42:57] INFO root fetch - processPackages [Geode-Explicit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Explicit-4.0.0rc1-cp39-cp39-win_amd64.whl.zip tmp/Geode_Explicit-4.0.0rc2-cp39-cp39-win_amd64.whl.zip --markdown 20230527/G/Geode-Explicit/4.0.0rc1-4.0.0rc2/diff.md --exclude *.pyd
+[2023-05-27 15:42:57] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-05-27 15:43:14] INFO root fetch - main [MainThread]: End processing [Geode-Explicit]: success
+[2023-05-27 15:43:14] INFO root fetch - main [MainThread]: Store serial: [18274578]
