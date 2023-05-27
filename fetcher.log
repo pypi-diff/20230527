@@ -11641,3 +11641,19 @@
 [2023-05-27 21:16:53] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
 [2023-05-27 21:17:01] INFO root fetch - main [MainThread]: End processing [ooo-dev-tools]: success
 [2023-05-27 21:17:01] INFO root fetch - main [MainThread]: Store serial: [18276323]
+[2023-05-27 21:22:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276323]
+[2023-05-27 21:22:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 21:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AIsketcher
+[2023-05-27 21:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: metaindex
+[2023-05-27 21:22:10] INFO root fetch - processPackages [AIsketcher]: New version: [0.0.0.3] Old Version: [0.0.0.2]
+[2023-05-27 21:22:10] INFO root fetch - processPackages [metaindex]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-05-27 21:22:10] INFO root fetch - processPackages [metaindex]: Downloading https://files.pythonhosted.org/packages/48/d7/f1d2340982c592bc7d1228938a52cdf577e58f9dd2cc9619f953e1b23291/metaindex-2.1.1.tar.gz
+[2023-05-27 21:22:10] INFO root fetch - processPackages [AIsketcher]: Downloading https://files.pythonhosted.org/packages/0c/94/07c2a5b86ebaa0f54054efabf8ba3f387b69764b97cddcc0088b74585dcc/AIsketcher-0.0.0.3-py3-none-any.whl
+[2023-05-27 21:22:10] INFO root fetch - processPackages [AIsketcher]: executing diffoscope
+[2023-05-27 21:22:10] INFO root fetch - processPackages [AIsketcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AIsketcher-0.0.0.2-py3-none-any.whl.zip tmp/AIsketcher-0.0.0.3-py3-none-any.whl.zip --markdown 20230527/A/AIsketcher/0.0.0.2-0.0.0.3/diff.md --exclude *.pyd
+[2023-05-27 21:22:10] INFO root fetch - processPackages [metaindex]: Downloading https://files.pythonhosted.org/packages/27/61/0103a04e611f965d4288962530d8f67cadf157c4ecf7ae8d2f6eded40a4a/metaindex-2.2.0.tar.gz
+[2023-05-27 21:22:10] INFO root fetch - processPackages [metaindex]: executing diffoscope
+[2023-05-27 21:22:10] INFO root fetch - processPackages [metaindex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaindex-2.1.1.tar.gz tmp/metaindex-2.2.0.tar.gz --markdown 20230527/m/metaindex/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2023-05-27 21:22:11] INFO root fetch - main [MainThread]: End processing [AIsketcher]: success
+[2023-05-27 21:22:13] INFO root fetch - main [MainThread]: End processing [metaindex]: success
+[2023-05-27 21:22:13] INFO root fetch - main [MainThread]: Store serial: [18276328]
