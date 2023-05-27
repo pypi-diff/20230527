@@ -7638,3 +7638,50 @@
 [2023-05-27 13:06:15] INFO root fetch - main [MainThread]: End processing [UnlimitedGPT]: success
 [2023-05-27 13:06:15] INFO root fetch - main [MainThread]: End processing [autoxx]: success
 [2023-05-27 13:06:15] INFO root fetch - main [MainThread]: Store serial: [18273920]
+[2023-05-27 13:11:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273920]
+[2023-05-27 13:11:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 13:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: UnlimitedGPT
+[2023-05-27 13:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyOTRS
+[2023-05-27 13:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyOTRS
+[2023-05-27 13:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: act4e-mcdp
+[2023-05-27 13:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vtrans
+[2023-05-27 13:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyais
+[2023-05-27 13:11:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dscan-api-client
+[2023-05-27 13:11:24] INFO root fetch - processPackages [PyOTRS]: New version: [1.0.1] Old Version: [0.9.0]
+[2023-05-27 13:11:24] INFO root fetch - processPackages [UnlimitedGPT]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-27 13:11:24] INFO root fetch - processPackages [act4e-mcdp]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-05-27 13:11:24] INFO root fetch - processPackages [PyOTRS]: New version: [1.0.1] Old Version: [0.9.0]
+[2023-05-27 13:11:24] INFO root fetch - processPackages [dscan-api-client]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-27 13:11:24] INFO root fetch - processPackages [vtrans]: New version: [2.0.0] Old Version: [1.5.0]
+[2023-05-27 13:11:24] INFO root fetch - processPackages [pyais]: New version: [2.5.3] Old Version: [2.5.2]
+[2023-05-27 13:11:24] INFO root fetch - processPackages [dscan-api-client]: executing diffoscope
+[2023-05-27 13:11:24] INFO root fetch - processPackages [dscan-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscan_api_client-1.0.3-py3-none-any.whl.zip tmp/dscan_api_client-1.0.4-py3-none-any.whl.zip --markdown 20230527/d/dscan-api-client/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-27 13:11:24] INFO root fetch - processPackages [UnlimitedGPT]: Downloading https://files.pythonhosted.org/packages/16/92/4087b6fea62c0c986ddf131e0d513545a93c28915f1e3d6a722f5f7301f4/UnlimitedGPT-0.0.3-py3-none-any.whl
+[2023-05-27 13:11:24] INFO root fetch - processPackages [act4e-mcdp]: Downloading https://files.pythonhosted.org/packages/82/5a/503277bf593a22ac3b7951b1263372c68be43286064c82fe74c4c2fdb200/act4e_mcdp-0.4.3-py3-none-any.whl
+[2023-05-27 13:11:24] INFO root fetch - processPackages [vtrans]: Downloading https://files.pythonhosted.org/packages/09/47/5991b5ba11e279671379c12286f34429cbb172405f1dc8d0bcb6548ce998/vtrans-1.5.0.tar.gz
+[2023-05-27 13:11:24] INFO root fetch - processPackages [PyOTRS]: Downloading https://files.pythonhosted.org/packages/b9/63/898662030e06c0cd4919e6948c20e08c5a6f1c99e1909e9548cd6d125c35/PyOTRS-1.0.1.tar.gz
+[2023-05-27 13:11:24] INFO root fetch - processPackages [PyOTRS]: Downloading https://files.pythonhosted.org/packages/b9/63/898662030e06c0cd4919e6948c20e08c5a6f1c99e1909e9548cd6d125c35/PyOTRS-1.0.1.tar.gz
+[2023-05-27 13:11:24] INFO root fetch - processPackages [pyais]: Downloading https://files.pythonhosted.org/packages/7d/64/42440de3eb86c52aaa9dab5969ba4476083d37999972197716ac8d1702ed/pyais-2.5.2.tar.gz
+[2023-05-27 13:11:25] INFO root fetch - processPackages [PyOTRS]: executing diffoscope
+[2023-05-27 13:11:25] INFO root fetch - processPackages [PyOTRS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyOTRS-0.9.0.tar.gz tmp/PyOTRS-1.0.1.tar.gz --markdown 20230527/P/PyOTRS/0.9.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 13:11:25] INFO root fetch - processPackages [PyOTRS]: executing diffoscope
+[2023-05-27 13:11:25] INFO root fetch - processPackages [PyOTRS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyOTRS-0.9.0.tar.gz tmp/PyOTRS-1.0.1.tar.gz --markdown 20230527/P/PyOTRS/0.9.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 13:11:25] INFO root fetch - processPackages [act4e-mcdp]: executing diffoscope
+[2023-05-27 13:11:25] INFO root fetch - processPackages [act4e-mcdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act4e_mcdp-0.4.2-py3-none-any.whl.zip tmp/act4e_mcdp-0.4.3-py3-none-any.whl.zip --markdown 20230527/a/act4e-mcdp/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-05-27 13:11:25] INFO root fetch - processPackages [UnlimitedGPT]: Downloading https://files.pythonhosted.org/packages/30/d2/550e7fad593af7f6a0a80dd670fd7d26c6103c2311a82d9c928b78f8ddb1/UnlimitedGPT-0.0.4.tar.gz
+[2023-05-27 13:11:25] INFO root fetch - processPackages [pyais]: Downloading https://files.pythonhosted.org/packages/6b/3d/8c4cd9ec403f532e86f44d132a3e2a96aaf2d887b3a647fe5869e5c9b6ff/pyais-2.5.3.tar.gz
+[2023-05-27 13:11:25] INFO root fetch - processPackages [vtrans]: Downloading https://files.pythonhosted.org/packages/01/8b/0f815c260ddeba36ef0588ff57bf66f777a1068d0176731a956106383f10/vtrans-2.0.0.tar.gz
+[2023-05-27 13:11:25] INFO root fetch - processPackages [UnlimitedGPT]: executing diffoscope
+[2023-05-27 13:11:25] INFO root fetch - processPackages [UnlimitedGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UnlimitedGPT-0.0.3-py3-none-any.whl.zip tmp/UnlimitedGPT-0.0.4.tar.gz --markdown 20230527/U/UnlimitedGPT/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-27 13:11:25] INFO root fetch - processPackages [pyais]: executing diffoscope
+[2023-05-27 13:11:25] INFO root fetch - processPackages [pyais]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyais-2.5.2.tar.gz tmp/pyais-2.5.3.tar.gz --markdown 20230527/p/pyais/2.5.2-2.5.3/diff.md --exclude *.pyd
+[2023-05-27 13:11:25] INFO root fetch - processPackages [vtrans]: executing diffoscope
+[2023-05-27 13:11:25] INFO root fetch - processPackages [vtrans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtrans-1.5.0.tar.gz tmp/vtrans-2.0.0.tar.gz --markdown 20230527/v/vtrans/1.5.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-27 13:11:26] INFO root fetch - main [MainThread]: End processing [PyOTRS]: success
+[2023-05-27 13:11:26] INFO root fetch - main [MainThread]: End processing [act4e-mcdp]: success
+[2023-05-27 13:11:26] INFO root fetch - main [MainThread]: End processing [UnlimitedGPT]: success
+[2023-05-27 13:11:26] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
+[2023-05-27 13:11:26] INFO root fetch - main [MainThread]: End processing [vtrans]: success
+[2023-05-27 13:11:26] INFO root fetch - main [MainThread]: End processing [PyOTRS]: success
+[2023-05-27 13:11:26] INFO root fetch - main [MainThread]: End processing [pyais]: success
+[2023-05-27 13:11:26] INFO root fetch - main [MainThread]: Store serial: [18273936]
