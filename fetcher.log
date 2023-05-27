@@ -11947,3 +11947,29 @@
 [2023-05-27 22:01:12] INFO root fetch - main [MainThread]: End processing [jupyter-converter]: success
 [2023-05-27 22:01:12] INFO root fetch - main [MainThread]: End processing [jupyter-converter]: success
 [2023-05-27 22:01:12] INFO root fetch - main [MainThread]: Store serial: [18276526]
+[2023-05-27 22:06:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276526]
+[2023-05-27 22:06:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 22:06:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmo
+[2023-05-27 22:06:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aws-lambda-layer
+[2023-05-27 22:06:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: norman-ai
+[2023-05-27 22:06:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: swachhdata
+[2023-05-27 22:06:21] INFO root fetch - processPackages [llmo]: New version: [0.5.0] Old Version: [0.4.2]
+[2023-05-27 22:06:21] INFO root fetch - processPackages [aws-lambda-layer]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-27 22:06:21] INFO root fetch - processPackages [norman-ai]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-27 22:06:21] INFO root fetch - processPackages [swachhdata]: New version: [2.0.0rc2] Old Version: [2.0.0rc1]
+[2023-05-27 22:06:21] INFO root fetch - processPackages [aws-lambda-layer]: Downloading https://files.pythonhosted.org/packages/35/88/5428a3d474975bbf722771513067b3442e0120c3d79c6a97c6c45369bd5a/aws_lambda_layer-0.2.4.tar.gz
+[2023-05-27 22:06:21] INFO root fetch - processPackages [norman-ai]: Downloading https://files.pythonhosted.org/packages/ec/92/36d40323a3fd488800dd5e323ff312b7906ed5198ba0a9b7cb8b1e72770d/norman_ai-0.0.7.tar.gz
+[2023-05-27 22:06:21] INFO root fetch - processPackages [llmo]: Downloading https://files.pythonhosted.org/packages/3b/1e/ec679bf98f8b913dde54d1c38f27e27cdf0ed510c4d2e098f17416c218ab/llmo-0.5.0.tar.gz
+[2023-05-27 22:06:21] INFO root fetch - processPackages [aws-lambda-layer]: executing diffoscope
+[2023-05-27 22:06:21] INFO root fetch - processPackages [aws-lambda-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_lambda_layer-0.2.3.tar.gz tmp/aws_lambda_layer-0.2.4.tar.gz --markdown 20230527/a/aws-lambda-layer/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-27 22:06:21] INFO root fetch - processPackages [swachhdata]: executing diffoscope
+[2023-05-27 22:06:21] INFO root fetch - processPackages [swachhdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swachhdata-2.0.0rc1-py3-none-any.whl.zip tmp/swachhdata-2.0.0rc2-py3-none-any.whl.zip --markdown 20230527/s/swachhdata/2.0.0rc1-2.0.0rc2/diff.md --exclude *.pyd
+[2023-05-27 22:06:21] INFO root fetch - processPackages [llmo]: executing diffoscope
+[2023-05-27 22:06:21] INFO root fetch - processPackages [llmo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmo-0.4.2.tar.gz tmp/llmo-0.5.0.tar.gz --markdown 20230527/l/llmo/0.4.2-0.5.0/diff.md --exclude *.pyd
+[2023-05-27 22:06:21] INFO root fetch - processPackages [norman-ai]: executing diffoscope
+[2023-05-27 22:06:21] INFO root fetch - processPackages [norman-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/norman_ai-0.0.6.tar.gz tmp/norman_ai-0.0.7.tar.gz --markdown 20230527/n/norman-ai/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-27 22:06:22] INFO root fetch - main [MainThread]: End processing [aws-lambda-layer]: success
+[2023-05-27 22:06:22] INFO root fetch - main [MainThread]: End processing [norman-ai]: success
+[2023-05-27 22:06:22] INFO root fetch - main [MainThread]: End processing [llmo]: success
+[2023-05-27 22:06:22] INFO root fetch - main [MainThread]: End processing [swachhdata]: success
+[2023-05-27 22:06:22] INFO root fetch - main [MainThread]: Store serial: [18276539]
