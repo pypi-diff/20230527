@@ -4890,3 +4890,11 @@
 [2023-05-27 06:57:30] INFO root fetch - main [MainThread]: End processing [thztools]: success
 [2023-05-27 06:57:30] INFO root fetch - main [MainThread]: End processing [cloudpy-org]: success
 [2023-05-27 06:57:30] INFO root fetch - main [MainThread]: Store serial: [18272334]
+[2023-05-27 07:02:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272334]
+[2023-05-27 07:02:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-27 07:02:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dask-cuda
+[2023-05-27 07:02:39] INFO root fetch - processPackages [dask-cuda]: New version: [23.8.0a230526] Old Version: [23.8.0a230525]
+[2023-05-27 07:02:39] INFO root fetch - processPackages [dask-cuda]: executing diffoscope
+[2023-05-27 07:02:39] INFO root fetch - processPackages [dask-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask-cuda-23.8.0a230525.tar.gz tmp/dask-cuda-23.8.0a230526.tar.gz --markdown 20230527/d/dask-cuda/23.8.0a230525-23.8.0a230526/diff.md --exclude *.pyd
+[2023-05-27 07:02:40] INFO root fetch - main [MainThread]: End processing [dask-cuda]: success
+[2023-05-27 07:02:40] INFO root fetch - main [MainThread]: Store serial: [18272334]
