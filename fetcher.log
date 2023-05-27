@@ -5437,3 +5437,55 @@
 [2023-05-27 08:16:37] INFO root fetch - main [MainThread]: End processing [pulumi-github]: success
 [2023-05-27 08:16:41] INFO root fetch - main [MainThread]: End processing [omnixai]: success
 [2023-05-27 08:16:41] INFO root fetch - main [MainThread]: Store serial: [18272609]
+[2023-05-27 08:21:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272609]
+[2023-05-27 08:21:50] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 08:21:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: compose-py
+[2023-05-27 08:21:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-mongodbatlas
+[2023-05-27 08:21:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cambridge
+[2023-05-27 08:21:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pretext
+[2023-05-27 08:21:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-tools-scripts
+[2023-05-27 08:21:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-docker
+[2023-05-27 08:21:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-minio
+[2023-05-27 08:21:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: scovie
+[2023-05-27 08:21:50] INFO root fetch - processPackages [pulumi-mongodbatlas]: New version: [3.9.0a1685166160] Old Version: [3.9.0a1685080823]
+[2023-05-27 08:21:50] INFO root fetch - processPackages [compose-py]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-27 08:21:50] INFO root fetch - processPackages [cambridge]: New version: [3.5.9] Old Version: [3.5.8]
+[2023-05-27 08:21:50] INFO root fetch - processPackages [pulumi-minio]: New version: [0.9.1a1682440158] Old Version: [0.9.1a1681933919]
+[2023-05-27 08:21:50] INFO root fetch - processPackages [python-tools-scripts]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-05-27 08:21:50] INFO root fetch - processPackages [scovie]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 08:21:50] INFO root fetch - processPackages [pulumi-docker]: New version: [4.3.0a1685165956] Old Version: [4.3.0a1685079752]
+[2023-05-27 08:21:50] INFO root fetch - processPackages [pretext]: New version: [1.5.4.dev20230527] Old Version: [1.5.4.dev20230526]
+[2023-05-27 08:21:50] INFO root fetch - processPackages [python-tools-scripts]: Downloading https://files.pythonhosted.org/packages/08/9e/8ceb65814db258a32b107535a7836b9388b7fbb5c10f1e817b69e04f1384/python-tools-scripts-0.9.6.tar.gz
+[2023-05-27 08:21:50] INFO root fetch - processPackages [pulumi-minio]: executing diffoscope
+[2023-05-27 08:21:50] INFO root fetch - processPackages [cambridge]: Downloading https://files.pythonhosted.org/packages/82/97/1383d479792981f8ffd3e8a1b23087088d1f6449219c572c4cfe32575464/cambridge-3.5.8.tar.gz
+[2023-05-27 08:21:50] INFO root fetch - processPackages [pulumi-minio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_minio-0.9.1a1681933919.tar.gz tmp/pulumi_minio-0.9.1a1682440158.tar.gz --markdown 20230527/p/pulumi-minio/0.9.1a1681933919-0.9.1a1682440158/diff.md --exclude *.pyd
+[2023-05-27 08:21:50] INFO root fetch - processPackages [scovie]: Downloading https://files.pythonhosted.org/packages/37/25/5325046d0cd727599ef48c9efa60a6cfd75bc7e62f9e2935d2e62bc06ad0/scovie-0.0.4.tar.gz
+[2023-05-27 08:21:50] INFO root fetch - processPackages [pulumi-mongodbatlas]: Downloading https://files.pythonhosted.org/packages/ed/97/fa022f88d6058a47c9621f6ed81e38fe1939127f9f894426739652f290a4/pulumi_mongodbatlas-3.9.0a1685166160.tar.gz
+[2023-05-27 08:21:50] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/82/aa/4c1ad37896ad3e7a60baee2292bc3b13b379f27487fffdc27dfc22701078/pretext-1.5.4.dev20230527.tar.gz
+[2023-05-27 08:21:50] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/48/be/5f5224e0efa4979f38e8cf1dbc9c3b7c81f865b37bc962a0c6418d3a39e4/pulumi_docker-4.3.0a1685079752.tar.gz
+[2023-05-27 08:21:50] WARNING root fetch - processPackages [scovie]: Skipping package: exceeds size limit 26707094>=10485760
+[2023-05-27 08:21:50] INFO root fetch - main [MainThread]: End processing [scovie] error
+[2023-05-27 08:21:50] INFO root fetch - processPackages [pulumi-mongodbatlas]: executing diffoscope
+[2023-05-27 08:21:50] INFO root fetch - processPackages [pulumi-mongodbatlas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_mongodbatlas-3.9.0a1685080823.tar.gz tmp/pulumi_mongodbatlas-3.9.0a1685166160.tar.gz --markdown 20230527/p/pulumi-mongodbatlas/3.9.0a1685080823-3.9.0a1685166160/diff.md --exclude *.pyd
+[2023-05-27 08:21:50] INFO root fetch - processPackages [compose-py]: Downloading https://files.pythonhosted.org/packages/ee/8e/64bd40f1b2e54dd0845fd5f243021ae493a787372853bea5324cdd1d772a/compose-py-0.3.0.tar.gz
+[2023-05-27 08:21:50] INFO root fetch - processPackages [compose-py]: executing diffoscope
+[2023-05-27 08:21:50] INFO root fetch - processPackages [compose-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compose-py-0.2.0.tar.gz tmp/compose-py-0.3.0.tar.gz --markdown 20230527/c/compose-py/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-27 08:21:51] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/df/89/477f2dfab959d5452a2a4505590eb4417c248bf97109277682e3f4aa9efe/pulumi_docker-4.3.0a1685165956.tar.gz
+[2023-05-27 08:21:51] INFO root fetch - processPackages [cambridge]: Downloading https://files.pythonhosted.org/packages/da/8e/3f0a61fc7ccbd6e72bd0b588b91b7d869eeafb4bc5df45e4cc6d5a492074/cambridge-3.5.9.tar.gz
+[2023-05-27 08:21:51] INFO root fetch - processPackages [python-tools-scripts]: Downloading https://files.pythonhosted.org/packages/ca/f8/52a2306cd6af9e646fe5e0f39503ca61591a6b1582eb271aa56b50bc4dd3/python-tools-scripts-0.9.7.tar.gz
+[2023-05-27 08:21:51] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-05-27 08:21:51] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.5.4.dev20230526.tar.gz tmp/pretext-1.5.4.dev20230527.tar.gz --markdown 20230527/p/pretext/1.5.4.dev20230526-1.5.4.dev20230527/diff.md --exclude *.pyd
+[2023-05-27 08:21:51] INFO root fetch - processPackages [cambridge]: executing diffoscope
+[2023-05-27 08:21:51] INFO root fetch - processPackages [cambridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cambridge-3.5.8.tar.gz tmp/cambridge-3.5.9.tar.gz --markdown 20230527/c/cambridge/3.5.8-3.5.9/diff.md --exclude *.pyd
+[2023-05-27 08:21:51] INFO root fetch - processPackages [pulumi-docker]: executing diffoscope
+[2023-05-27 08:21:51] INFO root fetch - processPackages [pulumi-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_docker-4.3.0a1685079752.tar.gz tmp/pulumi_docker-4.3.0a1685165956.tar.gz --markdown 20230527/p/pulumi-docker/4.3.0a1685079752-4.3.0a1685165956/diff.md --exclude *.pyd
+[2023-05-27 08:21:51] INFO root fetch - processPackages [python-tools-scripts]: executing diffoscope
+[2023-05-27 08:21:51] INFO root fetch - processPackages [python-tools-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-tools-scripts-0.9.6.tar.gz tmp/python-tools-scripts-0.9.7.tar.gz --markdown 20230527/p/python-tools-scripts/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-05-27 08:21:52] INFO root fetch - main [MainThread]: End processing [compose-py]: success
+[2023-05-27 08:21:52] INFO root fetch - main [MainThread]: End processing [cambridge]: success
+[2023-05-27 08:21:52] INFO root fetch - main [MainThread]: End processing [python-tools-scripts]: success
+[2023-05-27 08:21:52] INFO root fetch - main [MainThread]: End processing [pulumi-docker]: success
+[2023-05-27 08:21:52] INFO root fetch - main [MainThread]: End processing [pulumi-minio]: success
+[2023-05-27 08:21:54] INFO root fetch - main [MainThread]: End processing [pulumi-mongodbatlas]: success
+[2023-05-27 08:21:55] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2023-05-27 08:21:55] INFO root fetch - main [MainThread]: Store serial: [18272630]
