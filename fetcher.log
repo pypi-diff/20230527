@@ -5540,3 +5540,32 @@
 [2023-05-27 08:32:18] INFO root fetch - main [MainThread]: End processing [pulumi-keycloak]: success
 [2023-05-27 08:32:21] INFO root fetch - main [MainThread]: End processing [pulumi-f5bigip]: success
 [2023-05-27 08:32:21] INFO root fetch - main [MainThread]: Store serial: [18272651]
+[2023-05-27 08:37:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272651]
+[2023-05-27 08:37:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 08:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-opsgenie
+[2023-05-27 08:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: all-fives-domino
+[2023-05-27 08:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mw
+[2023-05-27 08:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clust-learn
+[2023-05-27 08:37:30] INFO root fetch - processPackages [mw]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-27 08:37:30] INFO root fetch - processPackages [all-fives-domino]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-27 08:37:30] INFO root fetch - processPackages [clust-learn]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-05-27 08:37:30] INFO root fetch - processPackages [pulumi-opsgenie]: New version: [1.3.0a1685167327] Old Version: [1.3.0a1685116154]
+[2023-05-27 08:37:30] INFO root fetch - processPackages [all-fives-domino]: Downloading https://files.pythonhosted.org/packages/8b/e1/2201a564484badd6e219c84626ffb6c6c788a71b6eb4da78a87723851a35/all-fives-domino-1.0.7.tar.gz
+[2023-05-27 08:37:30] INFO root fetch - processPackages [mw]: Downloading https://files.pythonhosted.org/packages/3c/16/bcd7933c1282f8b8901b83e42e45a4bbc5b7cc00a8f66faa25619e020916/mw-0.1.0.tar.gz
+[2023-05-27 08:37:30] INFO root fetch - processPackages [pulumi-opsgenie]: Downloading https://files.pythonhosted.org/packages/4f/46/049bd2832aeb87eb41e20b4b9fe50d09493bc2573e56c2ec8db29ea03480/pulumi_opsgenie-1.3.0a1685167327.tar.gz
+[2023-05-27 08:37:30] INFO root fetch - processPackages [clust-learn]: Downloading https://files.pythonhosted.org/packages/2b/30/635ed24cc96b197132bc42dace0bfb7a05887a76a01e13a12cbd092f77ab/clust-learn-0.1.3.tar.gz
+[2023-05-27 08:37:30] INFO root fetch - processPackages [all-fives-domino]: executing diffoscope
+[2023-05-27 08:37:30] INFO root fetch - processPackages [all-fives-domino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/all-fives-domino-1.0.6.tar.gz tmp/all-fives-domino-1.0.7.tar.gz --markdown 20230527/a/all-fives-domino/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-27 08:37:30] INFO root fetch - processPackages [pulumi-opsgenie]: executing diffoscope
+[2023-05-27 08:37:30] INFO root fetch - processPackages [pulumi-opsgenie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_opsgenie-1.3.0a1685116154.tar.gz tmp/pulumi_opsgenie-1.3.0a1685167327.tar.gz --markdown 20230527/p/pulumi-opsgenie/1.3.0a1685116154-1.3.0a1685167327/diff.md --exclude *.pyd
+[2023-05-27 08:37:30] INFO root fetch - processPackages [mw]: Downloading https://files.pythonhosted.org/packages/59/68/a0bb64e2937f0faff241ae57be468fbff8a51f754e78a947d4084c11703a/mw-0.2.0.tar.gz
+[2023-05-27 08:37:30] INFO root fetch - processPackages [clust-learn]: Downloading https://files.pythonhosted.org/packages/1a/68/fce8ffcc69e105a1acd7d5eb7774bbfdb4575b644d4232f69f37b49625e3/clust-learn-0.2.0.tar.gz
+[2023-05-27 08:37:30] INFO root fetch - processPackages [mw]: executing diffoscope
+[2023-05-27 08:37:30] INFO root fetch - processPackages [mw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mw-0.1.0.tar.gz tmp/mw-0.2.0.tar.gz --markdown 20230527/m/mw/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-27 08:37:30] INFO root fetch - processPackages [clust-learn]: executing diffoscope
+[2023-05-27 08:37:30] INFO root fetch - processPackages [clust-learn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clust-learn-0.1.3.tar.gz tmp/clust-learn-0.2.0.tar.gz --markdown 20230527/c/clust-learn/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-05-27 08:37:31] INFO root fetch - main [MainThread]: End processing [all-fives-domino]: success
+[2023-05-27 08:37:31] INFO root fetch - main [MainThread]: End processing [pulumi-opsgenie]: success
+[2023-05-27 08:37:31] INFO root fetch - main [MainThread]: End processing [mw]: success
+[2023-05-27 08:37:32] INFO root fetch - main [MainThread]: End processing [clust-learn]: success
+[2023-05-27 08:37:32] INFO root fetch - main [MainThread]: Store serial: [18272662]
