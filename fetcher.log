@@ -11243,3 +11243,55 @@
 [2023-05-27 20:07:45] INFO root fetch - main [MainThread]: End processing [sosecrets]: success
 [2023-05-27 20:07:46] INFO root fetch - main [MainThread]: End processing [rframe]: success
 [2023-05-27 20:07:46] INFO root fetch - main [MainThread]: Store serial: [18275989]
+[2023-05-27 20:12:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275989]
+[2023-05-27 20:12:55] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 20:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mup-xml-sign
+[2023-05-27 20:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arxivai
+[2023-05-27 20:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deep-utils
+[2023-05-27 20:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DAWG2
+[2023-05-27 20:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: crowsetta
+[2023-05-27 20:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mavcom
+[2023-05-27 20:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: policyengine-us
+[2023-05-27 20:12:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mkdocs-exporter
+[2023-05-27 20:12:55] INFO root fetch - processPackages [mup-xml-sign]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-27 20:12:55] INFO root fetch - processPackages [arxivai]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 20:12:55] INFO root fetch - processPackages [deep-utils]: New version: [1.2.0] Old Version: [1.0.2]
+[2023-05-27 20:12:55] INFO root fetch - processPackages [mkdocs-exporter]: New version: [2.0.0] Old Version: [1.3.0]
+[2023-05-27 20:12:55] INFO root fetch - processPackages [DAWG2]: New version: [0.9.0rc1] Old Version: [0.9.0]
+[2023-05-27 20:12:55] INFO root fetch - processPackages [mavcom]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-27 20:12:55] INFO root fetch - processPackages [crowsetta]: New version: [5.0.1] Old Version: [5.0.0rc2]
+[2023-05-27 20:12:55] INFO root fetch - processPackages [policyengine-us]: New version: [0.329.1] Old Version: [0.329.0]
+[2023-05-27 20:12:55] INFO root fetch - processPackages [arxivai]: executing diffoscope
+[2023-05-27 20:12:55] INFO root fetch - processPackages [arxivai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arxivai-0.0.8.tar.gz tmp/arxivai-0.0.9.tar.gz --markdown 20230527/a/arxivai/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 20:12:55] INFO root fetch - processPackages [mkdocs-exporter]: executing diffoscope
+[2023-05-27 20:12:55] INFO root fetch - processPackages [mkdocs-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_exporter-1.3.0.tar.gz tmp/mkdocs_exporter-2.0.0.tar.gz --markdown 20230527/m/mkdocs-exporter/1.3.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-27 20:12:55] INFO root fetch - processPackages [mup-xml-sign]: Downloading https://files.pythonhosted.org/packages/b1/95/45dda77127367ed10dfcd60444c4afce71949227dda0028b1a9f6eab6fe6/mup-xml-sign-0.1.tar.gz
+[2023-05-27 20:12:55] INFO root fetch - processPackages [DAWG2]: Downloading https://files.pythonhosted.org/packages/96/af/98c2597c5ed2fcadbd5a77653b082beaaed1f31f608c54e8b36457bd661a/DAWG2-0.9.0.tar.gz
+[2023-05-27 20:12:55] INFO root fetch - processPackages [deep-utils]: Downloading https://files.pythonhosted.org/packages/d8/a2/6e84a6fe1f1a1db4f046e1b4d0f8fbf8b4023b7de49f51df90d4a166a5bd/deep_utils-1.0.2.tar.gz
+[2023-05-27 20:12:55] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/b1/44/4c1775dad9d74e996b8f19e23acab795ec6e64e75ca315b862a4a0cf4823/policyengine-us-0.329.1.tar.gz
+[2023-05-27 20:12:55] INFO root fetch - processPackages [mavcom]: Downloading https://files.pythonhosted.org/packages/2c/8c/3903a97ce01c6fd0459e2671c5919c1b29ba3f57547871a89df3fe6f414e/mavcom-1.1.1.tar.gz
+[2023-05-27 20:12:55] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-05-27 20:12:55] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.329.0.tar.gz tmp/policyengine-us-0.329.1.tar.gz --markdown 20230527/p/policyengine-us/0.329.0-0.329.1/diff.md --exclude *.pyd
+[2023-05-27 20:12:55] INFO root fetch - processPackages [mavcom]: executing diffoscope
+[2023-05-27 20:12:55] INFO root fetch - processPackages [mavcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mavcom-1.1.0.tar.gz tmp/mavcom-1.1.1.tar.gz --markdown 20230527/m/mavcom/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-27 20:12:55] INFO root fetch - processPackages [crowsetta]: Downloading https://files.pythonhosted.org/packages/1e/33/f7ccddd1eb7a1c7be76455b3bbdcb247da53433a04cef323433a84f0c1dd/crowsetta-5.0.1.tar.gz
+[2023-05-27 20:12:55] INFO root fetch - processPackages [DAWG2]: Downloading https://files.pythonhosted.org/packages/a3/d6/c95c9da2375548c935cdc63e5dc388aba84471156f390d42f396a0043e0d/DAWG2-0.9.0rc1.tar.gz
+[2023-05-27 20:12:55] INFO root fetch - processPackages [crowsetta]: executing diffoscope
+[2023-05-27 20:12:55] INFO root fetch - processPackages [crowsetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crowsetta-5.0.0rc2.tar.gz tmp/crowsetta-5.0.1.tar.gz --markdown 20230527/c/crowsetta/5.0.0rc2-5.0.1/diff.md --exclude *.pyd
+[2023-05-27 20:12:55] INFO root fetch - processPackages [mup-xml-sign]: Downloading https://files.pythonhosted.org/packages/8a/50/9aa91f1e3826744682378595c2e3aecb785b4e2ca5568f73bffb661d4772/mup-xml-sign-0.1.1.tar.gz
+[2023-05-27 20:12:55] INFO root fetch - processPackages [DAWG2]: executing diffoscope
+[2023-05-27 20:12:55] INFO root fetch - processPackages [DAWG2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DAWG2-0.9.0.tar.gz tmp/DAWG2-0.9.0rc1.tar.gz --markdown 20230527/D/DAWG2/0.9.0-0.9.0rc1/diff.md --exclude *.pyd
+[2023-05-27 20:12:55] INFO root fetch - processPackages [deep-utils]: Downloading https://files.pythonhosted.org/packages/98/c4/93c928849cfa2fbf8864518016cb298ee5e59a7ab34f4f914eb581816d2f/deep_utils-1.2.0.tar.gz
+[2023-05-27 20:12:55] INFO root fetch - processPackages [mup-xml-sign]: executing diffoscope
+[2023-05-27 20:12:55] INFO root fetch - processPackages [mup-xml-sign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mup-xml-sign-0.1.tar.gz tmp/mup-xml-sign-0.1.1.tar.gz --markdown 20230527/m/mup-xml-sign/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-27 20:12:56] INFO root fetch - processPackages [deep-utils]: executing diffoscope
+[2023-05-27 20:12:56] INFO root fetch - processPackages [deep-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_utils-1.0.2.tar.gz tmp/deep_utils-1.2.0.tar.gz --markdown 20230527/d/deep-utils/1.0.2-1.2.0/diff.md --exclude *.pyd
+[2023-05-27 20:12:56] INFO root fetch - main [MainThread]: End processing [arxivai]: success
+[2023-05-27 20:12:57] INFO root fetch - main [MainThread]: End processing [mavcom]: success
+[2023-05-27 20:12:58] INFO root fetch - main [MainThread]: End processing [DAWG2]: success
+[2023-05-27 20:12:59] INFO root fetch - main [MainThread]: End processing [crowsetta]: success
+[2023-05-27 20:12:59] INFO root fetch - main [MainThread]: End processing [mup-xml-sign]: success
+[2023-05-27 20:13:00] INFO root fetch - main [MainThread]: End processing [deep-utils]: success
+[2023-05-27 20:13:01] INFO root fetch - main [MainThread]: End processing [mkdocs-exporter]: success
+[2023-05-27 20:14:14] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-05-27 20:14:14] INFO root fetch - main [MainThread]: Store serial: [18276014]
