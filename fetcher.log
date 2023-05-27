@@ -12311,3 +12311,73 @@
 [2023-05-27 22:48:55] INFO root fetch - main [MainThread]: End processing [cachetools]: success
 [2023-05-27 22:48:56] INFO root fetch - main [MainThread]: End processing [pymino]: success
 [2023-05-27 22:48:56] INFO root fetch - main [MainThread]: Store serial: [18276801]
+[2023-05-27 22:54:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276801]
+[2023-05-27 22:54:04] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-27 22:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duckduckgo-search
+[2023-05-27 22:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gs-coordinator
+[2023-05-27 22:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gs-engine
+[2023-05-27 22:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gs-include
+[2023-05-27 22:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: murloc
+[2023-05-27 22:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: docstring-generator-ext
+[2023-05-27 22:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: MDAnalysis
+[2023-05-27 22:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: colourmap
+[2023-05-27 22:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: MDAnalysisTests
+[2023-05-27 22:54:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: chatcmd
+[2023-05-27 22:54:05] INFO root fetch - processPackages [gs-coordinator]: New version: [0.22.0a20230527] Old Version: [0.22.0a20230526]
+[2023-05-27 22:54:05] INFO root fetch - processPackages [gs-engine]: New version: [0.22.0a20230527] Old Version: [0.22.0a20230526]
+[2023-05-27 22:54:05] INFO root fetch - processPackages [murloc]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 22:54:05] INFO root fetch - processPackages [gs-include]: New version: [0.22.0a20230527] Old Version: [0.22.0a20230526]
+[2023-05-27 22:54:05] INFO root fetch - processPackages [chatcmd]: New version: [1.0.19] Old Version: [1.0.18]
+[2023-05-27 22:54:05] WARNING root fetch - processPackages [docstring-generator-ext]: Skipping, unable to determine old version
+[2023-05-27 22:54:05] INFO root fetch - processPackages [docstring-generator-ext]: Start processing: wagtail-dynamic-dropdown
+[2023-05-27 22:54:05] INFO root fetch - main [MainThread]: End processing [docstring-generator-ext] error
+[2023-05-27 22:54:05] INFO root fetch - processPackages [MDAnalysis]: New version: [2.5.0.dev0] Old Version: [2.5.0]
+[2023-05-27 22:54:05] INFO root fetch - processPackages [colourmap]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-27 22:54:05] INFO root fetch - processPackages [duckduckgo-search]: New version: [3.6.0] Old Version: [3.5.0]
+[2023-05-27 22:54:05] INFO root fetch - processPackages [wagtail-dynamic-dropdown]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 22:54:05] INFO root fetch - processPackages [MDAnalysisTests]: New version: [2.5.0] Old Version: [2.4.3]
+[2023-05-27 22:54:05] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-27 22:54:05] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.18.tar.gz tmp/chatcmd-1.0.19.tar.gz --markdown 20230527/c/chatcmd/1.0.18-1.0.19/diff.md --exclude *.pyd
+[2023-05-27 22:54:05] INFO root fetch - processPackages [colourmap]: executing diffoscope
+[2023-05-27 22:54:05] INFO root fetch - processPackages [colourmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colourmap-1.1.8.tar.gz tmp/colourmap-1.1.9.tar.gz --markdown 20230527/c/colourmap/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-27 22:54:05] INFO root fetch - processPackages [MDAnalysis]: Downloading https://files.pythonhosted.org/packages/a8/49/d03958061c86cbb2d2c8aa4019fd7cb575f5fd49988f6df69e957c64a28f/MDAnalysis-2.5.0.tar.gz
+[2023-05-27 22:54:05] INFO root fetch - processPackages [murloc]: Downloading https://files.pythonhosted.org/packages/86/b6/f0da91d489f0ea4f18148eaf7115fcb9ab9c486a0e3b26b975b1f68868ac/murloc-0.0.3.tar.gz
+[2023-05-27 22:54:05] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/63/9a/b3b71f67f9132e743af2e842df698939feecc07884d4b95a74cedc186d2f/gs_engine-0.22.0a20230526-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-27 22:54:05] INFO root fetch - processPackages [gs-coordinator]: Downloading https://files.pythonhosted.org/packages/d1/c3/3fe5d7c28fe22ca0d6d24c0530d769e79207d739717cbefde3bdc4c66048/gs_coordinator-0.22.0a20230526-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-27 22:54:05] INFO root fetch - processPackages [wagtail-dynamic-dropdown]: Downloading https://files.pythonhosted.org/packages/08/0b/c1cbc068421f53081a54382d3c1ba6b454d3dec1a2e2cb700bb1bc39413f/wagtail-dynamic-dropdown-0.0.2.tar.gz
+[2023-05-27 22:54:05] INFO root fetch - processPackages [duckduckgo-search]: Downloading https://files.pythonhosted.org/packages/84/a7/1e7f30673e78570f7918085f83e9dc7efde4182a5779a7a3890b9853bed0/duckduckgo_search-3.6.0.tar.gz
+[2023-05-27 22:54:05] INFO root fetch - processPackages [murloc]: executing diffoscope
+[2023-05-27 22:54:05] INFO root fetch - processPackages [murloc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/murloc-0.0.2.tar.gz tmp/murloc-0.0.3.tar.gz --markdown 20230527/m/murloc/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 22:54:05] INFO root fetch - processPackages [MDAnalysisTests]: Downloading https://files.pythonhosted.org/packages/3e/05/5f4d1d5ddef2b366a22ea46ffb9657fead0c7351ccff6754d786e98048ad/MDAnalysisTests-2.4.3.tar.gz
+[2023-05-27 22:54:05] INFO root fetch - processPackages [duckduckgo-search]: executing diffoscope
+[2023-05-27 22:54:05] INFO root fetch - processPackages [duckduckgo-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckduckgo_search-3.5.0.tar.gz tmp/duckduckgo_search-3.6.0.tar.gz --markdown 20230527/d/duckduckgo-search/3.5.0-3.6.0/diff.md --exclude *.pyd
+[2023-05-27 22:54:05] WARNING root fetch - processPackages [MDAnalysisTests]: Skipping package: exceeds size limit 55190156>=10485760
+[2023-05-27 22:54:05] INFO root fetch - processPackages [MDAnalysisTests]: Start processing: scatterd
+[2023-05-27 22:54:05] INFO root fetch - main [MainThread]: End processing [MDAnalysisTests] error
+[2023-05-27 22:54:05] INFO root fetch - processPackages [scatterd]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-05-27 22:54:05] INFO root fetch - processPackages [gs-include]: Downloading https://files.pythonhosted.org/packages/cf/fb/0291936112d5f719cd8e8654eacea1b444197cd64bbf65ae1ec9590d5f1d/gs_include-0.22.0a20230526-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-27 22:54:05] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/8b/93/428bedb2f6ea878bfa5fe26f5bba7b2980fcf9a1eab9fbba71fd0bcbeef6/gs_engine-0.22.0a20230527-py2.py3-none-any.whl
+[2023-05-27 22:54:05] WARNING root fetch - processPackages [gs-include]: Skipping package: exceeds size limit 30330798>=10485760
+[2023-05-27 22:54:05] INFO root fetch - main [MainThread]: End processing [gs-include] error
+[2023-05-27 22:54:05] INFO root fetch - processPackages [gs-coordinator]: Downloading https://files.pythonhosted.org/packages/e3/11/c93ca1ee03e16356a7f6987312cf311f28f40efd8042d3ec41f975e47bf9/gs_coordinator-0.22.0a20230527-py2.py3-none-any.whl
+[2023-05-27 22:54:05] INFO root fetch - processPackages [scatterd]: executing diffoscope
+[2023-05-27 22:54:05] INFO root fetch - processPackages [scatterd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatterd-1.3.2.tar.gz tmp/scatterd-1.3.3.tar.gz --markdown 20230527/s/scatterd/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-05-27 22:54:05] INFO root fetch - processPackages [gs-engine]: executing diffoscope
+[2023-05-27 22:54:05] INFO root fetch - processPackages [gs-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_engine-0.22.0a20230526-py2.py3-none-macosx_11_0_x86_64.whl.zip tmp/gs_engine-0.22.0a20230527-py2.py3-none-any.whl.zip --markdown 20230527/g/gs-engine/0.22.0a20230526-0.22.0a20230527/diff.md --exclude *.pyd
+[2023-05-27 22:54:05] INFO root fetch - processPackages [gs-coordinator]: executing diffoscope
+[2023-05-27 22:54:05] INFO root fetch - processPackages [gs-coordinator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_coordinator-0.22.0a20230526-py2.py3-none-macosx_11_0_x86_64.whl.zip tmp/gs_coordinator-0.22.0a20230527-py2.py3-none-any.whl.zip --markdown 20230527/g/gs-coordinator/0.22.0a20230526-0.22.0a20230527/diff.md --exclude *.pyd
+[2023-05-27 22:54:05] INFO root fetch - processPackages [MDAnalysis]: executing diffoscope
+[2023-05-27 22:54:05] INFO root fetch - processPackages [MDAnalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MDAnalysis-2.5.0.tar.gz tmp/MDAnalysis-2.5.0.dev0-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20230527/M/MDAnalysis/2.5.0-2.5.0.dev0/diff.md --exclude *.pyd
+[2023-05-27 22:54:05] INFO root fetch - processPackages [wagtail-dynamic-dropdown]: Downloading https://files.pythonhosted.org/packages/c1/88/87c35bd501fbc661b6f433a9814ed5b4ed301f37c8d99e38c91731c0edc3/wagtail-dynamic-dropdown-0.0.3.tar.gz
+[2023-05-27 22:54:05] INFO root fetch - processPackages [wagtail-dynamic-dropdown]: executing diffoscope
+[2023-05-27 22:54:05] INFO root fetch - processPackages [wagtail-dynamic-dropdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail-dynamic-dropdown-0.0.2.tar.gz tmp/wagtail-dynamic-dropdown-0.0.3.tar.gz --markdown 20230527/w/wagtail-dynamic-dropdown/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 22:54:06] INFO root fetch - main [MainThread]: End processing [colourmap]: success
+[2023-05-27 22:54:06] INFO root fetch - main [MainThread]: End processing [murloc]: success
+[2023-05-27 22:54:06] INFO root fetch - main [MainThread]: End processing [duckduckgo-search]: success
+[2023-05-27 22:54:06] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-27 22:54:06] INFO root fetch - main [MainThread]: End processing [scatterd]: success
+[2023-05-27 22:54:06] INFO root fetch - main [MainThread]: End processing [gs-engine]: success
+[2023-05-27 22:54:07] INFO root fetch - main [MainThread]: End processing [wagtail-dynamic-dropdown]: success
+[2023-05-27 22:54:07] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
+[2023-05-27 22:54:09] INFO root fetch - main [MainThread]: End processing [MDAnalysis]: success
+[2023-05-27 22:54:09] INFO root fetch - main [MainThread]: Store serial: [18276855]
