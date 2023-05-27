@@ -4017,3 +4017,31 @@
 [2023-05-27 04:35:04] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
 [2023-05-27 04:35:04] INFO root fetch - main [MainThread]: End processing [pyllamacpp]: success
 [2023-05-27 04:35:04] INFO root fetch - main [MainThread]: Store serial: [18271876]
+[2023-05-27 04:40:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271876]
+[2023-05-27 04:40:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 04:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-theme-academy
+[2023-05-27 04:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: statml
+[2023-05-27 04:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ofscraper
+[2023-05-27 04:40:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: talk-codebase
+[2023-05-27 04:40:12] INFO root fetch - processPackages [statml]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-27 04:40:12] INFO root fetch - processPackages [django-theme-academy]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-27 04:40:12] INFO root fetch - processPackages [talk-codebase]: New version: [0.1.15] Old Version: [0.1.14]
+[2023-05-27 04:40:12] INFO root fetch - processPackages [ofscraper]: New version: [2.1] Old Version: [2.0.1]
+[2023-05-27 04:40:13] INFO root fetch - processPackages [statml]: Downloading https://files.pythonhosted.org/packages/5d/13/3b0dcd290ae2359ecd86ec166502c7467b907c2466245f888aab1576781d/statml-0.0.5.tar.gz
+[2023-05-27 04:40:13] INFO root fetch - processPackages [talk-codebase]: Downloading https://files.pythonhosted.org/packages/32/89/0c493f343b4720e333b1515a59d58828193ff8d1719b6dcf1d3516f454af/talk_codebase-0.1.15.tar.gz
+[2023-05-27 04:40:13] INFO root fetch - processPackages [django-theme-academy]: Downloading https://files.pythonhosted.org/packages/54/a8/ea710c576781e9fbbe6ac697cb7f9a6d98e43d63d6bc1db264cddaa83663/django-theme-academy-0.3.6.tar.gz
+[2023-05-27 04:40:13] INFO root fetch - processPackages [talk-codebase]: executing diffoscope
+[2023-05-27 04:40:13] INFO root fetch - processPackages [talk-codebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talk_codebase-0.1.14.tar.gz tmp/talk_codebase-0.1.15.tar.gz --markdown 20230527/t/talk-codebase/0.1.14-0.1.15/diff.md --exclude *.pyd
+[2023-05-27 04:40:13] INFO root fetch - processPackages [ofscraper]: Downloading https://files.pythonhosted.org/packages/92/4d/a5e879500d321abe54fe89be72829cf4b7e9a7bf81d9d395dba63c55dfe2/ofscraper-2.1.tar.gz
+[2023-05-27 04:40:13] INFO root fetch - processPackages [statml]: Downloading https://files.pythonhosted.org/packages/fc/6e/8cc88f5509c10187431250252d559d5b152415e5e719ba21e6e389da1dc6/statml-0.0.6.tar.gz
+[2023-05-27 04:40:13] INFO root fetch - processPackages [django-theme-academy]: executing diffoscope
+[2023-05-27 04:40:13] INFO root fetch - processPackages [django-theme-academy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-theme-academy-0.3.5.tar.gz tmp/django-theme-academy-0.3.6.tar.gz --markdown 20230527/d/django-theme-academy/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-27 04:40:13] INFO root fetch - processPackages [ofscraper]: executing diffoscope
+[2023-05-27 04:40:13] INFO root fetch - processPackages [ofscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofscraper-2.0.1.tar.gz tmp/ofscraper-2.1.tar.gz --markdown 20230527/o/ofscraper/2.0.1-2.1/diff.md --exclude *.pyd
+[2023-05-27 04:40:13] INFO root fetch - processPackages [statml]: executing diffoscope
+[2023-05-27 04:40:13] INFO root fetch - processPackages [statml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statml-0.0.5.tar.gz tmp/statml-0.0.6.tar.gz --markdown 20230527/s/statml/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-27 04:40:14] INFO root fetch - main [MainThread]: End processing [talk-codebase]: success
+[2023-05-27 04:40:14] INFO root fetch - main [MainThread]: End processing [django-theme-academy]: success
+[2023-05-27 04:40:14] INFO root fetch - main [MainThread]: End processing [statml]: success
+[2023-05-27 04:40:14] INFO root fetch - main [MainThread]: End processing [ofscraper]: success
+[2023-05-27 04:40:14] INFO root fetch - main [MainThread]: Store serial: [18271908]
