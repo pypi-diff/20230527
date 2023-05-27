@@ -7598,3 +7598,26 @@
 [2023-05-27 12:55:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-statement-base]: success
 [2023-05-27 12:55:55] INFO root fetch - main [MainThread]: End processing [django-unfold]: success
 [2023-05-27 12:55:55] INFO root fetch - main [MainThread]: Store serial: [18273903]
+[2023-05-27 13:00:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273903]
+[2023-05-27 13:01:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 13:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: findmyorder
+[2023-05-27 13:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ros-d2
+[2023-05-27 13:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NaturalAPI
+[2023-05-27 13:01:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: UnlimitedGPT
+[2023-05-27 13:01:03] INFO root fetch - processPackages [NaturalAPI]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 13:01:03] WARNING root fetch - processPackages [UnlimitedGPT]: Skipping, unable to determine old version
+[2023-05-27 13:01:03] INFO root fetch - main [MainThread]: End processing [UnlimitedGPT] error
+[2023-05-27 13:01:03] INFO root fetch - processPackages [findmyorder]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-27 13:01:03] INFO root fetch - processPackages [ros-d2]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-27 13:01:03] INFO root fetch - processPackages [NaturalAPI]: executing diffoscope
+[2023-05-27 13:01:03] INFO root fetch - processPackages [NaturalAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NaturalAPI-0.0.2.tar.gz tmp/NaturalAPI-0.0.3.tar.gz --markdown 20230527/N/NaturalAPI/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 13:01:03] INFO root fetch - processPackages [ros-d2]: Downloading https://files.pythonhosted.org/packages/01/0f/c2d1b64b91494547d381c578c53d5a5e8854347e4d01a6505b4cd806e05b/ros-d2-1.0.4.tar.gz
+[2023-05-27 13:01:04] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-05-27 13:01:04] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.3.8.tar.gz tmp/findmyorder-1.3.9.tar.gz --markdown 20230527/f/findmyorder/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-27 13:01:04] INFO root fetch - processPackages [ros-d2]: Downloading https://files.pythonhosted.org/packages/07/52/d53b6c8eb1448b0b23682f971cc2ef771312c4e59568afd9f466de23f1e0/ros-d2-1.0.5.tar.gz
+[2023-05-27 13:01:04] INFO root fetch - processPackages [ros-d2]: executing diffoscope
+[2023-05-27 13:01:04] INFO root fetch - processPackages [ros-d2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ros-d2-1.0.4.tar.gz tmp/ros-d2-1.0.5.tar.gz --markdown 20230527/r/ros-d2/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-27 13:01:04] INFO root fetch - main [MainThread]: End processing [NaturalAPI]: success
+[2023-05-27 13:01:05] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-05-27 13:01:05] INFO root fetch - main [MainThread]: End processing [ros-d2]: success
+[2023-05-27 13:01:05] INFO root fetch - main [MainThread]: Store serial: [18273915]
