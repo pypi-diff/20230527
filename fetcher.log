@@ -12407,3 +12407,61 @@
 [2023-05-27 22:59:19] INFO root fetch - main [MainThread]: End processing [api-console-solver]: success
 [2023-05-27 22:59:22] INFO root fetch - main [MainThread]: End processing [pciSeq]: success
 [2023-05-27 22:59:22] INFO root fetch - main [MainThread]: Store serial: [18276873]
+[2023-05-27 23:04:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276873]
+[2023-05-27 23:04:30] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-27 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maestral
+[2023-05-27 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deduplicationdict
+[2023-05-27 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chatcmd
+[2023-05-27 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docstring-generator-ext
+[2023-05-27 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sabctools
+[2023-05-27 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: biorefineries
+[2023-05-27 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: blazekit
+[2023-05-27 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: thermosteam
+[2023-05-27 23:04:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: biosteam
+[2023-05-27 23:04:30] INFO root fetch - processPackages [deduplicationdict]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2023-05-27 23:04:30] INFO root fetch - processPackages [sabctools]: New version: [7.1.0] Old Version: [7.0.2]
+[2023-05-27 23:04:30] INFO root fetch - processPackages [maestral]: New version: [1.7.3.dev3] Old Version: [1.7.3.dev2]
+[2023-05-27 23:04:30] INFO root fetch - processPackages [blazekit]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-27 23:04:30] WARNING root fetch - processPackages [docstring-generator-ext]: Skipping, unable to determine old version
+[2023-05-27 23:04:30] INFO root fetch - main [MainThread]: End processing [docstring-generator-ext] error
+[2023-05-27 23:04:30] INFO root fetch - processPackages [chatcmd]: New version: [1.0.21] Old Version: [1.0.20]
+[2023-05-27 23:04:30] INFO root fetch - processPackages [biorefineries]: New version: [2.9.4] Old Version: [2.9.3]
+[2023-05-27 23:04:30] INFO root fetch - processPackages [thermosteam]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-05-27 23:04:30] INFO root fetch - processPackages [biosteam]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-27 23:04:31] INFO root fetch - processPackages [deduplicationdict]: executing diffoscope
+[2023-05-27 23:04:31] INFO root fetch - processPackages [deduplicationdict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deduplicationdict-1.0.0rc1.tar.gz tmp/deduplicationdict-1.0.0rc2.tar.gz --markdown 20230527/d/deduplicationdict/1.0.0rc1-1.0.0rc2/diff.md --exclude *.pyd
+[2023-05-27 23:04:31] INFO root fetch - processPackages [maestral]: Downloading https://files.pythonhosted.org/packages/1b/00/8c02f793b3a0b86bae86eb0ef34938b77f671a1f8dbf3a78b47f53965516/maestral-1.7.3.dev2.tar.gz
+[2023-05-27 23:04:31] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/bf/d8/4a85c549a36aeb1570a37d7b05754e57113db6167d1afece315fd41a2279/chatcmd-1.0.20.tar.gz
+[2023-05-27 23:04:31] INFO root fetch - processPackages [sabctools]: Downloading https://files.pythonhosted.org/packages/1c/9a/b07d285cb8d094e2ccc8a71b9f58cf8089ba2857cb13e9899e83be373b4f/sabctools-7.0.2.tar.gz
+[2023-05-27 23:04:31] INFO root fetch - processPackages [biorefineries]: Downloading https://files.pythonhosted.org/packages/3e/d9/8d9d1fd176a8d3985f895fee346a389f6c40a8d2849893955385aa3062e5/biorefineries-2.9.3.tar.gz
+[2023-05-27 23:04:31] INFO root fetch - processPackages [thermosteam]: Downloading https://files.pythonhosted.org/packages/56/8f/c12015817ab835a11a1faf668a607d94a2240ccca4e4723fa84593ed1a29/thermosteam-0.8.3.tar.gz
+[2023-05-27 23:04:31] INFO root fetch - processPackages [blazekit]: Downloading https://files.pythonhosted.org/packages/d5/fb/bdc4e6c0e1c7b06b922f1195073007331f1a02e7b5b6294595513872666e/blazekit-1.0.0.tar.gz
+[2023-05-27 23:04:31] INFO root fetch - processPackages [biosteam]: Downloading https://files.pythonhosted.org/packages/9c/00/313204e69841aef03bab6e9e10a271b265d5baee12b666cb0f7eee0e9ab2/biosteam-2.9.8.tar.gz
+[2023-05-27 23:04:31] INFO root fetch - processPackages [sabctools]: Downloading https://files.pythonhosted.org/packages/90/8f/5eb537d16f38763424d1ce4856a7c1b443b0e2d7d5b9d701f1b6c7a0de7d/sabctools-7.1.0.tar.gz
+[2023-05-27 23:04:31] INFO root fetch - processPackages [maestral]: Downloading https://files.pythonhosted.org/packages/40/36/9b44df726645aa2b26cf4bf188d207ed730cf22156bd243924487c737bda/maestral-1.7.3.dev3.tar.gz
+[2023-05-27 23:04:31] INFO root fetch - processPackages [blazekit]: Downloading https://files.pythonhosted.org/packages/49/7f/43b2148ce15b56684fb7a9b442c45fb4af5bdeebfc8927a4a45d705b7b92/blazekit-1.0.1.tar.gz
+[2023-05-27 23:04:31] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/f5/b5/e43fed81a7e52969957f08a7d99433090c45e497d27e1d54769b57562148/chatcmd-1.0.21.tar.gz
+[2023-05-27 23:04:31] INFO root fetch - processPackages [sabctools]: executing diffoscope
+[2023-05-27 23:04:31] INFO root fetch - processPackages [sabctools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabctools-7.0.2.tar.gz tmp/sabctools-7.1.0.tar.gz --markdown 20230527/s/sabctools/7.0.2-7.1.0/diff.md --exclude *.pyd
+[2023-05-27 23:04:31] INFO root fetch - processPackages [maestral]: executing diffoscope
+[2023-05-27 23:04:31] INFO root fetch - processPackages [maestral]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-1.7.3.dev2.tar.gz tmp/maestral-1.7.3.dev3.tar.gz --markdown 20230527/m/maestral/1.7.3.dev2-1.7.3.dev3/diff.md --exclude *.pyd
+[2023-05-27 23:04:31] INFO root fetch - processPackages [biosteam]: Downloading https://files.pythonhosted.org/packages/e8/20/f344b75b639fc3d827c69ecf18e63ab753349283dab6a010e8e2b8860aaa/biosteam-2.9.9.tar.gz
+[2023-05-27 23:04:31] INFO root fetch - processPackages [blazekit]: executing diffoscope
+[2023-05-27 23:04:31] INFO root fetch - processPackages [blazekit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blazekit-1.0.0.tar.gz tmp/blazekit-1.0.1.tar.gz --markdown 20230527/b/blazekit/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 23:04:31] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-27 23:04:31] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.20.tar.gz tmp/chatcmd-1.0.21.tar.gz --markdown 20230527/c/chatcmd/1.0.20-1.0.21/diff.md --exclude *.pyd
+[2023-05-27 23:04:31] INFO root fetch - processPackages [biosteam]: executing diffoscope
+[2023-05-27 23:04:31] INFO root fetch - processPackages [biosteam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biosteam-2.9.8.tar.gz tmp/biosteam-2.9.9.tar.gz --markdown 20230527/b/biosteam/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-27 23:04:31] WARNING root fetch - processPackages [thermosteam]: Skipping package: exceeds size limit 16942699>=10485760
+[2023-05-27 23:04:31] INFO root fetch - main [MainThread]: End processing [thermosteam] error
+[2023-05-27 23:04:32] INFO root fetch - main [MainThread]: End processing [deduplicationdict]: success
+[2023-05-27 23:04:32] INFO root fetch - main [MainThread]: End processing [blazekit]: success
+[2023-05-27 23:04:32] INFO root fetch - processPackages [biorefineries]: Downloading https://files.pythonhosted.org/packages/9d/9f/89fdd7cfd12cc7ca26cd2c8d386ef9e22821072a402384cbc6b0ede30a8b/biorefineries-2.9.4.tar.gz
+[2023-05-27 23:04:32] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-27 23:04:33] INFO root fetch - main [MainThread]: End processing [maestral]: success
+[2023-05-27 23:04:33] INFO root fetch - main [MainThread]: End processing [sabctools]: success
+[2023-05-27 23:04:33] INFO root fetch - main [MainThread]: End processing [biosteam]: success
+[2023-05-27 23:04:33] INFO root fetch - processPackages [biorefineries]: executing diffoscope
+[2023-05-27 23:04:33] INFO root fetch - processPackages [biorefineries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biorefineries-2.9.3.tar.gz tmp/biorefineries-2.9.4.tar.gz --markdown 20230527/b/biorefineries/2.9.3-2.9.4/diff.md --exclude *.pyd
+[2023-05-27 23:04:35] INFO root fetch - main [MainThread]: End processing [biorefineries]: success
+[2023-05-27 23:04:35] INFO root fetch - main [MainThread]: Store serial: [18276911]
