@@ -12381,3 +12381,29 @@
 [2023-05-27 22:54:07] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
 [2023-05-27 22:54:09] INFO root fetch - main [MainThread]: End processing [MDAnalysis]: success
 [2023-05-27 22:54:09] INFO root fetch - main [MainThread]: Store serial: [18276855]
+[2023-05-27 22:59:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276855]
+[2023-05-27 22:59:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 22:59:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: api-console-solver
+[2023-05-27 22:59:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pciSeq
+[2023-05-27 22:59:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blazekit
+[2023-05-27 22:59:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: y4d
+[2023-05-27 22:59:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mech-client
+[2023-05-27 22:59:18] WARNING root fetch - processPackages [y4d]: Skipping, unable to determine old version
+[2023-05-27 22:59:18] INFO root fetch - main [MainThread]: End processing [y4d] error
+[2023-05-27 22:59:18] INFO root fetch - processPackages [pciSeq]: New version: [0.0.50] Old Version: [0.0.49]
+[2023-05-27 22:59:18] WARNING root fetch - processPackages [mech-client]: Skipping, unable to determine old version
+[2023-05-27 22:59:18] INFO root fetch - main [MainThread]: End processing [mech-client] error
+[2023-05-27 22:59:18] INFO root fetch - processPackages [api-console-solver]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 22:59:18] WARNING root fetch - processPackages [blazekit]: Skipping, unable to determine old version
+[2023-05-27 22:59:18] INFO root fetch - main [MainThread]: End processing [blazekit] error
+[2023-05-27 22:59:18] INFO root fetch - processPackages [api-console-solver]: Downloading https://files.pythonhosted.org/packages/7f/f3/0a4c5813a36bb2e1acf1e866615e2164ca10440de6b8d9b56be1d8ee8243/api-console-solver-0.0.8.tar.gz
+[2023-05-27 22:59:18] INFO root fetch - processPackages [pciSeq]: Downloading https://files.pythonhosted.org/packages/b4/09/1d1c1e8e706b7bee68e69d7263b0a03af98b6ef80a462c1f94ef5a76ef2f/pciSeq-0.0.49-py3-none-any.whl
+[2023-05-27 22:59:18] INFO root fetch - processPackages [pciSeq]: Downloading https://files.pythonhosted.org/packages/7d/79/e38a67b367e95115a8ee973054fc23fa502cb565a5a51019fa444cf5080c/pciSeq-0.0.50-py3-none-any.whl
+[2023-05-27 22:59:18] INFO root fetch - processPackages [pciSeq]: executing diffoscope
+[2023-05-27 22:59:18] INFO root fetch - processPackages [pciSeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pciSeq-0.0.49-py3-none-any.whl.zip tmp/pciSeq-0.0.50-py3-none-any.whl.zip --markdown 20230527/p/pciSeq/0.0.49-0.0.50/diff.md --exclude *.pyd
+[2023-05-27 22:59:18] INFO root fetch - processPackages [api-console-solver]: Downloading https://files.pythonhosted.org/packages/a7/0c/1229a4df607c10fee01de2f6b8bfbe449ecc5a30e02413f67ed7c319e321/api-console-solver-0.0.9.tar.gz
+[2023-05-27 22:59:19] INFO root fetch - processPackages [api-console-solver]: executing diffoscope
+[2023-05-27 22:59:19] INFO root fetch - processPackages [api-console-solver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api-console-solver-0.0.8.tar.gz tmp/api-console-solver-0.0.9.tar.gz --markdown 20230527/a/api-console-solver/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 22:59:19] INFO root fetch - main [MainThread]: End processing [api-console-solver]: success
+[2023-05-27 22:59:22] INFO root fetch - main [MainThread]: End processing [pciSeq]: success
+[2023-05-27 22:59:22] INFO root fetch - main [MainThread]: Store serial: [18276873]
