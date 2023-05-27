@@ -7621,3 +7621,20 @@
 [2023-05-27 13:01:05] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
 [2023-05-27 13:01:05] INFO root fetch - main [MainThread]: End processing [ros-d2]: success
 [2023-05-27 13:01:05] INFO root fetch - main [MainThread]: Store serial: [18273915]
+[2023-05-27 13:06:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273915]
+[2023-05-27 13:06:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 13:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autoxx
+[2023-05-27 13:06:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: UnlimitedGPT
+[2023-05-27 13:06:13] INFO root fetch - processPackages [autoxx]: New version: [0.0.28] Old Version: [0.0.27]
+[2023-05-27 13:06:13] INFO root fetch - processPackages [UnlimitedGPT]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 13:06:13] INFO root fetch - processPackages [autoxx]: Downloading https://files.pythonhosted.org/packages/68/75/241e3bf126ddf41f361d974a3a89110cc1827793e8d0c227a8b818ac2216/autoxx-0.0.27.tar.gz
+[2023-05-27 13:06:13] INFO root fetch - processPackages [UnlimitedGPT]: Downloading https://files.pythonhosted.org/packages/c1/5d/0f7b46f092a553238567d4fa7c85c2e08a2e4200120cce80d3955febe2a7/UnlimitedGPT-0.0.1.tar.gz
+[2023-05-27 13:06:14] INFO root fetch - processPackages [autoxx]: Downloading https://files.pythonhosted.org/packages/df/52/b2c871982e60f71ea9e67076b810bf4c12be0dcf8e397fc6bffb963affc4/autoxx-0.0.28.tar.gz
+[2023-05-27 13:06:14] INFO root fetch - processPackages [autoxx]: executing diffoscope
+[2023-05-27 13:06:14] INFO root fetch - processPackages [autoxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoxx-0.0.27.tar.gz tmp/autoxx-0.0.28.tar.gz --markdown 20230527/a/autoxx/0.0.27-0.0.28/diff.md --exclude *.pyd
+[2023-05-27 13:06:14] INFO root fetch - processPackages [UnlimitedGPT]: Downloading https://files.pythonhosted.org/packages/52/80/0825279dcf3e0ea17a78609c8700803fcb4c3f3db39c3d1457b66abe6471/UnlimitedGPT-0.0.2.tar.gz
+[2023-05-27 13:06:14] INFO root fetch - processPackages [UnlimitedGPT]: executing diffoscope
+[2023-05-27 13:06:14] INFO root fetch - processPackages [UnlimitedGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UnlimitedGPT-0.0.1.tar.gz tmp/UnlimitedGPT-0.0.2.tar.gz --markdown 20230527/U/UnlimitedGPT/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 13:06:15] INFO root fetch - main [MainThread]: End processing [UnlimitedGPT]: success
+[2023-05-27 13:06:15] INFO root fetch - main [MainThread]: End processing [autoxx]: success
+[2023-05-27 13:06:15] INFO root fetch - main [MainThread]: Store serial: [18273920]
