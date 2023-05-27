@@ -5246,3 +5246,11 @@
 [2023-05-27 07:55:35] INFO root fetch - main [MainThread]: End processing [pulumi-auth0]: success
 [2023-05-27 07:55:35] INFO root fetch - main [MainThread]: End processing [pulumi-akamai]: success
 [2023-05-27 07:55:35] INFO root fetch - main [MainThread]: Store serial: [18272533]
+[2023-05-27 08:00:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272533]
+[2023-05-27 08:00:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-27 08:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-databricks
+[2023-05-27 08:00:44] INFO root fetch - processPackages [pulumi-databricks]: New version: [1.9.0a1678745257] Old Version: [1.8.0a1678127428]
+[2023-05-27 08:00:44] INFO root fetch - processPackages [pulumi-databricks]: executing diffoscope
+[2023-05-27 08:00:44] INFO root fetch - processPackages [pulumi-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_databricks-1.8.0a1678127428.tar.gz tmp/pulumi_databricks-1.9.0a1678745257.tar.gz --markdown 20230527/p/pulumi-databricks/1.8.0a1678127428-1.9.0a1678745257/diff.md --exclude *.pyd
+[2023-05-27 08:00:47] INFO root fetch - main [MainThread]: End processing [pulumi-databricks]: success
+[2023-05-27 08:00:47] INFO root fetch - main [MainThread]: Store serial: [18272533]
