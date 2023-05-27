@@ -10506,3 +10506,43 @@
 [2023-05-27 18:26:32] INFO root fetch - main [MainThread]: End processing [dymoprint]: success
 [2023-05-27 18:26:39] INFO root fetch - main [MainThread]: End processing [myshit12223]: success
 [2023-05-27 18:26:39] INFO root fetch - main [MainThread]: Store serial: [18275588]
+[2023-05-27 18:31:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275588]
+[2023-05-27 18:31:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 18:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adi-reader
+[2023-05-27 18:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-notifications-hq
+[2023-05-27 18:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: squander
+[2023-05-27 18:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pythonbible
+[2023-05-27 18:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vector-quantize-pytorch
+[2023-05-27 18:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: elflepton
+[2023-05-27 18:31:49] INFO root fetch - processPackages [pythonbible]: New version: [0.9.1] Old Version: [0.9]
+[2023-05-27 18:31:49] INFO root fetch - processPackages [django-notifications-hq]: New version: [1.8.0] Old Version: [1.7.0]
+[2023-05-27 18:31:49] INFO root fetch - processPackages [squander]: New version: [1.8.4] Old Version: [1.8.3]
+[2023-05-27 18:31:49] INFO root fetch - processPackages [adi-reader]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 18:31:49] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.6.0] Old Version: [1.5.9]
+[2023-05-27 18:31:49] INFO root fetch - processPackages [elflepton]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-27 18:31:49] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-27 18:31:49] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.5.9.tar.gz tmp/vector_quantize_pytorch-1.6.0.tar.gz --markdown 20230527/v/vector-quantize-pytorch/1.5.9-1.6.0/diff.md --exclude *.pyd
+[2023-05-27 18:31:49] INFO root fetch - processPackages [django-notifications-hq]: Downloading https://files.pythonhosted.org/packages/27/9f/7d71e83b3de139aa7710732412cec6014613cd30c41d20d9e9b1b0de6c76/django-notifications-hq-1.7.0.tar.gz
+[2023-05-27 18:31:49] INFO root fetch - processPackages [pythonbible]: Downloading https://files.pythonhosted.org/packages/9d/fd/29ca981f6b5a098a525905fba6c6537e24cfc09f81753f7c526fd3b9d6d5/pythonbible-0.9.tar.gz
+[2023-05-27 18:31:49] INFO root fetch - processPackages [adi-reader]: Downloading https://files.pythonhosted.org/packages/cf/1a/8958696a2896b1310fa14b8fc084ec23a5107be2184b767fc557d49df830/adi-reader-0.0.8.tar.gz
+[2023-05-27 18:31:49] INFO root fetch - processPackages [elflepton]: Downloading https://files.pythonhosted.org/packages/77/af/044629734930fd796a028a64da52f6d8e77311a4d00bc2fe5aaad0fab7c8/elflepton-2.0.1.tar.gz
+[2023-05-27 18:31:50] INFO root fetch - processPackages [squander]: Downloading https://files.pythonhosted.org/packages/bd/da/22ba614d2f1138d266944575d795145e5dbbb500e2a9ecd4799a2b7266b0/squander-1.8.4.tar.gz
+[2023-05-27 18:31:50] INFO root fetch - processPackages [django-notifications-hq]: Downloading https://files.pythonhosted.org/packages/4d/ad/c0f384019c7f583d18ed4780ce12f8094aef0a0dfdbf178f5dd0a03345af/django-notifications-hq-1.8.0.tar.gz
+[2023-05-27 18:31:50] INFO root fetch - processPackages [squander]: executing diffoscope
+[2023-05-27 18:31:50] INFO root fetch - processPackages [squander]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squander-1.8.3.tar.gz tmp/squander-1.8.4.tar.gz --markdown 20230527/s/squander/1.8.3-1.8.4/diff.md --exclude *.pyd
+[2023-05-27 18:31:50] INFO root fetch - processPackages [adi-reader]: Downloading https://files.pythonhosted.org/packages/e8/eb/dad9b2368a718caf1ab0fcbe3b4a5a419f1d17cd755baad69d8da3ec60c3/adi-reader-0.0.9.tar.gz
+[2023-05-27 18:31:50] INFO root fetch - processPackages [django-notifications-hq]: executing diffoscope
+[2023-05-27 18:31:50] INFO root fetch - processPackages [django-notifications-hq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-notifications-hq-1.7.0.tar.gz tmp/django-notifications-hq-1.8.0.tar.gz --markdown 20230527/d/django-notifications-hq/1.7.0-1.8.0/diff.md --exclude *.pyd
+[2023-05-27 18:31:50] INFO root fetch - processPackages [elflepton]: Downloading https://files.pythonhosted.org/packages/64/cc/a35767d0516984419b994750481da33b0a9f8ce4cbb61f5a5057a3eef7f9/elflepton-2.0.2.tar.gz
+[2023-05-27 18:31:50] INFO root fetch - processPackages [elflepton]: executing diffoscope
+[2023-05-27 18:31:50] INFO root fetch - processPackages [elflepton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elflepton-2.0.1.tar.gz tmp/elflepton-2.0.2.tar.gz --markdown 20230527/e/elflepton/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-27 18:31:50] INFO root fetch - processPackages [adi-reader]: executing diffoscope
+[2023-05-27 18:31:50] INFO root fetch - processPackages [adi-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adi-reader-0.0.8.tar.gz tmp/adi-reader-0.0.9.tar.gz --markdown 20230527/a/adi-reader/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 18:31:50] WARNING root fetch - processPackages [pythonbible]: Skipping package: exceeds size limit 19656452>=10485760
+[2023-05-27 18:31:50] INFO root fetch - main [MainThread]: End processing [pythonbible] error
+[2023-05-27 18:31:51] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-27 18:31:51] INFO root fetch - main [MainThread]: End processing [django-notifications-hq]: success
+[2023-05-27 18:31:51] INFO root fetch - main [MainThread]: End processing [elflepton]: success
+[2023-05-27 18:31:51] INFO root fetch - main [MainThread]: End processing [adi-reader]: success
+[2023-05-27 18:31:52] INFO root fetch - main [MainThread]: End processing [squander]: success
+[2023-05-27 18:31:52] INFO root fetch - main [MainThread]: Store serial: [18275606]
