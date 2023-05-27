@@ -7226,3 +7226,46 @@
 [2023-05-27 12:17:59] INFO root fetch - main [MainThread]: End processing [corpus-unpdf]: success
 [2023-05-27 12:17:59] INFO root fetch - main [MainThread]: End processing [corpus-sc-toolkit]: success
 [2023-05-27 12:17:59] INFO root fetch - main [MainThread]: Store serial: [18273661]
+[2023-05-27 12:23:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273661]
+[2023-05-27 12:23:08] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 12:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notcli
+[2023-05-27 12:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openmpdl
+[2023-05-27 12:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notcli
+[2023-05-27 12:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: peaqevcore
+[2023-05-27 12:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gradio-version-freeze
+[2023-05-27 12:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: logidrivepy
+[2023-05-27 12:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyserde
+[2023-05-27 12:23:08] INFO root fetch - processPackages [notcli]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 12:23:08] INFO root fetch - processPackages [notcli]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 12:23:08] INFO root fetch - processPackages [openmpdl]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-27 12:23:08] INFO root fetch - processPackages [logidrivepy]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-27 12:23:08] INFO root fetch - processPackages [gradio-version-freeze]: New version: [3.32.1.3.38] Old Version: [3.32.0.3.36]
+[2023-05-27 12:23:08] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-05-27 12:23:08] INFO root fetch - processPackages [gradio-version-freeze]: Downloading https://files.pythonhosted.org/packages/5e/4a/9ca8ed11ed814195d004472d5b475c2f33dabeb7d739fa35eed571ac027d/gradio_version_freeze-3.32.0.3.36.tar.gz
+[2023-05-27 12:23:08] INFO root fetch - processPackages [pyserde]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-27 12:23:08] WARNING root fetch - processPackages [gradio-version-freeze]: Skipping package: exceeds size limit 11026950>=10485760
+[2023-05-27 12:23:08] INFO root fetch - main [MainThread]: End processing [gradio-version-freeze] error
+[2023-05-27 12:23:08] INFO root fetch - processPackages [notcli]: Downloading https://files.pythonhosted.org/packages/95/34/09ec92cbccaa513bdaaf95f205258bff62c4f3716d1f3752b04ca3c7c166/notcli-0.0.2.tar.gz
+[2023-05-27 12:23:08] INFO root fetch - processPackages [notcli]: Downloading https://files.pythonhosted.org/packages/95/34/09ec92cbccaa513bdaaf95f205258bff62c4f3716d1f3752b04ca3c7c166/notcli-0.0.2.tar.gz
+[2023-05-27 12:23:08] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-05-27 12:23:08] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230527/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-05-27 12:23:08] INFO root fetch - processPackages [openmpdl]: Downloading https://files.pythonhosted.org/packages/3e/69/388e1c924304e96ed0965c6188229b90966138105721ac88819d062d791b/openmpdl-1.0.0.tar.gz
+[2023-05-27 12:23:08] WARNING root fetch - processPackages [openmpdl]: Skipping package: exceeds size limit 66227555>=10485760
+[2023-05-27 12:23:08] INFO root fetch - main [MainThread]: End processing [openmpdl] error
+[2023-05-27 12:23:08] INFO root fetch - processPackages [logidrivepy]: Downloading https://files.pythonhosted.org/packages/8c/46/0aee4cba27ce7d78b067595053bc1256a6b36d84865ed628f9a7fae3c6e2/logidrivepy-0.1.3.tar.gz
+[2023-05-27 12:23:08] INFO root fetch - processPackages [logidrivepy]: executing diffoscope
+[2023-05-27 12:23:08] INFO root fetch - processPackages [logidrivepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logidrivepy-0.1.2.tar.gz tmp/logidrivepy-0.1.3.tar.gz --markdown 20230527/l/logidrivepy/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-27 12:23:08] INFO root fetch - processPackages [notcli]: Downloading https://files.pythonhosted.org/packages/42/38/7d28b6ac8cf1dffb06a4e5d855c1ad1ed9d9eb62edce2d10c47bbcbcdf69/notcli-0.0.3.tar.gz
+[2023-05-27 12:23:08] INFO root fetch - processPackages [notcli]: Downloading https://files.pythonhosted.org/packages/42/38/7d28b6ac8cf1dffb06a4e5d855c1ad1ed9d9eb62edce2d10c47bbcbcdf69/notcli-0.0.3.tar.gz
+[2023-05-27 12:23:08] INFO root fetch - processPackages [notcli]: executing diffoscope
+[2023-05-27 12:23:08] INFO root fetch - processPackages [notcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notcli-0.0.2.tar.gz tmp/notcli-0.0.3.tar.gz --markdown 20230527/n/notcli/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 12:23:08] INFO root fetch - processPackages [notcli]: executing diffoscope
+[2023-05-27 12:23:08] INFO root fetch - processPackages [notcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notcli-0.0.2.tar.gz tmp/notcli-0.0.3.tar.gz --markdown 20230527/n/notcli/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 12:23:08] INFO root fetch - processPackages [pyserde]: executing diffoscope
+[2023-05-27 12:23:08] INFO root fetch - processPackages [pyserde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyserde-0.9.7.tar.gz tmp/pyserde-0.9.8.tar.gz --markdown 20230527/p/pyserde/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-27 12:23:09] INFO root fetch - main [MainThread]: End processing [logidrivepy]: success
+[2023-05-27 12:23:09] INFO root fetch - main [MainThread]: End processing [notcli]: success
+[2023-05-27 12:23:09] INFO root fetch - main [MainThread]: End processing [pyserde]: success
+[2023-05-27 12:23:10] INFO root fetch - main [MainThread]: End processing [notcli]: success
+[2023-05-27 12:23:10] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-05-27 12:23:10] INFO root fetch - main [MainThread]: Store serial: [18273683]
