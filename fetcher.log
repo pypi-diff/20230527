@@ -4584,3 +4584,37 @@
 [2023-05-27 06:04:22] INFO root fetch - processPackages [nicegui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nicegui-1.2.8.tar.gz tmp/nicegui-1.2.9.tar.gz --markdown 20230527/n/nicegui/1.2.8-1.2.9/diff.md --exclude *.pyd
 [2023-05-27 06:04:27] INFO root fetch - main [MainThread]: End processing [nicegui]: success
 [2023-05-27 06:04:27] INFO root fetch - main [MainThread]: Store serial: [18272186]
+[2023-05-27 06:09:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272186]
+[2023-05-27 06:09:35] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 06:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-mrp-routing
+[2023-05-27 06:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tompy
+[2023-05-27 06:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: binsync
+[2023-05-27 06:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-mis-builder-budget
+[2023-05-27 06:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-mis-builder-demo
+[2023-05-27 06:09:35] INFO root fetch - processPackages [binsync]: New version: [3.9.0] Old Version: [3.6.0]
+[2023-05-27 06:09:35] INFO root fetch - processPackages [odoo14-addon-mrp-routing]: New version: [14.0.1.0.1.dev6] Old Version: [14.0.1.0.1.dev5]
+[2023-05-27 06:09:35] INFO root fetch - processPackages [tompy]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-27 06:09:36] INFO root fetch - processPackages [binsync]: executing diffoscope
+[2023-05-27 06:09:36] INFO root fetch - processPackages [binsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binsync-3.6.0.tar.gz tmp/binsync-3.9.0.tar.gz --markdown 20230527/b/binsync/3.6.0-3.9.0/diff.md --exclude *.pyd
+[2023-05-27 06:09:36] INFO root fetch - processPackages [odoo-addon-mis-builder-demo]: New version: [16.0.1.0.1.1] Old Version: [16.0.1.0.1]
+[2023-05-27 06:09:36] INFO root fetch - processPackages [odoo-addon-mis-builder-budget]: New version: [16.0.5.0.1.2] Old Version: [16.0.5.0.1.1]
+[2023-05-27 06:09:36] INFO root fetch - processPackages [odoo14-addon-mrp-routing]: Downloading https://files.pythonhosted.org/packages/ed/a4/510beb23bfb6624ba9ea9dc0b196e4f4a09647b4e87c4b465ed8bef8db6e/odoo14_addon_mrp_routing-14.0.1.0.1.dev5-py3-none-any.whl
+[2023-05-27 06:09:36] INFO root fetch - processPackages [odoo-addon-mis-builder-demo]: Downloading https://files.pythonhosted.org/packages/dc/93/9ceb343bc87b135637be28da96d3d710e2f2089b4426f24869bf64f55e89/odoo_addon_mis_builder_demo-16.0.1.0.1-py3-none-any.whl
+[2023-05-27 06:09:36] INFO root fetch - processPackages [odoo-addon-mis-builder-budget]: Downloading https://files.pythonhosted.org/packages/25/31/a952787b1113d68ba6f3bc7c48a00df9f581a618a8f6055647c7619ee084/odoo_addon_mis_builder_budget-16.0.5.0.1.1-py3-none-any.whl
+[2023-05-27 06:09:36] INFO root fetch - processPackages [tompy]: executing diffoscope
+[2023-05-27 06:09:36] INFO root fetch - processPackages [tompy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tompy-0.8.0.tar.gz tmp/tompy-0.9.0.tar.gz --markdown 20230527/t/tompy/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 06:09:36] INFO root fetch - processPackages [odoo14-addon-mrp-routing]: Downloading https://files.pythonhosted.org/packages/16/cc/15091558c80708e6129825c1ebd495fc2424749f26ce14f2f63b8cd33d01/odoo14_addon_mrp_routing-14.0.1.0.1.dev6-py3-none-any.whl
+[2023-05-27 06:09:36] INFO root fetch - processPackages [odoo14-addon-mrp-routing]: executing diffoscope
+[2023-05-27 06:09:36] INFO root fetch - processPackages [odoo14-addon-mrp-routing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_mrp_routing-14.0.1.0.1.dev5-py3-none-any.whl.zip tmp/odoo14_addon_mrp_routing-14.0.1.0.1.dev6-py3-none-any.whl.zip --markdown 20230527/o/odoo14-addon-mrp-routing/14.0.1.0.1.dev5-14.0.1.0.1.dev6/diff.md --exclude *.pyd
+[2023-05-27 06:09:36] INFO root fetch - processPackages [odoo-addon-mis-builder-demo]: Downloading https://files.pythonhosted.org/packages/d8/9b/46982bdc953667b832b014179fec2bbbf6faa5972e110eff2eeccd092a51/odoo_addon_mis_builder_demo-16.0.1.0.1.1-py3-none-any.whl
+[2023-05-27 06:09:36] INFO root fetch - processPackages [odoo-addon-mis-builder-budget]: Downloading https://files.pythonhosted.org/packages/44/76/e4edaf7b350c72d4dbf535d6f293a7740353c2fde8b604a8ef0e0fba0e72/odoo_addon_mis_builder_budget-16.0.5.0.1.2-py3-none-any.whl
+[2023-05-27 06:09:36] INFO root fetch - processPackages [odoo-addon-mis-builder-demo]: executing diffoscope
+[2023-05-27 06:09:36] INFO root fetch - processPackages [odoo-addon-mis-builder-demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mis_builder_demo-16.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_mis_builder_demo-16.0.1.0.1.1-py3-none-any.whl.zip --markdown 20230527/o/odoo-addon-mis-builder-demo/16.0.1.0.1-16.0.1.0.1.1/diff.md --exclude *.pyd
+[2023-05-27 06:09:36] INFO root fetch - processPackages [odoo-addon-mis-builder-budget]: executing diffoscope
+[2023-05-27 06:09:36] INFO root fetch - processPackages [odoo-addon-mis-builder-budget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mis_builder_budget-16.0.5.0.1.1-py3-none-any.whl.zip tmp/odoo_addon_mis_builder_budget-16.0.5.0.1.2-py3-none-any.whl.zip --markdown 20230527/o/odoo-addon-mis-builder-budget/16.0.5.0.1.1-16.0.5.0.1.2/diff.md --exclude *.pyd
+[2023-05-27 06:09:37] INFO root fetch - main [MainThread]: End processing [tompy]: success
+[2023-05-27 06:09:37] INFO root fetch - main [MainThread]: End processing [odoo14-addon-mrp-routing]: success
+[2023-05-27 06:09:37] INFO root fetch - main [MainThread]: End processing [odoo-addon-mis-builder-demo]: success
+[2023-05-27 06:09:37] INFO root fetch - main [MainThread]: End processing [binsync]: success
+[2023-05-27 06:09:38] INFO root fetch - main [MainThread]: End processing [odoo-addon-mis-builder-budget]: success
+[2023-05-27 06:09:38] INFO root fetch - main [MainThread]: Store serial: [18272199]
