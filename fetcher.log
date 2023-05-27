@@ -11422,3 +11422,42 @@
 [2023-05-27 20:35:29] INFO root fetch - main [MainThread]: End processing [parse-torrent-title]: success
 [2023-05-27 20:35:29] INFO root fetch - main [MainThread]: End processing [deep-utils]: success
 [2023-05-27 20:35:29] INFO root fetch - main [MainThread]: Store serial: [18276081]
+[2023-05-27 20:40:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276081]
+[2023-05-27 20:40:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 20:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbt-clickzetta
+[2023-05-27 20:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ldimbenchmark
+[2023-05-27 20:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiotrino
+[2023-05-27 20:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tasmota-metrics
+[2023-05-27 20:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mavcom
+[2023-05-27 20:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbt-clickzetta
+[2023-05-27 20:40:38] INFO root fetch - processPackages [aiotrino]: New version: [0.2.1] Old Version: [0.1.1]
+[2023-05-27 20:40:38] INFO root fetch - processPackages [ldimbenchmark]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-27 20:40:38] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 20:40:38] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 20:40:38] INFO root fetch - processPackages [mavcom]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-27 20:40:38] INFO root fetch - processPackages [tasmota-metrics]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-27 20:40:38] INFO root fetch - processPackages [mavcom]: executing diffoscope
+[2023-05-27 20:40:38] INFO root fetch - processPackages [mavcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mavcom-1.1.0.tar.gz tmp/mavcom-1.1.1.tar.gz --markdown 20230527/m/mavcom/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-27 20:40:38] INFO root fetch - processPackages [aiotrino]: Downloading https://files.pythonhosted.org/packages/91/25/76f17d5973831cb0a768ba2bb54f653fccb590a40324a4d4e97b572ac0e6/aiotrino-0.1.1.tar.gz
+[2023-05-27 20:40:38] INFO root fetch - processPackages [tasmota-metrics]: Downloading https://files.pythonhosted.org/packages/71/5d/8cc3d65d872d61bf620502e38fda33ec0b293d871bf8119f80fb71a7130a/tasmota-metrics-0.3.3.tar.gz
+[2023-05-27 20:40:38] INFO root fetch - processPackages [dbt-clickzetta]: Downloading https://files.pythonhosted.org/packages/9d/18/9f0961f73c826a156fd2a3343d4b2fafecd1e953f549999139d5c96edbd9/dbt-clickzetta-0.0.3.tar.gz
+[2023-05-27 20:40:38] INFO root fetch - processPackages [dbt-clickzetta]: Downloading https://files.pythonhosted.org/packages/9d/18/9f0961f73c826a156fd2a3343d4b2fafecd1e953f549999139d5c96edbd9/dbt-clickzetta-0.0.3.tar.gz
+[2023-05-27 20:40:38] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-27 20:40:38] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.2.tar.gz tmp/dbt-clickzetta-0.0.3.tar.gz --markdown 20230527/d/dbt-clickzetta/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 20:40:38] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-27 20:40:38] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.2.tar.gz tmp/dbt-clickzetta-0.0.3.tar.gz --markdown 20230527/d/dbt-clickzetta/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 20:40:38] INFO root fetch - processPackages [ldimbenchmark]: executing diffoscope
+[2023-05-27 20:40:38] INFO root fetch - processPackages [ldimbenchmark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldimbenchmark-0.2.8.tar.gz tmp/ldimbenchmark-0.2.9.tar.gz --markdown 20230527/l/ldimbenchmark/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-27 20:40:38] INFO root fetch - processPackages [tasmota-metrics]: Downloading https://files.pythonhosted.org/packages/96/f6/cabda982c23eafcf4fe0881058cecced3fd0abf8be364e9fc888e51226ce/tasmota-metrics-0.3.4.tar.gz
+[2023-05-27 20:40:38] INFO root fetch - processPackages [aiotrino]: Downloading https://files.pythonhosted.org/packages/9b/22/2eb565420140fe4ea0a961fb3928c7876aa2c7ff226bbfc316768bb9ea72/aiotrino-0.2.1.tar.gz
+[2023-05-27 20:40:38] INFO root fetch - processPackages [tasmota-metrics]: executing diffoscope
+[2023-05-27 20:40:38] INFO root fetch - processPackages [tasmota-metrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tasmota-metrics-0.3.3.tar.gz tmp/tasmota-metrics-0.3.4.tar.gz --markdown 20230527/t/tasmota-metrics/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-27 20:40:38] INFO root fetch - processPackages [aiotrino]: executing diffoscope
+[2023-05-27 20:40:38] INFO root fetch - processPackages [aiotrino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotrino-0.1.1.tar.gz tmp/aiotrino-0.2.1.tar.gz --markdown 20230527/a/aiotrino/0.1.1-0.2.1/diff.md --exclude *.pyd
+[2023-05-27 20:40:39] INFO root fetch - main [MainThread]: End processing [mavcom]: success
+[2023-05-27 20:40:40] INFO root fetch - main [MainThread]: End processing [ldimbenchmark]: success
+[2023-05-27 20:40:40] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-27 20:40:40] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-27 20:40:40] INFO root fetch - main [MainThread]: End processing [tasmota-metrics]: success
+[2023-05-27 20:40:40] INFO root fetch - main [MainThread]: End processing [aiotrino]: success
+[2023-05-27 20:40:40] INFO root fetch - main [MainThread]: Store serial: [18276097]
