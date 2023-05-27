@@ -8662,3 +8662,62 @@
 [2023-05-27 15:10:43] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2023-05-27 15:11:15] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2023-05-27 15:11:15] INFO root fetch - main [MainThread]: Store serial: [18274452]
+[2023-05-27 15:16:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274452]
+[2023-05-27 15:16:32] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-27 15:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-pytorch
+[2023-05-27 15:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: statml
+[2023-05-27 15:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-scipy
+[2023-05-27 15:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sixsigmaspc
+[2023-05-27 15:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-sphinx
+[2023-05-27 15:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-django
+[2023-05-27 15:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: py-graphql-client
+[2023-05-27 15:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: custom-utils
+[2023-05-27 15:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nbdev-apl
+[2023-05-27 15:16:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: django-hibp
+[2023-05-27 15:16:32] INFO root fetch - processPackages [statml]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-27 15:16:32] INFO root fetch - processPackages [custom-utils]: New version: [0.0.31] Old Version: [0.0.2]
+[2023-05-27 15:16:32] INFO root fetch - processPackages [py-graphql-client]: New version: [0.1.2] Old Version: [0.1.1b2]
+[2023-05-27 15:16:32] WARNING root fetch - processPackages [sixsigmaspc]: Skipping, unable to determine old version
+[2023-05-27 15:16:32] INFO root fetch - main [MainThread]: End processing [sixsigmaspc] error
+[2023-05-27 15:16:32] INFO root fetch - processPackages [django-hibp]: New version: [1.0] Old Version: [0.2]
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.798] Old Version: [0.0.797]
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230527/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230527/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 15:16:32] INFO root fetch - processPackages [custom-utils]: Downloading https://files.pythonhosted.org/packages/0d/1c/40f2744ea7fce52cc5d57b1b50e4f25b500fbe9a296921a45043ee6a77ef/custom-utils-0.0.2.tar.gz
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230527/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 15:16:32] INFO root fetch - processPackages [py-graphql-client]: Downloading https://files.pythonhosted.org/packages/09/27/e30c9085de5e1449edad7514aac5a5f687a440ed2067262fc8d6ebecb5ef/py-graphql-client-0.1.1b2.tar.gz
+[2023-05-27 15:16:32] INFO root fetch - processPackages [django-hibp]: Downloading https://files.pythonhosted.org/packages/f2/07/e63db8af01dacd87798f381f20de8d9f2263ba9657086629bbe61a85b251/django_hibp-0.2-py3-none-any.whl
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/75/be/9e399fb2fad2bf48efbd41da5b128de3a91abdb70b78e10afc05a7e21902/nbdev-apl-0.0.798.tar.gz
+[2023-05-27 15:16:32] INFO root fetch - processPackages [statml]: Downloading https://files.pythonhosted.org/packages/37/44/bf6f65347b60cb284e3b4341866a81ff2879a7e61ee3a2ceae22ddf9ecb3/statml-0.0.8.tar.gz
+[2023-05-27 15:16:32] INFO root fetch - processPackages [custom-utils]: Downloading https://files.pythonhosted.org/packages/a6/a5/cab6017e6a875ac76c674f1ab1ea9ed4f1d9c58ee91f7c84e9e081773c13/custom-utils-0.0.31.tar.gz
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.797.tar.gz tmp/nbdev-apl-0.0.798.tar.gz --markdown 20230527/n/nbdev-apl/0.0.797-0.0.798/diff.md --exclude *.pyd
+[2023-05-27 15:16:32] INFO root fetch - processPackages [statml]: executing diffoscope
+[2023-05-27 15:16:32] INFO root fetch - processPackages [statml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statml-0.0.7.tar.gz tmp/statml-0.0.8.tar.gz --markdown 20230527/s/statml/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-05-27 15:16:32] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230527/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 15:16:32] INFO root fetch - processPackages [py-graphql-client]: Downloading https://files.pythonhosted.org/packages/51/b8/bfc6e04091871d2617892c21411d0331fcae95102e80db8eb493641abee7/py-graphql-client-0.1.2.tar.gz
+[2023-05-27 15:16:32] INFO root fetch - processPackages [custom-utils]: executing diffoscope
+[2023-05-27 15:16:32] INFO root fetch - processPackages [custom-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom-utils-0.0.2.tar.gz tmp/custom-utils-0.0.31.tar.gz --markdown 20230527/c/custom-utils/0.0.2-0.0.31/diff.md --exclude *.pyd
+[2023-05-27 15:16:32] INFO root fetch - processPackages [django-hibp]: Downloading https://files.pythonhosted.org/packages/9b/6a/b62623c631c73152701916cf266bfcfabacd3a6a7e69fa3bf5ba9ad5639e/django_hibp-1.0-py3-none-any.whl
+[2023-05-27 15:16:32] INFO root fetch - processPackages [py-graphql-client]: executing diffoscope
+[2023-05-27 15:16:32] INFO root fetch - processPackages [py-graphql-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-graphql-client-0.1.1b2.tar.gz tmp/py-graphql-client-0.1.2.tar.gz --markdown 20230527/p/py-graphql-client/0.1.1b2-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 15:16:33] INFO root fetch - processPackages [django-hibp]: executing diffoscope
+[2023-05-27 15:16:33] INFO root fetch - processPackages [django-hibp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_hibp-0.2-py3-none-any.whl.zip tmp/django_hibp-1.0-py3-none-any.whl.zip --markdown 20230527/d/django-hibp/0.2-1.0/diff.md --exclude *.pyd
+[2023-05-27 15:16:33] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-05-27 15:16:33] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-05-27 15:16:34] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-27 15:16:34] INFO root fetch - main [MainThread]: End processing [py-graphql-client]: success
+[2023-05-27 15:16:34] INFO root fetch - main [MainThread]: End processing [custom-utils]: success
+[2023-05-27 15:16:34] INFO root fetch - main [MainThread]: End processing [django-hibp]: success
+[2023-05-27 15:16:35] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-05-27 15:16:35] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-05-27 15:16:36] INFO root fetch - main [MainThread]: End processing [statml]: success
+[2023-05-27 15:16:36] INFO root fetch - main [MainThread]: Store serial: [18274482]
