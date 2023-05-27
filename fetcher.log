@@ -7409,3 +7409,82 @@
 [2023-05-27 12:33:43] INFO root fetch - main [MainThread]: End processing [ibm-aigov-facts-client]: success
 [2023-05-27 12:34:14] INFO root fetch - main [MainThread]: End processing [codepeers]: success
 [2023-05-27 12:34:14] INFO root fetch - main [MainThread]: Store serial: [18273809]
+[2023-05-27 12:39:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273809]
+[2023-05-27 12:39:24] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-27 12:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notcli
+[2023-05-27 12:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: convcsv2json
+[2023-05-27 12:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: whatsapp-python
+[2023-05-27 12:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openai-forward
+[2023-05-27 12:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdxbasics
+[2023-05-27 12:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: notcli
+[2023-05-27 12:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyuserside
+[2023-05-27 12:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dscan-api-client
+[2023-05-27 12:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: notcli
+[2023-05-27 12:39:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: py-d2
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-27 12:39:24] INFO root fetch - processPackages [openai-forward]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-27 12:39:24] INFO root fetch - processPackages [convcsv2json]: New version: [1.5.1] Old Version: [1.5]
+[2023-05-27 12:39:24] INFO root fetch - processPackages [dscan-api-client]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-27 12:39:24] INFO root fetch - processPackages [py-d2]: New version: [1.0.0] Old Version: [0.0.2]
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-27 12:39:24] INFO root fetch - processPackages [whatsapp-python]: New version: [2.9.3] Old Version: [2.4.3]
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-27 12:39:24] INFO root fetch - processPackages [pyuserside]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-27 12:39:24] INFO root fetch - processPackages [cdxbasics]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: Downloading https://files.pythonhosted.org/packages/47/13/5f97bb63274d44a1664ef3329d278a398cb92115631c101d84bc26f6064d/notcli-0.0.7.tar.gz
+[2023-05-27 12:39:24] INFO root fetch - processPackages [cdxbasics]: executing diffoscope
+[2023-05-27 12:39:24] INFO root fetch - processPackages [cdxbasics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdxbasics-0.2.8.tar.gz tmp/cdxbasics-0.2.9.tar.gz --markdown 20230527/c/cdxbasics/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: Downloading https://files.pythonhosted.org/packages/47/13/5f97bb63274d44a1664ef3329d278a398cb92115631c101d84bc26f6064d/notcli-0.0.7.tar.gz
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: Downloading https://files.pythonhosted.org/packages/47/13/5f97bb63274d44a1664ef3329d278a398cb92115631c101d84bc26f6064d/notcli-0.0.7.tar.gz
+[2023-05-27 12:39:24] INFO root fetch - processPackages [convcsv2json]: Downloading https://files.pythonhosted.org/packages/e6/67/7658261fa7521bd98f73d2bbc42c674260b90f649a445940d2de9091de81/convcsv2json-1.5.tar.gz
+[2023-05-27 12:39:24] INFO root fetch - processPackages [whatsapp-python]: Downloading https://files.pythonhosted.org/packages/68/1c/9d98dd3c7504a4762634e762e7aa1a7986b3efbf640749b978b8fc6046f1/whatsapp-python-2.9.3.tar.gz
+[2023-05-27 12:39:24] INFO root fetch - processPackages [dscan-api-client]: Downloading https://files.pythonhosted.org/packages/98/84/7e6234a85b71da152e8576b7cda4fe3b6587e6f4a7228212ca5ab7d1dc54/dscan_api_client-1.0.4-py3-none-any.whl
+[2023-05-27 12:39:24] INFO root fetch - processPackages [py-d2]: Downloading https://files.pythonhosted.org/packages/b1/5c/56abe5332b6ca762c887f478fcfef7291056e1887f97240ab2aff613afd1/py_d2-0.0.2.tar.gz
+[2023-05-27 12:39:24] INFO root fetch - processPackages [pyuserside]: Downloading https://files.pythonhosted.org/packages/3f/45/df18388d0b9606d6bfe9a9f37ca406ee466f265fb081c614269fac330602/pyuserside-0.2.0.tar.gz
+[2023-05-27 12:39:24] INFO root fetch - processPackages [openai-forward]: Downloading https://files.pythonhosted.org/packages/8a/10/b2988cbbe22c7b3b26f651d78e03b59c1d108dc9933e398900e6c6221b4c/openai_forward-0.2.2.tar.gz
+[2023-05-27 12:39:24] INFO root fetch - processPackages [pyuserside]: executing diffoscope
+[2023-05-27 12:39:24] INFO root fetch - processPackages [pyuserside]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyuserside-0.1.1.tar.gz tmp/pyuserside-0.2.0.tar.gz --markdown 20230527/p/pyuserside/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-27 12:39:24] INFO root fetch - processPackages [dscan-api-client]: executing diffoscope
+[2023-05-27 12:39:24] INFO root fetch - processPackages [dscan-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscan_api_client-1.0.3-py3-none-any.whl.zip tmp/dscan_api_client-1.0.4-py3-none-any.whl.zip --markdown 20230527/d/dscan-api-client/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-27 12:39:24] INFO root fetch - processPackages [openai-forward]: executing diffoscope
+[2023-05-27 12:39:24] INFO root fetch - processPackages [openai-forward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_forward-0.2.1.tar.gz tmp/openai_forward-0.2.2.tar.gz --markdown 20230527/o/openai-forward/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: Downloading https://files.pythonhosted.org/packages/14/e6/97a4c9c367818a488c922200effff7799aa5804270025a8205cf9fa9814c/notcli-0.0.8.tar.gz
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: Downloading https://files.pythonhosted.org/packages/14/e6/97a4c9c367818a488c922200effff7799aa5804270025a8205cf9fa9814c/notcli-0.0.8.tar.gz
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: Downloading https://files.pythonhosted.org/packages/14/e6/97a4c9c367818a488c922200effff7799aa5804270025a8205cf9fa9814c/notcli-0.0.8.tar.gz
+[2023-05-27 12:39:24] INFO root fetch - processPackages [whatsapp-python]: executing diffoscope
+[2023-05-27 12:39:24] INFO root fetch - processPackages [whatsapp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatsapp-python-2.4.3.tar.gz tmp/whatsapp-python-2.9.3.tar.gz --markdown 20230527/w/whatsapp-python/2.4.3-2.9.3/diff.md --exclude *.pyd
+[2023-05-27 12:39:24] INFO root fetch - processPackages [py-d2]: Downloading https://files.pythonhosted.org/packages/a7/e2/714e0fe4746847abd18c69953d7af5f1fd9e6f3c5e0d8f6ee6ba9631e642/py_d2-1.0.0.tar.gz
+[2023-05-27 12:39:24] INFO root fetch - processPackages [convcsv2json]: Downloading https://files.pythonhosted.org/packages/c3/ca/aa024fd909b7d4f3907496c68e7b6301fa1c4583011b5687a53333d20b6b/convcsv2json-1.5.1.tar.gz
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: executing diffoscope
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notcli-0.0.7.tar.gz tmp/notcli-0.0.8.tar.gz --markdown 20230527/n/notcli/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: executing diffoscope
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: executing diffoscope
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notcli-0.0.7.tar.gz tmp/notcli-0.0.8.tar.gz --markdown 20230527/n/notcli/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-27 12:39:24] INFO root fetch - processPackages [notcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notcli-0.0.7.tar.gz tmp/notcli-0.0.8.tar.gz --markdown 20230527/n/notcli/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-27 12:39:24] INFO root fetch - processPackages [py-d2]: executing diffoscope
+[2023-05-27 12:39:24] INFO root fetch - processPackages [py-d2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_d2-0.0.2.tar.gz tmp/py_d2-1.0.0.tar.gz --markdown 20230527/p/py-d2/0.0.2-1.0.0/diff.md --exclude *.pyd
+[2023-05-27 12:39:24] INFO root fetch - processPackages [convcsv2json]: executing diffoscope
+[2023-05-27 12:39:24] INFO root fetch - processPackages [convcsv2json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/convcsv2json-1.5.tar.gz tmp/convcsv2json-1.5.1.tar.gz --markdown 20230527/c/convcsv2json/1.5-1.5.1/diff.md --exclude *.pyd
+[2023-05-27 12:39:26] INFO root fetch - processPackages [pyuserside]: Start processing: newsapi-python-client
+[2023-05-27 12:39:26] INFO root fetch - main [MainThread]: End processing [pyuserside]: success
+[2023-05-27 12:39:26] INFO root fetch - processPackages [newsapi-python-client]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-27 12:39:26] INFO root fetch - processPackages [openai-forward]: Start processing: lamineml
+[2023-05-27 12:39:26] INFO root fetch - main [MainThread]: End processing [openai-forward]: success
+[2023-05-27 12:39:26] INFO root fetch - processPackages [lamineml]: New version: [0.0.71] Old Version: [0.0.70]
+[2023-05-27 12:39:26] INFO root fetch - processPackages [newsapi-python-client]: Downloading https://files.pythonhosted.org/packages/72/27/28aca6881f46e28e8bfc074b32c1983054905bad3ba24f0b1d05a9159bc9/newsapi-python-client-0.2.1.tar.gz
+[2023-05-27 12:39:26] INFO root fetch - main [MainThread]: End processing [notcli]: success
+[2023-05-27 12:39:26] INFO root fetch - main [MainThread]: End processing [whatsapp-python]: success
+[2023-05-27 12:39:26] INFO root fetch - processPackages [lamineml]: executing diffoscope
+[2023-05-27 12:39:26] INFO root fetch - processPackages [lamineml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamineml-0.0.70.tar.gz tmp/lamineml-0.0.71.tar.gz --markdown 20230527/l/lamineml/0.0.70-0.0.71/diff.md --exclude *.pyd
+[2023-05-27 12:39:26] INFO root fetch - main [MainThread]: End processing [cdxbasics]: success
+[2023-05-27 12:39:26] INFO root fetch - main [MainThread]: End processing [py-d2]: success
+[2023-05-27 12:39:26] INFO root fetch - main [MainThread]: End processing [convcsv2json]: success
+[2023-05-27 12:39:26] INFO root fetch - main [MainThread]: End processing [notcli]: success
+[2023-05-27 12:39:26] INFO root fetch - processPackages [newsapi-python-client]: Downloading https://files.pythonhosted.org/packages/db/fd/d7ac650b1819d58273e70519987b3a8808a0367b76402cea85e58bb11e03/newsapi-python-client-0.2.2.tar.gz
+[2023-05-27 12:39:26] INFO root fetch - main [MainThread]: End processing [notcli]: success
+[2023-05-27 12:39:26] INFO root fetch - processPackages [newsapi-python-client]: executing diffoscope
+[2023-05-27 12:39:26] INFO root fetch - processPackages [newsapi-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/newsapi-python-client-0.2.1.tar.gz tmp/newsapi-python-client-0.2.2.tar.gz --markdown 20230527/n/newsapi-python-client/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-27 12:39:26] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
+[2023-05-27 12:39:27] INFO root fetch - main [MainThread]: End processing [lamineml]: success
+[2023-05-27 12:39:27] INFO root fetch - main [MainThread]: End processing [newsapi-python-client]: success
+[2023-05-27 12:39:27] INFO root fetch - main [MainThread]: Store serial: [18273844]
