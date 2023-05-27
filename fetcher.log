@@ -11695,3 +11695,43 @@
 [2023-05-27 21:27:23] INFO root fetch - main [MainThread]: End processing [tracknado]: success
 [2023-05-27 21:27:23] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
 [2023-05-27 21:27:23] INFO root fetch - main [MainThread]: Store serial: [18276356]
+[2023-05-27 21:32:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276356]
+[2023-05-27 21:32:32] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 21:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrealb
+[2023-05-27 21:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: light-pipe
+[2023-05-27 21:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cryptofeed
+[2023-05-27 21:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: p-template-crawler
+[2023-05-27 21:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: madframe
+[2023-05-27 21:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: feynml
+[2023-05-27 21:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Flask-Yookassa
+[2023-05-27 21:32:32] INFO root fetch - processPackages [p-template-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 21:32:32] INFO root fetch - processPackages [feynml]: New version: [0.2.0] Old Version: [0.1.7]
+[2023-05-27 21:32:32] INFO root fetch - processPackages [pyrealb]: New version: [2.3.5] Old Version: [2.3.4]
+[2023-05-27 21:32:32] WARNING root fetch - processPackages [madframe]: Skipping, unable to determine old version
+[2023-05-27 21:32:32] INFO root fetch - main [MainThread]: End processing [madframe] error
+[2023-05-27 21:32:32] INFO root fetch - processPackages [cryptofeed]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-05-27 21:32:32] INFO root fetch - processPackages [light-pipe]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-27 21:32:32] WARNING root fetch - processPackages [Flask-Yookassa]: Skipping, unable to determine old version
+[2023-05-27 21:32:32] INFO root fetch - main [MainThread]: End processing [Flask-Yookassa] error
+[2023-05-27 21:32:32] INFO root fetch - processPackages [p-template-crawler]: executing diffoscope
+[2023-05-27 21:32:32] INFO root fetch - processPackages [p-template-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-crawler-0.0.8.tar.gz tmp/p-template-crawler-0.0.9.tar.gz --markdown 20230527/p/p-template-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 21:32:32] INFO root fetch - processPackages [feynml]: Downloading https://files.pythonhosted.org/packages/27/04/11259806ee3996881994a51d76cfbd87605453cce2417d22097d52ab2d74/feynml-0.1.7.tar.gz
+[2023-05-27 21:32:32] INFO root fetch - processPackages [cryptofeed]: Downloading https://files.pythonhosted.org/packages/30/b2/f2099f8f60af21057ca652252c7fb58fa70d3ce6a694406b4d0645bcf890/cryptofeed-2.3.1.tar.gz
+[2023-05-27 21:32:32] INFO root fetch - processPackages [pyrealb]: Downloading https://files.pythonhosted.org/packages/97/1b/c53bbd93982da23f0113dbb0641d85afea7ce34e2df2155f659257b569b7/pyrealb-2.3.5.tar.gz
+[2023-05-27 21:32:32] INFO root fetch - processPackages [feynml]: Downloading https://files.pythonhosted.org/packages/3a/38/0daa187f4aeb2daad5a3c942173ff8729e31aaaae435710dea26862d211f/feynml-0.2.0.tar.gz
+[2023-05-27 21:32:33] INFO root fetch - processPackages [cryptofeed]: Downloading https://files.pythonhosted.org/packages/a7/1d/f17d799c5e148dc803ceae740fee33bc200bf8092ed0df017fdd8593b2cf/cryptofeed-2.3.2.tar.gz
+[2023-05-27 21:32:33] INFO root fetch - processPackages [feynml]: executing diffoscope
+[2023-05-27 21:32:33] INFO root fetch - processPackages [feynml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feynml-0.1.7.tar.gz tmp/feynml-0.2.0.tar.gz --markdown 20230527/f/feynml/0.1.7-0.2.0/diff.md --exclude *.pyd
+[2023-05-27 21:32:33] INFO root fetch - processPackages [pyrealb]: executing diffoscope
+[2023-05-27 21:32:33] INFO root fetch - processPackages [pyrealb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrealb-2.3.4.tar.gz tmp/pyrealb-2.3.5.tar.gz --markdown 20230527/p/pyrealb/2.3.4-2.3.5/diff.md --exclude *.pyd
+[2023-05-27 21:32:33] INFO root fetch - processPackages [light-pipe]: Downloading https://files.pythonhosted.org/packages/07/3c/4a331449e919f98330ba39ef11e98bb44da0ae54f1630eb6e71c8b678afc/light-pipe-0.3.1.tar.gz
+[2023-05-27 21:32:33] INFO root fetch - processPackages [light-pipe]: executing diffoscope
+[2023-05-27 21:32:33] INFO root fetch - processPackages [light-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/light-pipe-0.3.0.tar.gz tmp/light-pipe-0.3.1.tar.gz --markdown 20230527/l/light-pipe/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-27 21:32:33] INFO root fetch - processPackages [cryptofeed]: executing diffoscope
+[2023-05-27 21:32:33] INFO root fetch - processPackages [cryptofeed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cryptofeed-2.3.1.tar.gz tmp/cryptofeed-2.3.2.tar.gz --markdown 20230527/c/cryptofeed/2.3.1-2.3.2/diff.md --exclude *.pyd
+[2023-05-27 21:32:33] INFO root fetch - main [MainThread]: End processing [p-template-crawler]: success
+[2023-05-27 21:32:34] INFO root fetch - main [MainThread]: End processing [feynml]: success
+[2023-05-27 21:32:34] INFO root fetch - main [MainThread]: End processing [light-pipe]: success
+[2023-05-27 21:32:37] INFO root fetch - main [MainThread]: End processing [pyrealb]: success
+[2023-05-27 21:32:37] INFO root fetch - main [MainThread]: End processing [cryptofeed]: success
+[2023-05-27 21:32:37] INFO root fetch - main [MainThread]: Store serial: [18276384]
