@@ -11199,3 +11199,47 @@
 [2023-05-27 20:02:34] INFO root fetch - main [MainThread]: End processing [yektatestapi]: success
 [2023-05-27 20:02:34] INFO root fetch - main [MainThread]: End processing [alacorder]: success
 [2023-05-27 20:02:34] INFO root fetch - main [MainThread]: Store serial: [18275960]
+[2023-05-27 20:07:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275960]
+[2023-05-27 20:07:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 20:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kayle
+[2023-05-27 20:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langchain-discord
+[2023-05-27 20:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: azureml-dataprep-rslex
+[2023-05-27 20:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: azureml-dataprep
+[2023-05-27 20:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sosecrets
+[2023-05-27 20:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: langchain-discord
+[2023-05-27 20:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rframe
+[2023-05-27 20:07:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: langchain-discord
+[2023-05-27 20:07:43] INFO root fetch - processPackages [sosecrets]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-27 20:07:43] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 20:07:43] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 20:07:43] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 20:07:43] INFO root fetch - processPackages [kayle]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-27 20:07:44] INFO root fetch - processPackages [rframe]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-27 20:07:44] INFO root fetch - processPackages [azureml-dataprep]: New version: [4.9.7] Old Version: [4.9.6]
+[2023-05-27 20:07:44] INFO root fetch - processPackages [azureml-dataprep-rslex]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-05-27 20:07:44] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 20:07:44] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 20:07:44] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 20:07:44] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 20:07:44] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 20:07:44] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 20:07:44] INFO root fetch - processPackages [kayle]: executing diffoscope
+[2023-05-27 20:07:44] INFO root fetch - processPackages [kayle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kayle-0.5.8-py3-none-any.whl.zip tmp/kayle-0.5.9-py3-none-any.whl.zip --markdown 20230527/k/kayle/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-27 20:07:44] INFO root fetch - processPackages [sosecrets]: Downloading https://files.pythonhosted.org/packages/b7/57/9ebeac9447725864b52e986dede3d88018a0850567fa9516df282a33a064/sosecrets-0.1.3.tar.gz
+[2023-05-27 20:07:44] INFO root fetch - processPackages [azureml-dataprep]: Downloading https://files.pythonhosted.org/packages/15/14/eda431e84d48f89e3474c6cdedace69e7bb15c9e9ef73c4d0714fe1ad78d/azureml_dataprep-4.9.6-py3-none-any.whl
+[2023-05-27 20:07:44] INFO root fetch - processPackages [azureml-dataprep-rslex]: Downloading https://files.pythonhosted.org/packages/a3/d5/7a9b0965a3954085cb0614195ffdb7507030614aff2fa0c8d65551f20d62/azureml_dataprep_rslex-2.9.0-cp39-cp39-win_amd64.whl
+[2023-05-27 20:07:44] WARNING root fetch - processPackages [azureml-dataprep]: Skipping package: exceeds size limit 38445808>=10485760
+[2023-05-27 20:07:44] INFO root fetch - main [MainThread]: End processing [azureml-dataprep] error
+[2023-05-27 20:07:44] WARNING root fetch - processPackages [azureml-dataprep-rslex]: Skipping package: exceeds size limit 13348921>=10485760
+[2023-05-27 20:07:44] INFO root fetch - main [MainThread]: End processing [azureml-dataprep-rslex] error
+[2023-05-27 20:07:44] INFO root fetch - processPackages [rframe]: executing diffoscope
+[2023-05-27 20:07:44] INFO root fetch - processPackages [rframe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rframe-0.2.8.tar.gz tmp/rframe-0.2.9.tar.gz --markdown 20230527/r/rframe/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-27 20:07:44] INFO root fetch - processPackages [sosecrets]: executing diffoscope
+[2023-05-27 20:07:44] INFO root fetch - processPackages [sosecrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sosecrets-0.1.2.tar.gz tmp/sosecrets-0.1.3.tar.gz --markdown 20230527/s/sosecrets/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-27 20:07:45] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 20:07:45] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 20:07:45] INFO root fetch - main [MainThread]: End processing [kayle]: success
+[2023-05-27 20:07:45] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 20:07:45] INFO root fetch - main [MainThread]: End processing [sosecrets]: success
+[2023-05-27 20:07:46] INFO root fetch - main [MainThread]: End processing [rframe]: success
+[2023-05-27 20:07:46] INFO root fetch - main [MainThread]: Store serial: [18275989]
