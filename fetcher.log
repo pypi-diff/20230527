@@ -4270,3 +4270,31 @@
 [2023-05-27 05:16:55] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
 [2023-05-27 05:16:56] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
 [2023-05-27 05:16:56] INFO root fetch - main [MainThread]: Store serial: [18272004]
+[2023-05-27 05:22:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272004]
+[2023-05-27 05:22:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 05:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sonicparanoid
+[2023-05-27 05:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fire-state
+[2023-05-27 05:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rust-contracts-builder
+[2023-05-27 05:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dovesnap
+[2023-05-27 05:22:05] INFO root fetch - processPackages [sonicparanoid]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-27 05:22:05] INFO root fetch - processPackages [fire-state]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 05:22:05] INFO root fetch - processPackages [rust-contracts-builder]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-27 05:22:05] INFO root fetch - processPackages [dovesnap]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-27 05:22:05] INFO root fetch - processPackages [sonicparanoid]: Downloading https://files.pythonhosted.org/packages/72/f4/a6ba91c7874a06f8df4a238086a48a0712a83711f3247b4d57d46db2114f/sonicparanoid-2.0.1.tar.gz
+[2023-05-27 05:22:05] INFO root fetch - processPackages [dovesnap]: Downloading https://files.pythonhosted.org/packages/a2/e6/f71cf28b24aab659174dc91de5032583ee9b55bbb695aa2609c50821945a/dovesnap-1.1.8.tar.gz
+[2023-05-27 05:22:05] INFO root fetch - processPackages [fire-state]: Downloading https://files.pythonhosted.org/packages/6e/6f/7354c220ab634838701431a714e6e0436161f9ffbd9e7d69bb5555c00d82/fire-state-0.1.1.tar.gz
+[2023-05-27 05:22:05] WARNING root fetch - processPackages [sonicparanoid]: Skipping package: exceeds size limit 89282745>=10485760
+[2023-05-27 05:22:05] INFO root fetch - main [MainThread]: End processing [sonicparanoid] error
+[2023-05-27 05:22:05] INFO root fetch - processPackages [rust-contracts-builder]: Downloading https://files.pythonhosted.org/packages/a3/2b/014380dad5b9df8304838771a70226bb853433be2a916a635cc8a4f3b22e/rust-contracts-builder-0.2.9.tar.gz
+[2023-05-27 05:22:05] INFO root fetch - processPackages [rust-contracts-builder]: executing diffoscope
+[2023-05-27 05:22:05] INFO root fetch - processPackages [rust-contracts-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rust-contracts-builder-0.2.8.tar.gz tmp/rust-contracts-builder-0.2.9.tar.gz --markdown 20230527/r/rust-contracts-builder/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-27 05:22:05] INFO root fetch - processPackages [dovesnap]: Downloading https://files.pythonhosted.org/packages/e1/3f/3f251da63cfc71584b48cba0dbbb080aa6b7eac6453e0e14a07aeb519b04/dovesnap-1.1.9.tar.gz
+[2023-05-27 05:22:05] INFO root fetch - processPackages [fire-state]: Downloading https://files.pythonhosted.org/packages/41/ed/8e14caee8983d9fac43b7eb10de9bb6014998e943949bd5960b0cbc567cc/fire_state-0.1.2.tar.gz
+[2023-05-27 05:22:05] INFO root fetch - processPackages [fire-state]: executing diffoscope
+[2023-05-27 05:22:05] INFO root fetch - processPackages [fire-state]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fire-state-0.1.1.tar.gz tmp/fire_state-0.1.2.tar.gz --markdown 20230527/f/fire-state/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 05:22:06] INFO root fetch - processPackages [dovesnap]: executing diffoscope
+[2023-05-27 05:22:06] INFO root fetch - processPackages [dovesnap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dovesnap-1.1.8.tar.gz tmp/dovesnap-1.1.9.tar.gz --markdown 20230527/d/dovesnap/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-27 05:22:06] INFO root fetch - main [MainThread]: End processing [fire-state]: success
+[2023-05-27 05:22:06] INFO root fetch - main [MainThread]: End processing [rust-contracts-builder]: success
+[2023-05-27 05:22:06] INFO root fetch - main [MainThread]: End processing [dovesnap]: success
+[2023-05-27 05:22:06] INFO root fetch - main [MainThread]: Store serial: [18272016]
