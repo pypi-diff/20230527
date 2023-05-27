@@ -10329,3 +10329,59 @@
 [2023-05-27 18:02:43] INFO root fetch - main [MainThread]: End processing [gpt-index]: success
 [2023-05-27 18:03:55] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-05-27 18:03:55] INFO root fetch - main [MainThread]: Store serial: [18275503]
+[2023-05-27 18:09:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275503]
+[2023-05-27 18:09:05] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-27 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kcli
+[2023-05-27 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: findmyorder
+[2023-05-27 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notification-service-nightly
+[2023-05-27 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ai-flow-nightly
+[2023-05-27 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kfish
+[2023-05-27 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Deprecated
+[2023-05-27 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autosrt
+[2023-05-27 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vessel
+[2023-05-27 18:09:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: clown-sort
+[2023-05-27 18:09:05] INFO root fetch - processPackages [Deprecated]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-27 18:09:05] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-27 18:09:05] INFO root fetch - processPackages [vessel]: New version: [4.0.0] Old Version: [3.3.0]
+[2023-05-27 18:09:05] INFO root fetch - processPackages [clown-sort]: New version: [1.5.0] Old Version: [1.4.1]
+[2023-05-27 18:09:05] INFO root fetch - processPackages [autosrt]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-27 18:09:05] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-27 18:09:05] INFO root fetch - processPackages [findmyorder]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-27 18:09:05] INFO root fetch - processPackages [kfish]: New version: [99.0.202305271607] Old Version: [99.0.202305270709]
+[2023-05-27 18:09:05] INFO root fetch - processPackages [kcli]: New version: [99.0.202305271605] Old Version: [99.0.202305270707]
+[2023-05-27 18:09:05] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-05-27 18:09:05] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.5.8.tar.gz tmp/ai_flow_nightly-2023.5.9.tar.gz --markdown 20230527/a/ai-flow-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-27 18:09:05] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-05-27 18:09:05] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.5.8.tar.gz tmp/notification_service_nightly-2023.5.9.tar.gz --markdown 20230527/n/notification-service-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-27 18:09:05] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-05-27 18:09:05] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.3.8.tar.gz tmp/findmyorder-1.3.9.tar.gz --markdown 20230527/f/findmyorder/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-27 18:09:05] INFO root fetch - processPackages [vessel]: Downloading https://files.pythonhosted.org/packages/c3/1b/90ceab1309d24cc5d0781f824fc3a7b7cec6b57ff1488871c872615fb284/vessel-3.3.0.tar.gz
+[2023-05-27 18:09:05] INFO root fetch - processPackages [Deprecated]: Downloading https://files.pythonhosted.org/packages/bf/2b/fcb50d3bfe50417bb8514086090f81b4f0099fbebf1db79ea061a5b04dd4/Deprecated-1.2.8.tar.gz
+[2023-05-27 18:09:05] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/d4/db/0c7c9cc315b022d0e89978cf5162174897a703671e3e3e4cc86213d9ce51/kcli-99.0.202305270707-py3-none-any.whl
+[2023-05-27 18:09:05] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/47/00/86b9688dfe1cf2e4258b586c907a05fe125cbf2032d4f4482a730350ff69/kfish-99.0.202305271607-py3-none-any.whl
+[2023-05-27 18:09:06] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-27 18:09:06] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305270709-py3-none-any.whl.zip tmp/kfish-99.0.202305271607-py3-none-any.whl.zip --markdown 20230527/k/kfish/99.0.202305270709-99.0.202305271607/diff.md --exclude *.pyd
+[2023-05-27 18:09:06] INFO root fetch - processPackages [clown-sort]: Downloading https://files.pythonhosted.org/packages/74/c4/89f7a8d2bb1863f486d7a9fa5f91b85dc68a568928a3e78dd8f830c0e8f1/clown_sort-1.5.0.tar.gz
+[2023-05-27 18:09:06] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-05-27 18:09:06] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.2.8.tar.gz tmp/autosrt-1.2.9.tar.gz --markdown 20230527/a/autosrt/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-27 18:09:06] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/4d/ef/02b7074e3f673e42e657b47777fb4fc82a5c9ddefcd027486dcd6ce0df28/kcli-99.0.202305271605-py3-none-any.whl
+[2023-05-27 18:09:06] INFO root fetch - processPackages [vessel]: Downloading https://files.pythonhosted.org/packages/16/cc/359b9b8a5ffc04453bbfa2737c41f407784c0f10f84dabdf6b05ee87cf26/vessel-4.0.0.tar.gz
+[2023-05-27 18:09:06] INFO root fetch - processPackages [clown-sort]: executing diffoscope
+[2023-05-27 18:09:06] INFO root fetch - processPackages [clown-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clown_sort-1.4.1.tar.gz tmp/clown_sort-1.5.0.tar.gz --markdown 20230527/c/clown-sort/1.4.1-1.5.0/diff.md --exclude *.pyd
+[2023-05-27 18:09:06] INFO root fetch - processPackages [vessel]: executing diffoscope
+[2023-05-27 18:09:06] INFO root fetch - processPackages [vessel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vessel-3.3.0.tar.gz tmp/vessel-4.0.0.tar.gz --markdown 20230527/v/vessel/3.3.0-4.0.0/diff.md --exclude *.pyd
+[2023-05-27 18:09:06] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-27 18:09:06] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305270707-py3-none-any.whl.zip tmp/kcli-99.0.202305271605-py3-none-any.whl.zip --markdown 20230527/k/kcli/99.0.202305270707-99.0.202305271605/diff.md --exclude *.pyd
+[2023-05-27 18:09:06] INFO root fetch - processPackages [Deprecated]: Downloading https://files.pythonhosted.org/packages/18/b6/cdeea0b58320ad0b119ef31b98c2c2486ac7d152bc33d3fc1dd17753e482/Deprecated-1.2.9.tar.gz
+[2023-05-27 18:09:07] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-05-27 18:09:07] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-27 18:09:07] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-05-27 18:09:07] INFO root fetch - main [MainThread]: End processing [vessel]: success
+[2023-05-27 18:09:07] INFO root fetch - main [MainThread]: End processing [clown-sort]: success
+[2023-05-27 18:09:08] INFO root fetch - processPackages [Deprecated]: executing diffoscope
+[2023-05-27 18:09:08] INFO root fetch - processPackages [Deprecated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Deprecated-1.2.8.tar.gz tmp/Deprecated-1.2.9.tar.gz --markdown 20230527/D/Deprecated/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-27 18:09:08] INFO root fetch - main [MainThread]: End processing [notification-service-nightly]: success
+[2023-05-27 18:09:09] INFO root fetch - main [MainThread]: End processing [Deprecated]: success
+[2023-05-27 18:09:09] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
+[2023-05-27 18:09:13] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-27 18:09:13] INFO root fetch - main [MainThread]: Store serial: [18275532]
