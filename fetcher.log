@@ -3848,3 +3848,13 @@
 [2023-05-27 03:52:44] INFO root fetch - main [MainThread]: End processing [openapi-python-client]: success
 [2023-05-27 03:53:37] INFO root fetch - main [MainThread]: End processing [mage-ai]: success
 [2023-05-27 03:53:37] INFO root fetch - main [MainThread]: Store serial: [18271770]
+[2023-05-27 03:58:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271770]
+[2023-05-27 03:58:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-27 03:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: troubleshooter
+[2023-05-27 03:58:47] INFO root fetch - processPackages [troubleshooter]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-27 03:58:47] INFO root fetch - processPackages [troubleshooter]: Downloading https://files.pythonhosted.org/packages/5b/d4/38852401faa21e7246169bfbdd973c320d46d89285ec58be664c72587362/troubleshooter-1.0.7.tar.gz
+[2023-05-27 03:58:47] INFO root fetch - processPackages [troubleshooter]: Downloading https://files.pythonhosted.org/packages/f9/b0/6d8a7a13a9671cda8595823afa581d8223d07ee73d9f926a468998c0be3a/troubleshooter-1.0.8.tar.gz
+[2023-05-27 03:58:47] INFO root fetch - processPackages [troubleshooter]: executing diffoscope
+[2023-05-27 03:58:47] INFO root fetch - processPackages [troubleshooter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/troubleshooter-1.0.7.tar.gz tmp/troubleshooter-1.0.8.tar.gz --markdown 20230527/t/troubleshooter/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-27 03:58:49] INFO root fetch - main [MainThread]: End processing [troubleshooter]: success
+[2023-05-27 03:58:49] INFO root fetch - main [MainThread]: Store serial: [18271773]
