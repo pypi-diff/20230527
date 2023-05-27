@@ -3858,3 +3858,12 @@
 [2023-05-27 03:58:47] INFO root fetch - processPackages [troubleshooter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/troubleshooter-1.0.7.tar.gz tmp/troubleshooter-1.0.8.tar.gz --markdown 20230527/t/troubleshooter/1.0.7-1.0.8/diff.md --exclude *.pyd
 [2023-05-27 03:58:49] INFO root fetch - main [MainThread]: End processing [troubleshooter]: success
 [2023-05-27 03:58:49] INFO root fetch - main [MainThread]: Store serial: [18271773]
+[2023-05-27 04:03:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271773]
+[2023-05-27 04:03:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-27 04:03:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bulma-sphinx-theme
+[2023-05-27 04:03:58] INFO root fetch - processPackages [bulma-sphinx-theme]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 04:03:58] INFO root fetch - processPackages [bulma-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/65/45/4cc79acc264de6d12fffbe29f7c7948d35292a166ca23499c82c64d66d8c/bulma_sphinx_theme-0.0.3.tar.gz
+[2023-05-27 04:03:59] INFO root fetch - processPackages [bulma-sphinx-theme]: executing diffoscope
+[2023-05-27 04:03:59] INFO root fetch - processPackages [bulma-sphinx-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bulma_sphinx_theme-0.0.2.tar.gz tmp/bulma_sphinx_theme-0.0.3.tar.gz --markdown 20230527/b/bulma-sphinx-theme/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 04:04:01] INFO root fetch - main [MainThread]: End processing [bulma-sphinx-theme]: success
+[2023-05-27 04:04:01] INFO root fetch - main [MainThread]: Store serial: [18271776]
