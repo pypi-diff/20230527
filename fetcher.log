@@ -12535,3 +12535,27 @@
 [2023-05-27 23:14:59] INFO root fetch - main [MainThread]: End processing [shenko]: success
 [2023-05-27 23:14:59] INFO root fetch - main [MainThread]: End processing [docstring-generator]: success
 [2023-05-27 23:14:59] INFO root fetch - main [MainThread]: Store serial: [18276954]
+[2023-05-27 23:20:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276954]
+[2023-05-27 23:20:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-27 23:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chatcmd
+[2023-05-27 23:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chatcmd
+[2023-05-27 23:20:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: acb
+[2023-05-27 23:20:08] INFO root fetch - processPackages [acb]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-27 23:20:08] INFO root fetch - processPackages [chatcmd]: New version: [1.0.25] Old Version: [1.0.24]
+[2023-05-27 23:20:08] INFO root fetch - processPackages [chatcmd]: New version: [1.0.25] Old Version: [1.0.24]
+[2023-05-27 23:20:08] INFO root fetch - processPackages [acb]: Downloading https://files.pythonhosted.org/packages/a4/88/9592ca9da5c4ce04057629b0acb1dea72000a5737327c7eedc934d0819d4/acb-0.1.4.tar.gz
+[2023-05-27 23:20:08] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/36/e7/29ddf84d44c1703cd9738dd2b0435473391ec44533b7cbc23e0af3ea5c19/chatcmd-1.0.24.tar.gz
+[2023-05-27 23:20:08] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/36/e7/29ddf84d44c1703cd9738dd2b0435473391ec44533b7cbc23e0af3ea5c19/chatcmd-1.0.24.tar.gz
+[2023-05-27 23:20:09] INFO root fetch - processPackages [acb]: Downloading https://files.pythonhosted.org/packages/7c/0e/9517188818cd544cc4ed17f284760144a1b7a39ef8158339128a2e692207/acb-0.1.5.tar.gz
+[2023-05-27 23:20:09] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/11/99/372dce602d1429122f1f31b2178fdcf34a9e53c74710007634a44acb4f24/chatcmd-1.0.25.tar.gz
+[2023-05-27 23:20:09] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/11/99/372dce602d1429122f1f31b2178fdcf34a9e53c74710007634a44acb4f24/chatcmd-1.0.25.tar.gz
+[2023-05-27 23:20:09] INFO root fetch - processPackages [acb]: executing diffoscope
+[2023-05-27 23:20:09] INFO root fetch - processPackages [acb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acb-0.1.4.tar.gz tmp/acb-0.1.5.tar.gz --markdown 20230527/a/acb/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-27 23:20:09] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-27 23:20:09] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.24.tar.gz tmp/chatcmd-1.0.25.tar.gz --markdown 20230527/c/chatcmd/1.0.24-1.0.25/diff.md --exclude *.pyd
+[2023-05-27 23:20:09] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-27 23:20:09] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.24.tar.gz tmp/chatcmd-1.0.25.tar.gz --markdown 20230527/c/chatcmd/1.0.24-1.0.25/diff.md --exclude *.pyd
+[2023-05-27 23:20:10] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-27 23:20:10] INFO root fetch - main [MainThread]: End processing [acb]: success
+[2023-05-27 23:20:10] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-27 23:20:10] INFO root fetch - main [MainThread]: Store serial: [18276963]
