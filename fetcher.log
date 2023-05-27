@@ -5596,3 +5596,24 @@
 [2023-05-27 08:42:43] INFO root fetch - main [MainThread]: End processing [pulumi-pagerduty]: success
 [2023-05-27 08:42:45] INFO root fetch - main [MainThread]: End processing [pulumi-artifactory]: success
 [2023-05-27 08:42:45] INFO root fetch - main [MainThread]: Store serial: [18272671]
+[2023-05-27 08:47:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272671]
+[2023-05-27 08:47:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-27 08:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-rabbitmq
+[2023-05-27 08:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EdgeGPT
+[2023-05-27 08:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchility
+[2023-05-27 08:47:54] INFO root fetch - processPackages [pulumi-rabbitmq]: New version: [3.4.0a1685167925] Old Version: [3.4.0a1685083063]
+[2023-05-27 08:47:54] INFO root fetch - processPackages [EdgeGPT]: New version: [0.6.6] Old Version: [0.6.5]
+[2023-05-27 08:47:54] INFO root fetch - processPackages [torchility]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-27 08:47:54] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/12/79/4029aaf1351b8048e531b7b4f7e88f1d332587af1b64c6cef3a23b2c2d87/EdgeGPT-0.6.5.tar.gz
+[2023-05-27 08:47:54] INFO root fetch - processPackages [pulumi-rabbitmq]: Downloading https://files.pythonhosted.org/packages/56/eb/6930606920a22b7c2427e08a7cb3753598e8ecb67ff4b926b3d3c7bcb003/pulumi_rabbitmq-3.4.0a1685167925.tar.gz
+[2023-05-27 08:47:54] INFO root fetch - processPackages [pulumi-rabbitmq]: executing diffoscope
+[2023-05-27 08:47:54] INFO root fetch - processPackages [pulumi-rabbitmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rabbitmq-3.4.0a1685083063.tar.gz tmp/pulumi_rabbitmq-3.4.0a1685167925.tar.gz --markdown 20230527/p/pulumi-rabbitmq/3.4.0a1685083063-3.4.0a1685167925/diff.md --exclude *.pyd
+[2023-05-27 08:47:54] INFO root fetch - processPackages [torchility]: executing diffoscope
+[2023-05-27 08:47:54] INFO root fetch - processPackages [torchility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchility-0.6.8.tar.gz tmp/torchility-0.6.9.tar.gz --markdown 20230527/t/torchility/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-27 08:47:54] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/af/6f/0c7aa305442e1094b1dcaf161606f5709be827e4f63edff21fb9f3b6b3f7/EdgeGPT-0.6.6.tar.gz
+[2023-05-27 08:47:55] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-05-27 08:47:55] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.6.5.tar.gz tmp/EdgeGPT-0.6.6.tar.gz --markdown 20230527/E/EdgeGPT/0.6.5-0.6.6/diff.md --exclude *.pyd
+[2023-05-27 08:47:55] INFO root fetch - main [MainThread]: End processing [torchility]: success
+[2023-05-27 08:47:55] INFO root fetch - main [MainThread]: End processing [pulumi-rabbitmq]: success
+[2023-05-27 08:47:56] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-05-27 08:47:56] INFO root fetch - main [MainThread]: Store serial: [18272679]
