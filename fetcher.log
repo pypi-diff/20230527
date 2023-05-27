@@ -11461,3 +11461,30 @@
 [2023-05-27 20:40:40] INFO root fetch - main [MainThread]: End processing [tasmota-metrics]: success
 [2023-05-27 20:40:40] INFO root fetch - main [MainThread]: End processing [aiotrino]: success
 [2023-05-27 20:40:40] INFO root fetch - main [MainThread]: Store serial: [18276097]
+[2023-05-27 20:45:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276097]
+[2023-05-27 20:45:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 20:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prfiesta
+[2023-05-27 20:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flaretool
+[2023-05-27 20:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-ninja
+[2023-05-27 20:45:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: langchain-discord
+[2023-05-27 20:45:49] INFO root fetch - processPackages [django-ninja]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-05-27 20:45:49] INFO root fetch - processPackages [flaretool]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 20:45:49] INFO root fetch - processPackages [langchain-discord]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-27 20:45:49] INFO root fetch - processPackages [prfiesta]: New version: [0.9.1b157] Old Version: [0.9.1b156]
+[2023-05-27 20:45:50] INFO root fetch - processPackages [flaretool]: executing diffoscope
+[2023-05-27 20:45:50] INFO root fetch - processPackages [flaretool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flaretool-0.1.8.tar.gz tmp/flaretool-0.1.9-py3-none-any.whl.zip --markdown 20230527/f/flaretool/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 20:45:50] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-27 20:45:50] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.9.1b156.tar.gz tmp/prfiesta-0.9.1b157.tar.gz --markdown 20230527/p/prfiesta/0.9.1b156-0.9.1b157/diff.md --exclude *.pyd
+[2023-05-27 20:45:50] INFO root fetch - processPackages [langchain-discord]: Downloading https://files.pythonhosted.org/packages/34/12/9a98e6b309b7dbce2faa08e85fed6f46509b9701b6096369c1c05b5a713f/langchain_discord-1.0.0.tar.gz
+[2023-05-27 20:45:50] INFO root fetch - processPackages [django-ninja]: Downloading https://files.pythonhosted.org/packages/b5/7b/f9228471ae139cfd812883ccb7e82d0438b3a1365cc84e51c6acce1f6547/django-ninja-0.9.6.tar.gz
+[2023-05-27 20:45:50] INFO root fetch - processPackages [langchain-discord]: Downloading https://files.pythonhosted.org/packages/dd/ab/a9973f22379ac017e9d8f16cc04b68eb33851650270a487e5fbb05d479db/langchain_discord-1.0.1.tar.gz
+[2023-05-27 20:45:50] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 20:45:50] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-1.0.0.tar.gz tmp/langchain_discord-1.0.1.tar.gz --markdown 20230527/l/langchain-discord/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 20:45:51] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-27 20:45:51] INFO root fetch - main [MainThread]: End processing [flaretool]: success
+[2023-05-27 20:45:51] INFO root fetch - processPackages [django-ninja]: Downloading https://files.pythonhosted.org/packages/9d/37/5fa6def1fa3ef85111738e30ac03791cfd69b4801970e1ceccbf7e3f5560/django-ninja-0.9.7.tar.gz
+[2023-05-27 20:45:51] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 20:45:51] INFO root fetch - processPackages [django-ninja]: executing diffoscope
+[2023-05-27 20:45:51] INFO root fetch - processPackages [django-ninja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ninja-0.9.6.tar.gz tmp/django-ninja-0.9.7.tar.gz --markdown 20230527/d/django-ninja/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-05-27 20:45:53] INFO root fetch - main [MainThread]: End processing [django-ninja]: success
+[2023-05-27 20:45:53] INFO root fetch - main [MainThread]: Store serial: [18276111]
