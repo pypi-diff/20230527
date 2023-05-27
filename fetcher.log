@@ -7538,3 +7538,40 @@
 [2023-05-27 12:44:39] INFO root fetch - main [MainThread]: End processing [esentity]: success
 [2023-05-27 12:45:26] INFO root fetch - main [MainThread]: End processing [replicator-cli]: success
 [2023-05-27 12:45:26] INFO root fetch - main [MainThread]: Store serial: [18273880]
+[2023-05-27 12:50:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273880]
+[2023-05-27 12:50:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 12:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codepeers
+[2023-05-27 12:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cwltool
+[2023-05-27 12:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jiraone
+[2023-05-27 12:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: banner-storedot
+[2023-05-27 12:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: convcsv2json
+[2023-05-27 12:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vtrans
+[2023-05-27 12:50:35] INFO root fetch - processPackages [convcsv2json]: New version: [1.5.1] Old Version: [1.5]
+[2023-05-27 12:50:35] INFO root fetch - processPackages [banner-storedot]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-05-27 12:50:35] INFO root fetch - processPackages [codepeers]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-27 12:50:35] INFO root fetch - processPackages [jiraone]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-05-27 12:50:35] INFO root fetch - processPackages [cwltool]: New version: [3.1.20230527103121] Old Version: [3.1.20230526180938]
+[2023-05-27 12:50:35] ERROR root fetch - processPackages [vtrans]: Unable to get metadata: No such project 'vtrans'
+[2023-05-27 12:50:35] INFO root fetch - main [MainThread]: End processing [vtrans] error
+[2023-05-27 12:50:35] INFO root fetch - processPackages [convcsv2json]: executing diffoscope
+[2023-05-27 12:50:35] INFO root fetch - processPackages [convcsv2json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/convcsv2json-1.5.tar.gz tmp/convcsv2json-1.5.1.tar.gz --markdown 20230527/c/convcsv2json/1.5-1.5.1/diff.md --exclude *.pyd
+[2023-05-27 12:50:35] INFO root fetch - processPackages [banner-storedot]: Downloading https://files.pythonhosted.org/packages/fe/cf/254e429b07884df44c0da19510109682482c1088863ce8fb3d82923621f1/banner-storedot-2.3.0.tar.gz
+[2023-05-27 12:50:35] INFO root fetch - processPackages [jiraone]: Downloading https://files.pythonhosted.org/packages/46/68/244602cc1c6252516709b8fd06933714c7e52cadafc39b098961ed28ab25/jiraone-0.7.5.tar.gz
+[2023-05-27 12:50:35] INFO root fetch - processPackages [cwltool]: Downloading https://files.pythonhosted.org/packages/97/d7/fe40ab1e6da45d44218aad8ac8da3d8560be55cb435321d7c7dfb5861ab6/cwltool-3.1.20230527103121.tar.gz
+[2023-05-27 12:50:35] INFO root fetch - processPackages [codepeers]: Downloading https://files.pythonhosted.org/packages/8d/de/1432d5df2458375f2d323a61bec8b42d5ce0f0e56e7482558de1721cff8f/codepeers-0.3.1-py3-none-any.whl
+[2023-05-27 12:50:35] INFO root fetch - processPackages [cwltool]: executing diffoscope
+[2023-05-27 12:50:35] INFO root fetch - processPackages [cwltool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwltool-3.1.20230526180938.tar.gz tmp/cwltool-3.1.20230527103121.tar.gz --markdown 20230527/c/cwltool/3.1.20230526180938-3.1.20230527103121/diff.md --exclude *.pyd
+[2023-05-27 12:50:35] INFO root fetch - processPackages [banner-storedot]: Downloading https://files.pythonhosted.org/packages/1e/d1/a1d53b6a74d2ebc3277fa5d5e708c01cc8d8f9020c99f60f66907e8e5895/banner-storedot-2.3.1.tar.gz
+[2023-05-27 12:50:35] INFO root fetch - processPackages [banner-storedot]: executing diffoscope
+[2023-05-27 12:50:35] INFO root fetch - processPackages [banner-storedot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/banner-storedot-2.3.0.tar.gz tmp/banner-storedot-2.3.1.tar.gz --markdown 20230527/b/banner-storedot/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-05-27 12:50:35] INFO root fetch - processPackages [jiraone]: Downloading https://files.pythonhosted.org/packages/e0/99/5abc708f400e6a160a29defc08caa2ce2b6cea184a4d47a6712b02e95c5e/jiraone-0.7.6.tar.gz
+[2023-05-27 12:50:35] INFO root fetch - processPackages [jiraone]: executing diffoscope
+[2023-05-27 12:50:35] INFO root fetch - processPackages [jiraone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jiraone-0.7.5.tar.gz tmp/jiraone-0.7.6.tar.gz --markdown 20230527/j/jiraone/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-05-27 12:50:36] INFO root fetch - main [MainThread]: End processing [convcsv2json]: success
+[2023-05-27 12:50:36] INFO root fetch - main [MainThread]: End processing [banner-storedot]: success
+[2023-05-27 12:50:37] INFO root fetch - processPackages [codepeers]: executing diffoscope
+[2023-05-27 12:50:37] INFO root fetch - processPackages [codepeers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codepeers-0.3.0-py3-none-any.whl.zip tmp/codepeers-0.3.1-py3-none-any.whl.zip --markdown 20230527/c/codepeers/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-27 12:50:37] INFO root fetch - main [MainThread]: End processing [jiraone]: success
+[2023-05-27 12:50:42] INFO root fetch - main [MainThread]: End processing [codepeers]: success
+[2023-05-27 12:50:43] INFO root fetch - main [MainThread]: End processing [cwltool]: success
+[2023-05-27 12:50:43] INFO root fetch - main [MainThread]: Store serial: [18273896]
