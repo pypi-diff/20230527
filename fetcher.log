@@ -9534,3 +9534,64 @@
 [2023-05-27 16:58:58] INFO root fetch - main [MainThread]: End processing [tweetopic]: success
 [2023-05-27 16:58:59] INFO root fetch - main [MainThread]: End processing [searchkit]: success
 [2023-05-27 16:58:59] INFO root fetch - main [MainThread]: Store serial: [18275012]
+[2023-05-27 17:04:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275012]
+[2023-05-27 17:04:08] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-27 17:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dcicsnovault
+[2023-05-27 17:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: encapsia-api
+[2023-05-27 17:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gitlabform-ytt
+[2023-05-27 17:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbt-clickzetta
+[2023-05-27 17:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alicebot
+[2023-05-27 17:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: alicebot-adapter-apscheduler
+[2023-05-27 17:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alicebot-adapter-cqhttp
+[2023-05-27 17:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: alicebot-adapter-dingtalk
+[2023-05-27 17:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: alicebot-adapter-mirai
+[2023-05-27 17:04:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: NikGapps
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-27 17:04:08] INFO root fetch - processPackages [dcicsnovault]: New version: [8.0.2b0] Old Version: [8.0.1.5b16]
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-apscheduler]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-dingtalk]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-27 17:04:08] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 17:04:08] WARNING root fetch - processPackages [gitlabform-ytt]: Skipping, unable to determine old version
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-cqhttp]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-27 17:04:08] INFO root fetch - processPackages [encapsia-api]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-27 17:04:08] INFO root fetch - main [MainThread]: End processing [gitlabform-ytt] error
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-mirai]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-27 17:04:08] INFO root fetch - processPackages [NikGapps]: New version: [1.25] Old Version: [1.24]
+[2023-05-27 17:04:08] INFO root fetch - processPackages [dcicsnovault]: Downloading https://files.pythonhosted.org/packages/cb/cf/63f7216ed6d03acac4a8cd5a5f12c534343ffbef133ba9c53c38ee396878/dcicsnovault-8.0.1.5b16.tar.gz
+[2023-05-27 17:04:08] INFO root fetch - processPackages [dbt-clickzetta]: Downloading https://files.pythonhosted.org/packages/e1/b1/f6857deeb813a6f09958a74cda6afad6a4db12becb0bba1ceb19c42ac758/dbt-clickzetta-0.0.1.tar.gz
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-dingtalk]: Downloading https://files.pythonhosted.org/packages/39/ac/55a6b54ec1207cfe4d3ea465cdbb7b10c8d8295503ff82d5a7d44c56fba4/alicebot_adapter_dingtalk-0.7.1.tar.gz
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot]: Downloading https://files.pythonhosted.org/packages/02/f6/fc7eab2a14496da343efc3168ae9967652076db9054f223b77d0472f34af/alicebot-0.7.1.tar.gz
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-apscheduler]: Downloading https://files.pythonhosted.org/packages/ac/1c/c6f416de062b3c4a7d272627be5d67d5dfcd822b91bf595f5698dc73f562/alicebot_adapter_apscheduler-0.7.1.tar.gz
+[2023-05-27 17:04:08] INFO root fetch - processPackages [NikGapps]: Downloading https://files.pythonhosted.org/packages/97/34/94788e829c5d8254e1ca66aa432f9f0badcc05f5872102fab8167556e60f/NikGapps-1.24.tar.gz
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-cqhttp]: Downloading https://files.pythonhosted.org/packages/6b/d1/60f43d36d1d43f1423544f04afd8136b523eb272a1f86ab415ea4d2b9f36/alicebot_adapter_cqhttp-0.7.1.tar.gz
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-mirai]: Downloading https://files.pythonhosted.org/packages/7a/50/d8cef6753dd4cf28ff6223125ac87ac1b3d50e6523df35c1cad155f8ed05/alicebot_adapter_mirai-0.7.1.tar.gz
+[2023-05-27 17:04:08] INFO root fetch - processPackages [encapsia-api]: Downloading https://files.pythonhosted.org/packages/c6/3e/e642bb5253a83b1decdd9eac0d1869bd5570d7db440e22504d63ae5d7af8/encapsia_api-0.4.0.tar.gz
+[2023-05-27 17:04:08] WARNING root fetch - processPackages [NikGapps]: Skipping package: exceeds size limit 41549912>=10485760
+[2023-05-27 17:04:08] INFO root fetch - main [MainThread]: End processing [NikGapps] error
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot]: executing diffoscope
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alicebot-0.7.0.tar.gz tmp/alicebot-0.7.1.tar.gz --markdown 20230527/a/alicebot/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-mirai]: executing diffoscope
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-mirai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alicebot_adapter_mirai-0.7.0.tar.gz tmp/alicebot_adapter_mirai-0.7.1.tar.gz --markdown 20230527/a/alicebot-adapter-mirai/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-dingtalk]: executing diffoscope
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-apscheduler]: executing diffoscope
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-dingtalk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alicebot_adapter_dingtalk-0.7.0.tar.gz tmp/alicebot_adapter_dingtalk-0.7.1.tar.gz --markdown 20230527/a/alicebot-adapter-dingtalk/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-apscheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alicebot_adapter_apscheduler-0.7.0.tar.gz tmp/alicebot_adapter_apscheduler-0.7.1.tar.gz --markdown 20230527/a/alicebot-adapter-apscheduler/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-cqhttp]: executing diffoscope
+[2023-05-27 17:04:08] INFO root fetch - processPackages [alicebot-adapter-cqhttp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alicebot_adapter_cqhttp-0.7.0.tar.gz tmp/alicebot_adapter_cqhttp-0.7.1.tar.gz --markdown 20230527/a/alicebot-adapter-cqhttp/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-27 17:04:08] INFO root fetch - processPackages [dbt-clickzetta]: Downloading https://files.pythonhosted.org/packages/43/4e/4b73ba0badc1ae4ca21d99186c7536f18665605c452c56f4069d7a08f997/dbt-clickzetta-0.0.2.tar.gz
+[2023-05-27 17:04:08] INFO root fetch - processPackages [dcicsnovault]: executing diffoscope
+[2023-05-27 17:04:08] INFO root fetch - processPackages [dcicsnovault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicsnovault-8.0.1.5b16.tar.gz tmp/dcicsnovault-8.0.2b0.tar.gz --markdown 20230527/d/dcicsnovault/8.0.1.5b16-8.0.2b0/diff.md --exclude *.pyd
+[2023-05-27 17:04:08] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-27 17:04:08] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.1.tar.gz tmp/dbt-clickzetta-0.0.2.tar.gz --markdown 20230527/d/dbt-clickzetta/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 17:04:08] INFO root fetch - processPackages [encapsia-api]: Downloading https://files.pythonhosted.org/packages/53/00/3e3e0bffaa93e4604bc0ab7edf69aef7a219c057457aaf916ee9e8cd31aa/encapsia_api-0.4.1.tar.gz
+[2023-05-27 17:04:08] INFO root fetch - processPackages [encapsia-api]: executing diffoscope
+[2023-05-27 17:04:08] INFO root fetch - processPackages [encapsia-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/encapsia_api-0.4.0.tar.gz tmp/encapsia_api-0.4.1.tar.gz --markdown 20230527/e/encapsia-api/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-27 17:04:09] INFO root fetch - main [MainThread]: End processing [alicebot-adapter-dingtalk]: success
+[2023-05-27 17:04:09] INFO root fetch - main [MainThread]: End processing [alicebot]: success
+[2023-05-27 17:04:09] INFO root fetch - main [MainThread]: End processing [alicebot-adapter-mirai]: success
+[2023-05-27 17:04:09] INFO root fetch - main [MainThread]: End processing [alicebot-adapter-apscheduler]: success
+[2023-05-27 17:04:09] INFO root fetch - main [MainThread]: End processing [alicebot-adapter-cqhttp]: success
+[2023-05-27 17:04:10] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-27 17:04:10] INFO root fetch - main [MainThread]: End processing [encapsia-api]: success
+[2023-05-27 17:04:12] INFO root fetch - main [MainThread]: End processing [dcicsnovault]: success
+[2023-05-27 17:04:12] INFO root fetch - main [MainThread]: Store serial: [18275044]
