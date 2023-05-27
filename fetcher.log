@@ -5794,3 +5794,41 @@
 [2023-05-27 09:09:23] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
 [2023-05-27 09:09:31] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-27 09:09:31] INFO root fetch - main [MainThread]: Store serial: [18272773]
+[2023-05-27 09:14:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272773]
+[2023-05-27 09:14:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 09:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-rke
+[2023-05-27 09:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kfish
+[2023-05-27 09:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ItsPrompt
+[2023-05-27 09:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-wavefront
+[2023-05-27 09:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-sumologic
+[2023-05-27 09:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: thztools
+[2023-05-27 09:14:40] INFO root fetch - processPackages [thztools]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-27 09:14:40] INFO root fetch - processPackages [ItsPrompt]: New version: [1.4] Old Version: [1.3]
+[2023-05-27 09:14:40] INFO root fetch - processPackages [pulumi-rke]: New version: [3.3.0a1685168877] Old Version: [3.3.0a1685084065]
+[2023-05-27 09:14:40] INFO root fetch - processPackages [kfish]: New version: [99.0.202305270709] Old Version: [99.0.202305262158]
+[2023-05-27 09:14:40] INFO root fetch - processPackages [pulumi-sumologic]: New version: [0.9.1a1663799436] Old Version: [0.9.0]
+[2023-05-27 09:14:40] INFO root fetch - processPackages [pulumi-wavefront]: New version: [1.5.0a1685170427] Old Version: [1.5.0a1685085016]
+[2023-05-27 09:14:40] INFO root fetch - processPackages [thztools]: executing diffoscope
+[2023-05-27 09:14:40] INFO root fetch - processPackages [thztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thztools-1.0.3.tar.gz tmp/thztools-1.0.4.tar.gz --markdown 20230527/t/thztools/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-27 09:14:40] INFO root fetch - processPackages [ItsPrompt]: Downloading https://files.pythonhosted.org/packages/d3/06/54d319d4b9dc3002980db730e1073b9af0ba2cc3cf5bd8825bcc5449c3e4/ItsPrompt-1.3.tar.gz
+[2023-05-27 09:14:40] INFO root fetch - processPackages [pulumi-rke]: Downloading https://files.pythonhosted.org/packages/bd/8c/2b659d64b41ae06768111912733b5232482b98be461be43e8534415354ea/pulumi_rke-3.3.0a1685168877.tar.gz
+[2023-05-27 09:14:40] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/9e/eb/16c0679f9e8dfb7ed84baa52e4fcd5250f372dcdc58ba706372d6131026a/kfish-99.0.202305270709-py3-none-any.whl
+[2023-05-27 09:14:40] INFO root fetch - processPackages [pulumi-wavefront]: Downloading https://files.pythonhosted.org/packages/34/a8/0428d3479cfe2d73929468a29cf64542467516a1caaa4731ef20ff1c4ed9/pulumi_wavefront-1.5.0a1685170427.tar.gz
+[2023-05-27 09:14:40] INFO root fetch - processPackages [pulumi-sumologic]: executing diffoscope
+[2023-05-27 09:14:40] INFO root fetch - processPackages [pulumi-sumologic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_sumologic-0.9.0.tar.gz tmp/pulumi_sumologic-0.9.1a1663799436.tar.gz --markdown 20230527/p/pulumi-sumologic/0.9.0-0.9.1a1663799436/diff.md --exclude *.pyd
+[2023-05-27 09:14:40] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-27 09:14:40] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305262158-py3-none-any.whl.zip tmp/kfish-99.0.202305270709-py3-none-any.whl.zip --markdown 20230527/k/kfish/99.0.202305262158-99.0.202305270709/diff.md --exclude *.pyd
+[2023-05-27 09:14:40] INFO root fetch - processPackages [ItsPrompt]: Downloading https://files.pythonhosted.org/packages/67/b2/cb94934626d0e14c4335f6fa1ef436a909ebf6a60956707a76d988178be1/ItsPrompt-1.4.tar.gz
+[2023-05-27 09:14:40] INFO root fetch - processPackages [pulumi-rke]: executing diffoscope
+[2023-05-27 09:14:40] INFO root fetch - processPackages [pulumi-rke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rke-3.3.0a1685084065.tar.gz tmp/pulumi_rke-3.3.0a1685168877.tar.gz --markdown 20230527/p/pulumi-rke/3.3.0a1685084065-3.3.0a1685168877/diff.md --exclude *.pyd
+[2023-05-27 09:14:40] INFO root fetch - processPackages [pulumi-wavefront]: executing diffoscope
+[2023-05-27 09:14:40] INFO root fetch - processPackages [pulumi-wavefront]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_wavefront-1.5.0a1685085016.tar.gz tmp/pulumi_wavefront-1.5.0a1685170427.tar.gz --markdown 20230527/p/pulumi-wavefront/1.5.0a1685085016-1.5.0a1685170427/diff.md --exclude *.pyd
+[2023-05-27 09:14:40] INFO root fetch - processPackages [ItsPrompt]: executing diffoscope
+[2023-05-27 09:14:40] INFO root fetch - processPackages [ItsPrompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ItsPrompt-1.3.tar.gz tmp/ItsPrompt-1.4.tar.gz --markdown 20230527/I/ItsPrompt/1.3-1.4/diff.md --exclude *.pyd
+[2023-05-27 09:14:41] INFO root fetch - main [MainThread]: End processing [thztools]: success
+[2023-05-27 09:14:41] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-27 09:14:41] INFO root fetch - main [MainThread]: End processing [pulumi-rke]: success
+[2023-05-27 09:14:42] INFO root fetch - main [MainThread]: End processing [ItsPrompt]: success
+[2023-05-27 09:14:42] INFO root fetch - main [MainThread]: End processing [pulumi-wavefront]: success
+[2023-05-27 09:15:31] INFO root fetch - main [MainThread]: End processing [pulumi-sumologic]: success
+[2023-05-27 09:15:31] INFO root fetch - main [MainThread]: Store serial: [18272791]
