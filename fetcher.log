@@ -4364,3 +4364,41 @@
 [2023-05-27 05:35:26] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
 [2023-05-27 05:35:26] INFO root fetch - main [MainThread]: End processing [netron] error
 [2023-05-27 05:35:26] INFO root fetch - main [MainThread]: Store serial: [18272038]
+[2023-05-27 05:40:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272038]
+[2023-05-27 05:40:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 05:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lifetimefitting
+[2023-05-27 05:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auto-editor
+[2023-05-27 05:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: swachhdata
+[2023-05-27 05:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: reasoner-validator
+[2023-05-27 05:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-l10n-br-account
+[2023-05-27 05:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dreamai
+[2023-05-27 05:40:34] INFO root fetch - processPackages [auto-editor]: New version: [23.8.1] Old Version: [23.4.1]
+[2023-05-27 05:40:34] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: New version: [14.0.6.1.2.dev1] Old Version: [14.0.6.1.1.dev1]
+[2023-05-27 05:40:35] INFO root fetch - processPackages [dreamai]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-27 05:40:35] INFO root fetch - processPackages [swachhdata]: New version: [2.0.0rc2] Old Version: [2.0.0rc1]
+[2023-05-27 05:40:35] INFO root fetch - processPackages [lifetimefitting]: New version: [0.0.17] Old Version: [0.0.15]
+[2023-05-27 05:40:35] INFO root fetch - processPackages [reasoner-validator]: New version: [3.5.2] Old Version: [3.5.0]
+[2023-05-27 05:40:35] INFO root fetch - processPackages [dreamai]: Downloading https://files.pythonhosted.org/packages/d1/67/8e3da3eb8a07d4d5ba8d63853c37e5c1967995d3d9b9632ae28ca971779f/dreamai-0.8.0.tar.gz
+[2023-05-27 05:40:35] INFO root fetch - processPackages [swachhdata]: executing diffoscope
+[2023-05-27 05:40:35] INFO root fetch - processPackages [swachhdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swachhdata-2.0.0rc1-py3-none-any.whl.zip tmp/swachhdata-2.0.0rc2-py3-none-any.whl.zip --markdown 20230527/s/swachhdata/2.0.0rc1-2.0.0rc2/diff.md --exclude *.pyd
+[2023-05-27 05:40:35] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: Downloading https://files.pythonhosted.org/packages/08/c7/0a8f811f4fb2cf2c965cf760a7e51915b3ab339edbc49d8fab8cd7373e9b/odoo14_addon_l10n_br_account-14.0.6.1.2.dev1-py3-none-any.whl
+[2023-05-27 05:40:35] INFO root fetch - processPackages [reasoner-validator]: Downloading https://files.pythonhosted.org/packages/ec/f7/22cf49321545b7649a12c86d471063a71f33003ce0fa72892c0da6951ee2/reasoner_validator-3.5.2.tar.gz
+[2023-05-27 05:40:35] INFO root fetch - processPackages [lifetimefitting]: Downloading https://files.pythonhosted.org/packages/91/fd/f6965dd1248e8b91e3c130289300e884696d624f67ea9aa8a9a7f16613cf/lifetimefitting-0.0.17.tar.gz
+[2023-05-27 05:40:35] INFO root fetch - processPackages [auto-editor]: executing diffoscope
+[2023-05-27 05:40:35] INFO root fetch - processPackages [auto-editor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-editor-23.4.1.tar.gz tmp/auto-editor-23.8.1.tar.gz --markdown 20230527/a/auto-editor/23.4.1-23.8.1/diff.md --exclude *.pyd
+[2023-05-27 05:40:35] INFO root fetch - processPackages [reasoner-validator]: executing diffoscope
+[2023-05-27 05:40:35] INFO root fetch - processPackages [reasoner-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reasoner_validator-3.5.0.tar.gz tmp/reasoner_validator-3.5.2.tar.gz --markdown 20230527/r/reasoner-validator/3.5.0-3.5.2/diff.md --exclude *.pyd
+[2023-05-27 05:40:35] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: executing diffoscope
+[2023-05-27 05:40:35] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_account-14.0.6.1.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_account-14.0.6.1.2.dev1-py3-none-any.whl.zip --markdown 20230527/o/odoo14-addon-l10n-br-account/14.0.6.1.1.dev1-14.0.6.1.2.dev1/diff.md --exclude *.pyd
+[2023-05-27 05:40:35] INFO root fetch - processPackages [lifetimefitting]: executing diffoscope
+[2023-05-27 05:40:35] INFO root fetch - processPackages [lifetimefitting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifetimefitting-0.0.15.tar.gz tmp/lifetimefitting-0.0.17.tar.gz --markdown 20230527/l/lifetimefitting/0.0.15-0.0.17/diff.md --exclude *.pyd
+[2023-05-27 05:40:35] INFO root fetch - processPackages [dreamai]: Downloading https://files.pythonhosted.org/packages/45/40/1d2450889d8ae23bbc2b3d0708f7c25bc9188d844249e8d88635125d98cc/dreamai-0.9.0.tar.gz
+[2023-05-27 05:40:35] INFO root fetch - processPackages [dreamai]: executing diffoscope
+[2023-05-27 05:40:35] INFO root fetch - processPackages [dreamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dreamai-0.8.0.tar.gz tmp/dreamai-0.9.0.tar.gz --markdown 20230527/d/dreamai/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 05:40:36] INFO root fetch - main [MainThread]: End processing [swachhdata]: success
+[2023-05-27 05:40:36] INFO root fetch - main [MainThread]: End processing [lifetimefitting]: success
+[2023-05-27 05:40:36] INFO root fetch - main [MainThread]: End processing [reasoner-validator]: success
+[2023-05-27 05:40:36] INFO root fetch - main [MainThread]: End processing [dreamai]: success
+[2023-05-27 05:40:37] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-account]: success
+[2023-05-27 05:40:37] INFO root fetch - main [MainThread]: End processing [auto-editor]: success
+[2023-05-27 05:40:37] INFO root fetch - main [MainThread]: Store serial: [18272056]
