@@ -5013,3 +5013,25 @@
 [2023-05-27 07:15:58] INFO root fetch - main [MainThread]: End processing [gravitas]: success
 [2023-05-27 07:17:06] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2023-05-27 07:17:06] INFO root fetch - main [MainThread]: Store serial: [18272403]
+[2023-05-27 07:22:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272403]
+[2023-05-27 07:22:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-27 07:22:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-ndn
+[2023-05-27 07:22:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jutl
+[2023-05-27 07:22:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: danling
+[2023-05-27 07:22:15] INFO root fetch - processPackages [jutl]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-27 07:22:15] INFO root fetch - processPackages [python-ndn]: New version: [0.3a1.post4] Old Version: [0.3a1.post3]
+[2023-05-27 07:22:15] INFO root fetch - processPackages [danling]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-27 07:22:15] INFO root fetch - processPackages [python-ndn]: Downloading https://files.pythonhosted.org/packages/a5/90/a78f2592a06e0afcf87e4605d770a92e463cffb56f564cbdb6424a85de4b/python-ndn-0.3a1.post3.tar.gz
+[2023-05-27 07:22:15] INFO root fetch - processPackages [jutl]: Downloading https://files.pythonhosted.org/packages/78/41/9a3650a7ffc1bf1055ab01384c00e0326785674919a3215f040e2830e103/jutl-0.5.2.tar.gz
+[2023-05-27 07:22:15] INFO root fetch - processPackages [python-ndn]: Downloading https://files.pythonhosted.org/packages/eb/09/8a63fb7b5cc7b1b0914f6e4ab98f5cbfd32771161cd8b49e9dc84b7025f5/python-ndn-0.3a1.post4.tar.gz
+[2023-05-27 07:22:15] INFO root fetch - processPackages [danling]: executing diffoscope
+[2023-05-27 07:22:15] INFO root fetch - processPackages [danling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danling-0.2.8.tar.gz tmp/danling-0.2.9.tar.gz --markdown 20230527/d/danling/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-27 07:22:15] INFO root fetch - processPackages [jutl]: Downloading https://files.pythonhosted.org/packages/8d/47/074cfe414217196af652cbedc2b058c0f7fd7102babe4595bcc17f579f70/jutl-0.5.3.tar.gz
+[2023-05-27 07:22:15] INFO root fetch - processPackages [python-ndn]: executing diffoscope
+[2023-05-27 07:22:15] INFO root fetch - processPackages [python-ndn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-ndn-0.3a1.post3.tar.gz tmp/python-ndn-0.3a1.post4.tar.gz --markdown 20230527/p/python-ndn/0.3a1.post3-0.3a1.post4/diff.md --exclude *.pyd
+[2023-05-27 07:22:15] INFO root fetch - processPackages [jutl]: executing diffoscope
+[2023-05-27 07:22:15] INFO root fetch - processPackages [jutl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jutl-0.5.2.tar.gz tmp/jutl-0.5.3.tar.gz --markdown 20230527/j/jutl/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-27 07:22:16] INFO root fetch - main [MainThread]: End processing [jutl]: success
+[2023-05-27 07:22:16] INFO root fetch - main [MainThread]: End processing [python-ndn]: success
+[2023-05-27 07:22:17] INFO root fetch - main [MainThread]: End processing [danling]: success
+[2023-05-27 07:22:17] INFO root fetch - main [MainThread]: Store serial: [18272412]
