@@ -11657,3 +11657,41 @@
 [2023-05-27 21:22:11] INFO root fetch - main [MainThread]: End processing [AIsketcher]: success
 [2023-05-27 21:22:13] INFO root fetch - main [MainThread]: End processing [metaindex]: success
 [2023-05-27 21:22:13] INFO root fetch - main [MainThread]: Store serial: [18276328]
+[2023-05-27 21:27:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276328]
+[2023-05-27 21:27:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 21:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: p-template-crawler
+[2023-05-27 21:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bs4-web-scraper
+[2023-05-27 21:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tracknado
+[2023-05-27 21:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbt-clickzetta
+[2023-05-27 21:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytest-variables
+[2023-05-27 21:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: py-industrial-robots
+[2023-05-27 21:27:21] INFO root fetch - processPackages [bs4-web-scraper]: New version: [0.1.1] Old Version: [0.0.2a0]
+[2023-05-27 21:27:21] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 21:27:21] INFO root fetch - processPackages [tracknado]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-27 21:27:21] INFO root fetch - processPackages [pytest-variables]: New version: [3.0.0] Old Version: [2.0.0]
+[2023-05-27 21:27:21] INFO root fetch - processPackages [p-template-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 21:27:22] WARNING root fetch - processPackages [py-industrial-robots]: Skipping, unable to determine old version
+[2023-05-27 21:27:22] INFO root fetch - main [MainThread]: End processing [py-industrial-robots] error
+[2023-05-27 21:27:22] INFO root fetch - processPackages [dbt-clickzetta]: Downloading https://files.pythonhosted.org/packages/d9/bd/b1dd62574c8e31c62073208bfd2863fcc4dbf76227abbe15178c7913bd95/dbt-clickzetta-0.0.4.tar.gz
+[2023-05-27 21:27:22] INFO root fetch - processPackages [tracknado]: Downloading https://files.pythonhosted.org/packages/be/aa/8b731d657634ed0565ad192a8ef22aa34813c48780710b58b10c3987daa5/tracknado-0.2.1.tar.gz
+[2023-05-27 21:27:22] INFO root fetch - processPackages [pytest-variables]: Downloading https://files.pythonhosted.org/packages/5d/d1/c528a1b57b283c44291975e4bfcf2a3586f990e56451c7ba654efb70ecbc/pytest-variables-2.0.0.tar.gz
+[2023-05-27 21:27:22] INFO root fetch - processPackages [bs4-web-scraper]: Downloading https://files.pythonhosted.org/packages/56/fa/f9f55400ab63b13e5a5f79abaf4a01c8f3b8e5c6c4df51587fdc7741e5e5/bs4_web_scraper-0.1.1.tar.gz
+[2023-05-27 21:27:22] INFO root fetch - processPackages [p-template-crawler]: executing diffoscope
+[2023-05-27 21:27:22] INFO root fetch - processPackages [p-template-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-crawler-0.0.8.tar.gz tmp/p-template-crawler-0.0.9.tar.gz --markdown 20230527/p/p-template-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 21:27:22] INFO root fetch - processPackages [bs4-web-scraper]: executing diffoscope
+[2023-05-27 21:27:22] INFO root fetch - processPackages [bs4-web-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bs4_web_scraper-0.0.2a0.tar.gz tmp/bs4_web_scraper-0.1.1.tar.gz --markdown 20230527/b/bs4-web-scraper/0.0.2a0-0.1.1/diff.md --exclude *.pyd
+[2023-05-27 21:27:22] INFO root fetch - processPackages [tracknado]: Downloading https://files.pythonhosted.org/packages/31/ba/ceca1c511e16a3cfdaeef5c4cece21dc16e91f4bf3498a417218e9b9dda7/tracknado-0.2.2.tar.gz
+[2023-05-27 21:27:22] INFO root fetch - processPackages [pytest-variables]: Downloading https://files.pythonhosted.org/packages/69/85/ed733ee0ee9ff879512d44a54b2966eae94862c1f5ce1bc2535f74910ef3/pytest_variables-3.0.0.tar.gz
+[2023-05-27 21:27:22] INFO root fetch - processPackages [dbt-clickzetta]: Downloading https://files.pythonhosted.org/packages/82/c9/23b84451e0dd949f443dd0176d6c3888f4a271946ff598b899664494f87a/dbt-clickzetta-0.0.5.tar.gz
+[2023-05-27 21:27:22] INFO root fetch - processPackages [pytest-variables]: executing diffoscope
+[2023-05-27 21:27:22] INFO root fetch - processPackages [pytest-variables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-variables-2.0.0.tar.gz tmp/pytest_variables-3.0.0.tar.gz --markdown 20230527/p/pytest-variables/2.0.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-27 21:27:22] INFO root fetch - processPackages [tracknado]: executing diffoscope
+[2023-05-27 21:27:22] INFO root fetch - processPackages [tracknado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tracknado-0.2.1.tar.gz tmp/tracknado-0.2.2.tar.gz --markdown 20230527/t/tracknado/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-27 21:27:22] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-27 21:27:22] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.4.tar.gz tmp/dbt-clickzetta-0.0.5.tar.gz --markdown 20230527/d/dbt-clickzetta/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-27 21:27:23] INFO root fetch - main [MainThread]: End processing [p-template-crawler]: success
+[2023-05-27 21:27:23] INFO root fetch - main [MainThread]: End processing [pytest-variables]: success
+[2023-05-27 21:27:23] INFO root fetch - main [MainThread]: End processing [bs4-web-scraper]: success
+[2023-05-27 21:27:23] INFO root fetch - main [MainThread]: End processing [tracknado]: success
+[2023-05-27 21:27:23] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-27 21:27:23] INFO root fetch - main [MainThread]: Store serial: [18276356]
