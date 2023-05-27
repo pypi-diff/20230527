@@ -12712,3 +12712,23 @@
 [2023-05-27 23:46:06] INFO root fetch - main [MainThread]: End processing [pronoundb]: success
 [2023-05-27 23:46:06] INFO root fetch - main [MainThread]: End processing [clown-sort]: success
 [2023-05-27 23:46:06] INFO root fetch - main [MainThread]: Store serial: [18277060]
+[2023-05-27 23:51:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277060]
+[2023-05-27 23:51:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-27 23:51:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyQCAMS
+[2023-05-27 23:51:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipfs-hamt-directory-py
+[2023-05-27 23:51:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: printnanny-api-client
+[2023-05-27 23:51:15] INFO root fetch - processPackages [PyQCAMS]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-27 23:51:15] WARNING root fetch - processPackages [ipfs-hamt-directory-py]: Skipping, unable to determine old version
+[2023-05-27 23:51:15] INFO root fetch - main [MainThread]: End processing [ipfs-hamt-directory-py] error
+[2023-05-27 23:51:15] INFO root fetch - processPackages [printnanny-api-client]: New version: [0.99.9] Old Version: [0.99.8]
+[2023-05-27 23:51:15] INFO root fetch - processPackages [PyQCAMS]: Downloading https://files.pythonhosted.org/packages/28/77/1f44cddd6b6a47f1bcdcbca3492ba5d1df27bbaf363e77beed70fd39fc2c/PyQCAMS-1.0.0.tar.gz
+[2023-05-27 23:51:16] INFO root fetch - processPackages [printnanny-api-client]: Downloading https://files.pythonhosted.org/packages/80/a8/8e5ce11213e01df0c6d1880d7e11b606e55310521d4713aa419652a8b190/printnanny-api-client-0.99.8.tar.gz
+[2023-05-27 23:51:16] INFO root fetch - processPackages [PyQCAMS]: Downloading https://files.pythonhosted.org/packages/3b/85/4d18ee8283b069b5bd1841bd8d1a9ece0e3155b495ce0bd50b2bccf44581/PyQCAMS-1.0.1.tar.gz
+[2023-05-27 23:51:16] INFO root fetch - processPackages [PyQCAMS]: executing diffoscope
+[2023-05-27 23:51:16] INFO root fetch - processPackages [PyQCAMS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQCAMS-1.0.0.tar.gz tmp/PyQCAMS-1.0.1.tar.gz --markdown 20230527/P/PyQCAMS/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 23:51:16] INFO root fetch - processPackages [printnanny-api-client]: Downloading https://files.pythonhosted.org/packages/dc/09/9471b93d2f7870a699fe979e08df9b17bcd4a570221b2b7fc3f585cbe647/printnanny-api-client-0.99.9.tar.gz
+[2023-05-27 23:51:16] INFO root fetch - processPackages [printnanny-api-client]: executing diffoscope
+[2023-05-27 23:51:16] INFO root fetch - processPackages [printnanny-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/printnanny-api-client-0.99.8.tar.gz tmp/printnanny-api-client-0.99.9.tar.gz --markdown 20230527/p/printnanny-api-client/0.99.8-0.99.9/diff.md --exclude *.pyd
+[2023-05-27 23:51:17] INFO root fetch - main [MainThread]: End processing [PyQCAMS]: success
+[2023-05-27 23:51:24] INFO root fetch - main [MainThread]: End processing [printnanny-api-client]: success
+[2023-05-27 23:51:24] INFO root fetch - main [MainThread]: Store serial: [18277072]
