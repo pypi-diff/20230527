@@ -8098,3 +8098,92 @@
 [2023-05-27 13:59:15] INFO root fetch - processPackages [lacuscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lacuscore-1.4.8.tar.gz tmp/lacuscore-1.4.9.tar.gz --markdown 20230527/l/lacuscore/1.4.8-1.4.9/diff.md --exclude *.pyd
 [2023-05-27 13:59:16] INFO root fetch - main [MainThread]: End processing [lacuscore]: success
 [2023-05-27 13:59:16] INFO root fetch - main [MainThread]: Store serial: [18274125]
+[2023-05-27 14:04:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274125]
+[2023-05-27 14:04:25] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-27 14:04:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyswtools
+[2023-05-27 14:04:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-dllib
+[2023-05-27 14:04:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-orca
+[2023-05-27 14:04:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bilibili-api-python
+[2023-05-27 14:04:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-friesian
+[2023-05-27 14:04:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bigdl
+[2023-05-27 14:04:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl-dllib-spark2
+[2023-05-27 14:04:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mavcom
+[2023-05-27 14:04:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bigdl-orca-spark2
+[2023-05-27 14:04:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bigdl-friesian-spark2
+[2023-05-27 14:04:25] INFO root fetch - processPackages [pyswtools]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-dllib]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 14:04:25] INFO root fetch - processPackages [mavcom]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bilibili-api-python]: New version: [9.3.1] Old Version: [9.3.0]
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-orca]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-dllib-spark2]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-friesian-spark2]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-orca-spark2]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-friesian]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-dllib]: Downloading https://files.pythonhosted.org/packages/0d/39/cfc7bcb04b14f2ae99e40ec2289ded67d8ebe424149d873b57e005077737/bigdl-dllib-2.4.0b20230526.tar.gz
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-dllib-spark2]: Downloading https://files.pythonhosted.org/packages/2f/77/d33a6af7503b66b351cbcc32804733a1f3b66654b9f882afc039e51ecc4f/bigdl-dllib-spark2-2.4.0b20230526.tar.gz
+[2023-05-27 14:04:25] INFO root fetch - processPackages [pyswtools]: Downloading https://files.pythonhosted.org/packages/30/6d/5107dd2fbff5743f244deb9dacf7979f920db784ac130dd8fa8a862a7e47/pyswtools-0.5.0.tar.gz
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-orca]: Downloading https://files.pythonhosted.org/packages/95/ba/968c80167b4334aa1b7608bd83b8feb8b4394a52cca15b8312f29c1cd4d7/bigdl_orca-2.4.0b20230526-py3-none-manylinux1_x86_64.whl
+[2023-05-27 14:04:25] INFO root fetch - processPackages [mavcom]: Downloading https://files.pythonhosted.org/packages/93/1b/3abc53ea9f1cd5e29fb9579ff5143e66d1d17c712afdab41ce8a3ef9c701/mavcom-1.0.0.tar.gz
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-orca-spark2]: Downloading https://files.pythonhosted.org/packages/51/75/a7335a93eff312dc1bfc27488489aa089e1b20809d19f3685bde61643ff8/bigdl_orca_spark2-2.4.0b20230526-py3-none-manylinux1_x86_64.whl
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-friesian-spark2]: Downloading https://files.pythonhosted.org/packages/19/84/75cf0f1a74326fc8f8baacdf61a1088abb16558c1cef66e971e00154c8c7/bigdl_friesian_spark2-2.4.0b20230526-py3-none-manylinux1_x86_64.whl
+[2023-05-27 14:04:25] WARNING root fetch - processPackages [bigdl-orca-spark2]: Skipping package: exceeds size limit 20369464>=10485760
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-orca-spark2]: Start processing: bigdl-chronos-spark2
+[2023-05-27 14:04:25] INFO root fetch - main [MainThread]: End processing [bigdl-orca-spark2] error
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-friesian]: Downloading https://files.pythonhosted.org/packages/26/fe/3f0742848858613ea89721cf31defcbf9e0c4d654c729d1cbd8259c47b4b/bigdl_friesian-2.4.0b20230527-py3-none-manylinux1_x86_64.whl
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-chronos-spark2]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl]: Downloading https://files.pythonhosted.org/packages/d2/3f/efd4b27e413819b6232ce64785c1c84077d7d4a9d0f4dcccaed5e53ffc31/bigdl-2.4.0b20230527-py3-none-manylinux1_x86_64.whl
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bilibili-api-python]: executing diffoscope
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bilibili-api-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bilibili-api-python-9.3.0.tar.gz tmp/bilibili-api-python-9.3.1.tar.gz --markdown 20230527/b/bilibili-api-python/9.3.0-9.3.1/diff.md --exclude *.pyd
+[2023-05-27 14:04:25] INFO root fetch - processPackages [pyswtools]: Downloading https://files.pythonhosted.org/packages/4b/90/310fbf75d0662ecadfa01727c5f8ed1f037dd9456d417a11637b12387e3a/pyswtools-0.6.0.tar.gz
+[2023-05-27 14:04:25] WARNING root fetch - processPackages [bigdl-orca]: Skipping package: exceeds size limit 20369384>=10485760
+[2023-05-27 14:04:25] WARNING root fetch - processPackages [bigdl-dllib-spark2]: Skipping package: exceeds size limit 53560836>=10485760
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-orca]: Start processing: bigdl-spark2
+[2023-05-27 14:04:25] INFO root fetch - main [MainThread]: End processing [bigdl-orca] error
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-dllib-spark2]: Start processing: pyslit
+[2023-05-27 14:04:25] WARNING root fetch - processPackages [bigdl-dllib]: Skipping package: exceeds size limit 53560843>=10485760
+[2023-05-27 14:04:25] INFO root fetch - main [MainThread]: End processing [bigdl-dllib-spark2] error
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-dllib]: Start processing: dokuwikidumper
+[2023-05-27 14:04:25] INFO root fetch - processPackages [mavcom]: Downloading https://files.pythonhosted.org/packages/98/6d/6e8e5a951ecf3cb6acc5fe1321e4a62bc2c05ed80d6acacb520721859337/mavcom-1.0.1.tar.gz
+[2023-05-27 14:04:25] INFO root fetch - main [MainThread]: End processing [bigdl-dllib] error
+[2023-05-27 14:04:25] INFO root fetch - processPackages [dokuwikidumper]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-friesian-spark2]: Downloading https://files.pythonhosted.org/packages/a0/84/28072d701bacb9721b44c63347ecb72c815eb140fbff22462f02c443d1ec/bigdl_friesian_spark2-2.4.0b20230527-py3-none-manylinux1_x86_64.whl
+[2023-05-27 14:04:25] INFO root fetch - processPackages [pyslit]: New version: [2.0.5] Old Version: [1.0.0]
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl]: executing diffoscope
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl-2.4.0b20230526-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl-2.4.0b20230527-py3-none-manylinux1_x86_64.whl.zip --markdown 20230527/b/bigdl/2.4.0b20230526-2.4.0b20230527/diff.md --exclude *.pyd
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-friesian]: executing diffoscope
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-friesian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian-2.4.0b20230526-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian-2.4.0b20230527-py3-none-manylinux1_x86_64.whl.zip --markdown 20230527/b/bigdl-friesian/2.4.0b20230526-2.4.0b20230527/diff.md --exclude *.pyd
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-spark2]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 14:04:25] INFO root fetch - processPackages [mavcom]: executing diffoscope
+[2023-05-27 14:04:25] INFO root fetch - processPackages [mavcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mavcom-1.0.0.tar.gz tmp/mavcom-1.0.1.tar.gz --markdown 20230527/m/mavcom/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 14:04:25] INFO root fetch - processPackages [pyswtools]: executing diffoscope
+[2023-05-27 14:04:25] INFO root fetch - processPackages [pyswtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyswtools-0.5.0.tar.gz tmp/pyswtools-0.6.0.tar.gz --markdown 20230527/p/pyswtools/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-27 14:04:25] INFO root fetch - processPackages [bigdl-chronos-spark2]: Downloading https://files.pythonhosted.org/packages/50/2e/06e677889c2b14990397ddaccadfcd7d4ae485ad63cf8b74e3e1fe0acc9c/bigdl_chronos_spark2-2.4.0b20230526-py3-none-manylinux1_x86_64.whl
+[2023-05-27 14:04:26] INFO root fetch - processPackages [dokuwikidumper]: executing diffoscope
+[2023-05-27 14:04:26] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.8.tar.gz tmp/dokuwikidumper-0.1.9.tar.gz --markdown 20230527/d/dokuwikidumper/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 14:04:26] INFO root fetch - processPackages [bigdl-friesian-spark2]: executing diffoscope
+[2023-05-27 14:04:26] INFO root fetch - processPackages [bigdl-friesian-spark2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian_spark2-2.4.0b20230526-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian_spark2-2.4.0b20230527-py3-none-manylinux1_x86_64.whl.zip --markdown 20230527/b/bigdl-friesian-spark2/2.4.0b20230526-2.4.0b20230527/diff.md --exclude *.pyd
+[2023-05-27 14:04:26] INFO root fetch - processPackages [bigdl-spark2]: Downloading https://files.pythonhosted.org/packages/c4/06/2cfc4bf391dd1cfcbfabf1f5044604c68a030e4daf2bc235bab498fa15a1/bigdl_spark2-2.4.0b20230526-py3-none-manylinux1_x86_64.whl
+[2023-05-27 14:04:26] INFO root fetch - processPackages [pyslit]: Downloading https://files.pythonhosted.org/packages/d8/e4/3399b6540a5112d7c004f6b3ac4ada1e2949ca86173781c5403807bc9078/pyslit-2.0.5.tar.gz
+[2023-05-27 14:04:26] INFO root fetch - processPackages [bigdl-chronos-spark2]: Downloading https://files.pythonhosted.org/packages/1f/ed/748995274915503ae7c69546d67a4e1d2db8d87e7137f4387ec7efeedd8c/bigdl_chronos_spark2-2.4.0b20230527-py3-none-manylinux1_x86_64.whl
+[2023-05-27 14:04:26] INFO root fetch - processPackages [pyslit]: executing diffoscope
+[2023-05-27 14:04:26] INFO root fetch - processPackages [pyslit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslit-1.0.0.tar.gz tmp/pyslit-2.0.5.tar.gz --markdown 20230527/p/pyslit/1.0.0-2.0.5/diff.md --exclude *.pyd
+[2023-05-27 14:04:26] INFO root fetch - processPackages [bigdl-chronos-spark2]: executing diffoscope
+[2023-05-27 14:04:26] INFO root fetch - processPackages [bigdl-chronos-spark2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos_spark2-2.4.0b20230526-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_chronos_spark2-2.4.0b20230527-py3-none-manylinux1_x86_64.whl.zip --markdown 20230527/b/bigdl-chronos-spark2/2.4.0b20230526-2.4.0b20230527/diff.md --exclude *.pyd
+[2023-05-27 14:04:26] INFO root fetch - processPackages [bigdl-spark2]: Downloading https://files.pythonhosted.org/packages/18/01/c08abaeb111cdbe505c60e7b5ae7da29927bd0b8a899aa9be201fba1e1a9/bigdl_spark2-2.4.0b20230527-py3-none-manylinux1_x86_64.whl
+[2023-05-27 14:04:26] INFO root fetch - processPackages [bigdl-spark2]: executing diffoscope
+[2023-05-27 14:04:26] INFO root fetch - processPackages [bigdl-spark2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_spark2-2.4.0b20230526-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_spark2-2.4.0b20230527-py3-none-manylinux1_x86_64.whl.zip --markdown 20230527/b/bigdl-spark2/2.4.0b20230526-2.4.0b20230527/diff.md --exclude *.pyd
+[2023-05-27 14:04:27] INFO root fetch - processPackages [bigdl]: Start processing: DRFMultiStepForm
+[2023-05-27 14:04:27] INFO root fetch - main [MainThread]: End processing [bigdl]: success
+[2023-05-27 14:04:27] WARNING root fetch - processPackages [DRFMultiStepForm]: Skipping, unable to determine old version
+[2023-05-27 14:04:27] INFO root fetch - main [MainThread]: End processing [DRFMultiStepForm] error
+[2023-05-27 14:04:27] INFO root fetch - main [MainThread]: End processing [pyswtools]: success
+[2023-05-27 14:04:27] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
+[2023-05-27 14:04:27] INFO root fetch - main [MainThread]: End processing [bilibili-api-python]: success
+[2023-05-27 14:04:27] INFO root fetch - main [MainThread]: End processing [pyslit]: success
+[2023-05-27 14:04:27] INFO root fetch - main [MainThread]: End processing [mavcom]: success
+[2023-05-27 14:04:27] INFO root fetch - main [MainThread]: End processing [bigdl-spark2]: success
+[2023-05-27 14:04:28] INFO root fetch - main [MainThread]: End processing [bigdl-friesian]: success
+[2023-05-27 14:04:28] INFO root fetch - main [MainThread]: End processing [bigdl-friesian-spark2]: success
+[2023-05-27 14:04:28] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark2]: success
+[2023-05-27 14:04:28] INFO root fetch - main [MainThread]: Store serial: [18274169]
