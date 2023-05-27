@@ -6160,3 +6160,131 @@
 [2023-05-27 10:09:08] INFO root fetch - main [MainThread]: End processing [dev-gpt]: success
 [2023-05-27 10:09:08] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2023-05-27 10:09:08] INFO root fetch - main [MainThread]: Store serial: [18273018]
+[2023-05-27 10:14:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273018]
+[2023-05-27 10:14:17] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-05-27 10:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mmcb-avt
+[2023-05-27 10:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: multiprocessorhdl
+[2023-05-27 10:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prfiesta
+[2023-05-27 10:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: deduplicationdict
+[2023-05-27 10:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sso-aws
+[2023-05-27 10:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gradio-version-freeze
+[2023-05-27 10:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: CUQIpy
+[2023-05-27 10:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: medsenger-api
+[2023-05-27 10:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sword2vec
+[2023-05-27 10:14:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sword2vec
+[2023-05-27 10:14:17] INFO root fetch - processPackages [multiprocessorhdl]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-27 10:14:17] INFO root fetch - processPackages [sso-aws]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-27 10:14:17] INFO root fetch - processPackages [deduplicationdict]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2023-05-27 10:14:17] INFO root fetch - processPackages [mmcb-avt]: New version: [0.0.92] Old Version: [0.0.91]
+[2023-05-27 10:14:17] INFO root fetch - processPackages [medsenger-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 10:14:17] INFO root fetch - processPackages [CUQIpy]: New version: [0.4.0] Old Version: [0.3.0.post0.dev7]
+[2023-05-27 10:14:17] INFO root fetch - processPackages [prfiesta]: New version: [0.9.0] Old Version: [0.8.2b146]
+[2023-05-27 10:14:17] INFO root fetch - processPackages [sword2vec]: New version: [3.2.2b0] Old Version: [3.2.1b0]
+[2023-05-27 10:14:17] INFO root fetch - processPackages [sword2vec]: New version: [3.2.2b0] Old Version: [3.2.1b0]
+[2023-05-27 10:14:17] INFO root fetch - processPackages [gradio-version-freeze]: New version: [3.32.1.3.36] Old Version: [3.32.0.3.36]
+[2023-05-27 10:14:17] INFO root fetch - processPackages [deduplicationdict]: Downloading https://files.pythonhosted.org/packages/ca/45/3d60e5cf9076d83d04e40771fca32809b6bb05e568a142ac18e33ef92402/deduplicationdict-1.0.0rc1.tar.gz
+[2023-05-27 10:14:17] INFO root fetch - processPackages [multiprocessorhdl]: Downloading https://files.pythonhosted.org/packages/a3/b5/edd60625818738da41508b19016f78d36cc1bc5224b699e17d6223c5020e/multiprocessorhdl-2.0.3.tar.gz
+[2023-05-27 10:14:17] WARNING root fetch - processPackages [multiprocessorhdl]: Skipping package: exceeds size limit 66227620>=10485760
+[2023-05-27 10:14:17] INFO root fetch - processPackages [multiprocessorhdl]: Start processing: sword2vec
+[2023-05-27 10:14:17] INFO root fetch - main [MainThread]: End processing [multiprocessorhdl] error
+[2023-05-27 10:14:17] INFO root fetch - processPackages [gradio-version-freeze]: Downloading https://files.pythonhosted.org/packages/5e/4a/9ca8ed11ed814195d004472d5b475c2f33dabeb7d739fa35eed571ac027d/gradio_version_freeze-3.32.0.3.36.tar.gz
+[2023-05-27 10:14:17] INFO root fetch - processPackages [sword2vec]: Downloading https://files.pythonhosted.org/packages/fd/09/77a16000c41da74400bf034aba2f77a5dc832b74f55cd484b89458a1a410/sword2vec-3.2.1b0.tar.gz
+[2023-05-27 10:14:17] INFO root fetch - processPackages [sso-aws]: Downloading https://files.pythonhosted.org/packages/85/5a/c0cbd579851ad636d40eb38773621a5fc477668af86add2f1c906d51a838/sso-aws-1.0.4.tar.gz
+[2023-05-27 10:14:17] INFO root fetch - processPackages [sword2vec]: Downloading https://files.pythonhosted.org/packages/fd/09/77a16000c41da74400bf034aba2f77a5dc832b74f55cd484b89458a1a410/sword2vec-3.2.1b0.tar.gz
+[2023-05-27 10:14:17] INFO root fetch - processPackages [prfiesta]: Downloading https://files.pythonhosted.org/packages/a1/91/8710bb4c8df124bb008a26003c8fa61bb545e382d58b9717c1cccc9858a8/prfiesta-0.9.0.tar.gz
+[2023-05-27 10:14:17] INFO root fetch - processPackages [CUQIpy]: Downloading https://files.pythonhosted.org/packages/33/5a/7ebe0143425bf41cfe97658efe3add2dfc47e5e92b54170ebae213adf297/CUQIpy-0.4.0.tar.gz
+[2023-05-27 10:14:17] INFO root fetch - processPackages [mmcb-avt]: Downloading https://files.pythonhosted.org/packages/67/53/84927e7792296bf80998b9a39cf5b97c05c06b3399c40127e4190d1defc2/mmcb-avt-0.0.92.tar.gz
+[2023-05-27 10:14:17] INFO root fetch - processPackages [sword2vec]: New version: [3.2.6] Old Version: [3.2.5b0]
+[2023-05-27 10:14:17] WARNING root fetch - processPackages [gradio-version-freeze]: Skipping package: exceeds size limit 11026950>=10485760
+[2023-05-27 10:14:17] INFO root fetch - processPackages [gradio-version-freeze]: Start processing: sword2vec
+[2023-05-27 10:14:17] INFO root fetch - main [MainThread]: End processing [gradio-version-freeze] error
+[2023-05-27 10:14:17] INFO root fetch - processPackages [sword2vec]: New version: [3.2.6] Old Version: [3.2.5b0]
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sso-aws]: executing diffoscope
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sso-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sso-aws-1.0.3.tar.gz tmp/sso-aws-1.0.4.tar.gz --markdown 20230527/s/sso-aws/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-27 10:14:18] INFO root fetch - processPackages [mmcb-avt]: executing diffoscope
+[2023-05-27 10:14:18] INFO root fetch - processPackages [mmcb-avt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmcb-avt-0.0.91.tar.gz tmp/mmcb-avt-0.0.92.tar.gz --markdown 20230527/m/mmcb-avt/0.0.91-0.0.92/diff.md --exclude *.pyd
+[2023-05-27 10:14:18] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-27 10:14:18] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.8.2b146.tar.gz tmp/prfiesta-0.9.0.tar.gz --markdown 20230527/p/prfiesta/0.8.2b146-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 10:14:18] INFO root fetch - processPackages [medsenger-api]: executing diffoscope
+[2023-05-27 10:14:18] INFO root fetch - processPackages [medsenger-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medsenger_api-0.1.8.tar.gz tmp/medsenger_api-0.1.9.tar.gz --markdown 20230527/m/medsenger-api/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 10:14:18] INFO root fetch - processPackages [CUQIpy]: executing diffoscope
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sword2vec]: Downloading https://files.pythonhosted.org/packages/be/2b/68acbff71f2e6650624530690e8825381a535e667284d09b7acaaf065f89/sword2vec-3.2.5b0-cp311-cp311-win_amd64.whl
+[2023-05-27 10:14:18] INFO root fetch - processPackages [deduplicationdict]: Downloading https://files.pythonhosted.org/packages/0d/87/059ebd77a310e103241ed0e4b08f70f47fe4ba8d46cb39f92f34927fd94d/deduplicationdict-1.0.0rc2.tar.gz
+[2023-05-27 10:14:18] INFO root fetch - processPackages [CUQIpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CUQIpy-0.3.0.post0.dev7.tar.gz tmp/CUQIpy-0.4.0.tar.gz --markdown 20230527/C/CUQIpy/0.3.0.post0.dev7-0.4.0/diff.md --exclude *.pyd
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sword2vec]: Downloading https://files.pythonhosted.org/packages/be/2b/68acbff71f2e6650624530690e8825381a535e667284d09b7acaaf065f89/sword2vec-3.2.5b0-cp311-cp311-win_amd64.whl
+[2023-05-27 10:14:18] INFO root fetch - processPackages [deduplicationdict]: executing diffoscope
+[2023-05-27 10:14:18] INFO root fetch - processPackages [deduplicationdict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deduplicationdict-1.0.0rc1.tar.gz tmp/deduplicationdict-1.0.0rc2.tar.gz --markdown 20230527/d/deduplicationdict/1.0.0rc1-1.0.0rc2/diff.md --exclude *.pyd
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sword2vec]: Downloading https://files.pythonhosted.org/packages/a4/fb/d6a83384f17573bc6e1eb9f208aa6a40d8bfbb2e3abcc4aee24e37eb65f8/sword2vec-3.2.6-cp311-cp311-win_amd64.whl
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sword2vec]: Downloading https://files.pythonhosted.org/packages/a4/fb/d6a83384f17573bc6e1eb9f208aa6a40d8bfbb2e3abcc4aee24e37eb65f8/sword2vec-3.2.6-cp311-cp311-win_amd64.whl
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sword2vec]: Downloading https://files.pythonhosted.org/packages/70/75/6ee863844e552d7ac70036b6e9aaf567a548aa7e3904d08a88b6a5edd6f9/sword2vec-3.2.2b0-cp311-cp311-win_amd64.whl
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sword2vec]: Downloading https://files.pythonhosted.org/packages/70/75/6ee863844e552d7ac70036b6e9aaf567a548aa7e3904d08a88b6a5edd6f9/sword2vec-3.2.2b0-cp311-cp311-win_amd64.whl
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sword2vec]: executing diffoscope
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sword2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sword2vec-3.2.5b0-cp311-cp311-win_amd64.whl.zip tmp/sword2vec-3.2.6-cp311-cp311-win_amd64.whl.zip --markdown 20230527/s/sword2vec/3.2.5b0-3.2.6/diff.md --exclude *.pyd
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sword2vec]: executing diffoscope
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sword2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sword2vec-3.2.5b0-cp311-cp311-win_amd64.whl.zip tmp/sword2vec-3.2.6-cp311-cp311-win_amd64.whl.zip --markdown 20230527/s/sword2vec/3.2.5b0-3.2.6/diff.md --exclude *.pyd
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sword2vec]: executing diffoscope
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sword2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sword2vec-3.2.1b0.tar.gz tmp/sword2vec-3.2.2b0-cp311-cp311-win_amd64.whl.zip --markdown 20230527/s/sword2vec/3.2.1b0-3.2.2b0/diff.md --exclude *.pyd
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sword2vec]: executing diffoscope
+[2023-05-27 10:14:18] INFO root fetch - processPackages [sword2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sword2vec-3.2.1b0.tar.gz tmp/sword2vec-3.2.2b0-cp311-cp311-win_amd64.whl.zip --markdown 20230527/s/sword2vec/3.2.1b0-3.2.2b0/diff.md --exclude *.pyd
+[2023-05-27 10:14:19] INFO root fetch - processPackages [sso-aws]: Start processing: sword2vec
+[2023-05-27 10:14:19] INFO root fetch - main [MainThread]: End processing [sso-aws]: success
+[2023-05-27 10:14:19] INFO root fetch - processPackages [medsenger-api]: Start processing: sword2vec
+[2023-05-27 10:14:19] INFO root fetch - main [MainThread]: End processing [medsenger-api]: success
+[2023-05-27 10:14:19] INFO root fetch - processPackages [sword2vec]: New version: [3.2.6] Old Version: [3.2.5b0]
+[2023-05-27 10:14:19] INFO root fetch - processPackages [sword2vec]: New version: [3.2.6] Old Version: [3.2.5b0]
+[2023-05-27 10:14:19] INFO root fetch - processPackages [sword2vec]: executing diffoscope
+[2023-05-27 10:14:19] INFO root fetch - processPackages [sword2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sword2vec-3.2.5b0-cp311-cp311-win_amd64.whl.zip tmp/sword2vec-3.2.6-cp311-cp311-win_amd64.whl.zip --markdown 20230527/s/sword2vec/3.2.5b0-3.2.6/diff.md --exclude *.pyd
+[2023-05-27 10:14:19] INFO root fetch - processPackages [sword2vec]: executing diffoscope
+[2023-05-27 10:14:19] INFO root fetch - processPackages [sword2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sword2vec-3.2.5b0-cp311-cp311-win_amd64.whl.zip tmp/sword2vec-3.2.6-cp311-cp311-win_amd64.whl.zip --markdown 20230527/s/sword2vec/3.2.5b0-3.2.6/diff.md --exclude *.pyd
+[2023-05-27 10:14:19] INFO root fetch - processPackages [prfiesta]: Start processing: sword2vec
+[2023-05-27 10:14:19] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-27 10:14:19] INFO root fetch - processPackages [deduplicationdict]: Start processing: sword2vec
+[2023-05-27 10:14:19] INFO root fetch - main [MainThread]: End processing [deduplicationdict]: success
+[2023-05-27 10:14:19] INFO root fetch - processPackages [sword2vec]: New version: [3.2.6] Old Version: [3.2.5b0]
+[2023-05-27 10:14:19] INFO root fetch - processPackages [sword2vec]: New version: [3.2.6] Old Version: [3.2.5b0]
+[2023-05-27 10:14:19] INFO root fetch - processPackages [sword2vec]: executing diffoscope
+[2023-05-27 10:14:19] INFO root fetch - processPackages [sword2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sword2vec-3.2.5b0-cp311-cp311-win_amd64.whl.zip tmp/sword2vec-3.2.6-cp311-cp311-win_amd64.whl.zip --markdown 20230527/s/sword2vec/3.2.5b0-3.2.6/diff.md --exclude *.pyd
+[2023-05-27 10:14:19] INFO root fetch - processPackages [sword2vec]: executing diffoscope
+[2023-05-27 10:14:19] INFO root fetch - processPackages [sword2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sword2vec-3.2.5b0-cp311-cp311-win_amd64.whl.zip tmp/sword2vec-3.2.6-cp311-cp311-win_amd64.whl.zip --markdown 20230527/s/sword2vec/3.2.5b0-3.2.6/diff.md --exclude *.pyd
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: Start processing: sword2vec
+[2023-05-27 10:14:20] INFO root fetch - main [MainThread]: End processing [sword2vec]: success
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: New version: [3.2.6] Old Version: [3.2.5b0]
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: Start processing: sword2vec
+[2023-05-27 10:14:20] INFO root fetch - main [MainThread]: End processing [sword2vec]: success
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: Start processing: sword2vec
+[2023-05-27 10:14:20] INFO root fetch - main [MainThread]: End processing [sword2vec]: success
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: New version: [3.2.6] Old Version: [3.2.5b0]
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: New version: [3.2.6] Old Version: [3.2.5b0]
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: executing diffoscope
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sword2vec-3.2.5b0-cp311-cp311-win_amd64.whl.zip tmp/sword2vec-3.2.6-cp311-cp311-win_amd64.whl.zip --markdown 20230527/s/sword2vec/3.2.5b0-3.2.6/diff.md --exclude *.pyd
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: Start processing: sword2vec
+[2023-05-27 10:14:20] INFO root fetch - main [MainThread]: End processing [sword2vec]: success
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: New version: [3.2.6] Old Version: [3.2.5b0]
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: executing diffoscope
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sword2vec-3.2.5b0-cp311-cp311-win_amd64.whl.zip tmp/sword2vec-3.2.6-cp311-cp311-win_amd64.whl.zip --markdown 20230527/s/sword2vec/3.2.5b0-3.2.6/diff.md --exclude *.pyd
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: executing diffoscope
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sword2vec-3.2.5b0-cp311-cp311-win_amd64.whl.zip tmp/sword2vec-3.2.6-cp311-cp311-win_amd64.whl.zip --markdown 20230527/s/sword2vec/3.2.5b0-3.2.6/diff.md --exclude *.pyd
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: executing diffoscope
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sword2vec-3.2.5b0-cp311-cp311-win_amd64.whl.zip tmp/sword2vec-3.2.6-cp311-cp311-win_amd64.whl.zip --markdown 20230527/s/sword2vec/3.2.5b0-3.2.6/diff.md --exclude *.pyd
+[2023-05-27 10:14:20] INFO root fetch - processPackages [CUQIpy]: Start processing: sword2vec
+[2023-05-27 10:14:20] INFO root fetch - main [MainThread]: End processing [CUQIpy]: success
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: New version: [3.2.6] Old Version: [3.2.5b0]
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: executing diffoscope
+[2023-05-27 10:14:20] INFO root fetch - processPackages [sword2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sword2vec-3.2.5b0-cp311-cp311-win_amd64.whl.zip tmp/sword2vec-3.2.6-cp311-cp311-win_amd64.whl.zip --markdown 20230527/s/sword2vec/3.2.5b0-3.2.6/diff.md --exclude *.pyd
+[2023-05-27 10:14:21] INFO root fetch - processPackages [sword2vec]: Start processing: sso-aws
+[2023-05-27 10:14:21] INFO root fetch - main [MainThread]: End processing [sword2vec]: success
+[2023-05-27 10:14:21] INFO root fetch - processPackages [sso-aws]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-27 10:14:21] INFO root fetch - main [MainThread]: End processing [sword2vec]: success
+[2023-05-27 10:14:21] INFO root fetch - main [MainThread]: End processing [mmcb-avt]: success
+[2023-05-27 10:14:21] INFO root fetch - main [MainThread]: End processing [sword2vec]: success
+[2023-05-27 10:14:21] INFO root fetch - processPackages [sso-aws]: Downloading https://files.pythonhosted.org/packages/8a/74/e9cf2bfdfc657f0f3d3a30977788efd6e0628209eca35ce80cc6b3c8f16b/sso-aws-1.0.5.tar.gz
+[2023-05-27 10:14:21] INFO root fetch - main [MainThread]: End processing [sword2vec]: success
+[2023-05-27 10:14:21] INFO root fetch - processPackages [sso-aws]: executing diffoscope
+[2023-05-27 10:14:21] INFO root fetch - processPackages [sso-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sso-aws-1.0.4.tar.gz tmp/sso-aws-1.0.5.tar.gz --markdown 20230527/s/sso-aws/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-27 10:14:21] INFO root fetch - main [MainThread]: End processing [sword2vec]: success
+[2023-05-27 10:14:21] INFO root fetch - main [MainThread]: End processing [sword2vec]: success
+[2023-05-27 10:14:21] INFO root fetch - main [MainThread]: End processing [sword2vec]: success
+[2023-05-27 10:14:21] INFO root fetch - main [MainThread]: End processing [sword2vec]: success
+[2023-05-27 10:14:21] INFO root fetch - main [MainThread]: End processing [sword2vec]: success
+[2023-05-27 10:14:22] INFO root fetch - main [MainThread]: End processing [sso-aws]: success
+[2023-05-27 10:14:22] INFO root fetch - main [MainThread]: Store serial: [18273078]
