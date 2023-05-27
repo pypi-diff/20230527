@@ -10990,3 +10990,57 @@
 [2023-05-27 19:35:38] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
 [2023-05-27 19:35:50] INFO root fetch - main [MainThread]: End processing [duckdb]: success
 [2023-05-27 19:35:50] INFO root fetch - main [MainThread]: Store serial: [18275840]
+[2023-05-27 19:41:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275840]
+[2023-05-27 19:41:28] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-27 19:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: df2onehot
+[2023-05-27 19:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tn-slack-py-module
+[2023-05-27 19:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prfiesta
+[2023-05-27 19:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: onboardme
+[2023-05-27 19:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rtb-toolbox
+[2023-05-27 19:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: feloopy
+[2023-05-27 19:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wizata-dsapi
+[2023-05-27 19:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rtb-toolbox
+[2023-05-27 19:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pylyzer
+[2023-05-27 19:41:29] INFO root fetch - processPackages [tn-slack-py-module]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 19:41:29] INFO root fetch - processPackages [df2onehot]: New version: [1.0.5] Old Version: [1.0.3]
+[2023-05-27 19:41:29] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.38] Old Version: [0.1.37]
+[2023-05-27 19:41:29] INFO root fetch - processPackages [feloopy]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-27 19:41:29] INFO root fetch - processPackages [prfiesta]: New version: [0.9.1b157] Old Version: [0.9.1b156]
+[2023-05-27 19:41:29] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.38] Old Version: [0.1.37]
+[2023-05-27 19:41:29] INFO root fetch - processPackages [onboardme]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-27 19:41:29] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 19:41:29] INFO root fetch - processPackages [pylyzer]: New version: [0.1.0b0] Old Version: [0.0.9]
+[2023-05-27 19:41:29] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-27 19:41:29] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.9.1b156.tar.gz tmp/prfiesta-0.9.1b157.tar.gz --markdown 20230527/p/prfiesta/0.9.1b156-0.9.1b157/diff.md --exclude *.pyd
+[2023-05-27 19:41:29] INFO root fetch - processPackages [feloopy]: Downloading https://files.pythonhosted.org/packages/bf/70/bd4b10d63c4e512f1923cc25d8faba3c29932f0717867d309a67f5024760/feloopy-0.2.4.tar.gz
+[2023-05-27 19:41:29] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-05-27 19:41:29] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.1.8.tar.gz tmp/wizata-dsapi-0.1.9.tar.gz --markdown 20230527/w/wizata-dsapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 19:41:29] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/32/e2/32720e5bd9a8b2554f311d2938e0a9cf0123c54192d3ecc86b51510f9ee9/rtb_toolbox-0.1.38.tar.gz
+[2023-05-27 19:41:29] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/32/e2/32720e5bd9a8b2554f311d2938e0a9cf0123c54192d3ecc86b51510f9ee9/rtb_toolbox-0.1.38.tar.gz
+[2023-05-27 19:41:29] INFO root fetch - processPackages [df2onehot]: Downloading https://files.pythonhosted.org/packages/03/4e/16ed346f82632668caa0bbe7641019fbb9bdcb756eeb583af1b034f6aa57/df2onehot-1.0.5.tar.gz
+[2023-05-27 19:41:29] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-27 19:41:29] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.37.tar.gz tmp/rtb_toolbox-0.1.38.tar.gz --markdown 20230527/r/rtb-toolbox/0.1.37-0.1.38/diff.md --exclude *.pyd
+[2023-05-27 19:41:29] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/92/4b/75fc65a3b24fbd36bb173578eb8022387ec594d25f4ba86213b6b7054101/onboardme-1.2.1.tar.gz
+[2023-05-27 19:41:29] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-27 19:41:29] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.37.tar.gz tmp/rtb_toolbox-0.1.38.tar.gz --markdown 20230527/r/rtb-toolbox/0.1.37-0.1.38/diff.md --exclude *.pyd
+[2023-05-27 19:41:29] INFO root fetch - processPackages [tn-slack-py-module]: executing diffoscope
+[2023-05-27 19:41:29] INFO root fetch - processPackages [tn-slack-py-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tn-slack-py-module-0.0.8.tar.gz tmp/tn-slack-py-module-0.0.9.tar.gz --markdown 20230527/t/tn-slack-py-module/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 19:41:29] INFO root fetch - processPackages [df2onehot]: executing diffoscope
+[2023-05-27 19:41:29] INFO root fetch - processPackages [df2onehot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/df2onehot-1.0.3.tar.gz tmp/df2onehot-1.0.5.tar.gz --markdown 20230527/d/df2onehot/1.0.3-1.0.5/diff.md --exclude *.pyd
+[2023-05-27 19:41:29] INFO root fetch - processPackages [pylyzer]: executing diffoscope
+[2023-05-27 19:41:29] INFO root fetch - processPackages [pylyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylyzer-0.0.9-py3-none-win_amd64.whl.zip tmp/pylyzer-0.1.0b0.tar.gz --markdown 20230527/p/pylyzer/0.0.9-0.1.0b0/diff.md --exclude *.pyd
+[2023-05-27 19:41:29] INFO root fetch - processPackages [feloopy]: Downloading https://files.pythonhosted.org/packages/67/63/cea55a58d8f7d86c3c76075cfbc5e2d482e617471c8c2fce5f5d6a1500b9/feloopy-0.2.5.tar.gz
+[2023-05-27 19:41:29] INFO root fetch - processPackages [onboardme]: executing diffoscope
+[2023-05-27 19:41:29] INFO root fetch - processPackages [onboardme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onboardme-1.2.0.tar.gz tmp/onboardme-1.2.1.tar.gz --markdown 20230527/o/onboardme/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-27 19:41:29] INFO root fetch - processPackages [feloopy]: executing diffoscope
+[2023-05-27 19:41:29] INFO root fetch - processPackages [feloopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feloopy-0.2.4.tar.gz tmp/feloopy-0.2.5.tar.gz --markdown 20230527/f/feloopy/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-27 19:41:30] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-27 19:41:30] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-05-27 19:41:30] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-27 19:41:31] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-27 19:41:31] INFO root fetch - main [MainThread]: End processing [tn-slack-py-module]: success
+[2023-05-27 19:41:31] INFO root fetch - main [MainThread]: End processing [df2onehot]: success
+[2023-05-27 19:41:31] INFO root fetch - main [MainThread]: End processing [onboardme]: success
+[2023-05-27 19:41:31] INFO root fetch - main [MainThread]: End processing [feloopy]: success
+[2023-05-27 19:41:35] INFO root fetch - main [MainThread]: End processing [pylyzer]: success
+[2023-05-27 19:41:35] INFO root fetch - main [MainThread]: Store serial: [18275869]
