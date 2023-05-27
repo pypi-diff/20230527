@@ -4186,3 +4186,28 @@
 [2023-05-27 05:06:31] INFO root fetch - main [MainThread]: End processing [swachhdata]: success
 [2023-05-27 05:06:31] INFO root fetch - main [MainThread]: End processing [mecha]: success
 [2023-05-27 05:06:31] INFO root fetch - main [MainThread]: Store serial: [18271969]
+[2023-05-27 05:11:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271969]
+[2023-05-27 05:11:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 05:11:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-ddmrp
+[2023-05-27 05:11:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-ddmrp
+[2023-05-27 05:11:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phap
+[2023-05-27 05:11:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: postnormalism
+[2023-05-27 05:11:39] INFO root fetch - processPackages [phap]: New version: [2.2.1rc1] Old Version: [2.2.1b8]
+[2023-05-27 05:11:40] INFO root fetch - processPackages [odoo14-addon-ddmrp]: New version: [14.0.1.9.1.dev1] Old Version: [14.0.1.9.0]
+[2023-05-27 05:11:40] INFO root fetch - processPackages [odoo-addon-ddmrp]: New version: [15.0.1.8.0.2] Old Version: [15.0.1.8.0.1]
+[2023-05-27 05:11:40] INFO root fetch - processPackages [postnormalism]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 05:11:40] INFO root fetch - processPackages [phap]: executing diffoscope
+[2023-05-27 05:11:40] INFO root fetch - processPackages [phap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phap-2.2.1b8.tar.gz tmp/phap-2.2.1rc1.tar.gz --markdown 20230527/p/phap/2.2.1b8-2.2.1rc1/diff.md --exclude *.pyd
+[2023-05-27 05:11:40] INFO root fetch - processPackages [odoo-addon-ddmrp]: Downloading https://files.pythonhosted.org/packages/00/93/af117b950da87ba19fdd07ed5078d2c171bbca1ae75c3c2169d74aa338ce/odoo_addon_ddmrp-15.0.1.8.0.2-py3-none-any.whl
+[2023-05-27 05:11:40] INFO root fetch - processPackages [postnormalism]: Downloading https://files.pythonhosted.org/packages/9f/9b/73ae9cbb279189f1b47547b776fd7685f0a46baa6954d274e5602ac5be06/postnormalism-0.0.3.tar.gz
+[2023-05-27 05:11:40] INFO root fetch - processPackages [odoo14-addon-ddmrp]: executing diffoscope
+[2023-05-27 05:11:40] INFO root fetch - processPackages [odoo14-addon-ddmrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_ddmrp-14.0.1.9.0-py3-none-any.whl.zip tmp/odoo14_addon_ddmrp-14.0.1.9.1.dev1-py3-none-any.whl.zip --markdown 20230527/o/odoo14-addon-ddmrp/14.0.1.9.0-14.0.1.9.1.dev1/diff.md --exclude *.pyd
+[2023-05-27 05:11:40] INFO root fetch - processPackages [odoo-addon-ddmrp]: executing diffoscope
+[2023-05-27 05:11:40] INFO root fetch - processPackages [odoo-addon-ddmrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_ddmrp-15.0.1.8.0.1-py3-none-any.whl.zip tmp/odoo_addon_ddmrp-15.0.1.8.0.2-py3-none-any.whl.zip --markdown 20230527/o/odoo-addon-ddmrp/15.0.1.8.0.1-15.0.1.8.0.2/diff.md --exclude *.pyd
+[2023-05-27 05:11:40] INFO root fetch - processPackages [postnormalism]: executing diffoscope
+[2023-05-27 05:11:40] INFO root fetch - processPackages [postnormalism]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/postnormalism-0.0.2.tar.gz tmp/postnormalism-0.0.3.tar.gz --markdown 20230527/p/postnormalism/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 05:11:41] INFO root fetch - main [MainThread]: End processing [phap]: success
+[2023-05-27 05:11:41] INFO root fetch - main [MainThread]: End processing [postnormalism]: success
+[2023-05-27 05:11:42] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ddmrp]: success
+[2023-05-27 05:11:42] INFO root fetch - main [MainThread]: End processing [odoo-addon-ddmrp]: success
+[2023-05-27 05:11:42] INFO root fetch - main [MainThread]: Store serial: [18271979]
