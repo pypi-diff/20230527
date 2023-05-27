@@ -11842,3 +11842,29 @@
 [2023-05-27 21:43:48] INFO root fetch - main [MainThread]: End processing [x-transformers]: success
 [2023-05-27 21:43:53] INFO root fetch - main [MainThread]: End processing [so-pip]: success
 [2023-05-27 21:43:53] INFO root fetch - main [MainThread]: Store serial: [18276444]
+[2023-05-27 21:49:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276444]
+[2023-05-27 21:49:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 21:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyter-converter
+[2023-05-27 21:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: usellm
+[2023-05-27 21:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lnschema_bionty
+[2023-05-27 21:49:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alacorder
+[2023-05-27 21:49:14] INFO root fetch - processPackages [usellm]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 21:49:14] INFO root fetch - processPackages [jupyter-converter]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 21:49:14] INFO root fetch - processPackages [lnschema_bionty]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-27 21:49:14] INFO root fetch - processPackages [alacorder]: New version: [80.8.3] Old Version: [80.8.2]
+[2023-05-27 21:49:14] INFO root fetch - processPackages [jupyter-converter]: Downloading https://files.pythonhosted.org/packages/df/66/6f1b01f73695be62d66a0d8786eeb78b2a380871d9fbcb810a98ee313193/jupyter-converter-0.0.1.tar.gz
+[2023-05-27 21:49:14] INFO root fetch - processPackages [lnschema_bionty]: executing diffoscope
+[2023-05-27 21:49:14] INFO root fetch - processPackages [lnschema_bionty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_bionty-0.8.1.tar.gz tmp/lnschema_bionty-0.9.0.tar.gz --markdown 20230527/l/lnschema_bionty/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 21:49:14] INFO root fetch - processPackages [usellm]: Downloading https://files.pythonhosted.org/packages/53/e6/e1a1f5cf6a2d20f407dfe4678bbca16e1e369d632e3a0dff09a29be86f94/usellm-0.0.3.tar.gz
+[2023-05-27 21:49:14] INFO root fetch - processPackages [usellm]: executing diffoscope
+[2023-05-27 21:49:14] INFO root fetch - processPackages [usellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usellm-0.0.2.tar.gz tmp/usellm-0.0.3.tar.gz --markdown 20230527/u/usellm/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 21:49:15] INFO root fetch - processPackages [jupyter-converter]: Downloading https://files.pythonhosted.org/packages/da/0d/cc084b6a57beca604d1b4ab5199ecd02fd647af476f228ed7a2d4c19a754/jupyter-converter-0.0.2.tar.gz
+[2023-05-27 21:49:15] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-27 21:49:15] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.8.2.tar.gz tmp/alacorder-80.8.3.tar.gz --markdown 20230527/a/alacorder/80.8.2-80.8.3/diff.md --exclude *.pyd
+[2023-05-27 21:49:15] INFO root fetch - processPackages [jupyter-converter]: executing diffoscope
+[2023-05-27 21:49:15] INFO root fetch - processPackages [jupyter-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter-converter-0.0.1.tar.gz tmp/jupyter-converter-0.0.2.tar.gz --markdown 20230527/j/jupyter-converter/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 21:49:15] INFO root fetch - main [MainThread]: End processing [usellm]: success
+[2023-05-27 21:49:15] INFO root fetch - main [MainThread]: End processing [lnschema_bionty]: success
+[2023-05-27 21:49:16] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-27 21:50:04] INFO root fetch - main [MainThread]: End processing [jupyter-converter]: success
+[2023-05-27 21:50:04] INFO root fetch - main [MainThread]: Store serial: [18276456]
