@@ -990,3 +990,74 @@
 [2023-05-27 02:01:35] INFO root fetch - main [MainThread]: End processing [latch]: success
 [2023-05-27 02:01:36] INFO root fetch - main [MainThread]: End processing [conjuring]: success
 [2023-05-27 02:01:36] INFO root fetch - main [MainThread]: Store serial: [18269961]
+[2023-05-27 02:06:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269961]
+[2023-05-27 02:06:44] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-27 02:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zaber-motion-bindings-windows
+[2023-05-27 02:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zaber-motion-bindings-linux
+[2023-05-27 02:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zaber-motion-bindings-darwin
+[2023-05-27 02:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zaber-motion
+[2023-05-27 02:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchdatasets-nightly
+[2023-05-27 02:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mct-nightly
+[2023-05-27 02:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: d20-orm
+[2023-05-27 02:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rtb-toolbox
+[2023-05-27 02:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jaxkern-nightly
+[2023-05-27 02:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: d20-communications
+[2023-05-27 02:06:44] INFO root fetch - processPackages [zaber-motion-bindings-windows]: New version: [3.4.2] Old Version: [3.4.1]
+[2023-05-27 02:06:44] INFO root fetch - processPackages [zaber-motion-bindings-linux]: New version: [3.4.2] Old Version: [3.4.1]
+[2023-05-27 02:06:44] INFO root fetch - processPackages [d20-orm]: New version: [2.0.1a1] Old Version: [2.0.1]
+[2023-05-27 02:06:44] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-27 02:06:44] INFO root fetch - processPackages [d20-communications]: New version: [0.0.5a3] Old Version: [0.0.5a2]
+[2023-05-27 02:06:44] INFO root fetch - processPackages [zaber-motion]: New version: [3.4.2] Old Version: [3.4.1]
+[2023-05-27 02:06:44] INFO root fetch - processPackages [zaber-motion-bindings-darwin]: New version: [3.4.2] Old Version: [3.4.1]
+[2023-05-27 02:06:44] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1685059411] Old Version: [1684973014]
+[2023-05-27 02:06:44] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-05-27 02:06:44] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9052023.post348] Old Version: [1.8.0.9042023.post411]
+[2023-05-27 02:06:44] INFO root fetch - processPackages [d20-communications]: executing diffoscope
+[2023-05-27 02:06:44] INFO root fetch - processPackages [d20-communications]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-communications-0.0.5a2.tar.gz tmp/d20-communications-0.0.5a3.tar.gz --markdown 20230527/d/d20-communications/0.0.5a2-0.0.5a3/diff.md --exclude *.pyd
+[2023-05-27 02:06:44] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-05-27 02:06:44] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230527/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-05-27 02:06:44] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-05-27 02:06:44] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9042023.post411.tar.gz tmp/mct-nightly-1.8.0.9052023.post348.tar.gz --markdown 20230527/m/mct-nightly/1.8.0.9042023.post411-1.8.0.9052023.post348/diff.md --exclude *.pyd
+[2023-05-27 02:06:44] INFO root fetch - processPackages [zaber-motion-bindings-linux]: Downloading https://files.pythonhosted.org/packages/a1/11/2f59e4d15ffd519aca21bb526e05a448c42ad20895998db56fd2f5d7eeda/zaber_motion_bindings_linux-3.4.1.tar.gz
+[2023-05-27 02:06:44] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/10/6f/88633df783d46c7b73ecca44065c5f845887961252d0c862ebaf50898b1e/rtb_toolbox-0.1.2.tar.gz
+[2023-05-27 02:06:44] WARNING root fetch - processPackages [zaber-motion-bindings-linux]: Skipping package: exceeds size limit 37017213>=10485760
+[2023-05-27 02:06:44] INFO root fetch - processPackages [zaber-motion-bindings-linux]: Start processing: rtb-toolbox
+[2023-05-27 02:06:44] INFO root fetch - main [MainThread]: End processing [zaber-motion-bindings-linux] error
+[2023-05-27 02:06:44] INFO root fetch - processPackages [zaber-motion-bindings-windows]: Downloading https://files.pythonhosted.org/packages/1d/d0/e9cb0785d24292729a7c49589c13e7f4b72af955d73bf1c5af1f52bfcf53/zaber_motion_bindings_windows-3.4.1.tar.gz
+[2023-05-27 02:06:44] INFO root fetch - processPackages [d20-orm]: Downloading https://files.pythonhosted.org/packages/99/15/33075bfbc49d0f0d5aa39094a096c5877d4109b46fb0a5cfff3699b1911f/d20-orm-2.0.1a1.tar.gz
+[2023-05-27 02:06:44] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.31] Old Version: [0.1.3]
+[2023-05-27 02:06:44] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/2a/0a/d39a1d50349c3de7c9e29aca2d712f3cb316cc973f83c3624d76000db821/torchdatasets-nightly-1685059411.tar.gz
+[2023-05-27 02:06:44] INFO root fetch - processPackages [zaber-motion-bindings-darwin]: Downloading https://files.pythonhosted.org/packages/fe/d4/d4a1c72ca7343bc0a688b8c94b2daef5696222becb3eea7a290db69d4ebd/zaber_motion_bindings_darwin-3.4.1.tar.gz
+[2023-05-27 02:06:44] WARNING root fetch - processPackages [zaber-motion-bindings-darwin]: Skipping package: exceeds size limit 20867942>=10485760
+[2023-05-27 02:06:44] INFO root fetch - processPackages [zaber-motion-bindings-darwin]: Start processing: jaxutils-nightly
+[2023-05-27 02:06:44] INFO root fetch - main [MainThread]: End processing [zaber-motion-bindings-darwin] error
+[2023-05-27 02:06:44] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230526] Old Version: [0.0.8.dev20230525]
+[2023-05-27 02:06:44] WARNING root fetch - processPackages [zaber-motion-bindings-windows]: Skipping package: exceeds size limit 18753014>=10485760
+[2023-05-27 02:06:44] INFO root fetch - main [MainThread]: End processing [zaber-motion-bindings-windows] error
+[2023-05-27 02:06:44] INFO root fetch - processPackages [d20-orm]: executing diffoscope
+[2023-05-27 02:06:44] INFO root fetch - processPackages [d20-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-orm-2.0.1.tar.gz tmp/d20-orm-2.0.1a1.tar.gz --markdown 20230527/d/d20-orm/2.0.1-2.0.1a1/diff.md --exclude *.pyd
+[2023-05-27 02:06:44] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-05-27 02:06:44] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1684973014.tar.gz tmp/torchdatasets-nightly-1685059411.tar.gz --markdown 20230527/t/torchdatasets-nightly/1684973014-1685059411/diff.md --exclude *.pyd
+[2023-05-27 02:06:44] INFO root fetch - processPackages [zaber-motion]: Downloading https://files.pythonhosted.org/packages/09/e9/af826c30e9f0b47c23685434b3c8b66a462a427dd2c672d7a5a2dca0f133/zaber_motion-3.4.2.tar.gz
+[2023-05-27 02:06:44] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/ac/e1/d83ba9496927ec689275a9b2dd5a5ac9f3b0d9c1114f4b55e05f1a05ff84/rtb_toolbox-0.1.3.tar.gz
+[2023-05-27 02:06:44] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/ac/e1/d83ba9496927ec689275a9b2dd5a5ac9f3b0d9c1114f4b55e05f1a05ff84/rtb_toolbox-0.1.3.tar.gz
+[2023-05-27 02:06:44] INFO root fetch - processPackages [zaber-motion]: executing diffoscope
+[2023-05-27 02:06:44] INFO root fetch - processPackages [zaber-motion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zaber_motion-3.4.1.tar.gz tmp/zaber_motion-3.4.2.tar.gz --markdown 20230527/z/zaber-motion/3.4.1-3.4.2/diff.md --exclude *.pyd
+[2023-05-27 02:06:44] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-27 02:06:44] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.2.tar.gz tmp/rtb_toolbox-0.1.3.tar.gz --markdown 20230527/r/rtb-toolbox/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-27 02:06:44] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/a7/9c/c37e706298e09bf5eb435098827258d04aa4cf85b312345d106ef6575dc8/jaxutils-nightly-0.0.8.dev20230526.tar.gz
+[2023-05-27 02:06:45] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/d3/c5/a3ff688dcb569f2d4e058aa26425481e93cdd7ac8e77569499d57f67f5f3/rtb_toolbox-0.1.31.tar.gz
+[2023-05-27 02:06:45] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-05-27 02:06:45] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230525.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230526.tar.gz --markdown 20230527/j/jaxutils-nightly/0.0.8.dev20230525-0.0.8.dev20230526/diff.md --exclude *.pyd
+[2023-05-27 02:06:45] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-27 02:06:45] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.3.tar.gz tmp/rtb_toolbox-0.1.31.tar.gz --markdown 20230527/r/rtb-toolbox/0.1.3-0.1.31/diff.md --exclude *.pyd
+[2023-05-27 02:06:45] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-05-27 02:06:45] INFO root fetch - main [MainThread]: End processing [d20-orm]: success
+[2023-05-27 02:06:46] INFO root fetch - main [MainThread]: End processing [d20-communications]: success
+[2023-05-27 02:06:46] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-05-27 02:06:46] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-27 02:06:46] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-05-27 02:06:46] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-27 02:06:48] INFO root fetch - main [MainThread]: End processing [zaber-motion]: success
+[2023-05-27 02:06:56] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-05-27 02:06:56] INFO root fetch - main [MainThread]: Store serial: [18269997]
