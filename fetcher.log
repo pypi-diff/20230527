@@ -6788,3 +6788,79 @@
 [2023-05-27 11:16:57] INFO root fetch - processPackages [troubleshooter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/troubleshooter-1.0.8.tar.gz tmp/troubleshooter-1.0.9.tar.gz --markdown 20230527/t/troubleshooter/1.0.8-1.0.9/diff.md --exclude *.pyd
 [2023-05-27 11:16:58] INFO root fetch - main [MainThread]: End processing [troubleshooter]: success
 [2023-05-27 11:16:58] INFO root fetch - main [MainThread]: Store serial: [18273386]
+[2023-05-27 11:22:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273386]
+[2023-05-27 11:22:07] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-27 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yao
+[2023-05-27 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flowchain
+[2023-05-27 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-05-27 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2023-05-27 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pantsbuild.pants
+[2023-05-27 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pantsbuild.pants.testutil
+[2023-05-27 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tbp-nightly
+[2023-05-27 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: madtypes
+[2023-05-27 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fhempy
+[2023-05-27 11:22:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: RcToolBox
+[2023-05-27 11:22:07] INFO root fetch - processPackages [yao]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 11:22:07] INFO root fetch - processPackages [flowchain]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 11:22:07] INFO root fetch - processPackages [madtypes]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 11:22:07] INFO root fetch - processPackages [pantsbuild.pants.testutil]: New version: [2.9.2rc0] Old Version: [2.9.2]
+[2023-05-27 11:22:07] INFO root fetch - processPackages [RcToolBox]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-27 11:22:07] INFO root fetch - processPackages [pantsbuild.pants]: New version: [2.9.2rc0] Old Version: [2.9.2]
+[2023-05-27 11:22:07] INFO root fetch - processPackages [fhempy]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-27 11:22:07] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-05-27 11:22:07] INFO root fetch - processPackages [yao]: Downloading https://files.pythonhosted.org/packages/60/74/2515b1fda1e72d75fe602e0e790c8fc5932623e38735052f09506066c1ca/yao-0.0.4.tar.gz
+[2023-05-27 11:22:07] INFO root fetch - processPackages [flowchain]: Downloading https://files.pythonhosted.org/packages/3a/19/b3c7eb07ab78816a1af3d5e133557ebf57ebf2ab6d2cb0fa1dbde0cc3278/flowchain-0.0.4.tar.gz
+[2023-05-27 11:22:07] INFO root fetch - processPackages [madtypes]: Downloading https://files.pythonhosted.org/packages/38/4e/b8b9d49e430488d1a91fa7dd344c53420673d94c169b0d10dd7d7d2e6d5d/madtypes-0.0.1.tar.gz
+[2023-05-27 11:22:08] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-05-27 11:22:08] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-27 11:22:08] INFO root fetch - processPackages [RcToolBox]: Downloading https://files.pythonhosted.org/packages/a7/0f/0328e7ef2182a9e1ae50e7afd10499c369a4d1939b47a8cea1003a40ceae/RcToolBox-0.0.3.tar.gz
+[2023-05-27 11:22:08] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230527/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-05-27 11:22:08] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-27 11:22:08] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/d2/9f/6c8a1b574ab9ebcb16717b47728d87e796444aafde42304c0ca6f1aa435c/fhempy-0.1.98.tar.gz
+[2023-05-27 11:22:08] INFO root fetch - processPackages [pantsbuild.pants]: Downloading https://files.pythonhosted.org/packages/9d/fb/48c0150109e3f3706e9104d71fa88777a017fbbdb74c6e6fe4890559df4a/pantsbuild.pants-2.9.2-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-27 11:22:08] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-27 11:22:08] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230527/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-27 11:22:08] WARNING root fetch - processPackages [pantsbuild.pants]: Skipping package: exceeds size limit 43333544>=10485760
+[2023-05-27 11:22:08] INFO root fetch - processPackages [pantsbuild.pants]: Start processing: dare-datasets
+[2023-05-27 11:22:08] INFO root fetch - main [MainThread]: End processing [pantsbuild.pants] error
+[2023-05-27 11:22:08] INFO root fetch - processPackages [madtypes]: Downloading https://files.pythonhosted.org/packages/fd/98/7486de076cb777a22849e0bd463ffa7c17ebb4636c0c302b5e451c366582/madtypes-0.0.2.tar.gz
+[2023-05-27 11:22:08] INFO root fetch - processPackages [yao]: Downloading https://files.pythonhosted.org/packages/0f/a1/3fb34022830c0db0698afc33c24d111d03e68fdc6c2e62f0cccb47f65f8f/yao-0.0.5.tar.gz
+[2023-05-27 11:22:08] INFO root fetch - processPackages [dare-datasets]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-27 11:22:08] INFO root fetch - processPackages [flowchain]: Downloading https://files.pythonhosted.org/packages/3c/69/3af50f22942123a6edc2e694c89e85819aea61f6125c66e2f4a2b55e123e/flowchain-0.0.5.tar.gz
+[2023-05-27 11:22:08] INFO root fetch - processPackages [pantsbuild.pants.testutil]: executing diffoscope
+[2023-05-27 11:22:08] INFO root fetch - processPackages [pantsbuild.pants.testutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pantsbuild.pants.testutil-2.9.2-py37.py38.py39-none-any.whl.zip tmp/pantsbuild.pants.testutil-2.9.2rc0-py37.py38.py39-none-any.whl.zip --markdown 20230527/p/pantsbuild.pants.testutil/2.9.2-2.9.2rc0/diff.md --exclude *.pyd
+[2023-05-27 11:22:08] INFO root fetch - processPackages [yao]: executing diffoscope
+[2023-05-27 11:22:08] INFO root fetch - processPackages [yao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yao-0.0.4.tar.gz tmp/yao-0.0.5.tar.gz --markdown 20230527/y/yao/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-27 11:22:08] INFO root fetch - processPackages [flowchain]: executing diffoscope
+[2023-05-27 11:22:08] INFO root fetch - processPackages [flowchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowchain-0.0.4.tar.gz tmp/flowchain-0.0.5.tar.gz --markdown 20230527/f/flowchain/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-27 11:22:08] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-27 11:22:08] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230527/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-27 11:22:08] INFO root fetch - processPackages [RcToolBox]: Downloading https://files.pythonhosted.org/packages/ba/85/f541b35c497b49944c7187c7e9f1f3041be0e317e867fa9cd1efc954a4fe/RcToolBox-0.0.4.tar.gz
+[2023-05-27 11:22:08] INFO root fetch - processPackages [madtypes]: executing diffoscope
+[2023-05-27 11:22:08] INFO root fetch - processPackages [madtypes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/madtypes-0.0.1.tar.gz tmp/madtypes-0.0.2.tar.gz --markdown 20230527/m/madtypes/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 11:22:08] INFO root fetch - processPackages [RcToolBox]: executing diffoscope
+[2023-05-27 11:22:08] INFO root fetch - processPackages [RcToolBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RcToolBox-0.0.3.tar.gz tmp/RcToolBox-0.0.4.tar.gz --markdown 20230527/R/RcToolBox/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-27 11:22:08] INFO root fetch - processPackages [dare-datasets]: Downloading https://files.pythonhosted.org/packages/80/18/1a322230cbc6c5fd1eb264adb71dc0489d940097e4abf89af99320c6aace/dare_datasets-0.1.4.tar.gz
+[2023-05-27 11:22:08] INFO root fetch - processPackages [dare-datasets]: executing diffoscope
+[2023-05-27 11:22:08] INFO root fetch - processPackages [dare-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dare_datasets-0.1.3.tar.gz tmp/dare_datasets-0.1.4.tar.gz --markdown 20230527/d/dare-datasets/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-27 11:22:09] INFO root fetch - processPackages [spanishconjugator]: Start processing: torchml
+[2023-05-27 11:22:09] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-27 11:22:09] INFO root fetch - processPackages [torchml]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-05-27 11:22:09] INFO root fetch - main [MainThread]: End processing [pantsbuild.pants.testutil]: success
+[2023-05-27 11:22:10] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-27 11:22:10] INFO root fetch - main [MainThread]: End processing [flowchain]: success
+[2023-05-27 11:22:10] INFO root fetch - main [MainThread]: End processing [RcToolBox]: success
+[2023-05-27 11:22:10] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/10/f0/a98a9f9c84c66f700cf969aeda5c6d9fa1047cde3a99fc922c76be9e951e/fhempy-0.1.99.tar.gz
+[2023-05-27 11:22:10] INFO root fetch - main [MainThread]: End processing [madtypes]: success
+[2023-05-27 11:22:10] INFO root fetch - main [MainThread]: End processing [dare-datasets]: success
+[2023-05-27 11:22:10] INFO root fetch - processPackages [torchml]: Downloading https://files.pythonhosted.org/packages/cf/0f/48e89b005427c36c2907247b7a33b13d8c6d33b9ec58655e8265eed154c4/torchml-0.0.1.tar.gz
+[2023-05-27 11:22:10] INFO root fetch - processPackages [torchml]: Downloading https://files.pythonhosted.org/packages/0f/29/1c9858d16cfad1a6ad719e8748ec03f1bcd42bb52d535f26cb5c5b5b66eb/torchml-0.1.0.tar.gz
+[2023-05-27 11:22:10] INFO root fetch - processPackages [torchml]: executing diffoscope
+[2023-05-27 11:22:10] INFO root fetch - processPackages [torchml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchml-0.0.1.tar.gz tmp/torchml-0.1.0.tar.gz --markdown 20230527/t/torchml/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-05-27 11:22:10] INFO root fetch - main [MainThread]: End processing [yao]: success
+[2023-05-27 11:22:11] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-05-27 11:22:11] INFO root fetch - processPackages [fhempy]: executing diffoscope
+[2023-05-27 11:22:11] INFO root fetch - processPackages [fhempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhempy-0.1.98.tar.gz tmp/fhempy-0.1.99.tar.gz --markdown 20230527/f/fhempy/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-27 11:22:11] INFO root fetch - main [MainThread]: End processing [torchml]: success
+[2023-05-27 11:22:13] INFO root fetch - main [MainThread]: End processing [fhempy]: success
+[2023-05-27 11:22:13] INFO root fetch - main [MainThread]: Store serial: [18273422]
