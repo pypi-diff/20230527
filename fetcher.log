@@ -7096,3 +7096,47 @@
 [2023-05-27 12:01:20] INFO root fetch - main [MainThread]: End processing [taskiq]: success
 [2023-05-27 12:01:21] INFO root fetch - main [MainThread]: End processing [fhempy]: success
 [2023-05-27 12:01:21] INFO root fetch - main [MainThread]: Store serial: [18273561]
+[2023-05-27 12:06:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273561]
+[2023-05-27 12:06:31] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 12:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: n0struct
+[2023-05-27 12:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Bigsansar
+[2023-05-27 12:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SunNeurons
+[2023-05-27 12:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plum-dispatch
+[2023-05-27 12:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cargo-zigbuild
+[2023-05-27 12:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: logidrivepy
+[2023-05-27 12:06:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vtrans
+[2023-05-27 12:06:31] WARNING root fetch - processPackages [vtrans]: Skipping, unable to determine old version
+[2023-05-27 12:06:31] INFO root fetch - main [MainThread]: End processing [vtrans] error
+[2023-05-27 12:06:31] INFO root fetch - processPackages [SunNeurons]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 12:06:31] INFO root fetch - processPackages [logidrivepy]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 12:06:31] INFO root fetch - processPackages [Bigsansar]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-05-27 12:06:31] INFO root fetch - processPackages [n0struct]: New version: [0.2.98] Old Version: [0.2.97]
+[2023-05-27 12:06:31] INFO root fetch - processPackages [cargo-zigbuild]: New version: [0.9.0] Old Version: [0.8.8]
+[2023-05-27 12:06:31] INFO root fetch - processPackages [plum-dispatch]: New version: [2.1.0] Old Version: [2.0.1]
+[2023-05-27 12:06:31] INFO root fetch - processPackages [SunNeurons]: Downloading https://files.pythonhosted.org/packages/05/4a/1adeefda46bd1ed19391031877ad4644c5c8a46863f8c362a0e431c45384/SunNeurons-0.0.1.tar.gz
+[2023-05-27 12:06:31] INFO root fetch - processPackages [n0struct]: Downloading https://files.pythonhosted.org/packages/7b/b0/fe255c971034ac8b120a70ec288904f63b441c1661e4d018a75025b74d5c/n0struct-0.2.97.tar.gz
+[2023-05-27 12:06:31] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/71/94/b9f2b39a0ae1f7eaf1ad14fe76985577507cbdbf1f4731c6f17ad927392b/Bigsansar-1.5.3.tar.gz
+[2023-05-27 12:06:31] INFO root fetch - processPackages [plum-dispatch]: Downloading https://files.pythonhosted.org/packages/48/5f/b27757c2cb7fd0cffdac34f0b9316b4469db1d5d4875afdfab1f967417ab/plum_dispatch-2.0.1.tar.gz
+[2023-05-27 12:06:31] INFO root fetch - processPackages [logidrivepy]: Downloading https://files.pythonhosted.org/packages/5d/4b/8b07ae4f274ad273158d249a2324ede8a64c03e55821daae5129dbfa4768/logidrivepy-0.1.2.tar.gz
+[2023-05-27 12:06:31] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-05-27 12:06:31] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.5.2.tar.gz tmp/Bigsansar-1.5.3.tar.gz --markdown 20230527/B/Bigsansar/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-05-27 12:06:31] INFO root fetch - processPackages [logidrivepy]: executing diffoscope
+[2023-05-27 12:06:31] INFO root fetch - processPackages [logidrivepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logidrivepy-0.1.1.tar.gz tmp/logidrivepy-0.1.2.tar.gz --markdown 20230527/l/logidrivepy/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 12:06:31] INFO root fetch - processPackages [cargo-zigbuild]: executing diffoscope
+[2023-05-27 12:06:31] INFO root fetch - processPackages [cargo-zigbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cargo_zigbuild-0.8.8-py3-none-win_arm64.whl.zip tmp/cargo_zigbuild-0.9.0-py3-none-win_arm64.whl.zip --markdown 20230527/c/cargo-zigbuild/0.8.8-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 12:06:31] INFO root fetch - processPackages [SunNeurons]: Downloading https://files.pythonhosted.org/packages/c7/14/5ab1a207e69918fb459cb84eee1d2ef4a7ac5686bf2a8ace48c365e2802b/SunNeurons-0.0.2.tar.gz
+[2023-05-27 12:06:31] INFO root fetch - processPackages [plum-dispatch]: Downloading https://files.pythonhosted.org/packages/33/2b/b1da979c1f126cab49b3c59768fd803e3430138b22c8e7d61c42819db9bb/plum_dispatch-2.1.0.tar.gz
+[2023-05-27 12:06:31] INFO root fetch - processPackages [n0struct]: Downloading https://files.pythonhosted.org/packages/3a/1d/81eb18aeb0c82af0370b69b157b03aba0efdeefebf6715db99ff775641db/n0struct-0.2.98.tar.gz
+[2023-05-27 12:06:31] INFO root fetch - processPackages [SunNeurons]: executing diffoscope
+[2023-05-27 12:06:31] INFO root fetch - processPackages [SunNeurons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SunNeurons-0.0.1.tar.gz tmp/SunNeurons-0.0.2.tar.gz --markdown 20230527/S/SunNeurons/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 12:06:31] INFO root fetch - processPackages [plum-dispatch]: executing diffoscope
+[2023-05-27 12:06:31] INFO root fetch - processPackages [plum-dispatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plum_dispatch-2.0.1.tar.gz tmp/plum_dispatch-2.1.0.tar.gz --markdown 20230527/p/plum-dispatch/2.0.1-2.1.0/diff.md --exclude *.pyd
+[2023-05-27 12:06:31] INFO root fetch - processPackages [n0struct]: executing diffoscope
+[2023-05-27 12:06:31] INFO root fetch - processPackages [n0struct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/n0struct-0.2.97.tar.gz tmp/n0struct-0.2.98.tar.gz --markdown 20230527/n/n0struct/0.2.97-0.2.98/diff.md --exclude *.pyd
+[2023-05-27 12:06:32] INFO root fetch - main [MainThread]: End processing [logidrivepy]: success
+[2023-05-27 12:06:32] INFO root fetch - main [MainThread]: End processing [SunNeurons]: success
+[2023-05-27 12:06:32] INFO root fetch - main [MainThread]: End processing [plum-dispatch]: success
+[2023-05-27 12:06:33] INFO root fetch - main [MainThread]: End processing [n0struct]: success
+[2023-05-27 12:06:33] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-05-27 12:06:36] INFO root fetch - main [MainThread]: End processing [cargo-zigbuild]: success
+[2023-05-27 12:06:36] INFO root fetch - main [MainThread]: Store serial: [18273593]
