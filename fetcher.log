@@ -4618,3 +4618,34 @@
 [2023-05-27 06:09:37] INFO root fetch - main [MainThread]: End processing [binsync]: success
 [2023-05-27 06:09:38] INFO root fetch - main [MainThread]: End processing [odoo-addon-mis-builder-budget]: success
 [2023-05-27 06:09:38] INFO root fetch - main [MainThread]: Store serial: [18272199]
+[2023-05-27 06:14:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272199]
+[2023-05-27 06:14:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 06:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pogt
+[2023-05-27 06:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: urlsafe-base64-py
+[2023-05-27 06:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdktf-cdktf-provider-azurerm
+[2023-05-27 06:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: athletes-unlimited-py
+[2023-05-27 06:14:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jsbgym
+[2023-05-27 06:14:46] WARNING root fetch - processPackages [urlsafe-base64-py]: Skipping, unable to determine old version
+[2023-05-27 06:14:46] INFO root fetch - main [MainThread]: End processing [urlsafe-base64-py] error
+[2023-05-27 06:14:46] INFO root fetch - processPackages [pogt]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-27 06:14:46] INFO root fetch - processPackages [athletes-unlimited-py]: New version: [0.0.6a1] Old Version: [0.0.6]
+[2023-05-27 06:14:46] INFO root fetch - processPackages [jsbgym]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 06:14:46] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: New version: [7.0.6] Old Version: [7.0.5]
+[2023-05-27 06:14:46] INFO root fetch - processPackages [pogt]: Downloading https://files.pythonhosted.org/packages/97/9f/b4072de0a9d4e5f4da27dc5ecb7e0e9e979ef83f1ea125b2ca596c43a09b/pogt-1.0.0.tar.gz
+[2023-05-27 06:14:47] INFO root fetch - processPackages [athletes-unlimited-py]: Downloading https://files.pythonhosted.org/packages/f6/8c/821c94913da761501a5b36c0489e726f9f5bb788ad70c7a34e5ce9c91376/athletes_unlimited_py-0.0.6a1.tar.gz
+[2023-05-27 06:14:47] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Downloading https://files.pythonhosted.org/packages/1c/a0/94dae3e958cd1039d7e8180cf0c9c5081cb62dad1fa738dec139d5203e29/cdktf-cdktf-provider-azurerm-7.0.5.tar.gz
+[2023-05-27 06:14:47] INFO root fetch - processPackages [jsbgym]: Downloading https://files.pythonhosted.org/packages/ac/80/b066bb5aa7e0950813c629d3aac680d6702270b14212f8c86c277ae339e8/jsbgym-0.1.8.tar.gz
+[2023-05-27 06:14:47] WARNING root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Skipping package: exceeds size limit 30201014>=10485760
+[2023-05-27 06:14:47] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-azurerm] error
+[2023-05-27 06:14:47] INFO root fetch - processPackages [pogt]: Downloading https://files.pythonhosted.org/packages/04/bc/22ed96cec5e83fbd59e676624ddc2740cf12dac12c74f8d973a653d1277e/pogt-1.0.1.tar.gz
+[2023-05-27 06:14:47] INFO root fetch - processPackages [athletes-unlimited-py]: executing diffoscope
+[2023-05-27 06:14:47] INFO root fetch - processPackages [athletes-unlimited-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athletes_unlimited_py-0.0.6.tar.gz tmp/athletes_unlimited_py-0.0.6a1.tar.gz --markdown 20230527/a/athletes-unlimited-py/0.0.6-0.0.6a1/diff.md --exclude *.pyd
+[2023-05-27 06:14:47] INFO root fetch - processPackages [pogt]: executing diffoscope
+[2023-05-27 06:14:47] INFO root fetch - processPackages [pogt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pogt-1.0.0.tar.gz tmp/pogt-1.0.1.tar.gz --markdown 20230527/p/pogt/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 06:14:47] INFO root fetch - processPackages [jsbgym]: Downloading https://files.pythonhosted.org/packages/e8/5b/5b0f8520821666a63adf03ecc7287397d6d26af657d19a233f07b5f42722/jsbgym-0.1.9.tar.gz
+[2023-05-27 06:14:47] INFO root fetch - processPackages [jsbgym]: executing diffoscope
+[2023-05-27 06:14:47] INFO root fetch - processPackages [jsbgym]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsbgym-0.1.8.tar.gz tmp/jsbgym-0.1.9.tar.gz --markdown 20230527/j/jsbgym/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 06:14:48] INFO root fetch - main [MainThread]: End processing [pogt]: success
+[2023-05-27 06:14:48] INFO root fetch - main [MainThread]: End processing [athletes-unlimited-py]: success
+[2023-05-27 06:14:48] INFO root fetch - main [MainThread]: End processing [jsbgym]: success
+[2023-05-27 06:14:48] INFO root fetch - main [MainThread]: Store serial: [18272215]
