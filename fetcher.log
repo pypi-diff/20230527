@@ -7488,3 +7488,53 @@
 [2023-05-27 12:39:27] INFO root fetch - main [MainThread]: End processing [lamineml]: success
 [2023-05-27 12:39:27] INFO root fetch - main [MainThread]: End processing [newsapi-python-client]: success
 [2023-05-27 12:39:27] INFO root fetch - main [MainThread]: Store serial: [18273844]
+[2023-05-27 12:44:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273844]
+[2023-05-27 12:44:36] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-27 12:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: replicator-cli
+[2023-05-27 12:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bilix
+[2023-05-27 12:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: esentity
+[2023-05-27 12:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dokuwikidumper
+[2023-05-27 12:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dxsp
+[2023-05-27 12:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: metabypass
+[2023-05-27 12:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: UnlimitedGPT
+[2023-05-27 12:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gqt
+[2023-05-27 12:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: betterdataclass
+[2023-05-27 12:44:36] INFO root fetch - processPackages [bilix]: New version: [1.0a0] Old Version: [0.9.4]
+[2023-05-27 12:44:36] INFO root fetch - processPackages [betterdataclass]: New version: [3.1] Old Version: [3.0]
+[2023-05-27 12:44:36] WARNING root fetch - processPackages [metabypass]: Skipping, unable to determine old version
+[2023-05-27 12:44:36] INFO root fetch - processPackages [esentity]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-05-27 12:44:36] INFO root fetch - main [MainThread]: End processing [metabypass] error
+[2023-05-27 12:44:36] INFO root fetch - processPackages [replicator-cli]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 12:44:36] WARNING root fetch - processPackages [UnlimitedGPT]: Skipping, unable to determine old version
+[2023-05-27 12:44:36] INFO root fetch - main [MainThread]: End processing [UnlimitedGPT] error
+[2023-05-27 12:44:36] INFO root fetch - processPackages [dokuwikidumper]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 12:44:36] INFO root fetch - processPackages [dxsp]: New version: [2.5.2] Old Version: [2.5.1]
+[2023-05-27 12:44:36] INFO root fetch - processPackages [gqt]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-05-27 12:44:36] INFO root fetch - processPackages [dokuwikidumper]: executing diffoscope
+[2023-05-27 12:44:36] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.8.tar.gz tmp/dokuwikidumper-0.1.9.tar.gz --markdown 20230527/d/dokuwikidumper/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 12:44:36] INFO root fetch - processPackages [betterdataclass]: executing diffoscope
+[2023-05-27 12:44:36] INFO root fetch - processPackages [betterdataclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betterdataclass-3.0.tar.gz tmp/betterdataclass-3.1.tar.gz --markdown 20230527/b/betterdataclass/3.0-3.1/diff.md --exclude *.pyd
+[2023-05-27 12:44:36] INFO root fetch - processPackages [replicator-cli]: Downloading https://files.pythonhosted.org/packages/1f/97/92b336009f9db8812ccd9226dddeef7f769a445a220ea9c5be078b32ea0c/replicator-cli-0.0.1.tar.gz
+[2023-05-27 12:44:36] INFO root fetch - processPackages [esentity]: Downloading https://files.pythonhosted.org/packages/1e/9f/e0a6280d40e9cb6e3dfaa2e923b81a0d650931aa948d73ca9a8a3fbf219d/esentity-0.2.98.tar.gz
+[2023-05-27 12:44:36] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/b0/bc/11f15ad27ba036e195dee4b69698327bebabb497e3000d04fc92040dda74/dxsp-2.5.2.tar.gz
+[2023-05-27 12:44:36] INFO root fetch - processPackages [bilix]: Downloading https://files.pythonhosted.org/packages/ac/96/5af3a7ea653a3ecb60cec24c3aeb6424460322ad307a985594af2df5adf2/bilix-1.0a0.tar.gz
+[2023-05-27 12:44:36] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-27 12:44:36] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.5.1.tar.gz tmp/dxsp-2.5.2.tar.gz --markdown 20230527/d/dxsp/2.5.1-2.5.2/diff.md --exclude *.pyd
+[2023-05-27 12:44:37] INFO root fetch - processPackages [gqt]: executing diffoscope
+[2023-05-27 12:44:37] INFO root fetch - processPackages [gqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqt-0.98.0.tar.gz tmp/gqt-0.99.0.tar.gz --markdown 20230527/g/gqt/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-05-27 12:44:37] INFO root fetch - processPackages [replicator-cli]: Downloading https://files.pythonhosted.org/packages/51/92/4d621649240d0d6dd4e951f64c737a7300eabcdf9096022a79cfbab4ce7b/replicator-cli-0.0.2.tar.gz
+[2023-05-27 12:44:37] INFO root fetch - processPackages [bilix]: executing diffoscope
+[2023-05-27 12:44:37] INFO root fetch - processPackages [bilix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bilix-0.9.4.tar.gz tmp/bilix-1.0a0.tar.gz --markdown 20230527/b/bilix/0.9.4-1.0a0/diff.md --exclude *.pyd
+[2023-05-27 12:44:37] INFO root fetch - processPackages [replicator-cli]: executing diffoscope
+[2023-05-27 12:44:37] INFO root fetch - processPackages [replicator-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replicator-cli-0.0.1.tar.gz tmp/replicator-cli-0.0.2.tar.gz --markdown 20230527/r/replicator-cli/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 12:44:37] INFO root fetch - processPackages [esentity]: Downloading https://files.pythonhosted.org/packages/c8/5b/c12322aa6c71e3e0da12b137cf7fef6f67acbd686b0adeaffba5426fd63b/esentity-0.2.99.tar.gz
+[2023-05-27 12:44:37] INFO root fetch - processPackages [esentity]: executing diffoscope
+[2023-05-27 12:44:37] INFO root fetch - processPackages [esentity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esentity-0.2.98.tar.gz tmp/esentity-0.2.99.tar.gz --markdown 20230527/e/esentity/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-05-27 12:44:37] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
+[2023-05-27 12:44:38] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-27 12:44:38] INFO root fetch - main [MainThread]: End processing [gqt]: success
+[2023-05-27 12:44:38] INFO root fetch - main [MainThread]: End processing [betterdataclass]: success
+[2023-05-27 12:44:38] INFO root fetch - main [MainThread]: End processing [bilix]: success
+[2023-05-27 12:44:39] INFO root fetch - main [MainThread]: End processing [esentity]: success
+[2023-05-27 12:45:26] INFO root fetch - main [MainThread]: End processing [replicator-cli]: success
+[2023-05-27 12:45:26] INFO root fetch - main [MainThread]: Store serial: [18273880]
