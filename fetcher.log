@@ -3728,3 +3728,41 @@
 [2023-05-27 03:37:07] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
 [2023-05-27 03:37:08] INFO root fetch - main [MainThread]: End processing [not1mm]: success
 [2023-05-27 03:37:08] INFO root fetch - main [MainThread]: Store serial: [18271677]
+[2023-05-27 03:42:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271677]
+[2023-05-27 03:42:17] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 03:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-pytorch
+[2023-05-27 03:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-scipy
+[2023-05-27 03:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-sphinx
+[2023-05-27 03:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-lambda-layer-wget
+[2023-05-27 03:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: macrometa-source-snowflake
+[2023-05-27 03:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-django
+[2023-05-27 03:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ShellUtilities
+[2023-05-27 03:42:17] INFO root fetch - processPackages [ShellUtilities]: New version: [2.1.1] Old Version: [2.0.0]
+[2023-05-27 03:42:17] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 03:42:17] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-27 03:42:17] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 03:42:17] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 03:42:17] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 03:42:17] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 03:42:17] INFO root fetch - processPackages [ShellUtilities]: executing diffoscope
+[2023-05-27 03:42:17] INFO root fetch - processPackages [ShellUtilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ShellUtilities-2.0.0.tar.gz tmp/ShellUtilities-2.1.1.tar.gz --markdown 20230527/S/ShellUtilities/2.0.0-2.1.1/diff.md --exclude *.pyd
+[2023-05-27 03:42:17] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-27 03:42:17] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230527/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 03:42:17] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-05-27 03:42:17] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230527/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-27 03:42:17] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-05-27 03:42:17] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230527/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 03:42:17] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-05-27 03:42:17] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230527/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 03:42:17] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-05-27 03:42:17] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230527/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 03:42:18] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-05-27 03:42:18] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230527/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 03:42:19] INFO root fetch - main [MainThread]: End processing [ShellUtilities]: success
+[2023-05-27 03:42:19] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-27 03:42:19] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-05-27 03:42:19] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-05-27 03:42:19] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-05-27 03:42:19] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-05-27 03:42:19] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-05-27 03:42:19] INFO root fetch - main [MainThread]: Store serial: [18271700]
