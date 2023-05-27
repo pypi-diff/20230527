@@ -8259,3 +8259,35 @@
 [2023-05-27 14:20:02] INFO root fetch - main [MainThread]: End processing [flowchain]: success
 [2023-05-27 14:20:02] INFO root fetch - main [MainThread]: End processing [ddadevops]: success
 [2023-05-27 14:20:02] INFO root fetch - main [MainThread]: Store serial: [18274211]
+[2023-05-27 14:25:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274211]
+[2023-05-27 14:25:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 14:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sktime
+[2023-05-27 14:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openllm
+[2023-05-27 14:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: seaplayer
+[2023-05-27 14:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: IntuneCD
+[2023-05-27 14:25:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mujoco-dev
+[2023-05-27 14:25:11] INFO root fetch - processPackages [openllm]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-27 14:25:11] INFO root fetch - processPackages [seaplayer]: New version: [0.5.4.dev2] Old Version: [0.5.4.dev1]
+[2023-05-27 14:25:11] INFO root fetch - processPackages [mujoco-dev]: New version: [2.3.6.dev535839953] Old Version: [2.3.6.dev535635490]
+[2023-05-27 14:25:11] INFO root fetch - processPackages [sktime]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-27 14:25:11] INFO root fetch - processPackages [IntuneCD]: New version: [1.4.7b1] Old Version: [1.4.6b1]
+[2023-05-27 14:25:11] INFO root fetch - processPackages [openllm]: Downloading https://files.pythonhosted.org/packages/16/ad/87d552245aa664983e55c529e8383373b41a33b5a05af51b72f3cd99bb68/openllm-0.0.5.tar.gz
+[2023-05-27 14:25:11] INFO root fetch - processPackages [sktime]: Downloading https://files.pythonhosted.org/packages/14/3c/02b40dd3133f7607421dcc3c5b44747f5bc0f6af14cc7a14e83b686f1ed1/sktime-0.8.1.tar.gz
+[2023-05-27 14:25:11] INFO root fetch - processPackages [seaplayer]: Downloading https://files.pythonhosted.org/packages/77/a3/5aba0ef00a5671eb1278604153ab470b7c255373636982b0ff07571b7a4c/seaplayer-0.5.4.dev2.tar.gz
+[2023-05-27 14:25:11] INFO root fetch - processPackages [mujoco-dev]: Downloading https://files.pythonhosted.org/packages/fc/23/4a3eddb1fca3fab2ab56711328f88350ad7987fcf8c82150e1f27798cc8a/mujoco_dev-2.3.6.dev535635490-cp39-cp39-win_amd64.whl
+[2023-05-27 14:25:11] WARNING root fetch - processPackages [openllm]: Skipping package: exceeds size limit 11980896>=10485760
+[2023-05-27 14:25:11] INFO root fetch - main [MainThread]: End processing [openllm] error
+[2023-05-27 14:25:11] INFO root fetch - processPackages [seaplayer]: executing diffoscope
+[2023-05-27 14:25:11] INFO root fetch - processPackages [seaplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplayer-0.5.4.dev1.tar.gz tmp/seaplayer-0.5.4.dev2.tar.gz --markdown 20230527/s/seaplayer/0.5.4.dev1-0.5.4.dev2/diff.md --exclude *.pyd
+[2023-05-27 14:25:11] INFO root fetch - processPackages [IntuneCD]: Downloading https://files.pythonhosted.org/packages/1f/26/41e79e976247582f1e9bbc0cd82cbd25827bca523dce670117920e43d557/IntuneCD-1.4.7b1.tar.gz
+[2023-05-27 14:25:11] INFO root fetch - processPackages [IntuneCD]: executing diffoscope
+[2023-05-27 14:25:11] INFO root fetch - processPackages [IntuneCD]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IntuneCD-1.4.6b1.tar.gz tmp/IntuneCD-1.4.7b1.tar.gz --markdown 20230527/I/IntuneCD/1.4.6b1-1.4.7b1/diff.md --exclude *.pyd
+[2023-05-27 14:25:11] WARNING root fetch - processPackages [sktime]: Skipping package: exceeds size limit 11076866>=10485760
+[2023-05-27 14:25:11] INFO root fetch - main [MainThread]: End processing [sktime] error
+[2023-05-27 14:25:12] INFO root fetch - processPackages [mujoco-dev]: Downloading https://files.pythonhosted.org/packages/99/ec/53a52ed24095b856548ec3161892fe36b193cb5cdeaacf4283e1d4b79aa2/mujoco_dev-2.3.6.dev535839953-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-27 14:25:12] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
+[2023-05-27 14:25:13] INFO root fetch - main [MainThread]: End processing [IntuneCD]: success
+[2023-05-27 14:25:13] INFO root fetch - processPackages [mujoco-dev]: executing diffoscope
+[2023-05-27 14:25:13] INFO root fetch - processPackages [mujoco-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mujoco_dev-2.3.6.dev535635490-cp39-cp39-win_amd64.whl.zip tmp/mujoco_dev-2.3.6.dev535839953-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230527/m/mujoco-dev/2.3.6.dev535635490-2.3.6.dev535839953/diff.md --exclude *.pyd
+[2023-05-27 14:25:18] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
+[2023-05-27 14:25:18] INFO root fetch - main [MainThread]: Store serial: [18274235]
