@@ -10784,3 +10784,56 @@
 [2023-05-27 19:14:38] INFO root fetch - main [MainThread]: End processing [sylk]: success
 [2023-05-27 19:14:42] INFO root fetch - main [MainThread]: End processing [hedra]: success
 [2023-05-27 19:14:42] INFO root fetch - main [MainThread]: Store serial: [18275721]
+[2023-05-27 19:19:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275721]
+[2023-05-27 19:19:51] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-27 19:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sylk
+[2023-05-27 19:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: je-auto-control-dev
+[2023-05-27 19:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: langchain-discord
+[2023-05-27 19:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hedra
+[2023-05-27 19:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: prfiesta
+[2023-05-27 19:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Python-Redis-Caching
+[2023-05-27 19:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Python-Redis-Caching
+[2023-05-27 19:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ss-logger
+[2023-05-27 19:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: prfiesta
+[2023-05-27 19:19:51] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 19:19:51] INFO root fetch - processPackages [sylk]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-27 19:19:51] INFO root fetch - processPackages [hedra]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-27 19:19:51] INFO root fetch - processPackages [je-auto-control-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 19:19:51] INFO root fetch - processPackages [Python-Redis-Caching]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-27 19:19:51] INFO root fetch - processPackages [Python-Redis-Caching]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-27 19:19:51] INFO root fetch - processPackages [prfiesta]: New version: [0.9.1b157] Old Version: [0.9.1b156]
+[2023-05-27 19:19:51] WARNING root fetch - processPackages [ss-logger]: Skipping, unable to determine old version
+[2023-05-27 19:19:51] INFO root fetch - main [MainThread]: End processing [ss-logger] error
+[2023-05-27 19:19:51] INFO root fetch - processPackages [prfiesta]: New version: [0.9.1b157] Old Version: [0.9.1b156]
+[2023-05-27 19:19:51] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 19:19:51] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 19:19:51] INFO root fetch - processPackages [hedra]: executing diffoscope
+[2023-05-27 19:19:51] INFO root fetch - processPackages [hedra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hedra-0.7.8.tar.gz tmp/hedra-0.7.9.tar.gz --markdown 20230527/h/hedra/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-27 19:19:51] INFO root fetch - processPackages [je-auto-control-dev]: executing diffoscope
+[2023-05-27 19:19:51] INFO root fetch - processPackages [je-auto-control-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_auto_control_dev-0.0.8.tar.gz tmp/je_auto_control_dev-0.0.9.tar.gz --markdown 20230527/j/je-auto-control-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 19:19:51] INFO root fetch - processPackages [Python-Redis-Caching]: Downloading https://files.pythonhosted.org/packages/72/0c/b6ee9356f30ca7f6622991356d1715fdb6d8745cd6005a6b16849810d054/Python%20Redis%20Caching-0.0.5.tar.gz
+[2023-05-27 19:19:51] INFO root fetch - processPackages [Python-Redis-Caching]: Downloading https://files.pythonhosted.org/packages/72/0c/b6ee9356f30ca7f6622991356d1715fdb6d8745cd6005a6b16849810d054/Python%20Redis%20Caching-0.0.5.tar.gz
+[2023-05-27 19:19:51] INFO root fetch - processPackages [prfiesta]: Downloading https://files.pythonhosted.org/packages/46/98/51386d5996d53ad5e762a143074cac2098438096c30150bde8fcaf68c9c8/prfiesta-0.9.1b157.tar.gz
+[2023-05-27 19:19:51] INFO root fetch - processPackages [prfiesta]: Downloading https://files.pythonhosted.org/packages/46/98/51386d5996d53ad5e762a143074cac2098438096c30150bde8fcaf68c9c8/prfiesta-0.9.1b157.tar.gz
+[2023-05-27 19:19:51] INFO root fetch - processPackages [sylk]: Downloading https://files.pythonhosted.org/packages/c7/39/08ed18a9d6cccc95a744fbb2a50c4f3d33d51d5c3466c4e5389384a081b3/sylk-0.1.1-py3-none-any.whl
+[2023-05-27 19:19:51] INFO root fetch - processPackages [sylk]: executing diffoscope
+[2023-05-27 19:19:51] INFO root fetch - processPackages [sylk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sylk-0.1.0-py3-none-any.whl.zip tmp/sylk-0.1.1-py3-none-any.whl.zip --markdown 20230527/s/sylk/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-27 19:19:51] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-27 19:19:51] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.9.1b156.tar.gz tmp/prfiesta-0.9.1b157.tar.gz --markdown 20230527/p/prfiesta/0.9.1b156-0.9.1b157/diff.md --exclude *.pyd
+[2023-05-27 19:19:51] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-27 19:19:51] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.9.1b156.tar.gz tmp/prfiesta-0.9.1b157.tar.gz --markdown 20230527/p/prfiesta/0.9.1b156-0.9.1b157/diff.md --exclude *.pyd
+[2023-05-27 19:19:51] INFO root fetch - processPackages [Python-Redis-Caching]: Downloading https://files.pythonhosted.org/packages/7b/3d/44aa90cd8368e9b187ec1116364691c052365b653059a96fd96764a221cb/Python%20Redis%20Caching-0.0.6.tar.gz
+[2023-05-27 19:19:51] INFO root fetch - processPackages [Python-Redis-Caching]: Downloading https://files.pythonhosted.org/packages/7b/3d/44aa90cd8368e9b187ec1116364691c052365b653059a96fd96764a221cb/Python%20Redis%20Caching-0.0.6.tar.gz
+[2023-05-27 19:19:51] INFO root fetch - processPackages [Python-Redis-Caching]: executing diffoscope
+[2023-05-27 19:19:51] INFO root fetch - processPackages [Python-Redis-Caching]: executing diffoscope
+[2023-05-27 19:19:51] INFO root fetch - processPackages [Python-Redis-Caching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Python Redis Caching-0.0.5.tar.gz tmp/Python Redis Caching-0.0.6.tar.gz --markdown 20230527/P/Python-Redis-Caching/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-27 19:19:51] INFO root fetch - processPackages [Python-Redis-Caching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Python Redis Caching-0.0.5.tar.gz tmp/Python Redis Caching-0.0.6.tar.gz --markdown 20230527/P/Python-Redis-Caching/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-27 19:19:52] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 19:19:53] INFO root fetch - main [MainThread]: End processing [Python-Redis-Caching]: success
+[2023-05-27 19:19:53] INFO root fetch - main [MainThread]: End processing [je-auto-control-dev]: success
+[2023-05-27 19:19:53] INFO root fetch - main [MainThread]: End processing [Python-Redis-Caching]: success
+[2023-05-27 19:19:53] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-27 19:19:53] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-27 19:19:53] INFO root fetch - main [MainThread]: End processing [sylk]: success
+[2023-05-27 19:20:00] INFO root fetch - main [MainThread]: End processing [hedra]: success
+[2023-05-27 19:20:00] INFO root fetch - main [MainThread]: Store serial: [18275753]
