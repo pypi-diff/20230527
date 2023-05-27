@@ -12465,3 +12465,42 @@
 [2023-05-27 23:04:33] INFO root fetch - processPackages [biorefineries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biorefineries-2.9.3.tar.gz tmp/biorefineries-2.9.4.tar.gz --markdown 20230527/b/biorefineries/2.9.3-2.9.4/diff.md --exclude *.pyd
 [2023-05-27 23:04:35] INFO root fetch - main [MainThread]: End processing [biorefineries]: success
 [2023-05-27 23:04:35] INFO root fetch - main [MainThread]: Store serial: [18276911]
+[2023-05-27 23:09:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276911]
+[2023-05-27 23:09:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 23:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fondat
+[2023-05-27 23:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotPython
+[2023-05-27 23:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jwt-django
+[2023-05-27 23:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chatcmd
+[2023-05-27 23:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: OrangePi.ky040
+[2023-05-27 23:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: djangobible
+[2023-05-27 23:09:44] INFO root fetch - processPackages [jwt-django]: New version: [1.2] Old Version: [1.1]
+[2023-05-27 23:09:44] INFO root fetch - processPackages [djangobible]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 23:09:44] INFO root fetch - processPackages [fondat]: New version: [4.1.2] Old Version: [4.1.1]
+[2023-05-27 23:09:44] INFO root fetch - processPackages [chatcmd]: New version: [1.0.22] Old Version: [1.0.21]
+[2023-05-27 23:09:44] INFO root fetch - processPackages [spotPython]: New version: [0.2.0] Old Version: [0.1.8]
+[2023-05-27 23:09:44] ERROR root fetch - processPackages [OrangePi.ky040]: Unable to get metadata: No such project 'OrangePi.ky040'
+[2023-05-27 23:09:44] INFO root fetch - main [MainThread]: End processing [OrangePi.ky040] error
+[2023-05-27 23:09:45] INFO root fetch - processPackages [jwt-django]: Downloading https://files.pythonhosted.org/packages/20/9f/bd68a148bc25dfe2b6b05d95aa5d36a6eaa4a224b3d7bf70674a47390398/jwt_django-1.1.tar.gz
+[2023-05-27 23:09:45] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/0d/25/9a044affd21550928f3bf8c85d41d73612109eaf1cf744e9165a0c82b3a4/chatcmd-1.0.22.tar.gz
+[2023-05-27 23:09:45] INFO root fetch - processPackages [djangobible]: Downloading https://files.pythonhosted.org/packages/25/d0/526d9ddf4313ecf78c6572b558b5146bb5a1da673fee924778d5fbdf1522/djangobible-0.0.8.tar.gz
+[2023-05-27 23:09:45] INFO root fetch - processPackages [fondat]: Downloading https://files.pythonhosted.org/packages/4f/9e/260ba26a6c8b605ee3d7ee6427e6bdb3830fee6bde9e3f173194618506ae/fondat-4.1.1.tar.gz
+[2023-05-27 23:09:45] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-27 23:09:45] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.21.tar.gz tmp/chatcmd-1.0.22.tar.gz --markdown 20230527/c/chatcmd/1.0.21-1.0.22/diff.md --exclude *.pyd
+[2023-05-27 23:09:45] INFO root fetch - processPackages [spotPython]: Downloading https://files.pythonhosted.org/packages/86/73/7bd2b620686264fe4d36535eac81d054138f60f99e0b7ac58725d86aa177/spotPython-0.2.0.tar.gz
+[2023-05-27 23:09:45] INFO root fetch - processPackages [jwt-django]: Downloading https://files.pythonhosted.org/packages/7b/0d/87389e7381bb5b397fb4a0cce09785ef13e0c905f0a6393c74941a3d6c89/jwt_django-1.2.tar.gz
+[2023-05-27 23:09:45] INFO root fetch - processPackages [fondat]: Downloading https://files.pythonhosted.org/packages/23/af/c0f1c16608a788e81b63c9943f0bb31d7d5981be2c4fd51ca0921e6c4518/fondat-4.1.2.tar.gz
+[2023-05-27 23:09:45] INFO root fetch - processPackages [spotPython]: executing diffoscope
+[2023-05-27 23:09:45] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.1.8.tar.gz tmp/spotPython-0.2.0.tar.gz --markdown 20230527/s/spotPython/0.1.8-0.2.0/diff.md --exclude *.pyd
+[2023-05-27 23:09:45] INFO root fetch - processPackages [jwt-django]: executing diffoscope
+[2023-05-27 23:09:45] INFO root fetch - processPackages [jwt-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jwt_django-1.1.tar.gz tmp/jwt_django-1.2.tar.gz --markdown 20230527/j/jwt-django/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-27 23:09:45] INFO root fetch - processPackages [fondat]: executing diffoscope
+[2023-05-27 23:09:45] INFO root fetch - processPackages [fondat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fondat-4.1.1.tar.gz tmp/fondat-4.1.2.tar.gz --markdown 20230527/f/fondat/4.1.1-4.1.2/diff.md --exclude *.pyd
+[2023-05-27 23:09:45] INFO root fetch - processPackages [djangobible]: Downloading https://files.pythonhosted.org/packages/bd/1f/2ad0b5ca398f220f40965ec4c7f90a49dd5db0f363e0a7cd2c1ec5b623f4/djangobible-0.0.9.tar.gz
+[2023-05-27 23:09:45] INFO root fetch - processPackages [djangobible]: executing diffoscope
+[2023-05-27 23:09:45] INFO root fetch - processPackages [djangobible]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangobible-0.0.8.tar.gz tmp/djangobible-0.0.9.tar.gz --markdown 20230527/d/djangobible/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 23:09:46] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-27 23:09:46] INFO root fetch - main [MainThread]: End processing [jwt-django]: success
+[2023-05-27 23:09:46] INFO root fetch - main [MainThread]: End processing [fondat]: success
+[2023-05-27 23:09:46] INFO root fetch - main [MainThread]: End processing [djangobible]: success
+[2023-05-27 23:09:48] INFO root fetch - main [MainThread]: End processing [spotPython]: success
+[2023-05-27 23:09:48] INFO root fetch - main [MainThread]: Store serial: [18276941]
