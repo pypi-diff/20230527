@@ -10546,3 +10546,26 @@
 [2023-05-27 18:31:51] INFO root fetch - main [MainThread]: End processing [adi-reader]: success
 [2023-05-27 18:31:52] INFO root fetch - main [MainThread]: End processing [squander]: success
 [2023-05-27 18:31:52] INFO root fetch - main [MainThread]: Store serial: [18275606]
+[2023-05-27 18:36:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275606]
+[2023-05-27 18:37:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 18:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: feathub-nightly
+[2023-05-27 18:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysmart365
+[2023-05-27 18:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mesh-sandbox
+[2023-05-27 18:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dare-datasets
+[2023-05-27 18:37:01] WARNING root fetch - processPackages [pysmart365]: Skipping, unable to determine old version
+[2023-05-27 18:37:01] INFO root fetch - processPackages [mesh-sandbox]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-27 18:37:01] INFO root fetch - main [MainThread]: End processing [pysmart365] error
+[2023-05-27 18:37:01] INFO root fetch - processPackages [dare-datasets]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-27 18:37:01] INFO root fetch - processPackages [feathub-nightly]: New version: [0.1.dev20230527] Old Version: [0.1.dev20230526]
+[2023-05-27 18:37:01] INFO root fetch - processPackages [mesh-sandbox]: Downloading https://files.pythonhosted.org/packages/ec/68/455142a7fb26af67e972dc16e9472db6eb4b668a8c9443d5fbc88c220ef2/mesh_sandbox-1.0.2-py3-none-any.whl
+[2023-05-27 18:37:01] INFO root fetch - processPackages [dare-datasets]: Downloading https://files.pythonhosted.org/packages/94/f7/aaba82a26a8fd1f5d1434bcbcf4b333b4fe59f4a75e58092e40bacde72b3/dare_datasets-0.1.6.tar.gz
+[2023-05-27 18:37:01] INFO root fetch - processPackages [feathub-nightly]: Downloading https://files.pythonhosted.org/packages/d4/d1/521e1b554a91f0765d86943fa904765e73157edbc8745a02c88077e3230f/feathub_nightly-0.1.dev20230526-py3-none-any.whl
+[2023-05-27 18:37:01] WARNING root fetch - processPackages [feathub-nightly]: Skipping package: exceeds size limit 12191768>=10485760
+[2023-05-27 18:37:01] INFO root fetch - main [MainThread]: End processing [feathub-nightly] error
+[2023-05-27 18:37:01] INFO root fetch - processPackages [mesh-sandbox]: executing diffoscope
+[2023-05-27 18:37:01] INFO root fetch - processPackages [mesh-sandbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mesh_sandbox-1.0.1-py3-none-any.whl.zip tmp/mesh_sandbox-1.0.2-py3-none-any.whl.zip --markdown 20230527/m/mesh-sandbox/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-27 18:37:01] INFO root fetch - processPackages [dare-datasets]: executing diffoscope
+[2023-05-27 18:37:01] INFO root fetch - processPackages [dare-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dare_datasets-0.1.5.tar.gz tmp/dare_datasets-0.1.6.tar.gz --markdown 20230527/d/dare-datasets/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-27 18:37:02] INFO root fetch - main [MainThread]: End processing [dare-datasets]: success
+[2023-05-27 18:37:03] INFO root fetch - main [MainThread]: End processing [mesh-sandbox]: success
+[2023-05-27 18:37:03] INFO root fetch - main [MainThread]: Store serial: [18275617]
