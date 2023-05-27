@@ -8442,3 +8442,71 @@
 [2023-05-27 14:46:06] INFO root fetch - main [MainThread]: End processing [lokii]: success
 [2023-05-27 14:48:48] INFO root fetch - main [MainThread]: End processing [starwhale]: success
 [2023-05-27 14:48:48] INFO root fetch - main [MainThread]: Store serial: [18274324]
+[2023-05-27 14:53:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274324]
+[2023-05-27 14:53:57] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-27 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: investor8-sdk
+[2023-05-27 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: html-parsing-tools
+[2023-05-27 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tkmfly
+[2023-05-27 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-omnilogic-local
+[2023-05-27 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: betterdataclass
+[2023-05-27 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: granular-engine
+[2023-05-27 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pycloudstack
+[2023-05-27 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: graphsignal
+[2023-05-27 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: manticore
+[2023-05-27 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: anova-analysis-package
+[2023-05-27 14:53:57] INFO root fetch - processPackages [tkmfly]: New version: [0.1.0b2] Old Version: [0.1.0b1]
+[2023-05-27 14:53:57] INFO root fetch - processPackages [investor8-sdk]: New version: [1.1.9] Old Version: [1.1.83]
+[2023-05-27 14:53:57] INFO root fetch - processPackages [python-omnilogic-local]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-27 14:53:57] INFO root fetch - processPackages [pycloudstack]: New version: [0.0.9] Old Version: [0.0.10]
+[2023-05-27 14:53:57] ERROR root fetch - processPackages [anova-analysis-package]: Unable to get metadata: No such project 'anova-analysis-package'
+[2023-05-27 14:53:57] INFO root fetch - processPackages [anova-analysis-package]: Start processing: torchility
+[2023-05-27 14:53:57] INFO root fetch - main [MainThread]: End processing [anova-analysis-package] error
+[2023-05-27 14:53:57] INFO root fetch - processPackages [granular-engine]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-27 14:53:57] INFO root fetch - processPackages [betterdataclass]: New version: [3.3] Old Version: [3.2]
+[2023-05-27 14:53:57] INFO root fetch - processPackages [graphsignal]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-27 14:53:57] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230527] Old Version: [0.3.8.dev230525]
+[2023-05-27 14:53:57] INFO root fetch - processPackages [torchility]: New version: [0.7.0] Old Version: [0.6.9]
+[2023-05-27 14:53:58] INFO root fetch - processPackages [html-parsing-tools]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-27 14:53:58] INFO root fetch - processPackages [graphsignal]: executing diffoscope
+[2023-05-27 14:53:58] INFO root fetch - processPackages [graphsignal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphsignal-0.9.4.tar.gz tmp/graphsignal-0.9.5.tar.gz --markdown 20230527/g/graphsignal/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-27 14:53:58] INFO root fetch - processPackages [investor8-sdk]: Downloading https://files.pythonhosted.org/packages/2a/86/851193c71cc3f18e82fe3efd54aaa252f5e984406288f288e89bdb04156a/investor8-sdk-1.1.83.tar.gz
+[2023-05-27 14:53:58] INFO root fetch - processPackages [torchility]: executing diffoscope
+[2023-05-27 14:53:58] INFO root fetch - processPackages [torchility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchility-0.6.9.tar.gz tmp/torchility-0.7.0.tar.gz --markdown 20230527/t/torchility/0.6.9-0.7.0/diff.md --exclude *.pyd
+[2023-05-27 14:53:58] INFO root fetch - processPackages [betterdataclass]: Downloading https://files.pythonhosted.org/packages/a5/b0/13202db39729d0026bb830fbf9e6aeaaeecafb81f39c372ec2aa57cf1571/betterdataclass-3.2.tar.gz
+[2023-05-27 14:53:58] INFO root fetch - processPackages [pycloudstack]: Downloading https://files.pythonhosted.org/packages/b9/ba/a24a5cb8084bc5d4b8e899a706b589175a51bd855d5962b4c48f31a9f7d2/pycloudstack-0.0.10.tar.gz
+[2023-05-27 14:53:58] INFO root fetch - processPackages [tkmfly]: Downloading https://files.pythonhosted.org/packages/ed/c0/c8bac2b21f8acce10f86e90ad7152238fc758d0bfa921af7017df8b51574/tkmfly-0.1.0b1.tar.gz
+[2023-05-27 14:53:58] INFO root fetch - processPackages [manticore]: Downloading https://files.pythonhosted.org/packages/99/70/57dbb1ee56013e2cf2c6876e50426a3239eac11008c5b05d545d08a693f1/manticore-0.3.8.dev230525.tar.gz
+[2023-05-27 14:53:58] INFO root fetch - processPackages [html-parsing-tools]: Downloading https://files.pythonhosted.org/packages/e7/b4/38fc92a27ea6825e6fe5d234a50141c0225efdad08ee7724df36843d058e/html_parsing_tools-0.8.0.tar.gz
+[2023-05-27 14:53:58] INFO root fetch - processPackages [python-omnilogic-local]: Downloading https://files.pythonhosted.org/packages/bd/ea/83ca0a351305da1b39af9e6cd3c0d2cad4f347ba6841b01d59ac9800c0cc/python_omnilogic_local-0.3.1.tar.gz
+[2023-05-27 14:53:58] INFO root fetch - processPackages [granular-engine]: executing diffoscope
+[2023-05-27 14:53:58] INFO root fetch - processPackages [granular-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/granular_engine-0.2.8.tar.gz tmp/granular_engine-0.2.9.tar.gz --markdown 20230527/g/granular-engine/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-27 14:53:58] INFO root fetch - processPackages [betterdataclass]: Downloading https://files.pythonhosted.org/packages/cb/22/d3e1af91ad5d5c9ae0cca1e2313017e126756dbdacb066cdf4dd0d3c4f60/betterdataclass-3.3.tar.gz
+[2023-05-27 14:53:58] INFO root fetch - processPackages [pycloudstack]: Downloading https://files.pythonhosted.org/packages/70/94/611c329f7324bd0655c29fca90f017c9c011cd4dcd33e62aa8849852f466/pycloudstack-0.0.9.tar.gz
+[2023-05-27 14:53:58] INFO root fetch - processPackages [python-omnilogic-local]: executing diffoscope
+[2023-05-27 14:53:58] INFO root fetch - processPackages [python-omnilogic-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_omnilogic_local-0.3.0.tar.gz tmp/python_omnilogic_local-0.3.1.tar.gz --markdown 20230527/p/python-omnilogic-local/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-27 14:53:58] INFO root fetch - processPackages [tkmfly]: Downloading https://files.pythonhosted.org/packages/e9/db/3ed43d4134edbf22b11da1048f168d06e047bc74f14a16596eaa163665e5/tkmfly-0.1.0b2.tar.gz
+[2023-05-27 14:53:58] INFO root fetch - processPackages [investor8-sdk]: executing diffoscope
+[2023-05-27 14:53:58] INFO root fetch - processPackages [investor8-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/investor8-sdk-1.1.83.tar.gz tmp/investor8-sdk-1.1.9.tar.gz --markdown 20230527/i/investor8-sdk/1.1.83-1.1.9/diff.md --exclude *.pyd
+[2023-05-27 14:53:58] INFO root fetch - processPackages [manticore]: Downloading https://files.pythonhosted.org/packages/1f/96/1848878af28366c62dadf784e83cb4a8947a5d9f761e1622aed8eea7bf9a/manticore-0.3.8.dev230527.tar.gz
+[2023-05-27 14:53:58] INFO root fetch - processPackages [betterdataclass]: executing diffoscope
+[2023-05-27 14:53:58] INFO root fetch - processPackages [betterdataclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betterdataclass-3.2.tar.gz tmp/betterdataclass-3.3.tar.gz --markdown 20230527/b/betterdataclass/3.2-3.3/diff.md --exclude *.pyd
+[2023-05-27 14:53:58] INFO root fetch - processPackages [pycloudstack]: executing diffoscope
+[2023-05-27 14:53:58] INFO root fetch - processPackages [pycloudstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycloudstack-0.0.10.tar.gz tmp/pycloudstack-0.0.9.tar.gz --markdown 20230527/p/pycloudstack/0.0.10-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 14:53:58] INFO root fetch - processPackages [html-parsing-tools]: Downloading https://files.pythonhosted.org/packages/37/9a/6e45dfaf09f50bc5737d7edbcf7530bbcb10825ab814f66c01349ba993eb/html_parsing_tools-0.9.0.tar.gz
+[2023-05-27 14:53:58] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-05-27 14:53:58] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230525.tar.gz tmp/manticore-0.3.8.dev230527.tar.gz --markdown 20230527/m/manticore/0.3.8.dev230525-0.3.8.dev230527/diff.md --exclude *.pyd
+[2023-05-27 14:53:58] INFO root fetch - processPackages [tkmfly]: executing diffoscope
+[2023-05-27 14:53:58] INFO root fetch - processPackages [tkmfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkmfly-0.1.0b1.tar.gz tmp/tkmfly-0.1.0b2.tar.gz --markdown 20230527/t/tkmfly/0.1.0b1-0.1.0b2/diff.md --exclude *.pyd
+[2023-05-27 14:53:58] INFO root fetch - processPackages [html-parsing-tools]: executing diffoscope
+[2023-05-27 14:53:58] INFO root fetch - processPackages [html-parsing-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html_parsing_tools-0.8.0.tar.gz tmp/html_parsing_tools-0.9.0.tar.gz --markdown 20230527/h/html-parsing-tools/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 14:53:59] INFO root fetch - main [MainThread]: End processing [betterdataclass]: success
+[2023-05-27 14:54:00] INFO root fetch - main [MainThread]: End processing [html-parsing-tools]: success
+[2023-05-27 14:54:00] INFO root fetch - main [MainThread]: End processing [python-omnilogic-local]: success
+[2023-05-27 14:54:00] INFO root fetch - main [MainThread]: End processing [granular-engine]: success
+[2023-05-27 14:54:00] INFO root fetch - main [MainThread]: End processing [torchility]: success
+[2023-05-27 14:54:00] INFO root fetch - main [MainThread]: End processing [pycloudstack]: success
+[2023-05-27 14:54:00] INFO root fetch - main [MainThread]: End processing [manticore]: success
+[2023-05-27 14:54:00] INFO root fetch - main [MainThread]: End processing [graphsignal]: success
+[2023-05-27 14:54:01] INFO root fetch - main [MainThread]: End processing [tkmfly]: success
+[2023-05-27 14:54:04] INFO root fetch - main [MainThread]: End processing [investor8-sdk]: success
+[2023-05-27 14:54:04] INFO root fetch - main [MainThread]: Store serial: [18274369]
