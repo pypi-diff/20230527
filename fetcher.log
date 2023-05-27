@@ -6864,3 +6864,44 @@
 [2023-05-27 11:22:11] INFO root fetch - main [MainThread]: End processing [torchml]: success
 [2023-05-27 11:22:13] INFO root fetch - main [MainThread]: End processing [fhempy]: success
 [2023-05-27 11:22:13] INFO root fetch - main [MainThread]: Store serial: [18273422]
+[2023-05-27 11:27:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273422]
+[2023-05-27 11:27:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 11:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: roadmapper
+[2023-05-27 11:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NaturalAPI
+[2023-05-27 11:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yambs
+[2023-05-27 11:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coso
+[2023-05-27 11:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dare-datasets
+[2023-05-27 11:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pytmac
+[2023-05-27 11:27:23] INFO root fetch - processPackages [NaturalAPI]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 11:27:23] INFO root fetch - processPackages [roadmapper]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-27 11:27:23] INFO root fetch - processPackages [pytmac]: New version: [3.4.0] Old Version: [3.3.2]
+[2023-05-27 11:27:23] INFO root fetch - processPackages [coso]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-27 11:27:23] INFO root fetch - processPackages [yambs]: New version: [1.7.2] Old Version: [1.7.1]
+[2023-05-27 11:27:23] INFO root fetch - processPackages [dare-datasets]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-27 11:27:24] INFO root fetch - processPackages [NaturalAPI]: Downloading https://files.pythonhosted.org/packages/92/22/b158c87fb4cb58365a2f754b02eaab1bb9de59345e84715d637491f71ff7/NaturalAPI-0.0.1.tar.gz
+[2023-05-27 11:27:24] INFO root fetch - processPackages [roadmapper]: Downloading https://files.pythonhosted.org/packages/72/79/c488f74da9a59d7458d5ad92c1712f0a1613fe28bf55e60b8f23dd8a1e0d/roadmapper-1.2.0.tar.gz
+[2023-05-27 11:27:24] INFO root fetch - processPackages [dare-datasets]: Downloading https://files.pythonhosted.org/packages/3b/08/1d8b8aa91867c2b994bafe284bd293ad3e303cccd776353b2d973746da07/dare_datasets-0.1.5.tar.gz
+[2023-05-27 11:27:24] INFO root fetch - processPackages [yambs]: Downloading https://files.pythonhosted.org/packages/d6/3b/4f90cc66d7fc42ce2b24d8b593e8de144599284643c0b26dd3ea98475327/yambs-1.7.2.tar.gz
+[2023-05-27 11:27:24] INFO root fetch - processPackages [pytmac]: Downloading https://files.pythonhosted.org/packages/2e/e9/747b1da18ac67e4183838986956fee6dbd201dd621d7f5d9db29d0b756a8/pytmac-3.4.0.tar.gz
+[2023-05-27 11:27:24] INFO root fetch - processPackages [dare-datasets]: executing diffoscope
+[2023-05-27 11:27:24] INFO root fetch - processPackages [dare-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dare_datasets-0.1.4.tar.gz tmp/dare_datasets-0.1.5.tar.gz --markdown 20230527/d/dare-datasets/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-27 11:27:24] INFO root fetch - processPackages [NaturalAPI]: Downloading https://files.pythonhosted.org/packages/28/64/9945395f7c0ce7152415aae4b748b8fb75065b707762673e02e460bf0ce7/NaturalAPI-0.0.2.tar.gz
+[2023-05-27 11:27:24] INFO root fetch - processPackages [coso]: Downloading https://files.pythonhosted.org/packages/01/df/90d7fd997a2ad183845d5e1c50168694fbeefb3d10ba7532ec9e42f9e0d1/coso-1.1.1.tar.gz
+[2023-05-27 11:27:24] INFO root fetch - processPackages [yambs]: executing diffoscope
+[2023-05-27 11:27:24] INFO root fetch - processPackages [yambs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yambs-1.7.1.tar.gz tmp/yambs-1.7.2.tar.gz --markdown 20230527/y/yambs/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2023-05-27 11:27:24] INFO root fetch - processPackages [roadmapper]: Downloading https://files.pythonhosted.org/packages/60/ba/1704b76cdd0483d7d3db656815fea2ca2e22450b98512e33d8a9916fda45/roadmapper-1.2.1.tar.gz
+[2023-05-27 11:27:24] INFO root fetch - processPackages [pytmac]: executing diffoscope
+[2023-05-27 11:27:24] INFO root fetch - processPackages [pytmac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytmac-3.3.2.tar.gz tmp/pytmac-3.4.0.tar.gz --markdown 20230527/p/pytmac/3.3.2-3.4.0/diff.md --exclude *.pyd
+[2023-05-27 11:27:24] INFO root fetch - processPackages [NaturalAPI]: executing diffoscope
+[2023-05-27 11:27:24] INFO root fetch - processPackages [NaturalAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NaturalAPI-0.0.1.tar.gz tmp/NaturalAPI-0.0.2.tar.gz --markdown 20230527/N/NaturalAPI/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 11:27:24] INFO root fetch - processPackages [coso]: executing diffoscope
+[2023-05-27 11:27:24] INFO root fetch - processPackages [coso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coso-1.1.0.tar.gz tmp/coso-1.1.1.tar.gz --markdown 20230527/c/coso/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-27 11:27:24] INFO root fetch - processPackages [roadmapper]: executing diffoscope
+[2023-05-27 11:27:24] INFO root fetch - processPackages [roadmapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roadmapper-1.2.0.tar.gz tmp/roadmapper-1.2.1.tar.gz --markdown 20230527/r/roadmapper/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-27 11:27:25] INFO root fetch - main [MainThread]: End processing [dare-datasets]: success
+[2023-05-27 11:27:25] INFO root fetch - main [MainThread]: End processing [pytmac]: success
+[2023-05-27 11:27:25] INFO root fetch - main [MainThread]: End processing [NaturalAPI]: success
+[2023-05-27 11:27:25] INFO root fetch - main [MainThread]: End processing [coso]: success
+[2023-05-27 11:27:25] INFO root fetch - main [MainThread]: End processing [yambs]: success
+[2023-05-27 11:27:25] INFO root fetch - main [MainThread]: End processing [roadmapper]: success
+[2023-05-27 11:27:25] INFO root fetch - main [MainThread]: Store serial: [18273444]
