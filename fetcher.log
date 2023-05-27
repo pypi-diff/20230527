@@ -7685,3 +7685,28 @@
 [2023-05-27 13:11:26] INFO root fetch - main [MainThread]: End processing [PyOTRS]: success
 [2023-05-27 13:11:26] INFO root fetch - main [MainThread]: End processing [pyais]: success
 [2023-05-27 13:11:26] INFO root fetch - main [MainThread]: Store serial: [18273936]
+[2023-05-27 13:16:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273936]
+[2023-05-27 13:16:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 13:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dscan-api-client
+[2023-05-27 13:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anyio
+[2023-05-27 13:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: isoCycle
+[2023-05-27 13:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bionty
+[2023-05-27 13:16:35] INFO root fetch - processPackages [bionty]: New version: [0.9.0rc1] Old Version: [0.9.0]
+[2023-05-27 13:16:35] INFO root fetch - processPackages [dscan-api-client]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-27 13:16:35] INFO root fetch - processPackages [isoCycle]: New version: [0.0.66] Old Version: [0.0.65]
+[2023-05-27 13:16:35] INFO root fetch - processPackages [anyio]: New version: [3.7.0rc1] Old Version: [3.7.0]
+[2023-05-27 13:16:36] INFO root fetch - processPackages [anyio]: Downloading https://files.pythonhosted.org/packages/c6/b3/fefbf7e78ab3b805dec67d698dc18dd505af7a18a8dd08868c9b4fa736b5/anyio-3.7.0.tar.gz
+[2023-05-27 13:16:36] INFO root fetch - processPackages [isoCycle]: Downloading https://files.pythonhosted.org/packages/d5/de/8ddc3e34afb7ff8fdd7e18aeaa871044d7ec1bfee48166dc3719dd495cc5/isoCycle-0.0.65.tar.gz
+[2023-05-27 13:16:36] INFO root fetch - processPackages [dscan-api-client]: Downloading https://files.pythonhosted.org/packages/0e/3f/87d8dd45dc752228d03670163618895f9223768e6765492aad8ee73409f2/dscan_api_client-1.0.5-py3-none-any.whl
+[2023-05-27 13:16:36] WARNING root fetch - processPackages [isoCycle]: Skipping package: exceeds size limit 12815337>=10485760
+[2023-05-27 13:16:36] INFO root fetch - main [MainThread]: End processing [isoCycle] error
+[2023-05-27 13:16:36] INFO root fetch - processPackages [dscan-api-client]: executing diffoscope
+[2023-05-27 13:16:36] INFO root fetch - processPackages [dscan-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscan_api_client-1.0.4-py3-none-any.whl.zip tmp/dscan_api_client-1.0.5-py3-none-any.whl.zip --markdown 20230527/d/dscan-api-client/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-27 13:16:36] INFO root fetch - processPackages [bionty]: executing diffoscope
+[2023-05-27 13:16:36] INFO root fetch - processPackages [bionty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bionty-0.9.0.tar.gz tmp/bionty-0.9.0rc1.tar.gz --markdown 20230527/b/bionty/0.9.0-0.9.0rc1/diff.md --exclude *.pyd
+[2023-05-27 13:16:36] INFO root fetch - processPackages [anyio]: executing diffoscope
+[2023-05-27 13:16:36] INFO root fetch - processPackages [anyio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyio-3.7.0.tar.gz tmp/anyio-3.7.0rc1.tar.gz --markdown 20230527/a/anyio/3.7.0-3.7.0rc1/diff.md --exclude *.pyd
+[2023-05-27 13:16:37] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
+[2023-05-27 13:16:37] INFO root fetch - main [MainThread]: End processing [bionty]: success
+[2023-05-27 13:16:37] INFO root fetch - main [MainThread]: End processing [anyio]: success
+[2023-05-27 13:16:37] INFO root fetch - main [MainThread]: Store serial: [18273948]
