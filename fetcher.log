@@ -10897,3 +10897,48 @@
 [2023-05-27 19:25:12] INFO root fetch - main [MainThread]: End processing [novelcraft-sdk]: success
 [2023-05-27 19:25:12] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2023-05-27 19:25:12] INFO root fetch - main [MainThread]: Store serial: [18275790]
+[2023-05-27 19:30:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275790]
+[2023-05-27 19:30:21] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 19:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langchain-discord
+[2023-05-27 19:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ElGamal-c
+[2023-05-27 19:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pdc-dp-means
+[2023-05-27 19:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: langchain-discord
+[2023-05-27 19:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: langchain-discord
+[2023-05-27 19:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wizata-dsapi
+[2023-05-27 19:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: langchain-discord
+[2023-05-27 19:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: df2onehot
+[2023-05-27 19:30:21] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 19:30:21] INFO root fetch - processPackages [pdc-dp-means]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 19:30:21] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 19:30:21] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 19:30:21] WARNING root fetch - processPackages [ElGamal-c]: Skipping, unable to determine old version
+[2023-05-27 19:30:21] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 19:30:21] INFO root fetch - main [MainThread]: End processing [ElGamal-c] error
+[2023-05-27 19:30:21] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 19:30:21] INFO root fetch - processPackages [df2onehot]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-27 19:30:21] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 19:30:21] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 19:30:21] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 19:30:21] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 19:30:21] INFO root fetch - processPackages [pdc-dp-means]: Downloading https://files.pythonhosted.org/packages/49/06/d25fcd97ba450d5a918a32db0e9def1babcfd9598237fc521030bac6750e/pdc_dp_means-0.0.2-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-27 19:30:21] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 19:30:21] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 19:30:21] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 19:30:21] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 19:30:21] INFO root fetch - processPackages [df2onehot]: Downloading https://files.pythonhosted.org/packages/dd/3a/803bee79885aaf16b7df20ccf7ec2e837d3fbe0f9c65d64b1b2fad39d86e/df2onehot-1.0.3.tar.gz
+[2023-05-27 19:30:21] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-05-27 19:30:21] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.1.8.tar.gz tmp/wizata-dsapi-0.1.9.tar.gz --markdown 20230527/w/wizata-dsapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 19:30:21] INFO root fetch - processPackages [pdc-dp-means]: Downloading https://files.pythonhosted.org/packages/c2/d2/0b859982a6469bdaae9a429556dc3b6742e1e3554b2a70cce61ee89880d3/pdc_dp_means-0.0.3-cp38-cp38-any.whl
+[2023-05-27 19:30:21] INFO root fetch - processPackages [df2onehot]: Downloading https://files.pythonhosted.org/packages/d8/53/01d8571e6660d27eb3a5cc380cb9bd7fe33944cb830cdcd9af53103993c7/df2onehot-1.0.4.tar.gz
+[2023-05-27 19:30:21] INFO root fetch - processPackages [pdc-dp-means]: executing diffoscope
+[2023-05-27 19:30:21] INFO root fetch - processPackages [pdc-dp-means]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdc_dp_means-0.0.2-cp39-cp39-manylinux1_x86_64.whl.zip tmp/pdc_dp_means-0.0.3-cp38-cp38-any.whl.zip --markdown 20230527/p/pdc-dp-means/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 19:30:21] INFO root fetch - processPackages [df2onehot]: executing diffoscope
+[2023-05-27 19:30:21] INFO root fetch - processPackages [df2onehot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/df2onehot-1.0.3.tar.gz tmp/df2onehot-1.0.4.tar.gz --markdown 20230527/d/df2onehot/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-27 19:30:22] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 19:30:22] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 19:30:22] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 19:30:22] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 19:30:22] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-05-27 19:30:23] INFO root fetch - main [MainThread]: End processing [df2onehot]: success
+[2023-05-27 19:30:26] INFO root fetch - main [MainThread]: End processing [pdc-dp-means]: success
+[2023-05-27 19:30:26] INFO root fetch - main [MainThread]: Store serial: [18275811]
