@@ -8202,3 +8202,46 @@
 [2023-05-27 14:09:39] INFO root fetch - main [MainThread]: End processing [act4e-mcdp]: success
 [2023-05-27 14:09:40] INFO root fetch - main [MainThread]: End processing [weewx]: success
 [2023-05-27 14:09:40] INFO root fetch - main [MainThread]: Store serial: [18274174]
+[2023-05-27 14:14:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274174]
+[2023-05-27 14:14:49] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 14:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notcli
+[2023-05-27 14:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyslit
+[2023-05-27 14:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: irails
+[2023-05-27 14:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: esentity
+[2023-05-27 14:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NaturalAPI
+[2023-05-27 14:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ankr-sdk
+[2023-05-27 14:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gradio-version-freeze
+[2023-05-27 14:14:49] INFO root fetch - processPackages [gradio-version-freeze]: New version: [3.32.1.3.40] Old Version: [3.32.1.3.39]
+[2023-05-27 14:14:49] INFO root fetch - processPackages [NaturalAPI]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 14:14:49] INFO root fetch - processPackages [notcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 14:14:49] INFO root fetch - processPackages [pyslit]: New version: [2.1.5] Old Version: [1.0.0]
+[2023-05-27 14:14:49] INFO root fetch - processPackages [irails]: New version: [1.3.32] Old Version: [1.3.31]
+[2023-05-27 14:14:49] INFO root fetch - processPackages [ankr-sdk]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-27 14:14:49] INFO root fetch - processPackages [esentity]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-05-27 14:14:49] INFO root fetch - processPackages [notcli]: executing diffoscope
+[2023-05-27 14:14:49] INFO root fetch - processPackages [notcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notcli-0.0.8.tar.gz tmp/notcli-0.0.9.tar.gz --markdown 20230527/n/notcli/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 14:14:49] INFO root fetch - processPackages [esentity]: executing diffoscope
+[2023-05-27 14:14:49] INFO root fetch - processPackages [esentity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esentity-0.2.98.tar.gz tmp/esentity-0.2.99.tar.gz --markdown 20230527/e/esentity/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-05-27 14:14:49] INFO root fetch - processPackages [gradio-version-freeze]: Downloading https://files.pythonhosted.org/packages/24/ab/b89d37d2965ff0f8d5f5df19dcc1e00bd42a955c4d36557ffa3b117b9ef9/gradio_version_freeze-3.32.1.3.39.tar.gz
+[2023-05-27 14:14:49] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/00/c1/b96515339bcadc7126a550d43ccbb70a860766021747cca012affd031e72/irails-1.3.32.tar.gz
+[2023-05-27 14:14:49] WARNING root fetch - processPackages [gradio-version-freeze]: Skipping package: exceeds size limit 11025536>=10485760
+[2023-05-27 14:14:49] INFO root fetch - main [MainThread]: End processing [gradio-version-freeze] error
+[2023-05-27 14:14:49] INFO root fetch - processPackages [ankr-sdk]: Downloading https://files.pythonhosted.org/packages/72/e3/3d26d179c7caa19d572965e77804cbb511c9f00ea703c56e8084c27feb8d/ankr_sdk-0.3.0.tar.gz
+[2023-05-27 14:14:49] INFO root fetch - processPackages [NaturalAPI]: Downloading https://files.pythonhosted.org/packages/18/2a/90b87b726c63615104b6d584d8c168323374f37609e8c49e8ea76b2789d0/NaturalAPI-0.0.9.tar.gz
+[2023-05-27 14:14:49] INFO root fetch - processPackages [pyslit]: Downloading https://files.pythonhosted.org/packages/85/3b/f9dcc46c38490906487741f2ec533b3c98900e891c48571ea4552f9cc89d/pyslit-2.1.5.tar.gz
+[2023-05-27 14:14:49] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-27 14:14:49] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.3.31.tar.gz tmp/irails-1.3.32.tar.gz --markdown 20230527/i/irails/1.3.31-1.3.32/diff.md --exclude *.pyd
+[2023-05-27 14:14:50] INFO root fetch - processPackages [ankr-sdk]: Downloading https://files.pythonhosted.org/packages/4c/ee/6b2cc5f23411dfeee6956f7e982fc133482be2b9934916258b7a233c9c93/ankr_sdk-0.4.0.tar.gz
+[2023-05-27 14:14:50] INFO root fetch - processPackages [NaturalAPI]: executing diffoscope
+[2023-05-27 14:14:50] INFO root fetch - processPackages [NaturalAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NaturalAPI-0.0.8.tar.gz tmp/NaturalAPI-0.0.9.tar.gz --markdown 20230527/N/NaturalAPI/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 14:14:50] INFO root fetch - processPackages [pyslit]: executing diffoscope
+[2023-05-27 14:14:50] INFO root fetch - processPackages [pyslit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslit-1.0.0.tar.gz tmp/pyslit-2.1.5.tar.gz --markdown 20230527/p/pyslit/1.0.0-2.1.5/diff.md --exclude *.pyd
+[2023-05-27 14:14:50] INFO root fetch - processPackages [ankr-sdk]: executing diffoscope
+[2023-05-27 14:14:50] INFO root fetch - processPackages [ankr-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ankr_sdk-0.3.0.tar.gz tmp/ankr_sdk-0.4.0.tar.gz --markdown 20230527/a/ankr-sdk/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-27 14:14:50] INFO root fetch - main [MainThread]: End processing [esentity]: success
+[2023-05-27 14:14:51] INFO root fetch - main [MainThread]: End processing [NaturalAPI]: success
+[2023-05-27 14:14:51] INFO root fetch - main [MainThread]: End processing [notcli]: success
+[2023-05-27 14:14:51] INFO root fetch - main [MainThread]: End processing [pyslit]: success
+[2023-05-27 14:14:51] INFO root fetch - main [MainThread]: End processing [ankr-sdk]: success
+[2023-05-27 14:14:52] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-27 14:14:52] INFO root fetch - main [MainThread]: Store serial: [18274196]
