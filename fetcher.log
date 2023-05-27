@@ -6317,3 +6317,27 @@
 [2023-05-27 10:19:32] INFO root fetch - main [MainThread]: End processing [CUQIpy-PyTorch]: success
 [2023-05-27 10:19:33] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
 [2023-05-27 10:19:33] INFO root fetch - main [MainThread]: Store serial: [18273102]
+[2023-05-27 10:24:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273102]
+[2023-05-27 10:24:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 10:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openllm
+[2023-05-27 10:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prfiesta
+[2023-05-27 10:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: multiprocessorhdl
+[2023-05-27 10:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: comex
+[2023-05-27 10:24:42] INFO root fetch - processPackages [openllm]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-27 10:24:42] INFO root fetch - processPackages [multiprocessorhdl]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-27 10:24:42] INFO root fetch - processPackages [prfiesta]: New version: [0.9.1b148] Old Version: [0.9.0]
+[2023-05-27 10:24:42] INFO root fetch - processPackages [comex]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 10:24:42] INFO root fetch - processPackages [comex]: executing diffoscope
+[2023-05-27 10:24:42] INFO root fetch - processPackages [comex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comex-0.0.4.tar.gz tmp/comex-0.0.5.tar.gz --markdown 20230527/c/comex/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-27 10:24:42] INFO root fetch - processPackages [openllm]: Downloading https://files.pythonhosted.org/packages/0b/eb/f42e66960a2d255bcecaee7243f98c17a68a8ab6fe770405dee609be4c66/openllm-0.0.3.tar.gz
+[2023-05-27 10:24:42] INFO root fetch - processPackages [multiprocessorhdl]: Downloading https://files.pythonhosted.org/packages/39/ff/520cc7cb164eb84980c3253f82929ba28d4358ec78117100a8cad219ee1c/multiprocessorhdl-2.0.4.tar.gz
+[2023-05-27 10:24:42] INFO root fetch - processPackages [prfiesta]: Downloading https://files.pythonhosted.org/packages/2a/3a/4495a2c51c524c7f42c0a4901fa4643c0e0da88adc7bb5d24cfc61b5d001/prfiesta-0.9.1b148.tar.gz
+[2023-05-27 10:24:42] WARNING root fetch - processPackages [openllm]: Skipping package: exceeds size limit 11978110>=10485760
+[2023-05-27 10:24:42] WARNING root fetch - processPackages [multiprocessorhdl]: Skipping package: exceeds size limit 66227616>=10485760
+[2023-05-27 10:24:42] INFO root fetch - main [MainThread]: End processing [openllm] error
+[2023-05-27 10:24:42] INFO root fetch - main [MainThread]: End processing [multiprocessorhdl] error
+[2023-05-27 10:24:42] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-27 10:24:42] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.9.0.tar.gz tmp/prfiesta-0.9.1b148.tar.gz --markdown 20230527/p/prfiesta/0.9.0-0.9.1b148/diff.md --exclude *.pyd
+[2023-05-27 10:24:43] INFO root fetch - main [MainThread]: End processing [comex]: success
+[2023-05-27 10:24:43] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-27 10:24:43] INFO root fetch - main [MainThread]: Store serial: [18273113]
