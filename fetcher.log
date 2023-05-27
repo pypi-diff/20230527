@@ -4068,3 +4068,18 @@
 [2023-05-27 04:45:24] INFO root fetch - main [MainThread]: End processing [lasfile]: success
 [2023-05-27 04:45:25] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-account-invoicing]: success
 [2023-05-27 04:45:25] INFO root fetch - main [MainThread]: Store serial: [18271919]
+[2023-05-27 04:50:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271919]
+[2023-05-27 04:50:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 04:50:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: install-pybci
+[2023-05-27 04:50:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lasfile
+[2023-05-27 04:50:34] INFO root fetch - processPackages [install-pybci]: New version: [0.2.1b0] Old Version: [0.2.0b0]
+[2023-05-27 04:50:34] INFO root fetch - processPackages [lasfile]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-27 04:50:34] INFO root fetch - processPackages [lasfile]: Downloading https://files.pythonhosted.org/packages/eb/13/4ff729687c4e3e1090de4323a4396fddf8bf9f04d6eab6220370d1df7bd5/lasfile-0.1.3.tar.gz
+[2023-05-27 04:50:34] INFO root fetch - processPackages [install-pybci]: Downloading https://files.pythonhosted.org/packages/f8/fa/0d58c654b80466864616ef4cc6527dc9c995378b62ef2685e8a88720cbf7/install-pybci-0.2.1b0.tar.gz
+[2023-05-27 04:50:34] INFO root fetch - processPackages [lasfile]: executing diffoscope
+[2023-05-27 04:50:34] INFO root fetch - processPackages [lasfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lasfile-0.1.2.tar.gz tmp/lasfile-0.1.3.tar.gz --markdown 20230527/l/lasfile/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-27 04:50:34] INFO root fetch - processPackages [install-pybci]: executing diffoscope
+[2023-05-27 04:50:34] INFO root fetch - processPackages [install-pybci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/install-pybci-0.2.0b0.tar.gz tmp/install-pybci-0.2.1b0.tar.gz --markdown 20230527/i/install-pybci/0.2.0b0-0.2.1b0/diff.md --exclude *.pyd
+[2023-05-27 04:50:35] INFO root fetch - main [MainThread]: End processing [lasfile]: success
+[2023-05-27 04:50:35] INFO root fetch - main [MainThread]: End processing [install-pybci]: success
+[2023-05-27 04:50:35] INFO root fetch - main [MainThread]: Store serial: [18271925]
