@@ -9281,3 +9281,87 @@
 [2023-05-27 16:38:01] INFO root fetch - main [MainThread]: End processing [gradio-version-freeze]: success
 [2023-05-27 16:38:03] INFO root fetch - main [MainThread]: End processing [gradio-version-freeze]: success
 [2023-05-27 16:38:03] INFO root fetch - main [MainThread]: Store serial: [18274874]
+[2023-05-27 16:43:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274874]
+[2023-05-27 16:43:12] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-27 16:43:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymarc
+[2023-05-27 16:43:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyezviz
+[2023-05-27 16:43:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sc8pr
+[2023-05-27 16:43:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ckanext-check-link
+[2023-05-27 16:43:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jupyterlab-tensorboard-pro
+[2023-05-27 16:43:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: syglass
+[2023-05-27 16:43:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: herbiv
+[2023-05-27 16:43:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gitlabform-ytt
+[2023-05-27 16:43:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: asociita
+[2023-05-27 16:43:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: finddd
+[2023-05-27 16:43:12] INFO root fetch - processPackages [jupyterlab-tensorboard-pro]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-27 16:43:12] INFO root fetch - processPackages [pymarc]: New version: [5.1.0] Old Version: [5.0.0]
+[2023-05-27 16:43:12] INFO root fetch - processPackages [herbiv]: New version: [0.1a6] Old Version: [0.1a5]
+[2023-05-27 16:43:12] INFO root fetch - processPackages [syglass]: New version: [0.62] Old Version: [0.61]
+[2023-05-27 16:43:12] INFO root fetch - processPackages [sc8pr]: New version: [3.0b0] Old Version: [3.0a2]
+[2023-05-27 16:43:12] INFO root fetch - processPackages [finddd]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-27 16:43:12] INFO root fetch - processPackages [ckanext-check-link]: New version: [0.1.1.post1] Old Version: [0.1.1]
+[2023-05-27 16:43:12] INFO root fetch - processPackages [asociita]: New version: [0.1.6.6] Old Version: [0.1.6.5]
+[2023-05-27 16:43:12] INFO root fetch - processPackages [pyezviz]: New version: [0.2.0.9] Old Version: [0.2.0.8]
+[2023-05-27 16:43:12] WARNING root fetch - processPackages [gitlabform-ytt]: Skipping, unable to determine old version
+[2023-05-27 16:43:12] INFO root fetch - processPackages [gitlabform-ytt]: Start processing: certora-cli-alpha-master
+[2023-05-27 16:43:12] INFO root fetch - main [MainThread]: End processing [gitlabform-ytt] error
+[2023-05-27 16:43:12] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230527.14.41.980340] Old Version: [20230526.9.42.349911]
+[2023-05-27 16:43:12] INFO root fetch - processPackages [pymarc]: Downloading https://files.pythonhosted.org/packages/1d/ad/f53cf6413a72f3a4fa3f53e6576f08c2affa588c43a2d1c77daba341d0e9/pymarc-5.0.0.tar.gz
+[2023-05-27 16:43:12] INFO root fetch - processPackages [herbiv]: Downloading https://files.pythonhosted.org/packages/dd/7f/b21451a507cf8df93209d1c11142ad1b5f0e95ea2402bac7bc2b5c82ede2/herbiv-0.1a5.tar.gz
+[2023-05-27 16:43:12] INFO root fetch - processPackages [syglass]: Downloading https://files.pythonhosted.org/packages/c0/bc/c451c822d2cb281d22f3f786c03e735c5b6e6fd1967d153df3ae9321a34e/syglass-0.61.tar.gz
+[2023-05-27 16:43:12] INFO root fetch - processPackages [jupyterlab-tensorboard-pro]: Downloading https://files.pythonhosted.org/packages/9f/40/f8d3677122b6fbc2c11b4261ef2f91f2566aec28bc3815ce0ed4d89b3abb/jupyterlab_tensorboard_pro-0.7.0-py2.py3-none-any.whl
+[2023-05-27 16:43:12] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/99/7c/3d5b2ba06a23f54d9d0e96862f957f1c83e072192a2836d508c1d95511d1/certora-cli-alpha-master-20230526.9.42.349911.tar.gz
+[2023-05-27 16:43:12] INFO root fetch - processPackages [ckanext-check-link]: Downloading https://files.pythonhosted.org/packages/d5/08/bcc65a744ae8029e111d05ef63dd8d5151183adb5931465bedb756813db5/ckanext-check-link-0.1.1.tar.gz
+[2023-05-27 16:43:12] INFO root fetch - processPackages [pyezviz]: Downloading https://files.pythonhosted.org/packages/72/77/a607c2dd923368c4f62a22b72ebf8847b4741499b5fa237ee8d211625a32/pyezviz-0.2.0.8.tar.gz
+[2023-05-27 16:43:12] INFO root fetch - processPackages [asociita]: Downloading https://files.pythonhosted.org/packages/ff/9e/09d5cbbf678ee99ad30f2651ad667d92259e8ad6a1234a6570e436ae8f2f/asociita-0.1.6.6.tar.gz
+[2023-05-27 16:43:12] INFO root fetch - processPackages [sc8pr]: Downloading https://files.pythonhosted.org/packages/ab/a4/4c8eddf009ab3d13f8981be007d3b595a080f06d1705e7b3b0a7a9a006f8/sc8pr-3.0a2.tar.gz
+[2023-05-27 16:43:12] INFO root fetch - processPackages [finddd]: Downloading https://files.pythonhosted.org/packages/71/12/887d5f176cb06e319273e72baaefd7fd36dc21029256ff08cf42712b16b8/finddd-0.2.1.tar.gz
+[2023-05-27 16:43:12] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39090944>=10485760
+[2023-05-27 16:43:12] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: sc8prx
+[2023-05-27 16:43:12] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-27 16:43:12] INFO root fetch - processPackages [asociita]: executing diffoscope
+[2023-05-27 16:43:12] INFO root fetch - processPackages [asociita]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asociita-0.1.6.5.tar.gz tmp/asociita-0.1.6.6.tar.gz --markdown 20230527/a/asociita/0.1.6.5-0.1.6.6/diff.md --exclude *.pyd
+[2023-05-27 16:43:13] INFO root fetch - processPackages [finddd]: executing diffoscope
+[2023-05-27 16:43:13] INFO root fetch - processPackages [finddd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finddd-0.2.0.tar.gz tmp/finddd-0.2.1.tar.gz --markdown 20230527/f/finddd/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-27 16:43:13] WARNING root fetch - processPackages [syglass]: Skipping package: exceeds size limit 77536820>=10485760
+[2023-05-27 16:43:13] INFO root fetch - processPackages [syglass]: Start processing: custom-chat-gpt
+[2023-05-27 16:43:13] INFO root fetch - main [MainThread]: End processing [syglass] error
+[2023-05-27 16:43:13] INFO root fetch - processPackages [sc8prx]: New version: [3.0b0] Old Version: [3.0.3]
+[2023-05-27 16:43:13] INFO root fetch - processPackages [pymarc]: Downloading https://files.pythonhosted.org/packages/2f/1a/45bb431e4ca238f6a8e65fa35cd19ed42bd2f7f107f454a0754916ef0274/pymarc-5.1.0.tar.gz
+[2023-05-27 16:43:13] INFO root fetch - processPackages [jupyterlab-tensorboard-pro]: Downloading https://files.pythonhosted.org/packages/44/2e/17e265fd559bed4809d48db68c8d15b17e83e2f9ad17f4ed74c7d91d80a2/jupyterlab_tensorboard_pro-0.7.1-py2.py3-none-any.whl
+[2023-05-27 16:43:13] INFO root fetch - processPackages [sc8prx]: Downloading https://files.pythonhosted.org/packages/c3/b2/99783bf48cef27e5d94c6ace86ad8d9e370c724de8ff9c7e4472b53b60a3/sc8prx-3.0.3.tar.gz
+[2023-05-27 16:43:13] INFO root fetch - processPackages [custom-chat-gpt]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-27 16:43:13] INFO root fetch - processPackages [pymarc]: executing diffoscope
+[2023-05-27 16:43:13] INFO root fetch - processPackages [pymarc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymarc-5.0.0.tar.gz tmp/pymarc-5.1.0.tar.gz --markdown 20230527/p/pymarc/5.0.0-5.1.0/diff.md --exclude *.pyd
+[2023-05-27 16:43:13] INFO root fetch - processPackages [ckanext-check-link]: Downloading https://files.pythonhosted.org/packages/18/fd/858ff1a67f9a8b73193ccd53ee033228ec0e34edee95956698175b8cacdf/ckanext-check-link-0.1.1.post1.tar.gz
+[2023-05-27 16:43:13] INFO root fetch - processPackages [pyezviz]: Downloading https://files.pythonhosted.org/packages/24/bc/1266f784d5c646f2152ddba483afc76f58cec959a0728d19cf80d7e04637/pyezviz-0.2.0.9.tar.gz
+[2023-05-27 16:43:13] INFO root fetch - processPackages [sc8pr]: Downloading https://files.pythonhosted.org/packages/92/cd/78c38faa7c052837cc867449813071b3f1b64518607f07507a34388e1c0e/sc8pr-3.0b0.tar.gz
+[2023-05-27 16:43:13] INFO root fetch - processPackages [jupyterlab-tensorboard-pro]: executing diffoscope
+[2023-05-27 16:43:13] INFO root fetch - processPackages [jupyterlab-tensorboard-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_tensorboard_pro-0.7.0-py2.py3-none-any.whl.zip tmp/jupyterlab_tensorboard_pro-0.7.1-py2.py3-none-any.whl.zip --markdown 20230527/j/jupyterlab-tensorboard-pro/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-27 16:43:13] INFO root fetch - processPackages [ckanext-check-link]: executing diffoscope
+[2023-05-27 16:43:13] INFO root fetch - processPackages [ckanext-check-link]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckanext-check-link-0.1.1.tar.gz tmp/ckanext-check-link-0.1.1.post1.tar.gz --markdown 20230527/c/ckanext-check-link/0.1.1-0.1.1.post1/diff.md --exclude *.pyd
+[2023-05-27 16:43:13] INFO root fetch - processPackages [custom-chat-gpt]: Downloading https://files.pythonhosted.org/packages/63/07/82fddf85f16eb7eec1a2a05ac95cab04299166f010959e1a2e4e86d20aa3/custom_chat_gpt-0.2.2.tar.gz
+[2023-05-27 16:43:13] INFO root fetch - processPackages [sc8pr]: executing diffoscope
+[2023-05-27 16:43:13] INFO root fetch - processPackages [sc8pr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc8pr-3.0a2.tar.gz tmp/sc8pr-3.0b0.tar.gz --markdown 20230527/s/sc8pr/3.0a2-3.0b0/diff.md --exclude *.pyd
+[2023-05-27 16:43:13] INFO root fetch - processPackages [pyezviz]: executing diffoscope
+[2023-05-27 16:43:13] INFO root fetch - processPackages [pyezviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyezviz-0.2.0.8.tar.gz tmp/pyezviz-0.2.0.9.tar.gz --markdown 20230527/p/pyezviz/0.2.0.8-0.2.0.9/diff.md --exclude *.pyd
+[2023-05-27 16:43:13] INFO root fetch - processPackages [sc8prx]: Downloading https://files.pythonhosted.org/packages/bb/d5/9b62ca9d4caa9c8875bd1948668fce45e9b3fbe764591848710bb55965bf/sc8prx-3.0b0.tar.gz
+[2023-05-27 16:43:13] INFO root fetch - processPackages [herbiv]: Downloading https://files.pythonhosted.org/packages/46/25/e684f0c4f8a4dc5412e74d2f62e6652aebfb306b5169a40d0471c899036b/herbiv-0.1a6.tar.gz
+[2023-05-27 16:43:13] INFO root fetch - processPackages [sc8prx]: executing diffoscope
+[2023-05-27 16:43:13] INFO root fetch - processPackages [sc8prx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sc8prx-3.0.3.tar.gz tmp/sc8prx-3.0b0.tar.gz --markdown 20230527/s/sc8prx/3.0.3-3.0b0/diff.md --exclude *.pyd
+[2023-05-27 16:43:13] INFO root fetch - processPackages [herbiv]: executing diffoscope
+[2023-05-27 16:43:13] INFO root fetch - processPackages [herbiv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/herbiv-0.1a5.tar.gz tmp/herbiv-0.1a6.tar.gz --markdown 20230527/h/herbiv/0.1a5-0.1a6/diff.md --exclude *.pyd
+[2023-05-27 16:43:13] INFO root fetch - processPackages [custom-chat-gpt]: Downloading https://files.pythonhosted.org/packages/db/df/a18e19e57fc25eb65297cebdccb02cc292e8111b2717af6d0d177c3940bc/custom_chat_gpt-0.2.3.tar.gz
+[2023-05-27 16:43:14] INFO root fetch - processPackages [custom-chat-gpt]: executing diffoscope
+[2023-05-27 16:43:14] INFO root fetch - processPackages [custom-chat-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom_chat_gpt-0.2.2.tar.gz tmp/custom_chat_gpt-0.2.3.tar.gz --markdown 20230527/c/custom-chat-gpt/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-27 16:43:14] INFO root fetch - main [MainThread]: End processing [finddd]: success
+[2023-05-27 16:43:14] INFO root fetch - main [MainThread]: End processing [pyezviz]: success
+[2023-05-27 16:43:14] INFO root fetch - main [MainThread]: End processing [asociita]: success
+[2023-05-27 16:43:15] INFO root fetch - main [MainThread]: End processing [custom-chat-gpt]: success
+[2023-05-27 16:43:15] INFO root fetch - main [MainThread]: End processing [ckanext-check-link]: success
+[2023-05-27 16:43:15] INFO root fetch - main [MainThread]: End processing [jupyterlab-tensorboard-pro]: success
+[2023-05-27 16:43:15] INFO root fetch - main [MainThread]: End processing [sc8prx]: success
+[2023-05-27 16:43:17] INFO root fetch - main [MainThread]: End processing [sc8pr]: success
+[2023-05-27 16:43:17] INFO root fetch - main [MainThread]: End processing [pymarc]: success
+[2023-05-27 16:43:18] INFO root fetch - main [MainThread]: End processing [herbiv]: success
+[2023-05-27 16:43:18] INFO root fetch - main [MainThread]: Store serial: [18274914]
