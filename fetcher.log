@@ -11868,3 +11868,62 @@
 [2023-05-27 21:49:16] INFO root fetch - main [MainThread]: End processing [alacorder]: success
 [2023-05-27 21:50:04] INFO root fetch - main [MainThread]: End processing [jupyter-converter]: success
 [2023-05-27 21:50:04] INFO root fetch - main [MainThread]: Store serial: [18276456]
+[2023-05-27 21:55:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276456]
+[2023-05-27 21:55:13] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-27 21:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyemaps
+[2023-05-27 21:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbspace
+[2023-05-27 21:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: seleniumuser
+[2023-05-27 21:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: croydon
+[2023-05-27 21:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jupyter-converter
+[2023-05-27 21:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mofmt
+[2023-05-27 21:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dbt-clickzetta
+[2023-05-27 21:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bakevianarengi
+[2023-05-27 21:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: python-mbedtls
+[2023-05-27 21:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyqint
+[2023-05-27 21:55:13] WARNING root fetch - processPackages [mofmt]: Skipping, unable to determine old version
+[2023-05-27 21:55:13] INFO root fetch - main [MainThread]: End processing [mofmt] error
+[2023-05-27 21:55:13] INFO root fetch - processPackages [pyemaps]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-27 21:55:13] INFO root fetch - processPackages [croydon]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-27 21:55:13] INFO root fetch - processPackages [jupyter-converter]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-27 21:55:13] INFO root fetch - processPackages [dbspace]: New version: [0.3.1] Old Version: [0.2.1]
+[2023-05-27 21:55:13] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-27 21:55:13] INFO root fetch - processPackages [seleniumuser]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-27 21:55:13] WARNING root fetch - processPackages [bakevianarengi]: Skipping, unable to determine old version
+[2023-05-27 21:55:13] INFO root fetch - processPackages [pyqint]: New version: [0.9.7.2] Old Version: [0.9.7.1]
+[2023-05-27 21:55:13] INFO root fetch - main [MainThread]: End processing [bakevianarengi] error
+[2023-05-27 21:55:13] INFO root fetch - processPackages [python-mbedtls]: New version: [2.7.0] Old Version: [2.6.1]
+[2023-05-27 21:55:13] INFO root fetch - processPackages [croydon]: executing diffoscope
+[2023-05-27 21:55:13] INFO root fetch - processPackages [croydon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croydon-0.9.0.tar.gz tmp/croydon-0.9.1.tar.gz --markdown 20230527/c/croydon/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-27 21:55:13] INFO root fetch - processPackages [pyemaps]: Downloading https://files.pythonhosted.org/packages/2d/b1/ae9e2ca9f9fb910cb84b021c77fe4105cac0eccb6fbd50df41820e9d1dba/pyemaps-1.0.5.tar.gz
+[2023-05-27 21:55:13] INFO root fetch - processPackages [dbspace]: Downloading https://files.pythonhosted.org/packages/11/9d/19bf9d5afcc9f77c091d3712c7a1b956895750809c1ed4218a18da47c009/dbspace-0.2.1.tar.gz
+[2023-05-27 21:55:13] INFO root fetch - processPackages [jupyter-converter]: Downloading https://files.pythonhosted.org/packages/9e/2d/b9c477a91f7277d5f9a4bedcf4a89c25aecfbf79ffc55eb0bed12fa9fe97/jupyter_converter-0.0.3-py3-none-any.whl
+[2023-05-27 21:55:13] INFO root fetch - processPackages [dbt-clickzetta]: Downloading https://files.pythonhosted.org/packages/49/36/b13a1783730fa288c39fd6ba62a180ce9bfe2b190fc6aaeccf3e7d314d41/dbt-clickzetta-0.0.8.tar.gz
+[2023-05-27 21:55:13] INFO root fetch - processPackages [seleniumuser]: Downloading https://files.pythonhosted.org/packages/28/80/393a597fe8e7845187b7fc3cabc703dcd53034bd6663076bc81fcb47356c/seleniumuser-1.1.1.tar.gz
+[2023-05-27 21:55:13] INFO root fetch - processPackages [python-mbedtls]: Downloading https://files.pythonhosted.org/packages/93/0a/0220c79e34f0092d2e1fbb58c47013ee08935176900ee9463dbc2ed05053/python-mbedtls-2.6.1.tar.gz
+[2023-05-27 21:55:13] INFO root fetch - processPackages [jupyter-converter]: executing diffoscope
+[2023-05-27 21:55:13] INFO root fetch - processPackages [jupyter-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter-converter-0.0.2.tar.gz tmp/jupyter_converter-0.0.3-py3-none-any.whl.zip --markdown 20230527/j/jupyter-converter/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-27 21:55:13] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-27 21:55:13] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.7.tar.gz tmp/dbt-clickzetta-0.0.8.tar.gz --markdown 20230527/d/dbt-clickzetta/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-27 21:55:13] INFO root fetch - processPackages [pyemaps]: Downloading https://files.pythonhosted.org/packages/ef/3b/44ea37ec7fff0e29f4d03eb8ef1f854f89a999a0112201795e80e6e4ca78/pyemaps-1.0.6.tar.gz
+[2023-05-27 21:55:13] INFO root fetch - processPackages [dbspace]: Downloading https://files.pythonhosted.org/packages/5a/30/6d91c2be59350237c106ad4d5b3d57c2920692043917db02c6f24faedff5/dbspace-0.3.1.tar.gz
+[2023-05-27 21:55:13] INFO root fetch - processPackages [pyqint]: executing diffoscope
+[2023-05-27 21:55:13] INFO root fetch - processPackages [pyqint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqint-0.9.7.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pyqint-0.9.7.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230527/p/pyqint/0.9.7.1-0.9.7.2/diff.md --exclude *.pyd
+[2023-05-27 21:55:13] INFO root fetch - processPackages [seleniumuser]: Downloading https://files.pythonhosted.org/packages/7d/c0/77e29d122aef47e7dba8e34be25b49e036556c4e58f5c59ee1acc9719f7b/seleniumuser-1.1.2.tar.gz
+[2023-05-27 21:55:13] INFO root fetch - processPackages [dbspace]: executing diffoscope
+[2023-05-27 21:55:13] INFO root fetch - processPackages [dbspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbspace-0.2.1.tar.gz tmp/dbspace-0.3.1.tar.gz --markdown 20230527/d/dbspace/0.2.1-0.3.1/diff.md --exclude *.pyd
+[2023-05-27 21:55:13] INFO root fetch - processPackages [python-mbedtls]: Downloading https://files.pythonhosted.org/packages/11/ee/9ab2a8521ae7c20478ed19c68b4ac82b298a7b79faad086a7d1299b08a0f/python-mbedtls-2.7.0.tar.gz
+[2023-05-27 21:55:13] INFO root fetch - processPackages [pyemaps]: executing diffoscope
+[2023-05-27 21:55:13] INFO root fetch - processPackages [pyemaps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyemaps-1.0.5.tar.gz tmp/pyemaps-1.0.6.tar.gz --markdown 20230527/p/pyemaps/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-27 21:55:13] INFO root fetch - processPackages [seleniumuser]: executing diffoscope
+[2023-05-27 21:55:13] INFO root fetch - processPackages [seleniumuser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seleniumuser-1.1.1.tar.gz tmp/seleniumuser-1.1.2.tar.gz --markdown 20230527/s/seleniumuser/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-27 21:55:13] INFO root fetch - processPackages [python-mbedtls]: executing diffoscope
+[2023-05-27 21:55:13] INFO root fetch - processPackages [python-mbedtls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-mbedtls-2.6.1.tar.gz tmp/python-mbedtls-2.7.0.tar.gz --markdown 20230527/p/python-mbedtls/2.6.1-2.7.0/diff.md --exclude *.pyd
+[2023-05-27 21:55:14] INFO root fetch - main [MainThread]: End processing [jupyter-converter]: success
+[2023-05-27 21:55:15] INFO root fetch - main [MainThread]: End processing [dbspace]: success
+[2023-05-27 21:55:15] INFO root fetch - main [MainThread]: End processing [seleniumuser]: success
+[2023-05-27 21:55:15] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-27 21:55:15] INFO root fetch - main [MainThread]: End processing [croydon]: success
+[2023-05-27 21:55:15] INFO root fetch - main [MainThread]: End processing [python-mbedtls]: success
+[2023-05-27 21:55:38] INFO root fetch - main [MainThread]: End processing [pyqint]: success
+[2023-05-27 21:56:01] INFO root fetch - main [MainThread]: End processing [pyemaps]: success
+[2023-05-27 21:56:01] INFO root fetch - main [MainThread]: Store serial: [18276511]
