@@ -5312,3 +5312,52 @@
 [2023-05-27 08:06:01] INFO root fetch - main [MainThread]: End processing [pybi-next]: success
 [2023-05-27 08:06:04] INFO root fetch - main [MainThread]: End processing [limnoria]: success
 [2023-05-27 08:06:04] INFO root fetch - main [MainThread]: Store serial: [18272556]
+[2023-05-27 08:11:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272556]
+[2023-05-27 08:11:14] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 08:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyg-nightly
+[2023-05-27 08:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pipen-board
+[2023-05-27 08:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-aiven
+[2023-05-27 08:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vodex
+[2023-05-27 08:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-kong
+[2023-05-27 08:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-fastly
+[2023-05-27 08:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: season
+[2023-05-27 08:11:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-equinix-metal
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pipen-board]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-kong]: New version: [4.6.0a1685166077] Old Version: [4.6.0a1685079815]
+[2023-05-27 08:11:14] INFO root fetch - processPackages [vodex]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-equinix-metal]: New version: [3.3.0a1685084022] Old Version: [3.3.0a1684388257]
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-aiven]: New version: [6.4.0a1685165025] Old Version: [6.4.0a1685078766]
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-fastly]: New version: [8.1.0a1685165775] Old Version: [8.0.0a1685125423]
+[2023-05-27 08:11:14] INFO root fetch - processPackages [season]: New version: [2.3.4] Old Version: [2.3.3]
+[2023-05-27 08:11:14] INFO root fetch - processPackages [vodex]: executing diffoscope
+[2023-05-27 08:11:14] INFO root fetch - processPackages [vodex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vodex-1.0.8.tar.gz tmp/vodex-1.0.9.tar.gz --markdown 20230527/v/vodex/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-equinix-metal]: executing diffoscope
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-equinix-metal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_equinix_metal-3.3.0a1684388257.tar.gz tmp/pulumi_equinix_metal-3.3.0a1685084022.tar.gz --markdown 20230527/p/pulumi-equinix-metal/3.3.0a1684388257-3.3.0a1685084022/diff.md --exclude *.pyd
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pipen-board]: Downloading https://files.pythonhosted.org/packages/d4/11/1d7a207a2d11c5d6ac65c5260d638286d035c1c66dea02840817ae8ccbd9/pipen_board-0.2.7.tar.gz
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-kong]: Downloading https://files.pythonhosted.org/packages/4c/4f/24b4be6e3180a4ca2eb034fe6230e967ec03cb8c34ecd41de6dbcb859b3e/pulumi_kong-4.6.0a1685166077.tar.gz
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-aiven]: Downloading https://files.pythonhosted.org/packages/cc/a0/0e56b735f6d40d89521a5b9e9c7656ff37065b03bb0809c786bb453f8b59/pulumi_aiven-6.4.0a1685165025.tar.gz
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/77/15/eef621665247726e0d592eafbb4f212e0a295335f90bad796c4d00212263/pulumi_fastly-8.1.0a1685165775.tar.gz
+[2023-05-27 08:11:14] INFO root fetch - processPackages [season]: Downloading https://files.pythonhosted.org/packages/6d/5a/6197a58e502a8e5b3adb11aa4227bd9ea3ed2f58b144d5d1d4ef6228c82d/season-2.3.3-py3-none-any.whl
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pipen-board]: executing diffoscope
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pipen-board]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_board-0.2.6.tar.gz tmp/pipen_board-0.2.7.tar.gz --markdown 20230527/p/pipen-board/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230527] Old Version: [2.4.0.dev20230526]
+[2023-05-27 08:11:14] WARNING root fetch - processPackages [season]: Skipping package: exceeds size limit 13772788>=10485760
+[2023-05-27 08:11:14] INFO root fetch - main [MainThread]: End processing [season] error
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-kong]: executing diffoscope
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-kong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kong-4.6.0a1685079815.tar.gz tmp/pulumi_kong-4.6.0a1685166077.tar.gz --markdown 20230527/p/pulumi-kong/4.6.0a1685079815-4.6.0a1685166077/diff.md --exclude *.pyd
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-fastly]: executing diffoscope
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-fastly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_fastly-8.0.0a1685125423.tar.gz tmp/pulumi_fastly-8.1.0a1685165775.tar.gz --markdown 20230527/p/pulumi-fastly/8.0.0a1685125423-8.1.0a1685165775/diff.md --exclude *.pyd
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-aiven]: executing diffoscope
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pulumi-aiven]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aiven-6.4.0a1685078766.tar.gz tmp/pulumi_aiven-6.4.0a1685165025.tar.gz --markdown 20230527/p/pulumi-aiven/6.4.0a1685078766-6.4.0a1685165025/diff.md --exclude *.pyd
+[2023-05-27 08:11:14] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/77/fd/6bfeb3474965e1fee6b2d86e2ca9c9fffdf5be37d1d90361308782a1038e/pyg_nightly-2.4.0.dev20230526.tar.gz
+[2023-05-27 08:11:15] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/f7/33/9c5e8a4c7c966f0e8d466d2880cfd5820d51d9960eb1f671d55d04ff95b9/pyg_nightly-2.4.0.dev20230527.tar.gz
+[2023-05-27 08:11:15] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-05-27 08:11:15] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.4.0.dev20230526.tar.gz tmp/pyg_nightly-2.4.0.dev20230527.tar.gz --markdown 20230527/p/pyg-nightly/2.4.0.dev20230526-2.4.0.dev20230527/diff.md --exclude *.pyd
+[2023-05-27 08:11:15] INFO root fetch - main [MainThread]: End processing [pulumi-equinix-metal]: success
+[2023-05-27 08:11:16] INFO root fetch - main [MainThread]: End processing [pipen-board]: success
+[2023-05-27 08:11:16] INFO root fetch - main [MainThread]: End processing [pulumi-kong]: success
+[2023-05-27 08:11:16] INFO root fetch - main [MainThread]: End processing [pulumi-fastly]: success
+[2023-05-27 08:11:16] INFO root fetch - main [MainThread]: End processing [pulumi-aiven]: success
+[2023-05-27 08:11:19] INFO root fetch - main [MainThread]: End processing [vodex]: success
+[2023-05-27 08:11:22] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-05-27 08:11:22] INFO root fetch - main [MainThread]: Store serial: [18272575]
