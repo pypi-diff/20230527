@@ -12732,3 +12732,27 @@
 [2023-05-27 23:51:17] INFO root fetch - main [MainThread]: End processing [PyQCAMS]: success
 [2023-05-27 23:51:24] INFO root fetch - main [MainThread]: End processing [printnanny-api-client]: success
 [2023-05-27 23:51:24] INFO root fetch - main [MainThread]: Store serial: [18277072]
+[2023-05-27 23:56:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277072]
+[2023-05-27 23:56:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 23:56:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chatcmd
+[2023-05-27 23:56:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seaplayer
+[2023-05-27 23:56:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autoAmbient
+[2023-05-27 23:56:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: insidepostgresql
+[2023-05-27 23:56:33] INFO root fetch - processPackages [autoAmbient]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-27 23:56:33] WARNING root fetch - processPackages [insidepostgresql]: Skipping, unable to determine old version
+[2023-05-27 23:56:33] INFO root fetch - processPackages [chatcmd]: New version: [1.0.29] Old Version: [1.0.28]
+[2023-05-27 23:56:33] INFO root fetch - main [MainThread]: End processing [insidepostgresql] error
+[2023-05-27 23:56:33] INFO root fetch - processPackages [seaplayer]: New version: [0.5.4.dev3] Old Version: [0.5.4.dev2]
+[2023-05-27 23:56:33] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/fe/c0/b4ce382df4a80cc7c5368c41162e60d936057cfe76ceb60815b2d058070c/chatcmd-1.0.29.tar.gz
+[2023-05-27 23:56:33] INFO root fetch - processPackages [seaplayer]: Downloading https://files.pythonhosted.org/packages/44/b0/c58b559a4ac29483b8767090ebab22cada4d5d3ca4d233906218fa9eea60/seaplayer-0.5.4.dev3.tar.gz
+[2023-05-27 23:56:33] INFO root fetch - processPackages [autoAmbient]: Downloading https://files.pythonhosted.org/packages/cf/97/b7586e1222cf3fd5a673a766a216eba131f2c32ee52f28bc28df540ccfb7/autoAmbient-0.3.4.tar.gz
+[2023-05-27 23:56:33] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-27 23:56:33] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.28.tar.gz tmp/chatcmd-1.0.29.tar.gz --markdown 20230527/c/chatcmd/1.0.28-1.0.29/diff.md --exclude *.pyd
+[2023-05-27 23:56:33] INFO root fetch - processPackages [seaplayer]: executing diffoscope
+[2023-05-27 23:56:33] INFO root fetch - processPackages [seaplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplayer-0.5.4.dev2.tar.gz tmp/seaplayer-0.5.4.dev3.tar.gz --markdown 20230527/s/seaplayer/0.5.4.dev2-0.5.4.dev3/diff.md --exclude *.pyd
+[2023-05-27 23:56:33] INFO root fetch - processPackages [autoAmbient]: executing diffoscope
+[2023-05-27 23:56:33] INFO root fetch - processPackages [autoAmbient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoAmbient-0.3.3.tar.gz tmp/autoAmbient-0.3.4.tar.gz --markdown 20230527/a/autoAmbient/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-27 23:56:34] INFO root fetch - main [MainThread]: End processing [autoAmbient]: success
+[2023-05-27 23:56:34] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-27 23:56:34] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
+[2023-05-27 23:56:34] INFO root fetch - main [MainThread]: Store serial: [18277085]
