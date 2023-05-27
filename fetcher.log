@@ -8058,3 +8058,43 @@
 [2023-05-27 13:54:02] INFO root fetch - main [MainThread]: End processing [django-daraja]: success
 [2023-05-27 13:54:02] INFO root fetch - main [MainThread]: End processing [lycium]: success
 [2023-05-27 13:54:02] INFO root fetch - main [MainThread]: Store serial: [18274107]
+[2023-05-27 13:59:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274107]
+[2023-05-27 13:59:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 13:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lacuscore
+[2023-05-27 13:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coolapi
+[2023-05-27 13:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LyricLib
+[2023-05-27 13:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Musicreater
+[2023-05-27 13:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: unlimitedgpt
+[2023-05-27 13:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aa-charlink
+[2023-05-27 13:59:11] INFO root fetch - processPackages [lacuscore]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-27 13:59:11] INFO root fetch - processPackages [Musicreater]: New version: [1.0.0] Old Version: [0.5.1]
+[2023-05-27 13:59:11] INFO root fetch - processPackages [LyricLib]: New version: [0.0.3.1] Old Version: [0.0.3]
+[2023-05-27 13:59:11] INFO root fetch - processPackages [coolapi]: New version: [1.0] Old Version: [0.0.1]
+[2023-05-27 13:59:11] INFO root fetch - processPackages [aa-charlink]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-27 13:59:11] INFO root fetch - processPackages [unlimitedgpt]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-27 13:59:11] INFO root fetch - processPackages [Musicreater]: Downloading https://files.pythonhosted.org/packages/6c/1f/a675c3939f1fec5225ebdce970190169b8d8445346f96a497f169842e1df/Musicreater-0.5.1.tar.gz
+[2023-05-27 13:59:11] INFO root fetch - processPackages [aa-charlink]: executing diffoscope
+[2023-05-27 13:59:11] INFO root fetch - processPackages [aa-charlink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa-charlink-0.5.0.tar.gz tmp/aa-charlink-0.5.1.tar.gz --markdown 20230527/a/aa-charlink/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-27 13:59:11] INFO root fetch - processPackages [unlimitedgpt]: Downloading https://files.pythonhosted.org/packages/65/b3/c409f118901523e7141c19b1dc684f56dc0f1e6903748663597276223a82/unlimitedgpt-0.0.6.tar.gz
+[2023-05-27 13:59:12] INFO root fetch - processPackages [coolapi]: Downloading https://files.pythonhosted.org/packages/58/ea/bfb9478d08014cbd1e89cb9926ff448c316d8d7aeb71e621f60a97bcc8b1/coolapi-0.0.1.tar.gz
+[2023-05-27 13:59:12] INFO root fetch - processPackages [LyricLib]: Downloading https://files.pythonhosted.org/packages/f9/0f/08cbdb1d8540f917359a155ebd6404457548a8a4f8d04fa30c37fab7a887/LyricLib-0.0.3.tar.gz
+[2023-05-27 13:59:12] INFO root fetch - processPackages [Musicreater]: Downloading https://files.pythonhosted.org/packages/4e/5c/bf303004da4444e569f53c775cd654ee18257aa4f241265ade644aef1410/Musicreater-1.0.0.tar.gz
+[2023-05-27 13:59:12] INFO root fetch - processPackages [unlimitedgpt]: executing diffoscope
+[2023-05-27 13:59:12] INFO root fetch - processPackages [unlimitedgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unlimitedgpt-0.0.5.tar.gz tmp/unlimitedgpt-0.0.6.tar.gz --markdown 20230527/u/unlimitedgpt/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-27 13:59:12] INFO root fetch - processPackages [LyricLib]: Downloading https://files.pythonhosted.org/packages/b4/af/9c55ffa93244aeeda6bff01a0cffcdb01453b9f85544a155fce34b0a3272/LyricLib-0.0.3.1.tar.gz
+[2023-05-27 13:59:12] INFO root fetch - processPackages [coolapi]: Downloading https://files.pythonhosted.org/packages/c4/82/272b2def6886be50f9f525f3563924e5d2a84c2c2023f9444ac50cc306c0/coolapi-1.0.tar.gz
+[2023-05-27 13:59:12] INFO root fetch - processPackages [Musicreater]: executing diffoscope
+[2023-05-27 13:59:12] INFO root fetch - processPackages [Musicreater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Musicreater-0.5.1.tar.gz tmp/Musicreater-1.0.0.tar.gz --markdown 20230527/M/Musicreater/0.5.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-27 13:59:12] INFO root fetch - processPackages [LyricLib]: executing diffoscope
+[2023-05-27 13:59:12] INFO root fetch - processPackages [LyricLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LyricLib-0.0.3.tar.gz tmp/LyricLib-0.0.3.1.tar.gz --markdown 20230527/L/LyricLib/0.0.3-0.0.3.1/diff.md --exclude *.pyd
+[2023-05-27 13:59:12] INFO root fetch - processPackages [coolapi]: executing diffoscope
+[2023-05-27 13:59:12] INFO root fetch - processPackages [coolapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coolapi-0.0.1.tar.gz tmp/coolapi-1.0.tar.gz --markdown 20230527/c/coolapi/0.0.1-1.0/diff.md --exclude *.pyd
+[2023-05-27 13:59:13] INFO root fetch - main [MainThread]: End processing [aa-charlink]: success
+[2023-05-27 13:59:13] INFO root fetch - main [MainThread]: End processing [unlimitedgpt]: success
+[2023-05-27 13:59:13] INFO root fetch - main [MainThread]: End processing [coolapi]: success
+[2023-05-27 13:59:13] INFO root fetch - main [MainThread]: End processing [LyricLib]: success
+[2023-05-27 13:59:14] INFO root fetch - main [MainThread]: End processing [Musicreater]: success
+[2023-05-27 13:59:15] INFO root fetch - processPackages [lacuscore]: executing diffoscope
+[2023-05-27 13:59:15] INFO root fetch - processPackages [lacuscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lacuscore-1.4.8.tar.gz tmp/lacuscore-1.4.9.tar.gz --markdown 20230527/l/lacuscore/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-27 13:59:16] INFO root fetch - main [MainThread]: End processing [lacuscore]: success
+[2023-05-27 13:59:16] INFO root fetch - main [MainThread]: Store serial: [18274125]
