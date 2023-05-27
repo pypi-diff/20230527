@@ -7881,3 +7881,37 @@
 [2023-05-27 13:32:25] INFO root fetch - main [MainThread]: End processing [asociita]: success
 [2023-05-27 13:32:26] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
 [2023-05-27 13:32:26] INFO root fetch - main [MainThread]: Store serial: [18274029]
+[2023-05-27 13:37:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274029]
+[2023-05-27 13:37:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 13:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-serving
+[2023-05-27 13:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbpyman
+[2023-05-27 13:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dxsp
+[2023-05-27 13:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbpyman
+[2023-05-27 13:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyre-check-nightly
+[2023-05-27 13:37:34] INFO root fetch - processPackages [bigdl-serving]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 13:37:34] INFO root fetch - processPackages [dxsp]: New version: [2.5.3] Old Version: [2.5.2]
+[2023-05-27 13:37:34] INFO root fetch - processPackages [dbpyman]: New version: [0.1.41] Old Version: [0.1.4]
+[2023-05-27 13:37:34] INFO root fetch - processPackages [dbpyman]: New version: [0.1.41] Old Version: [0.1.4]
+[2023-05-27 13:37:35] INFO root fetch - processPackages [dbpyman]: Downloading https://files.pythonhosted.org/packages/db/e1/baa9c69b0d3e77181081bd06bdaeca8c36d2a5cea6d1bf6dbc795942130b/dbpyman-0.1.4.tar.gz
+[2023-05-27 13:37:35] INFO root fetch - processPackages [dbpyman]: Downloading https://files.pythonhosted.org/packages/db/e1/baa9c69b0d3e77181081bd06bdaeca8c36d2a5cea6d1bf6dbc795942130b/dbpyman-0.1.4.tar.gz
+[2023-05-27 13:37:35] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101685185924] Old Version: [0.0.101685099516]
+[2023-05-27 13:37:35] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/ea/57/912bb98f3c2ad79e2cbe97088285b5cf6bdda2a4e27938ab5a3de95ca577/dxsp-2.5.3.tar.gz
+[2023-05-27 13:37:35] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-27 13:37:35] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.5.2.tar.gz tmp/dxsp-2.5.3.tar.gz --markdown 20230527/d/dxsp/2.5.2-2.5.3/diff.md --exclude *.pyd
+[2023-05-27 13:37:35] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/53/d5/ad369bd8493246a12fbfefe3eac9ceefdb0a595d91cdea50e0d2a6df6832/pyre_check_nightly-0.0.101685099516-py3-none-manylinux1_x86_64.whl
+[2023-05-27 13:37:35] INFO root fetch - processPackages [bigdl-serving]: Downloading https://files.pythonhosted.org/packages/b7/b2/8d6a7fae15ac031fbed413980e61378d3e422927e6631ed7079044d5ef70/bigdl_serving-2.4.0b20230527-py2.py3-none-any.whl
+[2023-05-27 13:37:35] INFO root fetch - processPackages [dbpyman]: Downloading https://files.pythonhosted.org/packages/0b/d1/414849e0b60ae625e2b38e77554662b920bfe7cc3a1eb57739982a55a0a5/dbpyman-0.1.41.tar.gz
+[2023-05-27 13:37:35] INFO root fetch - processPackages [dbpyman]: Downloading https://files.pythonhosted.org/packages/0b/d1/414849e0b60ae625e2b38e77554662b920bfe7cc3a1eb57739982a55a0a5/dbpyman-0.1.41.tar.gz
+[2023-05-27 13:37:35] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 45870248>=10485760
+[2023-05-27 13:37:35] INFO root fetch - main [MainThread]: End processing [pyre-check-nightly] error
+[2023-05-27 13:37:35] INFO root fetch - processPackages [bigdl-serving]: executing diffoscope
+[2023-05-27 13:37:35] INFO root fetch - processPackages [bigdl-serving]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_serving-2.4.0b20230526-py2.py3-none-any.whl.zip tmp/bigdl_serving-2.4.0b20230527-py2.py3-none-any.whl.zip --markdown 20230527/b/bigdl-serving/2.4.0b20230526-2.4.0b20230527/diff.md --exclude *.pyd
+[2023-05-27 13:37:35] INFO root fetch - processPackages [dbpyman]: executing diffoscope
+[2023-05-27 13:37:35] INFO root fetch - processPackages [dbpyman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbpyman-0.1.4.tar.gz tmp/dbpyman-0.1.41.tar.gz --markdown 20230527/d/dbpyman/0.1.4-0.1.41/diff.md --exclude *.pyd
+[2023-05-27 13:37:35] INFO root fetch - processPackages [dbpyman]: executing diffoscope
+[2023-05-27 13:37:35] INFO root fetch - processPackages [dbpyman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbpyman-0.1.4.tar.gz tmp/dbpyman-0.1.41.tar.gz --markdown 20230527/d/dbpyman/0.1.4-0.1.41/diff.md --exclude *.pyd
+[2023-05-27 13:37:36] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-27 13:37:36] INFO root fetch - main [MainThread]: End processing [bigdl-serving]: success
+[2023-05-27 13:37:36] INFO root fetch - main [MainThread]: End processing [dbpyman]: success
+[2023-05-27 13:37:37] INFO root fetch - main [MainThread]: End processing [dbpyman]: success
+[2023-05-27 13:37:37] INFO root fetch - main [MainThread]: Store serial: [18274047]
