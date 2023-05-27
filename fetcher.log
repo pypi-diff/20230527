@@ -10170,3 +10170,37 @@
 [2023-05-27 17:41:41] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
 [2023-05-27 17:41:49] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
 [2023-05-27 17:41:49] INFO root fetch - main [MainThread]: Store serial: [18275379]
+[2023-05-27 17:46:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275379]
+[2023-05-27 17:46:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 17:46:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyconvertapi-image-converter
+[2023-05-27 17:46:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PLpy234-project-1
+[2023-05-27 17:46:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: widelearning
+[2023-05-27 17:46:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PayEquity
+[2023-05-27 17:46:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webpy-framework
+[2023-05-27 17:46:59] INFO root fetch - processPackages [widelearning]: New version: [0.8.1] Old Version: [0.7.6]
+[2023-05-27 17:46:59] INFO root fetch - processPackages [pyconvertapi-image-converter]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 17:46:59] INFO root fetch - processPackages [PLpy234-project-1]: New version: [2.0] Old Version: [1.0]
+[2023-05-27 17:46:59] INFO root fetch - processPackages [PayEquity]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-27 17:46:59] INFO root fetch - processPackages [webpy-framework]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-05-27 17:46:59] INFO root fetch - processPackages [PLpy234-project-1]: Downloading https://files.pythonhosted.org/packages/0f/1d/63628a448d8c618e441493ae7cef252d722b4cee5819468e2043fab87281/PLpy234%20project%201-1.0.tar.gz
+[2023-05-27 17:46:59] INFO root fetch - processPackages [PayEquity]: Downloading https://files.pythonhosted.org/packages/54/d9/a1c3882622f4cc3146f4d50eb9237eaf4df39ac01f358a249374ebb9e5d5/PayEquity-0.1.6.tar.gz
+[2023-05-27 17:46:59] INFO root fetch - processPackages [widelearning]: Downloading https://files.pythonhosted.org/packages/c9/06/d8bda1fa38ed0a9d574c1409053db512ae8ddf1d3e6e3b4ed3baa964ad30/widelearning-0.8.1.tar.gz
+[2023-05-27 17:46:59] INFO root fetch - processPackages [webpy-framework]: Downloading https://files.pythonhosted.org/packages/1f/d4/355b7d17a0d7d4b001352c7cff7d1d472c108a4451efa237368e1724d972/webpy-framework-1.1.0.tar.gz
+[2023-05-27 17:46:59] INFO root fetch - processPackages [pyconvertapi-image-converter]: Downloading https://files.pythonhosted.org/packages/f8/23/17167dd020ece8385fef177c1185394e7687851e289259d456500cbf3ee2/pyconvertapi_image_converter-0.1.2.tar.gz
+[2023-05-27 17:46:59] INFO root fetch - processPackages [widelearning]: executing diffoscope
+[2023-05-27 17:46:59] INFO root fetch - processPackages [widelearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/widelearning-0.7.6.tar.gz tmp/widelearning-0.8.1.tar.gz --markdown 20230527/w/widelearning/0.7.6-0.8.1/diff.md --exclude *.pyd
+[2023-05-27 17:46:59] INFO root fetch - processPackages [PayEquity]: executing diffoscope
+[2023-05-27 17:46:59] INFO root fetch - processPackages [PayEquity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PayEquity-0.1.5.tar.gz tmp/PayEquity-0.1.6.tar.gz --markdown 20230527/P/PayEquity/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-27 17:46:59] INFO root fetch - processPackages [pyconvertapi-image-converter]: executing diffoscope
+[2023-05-27 17:46:59] INFO root fetch - processPackages [pyconvertapi-image-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyconvertapi_image_converter-0.1.1.tar.gz tmp/pyconvertapi_image_converter-0.1.2.tar.gz --markdown 20230527/p/pyconvertapi-image-converter/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 17:46:59] INFO root fetch - processPackages [PLpy234-project-1]: Downloading https://files.pythonhosted.org/packages/4e/d9/636748d80e5923c96915080372bcaabee25e5cdefdbf6a9544d9ccd35c17/PLpy234%20project%201-2.0.tar.gz
+[2023-05-27 17:46:59] INFO root fetch - processPackages [webpy-framework]: executing diffoscope
+[2023-05-27 17:46:59] INFO root fetch - processPackages [webpy-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webpy-framework-1.0.3.tar.gz tmp/webpy-framework-1.1.0.tar.gz --markdown 20230527/w/webpy-framework/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-05-27 17:47:00] INFO root fetch - processPackages [PLpy234-project-1]: executing diffoscope
+[2023-05-27 17:47:00] INFO root fetch - processPackages [PLpy234-project-1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PLpy234 project 1-1.0.tar.gz tmp/PLpy234 project 1-2.0.tar.gz --markdown 20230527/P/PLpy234-project-1/1.0-2.0/diff.md --exclude *.pyd
+[2023-05-27 17:47:00] INFO root fetch - main [MainThread]: End processing [widelearning]: success
+[2023-05-27 17:47:00] INFO root fetch - main [MainThread]: End processing [pyconvertapi-image-converter]: success
+[2023-05-27 17:47:00] INFO root fetch - main [MainThread]: End processing [PayEquity]: success
+[2023-05-27 17:47:00] INFO root fetch - main [MainThread]: End processing [webpy-framework]: success
+[2023-05-27 17:47:01] INFO root fetch - main [MainThread]: End processing [PLpy234-project-1]: success
+[2023-05-27 17:47:01] INFO root fetch - main [MainThread]: Store serial: [18275443]
