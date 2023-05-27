@@ -1680,3 +1680,173 @@
 [2023-05-27 03:01:28] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2023-05-27 03:03:41] INFO root fetch - main [MainThread]: End processing [raydp-nightly]: success
 [2023-05-27 03:03:41] INFO root fetch - main [MainThread]: Store serial: [18270371]
+[2023-05-27 03:08:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18270371]
+[2023-05-27 03:08:50] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-27 03:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyagrum-nightly
+[2023-05-27 03:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: structure-py
+[2023-05-27 03:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neurotechdevkit
+[2023-05-27 03:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-lambda-layer-curl
+[2023-05-27 03:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: blin
+[2023-05-27 03:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rapidocr-api
+[2023-05-27 03:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: protoletariat
+[2023-05-27 03:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nonebot-plugin-blive-danmaku
+[2023-05-27 03:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: growmax
+[2023-05-27 03:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nssurge-utils
+[2023-05-27 03:08:50] INFO root fetch - processPackages [rapidocr-api]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 03:08:50] WARNING root fetch - processPackages [blin]: Skipping, unable to determine old version
+[2023-05-27 03:08:50] INFO root fetch - processPackages [blin]: Start processing: as3toplevel
+[2023-05-27 03:08:50] INFO root fetch - main [MainThread]: End processing [blin] error
+[2023-05-27 03:08:50] INFO root fetch - processPackages [neurotechdevkit]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-27 03:08:50] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-27 03:08:50] INFO root fetch - processPackages [nssurge-utils]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-27 03:08:50] INFO root fetch - processPackages [structure-py]: New version: [0.9.0] Old Version: [0.8.4]
+[2023-05-27 03:08:50] WARNING root fetch - processPackages [as3toplevel]: Skipping, unable to determine old version
+[2023-05-27 03:08:50] INFO root fetch - processPackages [growmax]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-27 03:08:50] INFO root fetch - processPackages [protoletariat]: New version: [3.2.9] Old Version: [3.2.8]
+[2023-05-27 03:08:50] INFO root fetch - main [MainThread]: End processing [as3toplevel] error
+[2023-05-27 03:08:50] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-27 03:08:50] INFO root fetch - processPackages [neurotechdevkit]: Downloading https://files.pythonhosted.org/packages/c0/ca/b2e666035cfd67c07d86ea41bb079c21dbfe503f942a5df67cfc00f6c818/neurotechdevkit-0.1.0.tar.gz
+[2023-05-27 03:08:50] INFO root fetch - processPackages [rapidocr-api]: Downloading https://files.pythonhosted.org/packages/3b/25/1d16dcb8ebf6702de486f6fad28559451c8946aacacdc188597d2abc58a0/rapidocr_api-0.0.1-py3-none-any.whl
+[2023-05-27 03:08:50] INFO root fetch - processPackages [nssurge-utils]: Downloading https://files.pythonhosted.org/packages/ff/9b/b775ee89e57748f30d3bfb87d07505a5c46447c7daf729951aca24846559/nssurge_utils-0.1.2.tar.gz
+[2023-05-27 03:08:50] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: Downloading https://files.pythonhosted.org/packages/86/fa/2a9e6934a3194f3b5602f30dc0c042df74b8b269900945236c159940fae2/nonebot_plugin_blive_danmaku-0.2.6.tar.gz
+[2023-05-27 03:08:50] INFO root fetch - processPackages [growmax]: Downloading https://files.pythonhosted.org/packages/4f/1b/3174e7a35c540d8e7e5f1523b72aa8d3cc5819593f3f6d0caec4f4d6f9bf/growmax-1.2.3.tar.gz
+[2023-05-27 03:08:50] INFO root fetch - processPackages [rapidocr-api]: Downloading https://files.pythonhosted.org/packages/fd/b1/9dfd651e345f3d92cf1fa9f9d1adc95a58521e5b2df42574f11f1335b80f/rapidocr_api-0.0.2-py3-none-any.whl
+[2023-05-27 03:08:50] INFO root fetch - processPackages [nssurge-utils]: Downloading https://files.pythonhosted.org/packages/dd/d9/ed4a9fe66021af30c6c7af3f57e8416dc3da0c513dba2c5b69a481a14ae6/nssurge_utils-0.1.3.tar.gz
+[2023-05-27 03:08:51] INFO root fetch - processPackages [rapidocr-api]: executing diffoscope
+[2023-05-27 03:08:51] INFO root fetch - processPackages [rapidocr-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidocr_api-0.0.1-py3-none-any.whl.zip tmp/rapidocr_api-0.0.2-py3-none-any.whl.zip --markdown 20230527/r/rapidocr-api/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 03:08:51] INFO root fetch - processPackages [protoletariat]: Downloading https://files.pythonhosted.org/packages/82/e9/8d4ccdda9f4ef2c3528285f9a792eedd538a2690ca7e808a885a3eb7116e/protoletariat-3.2.9.tar.gz
+[2023-05-27 03:08:51] INFO root fetch - processPackages [structure-py]: executing diffoscope
+[2023-05-27 03:08:51] INFO root fetch - processPackages [structure-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structure_py-0.8.4-py3-none-any.whl.zip tmp/structure_py-0.9.0.tar.gz --markdown 20230527/s/structure-py/0.8.4-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 03:08:51] INFO root fetch - processPackages [nssurge-utils]: executing diffoscope
+[2023-05-27 03:08:51] INFO root fetch - processPackages [nssurge-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nssurge_utils-0.1.2.tar.gz tmp/nssurge_utils-0.1.3.tar.gz --markdown 20230527/n/nssurge-utils/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-27 03:08:51] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-05-27 03:08:51] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230527/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-27 03:08:51] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.8.1.dev202305251684934970] Old Version: [1.8.1.9.dev202305271685116202]
+[2023-05-27 03:08:51] INFO root fetch - processPackages [neurotechdevkit]: Downloading https://files.pythonhosted.org/packages/9d/43/ee11e808784308180c4c5baa061789a1025f999ab5ed2ef13a9c8b3aa95a/neurotechdevkit-0.1.1.tar.gz
+[2023-05-27 03:08:51] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: Downloading https://files.pythonhosted.org/packages/5a/9a/9aac4fbf9d3efc7464d712a3f4dbe763aed2ad914385905cdd69e6bbcedf/nonebot_plugin_blive_danmaku-0.2.7.tar.gz
+[2023-05-27 03:08:51] INFO root fetch - processPackages [protoletariat]: executing diffoscope
+[2023-05-27 03:08:51] INFO root fetch - processPackages [protoletariat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoletariat-3.2.8.tar.gz tmp/protoletariat-3.2.9.tar.gz --markdown 20230527/p/protoletariat/3.2.8-3.2.9/diff.md --exclude *.pyd
+[2023-05-27 03:08:51] INFO root fetch - processPackages [neurotechdevkit]: executing diffoscope
+[2023-05-27 03:08:51] INFO root fetch - processPackages [neurotechdevkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neurotechdevkit-0.1.0.tar.gz tmp/neurotechdevkit-0.1.1.tar.gz --markdown 20230527/n/neurotechdevkit/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-27 03:08:51] INFO root fetch - processPackages [pyagrum-nightly]: Downloading https://files.pythonhosted.org/packages/d5/19/d653d8c170586451a1b8402cd011fa0ee558fe3b1e6a6b0fc31e1c90760a/pyAgrum_nightly-1.8.1.9.dev202305271685116202-cp39-cp39-win_amd64.whl
+[2023-05-27 03:08:51] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: executing diffoscope
+[2023-05-27 03:08:51] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_blive_danmaku-0.2.6.tar.gz tmp/nonebot_plugin_blive_danmaku-0.2.7.tar.gz --markdown 20230527/n/nonebot-plugin-blive-danmaku/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-27 03:08:52] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-05-27 03:08:52] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.8.1.9.dev202305271685116202-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.8.1.dev202305251684934970-cp39-cp39-win_amd64.whl.zip --markdown 20230527/p/pyagrum-nightly/1.8.1.9.dev202305271685116202-1.8.1.dev202305251684934970/diff.md --exclude *.pyd
+[2023-05-27 03:08:52] INFO root fetch - main [MainThread]: End processing [structure-py]: success
+[2023-05-27 03:08:52] INFO root fetch - main [MainThread]: End processing [rapidocr-api]: success
+[2023-05-27 03:08:52] INFO root fetch - main [MainThread]: End processing [nssurge-utils]: success
+[2023-05-27 03:08:52] INFO root fetch - main [MainThread]: End processing [protoletariat]: success
+[2023-05-27 03:08:52] INFO root fetch - main [MainThread]: End processing [neurotechdevkit]: success
+[2023-05-27 03:08:53] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-05-27 03:08:55] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-05-27 03:09:00] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-blive-danmaku]: success
+[2023-05-27 03:16:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18270371]
+[2023-05-27 03:16:07] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-05-27 03:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyagrum-nightly
+[2023-05-27 03:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: structure-py
+[2023-05-27 03:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neurotechdevkit
+[2023-05-27 03:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-lambda-layer-curl
+[2023-05-27 03:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: blin
+[2023-05-27 03:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rapidocr-api
+[2023-05-27 03:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: protoletariat
+[2023-05-27 03:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nonebot-plugin-blive-danmaku
+[2023-05-27 03:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: growmax
+[2023-05-27 03:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nssurge-utils
+[2023-05-27 03:16:07] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-05-27 03:16:07] INFO root fetch - processPackages [neurotechdevkit]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-27 03:16:07] INFO root fetch - processPackages [growmax]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-27 03:16:07] INFO root fetch - processPackages [rapidocr-api]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 03:16:07] INFO root fetch - processPackages [structure-py]: New version: [0.9.0] Old Version: [0.8.4]
+[2023-05-27 03:16:07] WARNING root fetch - processPackages [blin]: Skipping, unable to determine old version
+[2023-05-27 03:16:07] INFO root fetch - processPackages [blin]: Start processing: as3toplevel
+[2023-05-27 03:16:07] INFO root fetch - main [MainThread]: End processing [blin] error
+[2023-05-27 03:16:07] INFO root fetch - processPackages [nssurge-utils]: New version: [0.1.5] Old Version: [0.1.3]
+[2023-05-27 03:16:07] INFO root fetch - processPackages [protoletariat]: New version: [3.2.9] Old Version: [3.2.8]
+[2023-05-27 03:16:07] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-27 03:16:07] WARNING root fetch - processPackages [as3toplevel]: Skipping, unable to determine old version
+[2023-05-27 03:16:07] INFO root fetch - processPackages [as3toplevel]: Start processing: cdk-hugo-deploy
+[2023-05-27 03:16:07] INFO root fetch - main [MainThread]: End processing [as3toplevel] error
+[2023-05-27 03:16:08] INFO root fetch - processPackages [cdk-hugo-deploy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 03:16:08] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: executing diffoscope
+[2023-05-27 03:16:08] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_blive_danmaku-0.2.6.tar.gz tmp/nonebot_plugin_blive_danmaku-0.2.7.tar.gz --markdown 20230527/n/nonebot-plugin-blive-danmaku/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-05-27 03:16:08] INFO root fetch - processPackages [neurotechdevkit]: executing diffoscope
+[2023-05-27 03:16:08] INFO root fetch - processPackages [growmax]: Downloading https://files.pythonhosted.org/packages/4f/1b/3174e7a35c540d8e7e5f1523b72aa8d3cc5819593f3f6d0caec4f4d6f9bf/growmax-1.2.3.tar.gz
+[2023-05-27 03:16:08] INFO root fetch - processPackages [neurotechdevkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neurotechdevkit-0.1.0.tar.gz tmp/neurotechdevkit-0.1.1.tar.gz --markdown 20230527/n/neurotechdevkit/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-27 03:16:08] INFO root fetch - processPackages [structure-py]: executing diffoscope
+[2023-05-27 03:16:08] INFO root fetch - processPackages [structure-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structure_py-0.8.4-py3-none-any.whl.zip tmp/structure_py-0.9.0.tar.gz --markdown 20230527/s/structure-py/0.8.4-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 03:16:08] INFO root fetch - processPackages [rapidocr-api]: executing diffoscope
+[2023-05-27 03:16:08] INFO root fetch - processPackages [rapidocr-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidocr_api-0.0.1-py3-none-any.whl.zip tmp/rapidocr_api-0.0.2-py3-none-any.whl.zip --markdown 20230527/r/rapidocr-api/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 03:16:08] INFO root fetch - processPackages [growmax]: executing diffoscope
+[2023-05-27 03:16:08] INFO root fetch - processPackages [growmax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/growmax-1.2.2.tar.gz tmp/growmax-1.2.3.tar.gz --markdown 20230527/g/growmax/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-27 03:16:08] INFO root fetch - processPackages [protoletariat]: executing diffoscope
+[2023-05-27 03:16:08] INFO root fetch - processPackages [protoletariat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protoletariat-3.2.8.tar.gz tmp/protoletariat-3.2.9.tar.gz --markdown 20230527/p/protoletariat/3.2.8-3.2.9/diff.md --exclude *.pyd
+[2023-05-27 03:16:08] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-05-27 03:16:08] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230527/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-27 03:16:08] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.8.1.dev202305251684934970] Old Version: [1.8.1.9.dev202305271685116202]
+[2023-05-27 03:16:08] INFO root fetch - processPackages [nssurge-utils]: Downloading https://files.pythonhosted.org/packages/08/26/380d3971846b4410f067adf7de1e46644fe95e68a2c371818285ab9c24ae/nssurge_utils-0.1.5.tar.gz
+[2023-05-27 03:16:08] INFO root fetch - processPackages [nssurge-utils]: executing diffoscope
+[2023-05-27 03:16:08] INFO root fetch - processPackages [nssurge-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nssurge_utils-0.1.3.tar.gz tmp/nssurge_utils-0.1.5.tar.gz --markdown 20230527/n/nssurge-utils/0.1.3-0.1.5/diff.md --exclude *.pyd
+[2023-05-27 03:16:08] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-05-27 03:16:08] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.8.1.9.dev202305271685116202-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.8.1.dev202305251684934970-cp39-cp39-win_amd64.whl.zip --markdown 20230527/p/pyagrum-nightly/1.8.1.9.dev202305271685116202-1.8.1.dev202305251684934970/diff.md --exclude *.pyd
+[2023-05-27 03:16:08] INFO root fetch - processPackages [cdk-hugo-deploy]: executing diffoscope
+[2023-05-27 03:16:08] INFO root fetch - processPackages [cdk-hugo-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-hugo-deploy-0.0.98.tar.gz tmp/cdk-hugo-deploy-0.0.99.tar.gz --markdown 20230527/c/cdk-hugo-deploy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 03:16:09] INFO root fetch - processPackages [structure-py]: Start processing: x-transformers
+[2023-05-27 03:16:09] INFO root fetch - main [MainThread]: End processing [structure-py]: success
+[2023-05-27 03:16:09] INFO root fetch - processPackages [x-transformers]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-27 03:16:09] INFO root fetch - processPackages [x-transformers]: executing diffoscope
+[2023-05-27 03:16:09] INFO root fetch - processPackages [x-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-transformers-1.9.1.tar.gz tmp/x-transformers-1.9.2.tar.gz --markdown 20230527/x/x-transformers/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-27 03:16:09] INFO root fetch - processPackages [rapidocr-api]: Start processing: d8a-explorer
+[2023-05-27 03:16:09] INFO root fetch - main [MainThread]: End processing [rapidocr-api]: success
+[2023-05-27 03:16:09] WARNING root fetch - processPackages [d8a-explorer]: Skipping, unable to determine old version
+[2023-05-27 03:16:09] INFO root fetch - processPackages [d8a-explorer]: Start processing: not1mm
+[2023-05-27 03:16:09] INFO root fetch - main [MainThread]: End processing [d8a-explorer] error
+[2023-05-27 03:16:09] INFO root fetch - processPackages [not1mm]: New version: [23.5.9.2] Old Version: [23.5.9.1]
+[2023-05-27 03:16:09] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2023-05-27 03:16:09] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-23.5.9.1.tar.gz tmp/not1mm-23.5.9.2.tar.gz --markdown 20230527/n/not1mm/23.5.9.1-23.5.9.2/diff.md --exclude *.pyd
+[2023-05-27 03:16:09] INFO root fetch - processPackages [nssurge-utils]: Start processing: su6
+[2023-05-27 03:16:09] INFO root fetch - main [MainThread]: End processing [nssurge-utils]: success
+[2023-05-27 03:16:10] INFO root fetch - processPackages [su6]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-27 03:16:10] INFO root fetch - processPackages [protoletariat]: Start processing: nssurge-utils
+[2023-05-27 03:16:10] INFO root fetch - main [MainThread]: End processing [protoletariat]: success
+[2023-05-27 03:16:10] INFO root fetch - processPackages [nssurge-utils]: New version: [0.1.5] Old Version: [0.1.3]
+[2023-05-27 03:16:10] INFO root fetch - processPackages [nssurge-utils]: executing diffoscope
+[2023-05-27 03:16:10] INFO root fetch - processPackages [nssurge-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nssurge_utils-0.1.3.tar.gz tmp/nssurge_utils-0.1.5.tar.gz --markdown 20230527/n/nssurge-utils/0.1.3-0.1.5/diff.md --exclude *.pyd
+[2023-05-27 03:16:10] INFO root fetch - processPackages [cdk-hugo-deploy]: Start processing: webpy-framework
+[2023-05-27 03:16:10] INFO root fetch - main [MainThread]: End processing [cdk-hugo-deploy]: success
+[2023-05-27 03:16:10] INFO root fetch - processPackages [webpy-framework]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-27 03:16:10] INFO root fetch - processPackages [su6]: Downloading https://files.pythonhosted.org/packages/08/a0/ce86e6e8953661284d93d793a2676acc8c66846564fb7fb08ebe68fd7c00/su6-0.2.1.tar.gz
+[2023-05-27 03:16:10] INFO root fetch - processPackages [su6]: executing diffoscope
+[2023-05-27 03:16:10] INFO root fetch - processPackages [su6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/su6-0.2.0.tar.gz tmp/su6-0.2.1.tar.gz --markdown 20230527/s/su6/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-27 03:16:10] INFO root fetch - processPackages [growmax]: Start processing: rtvc
+[2023-05-27 03:16:10] INFO root fetch - main [MainThread]: End processing [growmax]: success
+[2023-05-27 03:16:10] INFO root fetch - processPackages [rtvc]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-27 03:16:10] INFO root fetch - processPackages [webpy-framework]: Downloading https://files.pythonhosted.org/packages/7a/71/06af1ddbd0707a467367db14ebced252a79c1ceaeb06f8af65bb5f98789d/webpy-framework-1.0.2.tar.gz
+[2023-05-27 03:16:10] INFO root fetch - processPackages [rtvc]: Downloading https://files.pythonhosted.org/packages/94/fc/0264e554a21f8bf4ca2f40b5d60648967efad1418d346187f63ca06ea93d/rtvc-0.1.0.tar.gz
+[2023-05-27 03:16:10] INFO root fetch - processPackages [webpy-framework]: Downloading https://files.pythonhosted.org/packages/e1/98/968bc1ea9b28fdc34a3e856fb416d5a263363c39c223ef06c721d69b7380/webpy-framework-1.0.3.tar.gz
+[2023-05-27 03:16:10] INFO root fetch - processPackages [webpy-framework]: executing diffoscope
+[2023-05-27 03:16:10] INFO root fetch - processPackages [webpy-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webpy-framework-1.0.2.tar.gz tmp/webpy-framework-1.0.3.tar.gz --markdown 20230527/w/webpy-framework/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-27 03:16:10] INFO root fetch - processPackages [rtvc]: Downloading https://files.pythonhosted.org/packages/90/4a/d21d44773ec2ca52478105bcaca5daeb92ff1beca5c0139591904dffe9dd/rtvc-0.1.1.tar.gz
+[2023-05-27 03:16:10] INFO root fetch - processPackages [rtvc]: executing diffoscope
+[2023-05-27 03:16:10] INFO root fetch - processPackages [rtvc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtvc-0.1.0.tar.gz tmp/rtvc-0.1.1.tar.gz --markdown 20230527/r/rtvc/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-27 03:16:10] INFO root fetch - processPackages [x-transformers]: Start processing: cdk-sops-secrets
+[2023-05-27 03:16:10] INFO root fetch - main [MainThread]: End processing [x-transformers]: success
+[2023-05-27 03:16:11] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-05-27 03:16:11] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-05-27 03:16:11] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.98.tar.gz tmp/cdk-sops-secrets-1.2.99.tar.gz --markdown 20230527/c/cdk-sops-secrets/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-05-27 03:16:11] INFO root fetch - processPackages [nssurge-utils]: Start processing: x-transformers
+[2023-05-27 03:16:11] INFO root fetch - main [MainThread]: End processing [nssurge-utils]: success
+[2023-05-27 03:16:11] INFO root fetch - processPackages [x-transformers]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-27 03:16:11] INFO root fetch - processPackages [x-transformers]: executing diffoscope
+[2023-05-27 03:16:11] INFO root fetch - processPackages [x-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-transformers-1.9.1.tar.gz tmp/x-transformers-1.9.2.tar.gz --markdown 20230527/x/x-transformers/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-27 03:16:11] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-05-27 03:16:12] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-05-27 03:16:12] INFO root fetch - main [MainThread]: End processing [webpy-framework]: success
+[2023-05-27 03:16:12] INFO root fetch - main [MainThread]: End processing [neurotechdevkit]: success
+[2023-05-27 03:16:12] INFO root fetch - main [MainThread]: End processing [rtvc]: success
+[2023-05-27 03:16:12] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-05-27 03:16:13] INFO root fetch - main [MainThread]: End processing [x-transformers]: success
+[2023-05-27 03:16:13] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2023-05-27 03:16:17] INFO root fetch - main [MainThread]: End processing [su6]: success
+[2023-05-27 03:16:19] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-blive-danmaku]: success
+[2023-05-27 03:16:19] INFO root fetch - main [MainThread]: Store serial: [18270458]
