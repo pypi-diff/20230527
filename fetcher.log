@@ -5865,3 +5865,35 @@
 [2023-05-27 09:20:41] INFO root fetch - main [MainThread]: End processing [apollo-sdk]: success
 [2023-05-27 09:20:41] INFO root fetch - main [MainThread]: End processing [clust-learn]: success
 [2023-05-27 09:20:41] INFO root fetch - main [MainThread]: Store serial: [18272813]
+[2023-05-27 09:25:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272813]
+[2023-05-27 09:25:50] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 09:25:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-alicloud
+[2023-05-27 09:25:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sciform
+[2023-05-27 09:25:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sciform
+[2023-05-27 09:25:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-oci
+[2023-05-27 09:25:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-hoshino-sign
+[2023-05-27 09:25:50] INFO root fetch - processPackages [pulumi-oci]: New version: [0.9.1a1677791364] Old Version: [0.9.0]
+[2023-05-27 09:25:50] INFO root fetch - processPackages [sciform]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-27 09:25:50] INFO root fetch - processPackages [sciform]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-27 09:25:50] INFO root fetch - processPackages [pulumi-alicloud]: New version: [3.9.0a1637592974] Old Version: [3.9.0a1635778307]
+[2023-05-27 09:25:50] INFO root fetch - processPackages [nonebot-plugin-hoshino-sign]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-27 09:25:50] INFO root fetch - processPackages [pulumi-oci]: executing diffoscope
+[2023-05-27 09:25:50] INFO root fetch - processPackages [pulumi-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_oci-0.9.0.tar.gz tmp/pulumi_oci-0.9.1a1677791364.tar.gz --markdown 20230527/p/pulumi-oci/0.9.0-0.9.1a1677791364/diff.md --exclude *.pyd
+[2023-05-27 09:25:50] INFO root fetch - processPackages [sciform]: Downloading https://files.pythonhosted.org/packages/25/d3/e3067b29d3e70e2348d347a9999e62d29b0d4a94107125be48267c376d67/sciform-0.4.0.tar.gz
+[2023-05-27 09:25:50] INFO root fetch - processPackages [sciform]: Downloading https://files.pythonhosted.org/packages/25/d3/e3067b29d3e70e2348d347a9999e62d29b0d4a94107125be48267c376d67/sciform-0.4.0.tar.gz
+[2023-05-27 09:25:50] INFO root fetch - processPackages [nonebot-plugin-hoshino-sign]: Downloading https://files.pythonhosted.org/packages/c3/d5/97807836095d916d7bc1adfba1ea5bbf566a13aa11d81bd77b86427c5f5f/nonebot_plugin_hoshino_sign-2.0.8.tar.gz
+[2023-05-27 09:25:50] INFO root fetch - processPackages [pulumi-alicloud]: executing diffoscope
+[2023-05-27 09:25:50] INFO root fetch - processPackages [pulumi-alicloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_alicloud-3.9.0a1635778307.tar.gz tmp/pulumi_alicloud-3.9.0a1637592974.tar.gz --markdown 20230527/p/pulumi-alicloud/3.9.0a1635778307-3.9.0a1637592974/diff.md --exclude *.pyd
+[2023-05-27 09:25:50] INFO root fetch - processPackages [sciform]: Downloading https://files.pythonhosted.org/packages/fc/df/56ab0d89098564639f75788121e353cdf8133b4d609439362f6388d79d53/sciform-0.4.1.tar.gz
+[2023-05-27 09:25:50] INFO root fetch - processPackages [sciform]: Downloading https://files.pythonhosted.org/packages/fc/df/56ab0d89098564639f75788121e353cdf8133b4d609439362f6388d79d53/sciform-0.4.1.tar.gz
+[2023-05-27 09:25:51] INFO root fetch - processPackages [sciform]: executing diffoscope
+[2023-05-27 09:25:51] INFO root fetch - processPackages [sciform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sciform-0.4.0.tar.gz tmp/sciform-0.4.1.tar.gz --markdown 20230527/s/sciform/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-27 09:25:51] INFO root fetch - processPackages [sciform]: executing diffoscope
+[2023-05-27 09:25:51] INFO root fetch - processPackages [sciform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sciform-0.4.0.tar.gz tmp/sciform-0.4.1.tar.gz --markdown 20230527/s/sciform/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-27 09:25:51] WARNING root fetch - processPackages [nonebot-plugin-hoshino-sign]: Skipping package: exceeds size limit 40699832>=10485760
+[2023-05-27 09:25:51] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hoshino-sign] error
+[2023-05-27 09:25:52] INFO root fetch - main [MainThread]: End processing [sciform]: success
+[2023-05-27 09:25:52] INFO root fetch - main [MainThread]: End processing [sciform]: success
+[2023-05-27 09:26:14] INFO root fetch - main [MainThread]: End processing [pulumi-alicloud]: success
+[2023-05-27 09:26:33] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
+[2023-05-27 09:26:33] INFO root fetch - main [MainThread]: Store serial: [18272826]
