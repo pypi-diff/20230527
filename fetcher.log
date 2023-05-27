@@ -3766,3 +3766,61 @@
 [2023-05-27 03:42:19] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
 [2023-05-27 03:42:19] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
 [2023-05-27 03:42:19] INFO root fetch - main [MainThread]: Store serial: [18271700]
+[2023-05-27 03:47:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271700]
+[2023-05-27 03:47:29] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-27 03:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: proactive
+[2023-05-27 03:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-apl
+[2023-05-27 03:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: proactive-jupyter-kernel
+[2023-05-27 03:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: linkml-transformer
+[2023-05-27 03:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aoirint-liveinfo
+[2023-05-27 03:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-omnilogic-local
+[2023-05-27 03:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: schema-automator
+[2023-05-27 03:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: linkml
+[2023-05-27 03:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: lifetimefitting
+[2023-05-27 03:47:29] INFO root fetch - processPackages [linkml-transformer]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-27 03:47:29] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-05-27 03:47:29] INFO root fetch - processPackages [aoirint-liveinfo]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 03:47:29] INFO root fetch - processPackages [python-omnilogic-local]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-27 03:47:29] INFO root fetch - processPackages [linkml]: New version: [1.5.5] Old Version: [1.5.4]
+[2023-05-27 03:47:29] INFO root fetch - processPackages [schema-automator]: New version: [1.0.0b0] Old Version: [0.3.0]
+[2023-05-27 03:47:29] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.797] Old Version: [0.0.796]
+[2023-05-27 03:47:29] INFO root fetch - processPackages [lifetimefitting]: New version: [0.0.13] Old Version: [0.0.12]
+[2023-05-27 03:47:29] INFO root fetch - processPackages [proactive]: New version: [8.4.11] Old Version: [8.4.10]
+[2023-05-27 03:47:29] INFO root fetch - processPackages [linkml-transformer]: Downloading https://files.pythonhosted.org/packages/78/49/e646a7c53bf600ac78a014dabe566395788afa907170e7fa71d78222f5dc/linkml_transformer-0.1.4.tar.gz
+[2023-05-27 03:47:29] INFO root fetch - processPackages [aoirint-liveinfo]: Downloading https://files.pythonhosted.org/packages/42/9b/4347bd9fcebee065396894f05410ff93115eec0d2dcfef1c6507a11ce674/aoirint_liveinfo-0.1.8.tar.gz
+[2023-05-27 03:47:29] INFO root fetch - processPackages [linkml]: Downloading https://files.pythonhosted.org/packages/df/b9/be1a7b1a203a8526fc24091144109fec57494c22c1803f06891a7a86b85a/linkml-1.5.5.tar.gz
+[2023-05-27 03:47:29] INFO root fetch - processPackages [schema-automator]: Downloading https://files.pythonhosted.org/packages/30/fd/a5c1ba6d0845fd2a138d43d56cb7c14b879eeb967a6d5e2b73bd5593a9c0/schema_automator-0.3.0.tar.gz
+[2023-05-27 03:47:29] INFO root fetch - processPackages [lifetimefitting]: Downloading https://files.pythonhosted.org/packages/d2/b0/7e352cc5386eccdb8512c87033762f19dc5b544af37f1125d7c79939c227/lifetimefitting-0.0.13.tar.gz
+[2023-05-27 03:47:29] INFO root fetch - processPackages [proactive]: Downloading https://files.pythonhosted.org/packages/36/67/8f2441cbc911f3a57a2168b0e419b0751450a04c18791e6ba642af1085d8/proactive-8.4.10.zip
+[2023-05-27 03:47:29] INFO root fetch - processPackages [python-omnilogic-local]: Downloading https://files.pythonhosted.org/packages/0f/13/0734108ca9e9122f510c23a358dbad9cb99230ef5a0a89dc679f2a26f077/python_omnilogic_local-0.3.0.tar.gz
+[2023-05-27 03:47:30] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/8b/8c/89dc4c3ee057c99dd01a5752afa74d4822892eebac08a0f026f50b1fc151/nbdev-apl-0.0.797.tar.gz
+[2023-05-27 03:47:30] WARNING root fetch - processPackages [proactive]: Skipping package: exceeds size limit 18979361>=10485760
+[2023-05-27 03:47:30] INFO root fetch - main [MainThread]: End processing [proactive] error
+[2023-05-27 03:47:30] INFO root fetch - processPackages [linkml]: executing diffoscope
+[2023-05-27 03:47:30] INFO root fetch - processPackages [linkml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkml-1.5.4.tar.gz tmp/linkml-1.5.5.tar.gz --markdown 20230527/l/linkml/1.5.4-1.5.5/diff.md --exclude *.pyd
+[2023-05-27 03:47:30] INFO root fetch - processPackages [lifetimefitting]: executing diffoscope
+[2023-05-27 03:47:30] INFO root fetch - processPackages [lifetimefitting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifetimefitting-0.0.12.tar.gz tmp/lifetimefitting-0.0.13.tar.gz --markdown 20230527/l/lifetimefitting/0.0.12-0.0.13/diff.md --exclude *.pyd
+[2023-05-27 03:47:30] INFO root fetch - processPackages [python-omnilogic-local]: executing diffoscope
+[2023-05-27 03:47:30] INFO root fetch - processPackages [python-omnilogic-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_omnilogic_local-0.2.1.tar.gz tmp/python_omnilogic_local-0.3.0.tar.gz --markdown 20230527/p/python-omnilogic-local/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-27 03:47:30] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-27 03:47:30] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.796.tar.gz tmp/nbdev-apl-0.0.797.tar.gz --markdown 20230527/n/nbdev-apl/0.0.796-0.0.797/diff.md --exclude *.pyd
+[2023-05-27 03:47:30] INFO root fetch - processPackages [linkml-transformer]: Downloading https://files.pythonhosted.org/packages/3f/49/bd69672489015426ee07bb8749c6758566450b8a3e4f8bdf8017828ba637/linkml_transformer-0.1.5.tar.gz
+[2023-05-27 03:47:30] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-05-27 03:47:30] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230527/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-05-27 03:47:30] INFO root fetch - processPackages [aoirint-liveinfo]: Downloading https://files.pythonhosted.org/packages/d3/0a/ea5cb2a69f328b5618cd54351ace70247bb0e7443b31d368955a99d5f885/aoirint_liveinfo-0.1.9.tar.gz
+[2023-05-27 03:47:30] INFO root fetch - processPackages [linkml-transformer]: executing diffoscope
+[2023-05-27 03:47:30] INFO root fetch - processPackages [linkml-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkml_transformer-0.1.4.tar.gz tmp/linkml_transformer-0.1.5.tar.gz --markdown 20230527/l/linkml-transformer/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-27 03:47:30] INFO root fetch - processPackages [schema-automator]: Downloading https://files.pythonhosted.org/packages/e6/fe/face55f213f318d0fac69c2716d308177a6350c25dea6cafcfb88b18f0b8/schema_automator-1.0.0b0.tar.gz
+[2023-05-27 03:47:30] INFO root fetch - processPackages [schema-automator]: executing diffoscope
+[2023-05-27 03:47:30] INFO root fetch - processPackages [schema-automator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schema_automator-0.3.0.tar.gz tmp/schema_automator-1.0.0b0.tar.gz --markdown 20230527/s/schema-automator/0.3.0-1.0.0b0/diff.md --exclude *.pyd
+[2023-05-27 03:47:30] INFO root fetch - processPackages [aoirint-liveinfo]: executing diffoscope
+[2023-05-27 03:47:30] INFO root fetch - processPackages [aoirint-liveinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aoirint_liveinfo-0.1.8.tar.gz tmp/aoirint_liveinfo-0.1.9.tar.gz --markdown 20230527/a/aoirint-liveinfo/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 03:47:31] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-27 03:47:31] INFO root fetch - main [MainThread]: End processing [lifetimefitting]: success
+[2023-05-27 03:47:31] INFO root fetch - main [MainThread]: End processing [python-omnilogic-local]: success
+[2023-05-27 03:47:31] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
+[2023-05-27 03:47:31] INFO root fetch - main [MainThread]: End processing [schema-automator]: success
+[2023-05-27 03:47:31] INFO root fetch - main [MainThread]: End processing [linkml-transformer]: success
+[2023-05-27 03:47:31] INFO root fetch - main [MainThread]: End processing [aoirint-liveinfo]: success
+[2023-05-27 03:47:33] INFO root fetch - main [MainThread]: End processing [linkml]: success
+[2023-05-27 03:47:33] INFO root fetch - main [MainThread]: Store serial: [18271726]
