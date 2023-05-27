@@ -8355,3 +8355,35 @@
 [2023-05-27 14:35:43] INFO root fetch - main [MainThread]: End processing [colourmap]: success
 [2023-05-27 14:35:43] INFO root fetch - main [MainThread]: End processing [opentnsim]: success
 [2023-05-27 14:35:43] INFO root fetch - main [MainThread]: Store serial: [18274279]
+[2023-05-27 14:40:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274279]
+[2023-05-27 14:40:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 14:40:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensorcircuit-nightly
+[2023-05-27 14:40:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: econpizza
+[2023-05-27 14:40:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mavcom
+[2023-05-27 14:40:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyacmi
+[2023-05-27 14:40:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: selenew
+[2023-05-27 14:40:51] INFO root fetch - processPackages [mavcom]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-27 14:40:51] INFO root fetch - processPackages [econpizza]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-05-27 14:40:51] INFO root fetch - processPackages [pyacmi]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-05-27 14:40:51] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.1.dev20230526] Old Version: [0.9.1.dev20230525]
+[2023-05-27 14:40:51] WARNING root fetch - processPackages [selenew]: Skipping, unable to determine old version
+[2023-05-27 14:40:51] INFO root fetch - main [MainThread]: End processing [selenew] error
+[2023-05-27 14:40:51] INFO root fetch - processPackages [pyacmi]: Downloading https://files.pythonhosted.org/packages/b8/ce/5438b3366f2a49e1a0ba7bcd33881c16a9990e5d64acb15210cb7aea60b6/pyacmi-1.2.3.tar.gz
+[2023-05-27 14:40:51] INFO root fetch - processPackages [econpizza]: Downloading https://files.pythonhosted.org/packages/0e/5f/8d5fb176cbeaa28353ce2aa961de5d41a0b7f0114af5a882c31ace2e45b1/econpizza-0.5.5.tar.gz
+[2023-05-27 14:40:52] INFO root fetch - processPackages [mavcom]: Downloading https://files.pythonhosted.org/packages/8b/a8/9d34100a8be9a604dffbfb6046ffefd21a5f9a1f1356b4700a33930b11ed/mavcom-1.0.2.tar.gz
+[2023-05-27 14:40:52] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/77/12/ca221bd8cdf5b7b2901b0121b66325fe9439067db22459e1be361e79ce04/tensorcircuit-nightly-0.9.1.dev20230526.tar.gz
+[2023-05-27 14:40:52] INFO root fetch - processPackages [mavcom]: executing diffoscope
+[2023-05-27 14:40:52] INFO root fetch - processPackages [mavcom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mavcom-1.0.1.tar.gz tmp/mavcom-1.0.2.tar.gz --markdown 20230527/m/mavcom/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-27 14:40:52] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2023-05-27 14:40:52] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.1.dev20230525.tar.gz tmp/tensorcircuit-nightly-0.9.1.dev20230526.tar.gz --markdown 20230527/t/tensorcircuit-nightly/0.9.1.dev20230525-0.9.1.dev20230526/diff.md --exclude *.pyd
+[2023-05-27 14:40:52] INFO root fetch - processPackages [econpizza]: Downloading https://files.pythonhosted.org/packages/59/45/6d849e5c3f6af3f19b950da50ef87e05271785348817b78925080314ff80/econpizza-0.5.6.tar.gz
+[2023-05-27 14:40:52] INFO root fetch - processPackages [pyacmi]: Downloading https://files.pythonhosted.org/packages/0e/7d/d7dfd8e35ec9b8df00de26d1472e4f0126e496fbfcc02b469311266e956f/pyacmi-1.2.4.tar.gz
+[2023-05-27 14:40:52] INFO root fetch - processPackages [pyacmi]: executing diffoscope
+[2023-05-27 14:40:52] INFO root fetch - processPackages [pyacmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyacmi-1.2.3.tar.gz tmp/pyacmi-1.2.4.tar.gz --markdown 20230527/p/pyacmi/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-05-27 14:40:52] INFO root fetch - processPackages [econpizza]: executing diffoscope
+[2023-05-27 14:40:52] INFO root fetch - processPackages [econpizza]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/econpizza-0.5.5.tar.gz tmp/econpizza-0.5.6.tar.gz --markdown 20230527/e/econpizza/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-05-27 14:40:53] INFO root fetch - main [MainThread]: End processing [mavcom]: success
+[2023-05-27 14:40:53] INFO root fetch - main [MainThread]: End processing [pyacmi]: success
+[2023-05-27 14:40:53] INFO root fetch - main [MainThread]: End processing [econpizza]: success
+[2023-05-27 14:40:55] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2023-05-27 14:40:55] INFO root fetch - main [MainThread]: Store serial: [18274296]
