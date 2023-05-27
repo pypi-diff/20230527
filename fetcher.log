@@ -4964,3 +4964,52 @@
 [2023-05-27 07:08:21] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2023-05-27 07:10:41] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
 [2023-05-27 07:10:41] INFO root fetch - main [MainThread]: Store serial: [18272377]
+[2023-05-27 07:15:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272377]
+[2023-05-27 07:15:54] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 07:15:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: automation-file
+[2023-05-27 07:15:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: automation-file-dev
+[2023-05-27 07:15:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: soremoji
+[2023-05-27 07:15:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lnschema_lamin1
+[2023-05-27 07:15:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: heaserver-buckets
+[2023-05-27 07:15:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: policyengine-us
+[2023-05-27 07:15:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lnschema_bionty
+[2023-05-27 07:15:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gravitas
+[2023-05-27 07:15:54] INFO root fetch - processPackages [gravitas]: New version: [0.0.9] Old Version: [0.0.4]
+[2023-05-27 07:15:54] INFO root fetch - processPackages [automation-file]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 07:15:54] INFO root fetch - processPackages [heaserver-buckets]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-27 07:15:54] INFO root fetch - processPackages [soremoji]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-27 07:15:54] INFO root fetch - processPackages [automation-file-dev]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 07:15:54] INFO root fetch - processPackages [policyengine-us]: New version: [0.324.0] Old Version: [0.323.0]
+[2023-05-27 07:15:54] INFO root fetch - processPackages [lnschema_lamin1]: New version: [0.17a2] Old Version: [0.17a1]
+[2023-05-27 07:15:54] INFO root fetch - processPackages [lnschema_bionty]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-27 07:15:54] INFO root fetch - processPackages [gravitas]: executing diffoscope
+[2023-05-27 07:15:54] INFO root fetch - processPackages [gravitas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitas-0.0.4.tar.gz tmp/gravitas-0.0.9.tar.gz --markdown 20230527/g/gravitas/0.0.4-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 07:15:54] INFO root fetch - processPackages [heaserver-buckets]: executing diffoscope
+[2023-05-27 07:15:54] INFO root fetch - processPackages [heaserver-buckets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-buckets-1.0.0a8.tar.gz tmp/heaserver-buckets-1.0.0a9.tar.gz --markdown 20230527/h/heaserver-buckets/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-27 07:15:54] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2023-05-27 07:15:54] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.323.0.tar.gz tmp/policyengine-us-0.324.0.tar.gz --markdown 20230527/p/policyengine-us/0.323.0-0.324.0/diff.md --exclude *.pyd
+[2023-05-27 07:15:54] INFO root fetch - processPackages [automation-file-dev]: Downloading https://files.pythonhosted.org/packages/a1/09/4b7b54586e51ac704323db4f552e3d770f7cc611bf247f441eadc99ead13/automation_file_dev-0.0.1.tar.gz
+[2023-05-27 07:15:54] INFO root fetch - processPackages [automation-file]: Downloading https://files.pythonhosted.org/packages/53/9f/df8ffa1f1a59805d07095693651f221460998a9ebe7b299e98d1db57a510/automation_file-0.0.1.tar.gz
+[2023-05-27 07:15:54] INFO root fetch - processPackages [soremoji]: Downloading https://files.pythonhosted.org/packages/e3/69/9afe6731b9f6f99f1ba4d484134ca3599e7f9faec52b9921bdfd22ef8a03/soremoji-0.3.4.tar.gz
+[2023-05-27 07:15:54] INFO root fetch - processPackages [soremoji]: executing diffoscope
+[2023-05-27 07:15:54] INFO root fetch - processPackages [soremoji]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soremoji-0.3.3.tar.gz tmp/soremoji-0.3.4.tar.gz --markdown 20230527/s/soremoji/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-27 07:15:54] INFO root fetch - processPackages [lnschema_lamin1]: Downloading https://files.pythonhosted.org/packages/29/36/0c7708e5bbe87f69385436a50c8fd0bf73c3e4a603d2e5474000dfdef149/lnschema_lamin1-0.17a2.tar.gz
+[2023-05-27 07:15:54] INFO root fetch - processPackages [lnschema_lamin1]: executing diffoscope
+[2023-05-27 07:15:54] INFO root fetch - processPackages [lnschema_lamin1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_lamin1-0.17a1.tar.gz tmp/lnschema_lamin1-0.17a2.tar.gz --markdown 20230527/l/lnschema_lamin1/0.17a1-0.17a2/diff.md --exclude *.pyd
+[2023-05-27 07:15:54] INFO root fetch - processPackages [automation-file]: Downloading https://files.pythonhosted.org/packages/89/25/f7d07c0b4a47b9a69bcdedcc0a8a373d339248796c57643f2243591ce048/automation_file-0.0.2.tar.gz
+[2023-05-27 07:15:54] INFO root fetch - processPackages [lnschema_bionty]: executing diffoscope
+[2023-05-27 07:15:54] INFO root fetch - processPackages [lnschema_bionty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnschema_bionty-0.8.1.tar.gz tmp/lnschema_bionty-0.9.0.tar.gz --markdown 20230527/l/lnschema_bionty/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 07:15:55] INFO root fetch - processPackages [automation-file-dev]: Downloading https://files.pythonhosted.org/packages/37/d1/d4635c99cbe4a7cb824606b7242bdfd4cc0a534d45c8b6ac55159be32cbb/automation_file_dev-0.0.2.tar.gz
+[2023-05-27 07:15:55] INFO root fetch - processPackages [automation-file]: executing diffoscope
+[2023-05-27 07:15:55] INFO root fetch - processPackages [automation-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automation_file-0.0.1.tar.gz tmp/automation_file-0.0.2.tar.gz --markdown 20230527/a/automation-file/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 07:15:55] INFO root fetch - processPackages [automation-file-dev]: executing diffoscope
+[2023-05-27 07:15:55] INFO root fetch - processPackages [automation-file-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automation_file_dev-0.0.1.tar.gz tmp/automation_file_dev-0.0.2.tar.gz --markdown 20230527/a/automation-file-dev/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 07:15:55] INFO root fetch - main [MainThread]: End processing [heaserver-buckets]: success
+[2023-05-27 07:15:56] INFO root fetch - main [MainThread]: End processing [lnschema_lamin1]: success
+[2023-05-27 07:15:56] INFO root fetch - main [MainThread]: End processing [soremoji]: success
+[2023-05-27 07:15:56] INFO root fetch - main [MainThread]: End processing [automation-file]: success
+[2023-05-27 07:15:56] INFO root fetch - main [MainThread]: End processing [lnschema_bionty]: success
+[2023-05-27 07:15:56] INFO root fetch - main [MainThread]: End processing [automation-file-dev]: success
+[2023-05-27 07:15:58] INFO root fetch - main [MainThread]: End processing [gravitas]: success
+[2023-05-27 07:17:06] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2023-05-27 07:17:06] INFO root fetch - main [MainThread]: Store serial: [18272403]
