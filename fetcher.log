@@ -1613,3 +1613,32 @@
 [2023-05-27 02:50:41] INFO root fetch - main [MainThread]: End processing [airbyte]: success
 [2023-05-27 02:50:46] INFO root fetch - main [MainThread]: End processing [su6]: success
 [2023-05-27 02:50:46] INFO root fetch - main [MainThread]: Store serial: [18270330]
+[2023-05-27 02:55:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18270330]
+[2023-05-27 02:55:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 02:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-databrew-cicd
+[2023-05-27 02:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: madtypes
+[2023-05-27 02:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: macrometa-source-snowflake
+[2023-05-27 02:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: projen
+[2023-05-27 02:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: growmax
+[2023-05-27 02:55:55] WARNING root fetch - processPackages [madtypes]: Skipping, unable to determine old version
+[2023-05-27 02:55:55] INFO root fetch - main [MainThread]: End processing [madtypes] error
+[2023-05-27 02:55:55] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 02:55:55] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-27 02:55:55] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-05-27 02:55:55] INFO root fetch - processPackages [growmax]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-27 02:55:55] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-05-27 02:55:55] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230527/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-05-27 02:55:55] INFO root fetch - processPackages [macrometa-source-snowflake]: Downloading https://files.pythonhosted.org/packages/6f/04/89a4f6b25c2ccd3248b00b2eeb4c9cfd010be518d7d6b05312ac488dea69/macrometa-source-snowflake-0.0.8.tar.gz
+[2023-05-27 02:55:56] INFO root fetch - processPackages [growmax]: Downloading https://files.pythonhosted.org/packages/05/cd/7f8d1bbe4e21bcf1ea5881b804e412f21b1c4bb5d22b9594bf9173b238d1/growmax-1.2.2.tar.gz
+[2023-05-27 02:55:56] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-05-27 02:55:56] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230527/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-27 02:55:56] INFO root fetch - processPackages [growmax]: executing diffoscope
+[2023-05-27 02:55:56] INFO root fetch - processPackages [growmax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/growmax-1.2.1.tar.gz tmp/growmax-1.2.2.tar.gz --markdown 20230527/g/growmax/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-27 02:55:56] INFO root fetch - processPackages [macrometa-source-snowflake]: Downloading https://files.pythonhosted.org/packages/2e/9e/785f1d5ca8fd1608cadf7e6fb62934878661764e686ccbda2e5d32e7c7f5/macrometa-source-snowflake-0.0.9.tar.gz
+[2023-05-27 02:55:56] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-05-27 02:55:56] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230527/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 02:55:57] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2023-05-27 02:55:57] INFO root fetch - main [MainThread]: End processing [growmax]: success
+[2023-05-27 02:55:57] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-05-27 02:55:58] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-05-27 02:55:58] INFO root fetch - main [MainThread]: Store serial: [18270351]
