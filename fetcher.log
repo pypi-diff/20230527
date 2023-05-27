@@ -4116,3 +4116,18 @@
 [2023-05-27 04:55:46] INFO root fetch - main [MainThread]: End processing [phap]: success
 [2023-05-27 04:56:09] INFO root fetch - main [MainThread]: End processing [flash-attn]: success
 [2023-05-27 04:56:09] INFO root fetch - main [MainThread]: Store serial: [18271939]
+[2023-05-27 05:01:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271939]
+[2023-05-27 05:01:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 05:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lasfile
+[2023-05-27 05:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autodistill-grounded-sam
+[2023-05-27 05:01:18] INFO root fetch - processPackages [lasfile]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-27 05:01:18] INFO root fetch - processPackages [autodistill-grounded-sam]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-05-27 05:01:19] INFO root fetch - processPackages [lasfile]: Downloading https://files.pythonhosted.org/packages/f0/55/4b5f8381cf430686148bc93703f27cf0ae41fe70d570d0fa3eb049577149/lasfile-0.1.5.tar.gz
+[2023-05-27 05:01:19] INFO root fetch - processPackages [lasfile]: executing diffoscope
+[2023-05-27 05:01:19] INFO root fetch - processPackages [lasfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lasfile-0.1.4.tar.gz tmp/lasfile-0.1.5.tar.gz --markdown 20230527/l/lasfile/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-27 05:01:19] INFO root fetch - processPackages [autodistill-grounded-sam]: Downloading https://files.pythonhosted.org/packages/5c/81/b121d0195d0776beb32283de573dc4fbfb4886139bbca2c8ba12278134d9/autodistill_grounded_sam-0.1.0.tar.gz
+[2023-05-27 05:01:19] INFO root fetch - processPackages [autodistill-grounded-sam]: executing diffoscope
+[2023-05-27 05:01:19] INFO root fetch - processPackages [autodistill-grounded-sam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autodistill_grounded_sam-0.0.7.tar.gz tmp/autodistill_grounded_sam-0.1.0.tar.gz --markdown 20230527/a/autodistill-grounded-sam/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-05-27 05:01:20] INFO root fetch - main [MainThread]: End processing [autodistill-grounded-sam]: success
+[2023-05-27 05:01:20] INFO root fetch - main [MainThread]: End processing [lasfile]: success
+[2023-05-27 05:01:20] INFO root fetch - main [MainThread]: Store serial: [18271945]
