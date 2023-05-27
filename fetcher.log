@@ -10122,3 +10122,51 @@
 [2023-05-27 17:36:02] INFO root fetch - main [MainThread]: End processing [synapgrad]: success
 [2023-05-27 17:36:07] INFO root fetch - main [MainThread]: End processing [codepeers]: success
 [2023-05-27 17:36:07] INFO root fetch - main [MainThread]: Store serial: [18275306]
+[2023-05-27 17:41:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275306]
+[2023-05-27 17:41:17] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 17:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jmcfunction
+[2023-05-27 17:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llm-rs
+[2023-05-27 17:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lusid-sdk
+[2023-05-27 17:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: policyengine-canada
+[2023-05-27 17:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbpyman
+[2023-05-27 17:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hifitime
+[2023-05-27 17:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lusid-sdk-preview
+[2023-05-27 17:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: datapipe-core
+[2023-05-27 17:41:17] INFO root fetch - processPackages [dbpyman]: New version: [0.1.41] Old Version: [0.1.4]
+[2023-05-27 17:41:17] INFO root fetch - processPackages [jmcfunction]: New version: [1.2.9a4] Old Version: [1.2.9a3]
+[2023-05-27 17:41:17] INFO root fetch - processPackages [llm-rs]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-27 17:41:17] INFO root fetch - processPackages [policyengine-canada]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-27 17:41:17] INFO root fetch - processPackages [hifitime]: New version: [3.8.1] Old Version: [3.8.0]
+[2023-05-27 17:41:17] INFO root fetch - processPackages [lusid-sdk]: New version: [1.0.98] Old Version: [1.0.91]
+[2023-05-27 17:41:17] INFO root fetch - processPackages [datapipe-core]: New version: [0.12.0a1] Old Version: [0.12.0]
+[2023-05-27 17:41:17] INFO root fetch - processPackages [lusid-sdk-preview]: New version: [1.0.98] Old Version: [1.0.91]
+[2023-05-27 17:41:17] INFO root fetch - processPackages [dbpyman]: executing diffoscope
+[2023-05-27 17:41:17] INFO root fetch - processPackages [dbpyman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbpyman-0.1.4.tar.gz tmp/dbpyman-0.1.41.tar.gz --markdown 20230527/d/dbpyman/0.1.4-0.1.41/diff.md --exclude *.pyd
+[2023-05-27 17:41:17] INFO root fetch - processPackages [jmcfunction]: Downloading https://files.pythonhosted.org/packages/a5/2d/b8e056fd17b6d7fca01e9c234362754ec2311bf5191ea9a0a93095ca5f6e/jmcfunction-1.2.9a3.tar.gz
+[2023-05-27 17:41:17] INFO root fetch - processPackages [datapipe-core]: Downloading https://files.pythonhosted.org/packages/69/55/a7f3938eebb9fc7b952fe353be854c918520adf49a256edf90da6ab12c8c/datapipe_core-0.12.0.tar.gz
+[2023-05-27 17:41:17] INFO root fetch - processPackages [lusid-sdk]: executing diffoscope
+[2023-05-27 17:41:17] INFO root fetch - processPackages [lusid-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-sdk-1.0.91.tar.gz tmp/lusid-sdk-1.0.98.tar.gz --markdown 20230527/l/lusid-sdk/1.0.91-1.0.98/diff.md --exclude *.pyd
+[2023-05-27 17:41:17] INFO root fetch - processPackages [llm-rs]: Downloading https://files.pythonhosted.org/packages/95/98/0e10a1c5d70a15645225cca6066c5ac13dc339fd53efaa1241d77cdd5605/llm_rs-0.2.6-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-27 17:41:17] INFO root fetch - processPackages [policyengine-canada]: executing diffoscope
+[2023-05-27 17:41:17] INFO root fetch - processPackages [policyengine-canada]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-canada-0.8.0.tar.gz tmp/policyengine-canada-0.9.0.tar.gz --markdown 20230527/p/policyengine-canada/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 17:41:17] INFO root fetch - processPackages [hifitime]: Downloading https://files.pythonhosted.org/packages/d4/43/0d1f848ec025ab4bbd6733eec628272b75879fc84c83faddae14e729f8ac/hifitime-3.8.1.tar.gz
+[2023-05-27 17:41:17] INFO root fetch - processPackages [lusid-sdk-preview]: executing diffoscope
+[2023-05-27 17:41:17] INFO root fetch - processPackages [lusid-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-sdk-preview-1.0.91.tar.gz tmp/lusid-sdk-preview-1.0.98.tar.gz --markdown 20230527/l/lusid-sdk-preview/1.0.91-1.0.98/diff.md --exclude *.pyd
+[2023-05-27 17:41:17] INFO root fetch - processPackages [hifitime]: executing diffoscope
+[2023-05-27 17:41:17] INFO root fetch - processPackages [hifitime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hifitime-3.8.0.tar.gz tmp/hifitime-3.8.1.tar.gz --markdown 20230527/h/hifitime/3.8.0-3.8.1/diff.md --exclude *.pyd
+[2023-05-27 17:41:17] INFO root fetch - processPackages [datapipe-core]: executing diffoscope
+[2023-05-27 17:41:17] INFO root fetch - processPackages [datapipe-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datapipe_core-0.12.0.tar.gz tmp/datapipe_core-0.12.0a1.tar.gz --markdown 20230527/d/datapipe-core/0.12.0-0.12.0a1/diff.md --exclude *.pyd
+[2023-05-27 17:41:17] INFO root fetch - processPackages [jmcfunction]: Downloading https://files.pythonhosted.org/packages/90/ff/4ad3ad05dfe31cc54c9abe17b8ea4317615842cef5e93d059fe0b71ae9d1/jmcfunction-1.2.9a4.tar.gz
+[2023-05-27 17:41:18] INFO root fetch - processPackages [jmcfunction]: executing diffoscope
+[2023-05-27 17:41:18] INFO root fetch - processPackages [jmcfunction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jmcfunction-1.2.9a3.tar.gz tmp/jmcfunction-1.2.9a4.tar.gz --markdown 20230527/j/jmcfunction/1.2.9a3-1.2.9a4/diff.md --exclude *.pyd
+[2023-05-27 17:41:18] INFO root fetch - main [MainThread]: End processing [dbpyman]: success
+[2023-05-27 17:41:18] INFO root fetch - processPackages [llm-rs]: executing diffoscope
+[2023-05-27 17:41:18] INFO root fetch - processPackages [llm-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_rs-0.2.5.tar.gz tmp/llm_rs-0.2.6-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230527/l/llm-rs/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-27 17:41:19] INFO root fetch - main [MainThread]: End processing [policyengine-canada]: success
+[2023-05-27 17:41:19] INFO root fetch - main [MainThread]: End processing [datapipe-core]: success
+[2023-05-27 17:41:19] INFO root fetch - main [MainThread]: End processing [jmcfunction]: success
+[2023-05-27 17:41:19] INFO root fetch - main [MainThread]: End processing [hifitime]: success
+[2023-05-27 17:41:20] INFO root fetch - main [MainThread]: End processing [llm-rs]: success
+[2023-05-27 17:41:41] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
+[2023-05-27 17:41:49] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
+[2023-05-27 17:41:49] INFO root fetch - main [MainThread]: Store serial: [18275379]
