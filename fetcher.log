@@ -7934,3 +7934,89 @@
 [2023-05-27 13:42:48] INFO root fetch - main [MainThread]: End processing [carefree-creator]: success
 [2023-05-27 13:43:36] INFO root fetch - main [MainThread]: End processing [playwrightcapture]: success
 [2023-05-27 13:43:36] INFO root fetch - main [MainThread]: Store serial: [18274055]
+[2023-05-27 13:48:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274055]
+[2023-05-27 13:48:45] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-27 13:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: makeprediction
+[2023-05-27 13:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: s5-pytorch
+[2023-05-27 13:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dokuwikidumper
+[2023-05-27 13:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bulma-sphinx-theme
+[2023-05-27 13:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyFunceble-dev
+[2023-05-27 13:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cwltest
+[2023-05-27 13:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl-dllib-spark3
+[2023-05-27 13:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bigdl-orca-spark3
+[2023-05-27 13:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bigdl-friesian-spark3
+[2023-05-27 13:48:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bigdl-chronos-spark3
+[2023-05-27 13:48:45] INFO root fetch - processPackages [makeprediction]: New version: [4.1.1] Old Version: [4.1.0]
+[2023-05-27 13:48:45] INFO root fetch - processPackages [bulma-sphinx-theme]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-27 13:48:45] INFO root fetch - processPackages [s5-pytorch]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-27 13:48:45] INFO root fetch - processPackages [dokuwikidumper]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 13:48:45] INFO root fetch - processPackages [bigdl-dllib-spark3]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 13:48:45] INFO root fetch - processPackages [cwltest]: New version: [2.3.20230527113600] Old Version: [2.3.20230108193615]
+[2023-05-27 13:48:45] INFO root fetch - processPackages [bigdl-orca-spark3]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 13:48:45] INFO root fetch - processPackages [bigdl-friesian-spark3]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 13:48:45] INFO root fetch - processPackages [bigdl-chronos-spark3]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 13:48:45] INFO root fetch - processPackages [PyFunceble-dev]: New version: [4.2.0a9] Old Version: [4.2.0a8]
+[2023-05-27 13:48:45] INFO root fetch - processPackages [dokuwikidumper]: executing diffoscope
+[2023-05-27 13:48:45] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.8.tar.gz tmp/dokuwikidumper-0.1.9.tar.gz --markdown 20230527/d/dokuwikidumper/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 13:48:45] INFO root fetch - processPackages [makeprediction]: Downloading https://files.pythonhosted.org/packages/75/d2/0e608a3df98f0645f72d725c6deeac631a83328848ef09d7352b13c4ef06/makeprediction-4.1.0.tar.gz
+[2023-05-27 13:48:45] INFO root fetch - processPackages [s5-pytorch]: Downloading https://files.pythonhosted.org/packages/f3/e4/c5f27bd4d835a3dc0a235d6fe2a5f101a48915392a7739f28c055f074e87/s5-pytorch-0.1.7.tar.gz
+[2023-05-27 13:48:45] INFO root fetch - processPackages [bigdl-dllib-spark3]: Downloading https://files.pythonhosted.org/packages/d6/fa/80beb2de5339b118a860cfe25c53bb54d521b6858241119e10cddeb5a566/bigdl-dllib-spark3-2.4.0b20230526.tar.gz
+[2023-05-27 13:48:45] INFO root fetch - processPackages [bigdl-orca-spark3]: Downloading https://files.pythonhosted.org/packages/ef/12/1d567446a47b5097db55e48fade196c0d79f001270f6d4d9e79a439666a3/bigdl_orca_spark3-2.4.0b20230526-py3-none-manylinux1_x86_64.whl
+[2023-05-27 13:48:45] INFO root fetch - processPackages [cwltest]: Downloading https://files.pythonhosted.org/packages/c5/99/9d5cb1959731c1f61d05555d1f0488dac9cb31968426cd5ff46a6f23f611/cwltest-2.3.20230108193615.tar.gz
+[2023-05-27 13:48:45] INFO root fetch - processPackages [bulma-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/51/52/aa427f0a08a159b44284c64911ef1123f5fe796e37a9696f6ed02c1006e8/bulma_sphinx_theme-0.0.4.tar.gz
+[2023-05-27 13:48:45] INFO root fetch - processPackages [bigdl-chronos-spark3]: Downloading https://files.pythonhosted.org/packages/6a/5c/448fa2550944400e1bef725320a054c6326dc33c99a5a36d77b1d69fdad9/bigdl_chronos_spark3-2.4.0b20230526-py3-none-manylinux1_x86_64.whl
+[2023-05-27 13:48:45] INFO root fetch - processPackages [PyFunceble-dev]: Downloading https://files.pythonhosted.org/packages/ef/81/fc1cdeacccb82c209b5eb7dbd7601ef34225576f23e6ca77635cc009df22/PyFunceble-dev-4.2.0a8.tar.gz
+[2023-05-27 13:48:45] INFO root fetch - processPackages [bigdl-friesian-spark3]: Downloading https://files.pythonhosted.org/packages/48/7a/3aeefee8021b8b5a3c2bcf535b30f50b3343d1f6e2a72a0363b1aaaa0206/bigdl_friesian_spark3-2.4.0b20230526-py3-none-manylinux1_x86_64.whl
+[2023-05-27 13:48:45] WARNING root fetch - processPackages [bigdl-orca-spark3]: Skipping package: exceeds size limit 20207624>=10485760
+[2023-05-27 13:48:45] INFO root fetch - processPackages [bigdl-orca-spark3]: Start processing: bigdl-spark3
+[2023-05-27 13:48:45] INFO root fetch - main [MainThread]: End processing [bigdl-orca-spark3] error
+[2023-05-27 13:48:46] WARNING root fetch - processPackages [bigdl-dllib-spark3]: Skipping package: exceeds size limit 61251831>=10485760
+[2023-05-27 13:48:46] INFO root fetch - processPackages [bigdl-dllib-spark3]: Start processing: dscan-api-client
+[2023-05-27 13:48:46] INFO root fetch - main [MainThread]: End processing [bigdl-dllib-spark3] error
+[2023-05-27 13:48:46] INFO root fetch - processPackages [bigdl-spark3]: New version: [2.4.0b20230527] Old Version: [2.4.0b20230526]
+[2023-05-27 13:48:46] INFO root fetch - processPackages [dscan-api-client]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-27 13:48:46] INFO root fetch - processPackages [makeprediction]: Downloading https://files.pythonhosted.org/packages/6a/f7/769a0e93b5bedf8e3e791d61ca4c108bf080025e7e02017d53f5fec99832/makeprediction-4.1.1.tar.gz
+[2023-05-27 13:48:46] INFO root fetch - processPackages [bulma-sphinx-theme]: executing diffoscope
+[2023-05-27 13:48:46] INFO root fetch - processPackages [bulma-sphinx-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bulma_sphinx_theme-0.0.3.tar.gz tmp/bulma_sphinx_theme-0.0.4.tar.gz --markdown 20230527/b/bulma-sphinx-theme/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-27 13:48:46] INFO root fetch - processPackages [bigdl-spark3]: Downloading https://files.pythonhosted.org/packages/92/30/0ed6eeb8be68d264877ca82d28187e4067d65a02fdfe1e89a32aadcf0283/bigdl_spark3-2.4.0b20230526-py3-none-manylinux1_x86_64.whl
+[2023-05-27 13:48:46] INFO root fetch - processPackages [bigdl-friesian-spark3]: Downloading https://files.pythonhosted.org/packages/01/8d/dc195f5972037fc261677864a97dfc8076682a0274e2f1526938d71d69a2/bigdl_friesian_spark3-2.4.0b20230527-py3-none-manylinux1_x86_64.whl
+[2023-05-27 13:48:46] INFO root fetch - processPackages [bigdl-chronos-spark3]: Downloading https://files.pythonhosted.org/packages/e7/41/cd456a50be919f12ece5e3c6c4438533611c8c735e0e5319f88da048a30c/bigdl_chronos_spark3-2.4.0b20230527-py3-none-manylinux1_x86_64.whl
+[2023-05-27 13:48:46] INFO root fetch - processPackages [PyFunceble-dev]: Downloading https://files.pythonhosted.org/packages/10/95/fda96651f98af8b033589223bd89e9900e9c4b1eab96d098091d15dd1613/PyFunceble-dev-4.2.0a9.tar.gz
+[2023-05-27 13:48:46] INFO root fetch - processPackages [makeprediction]: executing diffoscope
+[2023-05-27 13:48:46] INFO root fetch - processPackages [makeprediction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/makeprediction-4.1.0.tar.gz tmp/makeprediction-4.1.1.tar.gz --markdown 20230527/m/makeprediction/4.1.0-4.1.1/diff.md --exclude *.pyd
+[2023-05-27 13:48:46] INFO root fetch - processPackages [dscan-api-client]: Downloading https://files.pythonhosted.org/packages/be/9f/7d876fb8e3bd42ce26126d440bea4e9e74c528a367b29feaa8172263a207/dscan_api_client-1.0.6-py3-none-any.whl
+[2023-05-27 13:48:46] INFO root fetch - processPackages [s5-pytorch]: Downloading https://files.pythonhosted.org/packages/ea/69/999bff02db91f523c9747c8163b2cc2adc97caec0313690d20903f5b085d/s5-pytorch-0.1.8.tar.gz
+[2023-05-27 13:48:46] INFO root fetch - processPackages [cwltest]: Downloading https://files.pythonhosted.org/packages/b3/b2/84e3448df3e6d6e7b636136ba8165712867b6c5b4af14ae7e471b28641d1/cwltest-2.3.20230527113600.tar.gz
+[2023-05-27 13:48:46] INFO root fetch - processPackages [PyFunceble-dev]: executing diffoscope
+[2023-05-27 13:48:46] INFO root fetch - processPackages [PyFunceble-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyFunceble-dev-4.2.0a8.tar.gz tmp/PyFunceble-dev-4.2.0a9.tar.gz --markdown 20230527/P/PyFunceble-dev/4.2.0a8-4.2.0a9/diff.md --exclude *.pyd
+[2023-05-27 13:48:46] INFO root fetch - processPackages [dscan-api-client]: executing diffoscope
+[2023-05-27 13:48:46] INFO root fetch - processPackages [dscan-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscan_api_client-1.0.5-py3-none-any.whl.zip tmp/dscan_api_client-1.0.6-py3-none-any.whl.zip --markdown 20230527/d/dscan-api-client/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-27 13:48:46] INFO root fetch - processPackages [bigdl-spark3]: Downloading https://files.pythonhosted.org/packages/a0/f9/c1f491a02229cc0da4519872757eb9cf56c453de213e34b24fe55ef5bc95/bigdl_spark3-2.4.0b20230527-py3-none-manylinux1_x86_64.whl
+[2023-05-27 13:48:46] INFO root fetch - processPackages [cwltest]: executing diffoscope
+[2023-05-27 13:48:46] INFO root fetch - processPackages [cwltest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwltest-2.3.20230108193615.tar.gz tmp/cwltest-2.3.20230527113600.tar.gz --markdown 20230527/c/cwltest/2.3.20230108193615-2.3.20230527113600/diff.md --exclude *.pyd
+[2023-05-27 13:48:46] INFO root fetch - processPackages [s5-pytorch]: executing diffoscope
+[2023-05-27 13:48:46] INFO root fetch - processPackages [s5-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s5-pytorch-0.1.7.tar.gz tmp/s5-pytorch-0.1.8.tar.gz --markdown 20230527/s/s5-pytorch/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-27 13:48:46] INFO root fetch - processPackages [bigdl-friesian-spark3]: executing diffoscope
+[2023-05-27 13:48:46] INFO root fetch - processPackages [bigdl-friesian-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian_spark3-2.4.0b20230526-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian_spark3-2.4.0b20230527-py3-none-manylinux1_x86_64.whl.zip --markdown 20230527/b/bigdl-friesian-spark3/2.4.0b20230526-2.4.0b20230527/diff.md --exclude *.pyd
+[2023-05-27 13:48:46] INFO root fetch - processPackages [bigdl-chronos-spark3]: executing diffoscope
+[2023-05-27 13:48:46] INFO root fetch - processPackages [bigdl-chronos-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos_spark3-2.4.0b20230526-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_chronos_spark3-2.4.0b20230527-py3-none-manylinux1_x86_64.whl.zip --markdown 20230527/b/bigdl-chronos-spark3/2.4.0b20230526-2.4.0b20230527/diff.md --exclude *.pyd
+[2023-05-27 13:48:46] INFO root fetch - processPackages [bigdl-spark3]: executing diffoscope
+[2023-05-27 13:48:46] INFO root fetch - processPackages [bigdl-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_spark3-2.4.0b20230526-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_spark3-2.4.0b20230527-py3-none-manylinux1_x86_64.whl.zip --markdown 20230527/b/bigdl-spark3/2.4.0b20230526-2.4.0b20230527/diff.md --exclude *.pyd
+[2023-05-27 13:48:47] INFO root fetch - processPackages [dokuwikidumper]: Start processing: subtask
+[2023-05-27 13:48:47] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
+[2023-05-27 13:48:47] INFO root fetch - processPackages [subtask]: New version: [1.0.0] Old Version: [0.3.0]
+[2023-05-27 13:48:47] INFO root fetch - processPackages [subtask]: Downloading https://files.pythonhosted.org/packages/78/85/7677a16ee424ce47bbe7a8e0c4e13ce97f2c7d3dd46b4a7873c224a468f5/Subtask-0.3.0.tar.gz
+[2023-05-27 13:48:47] INFO root fetch - processPackages [subtask]: Downloading https://files.pythonhosted.org/packages/6d/ac/e1c5e17ff2d451ca643054a10d988a9d96da246dc52c8b69a0e7a39df28b/subtask-1.0.0.tar.gz
+[2023-05-27 13:48:47] INFO root fetch - main [MainThread]: End processing [bigdl-spark3]: success
+[2023-05-27 13:48:47] INFO root fetch - processPackages [subtask]: executing diffoscope
+[2023-05-27 13:48:47] INFO root fetch - processPackages [subtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Subtask-0.3.0.tar.gz tmp/subtask-1.0.0.tar.gz --markdown 20230527/s/subtask/0.3.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-27 13:48:48] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
+[2023-05-27 13:48:48] INFO root fetch - main [MainThread]: End processing [makeprediction]: success
+[2023-05-27 13:48:48] INFO root fetch - main [MainThread]: End processing [s5-pytorch]: success
+[2023-05-27 13:48:48] INFO root fetch - main [MainThread]: End processing [bigdl-friesian-spark3]: success
+[2023-05-27 13:48:48] INFO root fetch - main [MainThread]: End processing [bulma-sphinx-theme]: success
+[2023-05-27 13:48:48] INFO root fetch - main [MainThread]: End processing [subtask]: success
+[2023-05-27 13:48:48] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark3]: success
+[2023-05-27 13:48:49] INFO root fetch - main [MainThread]: End processing [cwltest]: success
+[2023-05-27 13:48:51] INFO root fetch - main [MainThread]: End processing [PyFunceble-dev]: success
+[2023-05-27 13:48:51] INFO root fetch - main [MainThread]: Store serial: [18274089]
