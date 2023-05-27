@@ -7016,3 +7016,26 @@
 [2023-05-27 11:44:10] INFO root fetch - main [MainThread]: End processing [pmemo]: success
 [2023-05-27 11:44:59] INFO root fetch - main [MainThread]: End processing [testix]: success
 [2023-05-27 11:44:59] INFO root fetch - main [MainThread]: Store serial: [18273524]
+[2023-05-27 11:50:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273524]
+[2023-05-27 11:50:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-27 11:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: logidrivepy
+[2023-05-27 11:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: test-helper-vbot3
+[2023-05-27 11:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: customtkinterx
+[2023-05-27 11:50:08] INFO root fetch - processPackages [logidrivepy]: New version: [0.1.1] Old Version: [0.0.1]
+[2023-05-27 11:50:08] INFO root fetch - processPackages [test-helper-vbot3]: New version: [1.4] Old Version: [1.3]
+[2023-05-27 11:50:08] INFO root fetch - processPackages [customtkinterx]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-27 11:50:08] INFO root fetch - processPackages [customtkinterx]: Downloading https://files.pythonhosted.org/packages/00/13/c7d63fd8e5db0956a4c16a51b32d08d75afd0f5626564af8ecbe210060e1/customtkinterx-0.1.0.tar.gz
+[2023-05-27 11:50:08] INFO root fetch - processPackages [logidrivepy]: Downloading https://files.pythonhosted.org/packages/6c/07/579feebc3b2fad8960a80a84149e96063706e86c740904ba044cb772fb8a/logidrivepy-0.0.1.tar.gz
+[2023-05-27 11:50:08] INFO root fetch - processPackages [test-helper-vbot3]: Downloading https://files.pythonhosted.org/packages/5f/70/2527439796250925bc459cf5ec51df1a350a2c833ea730d7d26e73b4ce90/test_helper_vbot3-1.4.tar.gz
+[2023-05-27 11:50:08] INFO root fetch - processPackages [test-helper-vbot3]: executing diffoscope
+[2023-05-27 11:50:08] INFO root fetch - processPackages [test-helper-vbot3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_helper_vbot3-1.3.tar.gz tmp/test_helper_vbot3-1.4.tar.gz --markdown 20230527/t/test-helper-vbot3/1.3-1.4/diff.md --exclude *.pyd
+[2023-05-27 11:50:08] INFO root fetch - processPackages [logidrivepy]: Downloading https://files.pythonhosted.org/packages/49/c6/494054d3449a59b45161a653b29dad7a779295fc0ba4c0bd0a77e2b0af40/logidrivepy-0.1.1.tar.gz
+[2023-05-27 11:50:09] INFO root fetch - processPackages [customtkinterx]: Downloading https://files.pythonhosted.org/packages/11/c1/a0f6a59ea7323a967fc68cb2120b05d84e482124be12d7eb58fe8ff47389/customtkinterx-0.1.1.tar.gz
+[2023-05-27 11:50:09] INFO root fetch - processPackages [logidrivepy]: executing diffoscope
+[2023-05-27 11:50:09] INFO root fetch - processPackages [logidrivepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logidrivepy-0.0.1.tar.gz tmp/logidrivepy-0.1.1.tar.gz --markdown 20230527/l/logidrivepy/0.0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-27 11:50:09] INFO root fetch - processPackages [customtkinterx]: executing diffoscope
+[2023-05-27 11:50:09] INFO root fetch - processPackages [customtkinterx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customtkinterx-0.1.0.tar.gz tmp/customtkinterx-0.1.1.tar.gz --markdown 20230527/c/customtkinterx/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-27 11:50:09] INFO root fetch - main [MainThread]: End processing [test-helper-vbot3]: success
+[2023-05-27 11:50:10] INFO root fetch - main [MainThread]: End processing [customtkinterx]: success
+[2023-05-27 11:50:58] INFO root fetch - main [MainThread]: End processing [logidrivepy]: success
+[2023-05-27 11:50:58] INFO root fetch - main [MainThread]: Store serial: [18273534]
