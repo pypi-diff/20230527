@@ -9196,3 +9196,88 @@
 [2023-05-27 16:29:59] INFO root fetch - main [MainThread]: End processing [hifitime]: success
 [2023-05-27 16:30:46] INFO root fetch - main [MainThread]: End processing [alicebot]: success
 [2023-05-27 16:30:46] INFO root fetch - main [MainThread]: Store serial: [18274797]
+[2023-05-27 16:35:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274797]
+[2023-05-27 16:35:54] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-27 16:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: omniply
+[2023-05-27 16:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: custom-utils
+[2023-05-27 16:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: talk-codebase
+[2023-05-27 16:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: combo-lock
+[2023-05-27 16:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shelephant
+[2023-05-27 16:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PyFunceble-dev
+[2023-05-27 16:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gradio-version-freeze
+[2023-05-27 16:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: klu
+[2023-05-27 16:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: asociita
+[2023-05-27 16:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gradio-version-freeze
+[2023-05-27 16:35:54] WARNING root fetch - processPackages [omniply]: Skipping, unable to determine old version
+[2023-05-27 16:35:54] INFO root fetch - processPackages [omniply]: Start processing: configloaders
+[2023-05-27 16:35:54] INFO root fetch - main [MainThread]: End processing [omniply] error
+[2023-05-27 16:35:54] INFO root fetch - processPackages [combo-lock]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-27 16:35:54] INFO root fetch - processPackages [talk-codebase]: New version: [0.1.17] Old Version: [0.1.16]
+[2023-05-27 16:35:54] INFO root fetch - processPackages [asociita]: New version: [0.1.6.5] Old Version: [0.1.6.4]
+[2023-05-27 16:35:55] INFO root fetch - processPackages [klu]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-27 16:35:55] INFO root fetch - processPackages [custom-utils]: New version: [0.0.33] Old Version: [0.0.32]
+[2023-05-27 16:35:55] INFO root fetch - processPackages [gradio-version-freeze]: New version: [3.32.2] Old Version: [3.32.1.3.40]
+[2023-05-27 16:35:55] INFO root fetch - processPackages [shelephant]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-27 16:35:55] INFO root fetch - processPackages [gradio-version-freeze]: New version: [3.32.2] Old Version: [3.32.1.3.40]
+[2023-05-27 16:35:55] INFO root fetch - processPackages [configloaders]: New version: [2.2.2] Old Version: [2.2.1]
+[2023-05-27 16:35:55] INFO root fetch - processPackages [PyFunceble-dev]: New version: [4.2.0a9] Old Version: [4.2.0a8]
+[2023-05-27 16:35:55] INFO root fetch - processPackages [PyFunceble-dev]: executing diffoscope
+[2023-05-27 16:35:55] INFO root fetch - processPackages [PyFunceble-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyFunceble-dev-4.2.0a8.tar.gz tmp/PyFunceble-dev-4.2.0a9.tar.gz --markdown 20230527/P/PyFunceble-dev/4.2.0a8-4.2.0a9/diff.md --exclude *.pyd
+[2023-05-27 16:35:55] INFO root fetch - processPackages [combo-lock]: Downloading https://files.pythonhosted.org/packages/1a/7d/22bc221fd33a0f72c84ff8c6f6b5f06533825c058fe29a57d12467344cb3/combo_lock-0.2.5.tar.gz
+[2023-05-27 16:35:55] INFO root fetch - processPackages [talk-codebase]: Downloading https://files.pythonhosted.org/packages/3d/4e/cf409bb1f76782060a34d0252e5b607de8e7c34549085a2acb3846c46ed5/talk_codebase-0.1.17.tar.gz
+[2023-05-27 16:35:55] INFO root fetch - processPackages [gradio-version-freeze]: Downloading https://files.pythonhosted.org/packages/f6/38/09d48269d1fef43b4f7ebdd0e78c57bc61f77e68bcc9c771877700afd058/gradio_version_freeze-3.32.1.3.40.tar.gz
+[2023-05-27 16:35:55] INFO root fetch - processPackages [asociita]: Downloading https://files.pythonhosted.org/packages/3b/1e/749c5c09829302e63514971a22ed6cbad675e533b10c436eed31196b293c/asociita-0.1.6.5.tar.gz
+[2023-05-27 16:35:55] INFO root fetch - processPackages [gradio-version-freeze]: Downloading https://files.pythonhosted.org/packages/f6/38/09d48269d1fef43b4f7ebdd0e78c57bc61f77e68bcc9c771877700afd058/gradio_version_freeze-3.32.1.3.40.tar.gz
+[2023-05-27 16:35:55] INFO root fetch - processPackages [configloaders]: Downloading https://files.pythonhosted.org/packages/ac/75/f82f9c8ac510859c1c5010e03a21c138c1f0110b3ba8d5040f8277528127/configloaders-2.2.1.tar.gz
+[2023-05-27 16:35:55] INFO root fetch - processPackages [talk-codebase]: executing diffoscope
+[2023-05-27 16:35:55] INFO root fetch - processPackages [talk-codebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talk_codebase-0.1.16.tar.gz tmp/talk_codebase-0.1.17.tar.gz --markdown 20230527/t/talk-codebase/0.1.16-0.1.17/diff.md --exclude *.pyd
+[2023-05-27 16:35:55] INFO root fetch - processPackages [klu]: Downloading https://files.pythonhosted.org/packages/0e/d4/8845432e1a5e4336ea600cbe21e4bb8bb27f18cc0df59f506c38243d1de7/klu-0.1.5.tar.gz
+[2023-05-27 16:35:55] INFO root fetch - processPackages [custom-utils]: Downloading https://files.pythonhosted.org/packages/fb/9a/fc41497b80d6657cb8b357f3e701efdf2625990d0c5412200b39e5f4b9f9/custom-utils-0.0.33.tar.gz
+[2023-05-27 16:35:55] INFO root fetch - processPackages [asociita]: executing diffoscope
+[2023-05-27 16:35:55] INFO root fetch - processPackages [asociita]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asociita-0.1.6.4.tar.gz tmp/asociita-0.1.6.5.tar.gz --markdown 20230527/a/asociita/0.1.6.4-0.1.6.5/diff.md --exclude *.pyd
+[2023-05-27 16:35:55] INFO root fetch - processPackages [klu]: executing diffoscope
+[2023-05-27 16:35:55] INFO root fetch - processPackages [klu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klu-0.1.4.tar.gz tmp/klu-0.1.5.tar.gz --markdown 20230527/k/klu/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-27 16:35:55] INFO root fetch - processPackages [shelephant]: executing diffoscope
+[2023-05-27 16:35:55] INFO root fetch - processPackages [shelephant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shelephant-0.8.1.tar.gz tmp/shelephant-0.9.0.tar.gz --markdown 20230527/s/shelephant/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 16:35:55] INFO root fetch - processPackages [combo-lock]: Downloading https://files.pythonhosted.org/packages/47/79/83e327fc03dd89c7b954eb290d89e9dc639ea3f4d1939139d1cccc452b22/combo_lock-0.2.6.tar.gz
+[2023-05-27 16:35:55] INFO root fetch - processPackages [custom-utils]: executing diffoscope
+[2023-05-27 16:35:55] INFO root fetch - processPackages [custom-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom-utils-0.0.32.tar.gz tmp/custom-utils-0.0.33.tar.gz --markdown 20230527/c/custom-utils/0.0.32-0.0.33/diff.md --exclude *.pyd
+[2023-05-27 16:35:55] INFO root fetch - processPackages [gradio-version-freeze]: Downloading https://files.pythonhosted.org/packages/52/b3/41773cbc42901c68304def4eca25857b75b24bba67aba5e30380b217a31d/gradio_version_freeze-3.32.2.tar.gz
+[2023-05-27 16:35:55] INFO root fetch - processPackages [configloaders]: Downloading https://files.pythonhosted.org/packages/af/0a/a589fc07d03a06ccdeb44d311eafa26d7b89bd164c68c3cc4dd79328bed9/configloaders-2.2.2.tar.gz
+[2023-05-27 16:35:55] INFO root fetch - processPackages [gradio-version-freeze]: Downloading https://files.pythonhosted.org/packages/52/b3/41773cbc42901c68304def4eca25857b75b24bba67aba5e30380b217a31d/gradio_version_freeze-3.32.2.tar.gz
+[2023-05-27 16:35:55] INFO root fetch - processPackages [combo-lock]: executing diffoscope
+[2023-05-27 16:35:55] INFO root fetch - processPackages [combo-lock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/combo_lock-0.2.5.tar.gz tmp/combo_lock-0.2.6.tar.gz --markdown 20230527/c/combo-lock/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-27 16:35:55] INFO root fetch - processPackages [configloaders]: executing diffoscope
+[2023-05-27 16:35:55] INFO root fetch - processPackages [configloaders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configloaders-2.2.1.tar.gz tmp/configloaders-2.2.2.tar.gz --markdown 20230527/c/configloaders/2.2.1-2.2.2/diff.md --exclude *.pyd
+[2023-05-27 16:35:55] INFO root fetch - processPackages [gradio-version-freeze]: executing diffoscope
+[2023-05-27 16:35:55] INFO root fetch - processPackages [gradio-version-freeze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradio_version_freeze-3.32.1.3.40.tar.gz tmp/gradio_version_freeze-3.32.2.tar.gz --markdown 20230527/g/gradio-version-freeze/3.32.1.3.40-3.32.2/diff.md --exclude *.pyd
+[2023-05-27 16:35:55] INFO root fetch - processPackages [gradio-version-freeze]: executing diffoscope
+[2023-05-27 16:35:55] INFO root fetch - processPackages [gradio-version-freeze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradio_version_freeze-3.32.1.3.40.tar.gz tmp/gradio_version_freeze-3.32.2.tar.gz --markdown 20230527/g/gradio-version-freeze/3.32.1.3.40-3.32.2/diff.md --exclude *.pyd
+[2023-05-27 16:35:56] INFO root fetch - processPackages [talk-codebase]: Start processing: shinherpro
+[2023-05-27 16:35:56] INFO root fetch - main [MainThread]: End processing [talk-codebase]: success
+[2023-05-27 16:35:56] INFO root fetch - processPackages [shinherpro]: New version: [1.6.6] Old Version: [1.6.5]
+[2023-05-27 16:35:57] INFO root fetch - processPackages [shinherpro]: executing diffoscope
+[2023-05-27 16:35:57] INFO root fetch - processPackages [shinherpro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shinherpro-1.6.5.tar.gz tmp/shinherpro-1.6.6.tar.gz --markdown 20230527/s/shinherpro/1.6.5-1.6.6/diff.md --exclude *.pyd
+[2023-05-27 16:35:57] INFO root fetch - processPackages [shelephant]: Start processing: cccconverter-ostrichb
+[2023-05-27 16:35:57] INFO root fetch - main [MainThread]: End processing [shelephant]: success
+[2023-05-27 16:35:57] WARNING root fetch - processPackages [cccconverter-ostrichb]: Skipping, unable to determine old version
+[2023-05-27 16:35:57] INFO root fetch - processPackages [cccconverter-ostrichb]: Start processing: gitlabform-ytt
+[2023-05-27 16:35:57] INFO root fetch - main [MainThread]: End processing [cccconverter-ostrichb] error
+[2023-05-27 16:35:57] INFO root fetch - processPackages [combo-lock]: Start processing: custom-utils
+[2023-05-27 16:35:57] INFO root fetch - main [MainThread]: End processing [combo-lock]: success
+[2023-05-27 16:35:57] INFO root fetch - main [MainThread]: End processing [custom-utils]: success
+[2023-05-27 16:35:57] INFO root fetch - processPackages [custom-utils]: New version: [0.0.34] Old Version: [0.0.33]
+[2023-05-27 16:35:57] WARNING root fetch - processPackages [gitlabform-ytt]: Skipping, unable to determine old version
+[2023-05-27 16:35:57] INFO root fetch - main [MainThread]: End processing [gitlabform-ytt] error
+[2023-05-27 16:35:57] INFO root fetch - main [MainThread]: End processing [klu]: success
+[2023-05-27 16:35:57] INFO root fetch - main [MainThread]: End processing [asociita]: success
+[2023-05-27 16:35:57] INFO root fetch - main [MainThread]: End processing [configloaders]: success
+[2023-05-27 16:35:57] INFO root fetch - processPackages [custom-utils]: Downloading https://files.pythonhosted.org/packages/30/ea/1d8ec6751b3e4534e0e40ef4fc567301dc1f423442f16642af7c9fbfe8a1/custom-utils-0.0.34.tar.gz
+[2023-05-27 16:35:57] INFO root fetch - processPackages [custom-utils]: executing diffoscope
+[2023-05-27 16:35:57] INFO root fetch - processPackages [custom-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom-utils-0.0.33.tar.gz tmp/custom-utils-0.0.34.tar.gz --markdown 20230527/c/custom-utils/0.0.33-0.0.34/diff.md --exclude *.pyd
+[2023-05-27 16:35:58] INFO root fetch - main [MainThread]: End processing [shinherpro]: success
+[2023-05-27 16:35:58] INFO root fetch - main [MainThread]: End processing [PyFunceble-dev]: success
+[2023-05-27 16:35:59] INFO root fetch - main [MainThread]: End processing [custom-utils]: success
+[2023-05-27 16:38:01] INFO root fetch - main [MainThread]: End processing [gradio-version-freeze]: success
+[2023-05-27 16:38:03] INFO root fetch - main [MainThread]: End processing [gradio-version-freeze]: success
+[2023-05-27 16:38:03] INFO root fetch - main [MainThread]: Store serial: [18274874]
