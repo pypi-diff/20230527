@@ -11521,3 +11521,43 @@
 [2023-05-27 20:51:04] INFO root fetch - main [MainThread]: End processing [aio-dt-protocol]: success
 [2023-05-27 20:51:04] INFO root fetch - main [MainThread]: End processing [bovine]: success
 [2023-05-27 20:51:04] INFO root fetch - main [MainThread]: Store serial: [18276124]
+[2023-05-27 20:56:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276124]
+[2023-05-27 20:56:13] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 20:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: enderchest
+[2023-05-27 20:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bovine-store
+[2023-05-27 20:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tzachpdf
+[2023-05-27 20:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bovine-process
+[2023-05-27 20:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bovine-pubsub
+[2023-05-27 20:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyqsys
+[2023-05-27 20:56:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bovine-tool
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-pubsub]: New version: [0.2.4] Old Version: [0.2.1]
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-tool]: New version: [0.2.4] Old Version: [0.2.2]
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-process]: New version: [0.2.4] Old Version: [0.2.2]
+[2023-05-27 20:56:14] WARNING root fetch - processPackages [pyqsys]: Skipping, unable to determine old version
+[2023-05-27 20:56:14] INFO root fetch - main [MainThread]: End processing [pyqsys] error
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-store]: New version: [0.2.4] Old Version: [0.2.2]
+[2023-05-27 20:56:14] WARNING root fetch - processPackages [tzachpdf]: Skipping, unable to determine old version
+[2023-05-27 20:56:14] INFO root fetch - main [MainThread]: End processing [tzachpdf] error
+[2023-05-27 20:56:14] INFO root fetch - processPackages [enderchest]: New version: [0.1.0rc2] Old Version: [0.1.0rc1]
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-pubsub]: Downloading https://files.pythonhosted.org/packages/40/dc/1eb840b22458332109b31c4d16cbfc77226586388f5fd74fd0b60ad490b8/bovine_pubsub-0.2.4.tar.gz
+[2023-05-27 20:56:14] INFO root fetch - processPackages [enderchest]: Downloading https://files.pythonhosted.org/packages/1f/36/a00bac76360b41c5859ea60849619b03ce41e8c517cf2b28d71a9f6c9dde/enderchest-0.1.0rc1.tar.gz
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-process]: Downloading https://files.pythonhosted.org/packages/cf/ee/1aee7f093fabc8f2bef7f03a2ed4b82f32aa407e1b648e674d98a4541003/bovine_process-0.2.4.tar.gz
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-store]: Downloading https://files.pythonhosted.org/packages/ff/85/dbbdc0690262ab907145879329674ac53d3a2418c44684ae2d7a757f9e0a/bovine_store-0.2.4.tar.gz
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-pubsub]: executing diffoscope
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-pubsub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine_pubsub-0.2.1.tar.gz tmp/bovine_pubsub-0.2.4.tar.gz --markdown 20230527/b/bovine-pubsub/0.2.1-0.2.4/diff.md --exclude *.pyd
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-tool]: Downloading https://files.pythonhosted.org/packages/2d/7e/25af968b0c5f0c5664469df434a42cc91819fe3082cbaddaac35b66708a2/bovine_tool-0.2.4.tar.gz
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-process]: executing diffoscope
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-process]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine_process-0.2.2.tar.gz tmp/bovine_process-0.2.4.tar.gz --markdown 20230527/b/bovine-process/0.2.2-0.2.4/diff.md --exclude *.pyd
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-store]: executing diffoscope
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine_store-0.2.2.tar.gz tmp/bovine_store-0.2.4.tar.gz --markdown 20230527/b/bovine-store/0.2.2-0.2.4/diff.md --exclude *.pyd
+[2023-05-27 20:56:14] INFO root fetch - processPackages [enderchest]: Downloading https://files.pythonhosted.org/packages/aa/69/a17451cb27308c403e94af072efdfdb5fcb6ef0929070835e736e1ddb939/enderchest-0.1.0rc2.tar.gz
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-tool]: executing diffoscope
+[2023-05-27 20:56:14] INFO root fetch - processPackages [bovine-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine_tool-0.2.2.tar.gz tmp/bovine_tool-0.2.4.tar.gz --markdown 20230527/b/bovine-tool/0.2.2-0.2.4/diff.md --exclude *.pyd
+[2023-05-27 20:56:14] INFO root fetch - processPackages [enderchest]: executing diffoscope
+[2023-05-27 20:56:14] INFO root fetch - processPackages [enderchest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enderchest-0.1.0rc1.tar.gz tmp/enderchest-0.1.0rc2.tar.gz --markdown 20230527/e/enderchest/0.1.0rc1-0.1.0rc2/diff.md --exclude *.pyd
+[2023-05-27 20:56:15] INFO root fetch - main [MainThread]: End processing [bovine-pubsub]: success
+[2023-05-27 20:56:15] INFO root fetch - main [MainThread]: End processing [bovine-tool]: success
+[2023-05-27 20:56:15] INFO root fetch - main [MainThread]: End processing [bovine-process]: success
+[2023-05-27 20:56:15] INFO root fetch - main [MainThread]: End processing [bovine-store]: success
+[2023-05-27 20:56:16] INFO root fetch - main [MainThread]: End processing [enderchest]: success
+[2023-05-27 20:56:16] INFO root fetch - main [MainThread]: Store serial: [18276147]
