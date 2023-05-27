@@ -953,3 +953,40 @@
 [2023-05-27 01:56:24] INFO root fetch - main [MainThread]: End processing [cli-test-helpers]: success
 [2023-05-27 01:56:25] INFO root fetch - main [MainThread]: End processing [unitsnet-py]: success
 [2023-05-27 01:56:25] INFO root fetch - main [MainThread]: Store serial: [18269941]
+[2023-05-27 02:01:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269941]
+[2023-05-27 02:01:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 02:01:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: latch
+[2023-05-27 02:01:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: d20-securityLayer
+[2023-05-27 02:01:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dtbase
+[2023-05-27 02:01:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: d20-orm
+[2023-05-27 02:01:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tkmfly
+[2023-05-27 02:01:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: conjuring
+[2023-05-27 02:01:34] WARNING root fetch - processPackages [tkmfly]: Skipping, unable to determine old version
+[2023-05-27 02:01:34] INFO root fetch - main [MainThread]: End processing [tkmfly] error
+[2023-05-27 02:01:34] INFO root fetch - processPackages [dtbase]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 02:01:34] INFO root fetch - processPackages [d20-securityLayer]: New version: [2.0.0a2] Old Version: [2.0.0a1]
+[2023-05-27 02:01:34] INFO root fetch - processPackages [d20-orm]: New version: [2.0.1] Old Version: [2.0.0a2]
+[2023-05-27 02:01:34] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2023-05-27 02:01:34] INFO root fetch - processPackages [conjuring]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-27 02:01:34] INFO root fetch - processPackages [dtbase]: Downloading https://files.pythonhosted.org/packages/93/bf/dab933db7db7a8d9d2d367d1e8ce6670b01a63a6985ca88cb49369d41068/dtbase-0.0.1.tar.gz
+[2023-05-27 02:01:34] INFO root fetch - processPackages [latch]: executing diffoscope
+[2023-05-27 02:01:34] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20230527/l/latch/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2023-05-27 02:01:34] INFO root fetch - processPackages [d20-orm]: Downloading https://files.pythonhosted.org/packages/4e/a6/2ee1954b5457e901c3c0bd089c4e58777af01f03f9419462c0d9b1618c36/d20-orm-2.0.0a2.tar.gz
+[2023-05-27 02:01:34] INFO root fetch - processPackages [d20-securityLayer]: Downloading https://files.pythonhosted.org/packages/86/bc/7392c857321c4eecda64c2f87fa82a808b1216b0c9c434ed9ab6c291a6dc/d20-securityLayer-2.0.0a2.tar.gz
+[2023-05-27 02:01:34] INFO root fetch - processPackages [dtbase]: Downloading https://files.pythonhosted.org/packages/9e/25/e9eb0c671ae0af4ed379d2f59448a3fc6333ea756793a4f878c14eb9c1df/dtbase-0.0.2.tar.gz
+[2023-05-27 02:01:34] INFO root fetch - processPackages [d20-securityLayer]: executing diffoscope
+[2023-05-27 02:01:34] INFO root fetch - processPackages [d20-securityLayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-securityLayer-2.0.0a1.tar.gz tmp/d20-securityLayer-2.0.0a2.tar.gz --markdown 20230527/d/d20-securityLayer/2.0.0a1-2.0.0a2/diff.md --exclude *.pyd
+[2023-05-27 02:01:34] INFO root fetch - processPackages [conjuring]: Downloading https://files.pythonhosted.org/packages/9d/59/65356711f711d2c45a182dcd3c1dbe86c93bab9e99350bf3de8382f80381/conjuring-0.7.0.tar.gz
+[2023-05-27 02:01:34] INFO root fetch - processPackages [d20-orm]: Downloading https://files.pythonhosted.org/packages/27/11/67566effc4e4c841ddfaa838ca65a58c66f940f15076b1b91f25bcd9895c/d20-orm-2.0.1.tar.gz
+[2023-05-27 02:01:34] INFO root fetch - processPackages [dtbase]: executing diffoscope
+[2023-05-27 02:01:34] INFO root fetch - processPackages [dtbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtbase-0.0.1.tar.gz tmp/dtbase-0.0.2.tar.gz --markdown 20230527/d/dtbase/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 02:01:34] INFO root fetch - processPackages [d20-orm]: executing diffoscope
+[2023-05-27 02:01:34] INFO root fetch - processPackages [d20-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d20-orm-2.0.0a2.tar.gz tmp/d20-orm-2.0.1.tar.gz --markdown 20230527/d/d20-orm/2.0.0a2-2.0.1/diff.md --exclude *.pyd
+[2023-05-27 02:01:34] INFO root fetch - processPackages [conjuring]: executing diffoscope
+[2023-05-27 02:01:34] INFO root fetch - processPackages [conjuring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conjuring-0.6.0.tar.gz tmp/conjuring-0.7.0.tar.gz --markdown 20230527/c/conjuring/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-27 02:01:35] INFO root fetch - main [MainThread]: End processing [d20-securityLayer]: success
+[2023-05-27 02:01:35] INFO root fetch - main [MainThread]: End processing [dtbase]: success
+[2023-05-27 02:01:35] INFO root fetch - main [MainThread]: End processing [d20-orm]: success
+[2023-05-27 02:01:35] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2023-05-27 02:01:36] INFO root fetch - main [MainThread]: End processing [conjuring]: success
+[2023-05-27 02:01:36] INFO root fetch - main [MainThread]: Store serial: [18269961]
