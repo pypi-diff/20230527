@@ -3867,3 +3867,19 @@
 [2023-05-27 04:03:59] INFO root fetch - processPackages [bulma-sphinx-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bulma_sphinx_theme-0.0.2.tar.gz tmp/bulma_sphinx_theme-0.0.3.tar.gz --markdown 20230527/b/bulma-sphinx-theme/0.0.2-0.0.3/diff.md --exclude *.pyd
 [2023-05-27 04:04:01] INFO root fetch - main [MainThread]: End processing [bulma-sphinx-theme]: success
 [2023-05-27 04:04:01] INFO root fetch - main [MainThread]: Store serial: [18271776]
+[2023-05-27 04:09:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271776]
+[2023-05-27 04:09:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 04:09:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lifetimefitting
+[2023-05-27 04:09:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chatai-agent
+[2023-05-27 04:09:09] INFO root fetch - processPackages [lifetimefitting]: New version: [0.0.14] Old Version: [0.0.13]
+[2023-05-27 04:09:09] INFO root fetch - processPackages [chatai-agent]: New version: [1.0.0] Old Version: [0.0.1]
+[2023-05-27 04:09:10] INFO root fetch - processPackages [chatai-agent]: Downloading https://files.pythonhosted.org/packages/24/50/db27af5dc3a20269e59ded8ded7a1d21b7364bd59849bd26ff892d220a9e/chatai-agent-0.0.1.tar.gz
+[2023-05-27 04:09:10] INFO root fetch - processPackages [lifetimefitting]: Downloading https://files.pythonhosted.org/packages/a7/02/38f1b6d661c022bd0ad2ee0de2104e3062f2848c230dbcdf84fe0f4a9771/lifetimefitting-0.0.14.tar.gz
+[2023-05-27 04:09:10] INFO root fetch - processPackages [lifetimefitting]: executing diffoscope
+[2023-05-27 04:09:10] INFO root fetch - processPackages [lifetimefitting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifetimefitting-0.0.13.tar.gz tmp/lifetimefitting-0.0.14.tar.gz --markdown 20230527/l/lifetimefitting/0.0.13-0.0.14/diff.md --exclude *.pyd
+[2023-05-27 04:09:10] INFO root fetch - processPackages [chatai-agent]: Downloading https://files.pythonhosted.org/packages/17/18/80a14b80fe5c123a8651a201e6c7c7f97d7180b89442b245b6d7a11611c1/chatai-agent-1.0.0.tar.gz
+[2023-05-27 04:09:10] INFO root fetch - processPackages [chatai-agent]: executing diffoscope
+[2023-05-27 04:09:10] INFO root fetch - processPackages [chatai-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatai-agent-0.0.1.tar.gz tmp/chatai-agent-1.0.0.tar.gz --markdown 20230527/c/chatai-agent/0.0.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-27 04:09:11] INFO root fetch - main [MainThread]: End processing [lifetimefitting]: success
+[2023-05-27 04:09:11] INFO root fetch - main [MainThread]: End processing [chatai-agent]: success
+[2023-05-27 04:09:11] INFO root fetch - main [MainThread]: Store serial: [18271782]
