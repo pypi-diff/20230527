@@ -11075,3 +11075,32 @@
 [2023-05-27 19:46:57] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
 [2023-05-27 19:47:00] INFO root fetch - main [MainThread]: End processing [Webware-for-Python]: success
 [2023-05-27 19:47:00] INFO root fetch - main [MainThread]: Store serial: [18275889]
+[2023-05-27 19:52:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275889]
+[2023-05-27 19:52:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 19:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: croydon
+[2023-05-27 19:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-inferring-depends
+[2023-05-27 19:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pywxdll
+[2023-05-27 19:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kayle
+[2023-05-27 19:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sylk-docs
+[2023-05-27 19:52:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fastapi-inferring-depends
+[2023-05-27 19:52:09] INFO root fetch - processPackages [croydon]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-27 19:52:09] WARNING root fetch - processPackages [sylk-docs]: Skipping, unable to determine old version
+[2023-05-27 19:52:09] INFO root fetch - main [MainThread]: End processing [sylk-docs] error
+[2023-05-27 19:52:09] WARNING root fetch - processPackages [fastapi-inferring-depends]: Skipping, unable to determine old version
+[2023-05-27 19:52:09] INFO root fetch - main [MainThread]: End processing [fastapi-inferring-depends] error
+[2023-05-27 19:52:09] INFO root fetch - processPackages [kayle]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-27 19:52:09] WARNING root fetch - processPackages [fastapi-inferring-depends]: Skipping, unable to determine old version
+[2023-05-27 19:52:09] INFO root fetch - processPackages [pywxdll]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-27 19:52:09] INFO root fetch - main [MainThread]: End processing [fastapi-inferring-depends] error
+[2023-05-27 19:52:09] INFO root fetch - processPackages [kayle]: executing diffoscope
+[2023-05-27 19:52:09] INFO root fetch - processPackages [kayle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kayle-0.5.8-py3-none-any.whl.zip tmp/kayle-0.5.9-py3-none-any.whl.zip --markdown 20230527/k/kayle/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-27 19:52:09] INFO root fetch - processPackages [pywxdll]: Downloading https://files.pythonhosted.org/packages/69/b2/9b0d65e7dc585b44fe024de796cb907d1bbcca605c2bef7c5d44b11dcac7/pywxdll-0.1.7.tar.gz
+[2023-05-27 19:52:09] INFO root fetch - processPackages [croydon]: executing diffoscope
+[2023-05-27 19:52:09] INFO root fetch - processPackages [croydon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croydon-0.9.0.tar.gz tmp/croydon-0.9.1.tar.gz --markdown 20230527/c/croydon/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-27 19:52:09] INFO root fetch - processPackages [pywxdll]: Downloading https://files.pythonhosted.org/packages/ef/59/665e60b5698666615f3d3ee370d7feb40c641e6abf36f9a0bde0fdc64915/pywxdll-0.1.8.tar.gz
+[2023-05-27 19:52:09] INFO root fetch - processPackages [pywxdll]: executing diffoscope
+[2023-05-27 19:52:09] INFO root fetch - processPackages [pywxdll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywxdll-0.1.7.tar.gz tmp/pywxdll-0.1.8.tar.gz --markdown 20230527/p/pywxdll/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-27 19:52:10] INFO root fetch - main [MainThread]: End processing [kayle]: success
+[2023-05-27 19:52:10] INFO root fetch - main [MainThread]: End processing [pywxdll]: success
+[2023-05-27 19:52:10] INFO root fetch - main [MainThread]: End processing [croydon]: success
+[2023-05-27 19:52:10] INFO root fetch - main [MainThread]: Store serial: [18275913]
