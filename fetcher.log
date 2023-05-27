@@ -9081,3 +9081,18 @@
 [2023-05-27 16:14:24] INFO root fetch - main [MainThread]: End processing [time-series-binder]: success
 [2023-05-27 16:14:25] INFO root fetch - main [MainThread]: End processing [asociita]: success
 [2023-05-27 16:14:25] INFO root fetch - main [MainThread]: Store serial: [18274714]
+[2023-05-27 16:19:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274714]
+[2023-05-27 16:19:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 16:19:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: talk-codebase
+[2023-05-27 16:19:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: setup2upypackage
+[2023-05-27 16:19:33] INFO root fetch - processPackages [talk-codebase]: New version: [0.1.16] Old Version: [0.1.15]
+[2023-05-27 16:19:33] INFO root fetch - processPackages [setup2upypackage]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-27 16:19:34] INFO root fetch - processPackages [talk-codebase]: Downloading https://files.pythonhosted.org/packages/63/c2/ddc9f9e8d840e3f8636c8da4d5b62ffd41a2fcaa799fa6b5d4e2423cfcbc/talk_codebase-0.1.16.tar.gz
+[2023-05-27 16:19:34] INFO root fetch - processPackages [setup2upypackage]: Downloading https://files.pythonhosted.org/packages/93/da/752c656e0cc2ae0c641ad131c688a95d2c59a68ca30c7a37bfbd76a40d82/setup2upypackage-0.3.0.tar.gz
+[2023-05-27 16:19:34] INFO root fetch - processPackages [talk-codebase]: executing diffoscope
+[2023-05-27 16:19:34] INFO root fetch - processPackages [talk-codebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talk_codebase-0.1.15.tar.gz tmp/talk_codebase-0.1.16.tar.gz --markdown 20230527/t/talk-codebase/0.1.15-0.1.16/diff.md --exclude *.pyd
+[2023-05-27 16:19:34] INFO root fetch - processPackages [setup2upypackage]: executing diffoscope
+[2023-05-27 16:19:34] INFO root fetch - processPackages [setup2upypackage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setup2upypackage-0.2.0.tar.gz tmp/setup2upypackage-0.3.0.tar.gz --markdown 20230527/s/setup2upypackage/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-27 16:19:35] INFO root fetch - main [MainThread]: End processing [talk-codebase]: success
+[2023-05-27 16:19:35] INFO root fetch - main [MainThread]: End processing [setup2upypackage]: success
+[2023-05-27 16:19:35] INFO root fetch - main [MainThread]: Store serial: [18274722]
