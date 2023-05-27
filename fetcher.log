@@ -9880,3 +9880,50 @@
 [2023-05-27 17:09:36] INFO root fetch - main [MainThread]: End processing [gallery-dl]: success
 [2023-05-27 17:09:58] INFO root fetch - main [MainThread]: End processing [pmemo]: success
 [2023-05-27 17:09:58] INFO root fetch - main [MainThread]: Store serial: [18275176]
+[2023-05-27 17:15:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275176]
+[2023-05-27 17:15:09] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 17:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: optimal-loc
+[2023-05-27 17:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prfiesta
+[2023-05-27 17:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cccconverter-ostrichb
+[2023-05-27 17:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-wm
+[2023-05-27 17:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hotsos
+[2023-05-27 17:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tensorflow-text-nightly
+[2023-05-27 17:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: WheneverEverywhere
+[2023-05-27 17:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: langchain-discord
+[2023-05-27 17:15:09] INFO root fetch - processPackages [prfiesta]: New version: [0.9.1b156] Old Version: [0.9.1b155]
+[2023-05-27 17:15:09] INFO root fetch - processPackages [hotsos]: New version: [1.1.14.post9] Old Version: [1.1.14.post8]
+[2023-05-27 17:15:09] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-27 17:15:09] INFO root fetch - processPackages [optimal-loc]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 17:15:09] INFO root fetch - processPackages [cccconverter-ostrichb]: New version: [0.90.2] Old Version: [0.90.1]
+[2023-05-27 17:15:09] INFO root fetch - processPackages [django-wm]: New version: [4.1.0.dev0] Old Version: [4.0.2]
+[2023-05-27 17:15:09] WARNING root fetch - processPackages [WheneverEverywhere]: Skipping, unable to determine old version
+[2023-05-27 17:15:09] INFO root fetch - main [MainThread]: End processing [WheneverEverywhere] error
+[2023-05-27 17:15:09] INFO root fetch - processPackages [tensorflow-text-nightly]: New version: [2.14.0.dev20230526] Old Version: [2.14.0.dev20230525]
+[2023-05-27 17:15:09] INFO root fetch - processPackages [django-wm]: Downloading https://files.pythonhosted.org/packages/80/bb/be48e05230570fba015b9b3f8c42de8638eaeb3b1ba642aba2b71c438a5c/django-wm-4.0.2.tar.gz
+[2023-05-27 17:15:09] INFO root fetch - processPackages [optimal-loc]: Downloading https://files.pythonhosted.org/packages/7e/04/bebc380198d2303cc27a705e196f900284105ef98654f8e47bd389d3f531/optimal_loc-0.0.9.tar.gz
+[2023-05-27 17:15:09] INFO root fetch - processPackages [cccconverter-ostrichb]: Downloading https://files.pythonhosted.org/packages/73/ef/3af42e123df0039fbb94cc4d7b26fd49bfea2ed8814e05e655a6e53b03d4/cccconverter_ostrichb-0.90.2.tar.gz
+[2023-05-27 17:15:09] INFO root fetch - processPackages [prfiesta]: Downloading https://files.pythonhosted.org/packages/b3/27/6d59297de39bcfa5a3206a798d4799e8b6fb56b0e83db6c6e2b5d2dce070/prfiesta-0.9.1b156.tar.gz
+[2023-05-27 17:15:09] INFO root fetch - processPackages [langchain-discord]: Downloading https://files.pythonhosted.org/packages/3b/b6/3bb9e670cc49e8b632470b4c0b8d02393f9654b39ba772cfcef8cf891274/langchain_discord-0.0.6.tar.gz
+[2023-05-27 17:15:09] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2023-05-27 17:15:09] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.1.14.post8.tar.gz tmp/hotsos-1.1.14.post9.tar.gz --markdown 20230527/h/hotsos/1.1.14.post8-1.1.14.post9/diff.md --exclude *.pyd
+[2023-05-27 17:15:09] INFO root fetch - processPackages [tensorflow-text-nightly]: executing diffoscope
+[2023-05-27 17:15:09] INFO root fetch - processPackages [tensorflow-text-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_text_nightly-2.14.0.dev20230525-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/tensorflow_text_nightly-2.14.0.dev20230526-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230527/t/tensorflow-text-nightly/2.14.0.dev20230525-2.14.0.dev20230526/diff.md --exclude *.pyd
+[2023-05-27 17:15:09] INFO root fetch - processPackages [django-wm]: Downloading https://files.pythonhosted.org/packages/6e/70/7b5920ae423f3b49b23bd90f64182be9430b192fd2ec5ace00f20e784384/django-wm-4.1.0.dev0.tar.gz
+[2023-05-27 17:15:09] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 17:15:09] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.5.tar.gz tmp/langchain_discord-0.0.6.tar.gz --markdown 20230527/l/langchain-discord/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-27 17:15:09] INFO root fetch - processPackages [cccconverter-ostrichb]: executing diffoscope
+[2023-05-27 17:15:09] INFO root fetch - processPackages [cccconverter-ostrichb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cccconverter_ostrichb-0.90.1.tar.gz tmp/cccconverter_ostrichb-0.90.2.tar.gz --markdown 20230527/c/cccconverter-ostrichb/0.90.1-0.90.2/diff.md --exclude *.pyd
+[2023-05-27 17:15:09] INFO root fetch - processPackages [optimal-loc]: executing diffoscope
+[2023-05-27 17:15:09] INFO root fetch - processPackages [optimal-loc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimal_loc-0.0.8.tar.gz tmp/optimal_loc-0.0.9.tar.gz --markdown 20230527/o/optimal-loc/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 17:15:09] INFO root fetch - processPackages [prfiesta]: executing diffoscope
+[2023-05-27 17:15:09] INFO root fetch - processPackages [prfiesta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prfiesta-0.9.1b155.tar.gz tmp/prfiesta-0.9.1b156.tar.gz --markdown 20230527/p/prfiesta/0.9.1b155-0.9.1b156/diff.md --exclude *.pyd
+[2023-05-27 17:15:09] INFO root fetch - processPackages [django-wm]: executing diffoscope
+[2023-05-27 17:15:09] INFO root fetch - processPackages [django-wm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-wm-4.0.2.tar.gz tmp/django-wm-4.1.0.dev0.tar.gz --markdown 20230527/d/django-wm/4.0.2-4.1.0.dev0/diff.md --exclude *.pyd
+[2023-05-27 17:15:10] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 17:15:11] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
+[2023-05-27 17:15:11] INFO root fetch - main [MainThread]: End processing [cccconverter-ostrichb]: success
+[2023-05-27 17:15:11] INFO root fetch - main [MainThread]: End processing [optimal-loc]: success
+[2023-05-27 17:15:11] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
+[2023-05-27 17:15:11] INFO root fetch - main [MainThread]: End processing [django-wm]: success
+[2023-05-27 17:15:12] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2023-05-27 17:15:12] INFO root fetch - main [MainThread]: Store serial: [18275200]
