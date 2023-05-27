@@ -7710,3 +7710,46 @@
 [2023-05-27 13:16:37] INFO root fetch - main [MainThread]: End processing [bionty]: success
 [2023-05-27 13:16:37] INFO root fetch - main [MainThread]: End processing [anyio]: success
 [2023-05-27 13:16:37] INFO root fetch - main [MainThread]: Store serial: [18273948]
+[2023-05-27 13:21:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273948]
+[2023-05-27 13:21:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 13:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: siat
+[2023-05-27 13:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyclack
+[2023-05-27 13:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vkmini
+[2023-05-27 13:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tb-nightly
+[2023-05-27 13:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyplAI
+[2023-05-27 13:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cg
+[2023-05-27 13:21:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: isoCycle
+[2023-05-27 13:21:46] WARNING root fetch - processPackages [pyclack]: Skipping, unable to determine old version
+[2023-05-27 13:21:46] INFO root fetch - main [MainThread]: End processing [pyclack] error
+[2023-05-27 13:21:46] INFO root fetch - processPackages [vkmini]: New version: [1.0.0a4] Old Version: [1.0.0a3]
+[2023-05-27 13:21:46] INFO root fetch - processPackages [siat]: New version: [2.0.8] Old Version: [2.0.7]
+[2023-05-27 13:21:46] INFO root fetch - processPackages [pyplAI]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-27 13:21:46] INFO root fetch - processPackages [isoCycle]: New version: [0.0.66] Old Version: [0.0.65]
+[2023-05-27 13:21:46] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-05-27 13:21:46] INFO root fetch - processPackages [cg]: New version: [32.2.5] Old Version: [32.2.4]
+[2023-05-27 13:21:46] INFO root fetch - processPackages [isoCycle]: Downloading https://files.pythonhosted.org/packages/d5/de/8ddc3e34afb7ff8fdd7e18aeaa871044d7ec1bfee48166dc3719dd495cc5/isoCycle-0.0.65.tar.gz
+[2023-05-27 13:21:46] WARNING root fetch - processPackages [isoCycle]: Skipping package: exceeds size limit 12815337>=10485760
+[2023-05-27 13:21:46] INFO root fetch - main [MainThread]: End processing [isoCycle] error
+[2023-05-27 13:21:46] INFO root fetch - processPackages [pyplAI]: Downloading https://files.pythonhosted.org/packages/a2/ed/4704a237b9856457029b5f7c781d8e51f8bd0d28331362f4d5564328bd47/pyplAI-1.0.2.tar.gz
+[2023-05-27 13:21:46] INFO root fetch - processPackages [vkmini]: Downloading https://files.pythonhosted.org/packages/46/6a/3321f1fe6dfc92e78021c1940c840ae8b4d76af0d1e325be2000f7f17a48/vkmini-1.0.0a3.tar.gz
+[2023-05-27 13:21:46] INFO root fetch - processPackages [cg]: Downloading https://files.pythonhosted.org/packages/bd/a5/84d35bc05d51a075baf45cec409e3a55f120baab5a914133fb89c2e7b958/cg-32.2.4.tar.gz
+[2023-05-27 13:21:46] INFO root fetch - processPackages [siat]: Downloading https://files.pythonhosted.org/packages/06/f6/be279fc31b208e72e7713e531c2bc96e96806b33b4dd1fbecf044a4b2472/siat-2.0.8-py3-none-any.whl
+[2023-05-27 13:21:46] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-05-27 13:21:46] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230527/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-05-27 13:21:47] INFO root fetch - processPackages [vkmini]: Downloading https://files.pythonhosted.org/packages/86/3a/27197c2d88d4465e98fcd371fe32b9ee411dd304ff13124f019bcf2990e3/vkmini-1.0.0a4.tar.gz
+[2023-05-27 13:21:47] INFO root fetch - processPackages [vkmini]: executing diffoscope
+[2023-05-27 13:21:47] INFO root fetch - processPackages [vkmini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vkmini-1.0.0a3.tar.gz tmp/vkmini-1.0.0a4.tar.gz --markdown 20230527/v/vkmini/1.0.0a3-1.0.0a4/diff.md --exclude *.pyd
+[2023-05-27 13:21:47] INFO root fetch - processPackages [cg]: Downloading https://files.pythonhosted.org/packages/aa/1e/bf728d9299047e871eba7b5ab392900ff1b0cbefc515e0897dd3080c99d6/cg-32.2.5.tar.gz
+[2023-05-27 13:21:47] INFO root fetch - processPackages [siat]: executing diffoscope
+[2023-05-27 13:21:47] INFO root fetch - processPackages [siat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siat-2.0.7-py3-none-any.whl.zip tmp/siat-2.0.8-py3-none-any.whl.zip --markdown 20230527/s/siat/2.0.7-2.0.8/diff.md --exclude *.pyd
+[2023-05-27 13:21:47] INFO root fetch - processPackages [pyplAI]: Downloading https://files.pythonhosted.org/packages/15/19/e419d88f0c41580dfcfac4eb9765d784af2e5f27760754772111e711e8ab/pyplAI-1.0.3.tar.gz
+[2023-05-27 13:21:47] INFO root fetch - processPackages [pyplAI]: executing diffoscope
+[2023-05-27 13:21:47] INFO root fetch - processPackages [pyplAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyplAI-1.0.2.tar.gz tmp/pyplAI-1.0.3.tar.gz --markdown 20230527/p/pyplAI/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-27 13:21:48] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-05-27 13:21:48] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-32.2.4.tar.gz tmp/cg-32.2.5.tar.gz --markdown 20230527/c/cg/32.2.4-32.2.5/diff.md --exclude *.pyd
+[2023-05-27 13:21:48] INFO root fetch - main [MainThread]: End processing [vkmini]: success
+[2023-05-27 13:21:48] INFO root fetch - main [MainThread]: End processing [pyplAI]: success
+[2023-05-27 13:21:49] INFO root fetch - main [MainThread]: End processing [siat]: success
+[2023-05-27 13:21:50] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2023-05-27 13:22:00] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-05-27 13:22:00] INFO root fetch - main [MainThread]: Store serial: [18273967]
