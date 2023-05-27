@@ -4045,3 +4045,26 @@
 [2023-05-27 04:40:14] INFO root fetch - main [MainThread]: End processing [statml]: success
 [2023-05-27 04:40:14] INFO root fetch - main [MainThread]: End processing [ofscraper]: success
 [2023-05-27 04:40:14] INFO root fetch - main [MainThread]: Store serial: [18271908]
+[2023-05-27 04:45:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271908]
+[2023-05-27 04:45:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 04:45:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ns3
+[2023-05-27 04:45:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lasfile
+[2023-05-27 04:45:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-account-invoice-change-currency
+[2023-05-27 04:45:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addons-oca-account-invoicing
+[2023-05-27 04:45:23] INFO root fetch - processPackages [odoo-addon-account-invoice-change-currency]: New version: [16.0.1.0.1] Old Version: [15.0.2.0.0.4]
+[2023-05-27 04:45:23] INFO root fetch - processPackages [lasfile]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 04:45:23] WARNING root fetch - processPackages [ns3]: Skipping, unable to determine old version
+[2023-05-27 04:45:23] INFO root fetch - main [MainThread]: End processing [ns3] error
+[2023-05-27 04:45:23] INFO root fetch - processPackages [odoo-addon-account-invoice-change-currency]: executing diffoscope
+[2023-05-27 04:45:23] INFO root fetch - processPackages [odoo-addon-account-invoice-change-currency]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_invoice_change_currency-15.0.2.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_account_invoice_change_currency-16.0.1.0.1-py3-none-any.whl.zip --markdown 20230527/o/odoo-addon-account-invoice-change-currency/15.0.2.0.0.4-16.0.1.0.1/diff.md --exclude *.pyd
+[2023-05-27 04:45:23] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: New version: [16.0.20230526.0] Old Version: [16.0.20230524.0]
+[2023-05-27 04:45:23] INFO root fetch - processPackages [lasfile]: Downloading https://files.pythonhosted.org/packages/1b/77/3ae9693f788674da96a971c361dbc66d1cb2b375baf35ddf19fd1ed19abe/lasfile-0.1.2.tar.gz
+[2023-05-27 04:45:24] INFO root fetch - processPackages [lasfile]: executing diffoscope
+[2023-05-27 04:45:24] INFO root fetch - processPackages [lasfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lasfile-0.1.1.tar.gz tmp/lasfile-0.1.2.tar.gz --markdown 20230527/l/lasfile/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 04:45:24] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: Downloading https://files.pythonhosted.org/packages/81/29/bbb4e1af5daf2bb56cbbaabd693cd90f7b88b133c3422543797f52a3ea9c/odoo_addons_oca_account_invoicing-16.0.20230526.0-py3-none-any.whl
+[2023-05-27 04:45:24] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: executing diffoscope
+[2023-05-27 04:45:24] INFO root fetch - processPackages [odoo-addons-oca-account-invoicing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_account_invoicing-16.0.20230524.0-py3-none-any.whl.zip tmp/odoo_addons_oca_account_invoicing-16.0.20230526.0-py3-none-any.whl.zip --markdown 20230527/o/odoo-addons-oca-account-invoicing/16.0.20230524.0-16.0.20230526.0/diff.md --exclude *.pyd
+[2023-05-27 04:45:24] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-invoice-change-currency]: success
+[2023-05-27 04:45:24] INFO root fetch - main [MainThread]: End processing [lasfile]: success
+[2023-05-27 04:45:25] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-account-invoicing]: success
+[2023-05-27 04:45:25] INFO root fetch - main [MainThread]: Store serial: [18271919]
