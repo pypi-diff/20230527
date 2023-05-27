@@ -12624,3 +12624,33 @@
 [2023-05-27 23:30:32] INFO root fetch - main [MainThread]: End processing [cftdeploy]: success
 [2023-05-27 23:30:33] INFO root fetch - main [MainThread]: End processing [dolfin-warp]: success
 [2023-05-27 23:30:33] INFO root fetch - main [MainThread]: Store serial: [18277017]
+[2023-05-27 23:35:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18277017]
+[2023-05-27 23:35:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 23:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SNPTMT
+[2023-05-27 23:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flats
+[2023-05-27 23:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chatcmd
+[2023-05-27 23:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: products
+[2023-05-27 23:35:42] INFO root fetch - processPackages [SNPTMT]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-27 23:35:42] INFO root fetch - processPackages [flats]: New version: [0.6.0] Old Version: [0.5.2]
+[2023-05-27 23:35:42] INFO root fetch - processPackages [chatcmd]: New version: [1.0.28] Old Version: [1.0.27]
+[2023-05-27 23:35:42] INFO root fetch - processPackages [products]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-05-27 23:35:42] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/72/d0/54244187de425f1f5335d79be6598196e3b7d2918056e651c0bb6d5caac8/chatcmd-1.0.27.tar.gz
+[2023-05-27 23:35:42] INFO root fetch - processPackages [flats]: Downloading https://files.pythonhosted.org/packages/bf/cc/8e96cfb220d160e928afbef15c0aa08b45088d3238a4fbe4e4c5e8714c63/flats-0.5.2.tar.gz
+[2023-05-27 23:35:42] INFO root fetch - processPackages [SNPTMT]: Downloading https://files.pythonhosted.org/packages/01/c6/a5d2293ab8efdf4e0a0b5a67be8d85ae0ae04f5d984e1c079d1952541fca/SNPTMT-0.0.7.tar.gz
+[2023-05-27 23:35:42] INFO root fetch - processPackages [products]: Downloading https://files.pythonhosted.org/packages/2d/db/99d7aa53de16154801f17f4b5d6fc1d5cb9f766d7c2041d28f90cffef718/products-1.1.2.tar.gz
+[2023-05-27 23:35:42] INFO root fetch - processPackages [SNPTMT]: executing diffoscope
+[2023-05-27 23:35:42] INFO root fetch - processPackages [SNPTMT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SNPTMT-0.0.6.tar.gz tmp/SNPTMT-0.0.7.tar.gz --markdown 20230527/S/SNPTMT/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-27 23:35:42] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/3b/86/03ba700f67999641d947d69cac18df402da97cc31407b9254238bd5af751/chatcmd-1.0.28.tar.gz
+[2023-05-27 23:35:42] INFO root fetch - processPackages [flats]: Downloading https://files.pythonhosted.org/packages/a0/d9/3775582ad775b21a584ef53946f25b891d1d1310a49c083930c09a8c1962/flats-0.6.0.tar.gz
+[2023-05-27 23:35:42] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-27 23:35:42] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.27.tar.gz tmp/chatcmd-1.0.28.tar.gz --markdown 20230527/c/chatcmd/1.0.27-1.0.28/diff.md --exclude *.pyd
+[2023-05-27 23:35:42] INFO root fetch - processPackages [products]: Downloading https://files.pythonhosted.org/packages/0e/a1/6eef1376bc34f7ae9fb96efe73e3556dcdfd35ea3fa81a05f16f42af326d/products-1.2.0.tar.gz
+[2023-05-27 23:35:42] INFO root fetch - processPackages [flats]: executing diffoscope
+[2023-05-27 23:35:42] INFO root fetch - processPackages [flats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flats-0.5.2.tar.gz tmp/flats-0.6.0.tar.gz --markdown 20230527/f/flats/0.5.2-0.6.0/diff.md --exclude *.pyd
+[2023-05-27 23:35:42] INFO root fetch - processPackages [products]: executing diffoscope
+[2023-05-27 23:35:42] INFO root fetch - processPackages [products]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/products-1.1.2.tar.gz tmp/products-1.2.0.tar.gz --markdown 20230527/p/products/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-05-27 23:35:43] INFO root fetch - main [MainThread]: End processing [SNPTMT]: success
+[2023-05-27 23:35:43] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-27 23:35:43] INFO root fetch - main [MainThread]: End processing [flats]: success
+[2023-05-27 23:35:43] INFO root fetch - main [MainThread]: End processing [products]: success
+[2023-05-27 23:35:43] INFO root fetch - main [MainThread]: Store serial: [18277031]
