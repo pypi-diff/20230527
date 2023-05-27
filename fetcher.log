@@ -8325,3 +8325,33 @@
 [2023-05-27 14:30:32] INFO root fetch - main [MainThread]: End processing [asBASE]: success
 [2023-05-27 14:30:32] INFO root fetch - main [MainThread]: End processing [elemento-cli]: success
 [2023-05-27 14:30:32] INFO root fetch - main [MainThread]: Store serial: [18274258]
+[2023-05-27 14:35:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274258]
+[2023-05-27 14:35:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 14:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: colourmap
+[2023-05-27 14:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: terka
+[2023-05-27 14:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mathaid
+[2023-05-27 14:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opentnsim
+[2023-05-27 14:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: customtkinterx
+[2023-05-27 14:35:41] INFO root fetch - processPackages [opentnsim]: New version: [1.1.2] Old Version: [1.0.0]
+[2023-05-27 14:35:41] INFO root fetch - processPackages [customtkinterx]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 14:35:41] INFO root fetch - processPackages [colourmap]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-27 14:35:41] WARNING root fetch - processPackages [mathaid]: Skipping, unable to determine old version
+[2023-05-27 14:35:41] INFO root fetch - main [MainThread]: End processing [mathaid] error
+[2023-05-27 14:35:41] INFO root fetch - processPackages [terka]: New version: [1.9.1] Old Version: [1.9.0.1]
+[2023-05-27 14:35:41] INFO root fetch - processPackages [customtkinterx]: executing diffoscope
+[2023-05-27 14:35:41] INFO root fetch - processPackages [customtkinterx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customtkinterx-0.1.1.tar.gz tmp/customtkinterx-0.1.2.tar.gz --markdown 20230527/c/customtkinterx/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 14:35:41] INFO root fetch - processPackages [opentnsim]: Downloading https://files.pythonhosted.org/packages/c5/ff/a15cc4be56e01112dec0c75473f6800593e79035429b062c7ed3b2b21736/opentnsim-1.0.0.tar.gz
+[2023-05-27 14:35:41] INFO root fetch - processPackages [colourmap]: Downloading https://files.pythonhosted.org/packages/c4/a4/4508fc1de4adb6533fe24517d041619a69ad0cc1ac371c0e4fd21ec77ea8/colourmap-1.1.8.tar.gz
+[2023-05-27 14:35:41] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-05-27 14:35:41] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.9.0.1.tar.gz tmp/terka-1.9.1.tar.gz --markdown 20230527/t/terka/1.9.0.1-1.9.1/diff.md --exclude *.pyd
+[2023-05-27 14:35:41] INFO root fetch - processPackages [opentnsim]: Downloading https://files.pythonhosted.org/packages/aa/ef/d9b804a95ac50beaf6438c082036f21148a26e53262d7406f392fbcfbab6/opentnsim-1.1.2.tar.gz
+[2023-05-27 14:35:41] INFO root fetch - processPackages [colourmap]: Downloading https://files.pythonhosted.org/packages/5b/c4/7c0ddc64d4baeba492f5e1c9df509acce27b612f824540996bf1b7f8371d/colourmap-1.1.9.tar.gz
+[2023-05-27 14:35:41] INFO root fetch - processPackages [opentnsim]: executing diffoscope
+[2023-05-27 14:35:41] INFO root fetch - processPackages [opentnsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opentnsim-1.0.0.tar.gz tmp/opentnsim-1.1.2.tar.gz --markdown 20230527/o/opentnsim/1.0.0-1.1.2/diff.md --exclude *.pyd
+[2023-05-27 14:35:42] INFO root fetch - processPackages [colourmap]: executing diffoscope
+[2023-05-27 14:35:42] INFO root fetch - processPackages [colourmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colourmap-1.1.8.tar.gz tmp/colourmap-1.1.9.tar.gz --markdown 20230527/c/colourmap/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-27 14:35:42] INFO root fetch - main [MainThread]: End processing [customtkinterx]: success
+[2023-05-27 14:35:42] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-05-27 14:35:43] INFO root fetch - main [MainThread]: End processing [colourmap]: success
+[2023-05-27 14:35:43] INFO root fetch - main [MainThread]: End processing [opentnsim]: success
+[2023-05-27 14:35:43] INFO root fetch - main [MainThread]: Store serial: [18274279]
