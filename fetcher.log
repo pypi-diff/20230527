@@ -10092,3 +10092,33 @@
 [2023-05-27 17:30:50] INFO root fetch - main [MainThread]: End processing [custom-utils]: success
 [2023-05-27 17:30:51] INFO root fetch - main [MainThread]: End processing [atproto]: success
 [2023-05-27 17:30:51] INFO root fetch - main [MainThread]: Store serial: [18275289]
+[2023-05-27 17:35:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275289]
+[2023-05-27 17:36:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 17:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: synapgrad
+[2023-05-27 17:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: codepeers
+[2023-05-27 17:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PayEquity
+[2023-05-27 17:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ubami
+[2023-05-27 17:36:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: discminer
+[2023-05-27 17:36:00] WARNING root fetch - processPackages [ubami]: Skipping, unable to determine old version
+[2023-05-27 17:36:00] INFO root fetch - main [MainThread]: End processing [ubami] error
+[2023-05-27 17:36:00] INFO root fetch - processPackages [codepeers]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-27 17:36:00] INFO root fetch - processPackages [synapgrad]: New version: [0.5.0] Old Version: [0.3.2]
+[2023-05-27 17:36:00] INFO root fetch - processPackages [PayEquity]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-27 17:36:01] INFO root fetch - processPackages [discminer]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-27 17:36:01] INFO root fetch - processPackages [synapgrad]: Downloading https://files.pythonhosted.org/packages/69/bc/e1f4dd87ccc3764c0b717a893eaf836d294cb7f63dc96ee7a86f34cd477d/synapgrad-0.3.2-py3-none-any.whl
+[2023-05-27 17:36:01] INFO root fetch - processPackages [codepeers]: Downloading https://files.pythonhosted.org/packages/ae/cc/342cbd46a515f39ebec125bfccf408d46e18985d1dbfb11b7a2d056c9cc8/codepeers-0.3.2-py3-none-any.whl
+[2023-05-27 17:36:01] INFO root fetch - processPackages [PayEquity]: Downloading https://files.pythonhosted.org/packages/a1/53/5e154acf4a40e9b958285ab679bee2d23ee85f3ad5389f8d4d13d0d0a308/PayEquity-0.1.5.tar.gz
+[2023-05-27 17:36:01] INFO root fetch - processPackages [codepeers]: executing diffoscope
+[2023-05-27 17:36:01] INFO root fetch - processPackages [codepeers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codepeers-0.3.1-py3-none-any.whl.zip tmp/codepeers-0.3.2-py3-none-any.whl.zip --markdown 20230527/c/codepeers/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-27 17:36:01] INFO root fetch - processPackages [PayEquity]: executing diffoscope
+[2023-05-27 17:36:01] INFO root fetch - processPackages [PayEquity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PayEquity-0.1.4.tar.gz tmp/PayEquity-0.1.5.tar.gz --markdown 20230527/P/PayEquity/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-27 17:36:01] INFO root fetch - processPackages [discminer]: Downloading https://files.pythonhosted.org/packages/82/25/c05cbcbaea7b51dcc80bf33dbe97400f612e7521d9e0a7c767f170087a8c/discminer-0.2.9.tar.gz
+[2023-05-27 17:36:01] WARNING root fetch - processPackages [discminer]: Skipping package: exceeds size limit 11323881>=10485760
+[2023-05-27 17:36:01] INFO root fetch - main [MainThread]: End processing [discminer] error
+[2023-05-27 17:36:01] INFO root fetch - processPackages [synapgrad]: Downloading https://files.pythonhosted.org/packages/c1/fb/6f2158618ad660a47306b3ffd8025d0d908cb55b60440597cb07e785c708/synapgrad-0.5.0-py3-none-any.whl
+[2023-05-27 17:36:01] INFO root fetch - processPackages [synapgrad]: executing diffoscope
+[2023-05-27 17:36:01] INFO root fetch - processPackages [synapgrad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synapgrad-0.3.2-py3-none-any.whl.zip tmp/synapgrad-0.5.0-py3-none-any.whl.zip --markdown 20230527/s/synapgrad/0.3.2-0.5.0/diff.md --exclude *.pyd
+[2023-05-27 17:36:02] INFO root fetch - main [MainThread]: End processing [PayEquity]: success
+[2023-05-27 17:36:02] INFO root fetch - main [MainThread]: End processing [synapgrad]: success
+[2023-05-27 17:36:07] INFO root fetch - main [MainThread]: End processing [codepeers]: success
+[2023-05-27 17:36:07] INFO root fetch - main [MainThread]: Store serial: [18275306]
