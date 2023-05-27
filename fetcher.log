@@ -10204,3 +10204,24 @@
 [2023-05-27 17:47:00] INFO root fetch - main [MainThread]: End processing [webpy-framework]: success
 [2023-05-27 17:47:01] INFO root fetch - main [MainThread]: End processing [PLpy234-project-1]: success
 [2023-05-27 17:47:01] INFO root fetch - main [MainThread]: Store serial: [18275443]
+[2023-05-27 17:52:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275443]
+[2023-05-27 17:52:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-27 17:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diffdrr
+[2023-05-27 17:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grai-source-fivetran
+[2023-05-27 17:52:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-boost
+[2023-05-27 17:52:10] INFO root fetch - processPackages [diffdrr]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-27 17:52:10] INFO root fetch - processPackages [py-boost]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-05-27 17:52:10] INFO root fetch - processPackages [grai-source-fivetran]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-27 17:52:10] INFO root fetch - processPackages [py-boost]: Downloading https://files.pythonhosted.org/packages/4a/83/4288965bbb4b61ede142c17f92ed006e93075d0ce85cf974c0c2daf9e240/py_boost-0.4.2.tar.gz
+[2023-05-27 17:52:10] INFO root fetch - processPackages [diffdrr]: Downloading https://files.pythonhosted.org/packages/94/81/e33676f7d0674ee00eabcea87128082e1f77081f3aa3d3200a82afe9aed9/diffdrr-0.3.1.tar.gz
+[2023-05-27 17:52:10] INFO root fetch - processPackages [grai-source-fivetran]: Downloading https://files.pythonhosted.org/packages/b7/5f/91726f63c592013be0aec7b41b66ca3e0ad162630744db52e740f4448042/grai_source_fivetran-0.0.8.tar.gz
+[2023-05-27 17:52:10] INFO root fetch - processPackages [grai-source-fivetran]: executing diffoscope
+[2023-05-27 17:52:10] INFO root fetch - processPackages [grai-source-fivetran]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_source_fivetran-0.0.7.tar.gz tmp/grai_source_fivetran-0.0.8.tar.gz --markdown 20230527/g/grai-source-fivetran/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-27 17:52:10] WARNING root fetch - processPackages [diffdrr]: Skipping package: exceeds size limit 34565700>=10485760
+[2023-05-27 17:52:10] INFO root fetch - main [MainThread]: End processing [diffdrr] error
+[2023-05-27 17:52:10] INFO root fetch - processPackages [py-boost]: Downloading https://files.pythonhosted.org/packages/bb/e2/259f931f53bcc2dac5960307b7a31c3f1aca8640aa4e33ca538119119f0e/py_boost-0.4.3.tar.gz
+[2023-05-27 17:52:10] INFO root fetch - processPackages [py-boost]: executing diffoscope
+[2023-05-27 17:52:10] INFO root fetch - processPackages [py-boost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_boost-0.4.2.tar.gz tmp/py_boost-0.4.3.tar.gz --markdown 20230527/p/py-boost/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-05-27 17:52:11] INFO root fetch - main [MainThread]: End processing [grai-source-fivetran]: success
+[2023-05-27 17:52:11] INFO root fetch - main [MainThread]: End processing [py-boost]: success
+[2023-05-27 17:52:11] INFO root fetch - main [MainThread]: Store serial: [18275453]
