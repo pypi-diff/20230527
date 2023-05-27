@@ -1512,3 +1512,19 @@
 [2023-05-27 02:34:10] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
 [2023-05-27 02:34:58] INFO root fetch - main [MainThread]: End processing [cdktf-github-actions]: success
 [2023-05-27 02:34:58] INFO root fetch - main [MainThread]: Store serial: [18270253]
+[2023-05-27 02:40:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18270253]
+[2023-05-27 02:40:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-27 02:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-05-27 02:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: veotos-transform
+[2023-05-27 02:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: state-machine-semaphore
+[2023-05-27 02:40:07] WARNING root fetch - processPackages [veotos-transform]: Skipping, unable to determine old version
+[2023-05-27 02:40:07] INFO root fetch - main [MainThread]: End processing [veotos-transform] error
+[2023-05-27 02:40:07] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-27 02:40:07] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 02:40:07] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2023-05-27 02:40:07] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20230527/s/state-machine-semaphore/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-27 02:40:07] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-05-27 02:40:07] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230527/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 02:40:08] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2023-05-27 02:40:09] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-05-27 02:40:09] INFO root fetch - main [MainThread]: Store serial: [18270272]
