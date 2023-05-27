@@ -8919,3 +8919,44 @@
 [2023-05-27 15:48:24] INFO root fetch - main [MainThread]: End processing [zpywallet]: success
 [2023-05-27 15:48:30] INFO root fetch - main [MainThread]: End processing [trepan3k]: success
 [2023-05-27 15:48:30] INFO root fetch - main [MainThread]: Store serial: [18274602]
+[2023-05-27 15:53:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274602]
+[2023-05-27 15:53:39] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 15:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: findmyorder
+[2023-05-27 15:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dxsp
+[2023-05-27 15:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: time-series-binder
+[2023-05-27 15:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sample-datasets
+[2023-05-27 15:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: VBW
+[2023-05-27 15:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mesh-sandbox
+[2023-05-27 15:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: widelearning
+[2023-05-27 15:53:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: peaqevcore
+[2023-05-27 15:53:39] WARNING root fetch - processPackages [time-series-binder]: Skipping, unable to determine old version
+[2023-05-27 15:53:39] INFO root fetch - main [MainThread]: End processing [time-series-binder] error
+[2023-05-27 15:53:39] WARNING root fetch - processPackages [sample-datasets]: Skipping, unable to determine old version
+[2023-05-27 15:53:39] INFO root fetch - main [MainThread]: End processing [sample-datasets] error
+[2023-05-27 15:53:39] INFO root fetch - processPackages [dxsp]: New version: [2.5.5] Old Version: [2.5.4]
+[2023-05-27 15:53:39] INFO root fetch - processPackages [widelearning]: New version: [0.8.0] Old Version: [0.7.6]
+[2023-05-27 15:53:39] WARNING root fetch - processPackages [VBW]: Skipping, unable to determine old version
+[2023-05-27 15:53:39] INFO root fetch - main [MainThread]: End processing [VBW] error
+[2023-05-27 15:53:39] INFO root fetch - processPackages [mesh-sandbox]: New version: [1.0.1] Old Version: [0.1.9]
+[2023-05-27 15:53:39] INFO root fetch - processPackages [findmyorder]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-27 15:53:39] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-05-27 15:53:39] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-05-27 15:53:39] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230527/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-05-27 15:53:39] INFO root fetch - processPackages [widelearning]: Downloading https://files.pythonhosted.org/packages/f1/9b/7846efa58e77061efa9ace1dd3666ea92d1882832a59e853f9083a36dd97/widelearning-0.7.6.tar.gz
+[2023-05-27 15:53:39] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/14/bf/9cd297493889ebf86e2106ebc5ae4ed8a815e634aaf332428a2629579d58/dxsp-2.5.5.tar.gz
+[2023-05-27 15:53:39] INFO root fetch - processPackages [mesh-sandbox]: Downloading https://files.pythonhosted.org/packages/9c/9f/8e59b248199bab5d65f9d94400ccf3c0673aa7869d415811a1f0f8954b7e/mesh_sandbox-1.0.1-py3-none-any.whl
+[2023-05-27 15:53:39] INFO root fetch - processPackages [widelearning]: Downloading https://files.pythonhosted.org/packages/65/45/26e6f938bf1dafe42d8188c3eb1cfa3206dc379c36feb2233d52565831cb/widelearning-0.8.0.tar.gz
+[2023-05-27 15:53:39] INFO root fetch - processPackages [findmyorder]: executing diffoscope
+[2023-05-27 15:53:39] INFO root fetch - processPackages [findmyorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findmyorder-1.3.8.tar.gz tmp/findmyorder-1.3.9.tar.gz --markdown 20230527/f/findmyorder/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-27 15:53:39] INFO root fetch - processPackages [widelearning]: executing diffoscope
+[2023-05-27 15:53:39] INFO root fetch - processPackages [widelearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/widelearning-0.7.6.tar.gz tmp/widelearning-0.8.0.tar.gz --markdown 20230527/w/widelearning/0.7.6-0.8.0/diff.md --exclude *.pyd
+[2023-05-27 15:53:39] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-27 15:53:39] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.5.4.tar.gz tmp/dxsp-2.5.5.tar.gz --markdown 20230527/d/dxsp/2.5.4-2.5.5/diff.md --exclude *.pyd
+[2023-05-27 15:53:39] INFO root fetch - processPackages [mesh-sandbox]: executing diffoscope
+[2023-05-27 15:53:39] INFO root fetch - processPackages [mesh-sandbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mesh_sandbox-0.1.9-py3-none-any.whl.zip tmp/mesh_sandbox-1.0.1-py3-none-any.whl.zip --markdown 20230527/m/mesh-sandbox/0.1.9-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 15:53:40] INFO root fetch - main [MainThread]: End processing [widelearning]: success
+[2023-05-27 15:53:41] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-27 15:53:41] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-05-27 15:53:41] INFO root fetch - main [MainThread]: End processing [findmyorder]: success
+[2023-05-27 15:53:41] INFO root fetch - main [MainThread]: End processing [mesh-sandbox]: success
+[2023-05-27 15:53:41] INFO root fetch - main [MainThread]: Store serial: [18274630]
