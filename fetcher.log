@@ -11973,3 +11973,39 @@
 [2023-05-27 22:06:22] INFO root fetch - main [MainThread]: End processing [llmo]: success
 [2023-05-27 22:06:22] INFO root fetch - main [MainThread]: End processing [swachhdata]: success
 [2023-05-27 22:06:22] INFO root fetch - main [MainThread]: Store serial: [18276539]
+[2023-05-27 22:11:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276539]
+[2023-05-27 22:11:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 22:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: heaserver
+[2023-05-27 22:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: finpy-tse
+[2023-05-27 22:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: redcat
+[2023-05-27 22:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: swachhdata
+[2023-05-27 22:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aim-ui
+[2023-05-27 22:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: connex
+[2023-05-27 22:11:31] INFO root fetch - processPackages [finpy-tse]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-05-27 22:11:31] INFO root fetch - processPackages [heaserver]: New version: [1.0.0a99] Old Version: [1.0.0a98]
+[2023-05-27 22:11:31] INFO root fetch - processPackages [redcat]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 22:11:31] INFO root fetch - processPackages [swachhdata]: New version: [2.0.0rc2] Old Version: [2.0.0rc1]
+[2023-05-27 22:11:31] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0a2] Old Version: [4.0.0a1]
+[2023-05-27 22:11:31] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/35/d8/e7951d85de04b6a3d2279e4780a3d067e58c136fed0278bb24acfbe56c2f/aim-ui-4.0.0a1.tar.gz
+[2023-05-27 22:11:31] INFO root fetch - processPackages [connex]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-27 22:11:31] INFO root fetch - processPackages [heaserver]: executing diffoscope
+[2023-05-27 22:11:31] INFO root fetch - processPackages [heaserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-1.0.0a98.tar.gz tmp/heaserver-1.0.0a99.tar.gz --markdown 20230527/h/heaserver/1.0.0a98-1.0.0a99/diff.md --exclude *.pyd
+[2023-05-27 22:11:31] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 20219507>=10485760
+[2023-05-27 22:11:31] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2023-05-27 22:11:31] INFO root fetch - processPackages [swachhdata]: executing diffoscope
+[2023-05-27 22:11:31] INFO root fetch - processPackages [swachhdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swachhdata-2.0.0rc1-py3-none-any.whl.zip tmp/swachhdata-2.0.0rc2-py3-none-any.whl.zip --markdown 20230527/s/swachhdata/2.0.0rc1-2.0.0rc2/diff.md --exclude *.pyd
+[2023-05-27 22:11:32] INFO root fetch - processPackages [redcat]: Downloading https://files.pythonhosted.org/packages/ca/37/47557627c6c14678f60c8e24271863a4b7f64a857499e45f114f031dca5e/redcat-0.0.5.tar.gz
+[2023-05-27 22:11:32] INFO root fetch - processPackages [finpy-tse]: Downloading https://files.pythonhosted.org/packages/1f/32/ddf93c0ee95dfa091612ffe29280655c80bb96eb88b1f32d1e815053ad34/finpy_tse-1.2.6.tar.gz
+[2023-05-27 22:11:32] INFO root fetch - processPackages [redcat]: executing diffoscope
+[2023-05-27 22:11:32] INFO root fetch - processPackages [redcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redcat-0.0.4.tar.gz tmp/redcat-0.0.5.tar.gz --markdown 20230527/r/redcat/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-27 22:11:32] INFO root fetch - processPackages [finpy-tse]: executing diffoscope
+[2023-05-27 22:11:32] INFO root fetch - processPackages [finpy-tse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finpy_tse-1.2.5.tar.gz tmp/finpy_tse-1.2.6.tar.gz --markdown 20230527/f/finpy-tse/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-05-27 22:11:32] INFO root fetch - processPackages [connex]: Downloading https://files.pythonhosted.org/packages/51/e0/312462621f9f46243342b47493bc7b3a6601ca7e74b085b922bb5cef0f3a/connex-0.2.1.tar.gz
+[2023-05-27 22:11:32] INFO root fetch - processPackages [connex]: executing diffoscope
+[2023-05-27 22:11:32] INFO root fetch - processPackages [connex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connex-0.2.0.tar.gz tmp/connex-0.2.1.tar.gz --markdown 20230527/c/connex/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-27 22:11:33] INFO root fetch - main [MainThread]: End processing [swachhdata]: success
+[2023-05-27 22:11:33] INFO root fetch - main [MainThread]: End processing [finpy-tse]: success
+[2023-05-27 22:11:33] INFO root fetch - main [MainThread]: End processing [redcat]: success
+[2023-05-27 22:11:33] INFO root fetch - main [MainThread]: End processing [heaserver]: success
+[2023-05-27 22:12:22] INFO root fetch - main [MainThread]: End processing [connex]: success
+[2023-05-27 22:12:22] INFO root fetch - main [MainThread]: Store serial: [18276564]
