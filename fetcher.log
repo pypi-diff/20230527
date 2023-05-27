@@ -1061,3 +1061,103 @@
 [2023-05-27 02:06:48] INFO root fetch - main [MainThread]: End processing [zaber-motion]: success
 [2023-05-27 02:06:56] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2023-05-27 02:06:56] INFO root fetch - main [MainThread]: Store serial: [18269997]
+[2023-05-27 02:12:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18269997]
+[2023-05-27 02:12:05] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-27 02:12:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchlayers-nightly
+[2023-05-27 02:12:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: su6
+[2023-05-27 02:12:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rtb-toolbox
+[2023-05-27 02:12:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vesselapi
+[2023-05-27 02:12:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: androidtvremote2
+[2023-05-27 02:12:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-common
+[2023-05-27 02:12:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: eld
+[2023-05-27 02:12:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk8s-grafana
+[2023-05-27 02:12:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: constructs
+[2023-05-27 02:12:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: openbb-nightly
+[2023-05-27 02:12:05] INFO root fetch - processPackages [rtb-toolbox]: New version: [0.1.32] Old Version: [0.1.31]
+[2023-05-27 02:12:05] INFO root fetch - processPackages [su6]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-27 02:12:05] INFO root fetch - processPackages [vesselapi]: New version: [3.5.2] Old Version: [3.23.1]
+[2023-05-27 02:12:05] WARNING root fetch - processPackages [eld]: Skipping, unable to determine old version
+[2023-05-27 02:12:05] INFO root fetch - processPackages [eld]: Start processing: cdk-aws-discord-notifiers
+[2023-05-27 02:12:05] INFO root fetch - main [MainThread]: End processing [eld] error
+[2023-05-27 02:12:05] INFO root fetch - processPackages [androidtvremote2]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 02:12:05] INFO root fetch - processPackages [openbb-nightly]: New version: [3.0.1.dev20230526] Old Version: [3.0.1.dev20230525]
+[2023-05-27 02:12:05] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 02:12:05] INFO root fetch - processPackages [cdk8s-grafana]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-27 02:12:05] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-27 02:12:05] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1685059622] Old Version: [1684973248]
+[2023-05-27 02:12:05] INFO root fetch - processPackages [vesselapi]: Downloading https://files.pythonhosted.org/packages/a7/bd/2a07c7272d4d2f9b9e7235f2670f03e67e48cd6da9efbd771e0d7a0f5e54/vesselapi-3.23.1.tar.gz
+[2023-05-27 02:12:05] INFO root fetch - processPackages [rtb-toolbox]: Downloading https://files.pythonhosted.org/packages/6b/98/5a0948e7f3947f6e24c977220ff275a2191da505e6b3c183c94e2a1638dd/rtb_toolbox-0.1.32.tar.gz
+[2023-05-27 02:12:05] INFO root fetch - processPackages [constructs]: New version: [3.4.99] Old Version: [3.4.98]
+[2023-05-27 02:12:05] INFO root fetch - processPackages [androidtvremote2]: Downloading https://files.pythonhosted.org/packages/19/6f/aad4c2068cc9383cad1fe138f54fed29dd5f9e1268af2aff976a1fac7998/androidtvremote2-0.0.8.tar.gz
+[2023-05-27 02:12:05] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2023-05-27 02:12:05] INFO root fetch - processPackages [cdk8s-grafana]: executing diffoscope
+[2023-05-27 02:12:05] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20230527/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-27 02:12:05] INFO root fetch - processPackages [cdk8s-grafana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-grafana-0.1.98.tar.gz tmp/cdk8s-grafana-0.1.99.tar.gz --markdown 20230527/c/cdk8s-grafana/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-27 02:12:05] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: executing diffoscope
+[2023-05-27 02:12:05] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aws-discord-notifiers-0.0.8.tar.gz tmp/cdk-aws-discord-notifiers-0.0.9.tar.gz --markdown 20230527/c/cdk-aws-discord-notifiers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 02:12:05] INFO root fetch - processPackages [su6]: Downloading https://files.pythonhosted.org/packages/26/64/a6148bbbbf29b6d3eb7a1996d2349837021d3df1cda0d1b3c5c0c3658230/su6-0.1.3.tar.gz
+[2023-05-27 02:12:05] INFO root fetch - processPackages [rtb-toolbox]: executing diffoscope
+[2023-05-27 02:12:05] INFO root fetch - processPackages [rtb-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtb_toolbox-0.1.31.tar.gz tmp/rtb_toolbox-0.1.32.tar.gz --markdown 20230527/r/rtb-toolbox/0.1.31-0.1.32/diff.md --exclude *.pyd
+[2023-05-27 02:12:05] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/50/46/9f29a290c60df943172f71c2d4d895e1b6b2eb99193d725625a42f51e4b7/openbb_nightly-3.0.1.dev20230526.tar.gz
+[2023-05-27 02:12:05] INFO root fetch - processPackages [constructs]: executing diffoscope
+[2023-05-27 02:12:05] INFO root fetch - processPackages [constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constructs-3.4.98.tar.gz tmp/constructs-3.4.99.tar.gz --markdown 20230527/c/constructs/3.4.98-3.4.99/diff.md --exclude *.pyd
+[2023-05-27 02:12:06] INFO root fetch - processPackages [su6]: executing diffoscope
+[2023-05-27 02:12:06] INFO root fetch - processPackages [su6]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/su6-0.1.2.tar.gz tmp/su6-0.1.3.tar.gz --markdown 20230527/s/su6/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-27 02:12:06] INFO root fetch - processPackages [torchlayers-nightly]: Downloading https://files.pythonhosted.org/packages/52/13/0751084852b45b46f11cf0cacaa546ffd1b666a692e7838d2cf2eca2b82b/torchlayers-nightly-1685059622.tar.gz
+[2023-05-27 02:12:06] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-05-27 02:12:06] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1684973248.tar.gz tmp/torchlayers-nightly-1685059622.tar.gz --markdown 20230527/t/torchlayers-nightly/1684973248-1685059622/diff.md --exclude *.pyd
+[2023-05-27 02:12:06] INFO root fetch - processPackages [vesselapi]: executing diffoscope
+[2023-05-27 02:12:06] INFO root fetch - processPackages [vesselapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vesselapi-3.23.1.tar.gz tmp/vesselapi-3.5.2.tar.gz --markdown 20230527/v/vesselapi/3.23.1-3.5.2/diff.md --exclude *.pyd
+[2023-05-27 02:12:06] INFO root fetch - processPackages [androidtvremote2]: Downloading https://files.pythonhosted.org/packages/cc/6a/ab72650e40a1acb300b90bde94ec90521ee06fd0c067dfd12c6c2d7c2697/androidtvremote2-0.0.9.tar.gz
+[2023-05-27 02:12:06] INFO root fetch - processPackages [androidtvremote2]: executing diffoscope
+[2023-05-27 02:12:06] INFO root fetch - processPackages [androidtvremote2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/androidtvremote2-0.0.8.tar.gz tmp/androidtvremote2-0.0.9.tar.gz --markdown 20230527/a/androidtvremote2/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 02:12:07] INFO root fetch - processPackages [cdk8s-grafana]: Start processing: cdktf-local-exec
+[2023-05-27 02:12:07] INFO root fetch - main [MainThread]: End processing [cdk8s-grafana]: success
+[2023-05-27 02:12:07] INFO root fetch - processPackages [cdktf-local-exec]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-27 02:12:07] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2023-05-27 02:12:07] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-3.0.1.dev20230525.tar.gz tmp/openbb_nightly-3.0.1.dev20230526.tar.gz --markdown 20230527/o/openbb-nightly/3.0.1.dev20230525-3.0.1.dev20230526/diff.md --exclude *.pyd
+[2023-05-27 02:12:07] INFO root fetch - processPackages [constructs]: Start processing: cdklabs.codepipeline-extensions
+[2023-05-27 02:12:07] INFO root fetch - main [MainThread]: End processing [constructs]: success
+[2023-05-27 02:12:07] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 02:12:07] INFO root fetch - processPackages [rtb-toolbox]: Start processing: cdk-iot-core-certificates
+[2023-05-27 02:12:07] INFO root fetch - main [MainThread]: End processing [rtb-toolbox]: success
+[2023-05-27 02:12:07] INFO root fetch - processPackages [cdk-common]: Start processing: reasoner-validator
+[2023-05-27 02:12:07] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2023-05-27 02:12:07] INFO root fetch - processPackages [cdk-iot-core-certificates]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-27 02:12:07] INFO root fetch - processPackages [cdktf-local-exec]: executing diffoscope
+[2023-05-27 02:12:07] INFO root fetch - processPackages [cdktf-local-exec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-local-exec-0.2.8.tar.gz tmp/cdktf-local-exec-0.2.9.tar.gz --markdown 20230527/c/cdktf-local-exec/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-27 02:12:07] INFO root fetch - processPackages [cdk-iot-core-certificates]: executing diffoscope
+[2023-05-27 02:12:07] INFO root fetch - processPackages [cdk-iot-core-certificates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-iot-core-certificates-1.0.8.tar.gz tmp/cdk-iot-core-certificates-1.0.9.tar.gz --markdown 20230527/c/cdk-iot-core-certificates/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-27 02:12:07] INFO root fetch - processPackages [reasoner-validator]: New version: [3.5.0] Old Version: [3.4.9]
+[2023-05-27 02:12:07] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: Downloading https://files.pythonhosted.org/packages/df/6c/78f1bfa2ffc81709ec21b0077aff92b7460ad1f071d595e2d767653cedc0/cdklabs.codepipeline-extensions-0.0.98.tar.gz
+[2023-05-27 02:12:07] WARNING root fetch - processPackages [cdklabs.codepipeline-extensions]: Skipping package: exceeds size limit 12637726>=10485760
+[2023-05-27 02:12:07] INFO root fetch - processPackages [cdklabs.codepipeline-extensions]: Start processing: pepperize.cdk-github
+[2023-05-27 02:12:07] INFO root fetch - main [MainThread]: End processing [cdklabs.codepipeline-extensions] error
+[2023-05-27 02:12:07] INFO root fetch - processPackages [pepperize.cdk-github]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 02:12:07] INFO root fetch - processPackages [pepperize.cdk-github]: executing diffoscope
+[2023-05-27 02:12:07] INFO root fetch - processPackages [pepperize.cdk-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-github-0.0.98.tar.gz tmp/pepperize.cdk-github-0.0.99.tar.gz --markdown 20230527/p/pepperize.cdk-github/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 02:12:07] INFO root fetch - processPackages [reasoner-validator]: Downloading https://files.pythonhosted.org/packages/70/85/413af4653fc722df3fb67007e7b979a17ef49d16cb616175b5b999bcb398/reasoner_validator-3.4.9.tar.gz
+[2023-05-27 02:12:08] INFO root fetch - processPackages [torchlayers-nightly]: Start processing: asBASE
+[2023-05-27 02:12:08] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-05-27 02:12:08] INFO root fetch - processPackages [reasoner-validator]: Downloading https://files.pythonhosted.org/packages/ae/be/43bcdd943e9a37da52477b1d2c726264ba715eb9bcc1984c6653163641c3/reasoner_validator-3.5.0.tar.gz
+[2023-05-27 02:12:08] WARNING root fetch - processPackages [asBASE]: Skipping, unable to determine old version
+[2023-05-27 02:12:08] INFO root fetch - processPackages [asBASE]: Start processing: vision6D
+[2023-05-27 02:12:08] INFO root fetch - main [MainThread]: End processing [asBASE] error
+[2023-05-27 02:12:08] INFO root fetch - main [MainThread]: End processing [androidtvremote2]: success
+[2023-05-27 02:12:08] INFO root fetch - processPackages [reasoner-validator]: executing diffoscope
+[2023-05-27 02:12:08] INFO root fetch - processPackages [reasoner-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reasoner_validator-3.4.9.tar.gz tmp/reasoner_validator-3.5.0.tar.gz --markdown 20230527/r/reasoner-validator/3.4.9-3.5.0/diff.md --exclude *.pyd
+[2023-05-27 02:12:08] INFO root fetch - processPackages [vision6D]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-27 02:12:08] INFO root fetch - processPackages [vision6D]: Downloading https://files.pythonhosted.org/packages/cf/db/78d937e2b2ff898d5327000b6bf92cda2711d8d5b80717e92c204aabfeed/vision6D-0.0.7.tar.gz
+[2023-05-27 02:12:08] INFO root fetch - main [MainThread]: End processing [cdk-iot-core-certificates]: success
+[2023-05-27 02:12:08] INFO root fetch - processPackages [vision6D]: Downloading https://files.pythonhosted.org/packages/af/26/393e0107dc8ea0f77b09f23bbfa9f056be51e3d1a662f50f18f39129ab89/vision6D-0.0.8.tar.gz
+[2023-05-27 02:12:08] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-github]: success
+[2023-05-27 02:12:08] INFO root fetch - main [MainThread]: End processing [cdktf-local-exec]: success
+[2023-05-27 02:12:08] INFO root fetch - processPackages [vision6D]: executing diffoscope
+[2023-05-27 02:12:08] INFO root fetch - processPackages [vision6D]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vision6D-0.0.7.tar.gz tmp/vision6D-0.0.8.tar.gz --markdown 20230527/v/vision6D/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-27 02:12:09] INFO root fetch - main [MainThread]: End processing [reasoner-validator]: success
+[2023-05-27 02:12:09] INFO root fetch - main [MainThread]: End processing [vision6D]: success
+[2023-05-27 02:12:10] INFO root fetch - main [MainThread]: End processing [vesselapi]: success
+[2023-05-27 02:12:10] INFO root fetch - main [MainThread]: End processing [cdk-aws-discord-notifiers]: success
+[2023-05-27 02:12:15] INFO root fetch - main [MainThread]: End processing [su6]: success
+[2023-05-27 02:12:23] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2023-05-27 02:12:23] INFO root fetch - main [MainThread]: Store serial: [18270054]
