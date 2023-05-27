@@ -5035,3 +5035,44 @@
 [2023-05-27 07:22:16] INFO root fetch - main [MainThread]: End processing [python-ndn]: success
 [2023-05-27 07:22:17] INFO root fetch - main [MainThread]: End processing [danling]: success
 [2023-05-27 07:22:17] INFO root fetch - main [MainThread]: Store serial: [18272412]
+[2023-05-27 07:27:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272412]
+[2023-05-27 07:27:28] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 07:27:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: control-rod
+[2023-05-27 07:27:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coconut-develop
+[2023-05-27 07:27:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: danling
+[2023-05-27 07:27:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: digital-unit
+[2023-05-27 07:27:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: carpet-concentrations
+[2023-05-27 07:27:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gravitas
+[2023-05-27 07:27:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: crazy-thursday
+[2023-05-27 07:27:28] INFO root fetch - processPackages [danling]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-27 07:27:28] INFO root fetch - processPackages [digital-unit]: New version: [1.5b0] Old Version: [1.5.2]
+[2023-05-27 07:27:28] INFO root fetch - processPackages [gravitas]: New version: [0.0.9] Old Version: [0.0.4]
+[2023-05-27 07:27:28] INFO root fetch - processPackages [carpet-concentrations]: New version: [0.2.1] Old Version: [0.1.0]
+[2023-05-27 07:27:28] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.9.1] Old Version: [2023.5.9.0]
+[2023-05-27 07:27:28] INFO root fetch - processPackages [control-rod]: New version: [2023.5.6.1] Old Version: [2023.5.6.0]
+[2023-05-27 07:27:28] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.1.post0.dev8] Old Version: [3.0.1.post0.dev7]
+[2023-05-27 07:27:28] INFO root fetch - processPackages [danling]: executing diffoscope
+[2023-05-27 07:27:28] INFO root fetch - processPackages [danling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danling-0.2.8.tar.gz tmp/danling-0.2.9.tar.gz --markdown 20230527/d/danling/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-27 07:27:28] INFO root fetch - processPackages [gravitas]: executing diffoscope
+[2023-05-27 07:27:28] INFO root fetch - processPackages [gravitas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gravitas-0.0.4.tar.gz tmp/gravitas-0.0.9.tar.gz --markdown 20230527/g/gravitas/0.0.4-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 07:27:28] INFO root fetch - processPackages [digital-unit]: executing diffoscope
+[2023-05-27 07:27:28] INFO root fetch - processPackages [digital-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digital_unit-1.5.2.tar.gz tmp/digital_unit-1.5b0.tar.gz --markdown 20230527/d/digital-unit/1.5.2-1.5b0/diff.md --exclude *.pyd
+[2023-05-27 07:27:28] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-27 07:27:28] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.9.0.tar.gz tmp/crazy-thursday-2023.5.9.1.tar.gz --markdown 20230527/c/crazy-thursday/2023.5.9.0-2023.5.9.1/diff.md --exclude *.pyd
+[2023-05-27 07:27:28] INFO root fetch - processPackages [carpet-concentrations]: executing diffoscope
+[2023-05-27 07:27:28] INFO root fetch - processPackages [carpet-concentrations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carpet_concentrations-0.1.0.tar.gz tmp/carpet_concentrations-0.2.1.tar.gz --markdown 20230527/c/carpet-concentrations/0.1.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-27 07:27:28] INFO root fetch - processPackages [control-rod]: Downloading https://files.pythonhosted.org/packages/e5/13/2351040e46d3e270fd2e2f9431098d980d51c3109a94ecadece23e990e8a/control_rod-2023.5.6.0.tar.gz
+[2023-05-27 07:27:29] INFO root fetch - processPackages [coconut-develop]: Downloading https://files.pythonhosted.org/packages/0e/42/a13fa3b75713fbf8bd5ebd447bf69fde7e79b7ba5bcf5683d88a46a00673/coconut-develop-3.0.1.post0.dev8.tar.gz
+[2023-05-27 07:27:29] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-05-27 07:27:29] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.1.post0.dev7.tar.gz tmp/coconut-develop-3.0.1.post0.dev8.tar.gz --markdown 20230527/c/coconut-develop/3.0.1.post0.dev7-3.0.1.post0.dev8/diff.md --exclude *.pyd
+[2023-05-27 07:27:29] INFO root fetch - processPackages [control-rod]: Downloading https://files.pythonhosted.org/packages/0c/91/8870111dd66a7b9a154f3d9e55abc44b13b0cdc963564cd404f552a623cd/control_rod-2023.5.6.1.tar.gz
+[2023-05-27 07:27:29] INFO root fetch - processPackages [control-rod]: executing diffoscope
+[2023-05-27 07:27:29] INFO root fetch - processPackages [control-rod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/control_rod-2023.5.6.0.tar.gz tmp/control_rod-2023.5.6.1.tar.gz --markdown 20230527/c/control-rod/2023.5.6.0-2023.5.6.1/diff.md --exclude *.pyd
+[2023-05-27 07:27:29] INFO root fetch - main [MainThread]: End processing [digital-unit]: success
+[2023-05-27 07:27:30] INFO root fetch - main [MainThread]: End processing [carpet-concentrations]: success
+[2023-05-27 07:27:30] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-27 07:27:30] INFO root fetch - main [MainThread]: End processing [gravitas]: success
+[2023-05-27 07:27:30] INFO root fetch - main [MainThread]: End processing [danling]: success
+[2023-05-27 07:27:31] INFO root fetch - main [MainThread]: End processing [control-rod]: success
+[2023-05-27 07:28:20] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-05-27 07:28:20] INFO root fetch - main [MainThread]: Store serial: [18272436]
