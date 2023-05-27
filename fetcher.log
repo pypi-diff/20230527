@@ -5098,3 +5098,20 @@
 [2023-05-27 07:33:32] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
 [2023-05-27 07:33:34] INFO root fetch - main [MainThread]: End processing [imaginAIry]: success
 [2023-05-27 07:33:34] INFO root fetch - main [MainThread]: Store serial: [18272445]
+[2023-05-27 07:38:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272445]
+[2023-05-27 07:38:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 07:38:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addons-oca-wms
+[2023-05-27 07:38:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-access-control
+[2023-05-27 07:38:43] INFO root fetch - processPackages [odoo14-addons-oca-wms]: New version: [14.0.20230526.1] Old Version: [14.0.20230310.0]
+[2023-05-27 07:38:43] INFO root fetch - processPackages [nonebot-plugin-access-control]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-27 07:38:43] INFO root fetch - processPackages [odoo14-addons-oca-wms]: Downloading https://files.pythonhosted.org/packages/e6/8a/5676679f749d6ffd9cab1421609bd16e72eecd9cf03bb2012cce81bfdb93/odoo14_addons_oca_wms-14.0.20230310.0-py3-none-any.whl
+[2023-05-27 07:38:43] INFO root fetch - processPackages [nonebot-plugin-access-control]: Downloading https://files.pythonhosted.org/packages/80/fe/7e1f4789af4103ddcfdda94b19b228b8bae6e2899de215db7943a50d90cb/nonebot_plugin_access_control-0.4.1.tar.gz
+[2023-05-27 07:38:43] INFO root fetch - processPackages [nonebot-plugin-access-control]: Downloading https://files.pythonhosted.org/packages/35/57/93486604f71f7fe3c843863aaf9626a6c1b1d5f759541974bfadda811dd6/nonebot_plugin_access_control-0.4.2.tar.gz
+[2023-05-27 07:38:43] INFO root fetch - processPackages [odoo14-addons-oca-wms]: Downloading https://files.pythonhosted.org/packages/a8/4d/5bdb3b5fa5a24ef9d97068c8d19e09bf7546e7fb5745b5c3b76d00d9c949/odoo14_addons_oca_wms-14.0.20230526.1-py3-none-any.whl
+[2023-05-27 07:38:43] INFO root fetch - processPackages [nonebot-plugin-access-control]: executing diffoscope
+[2023-05-27 07:38:43] INFO root fetch - processPackages [nonebot-plugin-access-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_access_control-0.4.1.tar.gz tmp/nonebot_plugin_access_control-0.4.2.tar.gz --markdown 20230527/n/nonebot-plugin-access-control/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-27 07:38:43] INFO root fetch - processPackages [odoo14-addons-oca-wms]: executing diffoscope
+[2023-05-27 07:38:43] INFO root fetch - processPackages [odoo14-addons-oca-wms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_wms-14.0.20230310.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_wms-14.0.20230526.1-py3-none-any.whl.zip --markdown 20230527/o/odoo14-addons-oca-wms/14.0.20230310.0-14.0.20230526.1/diff.md --exclude *.pyd
+[2023-05-27 07:38:44] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-wms]: success
+[2023-05-27 07:38:44] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-access-control]: success
+[2023-05-27 07:38:44] INFO root fetch - main [MainThread]: Store serial: [18272450]
