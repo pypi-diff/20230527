@@ -7753,3 +7753,82 @@
 [2023-05-27 13:21:50] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-05-27 13:22:00] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-05-27 13:22:00] INFO root fetch - main [MainThread]: Store serial: [18273967]
+[2023-05-27 13:27:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273967]
+[2023-05-27 13:27:08] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-27 13:27:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchtnt-nightly
+[2023-05-27 13:27:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NaturalAPI
+[2023-05-27 13:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tensordict-nightly
+[2023-05-27 13:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: supervisely
+[2023-05-27 13:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NaturalAPI
+[2023-05-27 13:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jsmetrics
+[2023-05-27 13:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torchrl-nightly
+[2023-05-27 13:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: devblaze
+[2023-05-27 13:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: NaturalAPI
+[2023-05-27 13:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: torchserve-nightly
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-27 13:27:09] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-27 13:27:09] INFO root fetch - processPackages [devblaze]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 13:27:09] INFO root fetch - processPackages [jsmetrics]: New version: [0.1.2a0] Old Version: [0.1.1b0]
+[2023-05-27 13:27:09] INFO root fetch - processPackages [supervisely]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-27 13:27:09] INFO root fetch - processPackages [tensordict-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-27 13:27:09] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-27 13:27:09] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/84/1f/9485a72320b2c7f49d6a9304acfbc2bd5fe71c25e0e7a3844ce81a1ed180/torchserve_nightly-2023.5.8-py3-none-any.whl
+[2023-05-27 13:27:09] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-05-27 13:27:09] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.5.8.tar.gz tmp/torchtnt-nightly-2023.5.9.tar.gz --markdown 20230527/t/torchtnt-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: Downloading https://files.pythonhosted.org/packages/42/e1/544a6076a4d8134a68a6e58619e6948048b210677f984119f4b2391ccc5c/NaturalAPI-0.0.6.tar.gz
+[2023-05-27 13:27:09] INFO root fetch - processPackages [supervisely]: executing diffoscope
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: Downloading https://files.pythonhosted.org/packages/42/e1/544a6076a4d8134a68a6e58619e6948048b210677f984119f4b2391ccc5c/NaturalAPI-0.0.6.tar.gz
+[2023-05-27 13:27:09] INFO root fetch - processPackages [supervisely]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supervisely-6.9.1.tar.gz tmp/supervisely-6.9.2.tar.gz --markdown 20230527/s/supervisely/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: Downloading https://files.pythonhosted.org/packages/42/e1/544a6076a4d8134a68a6e58619e6948048b210677f984119f4b2391ccc5c/NaturalAPI-0.0.6.tar.gz
+[2023-05-27 13:27:09] INFO root fetch - processPackages [torchrl-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-27 13:27:09] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23716791>=10485760
+[2023-05-27 13:27:09] INFO root fetch - processPackages [torchserve-nightly]: Start processing: chatplayground
+[2023-05-27 13:27:09] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-05-27 13:27:09] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2023-05-27 13:27:09] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2023.5.8-py39-none-any.whl.zip tmp/tensordict_nightly-2023.5.9-py39-none-any.whl.zip --markdown 20230527/t/tensordict-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-27 13:27:09] INFO root fetch - processPackages [devblaze]: Downloading https://files.pythonhosted.org/packages/d5/46/f6c487ca106a8f390381150899b2d38e433e5ba38489687865d9dddaa6b2/devblaze-0.0.4.tar.gz
+[2023-05-27 13:27:09] INFO root fetch - processPackages [chatplayground]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-05-27 13:27:09] INFO root fetch - processPackages [jsmetrics]: Downloading https://files.pythonhosted.org/packages/62/a3/56aa4f826ff5426f53b69ee16051826809a2e59ed719ca4902efd0865f69/jsmetrics-0.1.2a0.tar.gz
+[2023-05-27 13:27:09] INFO root fetch - processPackages [chatplayground]: Downloading https://files.pythonhosted.org/packages/05/93/5343e7477544f31d46ae4d29bde386a2fa4660ce6cab8341c00e74736d05/chatplayground-1.1.2.tar.gz
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: Downloading https://files.pythonhosted.org/packages/fc/4e/a8c45d40f5b65c6196e49e396e08c7292317e00d35ec9b742e618ef1433d/NaturalAPI-0.0.7.tar.gz
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: Downloading https://files.pythonhosted.org/packages/fc/4e/a8c45d40f5b65c6196e49e396e08c7292317e00d35ec9b742e618ef1433d/NaturalAPI-0.0.7.tar.gz
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: Downloading https://files.pythonhosted.org/packages/fc/4e/a8c45d40f5b65c6196e49e396e08c7292317e00d35ec9b742e618ef1433d/NaturalAPI-0.0.7.tar.gz
+[2023-05-27 13:27:09] INFO root fetch - processPackages [devblaze]: Downloading https://files.pythonhosted.org/packages/c0/5f/282515c02c1dea4ba2e6352b5ce94b49364e83f8779111e884ef9b5a2afe/devblaze-0.0.5.tar.gz
+[2023-05-27 13:27:09] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2023-05-27 13:27:09] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2023.5.8-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2023.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20230527/t/torchrl-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: executing diffoscope
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NaturalAPI-0.0.6.tar.gz tmp/NaturalAPI-0.0.7.tar.gz --markdown 20230527/N/NaturalAPI/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: executing diffoscope
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NaturalAPI-0.0.6.tar.gz tmp/NaturalAPI-0.0.7.tar.gz --markdown 20230527/N/NaturalAPI/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-27 13:27:09] INFO root fetch - processPackages [devblaze]: executing diffoscope
+[2023-05-27 13:27:09] INFO root fetch - processPackages [devblaze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devblaze-0.0.4.tar.gz tmp/devblaze-0.0.5.tar.gz --markdown 20230527/d/devblaze/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: executing diffoscope
+[2023-05-27 13:27:09] INFO root fetch - processPackages [NaturalAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NaturalAPI-0.0.6.tar.gz tmp/NaturalAPI-0.0.7.tar.gz --markdown 20230527/N/NaturalAPI/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-27 13:27:09] INFO root fetch - processPackages [chatplayground]: Downloading https://files.pythonhosted.org/packages/33/dd/bdcd3c868bd4cf2206c82e9df15da5fbc644b0ca12b6774663da0a5b3345/chatplayground-1.2.0.tar.gz
+[2023-05-27 13:27:09] INFO root fetch - processPackages [chatplayground]: executing diffoscope
+[2023-05-27 13:27:09] INFO root fetch - processPackages [chatplayground]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatplayground-1.1.2.tar.gz tmp/chatplayground-1.2.0.tar.gz --markdown 20230527/c/chatplayground/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-05-27 13:27:10] INFO root fetch - processPackages [torchtnt-nightly]: Start processing: torch-model-archiver-nightly
+[2023-05-27 13:27:10] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-05-27 13:27:10] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-27 13:27:10] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-05-27 13:27:10] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230527/t/torch-model-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-27 13:27:11] INFO root fetch - processPackages [NaturalAPI]: Start processing: torch-workflow-archiver-nightly
+[2023-05-27 13:27:11] INFO root fetch - main [MainThread]: End processing [NaturalAPI]: success
+[2023-05-27 13:27:11] INFO root fetch - processPackages [jsmetrics]: executing diffoscope
+[2023-05-27 13:27:11] INFO root fetch - processPackages [jsmetrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsmetrics-0.1.1b0.tar.gz tmp/jsmetrics-0.1.2a0.tar.gz --markdown 20230527/j/jsmetrics/0.1.1b0-0.1.2a0/diff.md --exclude *.pyd
+[2023-05-27 13:27:11] INFO root fetch - main [MainThread]: End processing [NaturalAPI]: success
+[2023-05-27 13:27:11] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-27 13:27:11] INFO root fetch - main [MainThread]: End processing [NaturalAPI]: success
+[2023-05-27 13:27:11] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-05-27 13:27:11] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230527/t/torch-workflow-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-27 13:27:11] INFO root fetch - main [MainThread]: End processing [chatplayground]: success
+[2023-05-27 13:27:11] INFO root fetch - main [MainThread]: End processing [devblaze]: success
+[2023-05-27 13:27:11] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2023-05-27 13:27:12] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2023-05-27 13:27:12] INFO root fetch - main [MainThread]: End processing [supervisely]: success
+[2023-05-27 13:27:12] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-05-27 13:27:12] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-05-27 13:27:13] INFO root fetch - main [MainThread]: End processing [jsmetrics]: success
+[2023-05-27 13:27:13] INFO root fetch - main [MainThread]: Store serial: [18274006]
