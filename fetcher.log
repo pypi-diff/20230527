@@ -7269,3 +7269,80 @@
 [2023-05-27 12:23:10] INFO root fetch - main [MainThread]: End processing [notcli]: success
 [2023-05-27 12:23:10] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
 [2023-05-27 12:23:10] INFO root fetch - main [MainThread]: Store serial: [18273683]
+[2023-05-27 12:28:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273683]
+[2023-05-27 12:28:19] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-27 12:28:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: betterdataclass
+[2023-05-27 12:28:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notcli
+[2023-05-27 12:28:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyassorted
+[2023-05-27 12:28:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: markline
+[2023-05-27 12:28:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: LegacyNeuralNetworks
+[2023-05-27 12:28:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gradio-version-freeze
+[2023-05-27 12:28:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sixsigmaspc
+[2023-05-27 12:28:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: river
+[2023-05-27 12:28:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: newsapi-python-client
+[2023-05-27 12:28:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: backends
+[2023-05-27 12:28:19] INFO root fetch - processPackages [notcli]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-27 12:28:19] INFO root fetch - processPackages [betterdataclass]: New version: [3.1] Old Version: [3.0]
+[2023-05-27 12:28:19] WARNING root fetch - processPackages [gradio-version-freeze]: Skipping, unable to determine old version
+[2023-05-27 12:28:19] INFO root fetch - processPackages [gradio-version-freeze]: Start processing: pytask-parallel
+[2023-05-27 12:28:19] INFO root fetch - main [MainThread]: End processing [gradio-version-freeze] error
+[2023-05-27 12:28:19] INFO root fetch - processPackages [pyassorted]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-27 12:28:19] INFO root fetch - processPackages [markline]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-27 12:28:19] WARNING root fetch - processPackages [newsapi-python-client]: Skipping, unable to determine old version
+[2023-05-27 12:28:19] ERROR root fetch - processPackages [sixsigmaspc]: Unable to get metadata: No such project 'sixsigmaspc'
+[2023-05-27 12:28:19] INFO root fetch - processPackages [LegacyNeuralNetworks]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-27 12:28:19] INFO root fetch - processPackages [newsapi-python-client]: Start processing: TimePrintOnPYPI
+[2023-05-27 12:28:19] INFO root fetch - main [MainThread]: End processing [newsapi-python-client] error
+[2023-05-27 12:28:19] INFO root fetch - processPackages [sixsigmaspc]: Start processing: metablock
+[2023-05-27 12:28:19] INFO root fetch - processPackages [pytask-parallel]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-27 12:28:19] INFO root fetch - processPackages [backends]: New version: [1.5.4] Old Version: [1.5.3]
+[2023-05-27 12:28:19] INFO root fetch - main [MainThread]: End processing [sixsigmaspc] error
+[2023-05-27 12:28:19] INFO root fetch - processPackages [TimePrintOnPYPI]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-05-27 12:28:19] INFO root fetch - processPackages [river]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-27 12:28:19] INFO root fetch - processPackages [metablock]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-05-27 12:28:19] INFO root fetch - processPackages [metablock]: executing diffoscope
+[2023-05-27 12:28:19] INFO root fetch - processPackages [metablock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metablock-0.6.1.tar.gz tmp/metablock-0.6.2.tar.gz --markdown 20230527/m/metablock/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-05-27 12:28:19] INFO root fetch - processPackages [LegacyNeuralNetworks]: Downloading https://files.pythonhosted.org/packages/03/85/59746a194f7977410c2bbb8ca4a69116b2bcc51ff99a8f32915131103c71/LegacyNeuralNetworks-0.0.1.tar.gz
+[2023-05-27 12:28:19] INFO root fetch - processPackages [markline]: Downloading https://files.pythonhosted.org/packages/7f/f9/19b5006e7149da1e357cd4ca9a91abc7d94e5664e1dc5dcf270c505490b5/markline-0.2.0.tar.gz
+[2023-05-27 12:28:19] INFO root fetch - processPackages [notcli]: Downloading https://files.pythonhosted.org/packages/64/f5/d0be376c998557827e6f84fb25ff589e2db1158d2359d230a13e75feb8a8/notcli-0.0.4.tar.gz
+[2023-05-27 12:28:19] INFO root fetch - processPackages [backends]: Downloading https://files.pythonhosted.org/packages/dd/ba/25945208f25a1382b421dfa8b6915d3b7886fe843ad9ba86908ec3a99419/backends-1.5.3.tar.gz
+[2023-05-27 12:28:19] INFO root fetch - processPackages [pyassorted]: Downloading https://files.pythonhosted.org/packages/b9/25/2199a783e34e7668b9c643c91b311674af3fcf6b5306b0bab8d443cc37da/pyassorted-0.6.0.tar.gz
+[2023-05-27 12:28:19] INFO root fetch - processPackages [pytask-parallel]: Downloading https://files.pythonhosted.org/packages/9f/2a/3bc5d169af9bbee7ea72fba594580d00aded93f79088e886c49031422322/pytask_parallel-0.3.0.tar.gz
+[2023-05-27 12:28:19] INFO root fetch - processPackages [TimePrintOnPYPI]: Downloading https://files.pythonhosted.org/packages/52/d7/bfbf22fd91c92725496e5a18bbe6a9a02067cee1a7e1e5d2a7f07c0eeefc/TimePrintOnPYPI-1.5.3.tar.gz
+[2023-05-27 12:28:19] INFO root fetch - processPackages [river]: Downloading https://files.pythonhosted.org/packages/72/6c/e2164b57802af0b7e60a4ac271a1277876a720eb88cde88c2aa4a7aa24c1/river-0.8.0.tar.gz
+[2023-05-27 12:28:19] INFO root fetch - processPackages [notcli]: executing diffoscope
+[2023-05-27 12:28:19] INFO root fetch - processPackages [notcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notcli-0.0.3.tar.gz tmp/notcli-0.0.4.tar.gz --markdown 20230527/n/notcli/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-27 12:28:19] INFO root fetch - processPackages [betterdataclass]: Downloading https://files.pythonhosted.org/packages/0d/b8/818c219cca2668e43e909e4a1813e7dd37a9d090dd67cb96c108b05ec040/betterdataclass-3.1.tar.gz
+[2023-05-27 12:28:19] INFO root fetch - processPackages [LegacyNeuralNetworks]: Downloading https://files.pythonhosted.org/packages/06/11/b5fb5bc43faa4ac0a44da0bd6ff9620014e82b314745d3934c83145c6981/LegacyNeuralNetworks-0.0.2.tar.gz
+[2023-05-27 12:28:19] INFO root fetch - processPackages [betterdataclass]: executing diffoscope
+[2023-05-27 12:28:19] INFO root fetch - processPackages [betterdataclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betterdataclass-3.0.tar.gz tmp/betterdataclass-3.1.tar.gz --markdown 20230527/b/betterdataclass/3.0-3.1/diff.md --exclude *.pyd
+[2023-05-27 12:28:19] INFO root fetch - processPackages [TimePrintOnPYPI]: executing diffoscope
+[2023-05-27 12:28:19] INFO root fetch - processPackages [TimePrintOnPYPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TimePrintOnPYPI-1.5.2.tar.gz tmp/TimePrintOnPYPI-1.5.3.tar.gz --markdown 20230527/T/TimePrintOnPYPI/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-05-27 12:28:19] INFO root fetch - processPackages [markline]: Downloading https://files.pythonhosted.org/packages/94/2c/210a911fd06caf90bc3510b598ab0929c399d4f985f8734a87faeb24ae9c/markline-0.3.0.tar.gz
+[2023-05-27 12:28:19] INFO root fetch - processPackages [backends]: Downloading https://files.pythonhosted.org/packages/ec/b9/1b056217f3902a1a960f515d3d9f91c28bf891a8d5b47c4839af7f601135/backends-1.5.4.tar.gz
+[2023-05-27 12:28:19] INFO root fetch - processPackages [pyassorted]: Downloading https://files.pythonhosted.org/packages/41/37/224e71a92831d3ca07192df1aaaedc4fb2449b416d371fa9ee136a643adb/pyassorted-0.7.0.tar.gz
+[2023-05-27 12:28:19] INFO root fetch - processPackages [pytask-parallel]: Downloading https://files.pythonhosted.org/packages/6b/b7/7ed9eadd45a11d98b179d30b5e7216f7c6b14e36642e322cb8bfadd32a8a/pytask_parallel-0.3.1.tar.gz
+[2023-05-27 12:28:19] INFO root fetch - processPackages [LegacyNeuralNetworks]: executing diffoscope
+[2023-05-27 12:28:19] INFO root fetch - processPackages [LegacyNeuralNetworks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LegacyNeuralNetworks-0.0.1.tar.gz tmp/LegacyNeuralNetworks-0.0.2.tar.gz --markdown 20230527/L/LegacyNeuralNetworks/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-27 12:28:19] INFO root fetch - processPackages [markline]: executing diffoscope
+[2023-05-27 12:28:19] INFO root fetch - processPackages [markline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markline-0.2.0.tar.gz tmp/markline-0.3.0.tar.gz --markdown 20230527/m/markline/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-27 12:28:19] INFO root fetch - processPackages [backends]: executing diffoscope
+[2023-05-27 12:28:19] INFO root fetch - processPackages [backends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backends-1.5.3.tar.gz tmp/backends-1.5.4.tar.gz --markdown 20230527/b/backends/1.5.3-1.5.4/diff.md --exclude *.pyd
+[2023-05-27 12:28:19] INFO root fetch - processPackages [pyassorted]: executing diffoscope
+[2023-05-27 12:28:19] INFO root fetch - processPackages [pyassorted]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyassorted-0.6.0.tar.gz tmp/pyassorted-0.7.0.tar.gz --markdown 20230527/p/pyassorted/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-27 12:28:19] INFO root fetch - processPackages [pytask-parallel]: executing diffoscope
+[2023-05-27 12:28:19] INFO root fetch - processPackages [pytask-parallel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytask_parallel-0.3.0.tar.gz tmp/pytask_parallel-0.3.1.tar.gz --markdown 20230527/p/pytask-parallel/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-27 12:28:19] INFO root fetch - processPackages [river]: Downloading https://files.pythonhosted.org/packages/08/23/aa6c018d9f7a07e1e607eee8c22fb0256da6bd0026a698d6d5c0e4630f7c/river-0.9.0.tar.gz
+[2023-05-27 12:28:20] INFO root fetch - main [MainThread]: End processing [metablock]: success
+[2023-05-27 12:28:20] INFO root fetch - processPackages [river]: executing diffoscope
+[2023-05-27 12:28:20] INFO root fetch - processPackages [river]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/river-0.8.0.tar.gz tmp/river-0.9.0.tar.gz --markdown 20230527/r/river/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 12:28:20] INFO root fetch - main [MainThread]: End processing [notcli]: success
+[2023-05-27 12:28:21] INFO root fetch - main [MainThread]: End processing [betterdataclass]: success
+[2023-05-27 12:28:21] INFO root fetch - main [MainThread]: End processing [TimePrintOnPYPI]: success
+[2023-05-27 12:28:21] INFO root fetch - main [MainThread]: End processing [LegacyNeuralNetworks]: success
+[2023-05-27 12:28:21] INFO root fetch - main [MainThread]: End processing [pytask-parallel]: success
+[2023-05-27 12:28:21] INFO root fetch - main [MainThread]: End processing [markline]: success
+[2023-05-27 12:28:21] INFO root fetch - main [MainThread]: End processing [pyassorted]: success
+[2023-05-27 12:28:22] INFO root fetch - main [MainThread]: End processing [backends]: success
+[2023-05-27 12:28:31] INFO root fetch - main [MainThread]: End processing [river]: success
+[2023-05-27 12:28:31] INFO root fetch - main [MainThread]: Store serial: [18273754]
