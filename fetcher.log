@@ -9129,3 +9129,70 @@
 [2023-05-27 16:24:46] INFO root fetch - main [MainThread]: End processing [chaostoolkit-azure]: success
 [2023-05-27 16:24:46] INFO root fetch - main [MainThread]: End processing [dfktools]: success
 [2023-05-27 16:24:46] INFO root fetch - main [MainThread]: Store serial: [18274739]
+[2023-05-27 16:29:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274739]
+[2023-05-27 16:29:55] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-27 16:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alicebot
+[2023-05-27 16:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alicebot-adapter-apscheduler
+[2023-05-27 16:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alicebot-adapter-cqhttp
+[2023-05-27 16:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alicebot-adapter-dingtalk
+[2023-05-27 16:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alicebot-adapter-mirai
+[2023-05-27 16:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyconvertapi-image-converter
+[2023-05-27 16:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hifitime
+[2023-05-27 16:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: asociita
+[2023-05-27 16:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: desktoptools
+[2023-05-27 16:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: raya
+[2023-05-27 16:29:55] INFO root fetch - processPackages [alicebot-adapter-cqhttp]: New version: [0.7.0] Old Version: [0.6.2]
+[2023-05-27 16:29:55] INFO root fetch - processPackages [asociita]: New version: [0.1.6.4] Old Version: [0.1.6.3]
+[2023-05-27 16:29:55] INFO root fetch - processPackages [alicebot]: New version: [0.7.0] Old Version: [0.6.2]
+[2023-05-27 16:29:55] INFO root fetch - processPackages [alicebot-adapter-apscheduler]: New version: [0.7.0] Old Version: [0.6.2]
+[2023-05-27 16:29:55] INFO root fetch - processPackages [desktoptools]: New version: [0.0.7] Old Version: [0.0.1]
+[2023-05-27 16:29:55] INFO root fetch - processPackages [raya]: New version: [3.4.1.dev6] Old Version: [3.4.1.dev5]
+[2023-05-27 16:29:55] WARNING root fetch - processPackages [pyconvertapi-image-converter]: Skipping, unable to determine old version
+[2023-05-27 16:29:55] INFO root fetch - processPackages [alicebot-adapter-mirai]: New version: [0.7.0] Old Version: [0.6.2]
+[2023-05-27 16:29:55] INFO root fetch - main [MainThread]: End processing [pyconvertapi-image-converter] error
+[2023-05-27 16:29:55] INFO root fetch - processPackages [alicebot-adapter-dingtalk]: New version: [0.7.0] Old Version: [0.6.2]
+[2023-05-27 16:29:55] INFO root fetch - processPackages [hifitime]: New version: [3.8.1] Old Version: [3.8.0]
+[2023-05-27 16:29:56] INFO root fetch - processPackages [asociita]: Downloading https://files.pythonhosted.org/packages/f8/09/aed62a9a3f0a609d39c51f164c0104863d91b7dd089294d25aad9c126176/asociita-0.1.6.4.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-cqhttp]: Downloading https://files.pythonhosted.org/packages/ba/11/d4c64be0112e9bb653b0b0d399e184086adbaf57d4b9dc91b3f531b4ea4f/alicebot_adapter_cqhttp-0.6.2.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [desktoptools]: Downloading https://files.pythonhosted.org/packages/62/f5/5720092b19ac1014ebaeba343507fc6e259dd8501cafdff007e06c56fdd1/desktoptools-0.0.1.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-apscheduler]: Downloading https://files.pythonhosted.org/packages/27/ff/3eba55ee7490a71fc0815d1991ca98509fe1cbc84f0f1d2f0dc142658521/alicebot_adapter_apscheduler-0.6.2.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-dingtalk]: Downloading https://files.pythonhosted.org/packages/31/d4/6a2c5e12647f7b508a601e5e26b00114eb988d1632b5aa4a7ced234c1b68/alicebot_adapter_dingtalk-0.6.2.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot]: Downloading https://files.pythonhosted.org/packages/e5/fe/92e3fe5136b742d323bdffcdcfa0e82c07ba3bfb90781a4566e1c8b56046/alicebot-0.6.2.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-mirai]: Downloading https://files.pythonhosted.org/packages/06/ac/ee359d00bd49d0ece26c07b2f3c894168df83f99f32eb444f35db1eeda7c/alicebot_adapter_mirai-0.6.2.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [hifitime]: Downloading https://files.pythonhosted.org/packages/d5/6d/39a4e3b05fc7d658b0f1b41d53ba541c400fcee0acbee86986c31fae686a/hifitime-3.8.0.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [asociita]: executing diffoscope
+[2023-05-27 16:29:56] INFO root fetch - processPackages [asociita]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asociita-0.1.6.3.tar.gz tmp/asociita-0.1.6.4.tar.gz --markdown 20230527/a/asociita/0.1.6.3-0.1.6.4/diff.md --exclude *.pyd
+[2023-05-27 16:29:56] INFO root fetch - processPackages [raya]: Downloading https://files.pythonhosted.org/packages/eb/79/e01c0d5f586952110ab9783b11f4ea53a4eca0f997b5a008a97e303d6b86/raya-3.4.1.dev6.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [raya]: executing diffoscope
+[2023-05-27 16:29:56] INFO root fetch - processPackages [raya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raya-3.4.1.dev5.tar.gz tmp/raya-3.4.1.dev6.tar.gz --markdown 20230527/r/raya/3.4.1.dev5-3.4.1.dev6/diff.md --exclude *.pyd
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-apscheduler]: Downloading https://files.pythonhosted.org/packages/69/7e/acaae463acd3cd1653b9b43d6a04f39233e8e4e701661262eb8e87e15fb0/alicebot_adapter_apscheduler-0.7.0.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-mirai]: Downloading https://files.pythonhosted.org/packages/90/03/8965aef4ae74c846dd4b634fc72669d182297994d00e388d5cfa5ad5ae75/alicebot_adapter_mirai-0.7.0.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-dingtalk]: Downloading https://files.pythonhosted.org/packages/d0/b1/dc259d75d3386aa256a30908f92d902e6521b3d66756682ea68985fd5542/alicebot_adapter_dingtalk-0.7.0.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-cqhttp]: Downloading https://files.pythonhosted.org/packages/a7/9a/9369ece18dd1f9518883025a0ca122b5ba6e789635124ff92c81f55dff6a/alicebot_adapter_cqhttp-0.7.0.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-cqhttp]: executing diffoscope
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-mirai]: executing diffoscope
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-cqhttp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alicebot_adapter_cqhttp-0.6.2.tar.gz tmp/alicebot_adapter_cqhttp-0.7.0.tar.gz --markdown 20230527/a/alicebot-adapter-cqhttp/0.6.2-0.7.0/diff.md --exclude *.pyd
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-mirai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alicebot_adapter_mirai-0.6.2.tar.gz tmp/alicebot_adapter_mirai-0.7.0.tar.gz --markdown 20230527/a/alicebot-adapter-mirai/0.6.2-0.7.0/diff.md --exclude *.pyd
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-apscheduler]: executing diffoscope
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-apscheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alicebot_adapter_apscheduler-0.6.2.tar.gz tmp/alicebot_adapter_apscheduler-0.7.0.tar.gz --markdown 20230527/a/alicebot-adapter-apscheduler/0.6.2-0.7.0/diff.md --exclude *.pyd
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-dingtalk]: executing diffoscope
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot-adapter-dingtalk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alicebot_adapter_dingtalk-0.6.2.tar.gz tmp/alicebot_adapter_dingtalk-0.7.0.tar.gz --markdown 20230527/a/alicebot-adapter-dingtalk/0.6.2-0.7.0/diff.md --exclude *.pyd
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot]: Downloading https://files.pythonhosted.org/packages/a1/1b/f6551beabe706f7bd8f479aa84c0555783958e08a46d5b27f5fdaee35466/alicebot-0.7.0.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [hifitime]: Downloading https://files.pythonhosted.org/packages/37/7e/ada4af51d9e2cd8dc9a0f846a7d4489b27c4f28b52984a1f117895093ccb/hifitime-3.8.1-cp37-none-win_amd64.whl
+[2023-05-27 16:29:56] INFO root fetch - processPackages [desktoptools]: Downloading https://files.pythonhosted.org/packages/50/b0/775c64c7b3d874cf8bd6345f380c0aebd02c785f1fab3dc55563062c1327/desktoptools-0.0.7.tar.gz
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot]: executing diffoscope
+[2023-05-27 16:29:56] INFO root fetch - processPackages [alicebot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alicebot-0.6.2.tar.gz tmp/alicebot-0.7.0.tar.gz --markdown 20230527/a/alicebot/0.6.2-0.7.0/diff.md --exclude *.pyd
+[2023-05-27 16:29:56] INFO root fetch - processPackages [desktoptools]: executing diffoscope
+[2023-05-27 16:29:56] INFO root fetch - processPackages [desktoptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/desktoptools-0.0.1.tar.gz tmp/desktoptools-0.0.7.tar.gz --markdown 20230527/d/desktoptools/0.0.1-0.0.7/diff.md --exclude *.pyd
+[2023-05-27 16:29:57] INFO root fetch - main [MainThread]: End processing [alicebot-adapter-apscheduler]: success
+[2023-05-27 16:29:57] INFO root fetch - main [MainThread]: End processing [alicebot-adapter-mirai]: success
+[2023-05-27 16:29:58] INFO root fetch - main [MainThread]: End processing [alicebot-adapter-cqhttp]: success
+[2023-05-27 16:29:58] INFO root fetch - main [MainThread]: End processing [alicebot-adapter-dingtalk]: success
+[2023-05-27 16:29:58] INFO root fetch - processPackages [hifitime]: executing diffoscope
+[2023-05-27 16:29:58] INFO root fetch - processPackages [hifitime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hifitime-3.8.0.tar.gz tmp/hifitime-3.8.1-cp37-none-win_amd64.whl.zip --markdown 20230527/h/hifitime/3.8.0-3.8.1/diff.md --exclude *.pyd
+[2023-05-27 16:29:58] INFO root fetch - main [MainThread]: End processing [asociita]: success
+[2023-05-27 16:29:58] INFO root fetch - main [MainThread]: End processing [raya]: success
+[2023-05-27 16:29:58] INFO root fetch - main [MainThread]: End processing [desktoptools]: success
+[2023-05-27 16:29:59] INFO root fetch - main [MainThread]: End processing [hifitime]: success
+[2023-05-27 16:30:46] INFO root fetch - main [MainThread]: End processing [alicebot]: success
+[2023-05-27 16:30:46] INFO root fetch - main [MainThread]: Store serial: [18274797]
