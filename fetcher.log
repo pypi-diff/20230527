@@ -11735,3 +11735,61 @@
 [2023-05-27 21:32:37] INFO root fetch - main [MainThread]: End processing [pyrealb]: success
 [2023-05-27 21:32:37] INFO root fetch - main [MainThread]: End processing [cryptofeed]: success
 [2023-05-27 21:32:37] INFO root fetch - main [MainThread]: Store serial: [18276384]
+[2023-05-27 21:37:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276384]
+[2023-05-27 21:37:46] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-27 21:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: p-template-res
+[2023-05-27 21:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lavviebotaio
+[2023-05-27 21:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autora-experiment-runner-experimentation-manager-firebase
+[2023-05-27 21:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbt-clickzetta
+[2023-05-27 21:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: satnogs-decoders
+[2023-05-27 21:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nowparsinguris
+[2023-05-27 21:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autora-experiment-runner-experimentation-manager-firebase
+[2023-05-27 21:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: plugget
+[2023-05-27 21:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: AM-GH-PlusOne
+[2023-05-27 21:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: jupyter-converter
+[2023-05-27 21:37:46] INFO root fetch - processPackages [lavviebotaio]: New version: [0.0.1.3] Old Version: [0.0.1.2]
+[2023-05-27 21:37:46] INFO root fetch - processPackages [p-template-res]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 21:37:46] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: New version: [1.0.0a3] Old Version: [1.0.0a2]
+[2023-05-27 21:37:46] WARNING root fetch - processPackages [nowparsinguris]: Skipping, unable to determine old version
+[2023-05-27 21:37:46] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: New version: [1.0.0a3] Old Version: [1.0.0a2]
+[2023-05-27 21:37:46] INFO root fetch - main [MainThread]: End processing [nowparsinguris] error
+[2023-05-27 21:37:46] WARNING root fetch - processPackages [jupyter-converter]: Skipping, unable to determine old version
+[2023-05-27 21:37:46] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-27 21:37:46] INFO root fetch - main [MainThread]: End processing [jupyter-converter] error
+[2023-05-27 21:37:46] INFO root fetch - processPackages [plugget]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 21:37:46] WARNING root fetch - processPackages [AM-GH-PlusOne]: Skipping, unable to determine old version
+[2023-05-27 21:37:46] INFO root fetch - main [MainThread]: End processing [AM-GH-PlusOne] error
+[2023-05-27 21:37:46] INFO root fetch - processPackages [satnogs-decoders]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-27 21:37:46] INFO root fetch - processPackages [p-template-res]: Downloading https://files.pythonhosted.org/packages/2c/69/04debfb1e23f6ab0c46ad8db7669d2d6bd57b336e9279220727438823dc1/p-template-res-0.1.8.tar.gz
+[2023-05-27 21:37:46] INFO root fetch - processPackages [lavviebotaio]: Downloading https://files.pythonhosted.org/packages/1d/e3/75ce7e7b1397defe1b01fe6308041ccd39a749382625703716216a8897d7/lavviebotaio-0.0.1.2.tar.gz
+[2023-05-27 21:37:46] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: Downloading https://files.pythonhosted.org/packages/71/1d/b59b8a28b3721838587228bddb3746aa39167fa0f5bddf6051466ae52a74/autora-experiment-runner-experimentation-manager-firebase-1.0.0a2.tar.gz
+[2023-05-27 21:37:46] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: Downloading https://files.pythonhosted.org/packages/71/1d/b59b8a28b3721838587228bddb3746aa39167fa0f5bddf6051466ae52a74/autora-experiment-runner-experimentation-manager-firebase-1.0.0a2.tar.gz
+[2023-05-27 21:37:46] INFO root fetch - processPackages [satnogs-decoders]: Downloading https://files.pythonhosted.org/packages/98/5b/a884740e2c9b5b5cae0ad2eb064a67c19ebac207e460da6dc21f9d4f5ae7/satnogs_decoders-1.9.0-py3-none-any.whl
+[2023-05-27 21:37:46] INFO root fetch - processPackages [dbt-clickzetta]: Downloading https://files.pythonhosted.org/packages/c0/48/753f5f7481f4acaa47d5940ab76062c98e45d641623556c891fceb1ae5f0/dbt-clickzetta-0.0.6.tar.gz
+[2023-05-27 21:37:46] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-27 21:37:46] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.5.tar.gz tmp/dbt-clickzetta-0.0.6.tar.gz --markdown 20230527/d/dbt-clickzetta/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-27 21:37:47] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: Downloading https://files.pythonhosted.org/packages/6b/5d/274447128b899c575f89873b7a35917bb4f75431459f5af072474a2e2148/autora-experiment-runner-experimentation-manager-firebase-1.0.0a3.tar.gz
+[2023-05-27 21:37:47] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: Downloading https://files.pythonhosted.org/packages/6b/5d/274447128b899c575f89873b7a35917bb4f75431459f5af072474a2e2148/autora-experiment-runner-experimentation-manager-firebase-1.0.0a3.tar.gz
+[2023-05-27 21:37:47] INFO root fetch - processPackages [plugget]: executing diffoscope
+[2023-05-27 21:37:47] INFO root fetch - processPackages [plugget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugget-0.0.8.tar.gz tmp/plugget-0.0.9.tar.gz --markdown 20230527/p/plugget/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 21:37:47] INFO root fetch - processPackages [lavviebotaio]: Downloading https://files.pythonhosted.org/packages/e7/b8/b95bd0d1a921302ecf620c5c7a70cf1cdabcf954ffd7860735faf3f80fa1/lavviebotaio-0.0.1.3.tar.gz
+[2023-05-27 21:37:47] INFO root fetch - processPackages [p-template-res]: Downloading https://files.pythonhosted.org/packages/eb/91/62cec24b6fa0da39453dacd6ac238920eb81b2908a73dd1b79f1ef994c5b/p-template-res-0.1.9.tar.gz
+[2023-05-27 21:37:47] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: executing diffoscope
+[2023-05-27 21:37:47] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autora-experiment-runner-experimentation-manager-firebase-1.0.0a2.tar.gz tmp/autora-experiment-runner-experimentation-manager-firebase-1.0.0a3.tar.gz --markdown 20230527/a/autora-experiment-runner-experimentation-manager-firebase/1.0.0a2-1.0.0a3/diff.md --exclude *.pyd
+[2023-05-27 21:37:47] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: executing diffoscope
+[2023-05-27 21:37:47] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autora-experiment-runner-experimentation-manager-firebase-1.0.0a2.tar.gz tmp/autora-experiment-runner-experimentation-manager-firebase-1.0.0a3.tar.gz --markdown 20230527/a/autora-experiment-runner-experimentation-manager-firebase/1.0.0a2-1.0.0a3/diff.md --exclude *.pyd
+[2023-05-27 21:37:47] INFO root fetch - processPackages [p-template-res]: executing diffoscope
+[2023-05-27 21:37:47] INFO root fetch - processPackages [p-template-res]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-res-0.1.8.tar.gz tmp/p-template-res-0.1.9.tar.gz --markdown 20230527/p/p-template-res/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 21:37:47] INFO root fetch - processPackages [lavviebotaio]: executing diffoscope
+[2023-05-27 21:37:47] INFO root fetch - processPackages [lavviebotaio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lavviebotaio-0.0.1.2.tar.gz tmp/lavviebotaio-0.0.1.3.tar.gz --markdown 20230527/l/lavviebotaio/0.0.1.2-0.0.1.3/diff.md --exclude *.pyd
+[2023-05-27 21:37:47] INFO root fetch - processPackages [satnogs-decoders]: Downloading https://files.pythonhosted.org/packages/fc/ea/57d202b93cb74969dd8d51533ef8813c3fe3ec463ed1aa1d6175a2213633/satnogs_decoders-1.9.1-py3-none-any.whl
+[2023-05-27 21:37:47] INFO root fetch - processPackages [satnogs-decoders]: executing diffoscope
+[2023-05-27 21:37:47] INFO root fetch - processPackages [satnogs-decoders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satnogs_decoders-1.9.0-py3-none-any.whl.zip tmp/satnogs_decoders-1.9.1-py3-none-any.whl.zip --markdown 20230527/s/satnogs-decoders/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-27 21:37:48] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-27 21:37:48] INFO root fetch - main [MainThread]: End processing [autora-experiment-runner-experimentation-manager-firebase]: success
+[2023-05-27 21:37:48] INFO root fetch - main [MainThread]: End processing [p-template-res]: success
+[2023-05-27 21:37:48] INFO root fetch - main [MainThread]: End processing [lavviebotaio]: success
+[2023-05-27 21:37:48] INFO root fetch - main [MainThread]: End processing [autora-experiment-runner-experimentation-manager-firebase]: success
+[2023-05-27 21:37:49] INFO root fetch - main [MainThread]: End processing [satnogs-decoders]: success
+[2023-05-27 21:38:37] INFO root fetch - main [MainThread]: End processing [plugget]: success
+[2023-05-27 21:38:37] INFO root fetch - main [MainThread]: Store serial: [18276419]
