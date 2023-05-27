@@ -11354,3 +11354,24 @@
 [2023-05-27 20:24:40] INFO root fetch - processPackages [borb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/borb-2.1.8.tar.gz tmp/borb-2.1.9.tar.gz --markdown 20230527/b/borb/2.1.8-2.1.9/diff.md --exclude *.pyd
 [2023-05-27 20:25:01] INFO root fetch - main [MainThread]: End processing [borb]: success
 [2023-05-27 20:25:01] INFO root fetch - main [MainThread]: Store serial: [18276041]
+[2023-05-27 20:30:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276041]
+[2023-05-27 20:30:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-27 20:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bovine
+[2023-05-27 20:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langchain-discord
+[2023-05-27 20:30:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: conda-lock
+[2023-05-27 20:30:10] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 20:30:10] INFO root fetch - processPackages [conda-lock]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-05-27 20:30:10] INFO root fetch - processPackages [bovine]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-27 20:30:10] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 20:30:10] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 20:30:10] INFO root fetch - processPackages [conda-lock]: Downloading https://files.pythonhosted.org/packages/cb/48/3b5e63d7fa5c9582bcc397503e3ff20d4f3e7902c47054783f18bc4c4766/conda_lock-1.3.0.tar.gz
+[2023-05-27 20:30:10] INFO root fetch - processPackages [bovine]: Downloading https://files.pythonhosted.org/packages/72/22/7e2fc5b9f325ce85cabbdf0e8b6346d0341e0ce8a12610082aa58f557f74/bovine-0.2.3.tar.gz
+[2023-05-27 20:30:10] INFO root fetch - processPackages [bovine]: executing diffoscope
+[2023-05-27 20:30:10] INFO root fetch - processPackages [bovine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine-0.2.2.tar.gz tmp/bovine-0.2.3.tar.gz --markdown 20230527/b/bovine/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-27 20:30:11] INFO root fetch - processPackages [conda-lock]: Downloading https://files.pythonhosted.org/packages/b7/a7/86505f09b821acfbe7e0fc84a9d619af2213c883eec67270ab9b3040bc58/conda_lock-1.4.0.tar.gz
+[2023-05-27 20:30:11] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 20:30:11] INFO root fetch - processPackages [conda-lock]: executing diffoscope
+[2023-05-27 20:30:11] INFO root fetch - processPackages [conda-lock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conda_lock-1.3.0.tar.gz tmp/conda_lock-1.4.0.tar.gz --markdown 20230527/c/conda-lock/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-05-27 20:30:12] INFO root fetch - main [MainThread]: End processing [bovine]: success
+[2023-05-27 20:30:16] INFO root fetch - main [MainThread]: End processing [conda-lock]: success
+[2023-05-27 20:30:16] INFO root fetch - main [MainThread]: Store serial: [18276052]
