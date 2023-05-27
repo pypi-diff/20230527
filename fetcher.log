@@ -10709,3 +10709,18 @@
 [2023-05-27 18:53:53] INFO root fetch - main [MainThread]: End processing [bonbast]: success
 [2023-05-27 18:53:55] INFO root fetch - main [MainThread]: End processing [classy-imaginary]: success
 [2023-05-27 18:53:55] INFO root fetch - main [MainThread]: Store serial: [18275681]
+[2023-05-27 18:58:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275681]
+[2023-05-27 18:59:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 18:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: granular-engine
+[2023-05-27 18:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: selenium-supporter
+[2023-05-27 18:59:04] INFO root fetch - processPackages [selenium-supporter]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-27 18:59:04] INFO root fetch - processPackages [granular-engine]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-27 18:59:04] INFO root fetch - processPackages [granular-engine]: executing diffoscope
+[2023-05-27 18:59:04] INFO root fetch - processPackages [granular-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/granular_engine-0.2.8.tar.gz tmp/granular_engine-0.2.9.tar.gz --markdown 20230527/g/granular-engine/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-27 18:59:04] INFO root fetch - processPackages [selenium-supporter]: Downloading https://files.pythonhosted.org/packages/a1/ca/77d972f6901296b54fd37319190465ea2681087602c408d2e33b22fcd85e/selenium-supporter-0.0.3.tar.gz
+[2023-05-27 18:59:04] INFO root fetch - processPackages [selenium-supporter]: Downloading https://files.pythonhosted.org/packages/3d/63/461a755c46dd3dc937691cd70502c67b5e4fc9cc2244258b79d0e4802f52/selenium-supporter-0.0.4.tar.gz
+[2023-05-27 18:59:04] INFO root fetch - processPackages [selenium-supporter]: executing diffoscope
+[2023-05-27 18:59:04] INFO root fetch - processPackages [selenium-supporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium-supporter-0.0.3.tar.gz tmp/selenium-supporter-0.0.4.tar.gz --markdown 20230527/s/selenium-supporter/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-27 18:59:05] INFO root fetch - main [MainThread]: End processing [granular-engine]: success
+[2023-05-27 18:59:06] INFO root fetch - main [MainThread]: End processing [selenium-supporter]: success
+[2023-05-27 18:59:06] INFO root fetch - main [MainThread]: Store serial: [18275687]
