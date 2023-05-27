@@ -4731,3 +4731,38 @@
 [2023-05-27 06:25:11] INFO root fetch - main [MainThread]: End processing [roboduck]: success
 [2023-05-27 06:25:11] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-ref-unique]: success
 [2023-05-27 06:25:11] INFO root fetch - main [MainThread]: Store serial: [18272247]
+[2023-05-27 06:30:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272247]
+[2023-05-27 06:30:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-27 06:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sect
+[2023-05-27 06:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cloudpy-org
+[2023-05-27 06:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BioSAK
+[2023-05-27 06:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: soremoji
+[2023-05-27 06:30:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wangticketyes24
+[2023-05-27 06:30:20] INFO root fetch - processPackages [cloudpy-org]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-05-27 06:30:20] INFO root fetch - processPackages [soremoji]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-27 06:30:20] INFO root fetch - processPackages [wangticketyes24]: New version: [0.9] Old Version: [0.8]
+[2023-05-27 06:30:20] INFO root fetch - processPackages [BioSAK]: New version: [1.64.9] Old Version: [1.64.8]
+[2023-05-27 06:30:20] INFO root fetch - processPackages [sect]: New version: [7.1.0] Old Version: [7.0.0]
+[2023-05-27 06:30:20] INFO root fetch - processPackages [BioSAK]: Downloading https://files.pythonhosted.org/packages/f9/a4/e9986ffd2e1f64be085e51d19322e585ce922c2749e2db9b561595d911cc/BioSAK-1.64.8.tar.gz
+[2023-05-27 06:30:20] INFO root fetch - processPackages [cloudpy-org]: Downloading https://files.pythonhosted.org/packages/47/55/ed2201a5c265886fd2848d7be2a99108c5031e227a5cae51335c9bcdd6de/cloudpy_org-1.3.0.tar.gz
+[2023-05-27 06:30:20] WARNING root fetch - processPackages [BioSAK]: Skipping package: exceeds size limit 21171011>=10485760
+[2023-05-27 06:30:20] INFO root fetch - main [MainThread]: End processing [BioSAK] error
+[2023-05-27 06:30:20] INFO root fetch - processPackages [wangticketyes24]: Downloading https://files.pythonhosted.org/packages/9f/32/120088724190da4bcaebbfa3e88c53431c4563515d7672d4f197fcab737e/wangticketyes24-0.8-py3-none-any.whl
+[2023-05-27 06:30:20] INFO root fetch - processPackages [soremoji]: Downloading https://files.pythonhosted.org/packages/f1/d4/618b029a8e8bcb1ff49b53e44d3b265d1a184e269fe26b95cd2eff81a004/soremoji-0.3.1.tar.gz
+[2023-05-27 06:30:20] INFO root fetch - processPackages [sect]: Downloading https://files.pythonhosted.org/packages/c1/5f/73ac557bb72f1bcbe2ce1b9149bdbae0fb30f61b93591e644fa9e275f341/sect-7.0.0.tar.gz
+[2023-05-27 06:30:20] INFO root fetch - processPackages [cloudpy-org]: executing diffoscope
+[2023-05-27 06:30:20] INFO root fetch - processPackages [cloudpy-org]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudpy_org-1.2.9.tar.gz tmp/cloudpy_org-1.3.0.tar.gz --markdown 20230527/c/cloudpy-org/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-05-27 06:30:21] INFO root fetch - processPackages [wangticketyes24]: Downloading https://files.pythonhosted.org/packages/19/7f/b33b663752e3761db892633637d8ea72c4a163879ec1c78d919f7d5ee5ea/wangticketyes24-0.9-py3-none-any.whl
+[2023-05-27 06:30:21] INFO root fetch - processPackages [soremoji]: Downloading https://files.pythonhosted.org/packages/94/d6/9d26cbbaee5fa7e5e7b69f255ea64b193269c390c3962e65dcf39034f20b/soremoji-0.3.2.tar.gz
+[2023-05-27 06:30:21] INFO root fetch - processPackages [sect]: Downloading https://files.pythonhosted.org/packages/74/2a/95ea5898d6939659113c14825d95074d6282e8f214cf4b4eab090d4d6555/sect-7.1.0.tar.gz
+[2023-05-27 06:30:21] INFO root fetch - processPackages [soremoji]: executing diffoscope
+[2023-05-27 06:30:21] INFO root fetch - processPackages [soremoji]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soremoji-0.3.1.tar.gz tmp/soremoji-0.3.2.tar.gz --markdown 20230527/s/soremoji/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-27 06:30:21] INFO root fetch - processPackages [wangticketyes24]: executing diffoscope
+[2023-05-27 06:30:21] INFO root fetch - processPackages [wangticketyes24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wangticketyes24-0.8-py3-none-any.whl.zip tmp/wangticketyes24-0.9-py3-none-any.whl.zip --markdown 20230527/w/wangticketyes24/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-27 06:30:21] INFO root fetch - processPackages [sect]: executing diffoscope
+[2023-05-27 06:30:21] INFO root fetch - processPackages [sect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sect-7.0.0.tar.gz tmp/sect-7.1.0.tar.gz --markdown 20230527/s/sect/7.0.0-7.1.0/diff.md --exclude *.pyd
+[2023-05-27 06:30:22] INFO root fetch - main [MainThread]: End processing [cloudpy-org]: success
+[2023-05-27 06:30:22] INFO root fetch - main [MainThread]: End processing [soremoji]: success
+[2023-05-27 06:30:22] INFO root fetch - main [MainThread]: End processing [wangticketyes24]: success
+[2023-05-27 06:30:22] INFO root fetch - main [MainThread]: End processing [sect]: success
+[2023-05-27 06:30:22] INFO root fetch - main [MainThread]: Store serial: [18272261]
