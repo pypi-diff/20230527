@@ -3972,3 +3972,48 @@
 [2023-05-27 04:29:49] INFO root fetch - main [MainThread]: End processing [eqalert]: success
 [2023-05-27 04:29:52] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2023-05-27 04:29:52] INFO root fetch - main [MainThread]: Store serial: [18271834]
+[2023-05-27 04:34:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271834]
+[2023-05-27 04:35:01] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 04:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phdimporter
+[2023-05-27 04:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lasfile
+[2023-05-27 04:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk8s-plus-26
+[2023-05-27 04:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk8s-plus-25
+[2023-05-27 04:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ftsf
+[2023-05-27 04:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyllamacpp
+[2023-05-27 04:35:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ftsf
+[2023-05-27 04:35:01] INFO root fetch - processPackages [cdk8s-plus-25]: New version: [2.8.3] Old Version: [2.8.2]
+[2023-05-27 04:35:01] WARNING root fetch - processPackages [phdimporter]: Skipping, unable to determine old version
+[2023-05-27 04:35:01] INFO root fetch - processPackages [ftsf]: New version: [0.0.1.4] Old Version: [0.0.1.3]
+[2023-05-27 04:35:01] INFO root fetch - main [MainThread]: End processing [phdimporter] error
+[2023-05-27 04:35:01] INFO root fetch - processPackages [lasfile]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-27 04:35:01] INFO root fetch - processPackages [ftsf]: New version: [0.0.1.4] Old Version: [0.0.1.3]
+[2023-05-27 04:35:01] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.4.3] Old Version: [2.4.2]
+[2023-05-27 04:35:01] INFO root fetch - processPackages [pyllamacpp]: New version: [2.4.0] Old Version: [2.3.0]
+[2023-05-27 04:35:01] INFO root fetch - processPackages [ftsf]: Downloading https://files.pythonhosted.org/packages/65/73/16b67580cb3eaf3987f5fb57ca74860c5af22fc65e443c00da81c24ad18b/ftsf-0.0.1.3.tar.gz
+[2023-05-27 04:35:01] INFO root fetch - processPackages [ftsf]: Downloading https://files.pythonhosted.org/packages/65/73/16b67580cb3eaf3987f5fb57ca74860c5af22fc65e443c00da81c24ad18b/ftsf-0.0.1.3.tar.gz
+[2023-05-27 04:35:01] INFO root fetch - processPackages [cdk8s-plus-25]: Downloading https://files.pythonhosted.org/packages/d7/17/3ac36ce41ca5f9e50eda521b5bc12ceee24bd3a1a9f4199014c03e8cb382/cdk8s-plus-25-2.8.3.tar.gz
+[2023-05-27 04:35:01] INFO root fetch - processPackages [cdk8s-plus-26]: Downloading https://files.pythonhosted.org/packages/9d/8c/85498b3ddc9bcadbec2ba702d1c319960f329f23a1003e48a456fc176c57/cdk8s-plus-26-2.4.3.tar.gz
+[2023-05-27 04:35:01] INFO root fetch - processPackages [lasfile]: Downloading https://files.pythonhosted.org/packages/44/29/234d3a8c20a82f59058b49368207050da92d27f47fa5653b849db542b586/lasfile-0.1.0.tar.gz
+[2023-05-27 04:35:02] INFO root fetch - processPackages [pyllamacpp]: Downloading https://files.pythonhosted.org/packages/73/3c/a79a432386087f3287f78e95f50303c4378414f884573b066a799289c831/pyllamacpp-2.4.0.tar.gz
+[2023-05-27 04:35:02] INFO root fetch - processPackages [ftsf]: Downloading https://files.pythonhosted.org/packages/e1/9e/ba2c36516d74467b03615941b1cf3c0aed34edfdbfbc03f0a573f7b8b8ed/ftsf-0.0.1.4.tar.gz
+[2023-05-27 04:35:02] INFO root fetch - processPackages [ftsf]: Downloading https://files.pythonhosted.org/packages/e1/9e/ba2c36516d74467b03615941b1cf3c0aed34edfdbfbc03f0a573f7b8b8ed/ftsf-0.0.1.4.tar.gz
+[2023-05-27 04:35:02] INFO root fetch - processPackages [lasfile]: Downloading https://files.pythonhosted.org/packages/af/67/d22c4808c0dc604aeabe9e0c8a514ae8818360ef3cee604ed7a5852b79a9/lasfile-0.1.1.tar.gz
+[2023-05-27 04:35:02] INFO root fetch - processPackages [cdk8s-plus-25]: executing diffoscope
+[2023-05-27 04:35:02] INFO root fetch - processPackages [cdk8s-plus-25]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-25-2.8.2.tar.gz tmp/cdk8s-plus-25-2.8.3.tar.gz --markdown 20230527/c/cdk8s-plus-25/2.8.2-2.8.3/diff.md --exclude *.pyd
+[2023-05-27 04:35:02] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2023-05-27 04:35:02] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.4.2.tar.gz tmp/cdk8s-plus-26-2.4.3.tar.gz --markdown 20230527/c/cdk8s-plus-26/2.4.2-2.4.3/diff.md --exclude *.pyd
+[2023-05-27 04:35:02] INFO root fetch - processPackages [pyllamacpp]: executing diffoscope
+[2023-05-27 04:35:02] INFO root fetch - processPackages [pyllamacpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyllamacpp-2.3.0.tar.gz tmp/pyllamacpp-2.4.0.tar.gz --markdown 20230527/p/pyllamacpp/2.3.0-2.4.0/diff.md --exclude *.pyd
+[2023-05-27 04:35:02] INFO root fetch - processPackages [ftsf]: executing diffoscope
+[2023-05-27 04:35:02] INFO root fetch - processPackages [ftsf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ftsf-0.0.1.3.tar.gz tmp/ftsf-0.0.1.4.tar.gz --markdown 20230527/f/ftsf/0.0.1.3-0.0.1.4/diff.md --exclude *.pyd
+[2023-05-27 04:35:02] INFO root fetch - processPackages [lasfile]: executing diffoscope
+[2023-05-27 04:35:02] INFO root fetch - processPackages [lasfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lasfile-0.1.0.tar.gz tmp/lasfile-0.1.1.tar.gz --markdown 20230527/l/lasfile/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-27 04:35:02] INFO root fetch - processPackages [ftsf]: executing diffoscope
+[2023-05-27 04:35:02] INFO root fetch - processPackages [ftsf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ftsf-0.0.1.3.tar.gz tmp/ftsf-0.0.1.4.tar.gz --markdown 20230527/f/ftsf/0.0.1.3-0.0.1.4/diff.md --exclude *.pyd
+[2023-05-27 04:35:03] INFO root fetch - main [MainThread]: End processing [lasfile]: success
+[2023-05-27 04:35:03] INFO root fetch - main [MainThread]: End processing [ftsf]: success
+[2023-05-27 04:35:03] INFO root fetch - main [MainThread]: End processing [ftsf]: success
+[2023-05-27 04:35:03] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
+[2023-05-27 04:35:04] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
+[2023-05-27 04:35:04] INFO root fetch - main [MainThread]: End processing [pyllamacpp]: success
+[2023-05-27 04:35:04] INFO root fetch - main [MainThread]: Store serial: [18271876]
