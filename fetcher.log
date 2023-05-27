@@ -8721,3 +8721,46 @@
 [2023-05-27 15:16:35] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
 [2023-05-27 15:16:36] INFO root fetch - main [MainThread]: End processing [statml]: success
 [2023-05-27 15:16:36] INFO root fetch - main [MainThread]: Store serial: [18274482]
+[2023-05-27 15:21:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274482]
+[2023-05-27 15:21:45] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 15:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chitose
+[2023-05-27 15:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BBLCalculator
+[2023-05-27 15:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: replicator-cli
+[2023-05-27 15:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bs4-web-scraper
+[2023-05-27 15:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: agixt
+[2023-05-27 15:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: anova-analysis
+[2023-05-27 15:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fbgemm-gpu-nightly
+[2023-05-27 15:21:45] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.5.26] Old Version: [2023.5.25]
+[2023-05-27 15:21:45] INFO root fetch - processPackages [anova-analysis]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-27 15:21:45] INFO root fetch - processPackages [chitose]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-27 15:21:45] WARNING root fetch - processPackages [BBLCalculator]: Skipping, unable to determine old version
+[2023-05-27 15:21:45] INFO root fetch - main [MainThread]: End processing [BBLCalculator] error
+[2023-05-27 15:21:45] INFO root fetch - processPackages [bs4-web-scraper]: New version: [0.0.2a0] Old Version: [0.0.1a0]
+[2023-05-27 15:21:45] INFO root fetch - processPackages [replicator-cli]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-27 15:21:45] INFO root fetch - processPackages [agixt]: New version: [1.1.73b0] Old Version: [1.1.72b0]
+[2023-05-27 15:21:45] INFO root fetch - processPackages [anova-analysis]: Downloading https://files.pythonhosted.org/packages/78/a7/ff39a309e65070d3ae1d492b4f17d52fcbd6f7687c56d4faa7784217569a/anova_analysis-1.0.0.tar.gz
+[2023-05-27 15:21:45] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/8f/7c/1f4b64c73a77fada3686a3f92f82004847a24903c1a217f4d9c431fd0c6c/fbgemm_gpu_nightly-2023.5.25-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-27 15:21:45] INFO root fetch - processPackages [bs4-web-scraper]: Downloading https://files.pythonhosted.org/packages/81/b0/07663f2d3692abfb5b26dd11b1ec847b7c100371be1c7494cc932e27da09/bs4_web_scraper-0.0.1a0.tar.gz
+[2023-05-27 15:21:45] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 288580160>=10485760
+[2023-05-27 15:21:45] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-05-27 15:21:45] INFO root fetch - processPackages [replicator-cli]: Downloading https://files.pythonhosted.org/packages/93/5e/0395929c5476e47a4956a6536ca69acd00b2a5e9a58f6dcc5f6bd9b9fb6f/replicator-cli-0.0.4.tar.gz
+[2023-05-27 15:21:45] INFO root fetch - processPackages [chitose]: Downloading https://files.pythonhosted.org/packages/dc/36/c6a708c1fb946c5133a09d6359d3ec76202059d37641d70ff0af8fa2605c/chitose-0.0.7.tar.gz
+[2023-05-27 15:21:45] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/14/6d/9b7f41186491f96a21f1d1d63ce6419cf2f75241ceaa889fab1ba8872961/agixt-1.1.73b0.tar.gz
+[2023-05-27 15:21:45] INFO root fetch - processPackages [anova-analysis]: Downloading https://files.pythonhosted.org/packages/d5/47/7c0c479b7605cd44e1048e48675cee0eaec9cfc1b0ee024f2a70c432020c/anova_analysis-1.0.1.tar.gz
+[2023-05-27 15:21:45] INFO root fetch - processPackages [replicator-cli]: executing diffoscope
+[2023-05-27 15:21:45] INFO root fetch - processPackages [replicator-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replicator-cli-0.0.3.tar.gz tmp/replicator-cli-0.0.4.tar.gz --markdown 20230527/r/replicator-cli/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-27 15:21:45] INFO root fetch - processPackages [bs4-web-scraper]: Downloading https://files.pythonhosted.org/packages/70/19/404298971c0de918b3a0aeac4bce1c5836fe34c38418090fc62f849aadf5/bs4_web_scraper-0.0.2a0.tar.gz
+[2023-05-27 15:21:45] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-27 15:21:45] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.72b0.tar.gz tmp/agixt-1.1.73b0.tar.gz --markdown 20230527/a/agixt/1.1.72b0-1.1.73b0/diff.md --exclude *.pyd
+[2023-05-27 15:21:45] INFO root fetch - processPackages [anova-analysis]: executing diffoscope
+[2023-05-27 15:21:45] INFO root fetch - processPackages [anova-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anova_analysis-1.0.0.tar.gz tmp/anova_analysis-1.0.1.tar.gz --markdown 20230527/a/anova-analysis/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 15:21:45] INFO root fetch - processPackages [chitose]: executing diffoscope
+[2023-05-27 15:21:45] INFO root fetch - processPackages [chitose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chitose-0.0.6.tar.gz tmp/chitose-0.0.7.tar.gz --markdown 20230527/c/chitose/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-27 15:21:46] INFO root fetch - processPackages [bs4-web-scraper]: executing diffoscope
+[2023-05-27 15:21:46] INFO root fetch - processPackages [bs4-web-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bs4_web_scraper-0.0.1a0.tar.gz tmp/bs4_web_scraper-0.0.2a0.tar.gz --markdown 20230527/b/bs4-web-scraper/0.0.1a0-0.0.2a0/diff.md --exclude *.pyd
+[2023-05-27 15:21:46] INFO root fetch - main [MainThread]: End processing [replicator-cli]: success
+[2023-05-27 15:21:46] INFO root fetch - main [MainThread]: End processing [anova-analysis]: success
+[2023-05-27 15:21:47] INFO root fetch - main [MainThread]: End processing [bs4-web-scraper]: success
+[2023-05-27 15:21:47] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-27 15:21:47] INFO root fetch - main [MainThread]: End processing [chitose]: success
+[2023-05-27 15:21:47] INFO root fetch - main [MainThread]: Store serial: [18274505]
