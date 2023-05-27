@@ -8570,3 +8570,40 @@
 [2023-05-27 14:59:16] INFO root fetch - main [MainThread]: End processing [pycufsm]: success
 [2023-05-27 14:59:17] INFO root fetch - main [MainThread]: End processing [exorad]: success
 [2023-05-27 14:59:17] INFO root fetch - main [MainThread]: Store serial: [18274397]
+[2023-05-27 15:04:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274397]
+[2023-05-27 15:04:26] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 15:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: git-debranch
+[2023-05-27 15:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sixsigmaspc
+[2023-05-27 15:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bitstring
+[2023-05-27 15:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GBT-parser
+[2023-05-27 15:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: memos-cli
+[2023-05-27 15:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: globox
+[2023-05-27 15:04:26] WARNING root fetch - processPackages [sixsigmaspc]: Skipping, unable to determine old version
+[2023-05-27 15:04:26] INFO root fetch - main [MainThread]: End processing [sixsigmaspc] error
+[2023-05-27 15:04:26] INFO root fetch - processPackages [GBT-parser]: New version: [1.0.4] Old Version: [1.0.24]
+[2023-05-27 15:04:26] INFO root fetch - processPackages [bitstring]: New version: [4.1.0b1] Old Version: [4.0.2]
+[2023-05-27 15:04:26] INFO root fetch - processPackages [globox]: New version: [2.1.3b0] Old Version: [2.1.3]
+[2023-05-27 15:04:26] INFO root fetch - processPackages [git-debranch]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-27 15:04:26] INFO root fetch - processPackages [memos-cli]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-27 15:04:26] INFO root fetch - processPackages [GBT-parser]: Downloading https://files.pythonhosted.org/packages/76/b8/968daa39a4f61b29ec5442731934dace2593d659d4122eed5e0e58689680/GBT_parser-1.0.24.tar.gz
+[2023-05-27 15:04:27] INFO root fetch - processPackages [globox]: Downloading https://files.pythonhosted.org/packages/12/28/cd1a4ca7e7cd6e83a537dd9a0127a0d6a33c55c82022140541ae1d3c084d/globox-2.1.3.tar.gz
+[2023-05-27 15:04:27] INFO root fetch - processPackages [bitstring]: Downloading https://files.pythonhosted.org/packages/b5/f1/f55f568ef587fe7a74f46a9ae869dbbda10575b2a404c831d2bc0567b7de/bitstring-4.0.2.tar.gz
+[2023-05-27 15:04:27] INFO root fetch - processPackages [memos-cli]: Downloading https://files.pythonhosted.org/packages/6a/d5/e5ffb5f10517b062637f769884d02418b60132c6eaade69724e92784a373/memos_cli-0.1.2.tar.gz
+[2023-05-27 15:04:27] INFO root fetch - processPackages [memos-cli]: executing diffoscope
+[2023-05-27 15:04:27] INFO root fetch - processPackages [memos-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memos_cli-0.1.1.tar.gz tmp/memos_cli-0.1.2.tar.gz --markdown 20230527/m/memos-cli/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-27 15:04:27] INFO root fetch - processPackages [globox]: executing diffoscope
+[2023-05-27 15:04:27] INFO root fetch - processPackages [globox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/globox-2.1.3.tar.gz tmp/globox-2.1.3b0.tar.gz --markdown 20230527/g/globox/2.1.3-2.1.3b0/diff.md --exclude *.pyd
+[2023-05-27 15:04:27] INFO root fetch - processPackages [git-debranch]: Downloading https://files.pythonhosted.org/packages/6c/02/0da393c5298a599d46bb915301a1d4da41d26695e1f9880f7853c88d9d2c/git-debranch-0.1.5.tar.gz
+[2023-05-27 15:04:27] INFO root fetch - processPackages [git-debranch]: executing diffoscope
+[2023-05-27 15:04:27] INFO root fetch - processPackages [git-debranch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git-debranch-0.1.4.tar.gz tmp/git-debranch-0.1.5.tar.gz --markdown 20230527/g/git-debranch/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-27 15:04:27] INFO root fetch - processPackages [GBT-parser]: executing diffoscope
+[2023-05-27 15:04:27] INFO root fetch - processPackages [GBT-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GBT_parser-1.0.24.tar.gz tmp/GBT_parser-1.0.4.tar.gz --markdown 20230527/G/GBT-parser/1.0.24-1.0.4/diff.md --exclude *.pyd
+[2023-05-27 15:04:27] INFO root fetch - processPackages [bitstring]: Downloading https://files.pythonhosted.org/packages/a3/d3/8a85770811122282137194008b29c3d345d05fe1ee65f0ca8fee1d664945/bitstring-4.1.0b1.tar.gz
+[2023-05-27 15:04:27] INFO root fetch - processPackages [bitstring]: executing diffoscope
+[2023-05-27 15:04:27] INFO root fetch - processPackages [bitstring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitstring-4.0.2.tar.gz tmp/bitstring-4.1.0b1.tar.gz --markdown 20230527/b/bitstring/4.0.2-4.1.0b1/diff.md --exclude *.pyd
+[2023-05-27 15:04:28] INFO root fetch - main [MainThread]: End processing [memos-cli]: success
+[2023-05-27 15:04:28] INFO root fetch - main [MainThread]: End processing [globox]: success
+[2023-05-27 15:04:28] INFO root fetch - main [MainThread]: End processing [git-debranch]: success
+[2023-05-27 15:04:30] INFO root fetch - main [MainThread]: End processing [GBT-parser]: success
+[2023-05-27 15:05:17] INFO root fetch - main [MainThread]: End processing [bitstring]: success
+[2023-05-27 15:05:17] INFO root fetch - main [MainThread]: Store serial: [18274418]
