@@ -5569,3 +5569,30 @@
 [2023-05-27 08:37:31] INFO root fetch - main [MainThread]: End processing [mw]: success
 [2023-05-27 08:37:32] INFO root fetch - main [MainThread]: End processing [clust-learn]: success
 [2023-05-27 08:37:32] INFO root fetch - main [MainThread]: Store serial: [18272662]
+[2023-05-27 08:42:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272662]
+[2023-05-27 08:42:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 08:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nebula-loss
+[2023-05-27 08:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-proxmoxve
+[2023-05-27 08:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-pagerduty
+[2023-05-27 08:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-artifactory
+[2023-05-27 08:42:41] INFO root fetch - processPackages [nebula-loss]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-27 08:42:41] INFO root fetch - processPackages [pulumi-proxmoxve]: New version: [5.0.1] Old Version: [5.0.0]
+[2023-05-27 08:42:41] INFO root fetch - processPackages [pulumi-artifactory]: New version: [3.6.0a1685164706] Old Version: [3.6.0a1685078359]
+[2023-05-27 08:42:41] INFO root fetch - processPackages [pulumi-pagerduty]: New version: [3.9.0a1678824312] Old Version: [3.9.0a1678231019]
+[2023-05-27 08:42:41] INFO root fetch - processPackages [nebula-loss]: Downloading https://files.pythonhosted.org/packages/29/a7/24bc224d97bb037a31fd3435a4ef0cea756cb30b21df8c04c382c659c9d3/nebula-loss-0.3.0.tar.gz
+[2023-05-27 08:42:41] INFO root fetch - processPackages [pulumi-pagerduty]: executing diffoscope
+[2023-05-27 08:42:41] INFO root fetch - processPackages [pulumi-pagerduty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_pagerduty-3.9.0a1678231019.tar.gz tmp/pulumi_pagerduty-3.9.0a1678824312.tar.gz --markdown 20230527/p/pulumi-pagerduty/3.9.0a1678231019-3.9.0a1678824312/diff.md --exclude *.pyd
+[2023-05-27 08:42:41] INFO root fetch - processPackages [pulumi-artifactory]: Downloading https://files.pythonhosted.org/packages/02/b9/7f9f234aab015b8206a366f6fd786b42de8cad8c18e4562eb3340192b80a/pulumi_artifactory-3.6.0a1685164706.tar.gz
+[2023-05-27 08:42:41] INFO root fetch - processPackages [pulumi-proxmoxve]: Downloading https://files.pythonhosted.org/packages/79/b4/a70119bfb5a566468a66978038640fd5cf505a1ca8810b37ffe22346f4ec/pulumi_proxmoxve-5.0.1.tar.gz
+[2023-05-27 08:42:41] INFO root fetch - processPackages [pulumi-proxmoxve]: executing diffoscope
+[2023-05-27 08:42:41] INFO root fetch - processPackages [pulumi-proxmoxve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_proxmoxve-5.0.0.tar.gz tmp/pulumi_proxmoxve-5.0.1.tar.gz --markdown 20230527/p/pulumi-proxmoxve/5.0.0-5.0.1/diff.md --exclude *.pyd
+[2023-05-27 08:42:41] INFO root fetch - processPackages [pulumi-artifactory]: executing diffoscope
+[2023-05-27 08:42:41] INFO root fetch - processPackages [pulumi-artifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_artifactory-3.6.0a1685078359.tar.gz tmp/pulumi_artifactory-3.6.0a1685164706.tar.gz --markdown 20230527/p/pulumi-artifactory/3.6.0a1685078359-3.6.0a1685164706/diff.md --exclude *.pyd
+[2023-05-27 08:42:41] INFO root fetch - processPackages [nebula-loss]: Downloading https://files.pythonhosted.org/packages/12/5a/ad54443f20dc3dc06cea6a3ec02c19335f92b26222c2053eb3de73f8f017/nebula-loss-0.3.1.tar.gz
+[2023-05-27 08:42:41] INFO root fetch - processPackages [nebula-loss]: executing diffoscope
+[2023-05-27 08:42:41] INFO root fetch - processPackages [nebula-loss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nebula-loss-0.3.0.tar.gz tmp/nebula-loss-0.3.1.tar.gz --markdown 20230527/n/nebula-loss/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-27 08:42:42] INFO root fetch - main [MainThread]: End processing [nebula-loss]: success
+[2023-05-27 08:42:43] INFO root fetch - main [MainThread]: End processing [pulumi-proxmoxve]: success
+[2023-05-27 08:42:43] INFO root fetch - main [MainThread]: End processing [pulumi-pagerduty]: success
+[2023-05-27 08:42:45] INFO root fetch - main [MainThread]: End processing [pulumi-artifactory]: success
+[2023-05-27 08:42:45] INFO root fetch - main [MainThread]: Store serial: [18272671]
