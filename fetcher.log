@@ -12268,3 +12268,46 @@
 [2023-05-27 22:43:35] INFO root fetch - main [MainThread]: End processing [unihan-etl]: success
 [2023-05-27 22:43:45] INFO root fetch - main [MainThread]: End processing [convert-jupyter]: success
 [2023-05-27 22:43:45] INFO root fetch - main [MainThread]: Store serial: [18276778]
+[2023-05-27 22:48:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276778]
+[2023-05-27 22:48:53] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-27 22:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cachetools
+[2023-05-27 22:48:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfinviz
+[2023-05-27 22:48:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymino
+[2023-05-27 22:48:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbt-clickzetta
+[2023-05-27 22:48:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clown-sort
+[2023-05-27 22:48:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chatcmd
+[2023-05-27 22:48:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: agenta
+[2023-05-27 22:48:54] INFO root fetch - processPackages [pymino]: New version: [1.1.8.3] Old Version: [1.1.8.2]
+[2023-05-27 22:48:54] WARNING root fetch - processPackages [agenta]: Skipping, unable to determine old version
+[2023-05-27 22:48:54] INFO root fetch - main [MainThread]: End processing [agenta] error
+[2023-05-27 22:48:54] INFO root fetch - processPackages [pyfinviz]: New version: [0.9] Old Version: [0.8]
+[2023-05-27 22:48:54] INFO root fetch - processPackages [cachetools]: New version: [5.3.1] Old Version: [5.3.0]
+[2023-05-27 22:48:54] INFO root fetch - processPackages [clown-sort]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-05-27 22:48:54] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 22:48:54] INFO root fetch - processPackages [chatcmd]: New version: [1.0.19] Old Version: [1.0.18]
+[2023-05-27 22:48:54] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-27 22:48:54] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.8.tar.gz tmp/dbt-clickzetta-0.0.9.tar.gz --markdown 20230527/d/dbt-clickzetta/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 22:48:54] INFO root fetch - processPackages [cachetools]: Downloading https://files.pythonhosted.org/packages/4d/91/5837e9f9e77342bb4f3ffac19ba216eef2cd9b77d67456af420e7bafe51d/cachetools-5.3.0.tar.gz
+[2023-05-27 22:48:54] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/bb/ab/c759f9e93ac24f7bda3c7dd8c475327124ea1a9332234f49267362eb8146/chatcmd-1.0.19.tar.gz
+[2023-05-27 22:48:54] INFO root fetch - processPackages [clown-sort]: Downloading https://files.pythonhosted.org/packages/aa/a7/9bb56d28e36760660a66219e245d22c94cb05b29bf0b5138bbd43c577fbc/clown_sort-1.5.2.tar.gz
+[2023-05-27 22:48:54] INFO root fetch - processPackages [pymino]: Downloading https://files.pythonhosted.org/packages/ee/fb/0838803c71c951a6f50b8451ba43f8db5320fb98371969d59fa1a902e8b3/pymino-1.1.8.3.tar.gz
+[2023-05-27 22:48:54] INFO root fetch - processPackages [pyfinviz]: Downloading https://files.pythonhosted.org/packages/74/eb/1081b05d35afc77e307f24853e8365633d93160f6572424af3cc1d0a1022/pyfinviz-0.8.tar.gz
+[2023-05-27 22:48:54] INFO root fetch - processPackages [clown-sort]: executing diffoscope
+[2023-05-27 22:48:54] INFO root fetch - processPackages [clown-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clown_sort-1.5.1.tar.gz tmp/clown_sort-1.5.2.tar.gz --markdown 20230527/c/clown-sort/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-05-27 22:48:54] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-27 22:48:54] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.18.tar.gz tmp/chatcmd-1.0.19.tar.gz --markdown 20230527/c/chatcmd/1.0.18-1.0.19/diff.md --exclude *.pyd
+[2023-05-27 22:48:54] INFO root fetch - processPackages [pymino]: executing diffoscope
+[2023-05-27 22:48:54] INFO root fetch - processPackages [pymino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymino-1.1.8.2.tar.gz tmp/pymino-1.1.8.3.tar.gz --markdown 20230527/p/pymino/1.1.8.2-1.1.8.3/diff.md --exclude *.pyd
+[2023-05-27 22:48:54] INFO root fetch - processPackages [cachetools]: Downloading https://files.pythonhosted.org/packages/9d/8b/8e2ebf5ee26c21504de5ea2fb29cc6ae612b35fd05f959cdb641feb94ec4/cachetools-5.3.1.tar.gz
+[2023-05-27 22:48:54] INFO root fetch - processPackages [cachetools]: executing diffoscope
+[2023-05-27 22:48:54] INFO root fetch - processPackages [cachetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cachetools-5.3.0.tar.gz tmp/cachetools-5.3.1.tar.gz --markdown 20230527/c/cachetools/5.3.0-5.3.1/diff.md --exclude *.pyd
+[2023-05-27 22:48:54] INFO root fetch - processPackages [pyfinviz]: Downloading https://files.pythonhosted.org/packages/7c/99/614c04b5f30524b7269084b4d031a1c8f30a4aa2c7cf87e8d9f446caf718/pyfinviz-0.9.tar.gz
+[2023-05-27 22:48:54] INFO root fetch - processPackages [pyfinviz]: executing diffoscope
+[2023-05-27 22:48:54] INFO root fetch - processPackages [pyfinviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfinviz-0.8.tar.gz tmp/pyfinviz-0.9.tar.gz --markdown 20230527/p/pyfinviz/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-27 22:48:55] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-27 22:48:55] INFO root fetch - main [MainThread]: End processing [clown-sort]: success
+[2023-05-27 22:48:55] INFO root fetch - main [MainThread]: End processing [pyfinviz]: success
+[2023-05-27 22:48:55] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-27 22:48:55] INFO root fetch - main [MainThread]: End processing [cachetools]: success
+[2023-05-27 22:48:56] INFO root fetch - main [MainThread]: End processing [pymino]: success
+[2023-05-27 22:48:56] INFO root fetch - main [MainThread]: Store serial: [18276801]
