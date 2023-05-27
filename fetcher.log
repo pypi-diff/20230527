@@ -5983,3 +5983,18 @@
 [2023-05-27 09:42:54] INFO root fetch - main [MainThread]: End processing [ExPSO]: success
 [2023-05-27 09:43:02] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2023-05-27 09:43:02] INFO root fetch - main [MainThread]: Store serial: [18272885]
+[2023-05-27 09:48:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272885]
+[2023-05-27 09:48:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 09:48:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: valphi
+[2023-05-27 09:48:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py3d
+[2023-05-27 09:48:11] INFO root fetch - processPackages [valphi]: New version: [0.4.0] Old Version: [0.3.34]
+[2023-05-27 09:48:11] INFO root fetch - processPackages [py3d]: New version: [0.0.94] Old Version: [0.0.93]
+[2023-05-27 09:48:11] INFO root fetch - processPackages [valphi]: Downloading https://files.pythonhosted.org/packages/12/07/b4a0005f5dc59f599ee5fab1b8b0ea63687673286c93ee5719aad67f108f/valphi-0.4.0.tar.gz
+[2023-05-27 09:48:12] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/09/de/49215b8248c5a73e45811a76ad9ae351c0b47ee82da7a85cf6c977414267/py3d-0.0.94.tar.gz
+[2023-05-27 09:48:12] INFO root fetch - processPackages [valphi]: executing diffoscope
+[2023-05-27 09:48:12] INFO root fetch - processPackages [valphi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valphi-0.3.34.tar.gz tmp/valphi-0.4.0.tar.gz --markdown 20230527/v/valphi/0.3.34-0.4.0/diff.md --exclude *.pyd
+[2023-05-27 09:48:12] INFO root fetch - processPackages [py3d]: executing diffoscope
+[2023-05-27 09:48:12] INFO root fetch - processPackages [py3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3d-0.0.93.tar.gz tmp/py3d-0.0.94.tar.gz --markdown 20230527/p/py3d/0.0.93-0.0.94/diff.md --exclude *.pyd
+[2023-05-27 09:48:13] INFO root fetch - main [MainThread]: End processing [valphi]: success
+[2023-05-27 09:48:13] INFO root fetch - main [MainThread]: End processing [py3d]: success
+[2023-05-27 09:48:13] INFO root fetch - main [MainThread]: Store serial: [18272893]
