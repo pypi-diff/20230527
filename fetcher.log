@@ -4688,3 +4688,46 @@
 [2023-05-27 06:19:58] INFO root fetch - main [MainThread]: End processing [searchlogit]: success
 [2023-05-27 06:19:58] INFO root fetch - main [MainThread]: End processing [autodistill-yolov8]: success
 [2023-05-27 06:19:58] INFO root fetch - main [MainThread]: Store serial: [18272235]
+[2023-05-27 06:25:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272235]
+[2023-05-27 06:25:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 06:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: roboduck
+[2023-05-27 06:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-partner-ref-unique
+[2023-05-27 06:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-partner-contact
+[2023-05-27 06:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simplejob
+[2023-05-27 06:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: roboduck
+[2023-05-27 06:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: quickstart-vdk
+[2023-05-27 06:25:09] INFO root fetch - processPackages [roboduck]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-27 06:25:09] INFO root fetch - processPackages [odoo-addon-partner-ref-unique]: New version: [16.0.1.0.0.4] Old Version: [16.0.1.0.0.3]
+[2023-05-27 06:25:09] INFO root fetch - processPackages [odoo-addons-oca-partner-contact]: New version: [16.0.20230526.0] Old Version: [16.0.20230510.0]
+[2023-05-27 06:25:09] INFO root fetch - processPackages [simplejob]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-27 06:25:09] INFO root fetch - processPackages [roboduck]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-27 06:25:09] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.880764631.dev10885] Old Version: [0.2.879711564.dev10831]
+[2023-05-27 06:25:09] INFO root fetch - processPackages [odoo-addon-partner-ref-unique]: Downloading https://files.pythonhosted.org/packages/ec/b5/a9a8671d5925e277aacc9056ce2f6647d9845a617d2d6332a9c8facffed0/odoo_addon_partner_ref_unique-16.0.1.0.0.4-py3-none-any.whl
+[2023-05-27 06:25:09] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/6f/35/9df91bb2f62552246dd214ef93ba7387d09879a496f021a27625abdac3a9/quickstart-vdk-0.2.880764631.dev10885.tar.gz
+[2023-05-27 06:25:09] INFO root fetch - processPackages [roboduck]: Downloading https://files.pythonhosted.org/packages/df/cc/ec09097515a4ad940cf7de9f44424dcbfcbcae65d5d2fb4ef40190f981ee/roboduck-0.3.2.tar.gz
+[2023-05-27 06:25:09] INFO root fetch - processPackages [roboduck]: Downloading https://files.pythonhosted.org/packages/df/cc/ec09097515a4ad940cf7de9f44424dcbfcbcae65d5d2fb4ef40190f981ee/roboduck-0.3.2.tar.gz
+[2023-05-27 06:25:09] INFO root fetch - processPackages [simplejob]: Downloading https://files.pythonhosted.org/packages/11/67/ad9d5c45b0e46e93d9fdef826a74e2293c9d35c6c208ec1923c720559e95/simplejob-0.0.4-py3-none-any.whl
+[2023-05-27 06:25:09] INFO root fetch - processPackages [odoo-addons-oca-partner-contact]: Downloading https://files.pythonhosted.org/packages/b1/73/e37f523706d1ac22ff1fa67220ac7fbeb7cb68b0a71bf2d79dd22217684c/odoo_addons_oca_partner_contact-16.0.20230510.0-py3-none-any.whl
+[2023-05-27 06:25:09] INFO root fetch - processPackages [odoo-addon-partner-ref-unique]: executing diffoscope
+[2023-05-27 06:25:09] INFO root fetch - processPackages [odoo-addon-partner-ref-unique]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_partner_ref_unique-16.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_partner_ref_unique-16.0.1.0.0.4-py3-none-any.whl.zip --markdown 20230527/o/odoo-addon-partner-ref-unique/16.0.1.0.0.3-16.0.1.0.0.4/diff.md --exclude *.pyd
+[2023-05-27 06:25:10] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2023-05-27 06:25:10] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.879711564.dev10831.tar.gz tmp/quickstart-vdk-0.2.880764631.dev10885.tar.gz --markdown 20230527/q/quickstart-vdk/0.2.879711564.dev10831-0.2.880764631.dev10885/diff.md --exclude *.pyd
+[2023-05-27 06:25:10] INFO root fetch - processPackages [odoo-addons-oca-partner-contact]: Downloading https://files.pythonhosted.org/packages/59/02/912a31dd876136d681684213f9425dcf0bb4616d3aabc993e66ed7fbaab7/odoo_addons_oca_partner_contact-16.0.20230526.0-py3-none-any.whl
+[2023-05-27 06:25:10] INFO root fetch - processPackages [simplejob]: Downloading https://files.pythonhosted.org/packages/6c/d9/1b480193843a9c8eb2c6db627a8092a33aa769c56cce2543efe3c4ebca14/simplejob-0.0.5-py3-none-any.whl
+[2023-05-27 06:25:10] INFO root fetch - processPackages [simplejob]: executing diffoscope
+[2023-05-27 06:25:10] INFO root fetch - processPackages [simplejob]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplejob-0.0.4-py3-none-any.whl.zip tmp/simplejob-0.0.5-py3-none-any.whl.zip --markdown 20230527/s/simplejob/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-27 06:25:10] INFO root fetch - processPackages [odoo-addons-oca-partner-contact]: executing diffoscope
+[2023-05-27 06:25:10] INFO root fetch - processPackages [odoo-addons-oca-partner-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_partner_contact-16.0.20230510.0-py3-none-any.whl.zip tmp/odoo_addons_oca_partner_contact-16.0.20230526.0-py3-none-any.whl.zip --markdown 20230527/o/odoo-addons-oca-partner-contact/16.0.20230510.0-16.0.20230526.0/diff.md --exclude *.pyd
+[2023-05-27 06:25:10] INFO root fetch - processPackages [roboduck]: Downloading https://files.pythonhosted.org/packages/72/d8/ff7b16580e417ab64b5db227361789d106d8ec1dccb534b7078fe2fb5833/roboduck-0.3.3.tar.gz
+[2023-05-27 06:25:10] INFO root fetch - processPackages [roboduck]: Downloading https://files.pythonhosted.org/packages/72/d8/ff7b16580e417ab64b5db227361789d106d8ec1dccb534b7078fe2fb5833/roboduck-0.3.3.tar.gz
+[2023-05-27 06:25:10] INFO root fetch - processPackages [roboduck]: executing diffoscope
+[2023-05-27 06:25:10] INFO root fetch - processPackages [roboduck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboduck-0.3.2.tar.gz tmp/roboduck-0.3.3.tar.gz --markdown 20230527/r/roboduck/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-27 06:25:10] INFO root fetch - processPackages [roboduck]: executing diffoscope
+[2023-05-27 06:25:10] INFO root fetch - processPackages [roboduck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboduck-0.3.2.tar.gz tmp/roboduck-0.3.3.tar.gz --markdown 20230527/r/roboduck/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-27 06:25:11] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2023-05-27 06:25:11] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-partner-contact]: success
+[2023-05-27 06:25:11] INFO root fetch - main [MainThread]: End processing [roboduck]: success
+[2023-05-27 06:25:11] INFO root fetch - main [MainThread]: End processing [simplejob]: success
+[2023-05-27 06:25:11] INFO root fetch - main [MainThread]: End processing [roboduck]: success
+[2023-05-27 06:25:11] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-ref-unique]: success
+[2023-05-27 06:25:11] INFO root fetch - main [MainThread]: Store serial: [18272247]
