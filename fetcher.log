@@ -10225,3 +10225,42 @@
 [2023-05-27 17:52:11] INFO root fetch - main [MainThread]: End processing [grai-source-fivetran]: success
 [2023-05-27 17:52:11] INFO root fetch - main [MainThread]: End processing [py-boost]: success
 [2023-05-27 17:52:11] INFO root fetch - main [MainThread]: Store serial: [18275453]
+[2023-05-27 17:57:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275453]
+[2023-05-27 17:57:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 17:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gp-libs
+[2023-05-27 17:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dinohub-seedwork-be
+[2023-05-27 17:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mkdocs-exporter
+[2023-05-27 17:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: colt
+[2023-05-27 17:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PolicyEngine-UK
+[2023-05-27 17:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dscan-api-client
+[2023-05-27 17:57:21] INFO root fetch - processPackages [dscan-api-client]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-27 17:57:21] INFO root fetch - processPackages [mkdocs-exporter]: New version: [2.0.0] Old Version: [1.3.0]
+[2023-05-27 17:57:21] INFO root fetch - processPackages [colt]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-27 17:57:21] INFO root fetch - processPackages [dinohub-seedwork-be]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 17:57:21] INFO root fetch - processPackages [gp-libs]: New version: [0.0.1a9] Old Version: [0.0.1a8]
+[2023-05-27 17:57:21] INFO root fetch - processPackages [PolicyEngine-UK]: New version: [0.50.0] Old Version: [0.49.1]
+[2023-05-27 17:57:21] INFO root fetch - processPackages [dscan-api-client]: executing diffoscope
+[2023-05-27 17:57:21] INFO root fetch - processPackages [dscan-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dscan_api_client-1.0.7-py3-none-any.whl.zip tmp/dscan_api_client-1.0.8-py3-none-any.whl.zip --markdown 20230527/d/dscan-api-client/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-27 17:57:21] INFO root fetch - processPackages [colt]: Downloading https://files.pythonhosted.org/packages/36/ca/96996917dc3d8a739948f1131a4a9bb2bdb795df4b7113b87ffa6c7c5575/colt-0.9.2.tar.gz
+[2023-05-27 17:57:21] INFO root fetch - processPackages [gp-libs]: Downloading https://files.pythonhosted.org/packages/16/0f/a6bfbdbea89a3a6bb27732f02ef428c97d88154e21f95bd1e82c78e2c7fa/gp-libs-0.0.1a8.tar.gz
+[2023-05-27 17:57:21] INFO root fetch - processPackages [mkdocs-exporter]: Downloading https://files.pythonhosted.org/packages/55/9c/aa447de69567ae59544a71cf108fd875ec774b18391669b9f0588dfdc1fb/mkdocs_exporter-2.0.0.tar.gz
+[2023-05-27 17:57:21] INFO root fetch - processPackages [PolicyEngine-UK]: Downloading https://files.pythonhosted.org/packages/ab/a6/0af7996195a45a8b59d3a2cc2ca6e18a2b3c375d1d9e7dc3e0b325689dff/PolicyEngine-UK-0.50.0.tar.gz
+[2023-05-27 17:57:21] INFO root fetch - processPackages [mkdocs-exporter]: executing diffoscope
+[2023-05-27 17:57:21] INFO root fetch - processPackages [mkdocs-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_exporter-1.3.0.tar.gz tmp/mkdocs_exporter-2.0.0.tar.gz --markdown 20230527/m/mkdocs-exporter/1.3.0-2.0.0/diff.md --exclude *.pyd
+[2023-05-27 17:57:21] INFO root fetch - processPackages [dinohub-seedwork-be]: executing diffoscope
+[2023-05-27 17:57:21] INFO root fetch - processPackages [dinohub-seedwork-be]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dinohub_seedwork_be-0.1.8.tar.gz tmp/dinohub_seedwork_be-0.1.9.tar.gz --markdown 20230527/d/dinohub-seedwork-be/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 17:57:21] INFO root fetch - processPackages [colt]: Downloading https://files.pythonhosted.org/packages/fb/8f/dfa8977d73d35b6bd615bcd525646456d72a46c119737c74395eaae9c2df/colt-0.9.3.tar.gz
+[2023-05-27 17:57:21] INFO root fetch - processPackages [colt]: executing diffoscope
+[2023-05-27 17:57:21] INFO root fetch - processPackages [colt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colt-0.9.2.tar.gz tmp/colt-0.9.3.tar.gz --markdown 20230527/c/colt/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-27 17:57:21] INFO root fetch - processPackages [PolicyEngine-UK]: executing diffoscope
+[2023-05-27 17:57:21] INFO root fetch - processPackages [PolicyEngine-UK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PolicyEngine-UK-0.49.1.tar.gz tmp/PolicyEngine-UK-0.50.0.tar.gz --markdown 20230527/P/PolicyEngine-UK/0.49.1-0.50.0/diff.md --exclude *.pyd
+[2023-05-27 17:57:21] INFO root fetch - processPackages [gp-libs]: Downloading https://files.pythonhosted.org/packages/ac/60/11612e1b2dda9534dfa58576e4c5e38866a1781317fa120c93f034bbe1f8/gp-libs-0.0.1a9.tar.gz
+[2023-05-27 17:57:22] INFO root fetch - processPackages [gp-libs]: executing diffoscope
+[2023-05-27 17:57:22] INFO root fetch - processPackages [gp-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gp-libs-0.0.1a8.tar.gz tmp/gp-libs-0.0.1a9.tar.gz --markdown 20230527/g/gp-libs/0.0.1a8-0.0.1a9/diff.md --exclude *.pyd
+[2023-05-27 17:57:23] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
+[2023-05-27 17:57:23] INFO root fetch - main [MainThread]: End processing [colt]: success
+[2023-05-27 17:57:23] INFO root fetch - main [MainThread]: End processing [gp-libs]: success
+[2023-05-27 17:57:23] INFO root fetch - main [MainThread]: End processing [dinohub-seedwork-be]: success
+[2023-05-27 17:57:25] INFO root fetch - main [MainThread]: End processing [mkdocs-exporter]: success
+[2023-05-27 17:57:27] INFO root fetch - main [MainThread]: End processing [PolicyEngine-UK]: success
+[2023-05-27 17:57:27] INFO root fetch - main [MainThread]: Store serial: [18275470]
