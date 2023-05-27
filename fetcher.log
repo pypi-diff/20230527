@@ -5959,3 +5959,27 @@
 [2023-05-27 09:36:55] INFO root fetch - main [MainThread]: End processing [dbm-agent]: success
 [2023-05-27 09:37:43] INFO root fetch - main [MainThread]: End processing [betfair-parser]: success
 [2023-05-27 09:37:43] INFO root fetch - main [MainThread]: Store serial: [18272854]
+[2023-05-27 09:42:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272854]
+[2023-05-27 09:42:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 09:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lalsuite
+[2023-05-27 09:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-nightly
+[2023-05-27 09:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ExPSO
+[2023-05-27 09:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gradio-version-freeze
+[2023-05-27 09:42:52] INFO root fetch - processPackages [gradio-version-freeze]: New version: [3.32.0.3.36] Old Version: [3.32.0]
+[2023-05-27 09:42:52] INFO root fetch - processPackages [ExPSO]: New version: [0.1.1] Old Version: [0.0.25]
+[2023-05-27 09:42:52] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.9.3.dev20220601] Old Version: [1.9.3.dev20220531]
+[2023-05-27 09:42:52] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-05-27 09:42:52] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-27 09:42:52] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2023-05-27 09:42:52] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.9.3.dev20220531.tar.gz tmp/streamlit-nightly-1.9.3.dev20220601.tar.gz --markdown 20230527/s/streamlit-nightly/1.9.3.dev20220531-1.9.3.dev20220601/diff.md --exclude *.pyd
+[2023-05-27 09:42:52] INFO root fetch - processPackages [gradio-version-freeze]: Downloading https://files.pythonhosted.org/packages/7c/ec/599484c06d90beee1f6553e6c32a242ee6a625a81e3fdd84abf0754c3aff/gradio_version_freeze-3.32.0.tar.gz
+[2023-05-27 09:42:52] INFO root fetch - processPackages [ExPSO]: Downloading https://files.pythonhosted.org/packages/d6/18/65188f8d4e50cb820482d0e13ca9df163b4e8d98b818ac907f0a86b4dff0/ExPSO-0.1.1.tar.gz
+[2023-05-27 09:42:52] WARNING root fetch - processPackages [gradio-version-freeze]: Skipping package: exceeds size limit 11020426>=10485760
+[2023-05-27 09:42:52] INFO root fetch - main [MainThread]: End processing [gradio-version-freeze] error
+[2023-05-27 09:42:52] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-05-27 09:42:52] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-05-27 09:42:53] INFO root fetch - processPackages [ExPSO]: executing diffoscope
+[2023-05-27 09:42:53] INFO root fetch - processPackages [ExPSO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ExPSO-0.0.25.tar.gz tmp/ExPSO-0.1.1.tar.gz --markdown 20230527/E/ExPSO/0.0.25-0.1.1/diff.md --exclude *.pyd
+[2023-05-27 09:42:54] INFO root fetch - main [MainThread]: End processing [ExPSO]: success
+[2023-05-27 09:43:02] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2023-05-27 09:43:02] INFO root fetch - main [MainThread]: Store serial: [18272885]
