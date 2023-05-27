@@ -3907,3 +3907,30 @@
 [2023-05-27 04:14:21] INFO root fetch - main [MainThread]: End processing [OpenAIAuth]: success
 [2023-05-27 04:14:22] INFO root fetch - main [MainThread]: End processing [aind-data-transfer]: success
 [2023-05-27 04:14:22] INFO root fetch - main [MainThread]: Store serial: [18271796]
+[2023-05-27 04:19:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271796]
+[2023-05-27 04:19:30] INFO root fetch - main [MainThread]: No changed packages found
+[2023-05-27 04:24:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271797]
+[2023-05-27 04:24:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 04:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OpenAIAuth
+[2023-05-27 04:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: carpet-concentrations
+[2023-05-27 04:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sbp
+[2023-05-27 04:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: revChatGPT
+[2023-05-27 04:24:36] WARNING root fetch - processPackages [carpet-concentrations]: Skipping, unable to determine old version
+[2023-05-27 04:24:36] INFO root fetch - processPackages [OpenAIAuth]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-27 04:24:36] INFO root fetch - main [MainThread]: End processing [carpet-concentrations] error
+[2023-05-27 04:24:36] INFO root fetch - processPackages [sbp]: New version: [4.9.0] Old Version: [4.8.0]
+[2023-05-27 04:24:36] INFO root fetch - processPackages [revChatGPT]: New version: [5.2.0] Old Version: [5.1.3]
+[2023-05-27 04:24:36] INFO root fetch - processPackages [sbp]: Downloading https://files.pythonhosted.org/packages/be/4b/f69727e1decf565d677dbc0d2db0fb7187902cd8c4e720f98defb9fad483/sbp-4.8.0.tar.gz
+[2023-05-27 04:24:36] INFO root fetch - processPackages [OpenAIAuth]: Downloading https://files.pythonhosted.org/packages/50/e0/096a2fa9cccc54d71536458bff8d095fa7f23ddb700723068641e43c73ae/OpenAIAuth-1.0.2.tar.gz
+[2023-05-27 04:24:36] INFO root fetch - processPackages [OpenAIAuth]: executing diffoscope
+[2023-05-27 04:24:36] INFO root fetch - processPackages [OpenAIAuth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenAIAuth-1.0.1.tar.gz tmp/OpenAIAuth-1.0.2.tar.gz --markdown 20230527/O/OpenAIAuth/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-27 04:24:36] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/26/db/bd457b88ee66a8723abffd50a39138ea8ed57621970ae34f6396addba3db/revChatGPT-5.2.0.tar.gz
+[2023-05-27 04:24:36] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-05-27 04:24:36] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-5.1.3.tar.gz tmp/revChatGPT-5.2.0.tar.gz --markdown 20230527/r/revChatGPT/5.1.3-5.2.0/diff.md --exclude *.pyd
+[2023-05-27 04:24:36] INFO root fetch - processPackages [sbp]: Downloading https://files.pythonhosted.org/packages/e7/c0/e0557538320ba26ec5b74c8b903c30dc595b91410c9ad34b341f87c979c9/sbp-4.9.0.tar.gz
+[2023-05-27 04:24:36] INFO root fetch - processPackages [sbp]: executing diffoscope
+[2023-05-27 04:24:36] INFO root fetch - processPackages [sbp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbp-4.8.0.tar.gz tmp/sbp-4.9.0.tar.gz --markdown 20230527/s/sbp/4.8.0-4.9.0/diff.md --exclude *.pyd
+[2023-05-27 04:24:37] INFO root fetch - main [MainThread]: End processing [OpenAIAuth]: success
+[2023-05-27 04:24:37] INFO root fetch - main [MainThread]: End processing [revChatGPT]: success
+[2023-05-27 04:24:38] INFO root fetch - main [MainThread]: End processing [sbp]: success
+[2023-05-27 04:24:38] INFO root fetch - main [MainThread]: Store serial: [18271811]
