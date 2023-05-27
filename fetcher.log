@@ -4527,3 +4527,60 @@
 [2023-05-27 05:59:02] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.28.8.tar.gz tmp/xklb-1.28.9.tar.gz --markdown 20230527/x/xklb/1.28.8-1.28.9/diff.md --exclude *.pyd
 [2023-05-27 05:59:04] INFO root fetch - main [MainThread]: End processing [xklb]: success
 [2023-05-27 05:59:04] INFO root fetch - main [MainThread]: Store serial: [18272154]
+[2023-05-27 06:04:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272154]
+[2023-05-27 06:04:13] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-27 06:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swachhdata
+[2023-05-27 06:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nicegui
+[2023-05-27 06:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: athletes-unlimited-py
+[2023-05-27 06:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: git4net
+[2023-05-27 06:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: OgreInterface
+[2023-05-27 06:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: heaserver-accounts
+[2023-05-27 06:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: variant
+[2023-05-27 06:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: swachhdata
+[2023-05-27 06:04:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo8-addon-mrp-operations-extension
+[2023-05-27 06:04:13] INFO root fetch - processPackages [swachhdata]: New version: [2.0.0rc2] Old Version: [2.0.0rc1]
+[2023-05-27 06:04:13] INFO root fetch - processPackages [git4net]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-05-27 06:04:13] INFO root fetch - processPackages [OgreInterface]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-27 06:04:13] INFO root fetch - processPackages [variant]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 06:04:13] INFO root fetch - processPackages [athletes-unlimited-py]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-27 06:04:13] INFO root fetch - processPackages [nicegui]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-27 06:04:13] INFO root fetch - processPackages [heaserver-accounts]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-27 06:04:13] INFO root fetch - processPackages [swachhdata]: New version: [2.0.0rc2] Old Version: [2.0.0rc1]
+[2023-05-27 06:04:13] INFO root fetch - processPackages [odoo8-addon-mrp-operations-extension]: New version: [8.0.2.0.1.99.dev6] Old Version: [8.0.2.0.1.99.dev5]
+[2023-05-27 06:04:13] INFO root fetch - processPackages [variant]: executing diffoscope
+[2023-05-27 06:04:13] INFO root fetch - processPackages [variant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/variant-0.0.8.tar.gz tmp/variant-0.0.9.tar.gz --markdown 20230527/v/variant/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 06:04:13] INFO root fetch - processPackages [heaserver-accounts]: executing diffoscope
+[2023-05-27 06:04:13] INFO root fetch - processPackages [heaserver-accounts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-accounts-1.0.0a8.tar.gz tmp/heaserver-accounts-1.0.0a9.tar.gz --markdown 20230527/h/heaserver-accounts/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-27 06:04:13] INFO root fetch - processPackages [OgreInterface]: Downloading https://files.pythonhosted.org/packages/32/39/12c899b8f078f22f88721e8d268dd5d4f3b22a2605240f516bacd63bf2cb/OgreInterface-1.0.8.tar.gz
+[2023-05-27 06:04:13] INFO root fetch - processPackages [git4net]: Downloading https://files.pythonhosted.org/packages/12/fc/caa5975f619e55b6d71dbe4046197350c71ff292ce2d1d6c561b3510452d/git4net-0.0.0.tar.gz
+[2023-05-27 06:04:13] INFO root fetch - processPackages [athletes-unlimited-py]: Downloading https://files.pythonhosted.org/packages/f4/60/b47a6fe3c8745d83f01e93b895b46b2383d065de2d5071d9ff55813a808b/athletes_unlimited_py-0.0.5.tar.gz
+[2023-05-27 06:04:13] INFO root fetch - processPackages [nicegui]: Downloading https://files.pythonhosted.org/packages/35/d9/3755a0174dff3fabe8197ca66d234865c535e6def44c59a79263aa707215/nicegui-1.2.8.tar.gz
+[2023-05-27 06:04:13] INFO root fetch - processPackages [swachhdata]: executing diffoscope
+[2023-05-27 06:04:13] INFO root fetch - processPackages [swachhdata]: executing diffoscope
+[2023-05-27 06:04:13] INFO root fetch - processPackages [swachhdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swachhdata-2.0.0rc1-py3-none-any.whl.zip tmp/swachhdata-2.0.0rc2-py3-none-any.whl.zip --markdown 20230527/s/swachhdata/2.0.0rc1-2.0.0rc2/diff.md --exclude *.pyd
+[2023-05-27 06:04:13] INFO root fetch - processPackages [swachhdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swachhdata-2.0.0rc1-py3-none-any.whl.zip tmp/swachhdata-2.0.0rc2-py3-none-any.whl.zip --markdown 20230527/s/swachhdata/2.0.0rc1-2.0.0rc2/diff.md --exclude *.pyd
+[2023-05-27 06:04:14] INFO root fetch - processPackages [git4net]: Downloading https://files.pythonhosted.org/packages/06/aa/58e44a8aa3eb158f99d02710792c2eec5f95927bea9a1b8040efa87b6509/git4net-0.0.1.tar.gz
+[2023-05-27 06:04:14] INFO root fetch - processPackages [odoo8-addon-mrp-operations-extension]: Downloading https://files.pythonhosted.org/packages/e8/f3/9a4a0056b8b3714a9fc646a1fb92b9ef7e5c0550ed65055f5f0347908a2a/odoo8_addon_mrp_operations_extension-8.0.2.0.1.99.dev6-py2-none-any.whl
+[2023-05-27 06:04:14] INFO root fetch - processPackages [OgreInterface]: Downloading https://files.pythonhosted.org/packages/af/58/450f1c7aa5bd23d607f869b1981e3610e1aaee541c6f51c2c9461ccebc29/OgreInterface-1.0.9.tar.gz
+[2023-05-27 06:04:14] INFO root fetch - processPackages [git4net]: executing diffoscope
+[2023-05-27 06:04:14] INFO root fetch - processPackages [git4net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git4net-0.0.0.tar.gz tmp/git4net-0.0.1.tar.gz --markdown 20230527/g/git4net/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-05-27 06:04:14] INFO root fetch - processPackages [athletes-unlimited-py]: Downloading https://files.pythonhosted.org/packages/82/3e/709f198fb435c5730ddac6f4d3d7f514131932ddfa5a5fcb270244f26520/athletes_unlimited_py-0.0.6.tar.gz
+[2023-05-27 06:04:14] INFO root fetch - processPackages [OgreInterface]: executing diffoscope
+[2023-05-27 06:04:14] INFO root fetch - processPackages [OgreInterface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OgreInterface-1.0.8.tar.gz tmp/OgreInterface-1.0.9.tar.gz --markdown 20230527/O/OgreInterface/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-27 06:04:14] INFO root fetch - processPackages [odoo8-addon-mrp-operations-extension]: executing diffoscope
+[2023-05-27 06:04:14] INFO root fetch - processPackages [odoo8-addon-mrp-operations-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_mrp_operations_extension-8.0.2.0.1.99.dev5-py2-none-any.whl.zip tmp/odoo8_addon_mrp_operations_extension-8.0.2.0.1.99.dev6-py2-none-any.whl.zip --markdown 20230527/o/odoo8-addon-mrp-operations-extension/8.0.2.0.1.99.dev5-8.0.2.0.1.99.dev6/diff.md --exclude *.pyd
+[2023-05-27 06:04:14] INFO root fetch - processPackages [athletes-unlimited-py]: executing diffoscope
+[2023-05-27 06:04:14] INFO root fetch - processPackages [athletes-unlimited-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athletes_unlimited_py-0.0.5.tar.gz tmp/athletes_unlimited_py-0.0.6.tar.gz --markdown 20230527/a/athletes-unlimited-py/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-27 06:04:14] INFO root fetch - main [MainThread]: End processing [variant]: success
+[2023-05-27 06:04:14] INFO root fetch - main [MainThread]: End processing [heaserver-accounts]: success
+[2023-05-27 06:04:15] INFO root fetch - main [MainThread]: End processing [swachhdata]: success
+[2023-05-27 06:04:15] INFO root fetch - main [MainThread]: End processing [swachhdata]: success
+[2023-05-27 06:04:15] INFO root fetch - processPackages [nicegui]: Downloading https://files.pythonhosted.org/packages/a8/5b/4700da14dca835cafbca381f4f627a906a0eb4deacdecde0e9d5c319bec5/nicegui-1.2.9.tar.gz
+[2023-05-27 06:04:15] INFO root fetch - main [MainThread]: End processing [OgreInterface]: success
+[2023-05-27 06:04:16] INFO root fetch - main [MainThread]: End processing [odoo8-addon-mrp-operations-extension]: success
+[2023-05-27 06:04:16] INFO root fetch - main [MainThread]: End processing [athletes-unlimited-py]: success
+[2023-05-27 06:04:16] INFO root fetch - main [MainThread]: End processing [git4net]: success
+[2023-05-27 06:04:22] INFO root fetch - processPackages [nicegui]: executing diffoscope
+[2023-05-27 06:04:22] INFO root fetch - processPackages [nicegui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nicegui-1.2.8.tar.gz tmp/nicegui-1.2.9.tar.gz --markdown 20230527/n/nicegui/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-27 06:04:27] INFO root fetch - main [MainThread]: End processing [nicegui]: success
+[2023-05-27 06:04:27] INFO root fetch - main [MainThread]: Store serial: [18272186]
