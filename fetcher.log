@@ -8245,3 +8245,17 @@
 [2023-05-27 14:14:51] INFO root fetch - main [MainThread]: End processing [ankr-sdk]: success
 [2023-05-27 14:14:52] INFO root fetch - main [MainThread]: End processing [irails]: success
 [2023-05-27 14:14:52] INFO root fetch - main [MainThread]: Store serial: [18274196]
+[2023-05-27 14:19:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274196]
+[2023-05-27 14:20:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 14:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flowchain
+[2023-05-27 14:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ddadevops
+[2023-05-27 14:20:01] INFO root fetch - processPackages [flowchain]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-05-27 14:20:01] INFO root fetch - processPackages [ddadevops]: New version: [4.0.0.dev9] Old Version: [4.0.0.dev8]
+[2023-05-27 14:20:01] INFO root fetch - processPackages [ddadevops]: executing diffoscope
+[2023-05-27 14:20:01] INFO root fetch - processPackages [ddadevops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddadevops-4.0.0.dev8.tar.gz tmp/ddadevops-4.0.0.dev9.tar.gz --markdown 20230527/d/ddadevops/4.0.0.dev8-4.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-27 14:20:01] INFO root fetch - processPackages [flowchain]: Downloading https://files.pythonhosted.org/packages/f2/9d/611da8bf5d3303b8b9f5354d106245a6e10fffa4176a3026a13cfc0eebb6/flowchain-0.0.8.tar.gz
+[2023-05-27 14:20:01] INFO root fetch - processPackages [flowchain]: executing diffoscope
+[2023-05-27 14:20:01] INFO root fetch - processPackages [flowchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowchain-0.0.6.tar.gz tmp/flowchain-0.0.8.tar.gz --markdown 20230527/f/flowchain/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-05-27 14:20:02] INFO root fetch - main [MainThread]: End processing [flowchain]: success
+[2023-05-27 14:20:02] INFO root fetch - main [MainThread]: End processing [ddadevops]: success
+[2023-05-27 14:20:02] INFO root fetch - main [MainThread]: Store serial: [18274211]
