@@ -7082,3 +7082,17 @@
 [2023-05-27 11:56:09] INFO root fetch - main [MainThread]: End processing [dscan-api-client]: success
 [2023-05-27 11:56:09] INFO root fetch - main [MainThread]: End processing [hypothesis]: success
 [2023-05-27 11:56:09] INFO root fetch - main [MainThread]: Store serial: [18273555]
+[2023-05-27 12:01:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273555]
+[2023-05-27 12:01:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 12:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: taskiq
+[2023-05-27 12:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fhempy
+[2023-05-27 12:01:18] INFO root fetch - processPackages [taskiq]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-27 12:01:18] INFO root fetch - processPackages [fhempy]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-27 12:01:18] INFO root fetch - processPackages [fhempy]: executing diffoscope
+[2023-05-27 12:01:18] INFO root fetch - processPackages [fhempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhempy-0.1.98.tar.gz tmp/fhempy-0.1.99.tar.gz --markdown 20230527/f/fhempy/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-27 12:01:18] INFO root fetch - processPackages [taskiq]: Downloading https://files.pythonhosted.org/packages/b9/39/a6be509ced4ee61a60822798bc0689e248fc3b572e27e0273d98d8ecd29b/taskiq-0.6.0.tar.gz
+[2023-05-27 12:01:19] INFO root fetch - processPackages [taskiq]: executing diffoscope
+[2023-05-27 12:01:19] INFO root fetch - processPackages [taskiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskiq-0.5.0.tar.gz tmp/taskiq-0.6.0.tar.gz --markdown 20230527/t/taskiq/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-27 12:01:20] INFO root fetch - main [MainThread]: End processing [taskiq]: success
+[2023-05-27 12:01:21] INFO root fetch - main [MainThread]: End processing [fhempy]: success
+[2023-05-27 12:01:21] INFO root fetch - main [MainThread]: Store serial: [18273561]
