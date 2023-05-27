@@ -7832,3 +7832,52 @@
 [2023-05-27 13:27:12] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
 [2023-05-27 13:27:13] INFO root fetch - main [MainThread]: End processing [jsmetrics]: success
 [2023-05-27 13:27:13] INFO root fetch - main [MainThread]: Store serial: [18274006]
+[2023-05-27 13:32:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274006]
+[2023-05-27 13:32:23] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 13:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NaturalAPI
+[2023-05-27 13:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchx-nightly
+[2023-05-27 13:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: inema
+[2023-05-27 13:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: isoCycle
+[2023-05-27 13:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asociita
+[2023-05-27 13:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: whisper-ctranslate2
+[2023-05-27 13:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bigdl-nano
+[2023-05-27 13:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bigdl-chronos
+[2023-05-27 13:32:23] INFO root fetch - processPackages [inema]: New version: [0.8.8] Old Version: [0.8.7]
+[2023-05-27 13:32:23] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-27 13:32:23] INFO root fetch - processPackages [isoCycle]: New version: [0.0.68] Old Version: [0.0.67]
+[2023-05-27 13:32:23] INFO root fetch - processPackages [NaturalAPI]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-27 13:32:23] INFO root fetch - processPackages [asociita]: New version: [0.1.6.2] Old Version: [0.1.6.1]
+[2023-05-27 13:32:23] INFO root fetch - processPackages [whisper-ctranslate2]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-27 13:32:23] INFO root fetch - processPackages [bigdl-chronos]: New version: [2.4.0b20230526] Old Version: [2.4.0b20230525]
+[2023-05-27 13:32:23] INFO root fetch - processPackages [bigdl-nano]: New version: [2.4.0b20230526] Old Version: [2.4.0b20230525]
+[2023-05-27 13:32:23] INFO root fetch - processPackages [whisper-ctranslate2]: Downloading https://files.pythonhosted.org/packages/58/ec/77630b5ef0ff27060f8d9e1f24b0e98104273f2a52ac250aa27690db0a11/whisper-ctranslate2-0.2.4.tar.gz
+[2023-05-27 13:32:23] INFO root fetch - processPackages [isoCycle]: Downloading https://files.pythonhosted.org/packages/64/97/2a6b91d531cb20b835ab259c58b9b2b746a3906560a76fd618c8d6c783aa/isoCycle-0.0.67.tar.gz
+[2023-05-27 13:32:23] INFO root fetch - processPackages [inema]: Downloading https://files.pythonhosted.org/packages/fa/00/63e8285e9c2a4da460e6476e858de2f1f561d22d16426f614865a2eca953/inema-0.8.7.tar.gz
+[2023-05-27 13:32:23] WARNING root fetch - processPackages [isoCycle]: Skipping package: exceeds size limit 12848969>=10485760
+[2023-05-27 13:32:23] INFO root fetch - main [MainThread]: End processing [isoCycle] error
+[2023-05-27 13:32:23] INFO root fetch - processPackages [bigdl-chronos]: executing diffoscope
+[2023-05-27 13:32:23] INFO root fetch - processPackages [bigdl-chronos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos-2.4.0b20230525-py3-none-win_amd64.whl.zip tmp/bigdl_chronos-2.4.0b20230526-py3-none-win_amd64.whl.zip --markdown 20230527/b/bigdl-chronos/2.4.0b20230525-2.4.0b20230526/diff.md --exclude *.pyd
+[2023-05-27 13:32:23] INFO root fetch - processPackages [NaturalAPI]: Downloading https://files.pythonhosted.org/packages/7f/85/23cb856ea33c3e181328d6e3911d9d2fe9aef6055b81b51f973422972c11/NaturalAPI-0.0.8.tar.gz
+[2023-05-27 13:32:23] INFO root fetch - processPackages [bigdl-nano]: executing diffoscope
+[2023-05-27 13:32:23] INFO root fetch - processPackages [bigdl-nano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_nano-2.4.0b20230525-py3-none-win_amd64.whl.zip tmp/bigdl_nano-2.4.0b20230526-py3-none-win_amd64.whl.zip --markdown 20230527/b/bigdl-nano/2.4.0b20230525-2.4.0b20230526/diff.md --exclude *.pyd
+[2023-05-27 13:32:23] INFO root fetch - processPackages [whisper-ctranslate2]: Downloading https://files.pythonhosted.org/packages/4c/69/36b8ee33d83a8fbb3a326edfcffacb936100e6c7cd1e4691033112509899/whisper-ctranslate2-0.2.5.tar.gz
+[2023-05-27 13:32:23] INFO root fetch - processPackages [inema]: Downloading https://files.pythonhosted.org/packages/93/92/51d6e5e5828731dd741932ce91286999d5102b6839bc60e8afad7bb0365f/inema-0.8.8.tar.gz
+[2023-05-27 13:32:23] INFO root fetch - processPackages [NaturalAPI]: executing diffoscope
+[2023-05-27 13:32:23] INFO root fetch - processPackages [NaturalAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NaturalAPI-0.0.7.tar.gz tmp/NaturalAPI-0.0.8.tar.gz --markdown 20230527/N/NaturalAPI/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-27 13:32:23] INFO root fetch - processPackages [whisper-ctranslate2]: executing diffoscope
+[2023-05-27 13:32:23] INFO root fetch - processPackages [whisper-ctranslate2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper-ctranslate2-0.2.4.tar.gz tmp/whisper-ctranslate2-0.2.5.tar.gz --markdown 20230527/w/whisper-ctranslate2/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-27 13:32:23] INFO root fetch - processPackages [inema]: executing diffoscope
+[2023-05-27 13:32:23] INFO root fetch - processPackages [inema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inema-0.8.7.tar.gz tmp/inema-0.8.8.tar.gz --markdown 20230527/i/inema/0.8.7-0.8.8/diff.md --exclude *.pyd
+[2023-05-27 13:32:24] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-05-27 13:32:24] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230527/t/torchx-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-27 13:32:24] INFO root fetch - processPackages [asociita]: Downloading https://files.pythonhosted.org/packages/c0/d9/1da7717064aeb8a6ef62c43b3e0e7c2acb042c8e40b9db1353a7ee7c2bf6/asociita-0.1.6.2.tar.gz
+[2023-05-27 13:32:24] INFO root fetch - main [MainThread]: End processing [NaturalAPI]: success
+[2023-05-27 13:32:24] INFO root fetch - processPackages [asociita]: executing diffoscope
+[2023-05-27 13:32:24] INFO root fetch - processPackages [asociita]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asociita-0.1.6.1.tar.gz tmp/asociita-0.1.6.2.tar.gz --markdown 20230527/a/asociita/0.1.6.1-0.1.6.2/diff.md --exclude *.pyd
+[2023-05-27 13:32:25] INFO root fetch - main [MainThread]: End processing [whisper-ctranslate2]: success
+[2023-05-27 13:32:25] INFO root fetch - main [MainThread]: End processing [inema]: success
+[2023-05-27 13:32:25] INFO root fetch - main [MainThread]: End processing [bigdl-chronos]: success
+[2023-05-27 13:32:25] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-05-27 13:32:25] INFO root fetch - main [MainThread]: End processing [asociita]: success
+[2023-05-27 13:32:26] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
+[2023-05-27 13:32:26] INFO root fetch - main [MainThread]: Store serial: [18274029]
