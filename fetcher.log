@@ -6737,3 +6737,39 @@
 [2023-05-27 11:06:37] INFO root fetch - main [MainThread]: End processing [autogluon.eda]: success
 [2023-05-27 11:06:37] INFO root fetch - main [MainThread]: End processing [prfiesta]: success
 [2023-05-27 11:06:37] INFO root fetch - main [MainThread]: Store serial: [18273328]
+[2023-05-27 11:11:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273328]
+[2023-05-27 11:11:46] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 11:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyslit
+[2023-05-27 11:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tscratchapiget
+[2023-05-27 11:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-nightly
+[2023-05-27 11:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: citizenk
+[2023-05-27 11:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: skforecast
+[2023-05-27 11:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: NaturalAPI
+[2023-05-27 11:11:46] INFO root fetch - processPackages [citizenk]: New version: [0.1.47] Old Version: [0.1.46]
+[2023-05-27 11:11:46] INFO root fetch - processPackages [pyslit]: New version: [2.0.2] Old Version: [1.0.0]
+[2023-05-27 11:11:46] INFO root fetch - processPackages [tscratchapiget]: New version: [0.3.8] Old Version: [0.2.9]
+[2023-05-27 11:11:46] INFO root fetch - processPackages [skforecast]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-27 11:11:46] WARNING root fetch - processPackages [NaturalAPI]: Skipping, unable to determine old version
+[2023-05-27 11:11:46] INFO root fetch - main [MainThread]: End processing [NaturalAPI] error
+[2023-05-27 11:11:46] INFO root fetch - processPackages [tf-nightly]: New version: [2.14.0.dev20230527] Old Version: [2.14.0.dev20230526]
+[2023-05-27 11:11:46] INFO root fetch - processPackages [citizenk]: Downloading https://files.pythonhosted.org/packages/ba/af/9a37adcf91987e5fcb92a1c62c9a4783ebc152458dc6ff082536b000986e/citizenk-0.1.46.tar.gz
+[2023-05-27 11:11:46] INFO root fetch - processPackages [tscratchapiget]: Downloading https://files.pythonhosted.org/packages/2d/e2/e4edfe03cde15db43e66e6a3afe3b2fff03e8314838f5bae403896732e00/tscratchapiget-0.3.8.tar.gz
+[2023-05-27 11:11:46] INFO root fetch - processPackages [skforecast]: Downloading https://files.pythonhosted.org/packages/39/d6/d8edb9b9d8f5967980c73456e3aaa271fec06f747002a2e30064a9d20142/skforecast-0.8.0.tar.gz
+[2023-05-27 11:11:46] INFO root fetch - processPackages [tscratchapiget]: executing diffoscope
+[2023-05-27 11:11:46] INFO root fetch - processPackages [tscratchapiget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tscratchapiget-0.2.9.tar.gz tmp/tscratchapiget-0.3.8.tar.gz --markdown 20230527/t/tscratchapiget/0.2.9-0.3.8/diff.md --exclude *.pyd
+[2023-05-27 11:11:46] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/8e/05/4d163efef5e4d5646ccaa792378f1c083fee1aaae4273b84e70eeae3dacf/tf_nightly-2.14.0.dev20230526-cp39-cp39-win_amd64.whl
+[2023-05-27 11:11:46] WARNING root fetch - processPackages [skforecast]: Skipping package: exceeds size limit 30513695>=10485760
+[2023-05-27 11:11:46] INFO root fetch - main [MainThread]: End processing [skforecast] error
+[2023-05-27 11:11:46] INFO root fetch - processPackages [pyslit]: Downloading https://files.pythonhosted.org/packages/91/9b/86df7d63ca24eb0c2259d8d132937cd22fa20725d9d68efea20ed773f30d/pyslit-2.0.2.tar.gz
+[2023-05-27 11:11:46] INFO root fetch - processPackages [pyslit]: executing diffoscope
+[2023-05-27 11:11:46] INFO root fetch - processPackages [pyslit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslit-1.0.0.tar.gz tmp/pyslit-2.0.2.tar.gz --markdown 20230527/p/pyslit/1.0.0-2.0.2/diff.md --exclude *.pyd
+[2023-05-27 11:11:47] INFO root fetch - processPackages [citizenk]: Downloading https://files.pythonhosted.org/packages/45/41/8cee1bb92f0ac056ad32e3e0e64a55a445e639001a51465e4d7c243b2ff0/citizenk-0.1.47.tar.gz
+[2023-05-27 11:11:47] INFO root fetch - processPackages [citizenk]: executing diffoscope
+[2023-05-27 11:11:47] INFO root fetch - processPackages [citizenk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citizenk-0.1.46.tar.gz tmp/citizenk-0.1.47.tar.gz --markdown 20230527/c/citizenk/0.1.46-0.1.47/diff.md --exclude *.pyd
+[2023-05-27 11:11:47] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/f6/70/b1052a27cb0bf508b2ed7e8d5a2ac6cf7b00e063bcdb7b3a49e9d0306ec7/tf_nightly-2.14.0.dev20230527-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-27 11:11:47] WARNING root fetch - processPackages [tf-nightly]: Skipping package: exceeds size limit 488233729>=10485760
+[2023-05-27 11:11:47] INFO root fetch - main [MainThread]: End processing [tf-nightly] error
+[2023-05-27 11:11:47] INFO root fetch - main [MainThread]: End processing [tscratchapiget]: success
+[2023-05-27 11:11:47] INFO root fetch - main [MainThread]: End processing [pyslit]: success
+[2023-05-27 11:11:47] INFO root fetch - main [MainThread]: End processing [citizenk]: success
+[2023-05-27 11:11:47] INFO root fetch - main [MainThread]: Store serial: [18273349]
