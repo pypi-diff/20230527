@@ -6476,3 +6476,54 @@
 [2023-05-27 10:40:22] INFO root fetch - main [MainThread]: End processing [mkdocs-enumerate-headings-plugin]: success
 [2023-05-27 10:40:24] INFO root fetch - main [MainThread]: End processing [opstool]: success
 [2023-05-27 10:40:24] INFO root fetch - main [MainThread]: Store serial: [18273175]
+[2023-05-27 10:45:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273175]
+[2023-05-27 10:45:33] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-27 10:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: comex
+[2023-05-27 10:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openmpdl
+[2023-05-27 10:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tff-nightly
+[2023-05-27 10:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: drtb
+[2023-05-27 10:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dcicutils
+[2023-05-27 10:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: proxyUtil
+[2023-05-27 10:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xtdb
+[2023-05-27 10:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tree-of-thoughts
+[2023-05-27 10:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tfp-nightly
+[2023-05-27 10:45:33] WARNING root fetch - processPackages [openmpdl]: Skipping, unable to determine old version
+[2023-05-27 10:45:33] INFO root fetch - main [MainThread]: End processing [openmpdl] error
+[2023-05-27 10:45:33] INFO root fetch - processPackages [proxyUtil]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-27 10:45:33] WARNING root fetch - processPackages [drtb]: Skipping, unable to determine old version
+[2023-05-27 10:45:33] INFO root fetch - main [MainThread]: End processing [drtb] error
+[2023-05-27 10:45:33] INFO root fetch - processPackages [comex]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-27 10:45:33] INFO root fetch - processPackages [xtdb]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-27 10:45:33] INFO root fetch - processPackages [tree-of-thoughts]: New version: [0.2.3] Old Version: [0.2.1]
+[2023-05-27 10:45:33] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230526] Old Version: [0.0.1.dev20230525]
+[2023-05-27 10:45:33] INFO root fetch - processPackages [dcicutils]: New version: [7.4.4.5b24] Old Version: [7.4.4.5b23]
+[2023-05-27 10:45:33] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-05-27 10:45:33] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-05-27 10:45:33] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230527/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-05-27 10:45:33] INFO root fetch - processPackages [proxyUtil]: Downloading https://files.pythonhosted.org/packages/66/c0/6e220aed025b80912044d0bd7ed301291721e047a0b5707ccf125a974958/proxyUtil-0.1.2.tar.gz
+[2023-05-27 10:45:33] INFO root fetch - processPackages [tree-of-thoughts]: Downloading https://files.pythonhosted.org/packages/66/41/dd49c5ace4d2ecb20e3faf919a934234aa526c9511e1f80a00b42af523a0/tree-of-thoughts-0.2.3.tar.gz
+[2023-05-27 10:45:33] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/a2/67/7c696ad514a3f2447d0d0058090f86f7d61a56246334fdb759aac1713fc7/dcicutils-7.4.4.5b24.tar.gz
+[2023-05-27 10:45:33] INFO root fetch - processPackages [comex]: Downloading https://files.pythonhosted.org/packages/94/9a/6d7ce44ada012fe6b76e5210e7151f4ad059585980e006b68ffbfda23a4d/comex-0.0.8.tar.gz
+[2023-05-27 10:45:33] INFO root fetch - processPackages [xtdb]: Downloading https://files.pythonhosted.org/packages/e0/76/c2fec5537d0668d379b7052530ee2161984a1dda67e604456cbda0920da7/xtdb-0.3.0.tar.gz
+[2023-05-27 10:45:33] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/18/d9/3f07211bcfe5f7aecff9fd88acdd2e6e06d40242ed3d9b13c135f5a1524e/tff_nightly-0.0.1.dev20230526-py2.py3-none-any.whl
+[2023-05-27 10:45:33] INFO root fetch - processPackages [tree-of-thoughts]: executing diffoscope
+[2023-05-27 10:45:33] INFO root fetch - processPackages [tree-of-thoughts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tree-of-thoughts-0.2.1.tar.gz tmp/tree-of-thoughts-0.2.3.tar.gz --markdown 20230527/t/tree-of-thoughts/0.2.1-0.2.3/diff.md --exclude *.pyd
+[2023-05-27 10:45:33] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2023-05-27 10:45:33] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-7.4.4.5b23.tar.gz tmp/dcicutils-7.4.4.5b24.tar.gz --markdown 20230527/d/dcicutils/7.4.4.5b23-7.4.4.5b24/diff.md --exclude *.pyd
+[2023-05-27 10:45:33] INFO root fetch - processPackages [xtdb]: executing diffoscope
+[2023-05-27 10:45:33] INFO root fetch - processPackages [xtdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtdb-0.2.0.tar.gz tmp/xtdb-0.3.0.tar.gz --markdown 20230527/x/xtdb/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-27 10:45:33] INFO root fetch - processPackages [proxyUtil]: Downloading https://files.pythonhosted.org/packages/44/ea/79246c4a02e564af29f69046517450427b3f8b4cfff344c9b3212f28e4ae/proxyUtil-0.1.3.tar.gz
+[2023-05-27 10:45:33] INFO root fetch - processPackages [comex]: executing diffoscope
+[2023-05-27 10:45:33] INFO root fetch - processPackages [comex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comex-0.0.7.tar.gz tmp/comex-0.0.8.tar.gz --markdown 20230527/c/comex/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-27 10:45:33] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-05-27 10:45:33] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230525-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230526-py2.py3-none-any.whl.zip --markdown 20230527/t/tff-nightly/0.0.1.dev20230525-0.0.1.dev20230526/diff.md --exclude *.pyd
+[2023-05-27 10:45:33] INFO root fetch - processPackages [proxyUtil]: executing diffoscope
+[2023-05-27 10:45:33] INFO root fetch - processPackages [proxyUtil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxyUtil-0.1.2.tar.gz tmp/proxyUtil-0.1.3.tar.gz --markdown 20230527/p/proxyUtil/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-27 10:45:34] INFO root fetch - main [MainThread]: End processing [tree-of-thoughts]: success
+[2023-05-27 10:45:35] INFO root fetch - main [MainThread]: End processing [comex]: success
+[2023-05-27 10:45:35] INFO root fetch - main [MainThread]: End processing [xtdb]: success
+[2023-05-27 10:45:35] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2023-05-27 10:45:35] INFO root fetch - main [MainThread]: End processing [proxyUtil]: success
+[2023-05-27 10:45:36] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-05-27 10:45:51] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-05-27 10:45:51] INFO root fetch - main [MainThread]: Store serial: [18273204]
