@@ -10760,3 +10760,27 @@
 [2023-05-27 19:09:26] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
 [2023-05-27 19:09:27] INFO root fetch - main [MainThread]: End processing [je-auto-control-dev]: success
 [2023-05-27 19:09:27] INFO root fetch - main [MainThread]: Store serial: [18275708]
+[2023-05-27 19:14:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275708]
+[2023-05-27 19:14:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 19:14:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: triggercmd
+[2023-05-27 19:14:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langchain-discord
+[2023-05-27 19:14:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hedra
+[2023-05-27 19:14:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sylk
+[2023-05-27 19:14:35] INFO root fetch - processPackages [sylk]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-05-27 19:14:35] INFO root fetch - processPackages [langchain-discord]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 19:14:35] WARNING root fetch - processPackages [triggercmd]: Skipping, unable to determine old version
+[2023-05-27 19:14:35] INFO root fetch - main [MainThread]: End processing [triggercmd] error
+[2023-05-27 19:14:35] INFO root fetch - processPackages [hedra]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-27 19:14:35] INFO root fetch - processPackages [langchain-discord]: executing diffoscope
+[2023-05-27 19:14:35] INFO root fetch - processPackages [langchain-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_discord-0.0.8.tar.gz tmp/langchain_discord-0.0.9.tar.gz --markdown 20230527/l/langchain-discord/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 19:14:36] INFO root fetch - processPackages [sylk]: Downloading https://files.pythonhosted.org/packages/f4/ce/bb71b30a05d99a3a99d90dd184bd4a8cd900adf07483e2fc0ce2b758ae91/sylk-0.1.0-py3-none-any.whl
+[2023-05-27 19:14:36] INFO root fetch - processPackages [hedra]: Downloading https://files.pythonhosted.org/packages/a0/8c/b5e4e6bc0dc0a019f64eff1b0b2af798bb54ab7c36688cdd40f909c8147f/hedra-0.7.8.tar.gz
+[2023-05-27 19:14:36] INFO root fetch - processPackages [sylk]: executing diffoscope
+[2023-05-27 19:14:36] INFO root fetch - processPackages [sylk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sylk-0.0.7-py3-none-any.whl.zip tmp/sylk-0.1.0-py3-none-any.whl.zip --markdown 20230527/s/sylk/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-05-27 19:14:36] INFO root fetch - processPackages [hedra]: Downloading https://files.pythonhosted.org/packages/d0/43/976730d8c9c7ed00c6327ce3d46ca659b7246102e23cc84568381a2a29dc/hedra-0.7.9.tar.gz
+[2023-05-27 19:14:36] INFO root fetch - processPackages [hedra]: executing diffoscope
+[2023-05-27 19:14:36] INFO root fetch - processPackages [hedra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hedra-0.7.8.tar.gz tmp/hedra-0.7.9.tar.gz --markdown 20230527/h/hedra/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-27 19:14:36] INFO root fetch - main [MainThread]: End processing [langchain-discord]: success
+[2023-05-27 19:14:38] INFO root fetch - main [MainThread]: End processing [sylk]: success
+[2023-05-27 19:14:42] INFO root fetch - main [MainThread]: End processing [hedra]: success
+[2023-05-27 19:14:42] INFO root fetch - main [MainThread]: Store serial: [18275721]
