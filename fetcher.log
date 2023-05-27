@@ -12064,3 +12064,63 @@
 [2023-05-27 22:17:34] INFO root fetch - main [MainThread]: End processing [not1mm]: success
 [2023-05-27 22:17:39] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2023-05-27 22:17:39] INFO root fetch - main [MainThread]: Store serial: [18276608]
+[2023-05-27 22:22:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18276608]
+[2023-05-27 22:22:49] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-27 22:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hordelib
+[2023-05-27 22:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: soundstorm-pytorch
+[2023-05-27 22:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onboardme
+[2023-05-27 22:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbt-clickzetta
+[2023-05-27 22:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyCloudy
+[2023-05-27 22:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jao-py
+[2023-05-27 22:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spanishconjugator
+[2023-05-27 22:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spanishconjugator
+[2023-05-27 22:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cbor-diag
+[2023-05-27 22:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mech-client
+[2023-05-27 22:22:49] INFO root fetch - processPackages [pyCloudy]: New version: [0.9.9] Old Version: [0.9.7]
+[2023-05-27 22:22:49] INFO root fetch - processPackages [dbt-clickzetta]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-27 22:22:49] INFO root fetch - processPackages [onboardme]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-27 22:22:49] INFO root fetch - processPackages [soundstorm-pytorch]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-27 22:22:49] INFO root fetch - processPackages [jao-py]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-05-27 22:22:49] INFO root fetch - processPackages [hordelib]: New version: [1.3.8] Old Version: [1.3.7]
+[2023-05-27 22:22:49] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-27 22:22:49] WARNING root fetch - processPackages [mech-client]: Skipping, unable to determine old version
+[2023-05-27 22:22:49] INFO root fetch - processPackages [mech-client]: Start processing: quanttide-data
+[2023-05-27 22:22:49] INFO root fetch - main [MainThread]: End processing [mech-client] error
+[2023-05-27 22:22:49] WARNING root fetch - processPackages [quanttide-data]: Skipping, unable to determine old version
+[2023-05-27 22:22:49] INFO root fetch - main [MainThread]: End processing [quanttide-data] error
+[2023-05-27 22:22:49] INFO root fetch - processPackages [cbor-diag]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-27 22:22:49] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-27 22:22:49] INFO root fetch - processPackages [dbt-clickzetta]: executing diffoscope
+[2023-05-27 22:22:49] INFO root fetch - processPackages [dbt-clickzetta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-clickzetta-0.0.8.tar.gz tmp/dbt-clickzetta-0.0.9.tar.gz --markdown 20230527/d/dbt-clickzetta/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-27 22:22:49] INFO root fetch - processPackages [pyCloudy]: Downloading https://files.pythonhosted.org/packages/6c/65/612853abb90374a47a6418b40dc9760750ddb8fbd17927db635ddc24006c/pyCloudy-0.9.7.tar.gz
+[2023-05-27 22:22:49] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/47/2f/bce0d99993d07e8b57bba036079726e1630e326d258a1d72c43adcd7f3d4/onboardme-1.2.2.tar.gz
+[2023-05-27 22:22:49] INFO root fetch - processPackages [cbor-diag]: Downloading https://files.pythonhosted.org/packages/43/20/a30db880e28236b862ed8251d8c6f0e4432388a2692dee055f3adcd7b900/cbor_diag-1.0.0.tar.gz
+[2023-05-27 22:22:49] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/2b/ae/750d2f8a0290b686cabd72cada5ed4239c8661345fa770bf6dd36e693c2c/hordelib-1.3.7.tar.gz
+[2023-05-27 22:22:49] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-27 22:22:49] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230527/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-27 22:22:49] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-27 22:22:49] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230527/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-27 22:22:49] WARNING root fetch - processPackages [hordelib]: Skipping package: exceeds size limit 52357329>=10485760
+[2023-05-27 22:22:49] INFO root fetch - main [MainThread]: End processing [hordelib] error
+[2023-05-27 22:22:49] INFO root fetch - processPackages [jao-py]: Downloading https://files.pythonhosted.org/packages/f5/6a/d5957346806a92b22d62612bd4e91ffb3aac9e0b398ee92ceea5b380e857/jao-py-0.3.7.tar.gz
+[2023-05-27 22:22:49] INFO root fetch - processPackages [soundstorm-pytorch]: executing diffoscope
+[2023-05-27 22:22:49] INFO root fetch - processPackages [soundstorm-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soundstorm-pytorch-0.0.6.tar.gz tmp/soundstorm-pytorch-0.0.7.tar.gz --markdown 20230527/s/soundstorm-pytorch/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-27 22:22:49] INFO root fetch - processPackages [onboardme]: executing diffoscope
+[2023-05-27 22:22:49] INFO root fetch - processPackages [onboardme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onboardme-1.2.1.tar.gz tmp/onboardme-1.2.2.tar.gz --markdown 20230527/o/onboardme/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-27 22:22:49] INFO root fetch - processPackages [jao-py]: executing diffoscope
+[2023-05-27 22:22:49] INFO root fetch - processPackages [jao-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jao-py-0.3.6.tar.gz tmp/jao-py-0.3.7.tar.gz --markdown 20230527/j/jao-py/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-05-27 22:22:49] INFO root fetch - processPackages [cbor-diag]: Downloading https://files.pythonhosted.org/packages/94/87/29ce613f876cd0ceb99ed1db71f7e3d90460c1babd2133ce30f18d5f540d/cbor_diag-1.0.1.tar.gz
+[2023-05-27 22:22:50] INFO root fetch - processPackages [pyCloudy]: Downloading https://files.pythonhosted.org/packages/a2/e9/257d85374cc6383ee4eb2fcb1cafc8d51ead34ea45647abe95cdefce4fcf/pyCloudy-0.9.9.tar.gz
+[2023-05-27 22:22:50] INFO root fetch - processPackages [cbor-diag]: executing diffoscope
+[2023-05-27 22:22:50] INFO root fetch - processPackages [cbor-diag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbor_diag-1.0.0.tar.gz tmp/cbor_diag-1.0.1.tar.gz --markdown 20230527/c/cbor-diag/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-27 22:22:50] INFO root fetch - processPackages [pyCloudy]: executing diffoscope
+[2023-05-27 22:22:50] INFO root fetch - processPackages [pyCloudy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyCloudy-0.9.7.tar.gz tmp/pyCloudy-0.9.9.tar.gz --markdown 20230527/p/pyCloudy/0.9.7-0.9.9/diff.md --exclude *.pyd
+[2023-05-27 22:22:51] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-27 22:22:51] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-27 22:22:51] INFO root fetch - main [MainThread]: End processing [onboardme]: success
+[2023-05-27 22:22:51] INFO root fetch - main [MainThread]: End processing [soundstorm-pytorch]: success
+[2023-05-27 22:22:51] INFO root fetch - main [MainThread]: End processing [dbt-clickzetta]: success
+[2023-05-27 22:22:51] INFO root fetch - main [MainThread]: End processing [cbor-diag]: success
+[2023-05-27 22:22:51] INFO root fetch - main [MainThread]: End processing [jao-py]: success
+[2023-05-27 22:22:51] INFO root fetch - main [MainThread]: End processing [pyCloudy]: success
+[2023-05-27 22:22:51] INFO root fetch - main [MainThread]: Store serial: [18276689]
