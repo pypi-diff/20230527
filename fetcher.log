@@ -8187,3 +8187,18 @@
 [2023-05-27 14:04:28] INFO root fetch - main [MainThread]: End processing [bigdl-friesian-spark2]: success
 [2023-05-27 14:04:28] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark2]: success
 [2023-05-27 14:04:28] INFO root fetch - main [MainThread]: Store serial: [18274169]
+[2023-05-27 14:09:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18274169]
+[2023-05-27 14:09:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-27 14:09:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: act4e-mcdp
+[2023-05-27 14:09:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: weewx
+[2023-05-27 14:09:37] INFO root fetch - processPackages [act4e-mcdp]: New version: [0.5.0] Old Version: [0.4.3]
+[2023-05-27 14:09:37] INFO root fetch - processPackages [weewx]: New version: [5.0.0b2] Old Version: [5.0.0b1]
+[2023-05-27 14:09:37] INFO root fetch - processPackages [act4e-mcdp]: Downloading https://files.pythonhosted.org/packages/bf/93/28ed7052f0bcbee48f073266dacfd9fc2d2b8a57953e5def3683e1578bf2/act4e_mcdp-0.5.0-py3-none-any.whl
+[2023-05-27 14:09:38] INFO root fetch - processPackages [act4e-mcdp]: executing diffoscope
+[2023-05-27 14:09:38] INFO root fetch - processPackages [act4e-mcdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/act4e_mcdp-0.4.3-py3-none-any.whl.zip tmp/act4e_mcdp-0.5.0-py3-none-any.whl.zip --markdown 20230527/a/act4e-mcdp/0.4.3-0.5.0/diff.md --exclude *.pyd
+[2023-05-27 14:09:38] INFO root fetch - processPackages [weewx]: Downloading https://files.pythonhosted.org/packages/87/36/d5445a2d0b29b967238025699c309e9abe5383932355b685686f8c23bbb6/weewx-5.0.0b2-py3-none-any.whl
+[2023-05-27 14:09:38] INFO root fetch - processPackages [weewx]: executing diffoscope
+[2023-05-27 14:09:38] INFO root fetch - processPackages [weewx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weewx-5.0.0b1.tar.gz tmp/weewx-5.0.0b2-py3-none-any.whl.zip --markdown 20230527/w/weewx/5.0.0b1-5.0.0b2/diff.md --exclude *.pyd
+[2023-05-27 14:09:39] INFO root fetch - main [MainThread]: End processing [act4e-mcdp]: success
+[2023-05-27 14:09:40] INFO root fetch - main [MainThread]: End processing [weewx]: success
+[2023-05-27 14:09:40] INFO root fetch - main [MainThread]: Store serial: [18274174]
