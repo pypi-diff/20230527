@@ -7140,3 +7140,30 @@
 [2023-05-27 12:06:33] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
 [2023-05-27 12:06:36] INFO root fetch - main [MainThread]: End processing [cargo-zigbuild]: success
 [2023-05-27 12:06:36] INFO root fetch - main [MainThread]: Store serial: [18273593]
+[2023-05-27 12:11:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273593]
+[2023-05-27 12:11:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 12:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fhempy
+[2023-05-27 12:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cargo-xwin
+[2023-05-27 12:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypcapkit
+[2023-05-27 12:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dm-reverb-nightly
+[2023-05-27 12:11:48] INFO root fetch - processPackages [cargo-xwin]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-27 12:11:48] INFO root fetch - processPackages [pypcapkit]: New version: [1.0.1.post3] Old Version: [1.0.1.post2]
+[2023-05-27 12:11:48] INFO root fetch - processPackages [fhempy]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-27 12:11:48] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-05-27 12:11:48] INFO root fetch - processPackages [fhempy]: executing diffoscope
+[2023-05-27 12:11:48] INFO root fetch - processPackages [fhempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhempy-0.1.98.tar.gz tmp/fhempy-0.1.99.tar.gz --markdown 20230527/f/fhempy/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-27 12:11:48] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-05-27 12:11:48] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230527/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-05-27 12:11:48] INFO root fetch - processPackages [cargo-xwin]: Downloading https://files.pythonhosted.org/packages/7f/d8/5be2e4d4345f7273333ea10c15f619e83fc6b4ee2dd2e8d739d58e8f5a38/cargo_xwin-0.9.1-py3-none-win_amd64.whl
+[2023-05-27 12:11:48] INFO root fetch - processPackages [pypcapkit]: Downloading https://files.pythonhosted.org/packages/a3/ac/cde228a481abe58b4bdf859a0f6d46a6e23405590fafc18d0474e5f2ac57/pypcapkit-1.0.1.post2.tar.gz
+[2023-05-27 12:11:48] INFO root fetch - processPackages [pypcapkit]: Downloading https://files.pythonhosted.org/packages/7e/4d/880b93d585057bfa49eb721efd7f9e56d282bd5b4be0aeadb2ebc1e93776/pypcapkit-1.0.1.post3.tar.gz
+[2023-05-27 12:11:48] INFO root fetch - processPackages [cargo-xwin]: Downloading https://files.pythonhosted.org/packages/8f/88/531d375d3813004bf72ec64730f6550181ddbefb4037605c29b5917107c3/cargo_xwin-0.9.2-py3-none-win_amd64.whl
+[2023-05-27 12:11:48] INFO root fetch - processPackages [pypcapkit]: executing diffoscope
+[2023-05-27 12:11:48] INFO root fetch - processPackages [pypcapkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypcapkit-1.0.1.post2.tar.gz tmp/pypcapkit-1.0.1.post3.tar.gz --markdown 20230527/p/pypcapkit/1.0.1.post2-1.0.1.post3/diff.md --exclude *.pyd
+[2023-05-27 12:11:48] INFO root fetch - processPackages [cargo-xwin]: executing diffoscope
+[2023-05-27 12:11:48] INFO root fetch - processPackages [cargo-xwin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cargo_xwin-0.9.1-py3-none-win_amd64.whl.zip tmp/cargo_xwin-0.9.2-py3-none-win_amd64.whl.zip --markdown 20230527/c/cargo-xwin/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-27 12:11:50] INFO root fetch - main [MainThread]: End processing [fhempy]: success
+[2023-05-27 12:11:54] INFO root fetch - main [MainThread]: End processing [pypcapkit]: success
+[2023-05-27 12:12:13] INFO root fetch - main [MainThread]: End processing [cargo-xwin]: success
+[2023-05-27 12:12:42] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
+[2023-05-27 12:12:42] INFO root fetch - main [MainThread]: Store serial: [18273616]
