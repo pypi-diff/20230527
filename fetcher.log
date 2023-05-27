@@ -4649,3 +4649,42 @@
 [2023-05-27 06:14:48] INFO root fetch - main [MainThread]: End processing [athletes-unlimited-py]: success
 [2023-05-27 06:14:48] INFO root fetch - main [MainThread]: End processing [jsbgym]: success
 [2023-05-27 06:14:48] INFO root fetch - main [MainThread]: Store serial: [18272215]
+[2023-05-27 06:19:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272215]
+[2023-05-27 06:19:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 06:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: roboduck
+[2023-05-27 06:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addons-oca-operating-unit
+[2023-05-27 06:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autodistill-yolov8
+[2023-05-27 06:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pg-stage
+[2023-05-27 06:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: binary-file-parser
+[2023-05-27 06:19:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: searchlogit
+[2023-05-27 06:19:56] INFO root fetch - processPackages [roboduck]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-27 06:19:57] INFO root fetch - processPackages [autodistill-yolov8]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-05-27 06:19:57] INFO root fetch - processPackages [pg-stage]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-27 06:19:57] INFO root fetch - processPackages [binary-file-parser]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-27 06:19:57] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: New version: [16.0.20230412.0] Old Version: [15.0.20230526.0]
+[2023-05-27 06:19:57] INFO root fetch - processPackages [searchlogit]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-27 06:19:57] INFO root fetch - processPackages [binary-file-parser]: Downloading https://files.pythonhosted.org/packages/d9/82/0923c8d25809ddd64d229716cd4b67fa06198e88b252e0ec5fd427e7682d/binary-file-parser-0.1.0.tar.gz
+[2023-05-27 06:19:57] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: Downloading https://files.pythonhosted.org/packages/0f/a1/13fda7d0e342bc73d0a23efe576349f8ece92c558912fc2b8d7d70154ba1/odoo_addons_oca_operating_unit-15.0.20230526.0-py3-none-any.whl
+[2023-05-27 06:19:57] INFO root fetch - processPackages [autodistill-yolov8]: Downloading https://files.pythonhosted.org/packages/b9/50/bf3b94d60507f4f00b151597a471e2658d021ea4bd653bfc9cc6624e478d/autodistill_yolov8-0.0.5.tar.gz
+[2023-05-27 06:19:57] INFO root fetch - processPackages [roboduck]: Downloading https://files.pythonhosted.org/packages/cd/5c/21693818cc1c2abd32cb2633a0f2256b65ae992796067bdd92f1841a10c3/roboduck-0.3.1.tar.gz
+[2023-05-27 06:19:57] INFO root fetch - processPackages [pg-stage]: executing diffoscope
+[2023-05-27 06:19:57] INFO root fetch - processPackages [pg-stage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_stage-0.1.8.tar.gz tmp/pg_stage-0.1.9.tar.gz --markdown 20230527/p/pg-stage/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-27 06:19:57] INFO root fetch - processPackages [roboduck]: executing diffoscope
+[2023-05-27 06:19:57] INFO root fetch - processPackages [roboduck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboduck-0.3.0.tar.gz tmp/roboduck-0.3.1.tar.gz --markdown 20230527/r/roboduck/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-27 06:19:57] INFO root fetch - processPackages [autodistill-yolov8]: Downloading https://files.pythonhosted.org/packages/fa/22/188500199858883dc171b271637c2f0bfb6f60fe48e9a2bd1869dd2db8e9/autodistill_yolov8-0.1.0.tar.gz
+[2023-05-27 06:19:57] INFO root fetch - processPackages [searchlogit]: executing diffoscope
+[2023-05-27 06:19:57] INFO root fetch - processPackages [searchlogit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchlogit-0.3.8.tar.gz tmp/searchlogit-0.3.9.tar.gz --markdown 20230527/s/searchlogit/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-27 06:19:57] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: executing diffoscope
+[2023-05-27 06:19:57] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_operating_unit-15.0.20230526.0-py3-none-any.whl.zip tmp/odoo_addons_oca_operating_unit-16.0.20230412.0-py3-none-any.whl.zip --markdown 20230527/o/odoo-addons-oca-operating-unit/15.0.20230526.0-16.0.20230412.0/diff.md --exclude *.pyd
+[2023-05-27 06:19:57] INFO root fetch - processPackages [binary-file-parser]: Downloading https://files.pythonhosted.org/packages/3f/b9/329cc771cd89bb55dc2f8b1ef1ad24e8883db2b120084668821af4be5bb2/binary-file-parser-0.1.1.tar.gz
+[2023-05-27 06:19:57] INFO root fetch - processPackages [autodistill-yolov8]: executing diffoscope
+[2023-05-27 06:19:57] INFO root fetch - processPackages [autodistill-yolov8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autodistill_yolov8-0.0.5.tar.gz tmp/autodistill_yolov8-0.1.0.tar.gz --markdown 20230527/a/autodistill-yolov8/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-05-27 06:19:57] INFO root fetch - processPackages [binary-file-parser]: executing diffoscope
+[2023-05-27 06:19:57] INFO root fetch - processPackages [binary-file-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binary-file-parser-0.1.0.tar.gz tmp/binary-file-parser-0.1.1.tar.gz --markdown 20230527/b/binary-file-parser/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-27 06:19:58] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-operating-unit]: success
+[2023-05-27 06:19:58] INFO root fetch - main [MainThread]: End processing [pg-stage]: success
+[2023-05-27 06:19:58] INFO root fetch - main [MainThread]: End processing [binary-file-parser]: success
+[2023-05-27 06:19:58] INFO root fetch - main [MainThread]: End processing [roboduck]: success
+[2023-05-27 06:19:58] INFO root fetch - main [MainThread]: End processing [searchlogit]: success
+[2023-05-27 06:19:58] INFO root fetch - main [MainThread]: End processing [autodistill-yolov8]: success
+[2023-05-27 06:19:58] INFO root fetch - main [MainThread]: Store serial: [18272235]
