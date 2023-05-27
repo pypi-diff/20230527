@@ -3695,3 +3695,36 @@
 [2023-05-27 03:30:30] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte]: success
 [2023-05-27 03:31:54] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2023-05-27 03:31:54] INFO root fetch - main [MainThread]: Store serial: [18271387]
+[2023-05-27 03:37:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18271387]
+[2023-05-27 03:37:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-27 03:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-wordpress
+[2023-05-27 03:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-stdlib
+[2023-05-27 03:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: not1mm
+[2023-05-27 03:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-numpy
+[2023-05-27 03:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-pandas
+[2023-05-27 03:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: asgihandler
+[2023-05-27 03:37:05] INFO root fetch - processPackages [not1mm]: New version: [23.5.9.2] Old Version: [23.5.9.1]
+[2023-05-27 03:37:05] INFO root fetch - processPackages [asgihandler]: New version: [0.4.4] Old Version: [0.4.2]
+[2023-05-27 03:37:06] INFO root fetch - processPackages [cdk-wordpress]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 03:37:06] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 03:37:06] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 03:37:06] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-27 03:37:06] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2023-05-27 03:37:06] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-23.5.9.1.tar.gz tmp/not1mm-23.5.9.2.tar.gz --markdown 20230527/n/not1mm/23.5.9.1-23.5.9.2/diff.md --exclude *.pyd
+[2023-05-27 03:37:06] INFO root fetch - processPackages [asgihandler]: executing diffoscope
+[2023-05-27 03:37:06] INFO root fetch - processPackages [asgihandler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgihandler-0.4.2.tar.gz tmp/asgihandler-0.4.4.tar.gz --markdown 20230527/a/asgihandler/0.4.2-0.4.4/diff.md --exclude *.pyd
+[2023-05-27 03:37:06] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-27 03:37:06] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230527/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 03:37:06] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-27 03:37:06] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230527/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 03:37:06] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-27 03:37:06] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230527/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 03:37:06] INFO root fetch - processPackages [cdk-wordpress]: executing diffoscope
+[2023-05-27 03:37:06] INFO root fetch - processPackages [cdk-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-wordpress-0.0.98.tar.gz tmp/cdk-wordpress-0.0.99.tar.gz --markdown 20230527/c/cdk-wordpress/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-27 03:37:07] INFO root fetch - main [MainThread]: End processing [asgihandler]: success
+[2023-05-27 03:37:07] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-27 03:37:07] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-27 03:37:07] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
+[2023-05-27 03:37:07] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-27 03:37:08] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2023-05-27 03:37:08] INFO root fetch - main [MainThread]: Store serial: [18271677]
