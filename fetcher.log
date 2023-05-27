@@ -10724,3 +10724,26 @@
 [2023-05-27 18:59:05] INFO root fetch - main [MainThread]: End processing [granular-engine]: success
 [2023-05-27 18:59:06] INFO root fetch - main [MainThread]: End processing [selenium-supporter]: success
 [2023-05-27 18:59:06] INFO root fetch - main [MainThread]: Store serial: [18275687]
+[2023-05-27 19:04:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18275687]
+[2023-05-27 19:04:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-27 19:04:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: federated-content-connector
+[2023-05-27 19:04:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autora-experiment-runner-experimentation-manager-firebase
+[2023-05-27 19:04:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: univ
+[2023-05-27 19:04:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: libtmux
+[2023-05-27 19:04:14] WARNING root fetch - processPackages [federated-content-connector]: Skipping, unable to determine old version
+[2023-05-27 19:04:14] WARNING root fetch - processPackages [univ]: Skipping, unable to determine old version
+[2023-05-27 19:04:14] INFO root fetch - main [MainThread]: End processing [federated-content-connector] error
+[2023-05-27 19:04:14] INFO root fetch - main [MainThread]: End processing [univ] error
+[2023-05-27 19:04:14] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: New version: [1.0.0a1] Old Version: [1.0.0a0]
+[2023-05-27 19:04:14] INFO root fetch - processPackages [libtmux]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-05-27 19:04:14] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: Downloading https://files.pythonhosted.org/packages/5f/b7/a82834fb2675e45811a04ef147e261d5248eb6cb6e808aded51926f7f6f5/autora-experiment-runner-experimentation-manager-firebase-1.0.0a0.tar.gz
+[2023-05-27 19:04:14] INFO root fetch - processPackages [libtmux]: Downloading https://files.pythonhosted.org/packages/b0/43/4b66181475cb78be02e69a121e4f69d72aef7d2eb5855b23fa4ff13e055c/libtmux-0.8.5.tar.gz
+[2023-05-27 19:04:15] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: Downloading https://files.pythonhosted.org/packages/4d/82/b678b408b34aa10466bdb76f59c6fbc969ba5e4ab810225f956f7d9f1293/autora-experiment-runner-experimentation-manager-firebase-1.0.0a1.tar.gz
+[2023-05-27 19:04:15] INFO root fetch - processPackages [libtmux]: Downloading https://files.pythonhosted.org/packages/c4/90/a6df68839365ecb1b85b683f008830814deb87dd152acfab5652703d6a5f/libtmux-0.9.0.tar.gz
+[2023-05-27 19:04:15] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: executing diffoscope
+[2023-05-27 19:04:15] INFO root fetch - processPackages [autora-experiment-runner-experimentation-manager-firebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autora-experiment-runner-experimentation-manager-firebase-1.0.0a0.tar.gz tmp/autora-experiment-runner-experimentation-manager-firebase-1.0.0a1.tar.gz --markdown 20230527/a/autora-experiment-runner-experimentation-manager-firebase/1.0.0a0-1.0.0a1/diff.md --exclude *.pyd
+[2023-05-27 19:04:15] INFO root fetch - processPackages [libtmux]: executing diffoscope
+[2023-05-27 19:04:15] INFO root fetch - processPackages [libtmux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libtmux-0.8.5.tar.gz tmp/libtmux-0.9.0.tar.gz --markdown 20230527/l/libtmux/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-05-27 19:04:16] INFO root fetch - main [MainThread]: End processing [autora-experiment-runner-experimentation-manager-firebase]: success
+[2023-05-27 19:04:16] INFO root fetch - main [MainThread]: End processing [libtmux]: success
+[2023-05-27 19:04:16] INFO root fetch - main [MainThread]: Store serial: [18275702]
