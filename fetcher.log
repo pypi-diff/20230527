@@ -6974,3 +6974,45 @@
 [2023-05-27 11:38:59] INFO root fetch - main [MainThread]: End processing [setup2upypackage]: success
 [2023-05-27 11:38:59] INFO root fetch - main [MainThread]: End processing [crsysapi]: success
 [2023-05-27 11:38:59] INFO root fetch - main [MainThread]: Store serial: [18273489]
+[2023-05-27 11:44:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18273489]
+[2023-05-27 11:44:08] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-27 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pifold-pytorch
+[2023-05-27 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: logidrivepy
+[2023-05-27 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pmemo
+[2023-05-27 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ddadevops
+[2023-05-27 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: exc2dic
+[2023-05-27 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flowchain
+[2023-05-27 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: customtkinterx
+[2023-05-27 11:44:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: testix
+[2023-05-27 11:44:08] INFO root fetch - processPackages [exc2dic]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-27 11:44:08] WARNING root fetch - processPackages [pifold-pytorch]: Skipping, unable to determine old version
+[2023-05-27 11:44:08] INFO root fetch - main [MainThread]: End processing [pifold-pytorch] error
+[2023-05-27 11:44:08] WARNING root fetch - processPackages [logidrivepy]: Skipping, unable to determine old version
+[2023-05-27 11:44:08] INFO root fetch - main [MainThread]: End processing [logidrivepy] error
+[2023-05-27 11:44:08] INFO root fetch - processPackages [pmemo]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-27 11:44:08] INFO root fetch - processPackages [flowchain]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-27 11:44:08] INFO root fetch - processPackages [ddadevops]: New version: [4.0.0.dev9] Old Version: [4.0.0.dev8]
+[2023-05-27 11:44:08] WARNING root fetch - processPackages [customtkinterx]: Skipping, unable to determine old version
+[2023-05-27 11:44:08] INFO root fetch - main [MainThread]: End processing [customtkinterx] error
+[2023-05-27 11:44:08] INFO root fetch - processPackages [testix]: New version: [9.1.2] Old Version: [9.1.1]
+[2023-05-27 11:44:08] INFO root fetch - processPackages [ddadevops]: executing diffoscope
+[2023-05-27 11:44:08] INFO root fetch - processPackages [ddadevops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddadevops-4.0.0.dev8.tar.gz tmp/ddadevops-4.0.0.dev9.tar.gz --markdown 20230527/d/ddadevops/4.0.0.dev8-4.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-27 11:44:08] INFO root fetch - processPackages [exc2dic]: Downloading https://files.pythonhosted.org/packages/1d/40/5b5e0590e24c9c21e764d5941be648c32af769d59e5e6eb4c7a4bc7d832f/exc2dic-1.0.2.tar.gz
+[2023-05-27 11:44:08] INFO root fetch - processPackages [flowchain]: Downloading https://files.pythonhosted.org/packages/46/b8/8570f0b0f5ed160225c6ff53c3c51cc43545564af6f9b98dbfde74f7e0d0/flowchain-0.0.6.tar.gz
+[2023-05-27 11:44:08] INFO root fetch - processPackages [pmemo]: Downloading https://files.pythonhosted.org/packages/96/03/e6e4e6b6055d36832849a5c24b931ea50167b3303fd43597b1ae293a2f88/pmemo-0.1.0.tar.gz
+[2023-05-27 11:44:08] INFO root fetch - processPackages [flowchain]: executing diffoscope
+[2023-05-27 11:44:08] INFO root fetch - processPackages [flowchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowchain-0.0.5.tar.gz tmp/flowchain-0.0.6.tar.gz --markdown 20230527/f/flowchain/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-27 11:44:09] INFO root fetch - processPackages [exc2dic]: Downloading https://files.pythonhosted.org/packages/57/32/cf4d16744b23a3fc54978c6b82d72e71e3868b21d46609e33827b30170c6/exc2dic-1.0.3.tar.gz
+[2023-05-27 11:44:09] INFO root fetch - processPackages [pmemo]: Downloading https://files.pythonhosted.org/packages/a7/ea/b809cf92ffc2c0b86dfad1d7abba841b5b8967b86efa97a39eb2c86fb295/pmemo-0.2.0.tar.gz
+[2023-05-27 11:44:09] INFO root fetch - processPackages [exc2dic]: executing diffoscope
+[2023-05-27 11:44:09] INFO root fetch - processPackages [exc2dic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exc2dic-1.0.2.tar.gz tmp/exc2dic-1.0.3.tar.gz --markdown 20230527/e/exc2dic/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-27 11:44:09] INFO root fetch - processPackages [pmemo]: executing diffoscope
+[2023-05-27 11:44:09] INFO root fetch - processPackages [pmemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pmemo-0.1.0.tar.gz tmp/pmemo-0.2.0.tar.gz --markdown 20230527/p/pmemo/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-27 11:44:09] INFO root fetch - processPackages [testix]: executing diffoscope
+[2023-05-27 11:44:09] INFO root fetch - processPackages [testix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testix-9.1.1-py3-none-any.whl.zip tmp/testix-9.1.2-py3-none-any.whl.zip --markdown 20230527/t/testix/9.1.1-9.1.2/diff.md --exclude *.pyd
+[2023-05-27 11:44:09] INFO root fetch - main [MainThread]: End processing [flowchain]: success
+[2023-05-27 11:44:10] INFO root fetch - main [MainThread]: End processing [ddadevops]: success
+[2023-05-27 11:44:10] INFO root fetch - main [MainThread]: End processing [exc2dic]: success
+[2023-05-27 11:44:10] INFO root fetch - main [MainThread]: End processing [pmemo]: success
+[2023-05-27 11:44:59] INFO root fetch - main [MainThread]: End processing [testix]: success
+[2023-05-27 11:44:59] INFO root fetch - main [MainThread]: Store serial: [18273524]
