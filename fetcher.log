@@ -5076,3 +5076,25 @@
 [2023-05-27 07:27:31] INFO root fetch - main [MainThread]: End processing [control-rod]: success
 [2023-05-27 07:28:20] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
 [2023-05-27 07:28:20] INFO root fetch - main [MainThread]: Store serial: [18272436]
+[2023-05-27 07:33:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18272436]
+[2023-05-27 07:33:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-27 07:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: finpy-tse
+[2023-05-27 07:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: imaginAIry
+[2023-05-27 07:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Bigsansar
+[2023-05-27 07:33:29] INFO root fetch - processPackages [finpy-tse]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-05-27 07:33:29] INFO root fetch - processPackages [imaginAIry]: New version: [9.0.2] Old Version: [9.0.1]
+[2023-05-27 07:33:29] INFO root fetch - processPackages [Bigsansar]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-05-27 07:33:30] INFO root fetch - processPackages [finpy-tse]: Downloading https://files.pythonhosted.org/packages/35/5b/5e52cb1a1137fb2dfd1dc787a205db47aeba8c1729ab47fc153eff7bd7c4/finpy_tse-1.2.4.tar.gz
+[2023-05-27 07:33:30] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/5d/25/d755392f34a94d539afac69224f8079283973875434631f6517a657c8e1f/Bigsansar-1.5.1.tar.gz
+[2023-05-27 07:33:30] INFO root fetch - processPackages [imaginAIry]: executing diffoscope
+[2023-05-27 07:33:30] INFO root fetch - processPackages [imaginAIry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imaginAIry-9.0.1-py3-none-win_amd64.whl.zip tmp/imaginAIry-9.0.2-py3-none-win_amd64.whl.zip --markdown 20230527/i/imaginAIry/9.0.1-9.0.2/diff.md --exclude *.pyd
+[2023-05-27 07:33:30] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/03/0a/7817f2ee0d0deeab75efad39228248b6bc7756973095bf499de7f64af9f0/Bigsansar-1.5.2.tar.gz
+[2023-05-27 07:33:30] INFO root fetch - processPackages [finpy-tse]: Downloading https://files.pythonhosted.org/packages/bb/be/d894d14b33aa445d052e96c51291a7498a15316828fa46d4cda732e83a03/finpy_tse-1.2.5.tar.gz
+[2023-05-27 07:33:30] INFO root fetch - processPackages [finpy-tse]: executing diffoscope
+[2023-05-27 07:33:30] INFO root fetch - processPackages [finpy-tse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finpy_tse-1.2.4.tar.gz tmp/finpy_tse-1.2.5.tar.gz --markdown 20230527/f/finpy-tse/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-05-27 07:33:30] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-05-27 07:33:30] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230527:/home/abi/fetcher/20230527:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.5.1.tar.gz tmp/Bigsansar-1.5.2.tar.gz --markdown 20230527/B/Bigsansar/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-05-27 07:33:31] INFO root fetch - main [MainThread]: End processing [finpy-tse]: success
+[2023-05-27 07:33:32] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-05-27 07:33:34] INFO root fetch - main [MainThread]: End processing [imaginAIry]: success
+[2023-05-27 07:33:34] INFO root fetch - main [MainThread]: Store serial: [18272445]
